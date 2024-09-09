@@ -1,0 +1,8 @@
+---
+title: "PSYCH 490.xxx"
+subtitle: "Spring 2025 • XXX"
+---
+
+{{< include _index.qmd >}}
+
+{{< include _about.qmd >}}

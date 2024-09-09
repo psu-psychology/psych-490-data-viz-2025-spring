@@ -1,0 +1,50 @@
+## Instructor {-}
+
+Rick O. Gilmore, Ph.D. \
+Professor of Psychology \
+rog1 AT-SIGN psu PERIOD edu \
+
+Schedule an appointment: <https://doodle.com/mm/rickgilmore/book-a-time></br>
+
+Lab web site: <https://gilmore-lab.github.io>
+
+## Teaching Assistant {-}
+
+<!-- Adam Calderon \ -->
+<!-- Graduate Student in Clinical Psychology \ -->
+<!-- afc6160 AT-SIGN psu PERIOD edu -->
+<!-- Office hours: Friday 3-4 pm, via [Zoom](https://psu.zoom.us/j/94414923783). -->
+
+## Meeting time & location {-}
+
+TBD
+
+## Canvas site
+
+We will use Canvas to submit assignments and grade them.
+The Canvas site may be found here: 
+
+<LINK-TO-CANVAS-SITE>
+
+Most of the course content will be found on this site.
+
+## Course structure
+
+This is a discussion-focused course.
+On most days we will discuss readings assigned prior to class.
+On many Fridays and a few Mondays, we will work together or individually on the assigned [exercises](index.qmd#exercises), the final project, or another assignment.
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(
+  c(
+    .packages(),
+    'knitr',
+    'rmarkdown',
+    'ggplot2',
+    'dplyr',
+    'googledrive'
+  ),
+  file = 'include/bib/packages.bib'
+)
+```

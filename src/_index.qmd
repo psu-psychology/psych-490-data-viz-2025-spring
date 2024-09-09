@@ -1,0 +1,11 @@
+---
+title: ""
+---
+
+<!-- Some cool image(s) -->
+
+## Themes
+
+This course focuses on the psychology of data visualization or what makes a good, compelling, understandable data picture.
+
+
