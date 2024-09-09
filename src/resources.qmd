@@ -8,6 +8,8 @@ This page captures some of the resources Rick Gilmore found in developing this c
 
 Psychology 6135: Psychology of Data Visualization, <http://euclid.psych.yorku.ca/www/psy6135/index.html>, by Michael Friendly at York University.
 
+Here is a more recent version: <https://friendly.github.io/6135/>
+
 Friendly might be a good guest.
 
 ## Books
