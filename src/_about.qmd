@@ -17,7 +17,8 @@ Lab web site: <https://gilmore-lab.github.io>
 
 ## Meeting time & location {-}
 
-TBD
+Tuesday & Thursday, 9:05-10:20 am</br>
+207 [Thomas Building](https://map.psu.edu/?id=1134#!ct/59509,33177,25403,26748,26749,26750,27255?m/900781?s/thomas)
 
 ## Canvas site
 
@@ -32,7 +33,7 @@ Most of the course content will be found on this site.
 
 This is a discussion-focused course.
 On most days we will discuss readings assigned prior to class.
-On many Fridays and a few Mondays, we will work together or individually on the assigned [exercises](index.qmd#exercises), the final project, or another assignment.
+On many days, we will work together or individually on the assigned [exercises](index.qmd#exercises), the final project, or another assignment.
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
