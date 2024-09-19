@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -90,11 +110,11 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">PSYCH 490.xxx</span></a>
+<span class="menu-text">PSYCH 490.003</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./schedule.html"> 
-<span class="menu-text">schedule</span></a>
+<span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./resources.html"> 
@@ -130,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<p class="subtitle lead">Spring 2025 • XXX</p>
+<p class="subtitle lead">Spring 2025 • TTh 9:05a-10:20a</p>
 </div>
 
 
@@ -142,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">September 9, 2024</p>
+      <p class="date-modified">September 19, 2024</p>
     </div>
   </div>
     
@@ -153,10 +173,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- Some cool image(s) -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="include/img/dall-e-2024-09-19-picture-paints.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>ChatGPT/Dall-E-3 model response to ‘an image of “a picture paints a thousand words”’ on 2024-09-19</figcaption>
+</figure>
+</div>
 <section id="themes" class="level2">
 <h2 class="anchored" data-anchor-id="themes">Themes</h2>
-<p>This course focuses on the psychology of data visualization or what makes a good, compelling, understandable data picture.</p>
+<p>If a picture’s worth a thousand words <span class="citation" data-cites="Wikipedia-contributors2024-du">(<a href="#ref-Wikipedia-contributors2024-du" role="doc-biblioref">Wikipedia contributors, 2024</a>)</span>, what exactly does it say? This course will focus on the psychology of data visualization—how to read, critique, and generate meaningful figures that inform but don’t mislead. We’ll take inspiration from recognized classic figures and unpack what makes them exemplary. We’ll critique figures that deliberately or inadvertently mislead or confuse. And we’ll learn how to build our own reproducible figures using Python, R, and JavaScript. No prior programming experience is required.</p>
 </section>
 <section id="instructor" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="instructor">Instructor</h2>
@@ -176,7 +201,7 @@ rog1 AT-SIGN psu PERIOD edu<br>
 </section>
 <section id="meeting-time-location" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="meeting-time-location">Meeting time &amp; location</h2>
-<p>TBD</p>
+<p>Tuesday &amp; Thursday, 9:05-10:20 am<br> 207 <a href="https://map.psu.edu/?id=1134#!ct/59509,33177,25403,26748,26749,26750,27255?m/900781?s/thomas">Thomas Building</a></p>
 </section>
 <section id="canvas-site" class="level2">
 <h2 class="anchored" data-anchor-id="canvas-site">Canvas site</h2>
@@ -186,12 +211,17 @@ rog1 AT-SIGN psu PERIOD edu<br>
 </section>
 <section id="course-structure" class="level2">
 <h2 class="anchored" data-anchor-id="course-structure">Course structure</h2>
-<p>This is a discussion-focused course. On most days we will discuss readings assigned prior to class. On many Fridays and a few Mondays, we will work together or individually on the assigned <a href="./index.html#exercises">exercises</a>, the final project, or another assignment.</p>
+<p>This is a discussion-focused course. On most days we will discuss readings assigned prior to class. On many days, we will work together or individually on the assigned <a href="./index.html#exercises">exercises</a>, the final project, or another assignment.</p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Wikipedia-contributors2024-du" class="csl-entry" role="listitem">
+Wikipedia contributors. (2024, August). A picture is worth a thousand words. <a href="https://en.wikipedia.org/wiki/A_picture_is_worth_a_thousand_words" class="uri">https://en.wikipedia.org/wiki/A_picture_is_worth_a_thousand_words</a>; Wikimedia Foundation, Inc.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

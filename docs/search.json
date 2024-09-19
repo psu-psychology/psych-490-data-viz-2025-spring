@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "PSYCH 490 • Spring 2025",
     "section": "",
-    "text": "This course focuses on the psychology of data visualization or what makes a good, compelling, understandable data picture."
+    "text": "ChatGPT/Dall-E-3 model response to ‘an image of “a picture paints a thousand words”’ on 2024-09-19"
   },
   {
     "objectID": "index.html#themes",
     "href": "index.html#themes",
     "title": "PSYCH 490 • Spring 2025",
-    "section": "",
-    "text": "This course focuses on the psychology of data visualization or what makes a good, compelling, understandable data picture."
+    "section": "Themes",
+    "text": "Themes\nIf a picture’s worth a thousand words (Wikipedia contributors, 2024), what exactly does it say? This course will focus on the psychology of data visualization—how to read, critique, and generate meaningful figures that inform but don’t mislead. We’ll take inspiration from recognized classic figures and unpack what makes them exemplary. We’ll critique figures that deliberately or inadvertently mislead or confuse. And we’ll learn how to build our own reproducible figures using Python, R, and JavaScript. No prior programming experience is required."
   },
   {
     "objectID": "index.html#instructor",
@@ -32,7 +32,7 @@
     "href": "index.html#meeting-time-location",
     "title": "PSYCH 490 • Spring 2025",
     "section": "Meeting time & location",
-    "text": "Meeting time & location\nTBD"
+    "text": "Meeting time & location\nTuesday & Thursday, 9:05-10:20 am 207 Thomas Building"
   },
   {
     "objectID": "index.html#canvas-site",
@@ -46,7 +46,7 @@
     "href": "index.html#course-structure",
     "title": "PSYCH 490 • Spring 2025",
     "section": "Course structure",
-    "text": "Course structure\nThis is a discussion-focused course. On most days we will discuss readings assigned prior to class. On many Fridays and a few Mondays, we will work together or individually on the assigned exercises, the final project, or another assignment."
+    "text": "Course structure\nThis is a discussion-focused course. On most days we will discuss readings assigned prior to class. On many days, we will work together or individually on the assigned exercises, the final project, or another assignment."
   },
   {
     "objectID": "resources.html",

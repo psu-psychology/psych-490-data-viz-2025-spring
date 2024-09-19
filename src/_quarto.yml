@@ -30,7 +30,7 @@ format:
     citations-hover: true
     footnotes-hover: true
     date-modified: last-modified
-    bibliography: [include/bib/packages.bib]
+    bibliography: [include/bib/packages.bib, include/bib/data-viz.bib]
     csl: include/bib/apa.csl
     html-math-method: mathjax
 

@@ -2,10 +2,8 @@
 title: ""
 ---
 
-<!-- Some cool image(s) -->
+![ChatGPT/Dall-E-3 model response to 'an image of "a picture paints a thousand words"' on 2024-09-19](include/img/dall-e-2024-09-19-picture-paints.png){width="50%"}
 
 ## Themes
 
-This course focuses on the psychology of data visualization or what makes a good, compelling, understandable data picture.
-
-
+If a picture's worth a thousand words [@Wikipedia-contributors2024-du], what exactly does it say? This course will focus on the psychology of data visualization—how to read, critique, and generate meaningful figures that inform but don’t mislead. We’ll take inspiration from recognized classic figures and unpack what makes them exemplary. We’ll critique figures that deliberately or inadvertently mislead or confuse. And we’ll learn how to build our own reproducible figures using Python, R, and JavaScript. No prior programming experience is required.
