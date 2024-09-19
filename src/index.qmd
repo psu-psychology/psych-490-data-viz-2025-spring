@@ -1,6 +1,6 @@
 ---
-title: "PSYCH 490.003"
-subtitle: "Spring 2025 • TTh 9:05a-10:20a"
+title: "Home"
+subtitle: "PSYCH 490.003 • Spring 2025 • TTh 9:05a-10:20a"
 ---
 
 {{< include _index.qmd >}}
