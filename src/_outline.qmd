@@ -1,0 +1,88 @@
+## About
+
+This document outlines the major components and themes of the class.
+
+
+## Types of figures
+
+### Relationships
+
+- Mapping data to visual properties
+
+### Conventional
+
+- Maps
+- Musical notation
+- Sports (e.g., football)
+- Iconic/artistic
+
+### Mathematical/Statistical
+
+- Histogram and its variants (violin, boxplot, etc.)
+- Scatterplots
+- Bar plots
+- Exploratory data analysis
+
+### Computer science/engineering
+
+- Database schemas entity/relationship
+- User journeys
+
+## Understanding figures
+
+### Perception
+### Cognition
+### Storytelling
+
+## Critiquing figures
+
+### Lying with statistics (alone)
+
+- Anscombe's Quartet
+- Datasaurus
+
+### Aesthetics vs. substance
+
+- Tufte chartjunk, infographics
+- Color choices?
+
+#### Substantive
+
+- Predictors vs. outcomes
+- Categorical/nominal vs. ordinal vs. continuous
+
+### How to communicate precisely
+
+### Communicating statistical properties
+
+- Trends
+- Variation
+- Model fits
+
+### How (not) to mislead
+
+>Methodology
+Where possible, changes over time and differences across groups are tested for statistical significance. Differences were assessed for statistical significance using statistical testing methods recommended by the individual data systems. Statistical significance is assessed at the 0.05 level without correction for multiple comparisons.
+>
+>To describe differences across groups, terms such as “similar” and “no difference” are used to indicate that the estimates being compared were not found to be significantly different, while terms such as “higher” or “lower” indicate that a significant difference was detected. Lack of comment regarding the difference between estimates does not necessarily mean that differences were tested and found not to be significant.
+>
+>To describe trends, terms such as “stable” and “no clear trend” are used to indicate that the slope of the segment was not statistically different from 0, while terms such as “increased” and “decreased” indicate that a significant slope was detected. Since the 2018 publication of the National Center for Health Statistics (NCHS) Guidelines for Analysis of Trends, the Health, United States infographics have adhered to these guidelines in order to analyze trends from NCHS complex sample surveys and the National Vital Statistics System.
+
+From <https://www.cdc.gov/nchs/hus/resources/infographics.htm>.
+
+- APA guidelines
+
+## Making figures
+
+### MS Excel
+
+### ggplot2
+
+### matplotib
+
+### JavaScript libraries
+
+#### d3
+
+- https://d3js.org
+- https://quarto.org/docs/interactive/ojs/

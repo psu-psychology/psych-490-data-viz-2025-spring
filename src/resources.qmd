@@ -6,14 +6,44 @@ This page captures some of the resources Rick Gilmore found in developing this c
 
 ## Web sites
 
+### [Data Visualization Society](https://www.datavisualizationsociety.org/)
+
+[Information is Beautiful Awards](https://www.informationisbeautifulawards.com/)
+
+### Friendly's Psychology 6135
+
 Psychology 6135: Psychology of Data Visualization, <http://euclid.psych.yorku.ca/www/psy6135/index.html>, by Michael Friendly at York University.
 
 Here is a more recent version: <https://friendly.github.io/6135/>
 
 Friendly might be a good guest.
 
+<https://nicolas.kruchten.com/semiology_of_graphics/>
+
+### Centers for Disease Control (CDC)
+
+Infographics examples from the CDC: <https://www.cdc.gov/nchs/hus/resources/infographics.htm>
+
+### The Economist
+
+<https://impact.economist.com/perspectives/search/infographic?f[0]=type%3Ainfographic&f[1]=>
+
+### Nature Publishing
+
+[Figure prep guidelines](https://www.nature.com/documents/natrev-figure-guidelines-v1.pdf)
+
+### American Psychological Association
+
+[Tables and Figures style guide](https://apastyle.apa.org/style-grammar-guidelines/tables-figures)
+
+### Our World In Data
+
+<https://ourworldindata.org/>
+
+### xkcd
+
+<https://xkcd.com/about/>
+
 ## Books
 
 ## Papers
-
-
