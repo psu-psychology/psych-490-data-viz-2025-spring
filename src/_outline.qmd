@@ -2,12 +2,28 @@
 
 This document outlines the major components and themes of the class.
 
+## Who visualizes data
+## Why visualize data
+### Explore/understand/analyze
+
+- Exploratory Data Analysis
+  - [Chapter 7: Exploratory Data Analysis](https://r4ds.had.co.nz/exploratory-data-analysis.html) from R for Data Science. The second edition, @Wickham2023-hc, has an accompanying website here: <https://r4ds.hadley.nz>. Chapter 10 contains the [EDA material](https://r4ds.hadley.nz/eda).
+
+### Explain/persuade
+
+## Types of data
+
+- Discrete/nominal
+- Ordinal
+- Continuous
+- Time
+- Space
 
 ## Types of figures
 
 ### Relationships
 
-- Mapping data to visual properties
+- Mapping information to visual properties
 
 ### Conventional
 
@@ -23,10 +39,13 @@ This document outlines the major components and themes of the class.
 - Bar plots
 - Exploratory data analysis
 
+### Networks
+
 ### Computer science/engineering
 
 - Database schemas entity/relationship
 - User journeys
+- Schematics
 
 ## Understanding figures
 
@@ -86,3 +105,8 @@ From <https://www.cdc.gov/nchs/hus/resources/infographics.htm>.
 
 - https://d3js.org
 - https://quarto.org/docs/interactive/ojs/
+
+
+### Interactive visualizations
+
+- [Plotly-R](https://plotly-r.com/) web book

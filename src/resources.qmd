@@ -46,4 +46,7 @@ Infographics examples from the CDC: <https://www.cdc.gov/nchs/hus/resources/info
 
 ## Books
 
+- Graphical Data Analysis with R, Antony Unwin, <http://www.gradaanwr.net>
+
+
 ## Papers
