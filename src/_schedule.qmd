@@ -2,23 +2,41 @@
 
 ### January 13-17 {- #week-01}
 
+*Surveying the landscape*
+
 #### Tuesday, January 14 {-}
+
+*Course introduction*
 
 #### Thursday, January 16 {-}
 
 ### January 20-24 {- #week-02}
 
+*Who visualizes data and why*
+
 #### Tuesday, January 21 {-}
+
+*Visualization in business, industry, & government*
 
 #### Thursday, January 23 {-}
 
+*Visualization in science*
+
 ### January 27-31 {- #week-03}
+
+*Understanding figures*
 
 #### Tuesday, January 28 {-}
 
+*Data types*
+
 #### Thursday, January 30 {-}
 
+*Figure types*
+
 ### February 3-7 {- #week-04}
+
+*From perception to cognition*
 
 #### Tuesday, February 04 {-}
 
@@ -26,11 +44,15 @@
 
 ### February 10-14 {- #week-05}
 
+*Storytelling with data*
+
 #### Tuesday, February 11 {-}
 
 #### Thursday, February 13 {-}
 
 ### February 17-21 {- #week-06}
+
+*Critiquing figures*
 
 #### Tuesday, February 18 {-}
 
@@ -38,13 +60,19 @@
 
 ### February 24-28 {- #week-07}
 
+*Introduction to R*
+
 #### Tuesday, February 25 {-}
 
 #### Thursday, February 27 {-}
 
 ### March 3-7 {- #week-08}
 
+*Exploring data with R*
+
 #### Tuesday, March 04 {-}
+
+*Gathering & cleaning data*
 
 #### Thursday, March 06 {-}
 
@@ -52,11 +80,15 @@
 
 ### March 17-21 {- #week-09}
 
+*Making plots with ggplot2*
+
 #### Tuesday, March 18 {-}
 
 #### Thursday, March 20 {-}
 
 ### March 24-28 {- #week-10}
+
+*Introduction to Python*
 
 #### Tuesday, March 25 {-}
 
@@ -64,11 +96,15 @@
 
 ### March 31 - April 4 {- #week-11}
 
+*Making plots with Python*
+
 #### Tuesday, April 01 {-}
 
 #### Thursday, April 03 {-}
 
 ### April 7-11 {- #week-12}
+
+*Making plots with JavaScript*
 
 #### Tuesday, April 08 {-}
 
@@ -76,17 +112,23 @@
 
 ### April 14-18 {- #week-13}
 
+*Making plots with spreadsheets*
+
 #### Tuesday, April 15 {-}
 
 #### Thursday, April 17 {-}
 
 ### April 21-25 {- #week-14}
 
+*Final Project Preparation*
+
 #### Tuesday, April 22 {-}
 
 #### Thursday, April 24 {-}
 
 ### April 28 - May 2 {- #week-15}
+
+*Student Projects*
 
 #### Tuesday, April 29 {-}
 
