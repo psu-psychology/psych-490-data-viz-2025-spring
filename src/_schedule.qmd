@@ -44,7 +44,7 @@
 
 ### February 10-14 {- #week-05}
 
-*Storytelling with data*
+*From cognition to understanding*
 
 #### Tuesday, February 11 {-}
 
@@ -52,7 +52,7 @@
 
 ### February 17-21 {- #week-06}
 
-*Critiquing figures*
+*Storytelling with data*
 
 #### Tuesday, February 18 {-}
 
@@ -60,7 +60,7 @@
 
 ### February 24-28 {- #week-07}
 
-*Introduction to R*
+*Critiquing figures*
 
 #### Tuesday, February 25 {-}
 
@@ -68,11 +68,11 @@
 
 ### March 3-7 {- #week-08}
 
-*Exploring data with R*
+*Exploring data with spreadsheets*
 
 #### Tuesday, March 04 {-}
 
-*Gathering & cleaning data*
+
 
 #### Thursday, March 06 {-}
 
@@ -80,23 +80,31 @@
 
 ### March 17-21 {- #week-09}
 
-*Making plots with ggplot2*
+*Introduction to R*
 
 #### Tuesday, March 18 {-}
 
+
+
 #### Thursday, March 20 {-}
+
+
 
 ### March 24-28 {- #week-10}
 
-*Introduction to Python*
+*Exploring data with R*
 
 #### Tuesday, March 25 {-}
 
+*Gathering & cleaning data*
+
 #### Thursday, March 27 {-}
+
+*Making plots with ggplot2*
 
 ### March 31 - April 4 {- #week-11}
 
-*Making plots with Python*
+*Introduction to Python*
 
 #### Tuesday, April 01 {-}
 
@@ -104,7 +112,7 @@
 
 ### April 7-11 {- #week-12}
 
-*Making plots with JavaScript*
+*Exploring data with Python*
 
 #### Tuesday, April 08 {-}
 
@@ -112,7 +120,8 @@
 
 ### April 14-18 {- #week-13}
 
-*Making plots with spreadsheets*
+*Making plots with JavaScript*
+
 
 #### Tuesday, April 15 {-}
 
