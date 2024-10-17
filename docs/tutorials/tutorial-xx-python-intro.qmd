@@ -1,0 +1,70 @@
+---
+title: "Python Basics"
+---
+
+## About
+
+This page provides a very basic introduction to Python and the `matplotlib` plotting library.
+
+## Plot demo
+
+The following is copied verbatim from the Quarto website:
+
+<https://quarto.org/docs/get-started/hello/vscode.html>
+
+For a demonstration of a line plot on a polar axis, see @fig-polar.
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+## Histograms
+
+From <https://matplotlib.org/stable/gallery/statistics/hist.html#sphx-glr-gallery-statistics-hist-py>
+
+Load components from `matplotlib`.
+
+```{python}
+from matplotlib import colors
+from matplotlib.ticker import PercentFormatter
+
+# Create a random number generator with a fixed seed for reproducibility
+rng = np.random.default_rng(19680801)
+```
+
+Generate data and render it.
+
+```{python}
+#| label: fig-dual-histograms
+#| fig-cap: "Two histograms with 100K points each."
+
+N_points = 100000
+n_bins = 20
+
+# Generate two normal distributions
+dist1 = rng.standard_normal(N_points)
+dist2 = 0.4 * rng.standard_normal(N_points) + 5
+
+fig, axs = plt.subplots(1, 2, sharey=True, tight_layout=True)
+
+# We can set the number of bins with the *bins* keyword argument.
+axs[0].hist(dist1, bins=n_bins)
+axs[1].hist(dist2, bins=n_bins)
+
+plt.show()
+```
+
