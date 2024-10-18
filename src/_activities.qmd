@@ -1,0 +1,26 @@
+# Activities
+
+## About
+
+This page describes some of the activities students might do.
+
+## Gathering data
+
+1. Find a dataset
+2. Download it
+3. Tidy it
+  - Pros and cons of different data schemes
+  - Data outlining
+4. Explore it
+5. Describe it
+6. What questions could be asked of it
+
+## Finding visualizations
+
+1. Find a data visualization
+2. Describe it
+  - What are the variables (& types)
+  - Purpose (describe or persuade)
+  - Audience
+3. Critique it
+4. Improve it

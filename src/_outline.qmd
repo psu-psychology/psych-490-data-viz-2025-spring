@@ -1,3 +1,5 @@
+# Outline
+
 ## About
 
 This document outlines the major components and themes of the class.
@@ -11,13 +13,31 @@ This document outlines the major components and themes of the class.
 
 ### Explain/persuade
 
-## Types of data
+## On data
+
+### Types of data
 
 - Discrete/nominal
+  - Yes/no
+  - Categorical
 - Ordinal
+  - Likert scales
+  - Rankings
+- Interval
+  - Time/date ranges
 - Continuous
-- Time
-- Space
+  - Time
+  - Space
+  - Quantity
+  
+### Thinking about data
+
+- Distributions
+  - Shape
+  - Central tendency
+  - Spread/outliers
+  - Missingness
+- Relationships
 
 ## Types of figures
 
@@ -91,6 +111,12 @@ From <https://www.cdc.gov/nchs/hus/resources/infographics.htm>.
 
 - APA guidelines
 
+## Gathering data
+
+### Finding data
+
+### Cleaning
+
 ## Making figures
 
 ### MS Excel
@@ -105,7 +131,6 @@ From <https://www.cdc.gov/nchs/hus/resources/infographics.htm>.
 
 - https://d3js.org
 - https://quarto.org/docs/interactive/ojs/
-
 
 ### Interactive visualizations
 

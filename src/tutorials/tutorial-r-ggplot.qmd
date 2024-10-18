@@ -1,0 +1,201 @@
+# Plotting with ggplot
+
+## About
+
+This page describes some ways to generate plots using the R package {ggplot2}.
+
+## Why R
+
+R is a programming language specialized for data analysis and visualization.
+
+## Background
+
+{ggplot2} (ggplot for short) is a package for making 2D plots in R.
+It implements a special "language" for making plots based on the grammar of graphics suggested by Cleveland CITE.
+
+In ggplot, we create a base plot, then add layers to it using a plus sign `+` operator. 
+
+## Set-up
+
+To check whether {ggplot2} is already installed, run the following chunk:
+
+```{r}
+# The require() function returns TRUE of ggplot2 is installed and FALSE if it is not.
+if(!require(ggplot2)) {
+  install.packages(ggplot2)
+}
+```
+
+## Plotting one variable
+
+### Discrete/nominal
+
+::: {.callout-warning}
+This page is under construction. Many components are missing.
+:::
+
+First, we make some data.
+
+```{r}
+data_random_discrete <- data.frame(category = 1:8,
+                                  val = c(4.8, 5.5, 3.5, 4.6, 6.5, 6.6, 2.6, 3.0))
+```
+
+#### Barplot
+
+If the variable we want to plot contains the *values* we care about plotting, then we use `geom_col`.
+A column plot is just a type of barplot.
+
+```{r}
+#| label: fig-barplot-ggplot2
+
+barplot_1 <- data_random_discrete |>
+  ggplot() +
+  aes(x = category, y = val) +
+  geom_col()
+```
+
+### Continuous
+
+First, let's generate some random data.
+
+```{r}
+# Set a seed for our 'random' number generator
+set.seed(19680801)
+n_values <- 100000
+
+data_random_norm <- data.frame(val = rnorm(n = n_values, mean = 0, sd = 1))
+```
+
+#### Histogram
+
+```{r}
+hist_1 <- data_random_norm |>
+  ggplot() +
+  aes(x = val) +
+  geom_histogram()
+```
+
+What the code is saying is this: Send `data_random_norm` to `ggplot`; make the plot and its various layers; then give the plot a name (`hist_1`) so we can use it later. 
+Like now, for instance:
+
+```{r}
+#| label: fig-histogram-ggplot2
+#| fig-cap: "A simple histogram"
+
+hist_1
+```
+
+To replicate the side-by-side histograms in @fig-dual-histograms-matplotlib, we do the following:
+
+Make two random data sets that differ slightly.
+
+```{r}
+x1 <- rnorm(n = n_values, mean = 0, sd = 1)
+data_random_norm_2 <- data.frame(side = c(rep('l', n_values), rep('r', n_values)),
+                            val = c(x1,
+                                    0.4 * x1 + 5))
+```
+
+Then plot the data.
+
+```{r}
+#| label: fig-dual-histograms-ggplot2
+#| fig-cap: "Side-by-side histograms of two random (normal) sets of data."
+
+hist_2 <- data_random_norm_2 |>
+  ggplot() +
+  aes(x = val) +
+  geom_histogram() +
+  facet_wrap(vars(side), ncol = 2)
+
+hist_2
+```
+
+#### Violin
+
+```{r}
+#| label: fig-dual-violin-plots-ggplot2
+#| fig-cap: "Side-by-side violin plots of two random (normal) sets of data."
+
+violin_2 <- data_random_norm_2 |>
+  ggplot() +
+  aes(x = side, y = val) +
+  geom_violin()
+
+violin_2
+```
+
+#### Boxplot
+
+```{r}
+#| label: fig-dual-boxplots-ggplot2
+#| fig-cap: "Side-by-side violin plots of two random (normal) sets of data."
+
+boxplot_2 <- data_random_norm_2 |>
+  ggplot() +
+  aes(x = side, y = val) +
+  geom_boxplot()
+
+boxplot_2
+```
+
+## Comparing distributions
+
+Let's see how these plots can help us see when the distributions *differ* by more than just magnitude or standard deviation.
+
+```{r}
+# Normal "bell"-shaped like before
+x_norm <- rnorm(n = n_values, mean = 0, sd = 1)
+
+# Uniform-shaped
+x_unif <- runif(n = n_values, min = -2.75, max = 2.75)
+
+data_random_2 <- data.frame(side = c(rep('norm', n_values), rep('unif', n_values)),
+                            val = c(x_norm, x_unif))
+```
+
+```{r}
+#| label: fig-dual-histograms-diff-ggplot2
+#| fig-cap: "Side-by-side histograms of two random sets of data with **different** distributions."
+
+hist_2_diff <- data_random_2 |>
+  ggplot() +
+  aes(x = val) +
+  geom_histogram() +
+  facet_wrap(vars(side), ncol = 2)
+
+hist_2_diff
+```
+
+```{r}
+#| label: fig-dual-violin-plots-diff-ggplot2
+#| fig-cap: "Side-by-side violin plots of two random sets of data with **different** distributions."
+
+violin_2_diff <- data_random_2 |>
+  ggplot() +
+  aes(x = side, y = val) +
+  geom_violin()
+
+violin_2_diff
+```
+
+```{r}
+#| label: fig-dual-boxplots-diff-ggplot2
+#| fig-cap: "Side-by-side box plots of two random sets of data with **different** distributions."
+
+boxplot_2_diff <- data_random_2 |>
+  ggplot() +
+  aes(x = side, y = val) +
+  geom_boxplot()
+
+boxplot_2_diff
+```
+
+## Plotting two variables
+
+::: {.callout-warning}
+This page is under construction. Many components are missing.
+:::
+
+### Scatterplot

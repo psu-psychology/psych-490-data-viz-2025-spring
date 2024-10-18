@@ -9,7 +9,9 @@ This page provides a very basic introduction to Python and the `matplotlib` plot
 ## Why Python?
 
 Python is an awesome language for data science and data visualization.
-It is more popular than R, and is widely used in scientific research and in industry.
+It is more popular than R, and it is widely used in scientific research and in industry.
+
+I find that it has a very readable syntax, meaning that it's relatively easy to see what well-written Python code is doing.
 
 ## Setup
 
@@ -41,7 +43,7 @@ rng = np.random.default_rng(19680801)
 Generate data and render it.
 
 ```{python}
-#| label: fig-dual-histograms
+#| label: fig-dual-histograms-matplotlib
 #| fig-cap: "Two histograms with 100K points each."
 
 N_points = 100000
@@ -239,3 +241,4 @@ ax.set_rticks([0.5, 1, 1.5, 2])
 ax.grid(True)
 plt.show()
 ```
+
