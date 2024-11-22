@@ -2,7 +2,7 @@
 
 ## About
 
-This page describes some ways to generate plots using the R package {ggplot2}.
+This section describes some ways to generate plots using the R package `ggplot2`.
 
 ## Why R
 
@@ -10,8 +10,9 @@ R is a programming language specialized for data analysis and visualization.
 
 ## Background
 
-{ggplot2} (ggplot for short) is a package for making 2D plots in R.
+'ggplot2' is a package^[A collection of special commands for doing specific things.] for making 2D plots in R.
 It implements a special "language" for making plots based on the grammar of graphics suggested by Cleveland CITE.
+That's where the 'gg' in the name comes from.
 
 In ggplot, we create a base plot, then add layers to it using a plus sign `+` operator. 
 
@@ -20,8 +21,8 @@ In ggplot, we create a base plot, then add layers to it using a plus sign `+` op
 To check whether {ggplot2} is already installed, run the following chunk:
 
 ```{r}
-# The require() function returns TRUE of ggplot2 is installed and FALSE if it is not.
-if(!require(ggplot2)) {
+# The require() function returns TRUE if ggplot2 is installed and FALSE if it is not. The exclamation point symbol ('!') turns FALSE into TRUE and TRUE into FALSE. So, `!require(ggplot2)` will be TRUE if require(ggplot2) is FALSE. When this occurs, the `install.packages(ggplot)` commands runs and installs ggplot2.
+if (!require(ggplot2)) {
   install.packages(ggplot2)
 }
 ```
@@ -30,15 +31,15 @@ if(!require(ggplot2)) {
 
 ### Discrete/nominal
 
-::: {.callout-warning}
-This page is under construction. Many components are missing.
-:::
-
 First, we make some data.
 
 ```{r}
-data_random_discrete <- data.frame(category = 1:8,
-                                  val = c(4.8, 5.5, 3.5, 4.6, 6.5, 6.6, 2.6, 3.0))
+data_random_discrete <- data.frame(category = c('ab', 'xy', 'mn', 
+                                                'qp', 'ea', 'f2',
+                                                'gg', 'h*'),
+                                   value = c(4.8, 5.5, 3.5, 
+                                           4.6, 6.5, 6.6, 
+                                           2.6, 3.0))
 ```
 
 #### Barplot
@@ -49,11 +50,20 @@ A column plot is just a type of barplot.
 ```{r}
 #| label: fig-barplot-ggplot2
 
-barplot_1 <- data_random_discrete |>
+data_random_discrete |>
   ggplot() +
-  aes(x = category, y = val) +
+  aes(x = category, y = value) +
   geom_col()
 ```
+
+Here, we have a *categorical* variable imaginatively named `category` and a *continuous* variable named `value`.
+
+::: {.callout-note}
+## Your turn
+1. What would we need to do to make the `category` variable *ordinal*? 
+2. Why do we think that `value` is *continuous*?
+:::
+
 
 ### Continuous
 
