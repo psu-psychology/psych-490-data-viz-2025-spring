@@ -1,6 +1,22 @@
----
-title: "Python Plotting Basics"
----
+# Plotting in Python
+
+::: {.callout-note}
+
+Figures don't seem to be cross-referenceing *across* documents.
+Let's see if they work *within* documents.
+
+Does the link to @fig-dual-histograms-matplotlib work?
+
+How about @fig-multiple-violin-plots?
+
+Apparently so.
+
+Okay, so do the ggplot2 figures work in this document?
+Specifically, does the reference to @fig-dual-boxplots-diff-ggplot2 work?
+
+No. So, the issue is cross-document figure references.
+:::
+
 
 ## About
 

@@ -3,6 +3,7 @@ project:
   render:
     - "./*.qmd"
     - "tutorials/*.qmd"
+    - "surveys/*.qmd"
   output-dir: "../docs"
 
 website:
@@ -14,8 +15,12 @@ website:
         text: Schedule
       - text: Tutorials
         menu:
-          - href: "tutorials/tutorial-python-matplotlib.qmd"
-          - href: "tutorials/tutorial-r-ggplot.qmd"
+          - href: "tutorials/plotting.qmd"
+            text: "Plotting"
+      - text: Surveys
+        menu: 
+          - href: "surveys/survey-01.qmd"
+            text: "Survey-01"
       - href: resources.qmd
   repo-url: https://github.com/psu-psychology/psych-490-data-viz-2025-spring
   repo-actions: [edit, issue]

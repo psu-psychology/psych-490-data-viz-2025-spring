@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.56">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>plotting – PSYCH 490 • Spr 2025</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../include/css/styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">PSYCH 490 • Spr 2025</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Tutorials</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
+        <li>
+    <a class="dropdown-item" href="../tutorials/plotting.html">
+ <span class="dropdown-text">Plotting</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-surveys" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Surveys</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-surveys">    
+        <li>
+    <a class="dropdown-item" href="../surveys/survey-01.html">
+ <span class="dropdown-text">Survey-01</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
+  <li><a href="#plotting-with-ggplot" id="toc-plotting-with-ggplot" class="nav-link" data-scroll-target="#plotting-with-ggplot"><span class="header-section-number">1</span> Plotting with ggplot</a>
+  <ul class="collapse">
+  <li><a href="#about-1" id="toc-about-1" class="nav-link" data-scroll-target="#about-1"><span class="header-section-number">1.1</span> About</a></li>
+  <li><a href="#why-r" id="toc-why-r" class="nav-link" data-scroll-target="#why-r"><span class="header-section-number">1.2</span> Why R</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background"><span class="header-section-number">1.3</span> Background</a></li>
+  <li><a href="#set-up" id="toc-set-up" class="nav-link" data-scroll-target="#set-up"><span class="header-section-number">1.4</span> Set-up</a></li>
+  <li><a href="#plotting-one-variable" id="toc-plotting-one-variable" class="nav-link" data-scroll-target="#plotting-one-variable"><span class="header-section-number">1.5</span> Plotting one variable</a>
+  <ul class="collapse">
+  <li><a href="#discretenominal" id="toc-discretenominal" class="nav-link" data-scroll-target="#discretenominal"><span class="header-section-number">1.5.1</span> Discrete/nominal</a></li>
+  <li><a href="#continuous" id="toc-continuous" class="nav-link" data-scroll-target="#continuous"><span class="header-section-number">1.5.2</span> Continuous</a></li>
+  </ul></li>
+  <li><a href="#comparing-distributions" id="toc-comparing-distributions" class="nav-link" data-scroll-target="#comparing-distributions"><span class="header-section-number">1.6</span> Comparing distributions</a></li>
+  <li><a href="#plotting-two-variables" id="toc-plotting-two-variables" class="nav-link" data-scroll-target="#plotting-two-variables"><span class="header-section-number">1.7</span> Plotting two variables</a>
+  <ul class="collapse">
+  <li><a href="#scatterplot" id="toc-scatterplot" class="nav-link" data-scroll-target="#scatterplot"><span class="header-section-number">1.7.1</span> Scatterplot</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#plotting-in-python" id="toc-plotting-in-python" class="nav-link" data-scroll-target="#plotting-in-python"><span class="header-section-number">2</span> Plotting in Python</a>
+  <ul class="collapse">
+  <li><a href="#about-2" id="toc-about-2" class="nav-link" data-scroll-target="#about-2"><span class="header-section-number">2.1</span> About</a></li>
+  <li><a href="#why-python" id="toc-why-python" class="nav-link" data-scroll-target="#why-python"><span class="header-section-number">2.2</span> Why Python?</a></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup"><span class="header-section-number">2.3</span> Setup</a></li>
+  <li><a href="#plotting-one-variable-1" id="toc-plotting-one-variable-1" class="nav-link" data-scroll-target="#plotting-one-variable-1"><span class="header-section-number">2.4</span> Plotting one variable</a>
+  <ul class="collapse">
+  <li><a href="#continuous-1" id="toc-continuous-1" class="nav-link" data-scroll-target="#continuous-1"><span class="header-section-number">2.4.1</span> Continuous</a></li>
+  <li><a href="#discretenominal-1" id="toc-discretenominal-1" class="nav-link" data-scroll-target="#discretenominal-1"><span class="header-section-number">2.4.2</span> Discrete/nominal</a></li>
+  </ul></li>
+  <li><a href="#plotting-two-variables-1" id="toc-plotting-two-variables-1" class="nav-link" data-scroll-target="#plotting-two-variables-1"><span class="header-section-number">2.5</span> Plotting two variables</a>
+  <ul class="collapse">
+  <li><a href="#scatter-plots" id="toc-scatter-plots" class="nav-link" data-scroll-target="#scatter-plots"><span class="header-section-number">2.5.1</span> Scatter plots</a></li>
+  </ul></li>
+  <li><a href="#other-kinds-of-plots" id="toc-other-kinds-of-plots" class="nav-link" data-scroll-target="#other-kinds-of-plots"><span class="header-section-number">2.6</span> Other kinds of plots</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/edit/main/src/tutorials/plotting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">November 22, 2024</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="about" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="about">About</h2>
+<p>This page provides some tutorial information about how to create simple plots using R’s <a href="https://ggplot2.tidyverse.org">ggplot2 package</a> and Python’s <a href="https://matplotlib.org">matplotlib</a> library.</p>
+</section>
+<section id="plotting-with-ggplot" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Plotting with ggplot</h1>
+<section id="about-1" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="about-1"><span class="header-section-number">1.1</span> About</h2>
+<p>This page describes some ways to generate plots using the R package {ggplot2}.</p>
+</section>
+<section id="why-r" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="why-r"><span class="header-section-number">1.2</span> Why R</h2>
+<p>R is a programming language specialized for data analysis and visualization.</p>
+</section>
+<section id="background" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="background"><span class="header-section-number">1.3</span> Background</h2>
+<p>{ggplot2} (ggplot for short) is a package for making 2D plots in R. It implements a special “language” for making plots based on the grammar of graphics suggested by Cleveland CITE.</p>
+<p>In ggplot, we create a base plot, then add layers to it using a plus sign <code>+</code> operator.</p>
+</section>
+<section id="set-up" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="set-up"><span class="header-section-number">1.4</span> Set-up</h2>
+<p>To check whether {ggplot2} is already installed, run the following chunk:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The require() function returns TRUE of ggplot2 is installed and FALSE if it is not.</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(ggplot2)) {</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">install.packages</span>(ggplot2)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: ggplot2</code></pre>
+</div>
+</div>
+</section>
+<section id="plotting-one-variable" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="plotting-one-variable"><span class="header-section-number">1.5</span> Plotting one variable</h2>
+<section id="discretenominal" class="level3" data-number="1.5.1">
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="discretenominal"><span class="header-section-number">1.5.1</span> Discrete/nominal</h3>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This page is under construction. Many components are missing.</p>
+</div>
+</div>
+<p>First, we make some data.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data_random_discrete <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">category =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>,</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">val =</span> <span class="fu">c</span>(<span class="fl">4.8</span>, <span class="fl">5.5</span>, <span class="fl">3.5</span>, <span class="fl">4.6</span>, <span class="fl">6.5</span>, <span class="fl">6.6</span>, <span class="fl">2.6</span>, <span class="fl">3.0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="barplot" class="level4" data-number="1.5.1.1">
+<h4 data-number="1.5.1.1" class="anchored" data-anchor-id="barplot"><span class="header-section-number">1.5.1.1</span> Barplot</h4>
+<p>If the variable we want to plot contains the <em>values</em> we care about plotting, then we use <code>geom_col</code>. A column plot is just a type of barplot.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>barplot_1 <span class="ot">&lt;-</span> data_random_discrete <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> category, <span class="at">y =</span> val) <span class="sc">+</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="continuous" class="level3" data-number="1.5.2">
+<h3 data-number="1.5.2" class="anchored" data-anchor-id="continuous"><span class="header-section-number">1.5.2</span> Continuous</h3>
+<p>First, let’s generate some random data.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set a seed for our 'random' number generator</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">19680801</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>n_values <span class="ot">&lt;-</span> <span class="dv">100000</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>data_random_norm <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">val =</span> <span class="fu">rnorm</span>(<span class="at">n =</span> n_values, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="histogram" class="level4" data-number="1.5.2.1">
+<h4 data-number="1.5.2.1" class="anchored" data-anchor-id="histogram"><span class="header-section-number">1.5.2.1</span> Histogram</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>hist_1 <span class="ot">&lt;-</span> data_random_norm <span class="sc">|&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> val) <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>What the code is saying is this: Send <code>data_random_norm</code> to <code>ggplot</code>; make the plot and its various layers; then give the plot a name (<code>hist_1</code>) so we can use it later. Like now, for instance:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>hist_1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="fig-histogram-ggplot2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-histogram-ggplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../include/fig/fig-histogram-ggplot2-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-histogram-ggplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: A simple histogram
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>To replicate the side-by-side histograms in <a href="#fig-dual-histograms-matplotlib" class="quarto-xref">Figure&nbsp;8</a>, we do the following:</p>
+<p>Make two random data sets that differ slightly.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>x1 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="at">n =</span> n_values, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>data_random_norm_2 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">side =</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">'l'</span>, n_values), <span class="fu">rep</span>(<span class="st">'r'</span>, n_values)),</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>                            <span class="at">val =</span> <span class="fu">c</span>(x1,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>                                    <span class="fl">0.4</span> <span class="sc">*</span> x1 <span class="sc">+</span> <span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Then plot the data.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>hist_2 <span class="ot">&lt;-</span> data_random_norm_2 <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> val) <span class="sc">+</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(side), <span class="at">ncol =</span> <span class="dv">2</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>hist_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="fig-dual-histograms-ggplot2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dual-histograms-ggplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../include/fig/fig-dual-histograms-ggplot2-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dual-histograms-ggplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Side-by-side histograms of two random (normal) sets of data.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="violin" class="level4" data-number="1.5.2.2">
+<h4 data-number="1.5.2.2" class="anchored" data-anchor-id="violin"><span class="header-section-number">1.5.2.2</span> Violin</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>violin_2 <span class="ot">&lt;-</span> data_random_norm_2 <span class="sc">|&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> side, <span class="at">y =</span> val) <span class="sc">+</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>()</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>violin_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-dual-violin-plots-ggplot2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dual-violin-plots-ggplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../include/fig/fig-dual-violin-plots-ggplot2-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dual-violin-plots-ggplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Side-by-side violin plots of two random (normal) sets of data.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="boxplot" class="level4" data-number="1.5.2.3">
+<h4 data-number="1.5.2.3" class="anchored" data-anchor-id="boxplot"><span class="header-section-number">1.5.2.3</span> Boxplot</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>boxplot_2 <span class="ot">&lt;-</span> data_random_norm_2 <span class="sc">|&gt;</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> side, <span class="at">y =</span> val) <span class="sc">+</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>boxplot_2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-dual-boxplots-ggplot2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dual-boxplots-ggplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../include/fig/fig-dual-boxplots-ggplot2-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dual-boxplots-ggplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Side-by-side violin plots of two random (normal) sets of data.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="comparing-distributions" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="comparing-distributions"><span class="header-section-number">1.6</span> Comparing distributions</h2>
+<p>Let’s see how these plots can help us see when the distributions <em>differ</em> by more than just magnitude or standard deviation.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Normal "bell"-shaped like before</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>x_norm <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="at">n =</span> n_values, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Uniform-shaped</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>x_unif <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="at">n =</span> n_values, <span class="at">min =</span> <span class="sc">-</span><span class="fl">2.75</span>, <span class="at">max =</span> <span class="fl">2.75</span>)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>data_random_2 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">side =</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">'norm'</span>, n_values), <span class="fu">rep</span>(<span class="st">'unif'</span>, n_values)),</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>                            <span class="at">val =</span> <span class="fu">c</span>(x_norm, x_unif))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>hist_2_diff <span class="ot">&lt;-</span> data_random_2 <span class="sc">|&gt;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> val) <span class="sc">+</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(side), <span class="at">ncol =</span> <span class="dv">2</span>)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>hist_2_diff</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="fig-dual-histograms-diff-ggplot2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dual-histograms-diff-ggplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../include/fig/fig-dual-histograms-diff-ggplot2-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dual-histograms-diff-ggplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Side-by-side histograms of two random sets of data with <strong>different</strong> distributions.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>violin_2_diff <span class="ot">&lt;-</span> data_random_2 <span class="sc">|&gt;</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> side, <span class="at">y =</span> val) <span class="sc">+</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>()</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>violin_2_diff</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-dual-violin-plots-diff-ggplot2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dual-violin-plots-diff-ggplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../include/fig/fig-dual-violin-plots-diff-ggplot2-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dual-violin-plots-diff-ggplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Side-by-side violin plots of two random sets of data with <strong>different</strong> distributions.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>boxplot_2_diff <span class="ot">&lt;-</span> data_random_2 <span class="sc">|&gt;</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> side, <span class="at">y =</span> val) <span class="sc">+</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>boxplot_2_diff</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-dual-boxplots-diff-ggplot2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dual-boxplots-diff-ggplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../include/fig/fig-dual-boxplots-diff-ggplot2-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dual-boxplots-diff-ggplot2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Side-by-side box plots of two random sets of data with <strong>different</strong> distributions.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="plotting-two-variables" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="plotting-two-variables"><span class="header-section-number">1.7</span> Plotting two variables</h2>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This page is under construction. Many components are missing.</p>
+</div>
+</div>
+<section id="scatterplot" class="level3" data-number="1.7.1">
+<h3 data-number="1.7.1" class="anchored" data-anchor-id="scatterplot"><span class="header-section-number">1.7.1</span> Scatterplot</h3>
+</section>
+</section>
+</section>
+<section id="plotting-in-python" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Plotting in Python</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Figures don’t seem to be cross-referenceing <em>across</em> documents. Let’s see if they work <em>within</em> documents.</p>
+<p>Does the link to <a href="#fig-dual-histograms-matplotlib" class="quarto-xref">Figure&nbsp;8</a> work?</p>
+<p>How about <a href="#fig-multiple-violin-plots" class="quarto-xref">Figure&nbsp;9</a>?</p>
+<p>Apparently so.</p>
+<p>Okay, so do the ggplot2 figures work in this document? Specifically, does the reference to <a href="#fig-dual-boxplots-diff-ggplot2" class="quarto-xref">Figure&nbsp;7</a> work?</p>
+<p>No.&nbsp;So, the issue is cross-document figure references.</p>
+</div>
+</div>
+<section id="about-2" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="about-2"><span class="header-section-number">2.1</span> About</h2>
+<p>This page provides a very basic introduction to Python and the <code>matplotlib</code> plotting library.</p>
+</section>
+<section id="why-python" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="why-python"><span class="header-section-number">2.2</span> Why Python?</h2>
+<p>Python is an awesome language for data science and data visualization. It is more popular than R, and it is widely used in scientific research and in industry.</p>
+<p>I find that it has a very readable syntax, meaning that it’s relatively easy to see what well-written Python code is doing.</p>
+</section>
+<section id="setup" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="setup"><span class="header-section-number">2.3</span> Setup</h2>
+<p>We start by importing the <code>numpy</code> and <code>pyplot</code> libraries and giving them convenient short names for future reference.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="plotting-one-variable-1" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="plotting-one-variable-1"><span class="header-section-number">2.4</span> Plotting one variable</h2>
+<section id="continuous-1" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="continuous-1"><span class="header-section-number">2.4.1</span> Continuous</h3>
+<section id="histograms" class="level4" data-number="2.4.1.1">
+<h4 data-number="2.4.1.1" class="anchored" data-anchor-id="histograms"><span class="header-section-number">2.4.1.1</span> Histograms</h4>
+<p>From <a href="https://matplotlib.org/stable/gallery/statistics/hist.html#sphx-glr-gallery-statistics-hist-py" class="uri">https://matplotlib.org/stable/gallery/statistics/hist.html#sphx-glr-gallery-statistics-hist-py</a></p>
+<p>Load components from <code>matplotlib</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> colors</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.ticker <span class="im">import</span> PercentFormatter</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a random number generator with a fixed seed for reproducibility</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>rng <span class="op">=</span> np.random.default_rng(<span class="dv">19680801</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Generate data and render it.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>N_points <span class="op">=</span> <span class="dv">100000</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>n_bins <span class="op">=</span> <span class="dv">20</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate two normal distributions</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>dist1 <span class="op">=</span> rng.standard_normal(N_points)</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>dist2 <span class="op">=</span> <span class="fl">0.4</span> <span class="op">*</span> rng.standard_normal(N_points) <span class="op">+</span> <span class="dv">5</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>fig, axs <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, sharey<span class="op">=</span><span class="va">True</span>, tight_layout<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="co"># We can set the number of bins with the *bins* keyword argument.</span></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>].hist(dist1, bins<span class="op">=</span>n_bins)</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>].hist(dist2, bins<span class="op">=</span>n_bins)</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-dual-histograms-matplotlib" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dual-histograms-matplotlib-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../include/fig/fig-dual-histograms-matplotlib-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dual-histograms-matplotlib-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Two histograms with 100K points each.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="violin-1" class="level4" data-number="2.4.1.2">
+<h4 data-number="2.4.1.2" class="anchored" data-anchor-id="violin-1"><span class="header-section-number">2.4.1.2</span> Violin</h4>
+<p>Violin plots are another way to depict the distribution of a single continuous variable.</p>
+<p>The following code is copied verbatim from the following site:</p>
+<p><a href="https://matplotlib.org/stable/gallery/statistics/violinplot.html" class="uri">https://matplotlib.org/stable/gallery/statistics/violinplot.html</a></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># fake data</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>fs <span class="op">=</span> <span class="dv">10</span>  <span class="co"># fontsize</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>pos <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">8</span>]</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [np.random.normal(<span class="dv">0</span>, std, size<span class="op">=</span><span class="dv">100</span>) <span class="cf">for</span> std <span class="kw">in</span> pos]</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a plot with 2 rows and 6 columns</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>fig, axs <span class="op">=</span> plt.subplots(nrows<span class="op">=</span><span class="dv">2</span>, ncols<span class="op">=</span><span class="dv">6</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">4</span>))</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">0</span>].violinplot(data, pos, points<span class="op">=</span><span class="dv">20</span>, widths<span class="op">=</span><span class="fl">0.3</span>,</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>                     showmeans<span class="op">=</span><span class="va">True</span>, showextrema<span class="op">=</span><span class="va">True</span>, showmedians<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12a4d5160&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12affe490&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12affe710&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12affe990&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12affead0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12affec10&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12a4d5550&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12affed50&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12affee90&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12affefd0&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12afff110&gt;}</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">0</span>].set_title(<span class="st">'Custom violin 1'</span>, fontsize<span class="op">=</span>fs)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">1</span>].violinplot(data, pos, points<span class="op">=</span><span class="dv">40</span>, widths<span class="op">=</span><span class="fl">0.5</span>,</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>                     showmeans<span class="op">=</span><span class="va">True</span>, showextrema<span class="op">=</span><span class="va">True</span>, showmedians<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>                     bw_method<span class="op">=</span><span class="st">'silverman'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12afff250&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12afff390&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12afff4d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12afff610&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12afff750&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12afff890&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12afff9d0&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12afffb10&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12afffc50&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12afffd90&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12afffed0&gt;}</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">1</span>].set_title(<span class="st">'Custom violin 2'</span>, fontsize<span class="op">=</span>fs)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">2</span>].violinplot(data, pos, points<span class="op">=</span><span class="dv">60</span>, widths<span class="op">=</span><span class="fl">0.7</span>, showmeans<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>                     showextrema<span class="op">=</span><span class="va">True</span>, showmedians<span class="op">=</span><span class="va">True</span>, bw_method<span class="op">=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b084050&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b084190&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b0842d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b084410&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b084550&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b084690&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b0847d0&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b084910&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b084a50&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b084b90&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b084cd0&gt;}</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">2</span>].set_title(<span class="st">'Custom violin 3'</span>, fontsize<span class="op">=</span>fs)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">3</span>].violinplot(data, pos, points<span class="op">=</span><span class="dv">60</span>, widths<span class="op">=</span><span class="fl">0.7</span>, showmeans<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>                     showextrema<span class="op">=</span><span class="va">True</span>, showmedians<span class="op">=</span><span class="va">True</span>, bw_method<span class="op">=</span><span class="fl">0.5</span>,</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>                     quantiles<span class="op">=</span>[[<span class="fl">0.1</span>], [], [], [<span class="fl">0.175</span>, <span class="fl">0.954</span>], [<span class="fl">0.75</span>], [<span class="fl">0.25</span>]])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b084e10&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b084f50&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b085090&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b0851d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b085310&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b085450&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b085590&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b0856d0&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b085810&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b085950&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b085a90&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b085bd0&gt;}</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">3</span>].set_title(<span class="st">'Custom violin 4'</span>, fontsize<span class="op">=</span>fs)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">4</span>].violinplot(data[<span class="op">-</span><span class="dv">1</span>:], pos[<span class="op">-</span><span class="dv">1</span>:], points<span class="op">=</span><span class="dv">60</span>, widths<span class="op">=</span><span class="fl">0.7</span>,</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>                     showmeans<span class="op">=</span><span class="va">True</span>, showextrema<span class="op">=</span><span class="va">True</span>, showmedians<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>                     quantiles<span class="op">=</span>[<span class="fl">0.05</span>, <span class="fl">0.1</span>, <span class="fl">0.8</span>, <span class="fl">0.9</span>], bw_method<span class="op">=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b085d10&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b085e50&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b085f90&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b0860d0&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b086210&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b086350&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b086490&gt;}</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">4</span>].set_title(<span class="st">'Custom violin 5'</span>, fontsize<span class="op">=</span>fs)</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">5</span>].violinplot(data[<span class="op">-</span><span class="dv">1</span>:], pos[<span class="op">-</span><span class="dv">1</span>:], points<span class="op">=</span><span class="dv">60</span>, widths<span class="op">=</span><span class="fl">0.7</span>,</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>                     showmeans<span class="op">=</span><span class="va">True</span>, showextrema<span class="op">=</span><span class="va">True</span>, showmedians<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>                     quantiles<span class="op">=</span>[<span class="fl">0.05</span>, <span class="fl">0.1</span>, <span class="fl">0.8</span>, <span class="fl">0.9</span>], bw_method<span class="op">=</span><span class="fl">0.5</span>, side<span class="op">=</span><span class="st">'low'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b0865d0&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b086710&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b086850&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b086990&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b086ad0&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b086c10&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b086d50&gt;}</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">5</span>].violinplot(data[<span class="op">-</span><span class="dv">1</span>:], pos[<span class="op">-</span><span class="dv">1</span>:], points<span class="op">=</span><span class="dv">60</span>, widths<span class="op">=</span><span class="fl">0.7</span>,</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>                     showmeans<span class="op">=</span><span class="va">True</span>, showextrema<span class="op">=</span><span class="va">True</span>, showmedians<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>                     quantiles<span class="op">=</span>[<span class="fl">0.05</span>, <span class="fl">0.1</span>, <span class="fl">0.8</span>, <span class="fl">0.9</span>], bw_method<span class="op">=</span><span class="fl">0.5</span>, side<span class="op">=</span><span class="st">'high'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b086e90&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b086fd0&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b087110&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b087250&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b087390&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b0874d0&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b087610&gt;}</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">0</span>, <span class="dv">5</span>].set_title(<span class="st">'Custom violin 6'</span>, fontsize<span class="op">=</span>fs)</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">0</span>].violinplot(data, pos, points<span class="op">=</span><span class="dv">80</span>, vert<span class="op">=</span><span class="va">False</span>, widths<span class="op">=</span><span class="fl">0.7</span>,</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>                     showmeans<span class="op">=</span><span class="va">True</span>, showextrema<span class="op">=</span><span class="va">True</span>, showmedians<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b087750&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b087890&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b0879d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b087b10&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b087c50&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b087d90&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b087ed0&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b140050&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b140190&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b1402d0&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b140410&gt;}</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">0</span>].set_title(<span class="st">'Custom violin 7'</span>, fontsize<span class="op">=</span>fs)</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">1</span>].violinplot(data, pos, points<span class="op">=</span><span class="dv">100</span>, vert<span class="op">=</span><span class="va">False</span>, widths<span class="op">=</span><span class="fl">0.9</span>,</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>                     showmeans<span class="op">=</span><span class="va">True</span>, showextrema<span class="op">=</span><span class="va">True</span>, showmedians<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>                     bw_method<span class="op">=</span><span class="st">'silverman'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b140550&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b140690&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b1407d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b140910&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b140a50&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b140b90&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b140cd0&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b140e10&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b140f50&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b141090&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b1411d0&gt;}</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">1</span>].set_title(<span class="st">'Custom violin 8'</span>, fontsize<span class="op">=</span>fs)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">2</span>].violinplot(data, pos, points<span class="op">=</span><span class="dv">200</span>, vert<span class="op">=</span><span class="va">False</span>, widths<span class="op">=</span><span class="fl">1.1</span>,</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>                     showmeans<span class="op">=</span><span class="va">True</span>, showextrema<span class="op">=</span><span class="va">True</span>, showmedians<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>                     bw_method<span class="op">=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b141310&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b141450&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b141590&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b1416d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b141810&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b141950&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b141a90&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b141bd0&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b141d10&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b141e50&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b141f90&gt;}</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">2</span>].set_title(<span class="st">'Custom violin 9'</span>, fontsize<span class="op">=</span>fs)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">3</span>].violinplot(data, pos, points<span class="op">=</span><span class="dv">200</span>, vert<span class="op">=</span><span class="va">False</span>, widths<span class="op">=</span><span class="fl">1.1</span>,</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>                     showmeans<span class="op">=</span><span class="va">True</span>, showextrema<span class="op">=</span><span class="va">True</span>, showmedians<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>                     quantiles<span class="op">=</span>[[<span class="fl">0.1</span>], [], [], [<span class="fl">0.175</span>, <span class="fl">0.954</span>], [<span class="fl">0.75</span>], [<span class="fl">0.25</span>]],</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>                     bw_method<span class="op">=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b1420d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b142210&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b142350&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b142490&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b1425d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b142710&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b142850&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b142990&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b142ad0&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b142c10&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b142d50&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b142e90&gt;}</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">3</span>].set_title(<span class="st">'Custom violin 10'</span>, fontsize<span class="op">=</span>fs)</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">4</span>].violinplot(data[<span class="op">-</span><span class="dv">1</span>:], pos[<span class="op">-</span><span class="dv">1</span>:], points<span class="op">=</span><span class="dv">200</span>, vert<span class="op">=</span><span class="va">False</span>, widths<span class="op">=</span><span class="fl">1.1</span>,</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>                     showmeans<span class="op">=</span><span class="va">True</span>, showextrema<span class="op">=</span><span class="va">True</span>, showmedians<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>                     quantiles<span class="op">=</span>[<span class="fl">0.05</span>, <span class="fl">0.1</span>, <span class="fl">0.8</span>, <span class="fl">0.9</span>], bw_method<span class="op">=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b142fd0&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b143110&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b143250&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b143390&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b1434d0&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b143610&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b143750&gt;}</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">4</span>].set_title(<span class="st">'Custom violin 11'</span>, fontsize<span class="op">=</span>fs)</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">5</span>].violinplot(data[<span class="op">-</span><span class="dv">1</span>:], pos[<span class="op">-</span><span class="dv">1</span>:], points<span class="op">=</span><span class="dv">200</span>, vert<span class="op">=</span><span class="va">False</span>, widths<span class="op">=</span><span class="fl">1.1</span>,</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>                     showmeans<span class="op">=</span><span class="va">True</span>, showextrema<span class="op">=</span><span class="va">True</span>, showmedians<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>                     quantiles<span class="op">=</span>[<span class="fl">0.05</span>, <span class="fl">0.1</span>, <span class="fl">0.8</span>, <span class="fl">0.9</span>], bw_method<span class="op">=</span><span class="fl">0.5</span>, side<span class="op">=</span><span class="st">'low'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b143890&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b1439d0&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b143b10&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b143c50&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b143d90&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b143ed0&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b218050&gt;}</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">5</span>].violinplot(data[<span class="op">-</span><span class="dv">1</span>:], pos[<span class="op">-</span><span class="dv">1</span>:], points<span class="op">=</span><span class="dv">200</span>, vert<span class="op">=</span><span class="va">False</span>, widths<span class="op">=</span><span class="fl">1.1</span>,</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>                     showmeans<span class="op">=</span><span class="va">True</span>, showextrema<span class="op">=</span><span class="va">True</span>, showmedians<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>                     quantiles<span class="op">=</span>[<span class="fl">0.05</span>, <span class="fl">0.1</span>, <span class="fl">0.8</span>, <span class="fl">0.9</span>], bw_method<span class="op">=</span><span class="fl">0.5</span>, side<span class="op">=</span><span class="st">'high'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b218190&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b2182d0&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b218410&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b218550&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b218690&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b2187d0&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b218910&gt;}</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>axs[<span class="dv">1</span>, <span class="dv">5</span>].set_title(<span class="st">'Custom violin 12'</span>, fontsize<span class="op">=</span>fs)</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> ax <span class="kw">in</span> axs.flat:</span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>    ax.set_yticklabels([])</span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">"Violin Plotting Examples"</span>)</span>
+<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a>fig.subplots_adjust(hspace<span class="op">=</span><span class="fl">0.4</span>)</span>
+<span id="cb50-9"><a href="#cb50-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-multiple-violin-plots" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-multiple-violin-plots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../include/fig/fig-multiple-violin-plots-3.png" class="img-fluid figure-img" width="960">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-multiple-violin-plots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Multiple violin plots with different parameters.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="boxplot-1" class="level4" data-number="2.4.1.3">
+<h4 data-number="2.4.1.3" class="anchored" data-anchor-id="boxplot-1"><span class="header-section-number">2.4.1.3</span> Boxplot</h4>
+<p>From <a href="https://matplotlib.org/stable/plot_types/stats/boxplot_plot.html#sphx-glr-plot-types-stats-boxplot-plot-py" class="uri">https://matplotlib.org/stable/plot_types/stats/boxplot_plot.html#sphx-glr-plot-types-stats-boxplot-plot-py</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'_mpl-gallery'</span>)</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="co"># make data:</span></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">10</span>)</span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>D <span class="op">=</span> np.random.normal((<span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">4</span>), (<span class="fl">1.25</span>, <span class="fl">1.00</span>, <span class="fl">1.25</span>), (<span class="dv">100</span>, <span class="dv">3</span>))</span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-7"><a href="#cb51-7" aria-hidden="true" tabindex="-1"></a><span class="co"># plot</span></span>
+<span id="cb51-8"><a href="#cb51-8" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb51-9"><a href="#cb51-9" aria-hidden="true" tabindex="-1"></a>VP <span class="op">=</span> ax.boxplot(D, positions<span class="op">=</span>[<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>], widths<span class="op">=</span><span class="fl">1.5</span>, patch_artist<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb51-10"><a href="#cb51-10" aria-hidden="true" tabindex="-1"></a>                showmeans<span class="op">=</span><span class="va">False</span>, showfliers<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb51-11"><a href="#cb51-11" aria-hidden="true" tabindex="-1"></a>                medianprops<span class="op">=</span>{<span class="st">"color"</span>: <span class="st">"white"</span>, <span class="st">"linewidth"</span>: <span class="fl">0.5</span>},</span>
+<span id="cb51-12"><a href="#cb51-12" aria-hidden="true" tabindex="-1"></a>                boxprops<span class="op">=</span>{<span class="st">"facecolor"</span>: <span class="st">"C0"</span>, <span class="st">"edgecolor"</span>: <span class="st">"white"</span>,</span>
+<span id="cb51-13"><a href="#cb51-13" aria-hidden="true" tabindex="-1"></a>                          <span class="st">"linewidth"</span>: <span class="fl">0.5</span>},</span>
+<span id="cb51-14"><a href="#cb51-14" aria-hidden="true" tabindex="-1"></a>                whiskerprops<span class="op">=</span>{<span class="st">"color"</span>: <span class="st">"C0"</span>, <span class="st">"linewidth"</span>: <span class="fl">1.5</span>},</span>
+<span id="cb51-15"><a href="#cb51-15" aria-hidden="true" tabindex="-1"></a>                capprops<span class="op">=</span>{<span class="st">"color"</span>: <span class="st">"C0"</span>, <span class="st">"linewidth"</span>: <span class="fl">1.5</span>})</span>
+<span id="cb51-16"><a href="#cb51-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-17"><a href="#cb51-17" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(xlim<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">8</span>), xticks<span class="op">=</span>np.arange(<span class="dv">1</span>, <span class="dv">8</span>),</span>
+<span id="cb51-18"><a href="#cb51-18" aria-hidden="true" tabindex="-1"></a>       ylim<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">8</span>), yticks<span class="op">=</span>np.arange(<span class="dv">1</span>, <span class="dv">8</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[(0.0, 8.0), [&lt;matplotlib.axis.XTick object at 0x12b35bd90&gt;, &lt;matplotlib.axis.XTick object at 0x12b35b610&gt;, &lt;matplotlib.axis.XTick object at 0x12b3cc050&gt;, &lt;matplotlib.axis.XTick object at 0x12b3cc7d0&gt;, &lt;matplotlib.axis.XTick object at 0x12b3ccf50&gt;, &lt;matplotlib.axis.XTick object at 0x12b3cd6d0&gt;, &lt;matplotlib.axis.XTick object at 0x12b3cde50&gt;], (0.0, 8.0), [&lt;matplotlib.axis.YTick object at 0x12b388cd0&gt;, &lt;matplotlib.axis.YTick object at 0x12b388550&gt;, &lt;matplotlib.axis.YTick object at 0x12b3ce710&gt;, &lt;matplotlib.axis.YTick object at 0x12b3cee90&gt;, &lt;matplotlib.axis.YTick object at 0x12b3cf610&gt;, &lt;matplotlib.axis.YTick object at 0x12b3cfd90&gt;, &lt;matplotlib.axis.YTick object at 0x12b3ec550&gt;]]</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-boxplot-example" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-boxplot-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../include/fig/fig-boxplot-example-5.png" class="img-fluid figure-img" width="192">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boxplot-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10: Example of several boxplots with whiskers.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="discretenominal-1" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="discretenominal-1"><span class="header-section-number">2.4.2</span> Discrete/nominal</h3>
+<section id="bar-chart" class="level4" data-number="2.4.2.1">
+<h4 data-number="2.4.2.1" class="anchored" data-anchor-id="bar-chart"><span class="header-section-number">2.4.2.1</span> Bar chart</h4>
+<p>Source: <a href="https://matplotlib.org/stable/plot_types/basic/bar.html#sphx-glr-plot-types-basic-bar-py" class="uri">https://matplotlib.org/stable/plot_types/basic/bar.html#sphx-glr-plot-types-basic-bar-py</a></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'_mpl-gallery'</span>)</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a><span class="co"># make data:</span></span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="fl">0.5</span> <span class="op">+</span> np.arange(<span class="dv">8</span>)</span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> [<span class="fl">4.8</span>, <span class="fl">5.5</span>, <span class="fl">3.5</span>, <span class="fl">4.6</span>, <span class="fl">6.5</span>, <span class="fl">6.6</span>, <span class="fl">2.6</span>, <span class="fl">3.0</span>]</span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a><span class="co"># plot</span></span>
+<span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb54-9"><a href="#cb54-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-10"><a href="#cb54-10" aria-hidden="true" tabindex="-1"></a>ax.bar(x, y, width<span class="op">=</span><span class="dv">1</span>, edgecolor<span class="op">=</span><span class="st">"white"</span>, linewidth<span class="op">=</span><span class="fl">0.7</span>)</span>
+<span id="cb54-11"><a href="#cb54-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-12"><a href="#cb54-12" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(xlim<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">8</span>), xticks<span class="op">=</span>np.arange(<span class="dv">1</span>, <span class="dv">8</span>),</span>
+<span id="cb54-13"><a href="#cb54-13" aria-hidden="true" tabindex="-1"></a>       ylim<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">8</span>), yticks<span class="op">=</span>np.arange(<span class="dv">1</span>, <span class="dv">8</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[(0.0, 8.0), [&lt;matplotlib.axis.XTick object at 0x12b3ee490&gt;, &lt;matplotlib.axis.XTick object at 0x12b3edd10&gt;, &lt;matplotlib.axis.XTick object at 0x12b429a90&gt;, &lt;matplotlib.axis.XTick object at 0x12b42a210&gt;, &lt;matplotlib.axis.XTick object at 0x12b42a990&gt;, &lt;matplotlib.axis.XTick object at 0x12b42b110&gt;, &lt;matplotlib.axis.XTick object at 0x12b42b890&gt;], (0.0, 8.0), [&lt;matplotlib.axis.YTick object at 0x12b3ef390&gt;, &lt;matplotlib.axis.YTick object at 0x12b3eec10&gt;, &lt;matplotlib.axis.YTick object at 0x12b45c050&gt;, &lt;matplotlib.axis.YTick object at 0x12b45c7d0&gt;, &lt;matplotlib.axis.YTick object at 0x12b45cf50&gt;, &lt;matplotlib.axis.YTick object at 0x12b45d6d0&gt;, &lt;matplotlib.axis.YTick object at 0x12b45de50&gt;]]</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-bar-plot-example" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bar-plot-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../include/fig/fig-bar-plot-example-7.png" class="img-fluid figure-img" width="192">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bar-plot-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11: Example of a bar plot.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="plotting-two-variables-1" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="plotting-two-variables-1"><span class="header-section-number">2.5</span> Plotting two variables</h2>
+<section id="scatter-plots" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="scatter-plots"><span class="header-section-number">2.5.1</span> Scatter plots</h3>
+</section>
+</section>
+<section id="other-kinds-of-plots" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="other-kinds-of-plots"><span class="header-section-number">2.6</span> Other kinds of plots</h2>
+<p>The following is copied verbatim from the Quarto website:</p>
+<p><a href="https://quarto.org/docs/get-started/hello/vscode.html" class="uri">https://quarto.org/docs/get-started/hello/vscode.html</a></p>
+<p>For a demonstration of a line plot on a polar axis, see <a href="#fig-polar" class="quarto-xref">Figure&nbsp;12</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>} </span>
+<span id="cb57-5"><a href="#cb57-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb57-6"><a href="#cb57-6" aria-hidden="true" tabindex="-1"></a>ax.plot(theta, r)</span>
+<span id="cb57-7"><a href="#cb57-7" aria-hidden="true" tabindex="-1"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb57-8"><a href="#cb57-8" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb57-9"><a href="#cb57-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-polar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../include/fig/fig-polar-9.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12: A line plot on a polar axis
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Copyright 2025, Rick Gilmore</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/edit/main/src/tutorials/plotting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rogilmore">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

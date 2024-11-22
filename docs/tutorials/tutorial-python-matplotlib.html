@@ -165,19 +165,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a></li>
-  <li><a href="#why-python" id="toc-why-python" class="nav-link" data-scroll-target="#why-python">Why Python?</a></li>
-  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
-  <li><a href="#plotting-one-variable" id="toc-plotting-one-variable" class="nav-link" data-scroll-target="#plotting-one-variable">Plotting one variable</a>
+  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about"><span class="header-section-number">1</span> About</a></li>
+  <li><a href="#why-python" id="toc-why-python" class="nav-link" data-scroll-target="#why-python"><span class="header-section-number">2</span> Why Python?</a></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup"><span class="header-section-number">3</span> Setup</a></li>
+  <li><a href="#plotting-one-variable" id="toc-plotting-one-variable" class="nav-link" data-scroll-target="#plotting-one-variable"><span class="header-section-number">4</span> Plotting one variable</a>
   <ul class="collapse">
-  <li><a href="#continuous" id="toc-continuous" class="nav-link" data-scroll-target="#continuous">Continuous</a></li>
-  <li><a href="#discretenominal" id="toc-discretenominal" class="nav-link" data-scroll-target="#discretenominal">Discrete/nominal</a></li>
+  <li><a href="#continuous" id="toc-continuous" class="nav-link" data-scroll-target="#continuous"><span class="header-section-number">4.1</span> Continuous</a></li>
+  <li><a href="#discretenominal" id="toc-discretenominal" class="nav-link" data-scroll-target="#discretenominal"><span class="header-section-number">4.2</span> Discrete/nominal</a></li>
   </ul></li>
-  <li><a href="#plotting-two-variables" id="toc-plotting-two-variables" class="nav-link" data-scroll-target="#plotting-two-variables">Plotting two variables</a>
+  <li><a href="#plotting-two-variables" id="toc-plotting-two-variables" class="nav-link" data-scroll-target="#plotting-two-variables"><span class="header-section-number">5</span> Plotting two variables</a>
   <ul class="collapse">
-  <li><a href="#scatter-plots" id="toc-scatter-plots" class="nav-link" data-scroll-target="#scatter-plots">Scatter plots</a></li>
+  <li><a href="#scatter-plots" id="toc-scatter-plots" class="nav-link" data-scroll-target="#scatter-plots"><span class="header-section-number">5.1</span> Scatter plots</a></li>
   </ul></li>
-  <li><a href="#other-kinds-of-plots" id="toc-other-kinds-of-plots" class="nav-link" data-scroll-target="#other-kinds-of-plots">Other kinds of plots</a></li>
+  <li><a href="#other-kinds-of-plots" id="toc-other-kinds-of-plots" class="nav-link" data-scroll-target="#other-kinds-of-plots"><span class="header-section-number">6</span> Other kinds of plots</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/edit/main/src/tutorials/tutorial-python-matplotlib.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -198,7 +198,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">October 18, 2024</p>
+      <p class="date-modified">November 22, 2024</p>
     </div>
   </div>
     
@@ -209,32 +209,50 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="about" class="level2">
-<h2 class="anchored" data-anchor-id="about">About</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Figures don’t seem to be cross-referenceing <em>across</em> documents. Let’s see if they work <em>within</em> documents.</p>
+<p>Does the link to <a href="#fig-dual-histograms-matplotlib" class="quarto-xref">Figure&nbsp;1</a> work?</p>
+<p>How about <a href="#fig-multiple-violin-plots" class="quarto-xref">Figure&nbsp;2</a>?</p>
+<p>Apparently so.</p>
+<p>Okay, so do the ggplot2 figures work in this document? Specifically, does the reference to <strong>?@fig-dual-boxplots-diff-ggplot2</strong> work?</p>
+<p>No.&nbsp;So, the issue is cross-document figure references.</p>
+</div>
+</div>
+<section id="about" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="about"><span class="header-section-number">1</span> About</h2>
 <p>This page provides a very basic introduction to Python and the <code>matplotlib</code> plotting library.</p>
 </section>
-<section id="why-python" class="level2">
-<h2 class="anchored" data-anchor-id="why-python">Why Python?</h2>
+<section id="why-python" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="why-python"><span class="header-section-number">2</span> Why Python?</h2>
 <p>Python is an awesome language for data science and data visualization. It is more popular than R, and it is widely used in scientific research and in industry.</p>
 <p>I find that it has a very readable syntax, meaning that it’s relatively easy to see what well-written Python code is doing.</p>
 </section>
-<section id="setup" class="level2">
-<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<section id="setup" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="setup"><span class="header-section-number">3</span> Setup</h2>
 <p>We start by importing the <code>numpy</code> and <code>pyplot</code> libraries and giving them convenient short names for future reference.</p>
-<div id="03070646" class="cell" data-execution_count="1">
+<div id="34c48466" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="plotting-one-variable" class="level2">
-<h2 class="anchored" data-anchor-id="plotting-one-variable">Plotting one variable</h2>
-<section id="continuous" class="level3">
-<h3 class="anchored" data-anchor-id="continuous">Continuous</h3>
-<section id="histograms" class="level4">
-<h4 class="anchored" data-anchor-id="histograms">Histograms</h4>
+<section id="plotting-one-variable" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="plotting-one-variable"><span class="header-section-number">4</span> Plotting one variable</h2>
+<section id="continuous" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="continuous"><span class="header-section-number">4.1</span> Continuous</h3>
+<section id="histograms" class="level4" data-number="4.1.1">
+<h4 data-number="4.1.1" class="anchored" data-anchor-id="histograms"><span class="header-section-number">4.1.1</span> Histograms</h4>
 <p>From <a href="https://matplotlib.org/stable/gallery/statistics/hist.html#sphx-glr-gallery-statistics-hist-py" class="uri">https://matplotlib.org/stable/gallery/statistics/hist.html#sphx-glr-gallery-statistics-hist-py</a></p>
 <p>Load components from <code>matplotlib</code>.</p>
-<div id="f97ea317" class="cell" data-execution_count="2">
+<div id="9f1e0b2a" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> colors</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.ticker <span class="im">import</span> PercentFormatter</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -271,8 +289,8 @@ Figure&nbsp;1: Two histograms with 100K points each.
 </div>
 </div>
 </section>
-<section id="violin" class="level4">
-<h4 class="anchored" data-anchor-id="violin">Violin</h4>
+<section id="violin" class="level4" data-number="4.1.2">
+<h4 data-number="4.1.2" class="anchored" data-anchor-id="violin"><span class="header-section-number">4.1.2</span> Violin</h4>
 <p>Violin plots are another way to depict the distribution of a single continuous variable.</p>
 <p>The following code is copied verbatim from the following site:</p>
 <p><a href="https://matplotlib.org/stable/gallery/statistics/violinplot.html" class="uri">https://matplotlib.org/stable/gallery/statistics/violinplot.html</a></p>
@@ -362,7 +380,7 @@ Figure&nbsp;1: Two histograms with 100K points each.
 <div id="fig-multiple-violin-plots" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-multiple-violin-plots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="tutorial-python-matplotlib_files/figure-html/fig-multiple-violin-plots-output-1.png" width="771" height="376" class="figure-img">
+<img src="tutorial-python-matplotlib_files/figure-html/fig-multiple-violin-plots-output-1.png" width="780" height="376" class="figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-multiple-violin-plots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Multiple violin plots with different parameters.
@@ -372,8 +390,8 @@ Figure&nbsp;2: Multiple violin plots with different parameters.
 </div>
 </div>
 </section>
-<section id="boxplot" class="level4">
-<h4 class="anchored" data-anchor-id="boxplot">Boxplot</h4>
+<section id="boxplot" class="level4" data-number="4.1.3">
+<h4 data-number="4.1.3" class="anchored" data-anchor-id="boxplot"><span class="header-section-number">4.1.3</span> Boxplot</h4>
 <p>From <a href="https://matplotlib.org/stable/plot_types/stats/boxplot_plot.html#sphx-glr-plot-types-stats-boxplot-plot-py" class="uri">https://matplotlib.org/stable/plot_types/stats/boxplot_plot.html#sphx-glr-plot-types-stats-boxplot-plot-py</a>.</p>
 <div id="cell-fig-boxplot-example" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'_mpl-gallery'</span>)</span>
@@ -411,10 +429,10 @@ Figure&nbsp;3: Example of several boxplots with whiskers.
 </div>
 </section>
 </section>
-<section id="discretenominal" class="level3">
-<h3 class="anchored" data-anchor-id="discretenominal">Discrete/nominal</h3>
-<section id="bar-chart" class="level4">
-<h4 class="anchored" data-anchor-id="bar-chart">Bar chart</h4>
+<section id="discretenominal" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="discretenominal"><span class="header-section-number">4.2</span> Discrete/nominal</h3>
+<section id="bar-chart" class="level4" data-number="4.2.1">
+<h4 data-number="4.2.1" class="anchored" data-anchor-id="bar-chart"><span class="header-section-number">4.2.1</span> Bar chart</h4>
 <p>Source: <a href="https://matplotlib.org/stable/plot_types/basic/bar.html#sphx-glr-plot-types-basic-bar-py" class="uri">https://matplotlib.org/stable/plot_types/basic/bar.html#sphx-glr-plot-types-basic-bar-py</a></p>
 <div id="cell-fig-bar-plot-example" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">'_mpl-gallery'</span>)</span>
@@ -448,14 +466,14 @@ Figure&nbsp;4: Example of a bar plot.
 </section>
 </section>
 </section>
-<section id="plotting-two-variables" class="level2">
-<h2 class="anchored" data-anchor-id="plotting-two-variables">Plotting two variables</h2>
-<section id="scatter-plots" class="level3">
-<h3 class="anchored" data-anchor-id="scatter-plots">Scatter plots</h3>
+<section id="plotting-two-variables" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="plotting-two-variables"><span class="header-section-number">5</span> Plotting two variables</h2>
+<section id="scatter-plots" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="scatter-plots"><span class="header-section-number">5.1</span> Scatter plots</h3>
 </section>
 </section>
-<section id="other-kinds-of-plots" class="level2">
-<h2 class="anchored" data-anchor-id="other-kinds-of-plots">Other kinds of plots</h2>
+<section id="other-kinds-of-plots" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="other-kinds-of-plots"><span class="header-section-number">6</span> Other kinds of plots</h2>
 <p>The following is copied verbatim from the Quarto website:</p>
 <p><a href="https://quarto.org/docs/get-started/hello/vscode.html" class="uri">https://quarto.org/docs/get-started/hello/vscode.html</a></p>
 <p>For a demonstration of a line plot on a polar axis, see <a href="#fig-polar" class="quarto-xref">Figure&nbsp;5</a>.</p>

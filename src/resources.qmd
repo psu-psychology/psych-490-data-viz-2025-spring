@@ -4,7 +4,46 @@
 
 This page captures some of the resources Rick Gilmore found in developing this course.
 
+::: {.callout-note}
+Since I'm having some trouble with cross-references to figures, let's see if they work when we're linking to a figure generated in R:
+
+Does this reference work: @fig-dual-boxplots-diff-ggplot2
+
+And for grins, does the reference to a Python-generated figure work: @fig-multiple-violin-plots
+
+It looks like the answer is no.
+:::
+
+
 ## Web sites
+
+### https://clauswilke.com/dataviz
+
+- https://clauswilke.com/dataviz/coordinate-systems-axes.html
+
+
+$10 = 1\times 10$ and $0.1 = 1/10$. The value 0, on the other hand, can never appear on a log scale. It lies infinitely far from 1. One way to see this is to consider that $log(0) = -\infty$. Or, alternatively, consider that to go from 1 to 0, it takes either an infinite number of divisions by a finite value (e.g., $1/10/10/10/10/10/10\dots = 0$) or alternatively one division by infinity (i.e., $1/\infty = 0$).
+
+### DataCamp.com
+
+### Statistical Methods for Data Science
+
+<https://epurdom.github.io/Stat131A/book/>
+
+#### R
+
+- Introduction to R (beginner)
+- Introduction to Data Visualization with ggplot2 (beginner)
+- Introduction to Exploratory Data Analysis (intermediate)
+
+- Data Visualization with R Track <https://app.datacamp.com/learn/skill-tracks/data-visualization-with-r>
+  - 3 courses, 12 hours.
+  
+#### Python
+
+- Data Visualization in Python Track <https://app.datacamp.com/learn/skill-tracks/data-visualization-with-python>
+  - Four courses, 16 hours
+  - Introduction to Data Visualization with Matplotlib <https://app.datacamp.com/learn/courses/introduction-to-data-visualization-with-matplotlib>, 4 hours, is the beginning 
 
 ### [Data Visualization Society](https://www.datavisualizationsociety.org/)
 
@@ -47,6 +86,5 @@ Infographics examples from the CDC: <https://www.cdc.gov/nchs/hus/resources/info
 ## Books
 
 - Graphical Data Analysis with R, Antony Unwin, <http://www.gradaanwr.net>
-
 
 ## Papers

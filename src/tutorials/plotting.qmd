@@ -1,0 +1,12 @@
+---
+name: "Plotting"
+---
+
+## About {-}
+
+This page provides some tutorial information about how to create simple plots using R's [ggplot2 package](https://ggplot2.tidyverse.org) and Python's [matplotlib](https://matplotlib.org) library.
+
+{{< include _tutorial-r-ggplot.qmd >}}
+
+{{< include _tutorial-python-matplotlib.qmd >}}
+

@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="include/css/styles.css">
 </head>
@@ -102,12 +131,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
         <li>
-    <a class="dropdown-item" href="./tutorials/tutorial-python-matplotlib.html">
- <span class="dropdown-text">Python Plotting Basics</span></a>
+    <a class="dropdown-item" href="./tutorials/plotting.html">
+ <span class="dropdown-text">Plotting</span></a>
   </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-surveys" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Surveys</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-surveys">    
         <li>
-    <a class="dropdown-item" href="./tutorials/tutorial-r-ggplot.html">
- <span class="dropdown-text">Plotting with ggplot</span></a>
+    <a class="dropdown-item" href="./surveys/survey-01.html">
+ <span class="dropdown-text">Survey-01</span></a>
   </li>  
     </ul>
   </li>
@@ -136,6 +172,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#about" id="toc-about" class="nav-link" data-scroll-target="#about">About</a></li>
   <li><a href="#web-sites" id="toc-web-sites" class="nav-link" data-scroll-target="#web-sites">Web sites</a>
   <ul class="collapse">
+  <li><a href="#httpsclauswilke.comdataviz" id="toc-httpsclauswilke.comdataviz" class="nav-link" data-scroll-target="#httpsclauswilke.comdataviz">https://clauswilke.com/dataviz</a></li>
+  <li><a href="#datacamp.com" id="toc-datacamp.com" class="nav-link" data-scroll-target="#datacamp.com">DataCamp.com</a></li>
+  <li><a href="#statistical-methods-for-data-science" id="toc-statistical-methods-for-data-science" class="nav-link" data-scroll-target="#statistical-methods-for-data-science">Statistical Methods for Data Science</a></li>
   <li><a href="#data-visualization-society" id="toc-data-visualization-society" class="nav-link" data-scroll-target="#data-visualization-society">Data Visualization Society</a></li>
   <li><a href="#friendlys-psychology-6135" id="toc-friendlys-psychology-6135" class="nav-link" data-scroll-target="#friendlys-psychology-6135">Friendly’s Psychology 6135</a></li>
   <li><a href="#centers-for-disease-control-cdc" id="toc-centers-for-disease-control-cdc" class="nav-link" data-scroll-target="#centers-for-disease-control-cdc">Centers for Disease Control (CDC)</a></li>
@@ -167,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">October 14, 2024</p>
+      <p class="date-modified">November 22, 2024</p>
     </div>
   </div>
     
@@ -183,9 +222,61 @@ ul.task-list li input[type="checkbox"] {
 <section id="about" class="level2">
 <h2 class="anchored" data-anchor-id="about">About</h2>
 <p>This page captures some of the resources Rick Gilmore found in developing this course.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Since I’m having some trouble with cross-references to figures, let’s see if they work when we’re linking to a figure generated in R:</p>
+<p>Does this reference work: <strong>?@fig-dual-boxplots-diff-ggplot2</strong></p>
+<p>And for grins, does the reference to a Python-generated figure work: <strong>?@fig-multiple-violin-plots</strong></p>
+<p>It looks like the answer is no.</p>
+</div>
+</div>
 </section>
 <section id="web-sites" class="level2">
 <h2 class="anchored" data-anchor-id="web-sites">Web sites</h2>
+<section id="httpsclauswilke.comdataviz" class="level3">
+<h3 class="anchored" data-anchor-id="httpsclauswilke.comdataviz">https://clauswilke.com/dataviz</h3>
+<ul>
+<li>https://clauswilke.com/dataviz/coordinate-systems-axes.html</li>
+</ul>
+<p><span class="math inline">\(10 = 1\times 10\)</span> and <span class="math inline">\(0.1 = 1/10\)</span>. The value 0, on the other hand, can never appear on a log scale. It lies infinitely far from 1. One way to see this is to consider that <span class="math inline">\(log(0) = -\infty\)</span>. Or, alternatively, consider that to go from 1 to 0, it takes either an infinite number of divisions by a finite value (e.g., <span class="math inline">\(1/10/10/10/10/10/10\dots = 0\)</span>) or alternatively one division by infinity (i.e., <span class="math inline">\(1/\infty = 0\)</span>).</p>
+</section>
+<section id="datacamp.com" class="level3">
+<h3 class="anchored" data-anchor-id="datacamp.com">DataCamp.com</h3>
+</section>
+<section id="statistical-methods-for-data-science" class="level3">
+<h3 class="anchored" data-anchor-id="statistical-methods-for-data-science">Statistical Methods for Data Science</h3>
+<p><a href="https://epurdom.github.io/Stat131A/book/" class="uri">https://epurdom.github.io/Stat131A/book/</a></p>
+<section id="r" class="level4">
+<h4 class="anchored" data-anchor-id="r">R</h4>
+<ul>
+<li><p>Introduction to R (beginner)</p></li>
+<li><p>Introduction to Data Visualization with ggplot2 (beginner)</p></li>
+<li><p>Introduction to Exploratory Data Analysis (intermediate)</p></li>
+<li><p>Data Visualization with R Track <a href="https://app.datacamp.com/learn/skill-tracks/data-visualization-with-r" class="uri">https://app.datacamp.com/learn/skill-tracks/data-visualization-with-r</a></p>
+<ul>
+<li>3 courses, 12 hours.</li>
+</ul></li>
+</ul>
+</section>
+<section id="python" class="level4">
+<h4 class="anchored" data-anchor-id="python">Python</h4>
+<ul>
+<li>Data Visualization in Python Track <a href="https://app.datacamp.com/learn/skill-tracks/data-visualization-with-python" class="uri">https://app.datacamp.com/learn/skill-tracks/data-visualization-with-python</a>
+<ul>
+<li>Four courses, 16 hours</li>
+<li>Introduction to Data Visualization with Matplotlib <a href="https://app.datacamp.com/learn/courses/introduction-to-data-visualization-with-matplotlib" class="uri">https://app.datacamp.com/learn/courses/introduction-to-data-visualization-with-matplotlib</a>, 4 hours, is the beginning</li>
+</ul></li>
+</ul>
+</section>
+</section>
 <section id="data-visualization-society" class="level3">
 <h3 class="anchored" data-anchor-id="data-visualization-society"><a href="https://www.datavisualizationsociety.org/">Data Visualization Society</a></h3>
 <p><a href="https://www.informationisbeautifulawards.com/">Information is Beautiful Awards</a></p>

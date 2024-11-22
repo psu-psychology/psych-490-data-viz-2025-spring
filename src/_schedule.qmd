@@ -40,7 +40,11 @@
 
 #### Tuesday, February 04 {-}
 
+*From stimulus to sensation*
+
 #### Thursday, February 06 {-}
+
+*From sensation to perception*
 
 ### February 10-14 {- #week-05}
 
@@ -72,11 +76,9 @@
 
 #### Tuesday, March 04 {-}
 
-
-
 #### Thursday, March 06 {-}
 
-### March 10-14 *Spring Break*
+### March 10-14 *Spring Break* {- #spring-break}
 
 ### March 17-21 {- #week-09}
 
@@ -84,11 +86,9 @@
 
 #### Tuesday, March 18 {-}
 
-
+*Why R we doing this?*
 
 #### Thursday, March 20 {-}
-
-
 
 ### March 24-28 {- #week-10}
 
@@ -100,7 +100,7 @@
 
 #### Thursday, March 27 {-}
 
-*Making plots with ggplot2*
+*Making plots with `ggplot2`*
 
 ### March 31 - April 4 {- #week-11}
 
@@ -121,7 +121,6 @@
 ### April 14-18 {- #week-13}
 
 *Making plots with JavaScript*
-
 
 #### Tuesday, April 15 {-}
 

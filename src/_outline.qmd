@@ -15,6 +15,13 @@ This document outlines the major components and themes of the class.
 
 ## On data
 
+### What are data
+
+- https://towardsdatascience.com/what-is-data-8f94ae3a56b4, @Kozyrkov2019-wl
+- @Carlson2007-cb
+
+### Where do data come from?
+
 ### Types of data
 
 - Discrete/nominal
@@ -25,11 +32,19 @@ This document outlines the major components and themes of the class.
   - Rankings
 - Interval
   - Time/date ranges
-- Continuous
+- Continuous/Quantitative
   - Time
   - Space
   - Quantity
+  - Ratio vs. Interval
+    - Temperature: interval
   
+##### Resources
+
+- <https://dept.stat.lsa.umich.edu/~kshedden/introds/topics/types_of_data/>
+- <https://www.brookes.ac.uk/students/academic-development/maths-and-stats/statistics/types-of-data>
+- <https://en.wikipedia.org/wiki/Data_type>, but targeted to computer science folks.
+
 ### Thinking about data
 
 - Distributions
@@ -41,6 +56,8 @@ This document outlines the major components and themes of the class.
 
 ## Types of figures
 
+- https://www.tableau.com/visualization/what-is-data-visualization
+
 ### Relationships
 
 - Mapping information to visual properties
@@ -48,18 +65,31 @@ This document outlines the major components and themes of the class.
 ### Conventional
 
 - Maps
-- Musical notation
 - Sports (e.g., football)
+  - Football
+    - <https://en.wikipedia.org/wiki/American_football_positions>
 - Iconic/artistic
+  - Dance notation
+    - https://www.britannica.com/art/dance-notation/Twentieth-century-developments
+  - Musical notation
+- Business Process Modeling Notation (BPMN)
+  - https://www.visual-paradigm.com/guide/bpmn/bpmn-orchestration-vs-choreography-vs-collaboration/
 
 ### Mathematical/Statistical
 
-- Histogram and its variants (violin, boxplot, etc.)
 - Scatterplots
 - Bar plots
+- Histogram and its variants (violin, boxplot, etc.) to show distributions
 - Exploratory data analysis
+- Correlation matrices
+  - @Kassambara2023-ud
 
 ### Networks
+
+#### References
+
+- @Merico2009-tc
+- @Morabito-au
 
 ### Computer science/engineering
 
