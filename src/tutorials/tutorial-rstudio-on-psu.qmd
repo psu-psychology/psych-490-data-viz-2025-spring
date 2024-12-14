@@ -1,0 +1,15 @@
+# Setting up RStudio @ Penn State
+
+## About {-}
+
+This page provides help starting and using RStudio from a Penn State computer lab machine.
+For instructions on how to install this free progam on your own personal computer, see the accompanying [tutorial](tutorial-rstudio-on-pc.qmd).
+
+## What is RStudio?
+
+RStudio is an integrated development environment (IDE) for doing data science.
+An IDE is a computer program that provides tools for people who are developing and testing software.
+You might not think of yourself as a software developer (yet).
+But RStudio is a powerful tool for beginners, too.
+It began life as a tool primarily for users writing code in R, hence the name.
+RStudio supports multiple programming languages, including R and Python.

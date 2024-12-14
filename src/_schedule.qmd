@@ -30,6 +30,8 @@
 
 *Data types*
 
+- In-class exercise on [data creation](exercises/exNN-making-data).
+
 #### Thursday, January 30 {-}
 
 *Figure types*

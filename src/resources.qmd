@@ -17,6 +17,18 @@ It looks like the answer is no.
 
 ## Web sites
 
+### rpsychologist.com
+
+<@software{magnussonCorrelation,
+    author = {Kristoffer Magnusson},
+    title = {Interpreting Correlations: An Interactive Visualization},
+    url = {https://rpsychologist.com/correlation/},
+    version = {0.7.1},
+    date = {2023},
+  }
+  
+  
+
 ### https://clauswilke.com/dataviz
 
 - https://clauswilke.com/dataviz/coordinate-systems-axes.html
@@ -63,6 +75,10 @@ Friendly might be a good guest.
 
 Infographics examples from the CDC: <https://www.cdc.gov/nchs/hus/resources/infographics.htm>
 
+### New York Times
+
+<https://www.nytimes.com/spotlight/graphics>
+
 ### The Economist
 
 <https://impact.economist.com/perspectives/search/infographic?f[0]=type%3Ainfographic&f[1]=>
@@ -82,6 +98,14 @@ Infographics examples from the CDC: <https://www.cdc.gov/nchs/hus/resources/info
 ### xkcd
 
 <https://xkcd.com/about/>
+
+### Tableau.com
+
+<https://www.tableau.com/sports-data>
+
+### NFL.com
+
+<https://operations.nfl.com/gameday/analytics/stats-articles/>
 
 ## Books
 

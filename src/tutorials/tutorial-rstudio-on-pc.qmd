@@ -1,0 +1,77 @@
+# Setting up RStudio
+
+## About {-}
+
+This page provides help downloading, installing, and running [RStudio](https://posit.co/products/open-source/rstudio/) on your personal computer (Windows, Mac, or Linux).
+
+You may also use [RStudio](https://posit.co/products/open-source/rstudio/) from a Penn State computer lab machine.
+For those instructions, see the accompanying [tutorial](tutorial-rstudio-on-psu.qmd).
+
+## What is RStudio? {-}
+
+RStudio is an integrated development environment (IDE) for doing data science.
+An IDE is a computer program that provides tools for people who are developing and testing software.
+You might not think of yourself as a software developer (yet).
+But RStudio is a powerful tool for beginners, too.
+It began life as a tool primarily for users writing code in R, hence the name.
+RStudio supports multiple programming languages, including R and Python.
+
+## Why install RStudio? {-}
+
+If you have your own personal computer, it's very helpful to have RStudio installed on your computer.
+That way you can work whether you're connected to the internet or not.
+
+## Overview {-}
+
+Installing RStudio consists of several steps:
+
+1. Downloading and installing R.
+2. Downloading and installing RStudio.
+3. Configuring RStudio.
+
+You can complete these in about 45 minutes, or maybe less if you have a fast internet connection.
+
+## Installing R {-}
+
+RStudio requires you to download and install R even if you ultimately plan to do very little programming in R.
+
+Visit <https://cran.wustl.edu/bin/>.
+
+![<https://cran.wustl.edu/bin/>](../include/img/cran-bin.png)
+
+Select the subdirectory depending on what operating system your computer is running.
+Windows users will select `windows` and Mac users will select `macosx`.
+
+### Mac users {-}
+
+Here is the window that opens:
+
+![](../include/img/cran-macosx.png)
+
+Notice that there are two links under the "Latest release:" section.
+To decide which version is appropriate for you, you need to select the version of R that is appropriate for your computer's central processing unit (CPU) and operating system (OS).
+Here's how to find out what CPU and OS you're running:
+
+1. Click on the Apple icon in the top left corner of your menu bar.
+
+![](../include/img/apple-menu-about-this-mac.png)
+
+2. Select the 'About This Mac' menu item.
+
+3. A window will appear with information about your computer.
+
+![](../include/img/gilmore-macbook-pro.png)
+
+If the 'macOS' field has a number greater than 11 (MacOS Big Sur), then you can download the latest version of R.
+If the 'Chip' field says "Apple M1", "Apple M2", "Apple M3", or "Apple M4", you will want to select the ARM version, e.g. "R-4.4.2-arm64.pkg".
+If the 'Chip' field says you have some version of an Intel chip, pick the other version of R, e.g., "R-4.4.2-x86_64.pkg".
+
+4. Once the software has downloaded, open it by double-clicking.
+
+5. 
+
+## Installing RStudio {-}
+
+## Configuring RStudio {-}
+
+

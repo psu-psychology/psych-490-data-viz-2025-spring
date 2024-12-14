@@ -1,8 +1,7 @@
 # Plotting in Python
 
 ::: {.callout-note}
-
-Figures don't seem to be cross-referenceing *across* documents.
+Figures don't seem to be cross-referencing *across* documents.
 Let's see if they work *within* documents.
 
 Does the link to @fig-dual-histograms-matplotlib work?
@@ -18,18 +17,18 @@ No. So, the issue is cross-document figure references.
 :::
 
 
-## About
+## About {-}
 
 This page provides a very basic introduction to Python and the `matplotlib` plotting library.
 
-## Why Python?
+## Why Python? {-}
 
 Python is an awesome language for data science and data visualization.
 It is more popular than R, and it is widely used in scientific research and in industry.
 
 I find that it has a very readable syntax, meaning that it's relatively easy to see what well-written Python code is doing.
 
-## Setup
+## Setup {-}
 
 We start by importing the `numpy` and `pyplot` libraries and giving them convenient short names for future reference.
 
@@ -38,11 +37,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-## Plotting one variable
+## Plotting one variable {-}
 
-### Continuous
+### Continuous {-}
 
-#### Histograms
+#### Histograms {-}
 
 From <https://matplotlib.org/stable/gallery/statistics/hist.html#sphx-glr-gallery-statistics-hist-py>
 
@@ -78,7 +77,7 @@ axs[1].hist(dist2, bins=n_bins)
 plt.show()
 ```
 
-#### Violin
+#### Violin {-}
 
 Violin plots are another way to depict the distribution of a single continuous variable.
 
@@ -173,7 +172,7 @@ fig.subplots_adjust(hspace=0.4)
 plt.show()
 ```
 
-#### Boxplot
+#### Boxplot {-}
 
 From <https://matplotlib.org/stable/plot_types/stats/boxplot_plot.html#sphx-glr-plot-types-stats-boxplot-plot-py>.
 
@@ -203,9 +202,9 @@ ax.set(xlim=(0, 8), xticks=np.arange(1, 8),
 plt.show()
 ```
 
-### Discrete/nominal
+### Discrete/nominal {-}
 
-#### Bar chart
+#### Bar chart {-}
 
 Source: <https://matplotlib.org/stable/plot_types/basic/bar.html#sphx-glr-plot-types-basic-bar-py>
 
@@ -231,11 +230,11 @@ plt.show()
 ```
 
 
-## Plotting two variables
+## Plotting two variables {-}
 
-### Scatter plots
+### Scatter plots {-}
 
-## Other kinds of plots
+## Other kinds of plots {-}
 
 The following is copied verbatim from the Quarto website:
 

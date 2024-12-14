@@ -1,27 +1,43 @@
 project:
-  type: website
+  type: book
   render:
     - "./*.qmd"
     - "tutorials/*.qmd"
     - "surveys/*.qmd"
   output-dir: "../docs"
 
-website:
+book:
   title: "PSYCH 490 • Spr 2025"
-  navbar:
-    left:
-      - href: index.qmd
-      - href: schedule.qmd
-        text: Schedule
-      - text: Tutorials
-        menu:
-          - href: "tutorials/plotting.qmd"
-            text: "Plotting"
-      - text: Surveys
-        menu: 
-          - href: "surveys/survey-01.qmd"
-            text: "Survey-01"
-      - href: resources.qmd
+  chapters:
+    - href: index.qmd
+      text: Overview
+    - href: schedule.qmd
+    - part: Exercises
+      chapters:
+        - exercises/exNN-reading-figures.qmd
+    - part: Tutorials
+      chapters:
+        - tutorials/tutorial-rstudio-on-pc.qmd
+        - tutorials/tutorial-rstudio-on-psu.qmd
+        - tutorials/tutorial-r-ggplot.qmd
+        - tutorials/tutorial-python-matplotlib.qmd
+    - part: Surveys
+      chapters:
+        - surveys/survey-01.qmd
+  # navbar:
+  #   left:
+  #     - href: index.qmd
+  #     - href: schedule.qmd
+  #       text: Schedule
+  #     - text: Tutorials
+  #       menu:
+  #         - href: "tutorials/plotting.qmd"
+  #           text: "Plotting"
+  #     - text: Surveys
+  #       menu: 
+  #         - href: "surveys/survey-01.qmd"
+  #           text: "Survey-01"
+  #     - href: resources.qmd
   repo-url: https://github.com/psu-psychology/psych-490-data-viz-2025-spring
   repo-actions: [edit, issue]
   repo-subdir: src
@@ -43,7 +59,11 @@ format:
     bibliography: [include/bib/packages.bib, include/bib/data-viz.bib]
     csl: include/bib/apa.csl
     html-math-method: mathjax
-
+    code-fold: true
+    code-tools: true
+    toc-depth: 3
+    lightbox: true
+    
 editor: source
 
 jupyter: python3

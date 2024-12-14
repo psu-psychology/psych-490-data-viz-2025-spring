@@ -1,5 +1,6 @@
 ---
-title: ""
+title: "PSYCH 490.003"
+subtitle: "Spring 2025 • TTh 9:05a-10:20a"
 ---
 
 ![ChatGPT/Dall-E-3 model response to 'an image of "a picture paints a thousand words"' on 2024-09-19](include/img/dall-e-2024-09-19-picture-paints.png){width="50%"}

@@ -1,14 +1,14 @@
 # Plotting with ggplot
 
-## About
+## About {-}
 
 This section describes some ways to generate plots using the R package `ggplot2`.
 
-## Why R
+## Why R {-}
 
 R is a programming language specialized for data analysis and visualization.
 
-## Background
+## Background {-}
 
 'ggplot2' is a package^[A collection of special commands for doing specific things.] for making 2D plots in R.
 It implements a special "language" for making plots based on the grammar of graphics suggested by Cleveland CITE.
@@ -16,7 +16,7 @@ That's where the 'gg' in the name comes from.
 
 In ggplot, we create a base plot, then add layers to it using a plus sign `+` operator. 
 
-## Set-up
+## Set-up {-}
 
 To check whether {ggplot2} is already installed, run the following chunk:
 
@@ -27,9 +27,9 @@ if (!require(ggplot2)) {
 }
 ```
 
-## Plotting one variable
+## Plotting one variable {-}
 
-### Discrete/nominal
+### Discrete/nominal {-}
 
 First, we make some data.
 
@@ -42,7 +42,7 @@ data_random_discrete <- data.frame(category = c('ab', 'xy', 'mn',
                                            2.6, 3.0))
 ```
 
-#### Barplot
+#### Barplot {-}
 
 If the variable we want to plot contains the *values* we care about plotting, then we use `geom_col`.
 A column plot is just a type of barplot.
@@ -65,7 +65,7 @@ Here, we have a *categorical* variable imaginatively named `category` and a *con
 :::
 
 
-### Continuous
+### Continuous {-}
 
 First, let's generate some random data.
 
@@ -77,7 +77,7 @@ n_values <- 100000
 data_random_norm <- data.frame(val = rnorm(n = n_values, mean = 0, sd = 1))
 ```
 
-#### Histogram
+#### Histogram {-}
 
 ```{r}
 hist_1 <- data_random_norm |>
@@ -122,7 +122,7 @@ hist_2 <- data_random_norm_2 |>
 hist_2
 ```
 
-#### Violin
+#### Violin {-}
 
 ```{r}
 #| label: fig-dual-violin-plots-ggplot2
@@ -136,7 +136,7 @@ violin_2 <- data_random_norm_2 |>
 violin_2
 ```
 
-#### Boxplot
+#### Boxplot {-}
 
 ```{r}
 #| label: fig-dual-boxplots-ggplot2
@@ -150,7 +150,7 @@ boxplot_2 <- data_random_norm_2 |>
 boxplot_2
 ```
 
-## Comparing distributions
+## Comparing distributions {-}
 
 Let's see how these plots can help us see when the distributions *differ* by more than just magnitude or standard deviation.
 
@@ -202,10 +202,23 @@ boxplot_2_diff <- data_random_2 |>
 boxplot_2_diff
 ```
 
-## Plotting two variables
+## Plotting two variables {-}
 
 ::: {.callout-warning}
 This page is under construction. Many components are missing.
 :::
 
 ### Scatterplot
+
+A scatterplot is a great way to compare two continuous variables.
+
+```{r}
+scatter_data <- tibble::tibble(norm = x_norm,
+                               unif = x_unif)
+
+scatter_data |>
+  ggplot() +
+  aes(x = x_norm, y = x_unif) +
+  geom_point() 
+```
+

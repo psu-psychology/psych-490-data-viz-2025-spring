@@ -22,5 +22,6 @@ This page describes some of the activities students might do.
   - What are the variables (& types)
   - Purpose (describe or persuade)
   - Audience
+  - What are the mappings?
 3. Critique it
 4. Improve it

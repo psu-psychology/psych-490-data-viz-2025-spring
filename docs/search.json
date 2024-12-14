@@ -1,212 +1,390 @@
 [
   {
-    "objectID": "tutorials/plotting.html",
-    "href": "tutorials/plotting.html",
-    "title": "1 Plotting with ggplot",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PSYCH 490.003",
     "section": "",
-    "text": "This page provides some tutorial information about how to create simple plots using R’s ggplot2 package and Python’s matplotlib library."
+    "text": "Themes\nIf a picture’s worth a thousand words (Wikipedia contributors, 2024), what exactly does it say? This course will focus on the psychology of data visualization—how to read, critique, and generate meaningful figures that inform but don’t mislead. We’ll take inspiration from recognized classic figures and unpack what makes them exemplary. We’ll critique figures that deliberately or inadvertently mislead or confuse. We’ll learn what 150 years of vision science, the foundation of experimental psychology, has to say about data visualization. And we’ll learn how to build our own reproducible figures using Python, R, and JavaScript. No prior programming experience is required.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview</span>"
+    ]
   },
   {
-    "objectID": "tutorials/plotting.html#about",
-    "href": "tutorials/plotting.html#about",
-    "title": "1 Plotting with ggplot",
-    "section": "",
-    "text": "This page provides some tutorial information about how to create simple plots using R’s ggplot2 package and Python’s matplotlib library."
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "PSYCH 490.003",
+    "section": "Instructor",
+    "text": "Instructor\nRick O. Gilmore, Ph.D. \nProfessor of Psychology\nrog1 AT-SIGN psu PERIOD edu\n\nSchedule an appointment: https://doodle.com/mm/rickgilmore/book-a-time\nLab web site: https://gilmore-lab.github.io",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview</span>"
+    ]
   },
   {
-    "objectID": "tutorials/plotting.html#about-1",
-    "href": "tutorials/plotting.html#about-1",
-    "title": "1 Plotting with ggplot",
-    "section": "1.1 About",
-    "text": "1.1 About\nThis page describes some ways to generate plots using the R package {ggplot2}."
+    "objectID": "index.html#teaching-assistant",
+    "href": "index.html#teaching-assistant",
+    "title": "PSYCH 490.003",
+    "section": "Teaching Assistant",
+    "text": "Teaching Assistant\n\n\n\n\n\n\nUnder construction\n\n\n\nTBD",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview</span>"
+    ]
   },
   {
-    "objectID": "tutorials/plotting.html#why-r",
-    "href": "tutorials/plotting.html#why-r",
-    "title": "1 Plotting with ggplot",
-    "section": "1.2 Why R",
-    "text": "1.2 Why R\nR is a programming language specialized for data analysis and visualization."
+    "objectID": "index.html#meeting-time-location",
+    "href": "index.html#meeting-time-location",
+    "title": "PSYCH 490.003",
+    "section": "Meeting time & location",
+    "text": "Meeting time & location\nTuesday & Thursday, 9:05-10:20 am 207 Thomas Building",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview</span>"
+    ]
   },
   {
-    "objectID": "tutorials/plotting.html#background",
-    "href": "tutorials/plotting.html#background",
-    "title": "1 Plotting with ggplot",
-    "section": "1.3 Background",
-    "text": "1.3 Background\n{ggplot2} (ggplot for short) is a package for making 2D plots in R. It implements a special “language” for making plots based on the grammar of graphics suggested by Cleveland CITE.\nIn ggplot, we create a base plot, then add layers to it using a plus sign + operator."
+    "objectID": "index.html#canvas-site",
+    "href": "index.html#canvas-site",
+    "title": "PSYCH 490.003",
+    "section": "Canvas site",
+    "text": "Canvas site\nWe will use Canvas to submit assignments and grade them. The Canvas site may be found here:\n\nMost of the course content will be found on this site.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview</span>"
+    ]
   },
   {
-    "objectID": "tutorials/plotting.html#set-up",
-    "href": "tutorials/plotting.html#set-up",
-    "title": "1 Plotting with ggplot",
-    "section": "1.4 Set-up",
-    "text": "1.4 Set-up\nTo check whether {ggplot2} is already installed, run the following chunk:\n\n# The require() function returns TRUE of ggplot2 is installed and FALSE if it is not.\nif(!require(ggplot2)) {\n  install.packages(ggplot2)\n}\n\nLoading required package: ggplot2"
-  },
-  {
-    "objectID": "tutorials/plotting.html#plotting-one-variable",
-    "href": "tutorials/plotting.html#plotting-one-variable",
-    "title": "1 Plotting with ggplot",
-    "section": "1.5 Plotting one variable",
-    "text": "1.5 Plotting one variable\n\n1.5.1 Discrete/nominal\n\n\n\n\n\n\nWarning\n\n\n\nThis page is under construction. Many components are missing.\n\n\nFirst, we make some data.\n\ndata_random_discrete &lt;- data.frame(category = 1:8,\n                                  val = c(4.8, 5.5, 3.5, 4.6, 6.5, 6.6, 2.6, 3.0))\n\n\n1.5.1.1 Barplot\nIf the variable we want to plot contains the values we care about plotting, then we use geom_col. A column plot is just a type of barplot.\n\nbarplot_1 &lt;- data_random_discrete |&gt;\n  ggplot() +\n  aes(x = category, y = val) +\n  geom_col()\n\n\n\n\n1.5.2 Continuous\nFirst, let’s generate some random data.\n\n# Set a seed for our 'random' number generator\nset.seed(19680801)\nn_values &lt;- 100000\n\ndata_random_norm &lt;- data.frame(val = rnorm(n = n_values, mean = 0, sd = 1))\n\n\n1.5.2.1 Histogram\n\nhist_1 &lt;- data_random_norm |&gt;\n  ggplot() +\n  aes(x = val) +\n  geom_histogram()\n\nWhat the code is saying is this: Send data_random_norm to ggplot; make the plot and its various layers; then give the plot a name (hist_1) so we can use it later. Like now, for instance:\n\nhist_1\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 1: A simple histogram\n\n\n\n\n\nTo replicate the side-by-side histograms in Figure 8, we do the following:\nMake two random data sets that differ slightly.\n\nx1 &lt;- rnorm(n = n_values, mean = 0, sd = 1)\ndata_random_norm_2 &lt;- data.frame(side = c(rep('l', n_values), rep('r', n_values)),\n                            val = c(x1,\n                                    0.4 * x1 + 5))\n\nThen plot the data.\n\nhist_2 &lt;- data_random_norm_2 |&gt;\n  ggplot() +\n  aes(x = val) +\n  geom_histogram() +\n  facet_wrap(vars(side), ncol = 2)\n\nhist_2\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 2: Side-by-side histograms of two random (normal) sets of data.\n\n\n\n\n\n\n\n1.5.2.2 Violin\n\nviolin_2 &lt;- data_random_norm_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_violin()\n\nviolin_2\n\n\n\n\n\n\n\nFigure 3: Side-by-side violin plots of two random (normal) sets of data.\n\n\n\n\n\n\n\n1.5.2.3 Boxplot\n\nboxplot_2 &lt;- data_random_norm_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_boxplot()\n\nboxplot_2\n\n\n\n\n\n\n\nFigure 4: Side-by-side violin plots of two random (normal) sets of data."
-  },
-  {
-    "objectID": "tutorials/plotting.html#comparing-distributions",
-    "href": "tutorials/plotting.html#comparing-distributions",
-    "title": "1 Plotting with ggplot",
-    "section": "1.6 Comparing distributions",
-    "text": "1.6 Comparing distributions\nLet’s see how these plots can help us see when the distributions differ by more than just magnitude or standard deviation.\n\n# Normal \"bell\"-shaped like before\nx_norm &lt;- rnorm(n = n_values, mean = 0, sd = 1)\n\n# Uniform-shaped\nx_unif &lt;- runif(n = n_values, min = -2.75, max = 2.75)\n\ndata_random_2 &lt;- data.frame(side = c(rep('norm', n_values), rep('unif', n_values)),\n                            val = c(x_norm, x_unif))\n\n\nhist_2_diff &lt;- data_random_2 |&gt;\n  ggplot() +\n  aes(x = val) +\n  geom_histogram() +\n  facet_wrap(vars(side), ncol = 2)\n\nhist_2_diff\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 5: Side-by-side histograms of two random sets of data with different distributions.\n\n\n\n\n\n\nviolin_2_diff &lt;- data_random_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_violin()\n\nviolin_2_diff\n\n\n\n\n\n\n\nFigure 6: Side-by-side violin plots of two random sets of data with different distributions.\n\n\n\n\n\n\nboxplot_2_diff &lt;- data_random_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_boxplot()\n\nboxplot_2_diff\n\n\n\n\n\n\n\nFigure 7: Side-by-side box plots of two random sets of data with different distributions."
-  },
-  {
-    "objectID": "tutorials/plotting.html#plotting-two-variables",
-    "href": "tutorials/plotting.html#plotting-two-variables",
-    "title": "1 Plotting with ggplot",
-    "section": "1.7 Plotting two variables",
-    "text": "1.7 Plotting two variables\n\n\n\n\n\n\nWarning\n\n\n\nThis page is under construction. Many components are missing.\n\n\n\n1.7.1 Scatterplot"
-  },
-  {
-    "objectID": "tutorials/plotting.html#about-2",
-    "href": "tutorials/plotting.html#about-2",
-    "title": "1 Plotting with ggplot",
-    "section": "2.1 About",
-    "text": "2.1 About\nThis page provides a very basic introduction to Python and the matplotlib plotting library."
-  },
-  {
-    "objectID": "tutorials/plotting.html#why-python",
-    "href": "tutorials/plotting.html#why-python",
-    "title": "1 Plotting with ggplot",
-    "section": "2.2 Why Python?",
-    "text": "2.2 Why Python?\nPython is an awesome language for data science and data visualization. It is more popular than R, and it is widely used in scientific research and in industry.\nI find that it has a very readable syntax, meaning that it’s relatively easy to see what well-written Python code is doing."
-  },
-  {
-    "objectID": "tutorials/plotting.html#setup",
-    "href": "tutorials/plotting.html#setup",
-    "title": "1 Plotting with ggplot",
-    "section": "2.3 Setup",
-    "text": "2.3 Setup\nWe start by importing the numpy and pyplot libraries and giving them convenient short names for future reference.\n\nimport numpy as np\nimport matplotlib.pyplot as plt"
-  },
-  {
-    "objectID": "tutorials/plotting.html#plotting-one-variable-1",
-    "href": "tutorials/plotting.html#plotting-one-variable-1",
-    "title": "1 Plotting with ggplot",
-    "section": "2.4 Plotting one variable",
-    "text": "2.4 Plotting one variable\n\n2.4.1 Continuous\n\n2.4.1.1 Histograms\nFrom https://matplotlib.org/stable/gallery/statistics/hist.html#sphx-glr-gallery-statistics-hist-py\nLoad components from matplotlib.\n\nfrom matplotlib import colors\nfrom matplotlib.ticker import PercentFormatter\n\n# Create a random number generator with a fixed seed for reproducibility\nrng = np.random.default_rng(19680801)\n\nGenerate data and render it.\n\nN_points = 100000\nn_bins = 20\n\n# Generate two normal distributions\ndist1 = rng.standard_normal(N_points)\ndist2 = 0.4 * rng.standard_normal(N_points) + 5\n\nfig, axs = plt.subplots(1, 2, sharey=True, tight_layout=True)\n\n# We can set the number of bins with the *bins* keyword argument.\naxs[0].hist(dist1, bins=n_bins)\naxs[1].hist(dist2, bins=n_bins)\n\nplt.show()\n\n\n\n\n\n\n\nFigure 8: Two histograms with 100K points each.\n\n\n\n\n\n\n\n2.4.1.2 Violin\nViolin plots are another way to depict the distribution of a single continuous variable.\nThe following code is copied verbatim from the following site:\nhttps://matplotlib.org/stable/gallery/statistics/violinplot.html\n\n# fake data\nfs = 10  # fontsize\npos = [1, 2, 4, 5, 7, 8]\ndata = [np.random.normal(0, std, size=100) for std in pos]\n\n# Create a plot with 2 rows and 6 columns\nfig, axs = plt.subplots(nrows=2, ncols=6, figsize=(10, 4))\n\naxs[0, 0].violinplot(data, pos, points=20, widths=0.3,\n                     showmeans=True, showextrema=True, showmedians=True)\n\n{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12a4d5160&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12affe490&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12affe710&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12affe990&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12affead0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12affec10&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12a4d5550&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12affed50&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12affee90&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12affefd0&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12afff110&gt;}\n\naxs[0, 0].set_title('Custom violin 1', fontsize=fs)\n\naxs[0, 1].violinplot(data, pos, points=40, widths=0.5,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     bw_method='silverman')\n\n{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12afff250&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12afff390&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12afff4d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12afff610&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12afff750&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12afff890&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12afff9d0&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12afffb10&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12afffc50&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12afffd90&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12afffed0&gt;}\n\naxs[0, 1].set_title('Custom violin 2', fontsize=fs)\n\naxs[0, 2].violinplot(data, pos, points=60, widths=0.7, showmeans=True,\n                     showextrema=True, showmedians=True, bw_method=0.5)\n\n{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b084050&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b084190&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b0842d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b084410&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b084550&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b084690&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b0847d0&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b084910&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b084a50&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b084b90&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b084cd0&gt;}\n\naxs[0, 2].set_title('Custom violin 3', fontsize=fs)\n\naxs[0, 3].violinplot(data, pos, points=60, widths=0.7, showmeans=True,\n                     showextrema=True, showmedians=True, bw_method=0.5,\n                     quantiles=[[0.1], [], [], [0.175, 0.954], [0.75], [0.25]])\n\n{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b084e10&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b084f50&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b085090&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b0851d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b085310&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b085450&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b085590&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b0856d0&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b085810&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b085950&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b085a90&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b085bd0&gt;}\n\naxs[0, 3].set_title('Custom violin 4', fontsize=fs)\n\naxs[0, 4].violinplot(data[-1:], pos[-1:], points=60, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5)\n\n{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b085d10&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b085e50&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b085f90&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b0860d0&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b086210&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b086350&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b086490&gt;}\n\naxs[0, 4].set_title('Custom violin 5', fontsize=fs)\n\naxs[0, 5].violinplot(data[-1:], pos[-1:], points=60, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='low')\n\n{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b0865d0&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b086710&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b086850&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b086990&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b086ad0&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b086c10&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b086d50&gt;}\n\naxs[0, 5].violinplot(data[-1:], pos[-1:], points=60, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='high')\n\n{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b086e90&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b086fd0&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b087110&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b087250&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b087390&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b0874d0&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b087610&gt;}\n\naxs[0, 5].set_title('Custom violin 6', fontsize=fs)\n\naxs[1, 0].violinplot(data, pos, points=80, vert=False, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True)\n\n{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b087750&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b087890&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b0879d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b087b10&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b087c50&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b087d90&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b087ed0&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b140050&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b140190&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b1402d0&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b140410&gt;}\n\naxs[1, 0].set_title('Custom violin 7', fontsize=fs)\n\naxs[1, 1].violinplot(data, pos, points=100, vert=False, widths=0.9,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     bw_method='silverman')\n\n{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b140550&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b140690&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b1407d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b140910&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b140a50&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b140b90&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b140cd0&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b140e10&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b140f50&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b141090&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b1411d0&gt;}\n\naxs[1, 1].set_title('Custom violin 8', fontsize=fs)\n\naxs[1, 2].violinplot(data, pos, points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     bw_method=0.5)\n\n{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b141310&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b141450&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b141590&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b1416d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b141810&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b141950&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b141a90&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b141bd0&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b141d10&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b141e50&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b141f90&gt;}\n\naxs[1, 2].set_title('Custom violin 9', fontsize=fs)\n\naxs[1, 3].violinplot(data, pos, points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[[0.1], [], [], [0.175, 0.954], [0.75], [0.25]],\n                     bw_method=0.5)\n\n{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b1420d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b142210&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b142350&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b142490&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b1425d0&gt;, &lt;matplotlib.collections.PolyCollection object at 0x12b142710&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b142850&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b142990&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b142ad0&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b142c10&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b142d50&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b142e90&gt;}\n\naxs[1, 3].set_title('Custom violin 10', fontsize=fs)\n\naxs[1, 4].violinplot(data[-1:], pos[-1:], points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5)\n\n{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b142fd0&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b143110&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b143250&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b143390&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b1434d0&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b143610&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b143750&gt;}\n\naxs[1, 4].set_title('Custom violin 11', fontsize=fs)\n\naxs[1, 5].violinplot(data[-1:], pos[-1:], points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='low')\n\n{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b143890&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b1439d0&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b143b10&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b143c50&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b143d90&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b143ed0&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b218050&gt;}\n\naxs[1, 5].violinplot(data[-1:], pos[-1:], points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='high')\n\n{'bodies': [&lt;matplotlib.collections.PolyCollection object at 0x12b218190&gt;], 'cmeans': &lt;matplotlib.collections.LineCollection object at 0x12b2182d0&gt;, 'cmaxes': &lt;matplotlib.collections.LineCollection object at 0x12b218410&gt;, 'cmins': &lt;matplotlib.collections.LineCollection object at 0x12b218550&gt;, 'cbars': &lt;matplotlib.collections.LineCollection object at 0x12b218690&gt;, 'cmedians': &lt;matplotlib.collections.LineCollection object at 0x12b2187d0&gt;, 'cquantiles': &lt;matplotlib.collections.LineCollection object at 0x12b218910&gt;}\n\naxs[1, 5].set_title('Custom violin 12', fontsize=fs)\n\n\nfor ax in axs.flat:\n    ax.set_yticklabels([])\n\nfig.suptitle(\"Violin Plotting Examples\")\nfig.subplots_adjust(hspace=0.4)\nplt.show()\n\n\n\n\n\n\n\nFigure 9: Multiple violin plots with different parameters.\n\n\n\n\n\n\n\n2.4.1.3 Boxplot\nFrom https://matplotlib.org/stable/plot_types/stats/boxplot_plot.html#sphx-glr-plot-types-stats-boxplot-plot-py.\n\nplt.style.use('_mpl-gallery')\n\n# make data:\nnp.random.seed(10)\nD = np.random.normal((3, 5, 4), (1.25, 1.00, 1.25), (100, 3))\n\n# plot\nfig, ax = plt.subplots()\nVP = ax.boxplot(D, positions=[2, 4, 6], widths=1.5, patch_artist=True,\n                showmeans=False, showfliers=False,\n                medianprops={\"color\": \"white\", \"linewidth\": 0.5},\n                boxprops={\"facecolor\": \"C0\", \"edgecolor\": \"white\",\n                          \"linewidth\": 0.5},\n                whiskerprops={\"color\": \"C0\", \"linewidth\": 1.5},\n                capprops={\"color\": \"C0\", \"linewidth\": 1.5})\n\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\n\n[(0.0, 8.0), [&lt;matplotlib.axis.XTick object at 0x12b35bd90&gt;, &lt;matplotlib.axis.XTick object at 0x12b35b610&gt;, &lt;matplotlib.axis.XTick object at 0x12b3cc050&gt;, &lt;matplotlib.axis.XTick object at 0x12b3cc7d0&gt;, &lt;matplotlib.axis.XTick object at 0x12b3ccf50&gt;, &lt;matplotlib.axis.XTick object at 0x12b3cd6d0&gt;, &lt;matplotlib.axis.XTick object at 0x12b3cde50&gt;], (0.0, 8.0), [&lt;matplotlib.axis.YTick object at 0x12b388cd0&gt;, &lt;matplotlib.axis.YTick object at 0x12b388550&gt;, &lt;matplotlib.axis.YTick object at 0x12b3ce710&gt;, &lt;matplotlib.axis.YTick object at 0x12b3cee90&gt;, &lt;matplotlib.axis.YTick object at 0x12b3cf610&gt;, &lt;matplotlib.axis.YTick object at 0x12b3cfd90&gt;, &lt;matplotlib.axis.YTick object at 0x12b3ec550&gt;]]\n\nplt.show()\n\n\n\n\n\n\n\nFigure 10: Example of several boxplots with whiskers.\n\n\n\n\n\n\n\n\n2.4.2 Discrete/nominal\n\n2.4.2.1 Bar chart\nSource: https://matplotlib.org/stable/plot_types/basic/bar.html#sphx-glr-plot-types-basic-bar-py\n\nplt.style.use('_mpl-gallery')\n\n# make data:\nx = 0.5 + np.arange(8)\ny = [4.8, 5.5, 3.5, 4.6, 6.5, 6.6, 2.6, 3.0]\n\n# plot\nfig, ax = plt.subplots()\n\nax.bar(x, y, width=1, edgecolor=\"white\", linewidth=0.7)\n\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\n\n[(0.0, 8.0), [&lt;matplotlib.axis.XTick object at 0x12b3ee490&gt;, &lt;matplotlib.axis.XTick object at 0x12b3edd10&gt;, &lt;matplotlib.axis.XTick object at 0x12b429a90&gt;, &lt;matplotlib.axis.XTick object at 0x12b42a210&gt;, &lt;matplotlib.axis.XTick object at 0x12b42a990&gt;, &lt;matplotlib.axis.XTick object at 0x12b42b110&gt;, &lt;matplotlib.axis.XTick object at 0x12b42b890&gt;], (0.0, 8.0), [&lt;matplotlib.axis.YTick object at 0x12b3ef390&gt;, &lt;matplotlib.axis.YTick object at 0x12b3eec10&gt;, &lt;matplotlib.axis.YTick object at 0x12b45c050&gt;, &lt;matplotlib.axis.YTick object at 0x12b45c7d0&gt;, &lt;matplotlib.axis.YTick object at 0x12b45cf50&gt;, &lt;matplotlib.axis.YTick object at 0x12b45d6d0&gt;, &lt;matplotlib.axis.YTick object at 0x12b45de50&gt;]]\n\nplt.show()\n\n\n\n\n\n\n\nFigure 11: Example of a bar plot."
-  },
-  {
-    "objectID": "tutorials/plotting.html#plotting-two-variables-1",
-    "href": "tutorials/plotting.html#plotting-two-variables-1",
-    "title": "1 Plotting with ggplot",
-    "section": "2.5 Plotting two variables",
-    "text": "2.5 Plotting two variables\n\n2.5.1 Scatter plots"
-  },
-  {
-    "objectID": "tutorials/plotting.html#other-kinds-of-plots",
-    "href": "tutorials/plotting.html#other-kinds-of-plots",
-    "title": "1 Plotting with ggplot",
-    "section": "2.6 Other kinds of plots",
-    "text": "2.6 Other kinds of plots\nThe following is copied verbatim from the Quarto website:\nhttps://quarto.org/docs/get-started/hello/vscode.html\nFor a demonstration of a line plot on a polar axis, see Figure 12.\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\nFigure 12: A line plot on a polar axis"
+    "objectID": "index.html#course-structure",
+    "href": "index.html#course-structure",
+    "title": "PSYCH 490.003",
+    "section": "Course structure",
+    "text": "Course structure\nThis is a discussion-focused course. On most days we will discuss readings assigned prior to class. On many days, we will work together or individually on the assigned exercises, the final project, or another assignment.\n\n\n\n\n\n\nWikipedia contributors. (2024, August). A picture is worth a thousand words. https://en.wikipedia.org/wiki/A_picture_is_worth_a_thousand_words; Wikimedia Foundation, Inc.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Overview</span>"
+    ]
   },
   {
     "objectID": "schedule.html",
     "href": "schedule.html",
-    "title": "PSYCH 490 • Spr 2025",
+    "title": "Calendar",
     "section": "",
-    "text": "Surveying the landscape\n\n\nCourse introduction\n\n\n\n\n\n\n\nWho visualizes data and why\n\n\nVisualization in business, industry, & government\n\n\n\nVisualization in science\n\n\n\n\nUnderstanding figures\n\n\nData types\n\n\n\nFigure types\n\n\n\n\nFrom perception to cognition\n\n\nFrom stimulus to sensation\n\n\n\nFrom sensation to perception\n\n\n\n\nFrom cognition to understanding\n\n\n\n\n\n\n\n\n\nStorytelling with data\n\n\n\n\n\n\n\n\n\nCritiquing figures\n\n\n\n\n\n\n\n\n\nExploring data with spreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to R\n\n\nWhy R we doing this?\n\n\n\n\n\n\n\nExploring data with R\n\n\nGathering & cleaning data\n\n\n\nMaking plots with ggplot2\n\n\n\n\nIntroduction to Python\n\n\n\n\n\n\n\n\n\nExploring data with Python\n\n\n\n\n\n\n\n\n\nMaking plots with JavaScript\n\n\n\n\n\n\n\n\n\nFinal Project Preparation\n\n\n\n\n\n\n\n\n\nStudent Projects"
+    "text": "Schedule",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Calendar</span>"
+    ]
   },
   {
     "objectID": "schedule.html#schedule",
     "href": "schedule.html#schedule",
-    "title": "PSYCH 490 • Spr 2025",
+    "title": "Calendar",
     "section": "",
-    "text": "Surveying the landscape\n\n\nCourse introduction\n\n\n\n\n\n\n\nWho visualizes data and why\n\n\nVisualization in business, industry, & government\n\n\n\nVisualization in science\n\n\n\n\nUnderstanding figures\n\n\nData types\n\n\n\nFigure types\n\n\n\n\nFrom perception to cognition\n\n\nFrom stimulus to sensation\n\n\n\nFrom sensation to perception\n\n\n\n\nFrom cognition to understanding\n\n\n\n\n\n\n\n\n\nStorytelling with data\n\n\n\n\n\n\n\n\n\nCritiquing figures\n\n\n\n\n\n\n\n\n\nExploring data with spreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to R\n\n\nWhy R we doing this?\n\n\n\n\n\n\n\nExploring data with R\n\n\nGathering & cleaning data\n\n\n\nMaking plots with ggplot2\n\n\n\n\nIntroduction to Python\n\n\n\n\n\n\n\n\n\nExploring data with Python\n\n\n\n\n\n\n\n\n\nMaking plots with JavaScript\n\n\n\n\n\n\n\n\n\nFinal Project Preparation\n\n\n\n\n\n\n\n\n\nStudent Projects"
+    "text": "January 13-17\nSurveying the landscape\n\nTuesday, January 14\nCourse introduction\n\n\nThursday, January 16\n\n\n\nJanuary 20-24\nWho visualizes data and why\n\nTuesday, January 21\nVisualization in business, industry, & government\n\n\nThursday, January 23\nVisualization in science\n\n\n\nJanuary 27-31\nUnderstanding figures\n\nTuesday, January 28\nData types\n\n\nThursday, January 30\nFigure types\n\n\n\nFebruary 3-7\nFrom perception to cognition\n\nTuesday, February 04\nFrom stimulus to sensation\n\n\nThursday, February 06\nFrom sensation to perception\n\n\n\nFebruary 10-14\nFrom cognition to understanding\n\nTuesday, February 11\n\n\nThursday, February 13\n\n\n\nFebruary 17-21\nStorytelling with data\n\nTuesday, February 18\n\n\nThursday, February 20\n\n\n\nFebruary 24-28\nCritiquing figures\n\nTuesday, February 25\n\n\nThursday, February 27\n\n\n\nMarch 3-7\nExploring data with spreadsheets\n\nTuesday, March 04\n\n\nThursday, March 06\n\n\n\nMarch 10-14 Spring Break\n\n\nMarch 17-21\nIntroduction to R\n\nTuesday, March 18\nWhy R we doing this?\n\n\nThursday, March 20\n\n\n\nMarch 24-28\nExploring data with R\n\nTuesday, March 25\nGathering & cleaning data\n\n\nThursday, March 27\nMaking plots with ggplot2\n\n\n\nMarch 31 - April 4\nIntroduction to Python\n\nTuesday, April 01\n\n\nThursday, April 03\n\n\n\nApril 7-11\nExploring data with Python\n\nTuesday, April 08\n\n\nThursday, April 10\n\n\n\nApril 14-18\nMaking plots with JavaScript\n\nTuesday, April 15\n\n\nThursday, April 17\n\n\n\nApril 21-25\nFinal Project Preparation\n\nTuesday, April 22\n\n\nThursday, April 24\n\n\n\nApril 28 - May 2\nStudent Projects\n\nTuesday, April 29\n\n\nThursday, May 01",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Calendar</span>"
+    ]
   },
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
+    "objectID": "exercises/exNN-reading-figures.html",
+    "href": "exercises/exNN-reading-figures.html",
+    "title": "Exercise NN",
     "section": "",
-    "text": "This page captures some of the resources Rick Gilmore found in developing this course.\n\n\n\n\n\n\nNote\n\n\n\nSince I’m having some trouble with cross-references to figures, let’s see if they work when we’re linking to a figure generated in R:\nDoes this reference work: ?@fig-dual-boxplots-diff-ggplot2\nAnd for grins, does the reference to a Python-generated figure work: ?@fig-multiple-violin-plots\nIt looks like the answer is no.\n\n\n\n\n\n\n\n\nhttps://clauswilke.com/dataviz/coordinate-systems-axes.html\n\n\\(10 = 1\\times 10\\) and \\(0.1 = 1/10\\). The value 0, on the other hand, can never appear on a log scale. It lies infinitely far from 1. One way to see this is to consider that \\(log(0) = -\\infty\\). Or, alternatively, consider that to go from 1 to 0, it takes either an infinite number of divisions by a finite value (e.g., \\(1/10/10/10/10/10/10\\dots = 0\\)) or alternatively one division by infinity (i.e., \\(1/\\infty = 0\\)).\n\n\n\n\n\n\nhttps://epurdom.github.io/Stat131A/book/\n\n\n\nIntroduction to R (beginner)\nIntroduction to Data Visualization with ggplot2 (beginner)\nIntroduction to Exploratory Data Analysis (intermediate)\nData Visualization with R Track https://app.datacamp.com/learn/skill-tracks/data-visualization-with-r\n\n3 courses, 12 hours.\n\n\n\n\n\n\nData Visualization in Python Track https://app.datacamp.com/learn/skill-tracks/data-visualization-with-python\n\nFour courses, 16 hours\nIntroduction to Data Visualization with Matplotlib https://app.datacamp.com/learn/courses/introduction-to-data-visualization-with-matplotlib, 4 hours, is the beginning\n\n\n\n\n\n\nInformation is Beautiful Awards\n\n\n\nPsychology 6135: Psychology of Data Visualization, http://euclid.psych.yorku.ca/www/psy6135/index.html, by Michael Friendly at York University.\nHere is a more recent version: https://friendly.github.io/6135/\nFriendly might be a good guest.\nhttps://nicolas.kruchten.com/semiology_of_graphics/\n\n\n\nInfographics examples from the CDC: https://www.cdc.gov/nchs/hus/resources/infographics.htm\n\n\n\nhttps://impact.economist.com/perspectives/search/infographic?f[0]=type%3Ainfographic&f[1]=\n\n\n\nFigure prep guidelines\n\n\n\nTables and Figures style guide\n\n\n\nhttps://ourworldindata.org/\n\n\n\nhttps://xkcd.com/about/\n\n\n\n\n\nGraphical Data Analysis with R, Antony Unwin, http://www.gradaanwr.net"
+    "text": "Dates",
+    "crumbs": [
+      "Exercises",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Exercise NN</span>"
+    ]
   },
   {
-    "objectID": "resources.html#about",
-    "href": "resources.html#about",
-    "title": "Resources",
-    "section": "",
-    "text": "This page captures some of the resources Rick Gilmore found in developing this course.\n\n\n\n\n\n\nNote\n\n\n\nSince I’m having some trouble with cross-references to figures, let’s see if they work when we’re linking to a figure generated in R:\nDoes this reference work: ?@fig-dual-boxplots-diff-ggplot2\nAnd for grins, does the reference to a Python-generated figure work: ?@fig-multiple-violin-plots\nIt looks like the answer is no."
+    "objectID": "exercises/exNN-reading-figures.html#goals",
+    "href": "exercises/exNN-reading-figures.html#goals",
+    "title": "Exercise NN",
+    "section": "Goals",
+    "text": "Goals",
+    "crumbs": [
+      "Exercises",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Exercise NN</span>"
+    ]
   },
   {
-    "objectID": "resources.html#web-sites",
-    "href": "resources.html#web-sites",
-    "title": "Resources",
-    "section": "",
-    "text": "https://clauswilke.com/dataviz/coordinate-systems-axes.html\n\n\\(10 = 1\\times 10\\) and \\(0.1 = 1/10\\). The value 0, on the other hand, can never appear on a log scale. It lies infinitely far from 1. One way to see this is to consider that \\(log(0) = -\\infty\\). Or, alternatively, consider that to go from 1 to 0, it takes either an infinite number of divisions by a finite value (e.g., \\(1/10/10/10/10/10/10\\dots = 0\\)) or alternatively one division by infinity (i.e., \\(1/\\infty = 0\\)).\n\n\n\n\n\n\nhttps://epurdom.github.io/Stat131A/book/\n\n\n\nIntroduction to R (beginner)\nIntroduction to Data Visualization with ggplot2 (beginner)\nIntroduction to Exploratory Data Analysis (intermediate)\nData Visualization with R Track https://app.datacamp.com/learn/skill-tracks/data-visualization-with-r\n\n3 courses, 12 hours.\n\n\n\n\n\n\nData Visualization in Python Track https://app.datacamp.com/learn/skill-tracks/data-visualization-with-python\n\nFour courses, 16 hours\nIntroduction to Data Visualization with Matplotlib https://app.datacamp.com/learn/courses/introduction-to-data-visualization-with-matplotlib, 4 hours, is the beginning\n\n\n\n\n\n\nInformation is Beautiful Awards\n\n\n\nPsychology 6135: Psychology of Data Visualization, http://euclid.psych.yorku.ca/www/psy6135/index.html, by Michael Friendly at York University.\nHere is a more recent version: https://friendly.github.io/6135/\nFriendly might be a good guest.\nhttps://nicolas.kruchten.com/semiology_of_graphics/\n\n\n\nInfographics examples from the CDC: https://www.cdc.gov/nchs/hus/resources/infographics.htm\n\n\n\nhttps://impact.economist.com/perspectives/search/infographic?f[0]=type%3Ainfographic&f[1]=\n\n\n\nFigure prep guidelines\n\n\n\nTables and Figures style guide\n\n\n\nhttps://ourworldindata.org/\n\n\n\nhttps://xkcd.com/about/"
+    "objectID": "exercises/exNN-reading-figures.html#assignment",
+    "href": "exercises/exNN-reading-figures.html#assignment",
+    "title": "Exercise NN",
+    "section": "Assignment",
+    "text": "Assignment\nSearch the popular press or scientific literature for data figures you really like or really dislike. Select two (2) figures, one of which you like and one which you dislike.\nIn your own words, describe what each figure depicts. Describe the figure in as much detail as you think is necessary to explain the information depicted. What background knowledge about the subject area is needed to understand the figure? Explain what aspects of the figure you like and what aspects you dislike. For both figures, suggest what modifications you would suggest if you were the creator or an editor of the published work.",
+    "crumbs": [
+      "Exercises",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Exercise NN</span>"
+    ]
   },
   {
-    "objectID": "resources.html#books",
-    "href": "resources.html#books",
-    "title": "Resources",
+    "objectID": "exercises/exNN-reading-figures.html#submit",
+    "href": "exercises/exNN-reading-figures.html#submit",
+    "title": "Exercise NN",
+    "section": "Submit",
+    "text": "Submit\nWrite and submit a two to three page paper describing your work. Use APA style. Make sure to include copies or public links (URLs) to the figures you discuss.",
+    "crumbs": [
+      "Exercises",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Exercise NN</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-rstudio-on-pc.html",
+    "href": "tutorials/tutorial-rstudio-on-pc.html",
+    "title": "Setting up RStudio",
     "section": "",
-    "text": "Graphical Data Analysis with R, Antony Unwin, http://www.gradaanwr.net"
+    "text": "About\nThis page provides help downloading, installing, and running RStudio on your personal computer (Windows, Mac, or Linux).\nYou may also use RStudio from a Penn State computer lab machine. For those instructions, see the accompanying tutorial.",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting up RStudio</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-rstudio-on-psu.html",
+    "href": "tutorials/tutorial-rstudio-on-psu.html",
+    "title": "Setting up RStudio @ Penn State",
+    "section": "",
+    "text": "5.1 About\nThis page provides help starting and using RStudio from a Penn State computer lab machine. For instructions on how to install this free progam on your own personal computer, see the accompanying tutorial.",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Setting up RStudio @ Penn State</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-r-ggplot.html",
+    "href": "tutorials/tutorial-r-ggplot.html",
+    "title": "Plotting with ggplot",
+    "section": "",
+    "text": "About\nThis section describes some ways to generate plots using the R package ggplot2.",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Plotting with ggplot</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-r-ggplot.html#why-r",
+    "href": "tutorials/tutorial-r-ggplot.html#why-r",
+    "title": "Plotting with ggplot",
+    "section": "Why R",
+    "text": "Why R\nR is a programming language specialized for data analysis and visualization.",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Plotting with ggplot</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-r-ggplot.html#background",
+    "href": "tutorials/tutorial-r-ggplot.html#background",
+    "title": "Plotting with ggplot",
+    "section": "Background",
+    "text": "Background\n‘ggplot2’ is a package1 for making 2D plots in R. It implements a special “language” for making plots based on the grammar of graphics suggested by Cleveland CITE. That’s where the ‘gg’ in the name comes from.\nIn ggplot, we create a base plot, then add layers to it using a plus sign + operator.",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Plotting with ggplot</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-r-ggplot.html#set-up",
+    "href": "tutorials/tutorial-r-ggplot.html#set-up",
+    "title": "Plotting with ggplot",
+    "section": "Set-up",
+    "text": "Set-up\nTo check whether {ggplot2} is already installed, run the following chunk:\n\n\nCode\n# The require() function returns TRUE if ggplot2 is installed and FALSE if it is not. The exclamation point symbol ('!') turns FALSE into TRUE and TRUE into FALSE. So, `!require(ggplot2)` will be TRUE if require(ggplot2) is FALSE. When this occurs, the `install.packages(ggplot)` commands runs and installs ggplot2.\nif (!require(ggplot2)) {\n  install.packages(ggplot2)\n}\n\n\nLoading required package: ggplot2",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Plotting with ggplot</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-r-ggplot.html#plotting-one-variable",
+    "href": "tutorials/tutorial-r-ggplot.html#plotting-one-variable",
+    "title": "Plotting with ggplot",
+    "section": "Plotting one variable",
+    "text": "Plotting one variable\n\nDiscrete/nominal\nFirst, we make some data.\n\n\nCode\ndata_random_discrete &lt;- data.frame(category = c('ab', 'xy', 'mn', \n                                                'qp', 'ea', 'f2',\n                                                'gg', 'h*'),\n                                   value = c(4.8, 5.5, 3.5, \n                                           4.6, 6.5, 6.6, \n                                           2.6, 3.0))\n\n\n\nBarplot\nIf the variable we want to plot contains the values we care about plotting, then we use geom_col. A column plot is just a type of barplot.\n\n\nCode\ndata_random_discrete |&gt;\n  ggplot() +\n  aes(x = category, y = value) +\n  geom_col()\n\n\n\n\n\n\n\n\nFigure 6.1\n\n\n\n\n\nHere, we have a categorical variable imaginatively named category and a continuous variable named value.\n\n\n\n\n\n\nYour turn\n\n\n\n\nWhat would we need to do to make the category variable ordinal?\nWhy do we think that value is continuous?\n\n\n\n\n\n\nContinuous\nFirst, let’s generate some random data.\n\n\nCode\n# Set a seed for our 'random' number generator\nset.seed(19680801)\nn_values &lt;- 100000\n\ndata_random_norm &lt;- data.frame(val = rnorm(n = n_values, mean = 0, sd = 1))\n\n\n\nHistogram\n\n\nCode\nhist_1 &lt;- data_random_norm |&gt;\n  ggplot() +\n  aes(x = val) +\n  geom_histogram()\n\n\nWhat the code is saying is this: Send data_random_norm to ggplot; make the plot and its various layers; then give the plot a name (hist_1) so we can use it later. Like now, for instance:\n\n\nCode\nhist_1\n\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 6.2: A simple histogram\n\n\n\n\n\nTo replicate the side-by-side histograms in Figure 7.1, we do the following:\nMake two random data sets that differ slightly.\n\n\nCode\nx1 &lt;- rnorm(n = n_values, mean = 0, sd = 1)\ndata_random_norm_2 &lt;- data.frame(side = c(rep('l', n_values), rep('r', n_values)),\n                            val = c(x1,\n                                    0.4 * x1 + 5))\n\n\nThen plot the data.\n\n\nCode\nhist_2 &lt;- data_random_norm_2 |&gt;\n  ggplot() +\n  aes(x = val) +\n  geom_histogram() +\n  facet_wrap(vars(side), ncol = 2)\n\nhist_2\n\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 6.3: Side-by-side histograms of two random (normal) sets of data.\n\n\n\n\n\n\n\nViolin\n\n\nCode\nviolin_2 &lt;- data_random_norm_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_violin()\n\nviolin_2\n\n\n\n\n\n\n\n\nFigure 6.4: Side-by-side violin plots of two random (normal) sets of data.\n\n\n\n\n\n\n\nBoxplot\n\n\nCode\nboxplot_2 &lt;- data_random_norm_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_boxplot()\n\nboxplot_2\n\n\n\n\n\n\n\n\nFigure 6.5: Side-by-side violin plots of two random (normal) sets of data.",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Plotting with ggplot</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-r-ggplot.html#comparing-distributions",
+    "href": "tutorials/tutorial-r-ggplot.html#comparing-distributions",
+    "title": "Plotting with ggplot",
+    "section": "Comparing distributions",
+    "text": "Comparing distributions\nLet’s see how these plots can help us see when the distributions differ by more than just magnitude or standard deviation.\n\n\nCode\n# Normal \"bell\"-shaped like before\nx_norm &lt;- rnorm(n = n_values, mean = 0, sd = 1)\n\n# Uniform-shaped\nx_unif &lt;- runif(n = n_values, min = -2.75, max = 2.75)\n\ndata_random_2 &lt;- data.frame(side = c(rep('norm', n_values), rep('unif', n_values)),\n                            val = c(x_norm, x_unif))\n\n\n\n\nCode\nhist_2_diff &lt;- data_random_2 |&gt;\n  ggplot() +\n  aes(x = val) +\n  geom_histogram() +\n  facet_wrap(vars(side), ncol = 2)\n\nhist_2_diff\n\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 6.6: Side-by-side histograms of two random sets of data with different distributions.\n\n\n\n\n\n\n\nCode\nviolin_2_diff &lt;- data_random_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_violin()\n\nviolin_2_diff\n\n\n\n\n\n\n\n\nFigure 6.7: Side-by-side violin plots of two random sets of data with different distributions.\n\n\n\n\n\n\n\nCode\nboxplot_2_diff &lt;- data_random_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_boxplot()\n\nboxplot_2_diff\n\n\n\n\n\n\n\n\nFigure 6.8: Side-by-side box plots of two random sets of data with different distributions.",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Plotting with ggplot</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-r-ggplot.html#plotting-two-variables",
+    "href": "tutorials/tutorial-r-ggplot.html#plotting-two-variables",
+    "title": "Plotting with ggplot",
+    "section": "Plotting two variables",
+    "text": "Plotting two variables\n\n\n\n\n\n\nWarning\n\n\n\nThis page is under construction. Many components are missing.\n\n\n\n6.0.1 Scatterplot",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Plotting with ggplot</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-r-ggplot.html#footnotes",
+    "href": "tutorials/tutorial-r-ggplot.html#footnotes",
+    "title": "Plotting with ggplot",
+    "section": "",
+    "text": "A collection of special commands for doing specific things.↩︎",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Plotting with ggplot</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-python-matplotlib.html",
+    "href": "tutorials/tutorial-python-matplotlib.html",
+    "title": "Plotting in Python",
+    "section": "",
+    "text": "About\nThis page provides a very basic introduction to Python and the matplotlib plotting library.",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Plotting in Python</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-python-matplotlib.html#why-python",
+    "href": "tutorials/tutorial-python-matplotlib.html#why-python",
+    "title": "Plotting in Python",
+    "section": "Why Python?",
+    "text": "Why Python?\nPython is an awesome language for data science and data visualization. It is more popular than R, and it is widely used in scientific research and in industry.\nI find that it has a very readable syntax, meaning that it’s relatively easy to see what well-written Python code is doing.",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Plotting in Python</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-python-matplotlib.html#setup",
+    "href": "tutorials/tutorial-python-matplotlib.html#setup",
+    "title": "Plotting in Python",
+    "section": "Setup",
+    "text": "Setup\nWe start by importing the numpy and pyplot libraries and giving them convenient short names for future reference.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Plotting in Python</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-python-matplotlib.html#plotting-one-variable",
+    "href": "tutorials/tutorial-python-matplotlib.html#plotting-one-variable",
+    "title": "Plotting in Python",
+    "section": "Plotting one variable",
+    "text": "Plotting one variable\n\nContinuous\n\nHistograms\nFrom https://matplotlib.org/stable/gallery/statistics/hist.html#sphx-glr-gallery-statistics-hist-py\nLoad components from matplotlib.\n\n\nCode\nfrom matplotlib import colors\nfrom matplotlib.ticker import PercentFormatter\n\n# Create a random number generator with a fixed seed for reproducibility\nrng = np.random.default_rng(19680801)\n\n\nGenerate data and render it.\n\n\nCode\nN_points = 100000\nn_bins = 20\n\n# Generate two normal distributions\ndist1 = rng.standard_normal(N_points)\ndist2 = 0.4 * rng.standard_normal(N_points) + 5\n\nfig, axs = plt.subplots(1, 2, sharey=True, tight_layout=True)\n\n# We can set the number of bins with the *bins* keyword argument.\naxs[0].hist(dist1, bins=n_bins)\naxs[1].hist(dist2, bins=n_bins)\n\nplt.show()\n\n\n\n\n\n\n\n\nFigure 7.1: Two histograms with 100K points each.\n\n\n\n\n\n\n\nViolin\nViolin plots are another way to depict the distribution of a single continuous variable.\nThe following code is copied verbatim from the following site:\nhttps://matplotlib.org/stable/gallery/statistics/violinplot.html\n\n\nCode\n# fake data\nfs = 10  # fontsize\npos = [1, 2, 4, 5, 7, 8]\ndata = [np.random.normal(0, std, size=100) for std in pos]\n\n# Create a plot with 2 rows and 6 columns\nfig, axs = plt.subplots(nrows=2, ncols=6, figsize=(10, 4))\n\naxs[0, 0].violinplot(data, pos, points=20, widths=0.3,\n                     showmeans=True, showextrema=True, showmedians=True)\naxs[0, 0].set_title('Custom violin 1', fontsize=fs)\n\naxs[0, 1].violinplot(data, pos, points=40, widths=0.5,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     bw_method='silverman')\naxs[0, 1].set_title('Custom violin 2', fontsize=fs)\n\naxs[0, 2].violinplot(data, pos, points=60, widths=0.7, showmeans=True,\n                     showextrema=True, showmedians=True, bw_method=0.5)\naxs[0, 2].set_title('Custom violin 3', fontsize=fs)\n\naxs[0, 3].violinplot(data, pos, points=60, widths=0.7, showmeans=True,\n                     showextrema=True, showmedians=True, bw_method=0.5,\n                     quantiles=[[0.1], [], [], [0.175, 0.954], [0.75], [0.25]])\naxs[0, 3].set_title('Custom violin 4', fontsize=fs)\n\naxs[0, 4].violinplot(data[-1:], pos[-1:], points=60, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5)\naxs[0, 4].set_title('Custom violin 5', fontsize=fs)\n\naxs[0, 5].violinplot(data[-1:], pos[-1:], points=60, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='low')\n\naxs[0, 5].violinplot(data[-1:], pos[-1:], points=60, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='high')\naxs[0, 5].set_title('Custom violin 6', fontsize=fs)\n\naxs[1, 0].violinplot(data, pos, points=80, vert=False, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True)\naxs[1, 0].set_title('Custom violin 7', fontsize=fs)\n\naxs[1, 1].violinplot(data, pos, points=100, vert=False, widths=0.9,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     bw_method='silverman')\naxs[1, 1].set_title('Custom violin 8', fontsize=fs)\n\naxs[1, 2].violinplot(data, pos, points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     bw_method=0.5)\naxs[1, 2].set_title('Custom violin 9', fontsize=fs)\n\naxs[1, 3].violinplot(data, pos, points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[[0.1], [], [], [0.175, 0.954], [0.75], [0.25]],\n                     bw_method=0.5)\naxs[1, 3].set_title('Custom violin 10', fontsize=fs)\n\naxs[1, 4].violinplot(data[-1:], pos[-1:], points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5)\naxs[1, 4].set_title('Custom violin 11', fontsize=fs)\n\naxs[1, 5].violinplot(data[-1:], pos[-1:], points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='low')\n\naxs[1, 5].violinplot(data[-1:], pos[-1:], points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='high')\naxs[1, 5].set_title('Custom violin 12', fontsize=fs)\n\n\nfor ax in axs.flat:\n    ax.set_yticklabels([])\n\nfig.suptitle(\"Violin Plotting Examples\")\nfig.subplots_adjust(hspace=0.4)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 7.2: Multiple violin plots with different parameters.\n\n\n\n\n\n\n\nBoxplot\nFrom https://matplotlib.org/stable/plot_types/stats/boxplot_plot.html#sphx-glr-plot-types-stats-boxplot-plot-py.\n\n\nCode\nplt.style.use('_mpl-gallery')\n\n# make data:\nnp.random.seed(10)\nD = np.random.normal((3, 5, 4), (1.25, 1.00, 1.25), (100, 3))\n\n# plot\nfig, ax = plt.subplots()\nVP = ax.boxplot(D, positions=[2, 4, 6], widths=1.5, patch_artist=True,\n                showmeans=False, showfliers=False,\n                medianprops={\"color\": \"white\", \"linewidth\": 0.5},\n                boxprops={\"facecolor\": \"C0\", \"edgecolor\": \"white\",\n                          \"linewidth\": 0.5},\n                whiskerprops={\"color\": \"C0\", \"linewidth\": 1.5},\n                capprops={\"color\": \"C0\", \"linewidth\": 1.5})\n\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\n\nplt.show()\n\n\n\n\n\n\n\n\nFigure 7.3: Example of several boxplots with whiskers.\n\n\n\n\n\n\n\n\nDiscrete/nominal\n\nBar chart\nSource: https://matplotlib.org/stable/plot_types/basic/bar.html#sphx-glr-plot-types-basic-bar-py\n\n\nCode\nplt.style.use('_mpl-gallery')\n\n# make data:\nx = 0.5 + np.arange(8)\ny = [4.8, 5.5, 3.5, 4.6, 6.5, 6.6, 2.6, 3.0]\n\n# plot\nfig, ax = plt.subplots()\n\nax.bar(x, y, width=1, edgecolor=\"white\", linewidth=0.7)\n\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\n\nplt.show()\n\n\n\n\n\n\n\n\nFigure 7.4: Example of a bar plot.",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Plotting in Python</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-python-matplotlib.html#plotting-two-variables",
+    "href": "tutorials/tutorial-python-matplotlib.html#plotting-two-variables",
+    "title": "Plotting in Python",
+    "section": "Plotting two variables",
+    "text": "Plotting two variables\n\nScatter plots",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Plotting in Python</span>"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-python-matplotlib.html#other-kinds-of-plots",
+    "href": "tutorials/tutorial-python-matplotlib.html#other-kinds-of-plots",
+    "title": "Plotting in Python",
+    "section": "Other kinds of plots",
+    "text": "Other kinds of plots\nThe following is copied verbatim from the Quarto website:\nhttps://quarto.org/docs/get-started/hello/vscode.html\nFor a demonstration of a line plot on a polar axis, see Figure 7.5.\n\n\nCode\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 7.5: A line plot on a polar axis",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Plotting in Python</span>"
+    ]
   },
   {
     "objectID": "surveys/survey-01.html",
     "href": "surveys/survey-01.html",
     "title": "Survey-01",
     "section": "",
-    "text": "This page summarizes work related to Survey-01.\n\nLoading…"
+    "text": "About\nThis page summarizes work related to Survey-01.",
+    "crumbs": [
+      "Surveys",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Survey-01</span>"
+    ]
   },
   {
     "objectID": "surveys/survey-01.html#about",
     "href": "surveys/survey-01.html#about",
     "title": "Survey-01",
     "section": "",
-    "text": "This page summarizes work related to Survey-01.\n\nLoading…"
+    "text": "Loading…",
+    "crumbs": [
+      "Surveys",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Survey-01</span>"
+    ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "PSYCH 490 • Spr 2025",
-    "section": "",
-    "text": "ChatGPT/Dall-E-3 model response to ‘an image of “a picture paints a thousand words”’ on 2024-09-19"
+    "objectID": "tutorials/tutorial-rstudio-on-pc.html#what-is-rstudio",
+    "href": "tutorials/tutorial-rstudio-on-pc.html#what-is-rstudio",
+    "title": "Setting up RStudio",
+    "section": "What is RStudio?",
+    "text": "What is RStudio?\nRStudio is an integrated development environment (IDE) for doing data science. An IDE is a computer program that provides tools for people who are developing and testing software. You might not think of yourself as a software developer (yet). But RStudio is a powerful tool for beginners, too. It began life as a tool primarily for users writing code in R, hence the name. RStudio supports multiple programming languages, including R and Python.",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting up RStudio</span>"
+    ]
   },
   {
-    "objectID": "index.html#themes",
-    "href": "index.html#themes",
-    "title": "PSYCH 490 • Spr 2025",
-    "section": "Themes",
-    "text": "Themes\nIf a picture’s worth a thousand words (Wikipedia contributors, 2024), what exactly does it say? This course will focus on the psychology of data visualization—how to read, critique, and generate meaningful figures that inform but don’t mislead. We’ll take inspiration from recognized classic figures and unpack what makes them exemplary. We’ll critique figures that deliberately or inadvertently mislead or confuse. We’ll learn what 150 years of vision science, the foundation of experimental psychology, has to say about data visualization. And we’ll learn how to build our own reproducible figures using Python, R, and JavaScript. No prior programming experience is required."
+    "objectID": "tutorials/tutorial-rstudio-on-pc.html#why-install-rstudio",
+    "href": "tutorials/tutorial-rstudio-on-pc.html#why-install-rstudio",
+    "title": "Setting up RStudio",
+    "section": "Why install RStudio?",
+    "text": "Why install RStudio?\nIf you have your own personal computer, it’s very helpful to have RStudio installed on your computer. That way you can work whether you’re connected to the internet or not.",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting up RStudio</span>"
+    ]
   },
   {
-    "objectID": "index.html#instructor",
-    "href": "index.html#instructor",
-    "title": "PSYCH 490 • Spr 2025",
-    "section": "Instructor",
-    "text": "Instructor\nRick O. Gilmore, Ph.D. \nProfessor of Psychology\nrog1 AT-SIGN psu PERIOD edu\n\nSchedule an appointment: https://doodle.com/mm/rickgilmore/book-a-time\nLab web site: https://gilmore-lab.github.io"
+    "objectID": "tutorials/tutorial-rstudio-on-pc.html#overview",
+    "href": "tutorials/tutorial-rstudio-on-pc.html#overview",
+    "title": "Setting up RStudio",
+    "section": "Overview",
+    "text": "Overview\nInstalling RStudio consists of several steps:\n\nDownloading and installing R.\nDownloading and installing RStudio.\nConfiguring RStudio.\n\nYou can complete these in about 45 minutes, or maybe less if you have a fast internet connection.",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting up RStudio</span>"
+    ]
   },
   {
-    "objectID": "index.html#teaching-assistant",
-    "href": "index.html#teaching-assistant",
-    "title": "PSYCH 490 • Spr 2025",
-    "section": "Teaching Assistant",
-    "text": "Teaching Assistant\n\n\n\n\n\n\nUnder construction\n\n\n\nTBD"
+    "objectID": "tutorials/tutorial-rstudio-on-pc.html#installing-r",
+    "href": "tutorials/tutorial-rstudio-on-pc.html#installing-r",
+    "title": "Setting up RStudio",
+    "section": "Installing R",
+    "text": "Installing R\nRStudio requires you to download and install R even if you ultimately plan to do very little programming in R.\nVisit https://cran.wustl.edu/bin/.\n\n\n\nhttps://cran.wustl.edu/bin/\n\n\nSelect the subdirectory depending on what operating system your computer is running. Windows users will select windows and Mac users will select macosx.\n\nMac users\nHere is the window that opens:\n\nNotice that there are two links under the “Latest release:” section. To decide which version is appropriate for you, you need to select the version of R that is appropriate for your computer’s central processing unit (CPU) and operating system (OS). Here’s how to find out what CPU and OS you’re running:\n\nClick on the Apple icon in the top left corner of your menu bar.\n\n\n\nSelect the ‘About This Mac’ menu item.\nA window will appear with information about your computer.\n\n\nIf the ‘macOS’ field has a number greater than 11 (MacOS Big Sur), then you can download the latest version of R. If the ‘Chip’ field says “Apple M1”, “Apple M2”, “Apple M3”, or “Apple M4”, you will want to select the ARM version, e.g. “R-4.4.2-arm64.pkg”. If the ‘Chip’ field says you have some version of an Intel chip, pick the other version of R, e.g., “R-4.4.2-x86_64.pkg”.\n\nOnce the software has downloaded, open it by double-clicking.",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting up RStudio</span>"
+    ]
   },
   {
-    "objectID": "index.html#meeting-time-location",
-    "href": "index.html#meeting-time-location",
-    "title": "PSYCH 490 • Spr 2025",
-    "section": "Meeting time & location",
-    "text": "Meeting time & location\nTuesday & Thursday, 9:05-10:20 am 207 Thomas Building"
+    "objectID": "tutorials/tutorial-rstudio-on-pc.html#installing-rstudio",
+    "href": "tutorials/tutorial-rstudio-on-pc.html#installing-rstudio",
+    "title": "Setting up RStudio",
+    "section": "Installing RStudio",
+    "text": "Installing RStudio",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting up RStudio</span>"
+    ]
   },
   {
-    "objectID": "index.html#canvas-site",
-    "href": "index.html#canvas-site",
-    "title": "PSYCH 490 • Spr 2025",
-    "section": "Canvas site",
-    "text": "Canvas site\nWe will use Canvas to submit assignments and grade them. The Canvas site may be found here:\n\nMost of the course content will be found on this site."
-  },
-  {
-    "objectID": "index.html#course-structure",
-    "href": "index.html#course-structure",
-    "title": "PSYCH 490 • Spr 2025",
-    "section": "Course structure",
-    "text": "Course structure\nThis is a discussion-focused course. On most days we will discuss readings assigned prior to class. On many days, we will work together or individually on the assigned exercises, the final project, or another assignment."
+    "objectID": "tutorials/tutorial-rstudio-on-pc.html#configuring-rstudio",
+    "href": "tutorials/tutorial-rstudio-on-pc.html#configuring-rstudio",
+    "title": "Setting up RStudio",
+    "section": "Configuring RStudio",
+    "text": "Configuring RStudio",
+    "crumbs": [
+      "Tutorials",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Setting up RStudio</span>"
+    ]
   }
 ]
