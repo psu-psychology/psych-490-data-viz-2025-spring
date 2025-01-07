@@ -36,24 +36,23 @@ website:
       - href: deadlines.qmd
         text: Deadlines
       - href: policies.qmd
-        text: Policies
-      - href: values.qmd
-        text: Values
-      - text: exercises
+        text: "Policies & Values"
+      - text: Exercises
         menu: 
-          - href: "exercises/ex01-read-a-scientific-paper.qmd"
-          - href: "exercises/ex02-textbook-findings.qmd"
+          - href: "exercises/ex01-making-data.qmd"
+          # - href: "exercises/exNN-finding-data-sources.qmd"
+          # - href: "exercises/exNN-reading-figures.qmd"
       - text: Tutorials
         menu:
         - tutorials/tutorial-rstudio-on-pc.qmd
         - tutorials/tutorial-rstudio-on-psu.qmd
         - tutorials/tutorial-r-ggplot.qmd
         - tutorials/tutorial-python-matplotlib.qmd
-      - text: Surveys
-        menu:
-          - href: "surveys/survey-01.qmd"
-            text: "Survey-01"
-      - href: resources.qmd
+      # - text: Surveys
+      #   menu:
+          # - href: "surveys/survey-01.qmd"
+          #   text: "Survey-01"
+      # - href: resources.qmd
       - href: meta.qmd
   repo-url: https://github.com/psu-psychology/psych-490-data-viz-2025-spring
   repo-actions: [edit, issue]

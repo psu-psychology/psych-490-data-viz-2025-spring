@@ -7,8 +7,6 @@ subtitle: "Exploring Government Data Sources"
 
 ## Goals {-}
 
-
-
 ## Assignment {-}
 
 ## Submit {-}

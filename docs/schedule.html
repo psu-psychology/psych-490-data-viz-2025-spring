@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Calendar – PSYCH 490 • Spr 2025</title>
+<title>schedule – PSYCH 490 • Spr 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -54,7 +54,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -140,23 +160,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./policies.html"> 
-<span class="menu-text">Policies</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./values.html"> 
-<span class="menu-text">Values</span></a>
+<span class="menu-text">Policies &amp; Values</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-exercises" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">exercises</span>
+ <span class="menu-text">Exercises</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-exercises">    
         <li>
-    <a class="dropdown-item" href="./exercises/ex01-read-a-scientific-paper.qmd">
- <span class="dropdown-text"></span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./exercises/ex02-textbook-findings.qmd">
+    <a class="dropdown-item" href="./exercises/ex01-making-data.qmd">
  <span class="dropdown-text"></span></a>
   </li>  
     </ul>
@@ -167,26 +179,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
         <li>
-    <a class="dropdown-item" href="./tutorials/plotting.qmd">
- <span class="dropdown-text">Plotting</span></a>
+    <a class="dropdown-item" href="./tutorials/tutorial-rstudio-on-pc.html">
+ <span class="dropdown-text">Setting up RStudio</span></a>
   </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-surveys" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Surveys</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-surveys">    
         <li>
-    <a class="dropdown-item" href="./surveys/survey-01.html">
- <span class="dropdown-text">Survey-01</span></a>
+    <a class="dropdown-item" href="./tutorials/tutorial-rstudio-on-psu.html">
+ <span class="dropdown-text">Setting up RStudio @ Penn State</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./tutorials/tutorial-r-ggplot.html">
+ <span class="dropdown-text">Plotting with ggplot</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./tutorials/tutorial-python-matplotlib.html">
+ <span class="dropdown-text">Plotting in Python</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
-<span class="menu-text">Resources</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./meta.html"> 
 <span class="menu-text">Meta</span></a>
@@ -230,31 +239,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="toc-actions"><ul><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/edit/main/src/schedule.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Calendar</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
-</div>
+<main class="content" id="quarto-document-content"><div class="quarto-title-block"><div class="quarto-title-tools-only"><h1></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    <div>
-    <div class="quarto-title-meta-heading">Modified</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date-modified">November 22, 2024</p>
-    </div>
-  </div>
-    
-  </div>
-  
-
-
-</header>
 
 
 <section id="schedule" class="level2">
@@ -271,7 +258,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="thursday-january-16" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="thursday-january-16">Thursday, January 16</h4>
+<p><em>Making (sense of) data</em></p>
 <ul>
+<li>Required:
+<ul>
+<li><span class="citation" data-cites="Stevens1946-sh">Stevens (<a href="#ref-Stevens1946-sh" role="doc-biblioref">1946</a>)</span></li>
+</ul></li>
 <li><a href="./slides/wk01-2025-01-14-course-intro.html">Slides</a></li>
 </ul>
 </section>
@@ -428,16 +420,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h4 class="unnumbered anchored" data-anchor-id="tuesday-april-29">Tuesday, April 29</h4>
 </section>
 <section id="thursday-may-01" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="thursday-may-01">Thursday, May 01</h4>
+
 
 
 <!-- -->
 
+
 </section>
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Thursday, May 01</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Stevens1946-sh" class="csl-entry" role="listitem">
+Stevens, S. S. (1946). On the theory of scales of measurement. <em>Science (New York, N.Y.)</em>, <em>103</em>, 677–680. <a href="https://doi.org/10.1126/science.103.2684.677">https://doi.org/10.1126/science.103.2684.677</a>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -910,7 +907,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Calendar"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> ""</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>{{&lt; include _schedule.qmd &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>

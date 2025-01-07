@@ -12,6 +12,10 @@
 
 #### Thursday, January 16 {-}
 
+*Making (sense of) data*
+
+- Required:
+  - @Stevens1946-sh
 - [Slides](slides/wk01-2025-01-14-course-intro.qmd)
 
 ### January 20-24 {- #week-02}

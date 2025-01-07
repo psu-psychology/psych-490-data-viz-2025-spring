@@ -143,23 +143,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../policies.html"> 
-<span class="menu-text">Policies</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../values.html"> 
-<span class="menu-text">Values</span></a>
+<span class="menu-text">Policies &amp; Values</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-exercises" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">exercises</span>
+ <span class="menu-text">Exercises</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-exercises">    
         <li>
-    <a class="dropdown-item" href="../exercises/ex01-read-a-scientific-paper.qmd">
- <span class="dropdown-text"></span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../exercises/ex02-textbook-findings.qmd">
+    <a class="dropdown-item" href="../exercises/ex01-making-data.qmd">
  <span class="dropdown-text"></span></a>
   </li>  
     </ul>
@@ -170,26 +162,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
         <li>
-    <a class="dropdown-item" href="../tutorials/plotting.qmd">
- <span class="dropdown-text">Plotting</span></a>
+    <a class="dropdown-item" href="../tutorials/tutorial-rstudio-on-pc.html">
+ <span class="dropdown-text">Setting up RStudio</span></a>
   </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-surveys" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Surveys</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-surveys">    
         <li>
-    <a class="dropdown-item" href="../surveys/survey-01.html">
- <span class="dropdown-text">Survey-01</span></a>
+    <a class="dropdown-item" href="../tutorials/tutorial-rstudio-on-psu.html">
+ <span class="dropdown-text">Setting up RStudio @ Penn State</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorials/tutorial-r-ggplot.html">
+ <span class="dropdown-text">Plotting with ggplot</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorials/tutorial-python-matplotlib.html">
+ <span class="dropdown-text">Plotting in Python</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../resources.html"> 
-<span class="menu-text">Resources</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../meta.html"> 
 <span class="menu-text">Meta</span></a>
@@ -240,12 +229,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     
   
-    <div>
-    <div class="quarto-title-meta-heading">Modified</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date-modified">November 22, 2024</p>
-    </div>
-  </div>
     
   </div>
   
@@ -284,7 +267,7 @@ Note
 <section id="setup" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="setup">Setup</h2>
 <p>We start by importing the <code>numpy</code> and <code>pyplot</code> libraries and giving them convenient short names for future reference.</p>
-<div id="157b4ab3" class="cell" data-execution_count="1">
+<div id="a7400c35" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -300,7 +283,7 @@ Note
 <h4 class="unnumbered anchored" data-anchor-id="histograms">Histograms</h4>
 <p>From <a href="https://matplotlib.org/stable/gallery/statistics/hist.html#sphx-glr-gallery-statistics-hist-py" class="uri">https://matplotlib.org/stable/gallery/statistics/hist.html#sphx-glr-gallery-statistics-hist-py</a></p>
 <p>Load components from <code>matplotlib</code>.</p>
-<div id="57ef7739" class="cell" data-execution_count="2">
+<div id="15d80939" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> colors</span>
@@ -437,7 +420,7 @@ Figure&nbsp;1: Two histograms with 100K points each.
 <div id="fig-multiple-violin-plots" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-multiple-violin-plots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="tutorial-python-matplotlib_files/figure-html/fig-multiple-violin-plots-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: Multiple violin plots with different parameters."><img src="tutorial-python-matplotlib_files/figure-html/fig-multiple-violin-plots-output-1.png" width="771" height="376" class="figure-img"></a>
+<a href="tutorial-python-matplotlib_files/figure-html/fig-multiple-violin-plots-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: Multiple violin plots with different parameters."><img src="tutorial-python-matplotlib_files/figure-html/fig-multiple-violin-plots-output-1.png" width="774" height="376" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-multiple-violin-plots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Multiple violin plots with different parameters.
@@ -1325,7 +1308,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","loop":false,"descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"descPosition":"bottom","closeEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

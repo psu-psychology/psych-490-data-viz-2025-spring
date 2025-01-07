@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.5.56">
 
   <meta name="author" content="Rick Gilmore">
-  <title>PSYCH 490 • Spr 2025 – The Psychology of Data Visualization</title>
+  <title>PSYCH 490 • Spr 2025 – Making Data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -347,8 +347,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">The Psychology of Data Visualization</h1>
-  <p class="subtitle">2025-01-14</p>
+  <h1 class="title">Making Data</h1>
+  <p class="subtitle">2025-01-16</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -359,163 +359,161 @@ Rick Gilmore
 </div>
 
 </section>
+<section>
+<section id="prelude" class="title-slide slide level1 center">
+<h1>Prelude</h1>
+
+</section>
+<section class="slide level2">
+
+<iframe data-external="1" src="https://www.youtube.com/embed/9r7X3f2gFz4?si=V5l7oVU5yefPY6jd" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p><span class="citation" data-cites="Lucaas2007-dk">Lucaas (<a href="#/references" role="doc-biblioref" onclick="">2007</a>)</span></p>
+</section></section>
+<section>
+<section id="overview" class="title-slide slide level1 center">
+<h1>Overview</h1>
+
+</section>
+<section id="announcements" class="slide level2">
+<h2>Announcements</h2>
+<ul>
+<li><a href="../exercises/ex01-making-data.qmd">Exercise-01</a> write-up <span class="orange-due">due next Tuesday, January 21, 2025</span>.</li>
+</ul>
+</section>
+<section id="last-time" class="slide level2">
+<h2>Last time…</h2>
+<ul>
+<li>Course introduction</li>
+<li>Start on <a href="../exercises/ex01-making-data.qmd">Exercise-01</a></li>
+</ul>
+</section>
 <section id="today" class="slide level2">
 <h2>Today</h2>
 <ul>
-<li>Introduction to the course</li>
-<li>Making data</li>
-</ul>
-</section>
-<section id="introduction-to-the-course" class="title-slide slide level1 center">
-<h1>Introduction to the course</h1>
-
-</section>
-
-<section>
-<section id="making-data" class="title-slide slide level1 center">
-<h1>Making data</h1>
-
-</section>
-<section id="people" class="slide level2">
-<h2>People</h2>
-<ul>
-<li>Rick Gilmore, Professor of Psychology</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<!-- Gilmore photo biography -->
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/DenverCP.JPG/266px-DenverCP.JPG" height="150"> <img data-src="http://watson.brown.edu/ds/sites/all/themes/ds/img/header/brown_large.png" height="150"> <img data-src="https://images.unsplash.com/photo-1617581629397-a72507c3de9e?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZ3RvbiUyMGRjfGVufDB8fDB8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=60%22" height="150"> <img data-src="https://banner2.cleanpng.com/20180623/uk/kisspng-carnegie-mellon-university-in-qatar-carnegie-mello-5b2e03c049ac30.3609480215297422723018.jpg" height="150"></p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="../include/img/sleic.png" height="150"> <img data-src="https://nyu.databrary.org/web/images/logo/databrary-nav.svg" height="150"> <img data-src="https://www.play-project.org/img/PLAY-logo.png" height="150"></p>
-</div></div>
-</section>
-<section id="why-this-course-why-now" class="slide level2">
-<h2>Why this course, why now</h2>
-</section>
-<section class="slide level2">
-
-<p><img data-src="https://nyu.databrary.org/web/images/logo/databrary-nav.svg" height="150"></p>
-</section>
-<section class="slide level2">
-
-
-<img data-src="../include/img/silberzahn-fig-02.jpeg" class="r-stretch quarto-figure-center"><p class="caption">Figure 2 from <span class="citation" data-cites="Silberzahn2018-st">Silberzahn et al. (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span></p></section>
-<section class="slide level2">
-
-<p><a href="https://psu-psychology.github.io/psych-490-reproducibility-2024-fall/supplemental/many-viz.html">Visualizing the ’Many Analysts – <span class="citation" data-cites="Silberzahn2018-st">Silberzahn et al. (<span>2018</span>)</span> – data</a></p>
-<p><a href="https://psu-psychology.github.io/psych-490-reproducibility-2024-fall/supplemental/plotting-degrees-of-freedom.html">On plots and degrees of freedom</a></p>
-</section>
-<section class="slide level2">
-
-
-<img data-src="https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="datasaurus2019-us"><span>“The <span>D</span>atasaurus dozen - same stats, different graphs | <span>A</span>utodesk <span>R</span>esearch”</span> (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span>; <span class="citation" data-cites="Matejka2017-xi">Matejka &amp; Fitzmaurice (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span></p></section>
-<section class="slide level2">
-
-
-<img data-src="https://www.research.autodesk.com/app/uploads/2024/09/BoxViolinSmaller.gif" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="datasaurus2019-us"><span>“The <span>D</span>atasaurus dozen - same stats, different graphs | <span>A</span>utodesk <span>R</span>esearch”</span> (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span>; <span class="citation" data-cites="Matejka2017-xi">Matejka &amp; Fitzmaurice (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span></p></section>
-<section class="slide level2">
-
-
-<img data-src="../include/img/data-is-eating-the-world.png" class="r-stretch quarto-figure-center"><p class="caption">https://www.indexventures.com/perspectives/data-not-software-is-eating-the-world/</p></section>
-<section id="purpose-goals" class="slide level2">
-<h2>Purpose &amp; goals</h2>
-<div>
-<ul>
-<li class="fragment">Who visualizes data, how do they visualize it, and why?</li>
-<li class="fragment">What are data? Where does data come from?</li>
-<li class="fragment">How does vision science inform how we perceive patterns in data?</li>
-<li class="fragment">What’s the relationship between non-visual and visual ways of understanding data?</li>
-<li class="fragment">What makes a data visualization effective?</li>
-<li class="fragment">How can we make better data visualizations?</li>
-</ul>
-</div>
-</section>
-<section id="schedule" class="slide level2">
-<h2>Schedule</h2>
-<p><a href="https://psu-psychology.github.io/psych-490-data-viz-2025-spring/schedule.html" class="uri">https://psu-psychology.github.io/psych-490-data-viz-2025-spring/schedule.html</a></p>
-</section>
-<section id="exercises-evaluation" class="slide level2">
-<h2>Exercises &amp; evaluation</h2>
-<ul>
-<li>Exercises
-<ul>
-<li>8 @ 10 pts/each</li>
-<li>Top 4 count</li>
-<li>Others count toward partial extra credit up to 10 pts</li>
-</ul></li>
-<li>Attendance (up to 40 points)</li>
-<li>Final project (40 points)</li>
-</ul>
-</section>
-<section id="resources" class="slide level2">
-<h2>Resources</h2>
-<ul>
-<li>This site: <a href="https://psu-psychology.github.io/psych-490-data-viz-2025-spring/" class="uri">https://psu-psychology.github.io/psych-490-data-viz-2025-spring/</a> <!-- - [Canvas](https://psu.instructure.com/courses/2280122) --></li>
-<li>University Library</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<ul>
-<li>Articles
-<ul>
-<li>Retrieve them yourself via the URL (uniform resource locator) and the <a href="https://www.doi.org">DOI</a> (digital object identifier).</li>
-<li>Why do I do this?</li>
-</ul></li>
-</ul>
-</section>
-<section id="structure" class="slide level2">
-<h2>Structure</h2>
-<ul>
-<li>Meet 2x weekly</li>
-<li>Tuesday &amp; Thursday: lecture + discussion + work session</li>
-<li>Do your homework</li>
-</ul>
-</section>
-<section id="culture-climate" class="slide level2">
-<h2>Culture &amp; climate</h2>
-<ul>
-<li>Creating a community of inquiry</li>
-<li>Encouraging vigorous &amp; constructive criticism</li>
-<li>Criticism of <em>work/ideas/behaviors</em> vs.&nbsp;<em>people</em>
-<ul>
-<li>‘Smith thinks that pigs can fly.’</li>
-<li>‘Smith is an idiot.’</li>
-<li>‘Smith tried to demonstrate that pigs can fly by tossing a few off the roof of Old Main. That’s nonsense and made a huge mess.’</li>
-</ul></li>
+<li>Making Data</li>
+<li>Types of data</li>
 </ul>
 </section></section>
 <section>
-<section id="your-turn-making-data" class="title-slide slide level1 center">
-<h1>Your turn: Making data</h1>
+<section id="making-data" class="title-slide slide level1 center">
+<h1>Making Data</h1>
 
 </section>
-<section id="exercise-01" class="slide level2">
-<h2>Exercise 01</h2>
+<section id="how-are-data-made" class="slide level2">
+<h2>How are data made?</h2>
 <ul>
-<li>Visit <a href="../exercises/ex01-making-data.qmd">Exercise-01</a></li>
-<li>Divide up into teams</li>
-<li>Write-up due next Tuesday, January 21, 2025</li>
+<li class="fragment">By measurement</li>
+</ul>
+</section>
+<section id="what-is-measurement" class="slide level2">
+<h2>What is measurement?</h2>
+<ul>
+<li class="fragment">A procedure for mapping properties of X onto some numerical standard or scale Y</li>
+<li class="fragment"><em>Psychometrics</em>: The study of psychological measurement</li>
+</ul>
+</section>
+<section id="burkes-terministic-screen" class="slide level2">
+<h2>Burke’s ‘Terministic Screen’</h2>
+<blockquote>
+<p>Even if any given terminology is a <em>reflection</em> of reality, by its very nature as a terminology, it must be a <em>selection</em> of reality; and to this extent must also as a <em>deflection</em> of reality</p>
+</blockquote>
+<p><span class="citation" data-cites="Burke1968-ye">Burke (<a href="#/references" role="doc-biblioref" onclick="">1968</a>)</span></p>
+<ul>
+<li>Data ~ quantitative terminology
+<ul>
+<li>a symbol of the thing measured, not the thing itself</li>
+</ul></li>
+<li>Data selects, reflects, and deflects</li>
+</ul>
+</section>
+<section id="stevens-scales-of-measurement" class="slide level2">
+<h2>Stevens’ scales of measurement</h2>
+
+<img data-src="../include/img/stevens-1946-fig.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Stevens1946-sh">Stevens (<a href="#/references" role="doc-biblioref" onclick="">1946</a>)</span></p></section>
+<section id="questions-about-measurement" class="slide level2">
+<h2>Questions about measurement</h2>
+<ul>
+<li>What’s the procedure for making this mapping?</li>
+<li>What are the rules for assigning numbers?</li>
+<li>What can we do with the assigned numbers (summarize, depict)?</li>
+</ul>
+</section></section>
+<section>
+<section id="types-of-data" class="title-slide slide level1 center">
+<h1>Types of data</h1>
+
+</section>
+<section id="in-other-domains" class="slide level2">
+<h2>In other domains</h2>
+<ul>
+<li>Business/economics</li>
+<li>Politics</li>
+<li>Sports</li>
+<li>Entertainment</li>
+<li>Weather</li>
+</ul>
+</section>
+<section id="in-psychology" class="slide level2">
+<h2>In psychology</h2>
+<ul>
+<li>Internal mental states</li>
+<li>Behaviors</li>
+<li>Physiological processes</li>
+<li>Physical characteristics</li>
+<li>Environmental properties</li>
+</ul>
+</section>
+<section id="examples-of" class="slide level2">
+<h2>Examples of…</h2>
+<ul>
+<li>Internal mental states</li>
+<li>Behaviors</li>
+<li>Physiological processes</li>
+<li>Physical characteristics</li>
+<li>Environmental properties</li>
+</ul>
+</section>
+<section id="how-to-measure" class="slide level2">
+<h2>How to measure…</h2>
+<ul>
+<li>Internal mental states</li>
+<li>Behaviors</li>
+<li>Physiological processes</li>
+<li>Physical characteristics</li>
+<li>Environmental properties</li>
+</ul>
+</section>
+<section id="scales-of-measurement" class="slide level2">
+<h2>Scales of measurement</h2>
+
+<img data-src="../include/img/stevens-1946-table.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Stevens1946-sh">Stevens (<a href="#/references" role="doc-biblioref" onclick="">1946</a>)</span></p></section>
+<section id="your-surveys" class="slide level2">
+<h2>Your surveys…</h2>
+<ul>
+<li>Nominal</li>
+<li>Ordinal</li>
+<li>Interval</li>
+<li>Ratio</li>
 </ul>
 </section></section>
 <section id="main-points" class="title-slide slide level1 center">
 <h1>Main points</h1>
 <ul>
-<li>Visualizing data is important</li>
 <li>Data are <em>made</em></li>
+<li>Map characteristics to quantities</li>
+<li>By some measurment procedure</li>
+<li>Mapping has different types of scales <span class="citation" data-cites="Stevens1946-sh">(<a href="#/references" role="doc-biblioref" onclick="">Stevens, 1946</a>)</span></li>
+<li>Scales determine i) permissible stats &amp; ii) best visualizations</li>
 </ul>
 </section>
 
 <section id="next-time" class="title-slide slide level1 center">
 <h1>Next time</h1>
-<p><em>Making (sense of) data</em></p>
+<p><em>Visualization in business, industry, &amp; government</em></p>
 </section>
 
 <section>
-<section id="resources-1" class="title-slide slide level1 center">
+<section id="resources" class="title-slide slide level1 center">
 <h1>Resources</h1>
 
 </section>
@@ -529,14 +527,14 @@ Rick Gilmore
 </div>
 </div>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-Matejka2017-xi" class="csl-entry" role="listitem">
-Matejka, J., &amp; Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In <em>Proceedings of the 2017 CHI conference on human factors in computing systems</em>. New York, NY, USA: ACM. <a href="https://doi.org/10.1145/3025453.3025912">https://doi.org/10.1145/3025453.3025912</a>
+<div id="ref-Burke1968-ye" class="csl-entry" role="listitem">
+Burke, K. (1968). <em>Language as <span>S</span>ymbolic <span>A</span>ction</em>. University of California Press. Retrieved from <a href="https://www.ucpress.edu/books/language-as-symbolic-action/paper">https://www.ucpress.edu/books/language-as-symbolic-action/paper</a>
 </div>
-<div id="ref-Silberzahn2018-st" class="csl-entry" role="listitem">
-Silberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. <em>Advances in Methods and Practices in Psychological Science</em>, <em>1</em>, 337–356. <a href="https://doi.org/10.1177/2515245917747646">https://doi.org/10.1177/2515245917747646</a>
+<div id="ref-Lucaas2007-dk" class="csl-entry" role="listitem">
+Lucaas. (2007). <em><span>T</span>alking <span>H</span>eads - <span>G</span>irlfriend is <span>B</span>etter (from stop making sense</em>. Youtube. Retrieved from <a href="https://www.youtube.com/watch?v=9r7X3f2gFz4&amp;list=PLXTs9Ss_E9ARDEum9WgaJ67rvpnzogpsA&amp;index=7">https://www.youtube.com/watch?v=9r7X3f2gFz4&amp;list=PLXTs9Ss_E9ARDEum9WgaJ67rvpnzogpsA&amp;index=7</a>
 </div>
-<div id="ref-datasaurus2019-us" class="csl-entry" role="listitem">
-The <span>D</span>atasaurus dozen - same stats, different graphs | <span>A</span>utodesk <span>R</span>esearch. (n.d.). Retrieved June 2, 2019, from <a href="https://www.autodeskresearch.com/publications/samestats">https://www.autodeskresearch.com/publications/samestats</a>
+<div id="ref-Stevens1946-sh" class="csl-entry" role="listitem">
+Stevens, S. S. (1946). On the theory of scales of measurement. <em>Science (New York, N.Y.)</em>, <em>103</em>, 677–680. <a href="https://doi.org/10.1126/science.103.2684.677">https://doi.org/10.1126/science.103.2684.677</a>
 </div>
 </div>
 </section></section>

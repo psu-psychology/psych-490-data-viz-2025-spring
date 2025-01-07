@@ -3,17 +3,10 @@ title: "The Psychology of Data Visualization"
 subtitle: "2025-01-14"
 ---
 
-# Prelude
-
-# Overview
-
-## Announcements
-
-## Last time...
-
 ## Today
 
 - Introduction to the course
+- Making data
 
 # Introduction to the course
 
@@ -127,16 +120,20 @@ subtitle: "2025-01-14"
   
 # Your turn: Making data
 
-## Visit Survey 0
+## Exercise 01
 
-
+- Visit [Exercise-01](../exercises/ex01-making-data.qmd)
+- Divide up into teams
+- Write-up due next Tuesday, January 21, 2025
   
 # Main points
 
+- Visualizing data is important
+- Data are *made*
+
 # Next time
 
-- Making data, visualizing data
-- 
+*Making (sense of) data*
 
 # Resources
 

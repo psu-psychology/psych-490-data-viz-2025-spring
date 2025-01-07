@@ -1,0 +1,121 @@
+---
+title: "Making Data"
+subtitle: "2025-01-16"
+---
+
+# Prelude
+
+---
+
+{{< video https://youtu.be/9r7X3f2gFz4?si=V5l7oVU5yefPY6jd width=100% height=70% >}}
+
+@Lucaas2007-dk
+
+# Overview
+
+## Announcements
+
+- [Exercise-01](../exercises/ex01-making-data.qmd) write-up [due next Tuesday, January 21, 2025]{.orange-due}.
+
+## Last time...
+
+- Course introduction
+- Start on [Exercise-01](../exercises/ex01-making-data.qmd)
+
+## Today
+
+- Making Data
+- Types of data
+
+# Making Data
+
+## How are data made?
+
+>- By measurement
+
+## What is measurement?
+
+>- A procedure for mapping properties of X onto some numerical standard or scale Y
+>- *Psychometrics*: The study of psychological measurement
+
+## Burke's 'Terministic Screen'
+
+>Even if any given terminology is a *reflection* of reality, by its very nature as a terminology, it must be a *selection* of reality; and to this extent must also as a *deflection* of reality
+
+@Burke1968-ye
+
+- Data ~ quantitative terminology
+  - a symbol of the thing measured, not the thing itself
+- Data selects, reflects, and deflects 
+
+
+## Stevens' scales of measurement
+
+![@Stevens1946-sh](../include/img/stevens-1946-fig.png)
+
+## Questions about measurement
+
+- What's the procedure for making this mapping?
+- What are the rules for assigning numbers?
+- What can we do with the assigned numbers (summarize, depict)?
+
+# Types of data
+
+## In other domains
+
+- Business/economics
+- Politics
+- Sports
+- Entertainment
+- Weather
+
+## In psychology
+
+- Internal mental states
+- Behaviors
+- Physiological processes
+- Physical characteristics
+- Environmental properties
+
+## Examples of...
+
+- Internal mental states
+- Behaviors
+- Physiological processes
+- Physical characteristics
+- Environmental properties
+
+## How to measure...
+
+- Internal mental states
+- Behaviors
+- Physiological processes
+- Physical characteristics
+- Environmental properties
+
+## Scales of measurement
+
+![@Stevens1946-sh](../include/img/stevens-1946-table.png)
+
+## Your surveys...
+
+- Nominal
+- Ordinal
+- Interval
+- Ratio
+
+# Main points
+
+- Data are *made*
+- Map characteristics to quantities
+- By some measurment procedure
+- Mapping has different types of scales [@Stevens1946-sh]
+- Scales determine i) permissible stats & ii) best visualizations
+
+# Next time
+
+*Visualization in business, industry, & government*
+
+# Resources
+
+## References

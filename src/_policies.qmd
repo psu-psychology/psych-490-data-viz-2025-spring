@@ -50,13 +50,13 @@ Discriminatory conduct and harassment, as well as sexual misconduct and relation
  
 Direct all inquiries regarding the nondiscrimination policy to:
  
-Dr. Kenneth Lehrman III</br>
-Vice Provost for Affirmative Action</br>
-Affirmative Action Office</br>
+Suzanne C. Adair</br>
+Associate Vice President for Equal Opportunity and Access</br>
+Office of Equal Opportunity and Access</br>
 The Pennsylvania State University</br>
 328 Boucke Building</br>
 University Park, PA 16802-5901</br>
-Email: kfl2@psu.edu</br>
+Email: sca917@psu.edu</br>
 Tel (814) 863-0471
 
 ### Diversity Statement {- #diversity-statement}
@@ -71,14 +71,6 @@ Penn State's policies require me, as a faculty member, to share information abou
 For more information regarding the University's policies and procedures for responding to reports of sexual or gender-based harassment or misconduct, please visit <http://titleix.psu.edu>.
  
 Additionally, I am required to make a report on any reasonable suspicion of child abuse in accordance with the Pennsylvania Child Protective Services Law.
-
-<!-- ## COVID safety information (last updated 2021-08-12) {- #covid} -->
-
-<!-- Please consult the Penn State Covid-19 Dashboard for updates on masking policies, instructional-mode changes, etc. <https://virusinfo.psu.edu/covid-19-dashboard/>. -->
-
-<!-- This class will meet in-person unless there is a change in University policy. -->
-
-<!-- Penn State University requires everyone to wear a face mask in all university buildings, including classrooms, regardless of vaccination status. **ALL STUDENTS MUST** wear a mask appropriately (i.e., covering both your mouth and nose) while you are indoors on campus.  This is to protect your health and safety as well as the health and safety of your classmates, instructor, and the university community. Anyone attending class without a mask will be asked to put one on or leave. Instructors may end class if anyone present refuses to appropriately wear a mask for the duration of class. Students who refuse to wear masks appropriately may face disciplinary action for Code of Conduct violations.  If you feel you cannot wear a mask during class, please speak with your adviser immediately about your options for altering your schedule. -->
 
 ### Zoom {- #zoom}
 	

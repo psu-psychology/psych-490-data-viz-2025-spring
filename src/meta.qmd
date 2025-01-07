@@ -12,7 +12,7 @@ The project root uses a `src/` directory to store the source code.
 
 A site-wide YAML file (`_quarto.yml`) controls the rendering process.
 
-Separate directories contain lecture slides (`slides/`), exercises (`exercises/`), class-specific R functions (`R/`), surveys (`surveys/`), and supplemental documents (`supplemental/`).
+Separate directories contain lecture slides (`slides/`), exercises (`exercises/`), class-specific R functions (`R/`), surveys (`surveys/`), and tutorials (`tutorials/`).
 Quarto files with underscores (e.g., `_index.qmd`, `_about.qmd`, `_evaluation.qmd`, `_schedule.qmd`, and `values.qmd`) are the main targets for editing and updating.
 Parent files (e.g., `index.qmd`, `evaluation.qmd`, `policies.qmd`, and `schedule.qmd`) call upon these child files in the rendering process.
 

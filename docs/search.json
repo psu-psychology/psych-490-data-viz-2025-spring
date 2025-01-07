@@ -114,72 +114,135 @@
   {
     "objectID": "schedule.html",
     "href": "schedule.html",
-    "title": "Calendar",
+    "title": "",
     "section": "",
-    "text": "Surveying the landscape\n\n\nCourse introduction\n\nSlides\n\n\n\n\n\nSlides\n\n\n\n\n\nWho visualizes data and why\n\n\nVisualization in business, industry, & government\n\n\n\nVisualization in science\n\n\n\n\nUnderstanding figures\n\n\nData types\n\nIn-class exercise on data creation.\n\n\n\n\nFigure types\n\n\n\n\nFrom perception to cognition\n\n\nFrom stimulus to sensation\n\n\n\nFrom sensation to perception\n\n\n\n\nFrom cognition to understanding\n\n\n\n\n\n\n\n\n\nStorytelling with data\n\n\n\n\n\n\n\n\n\nCritiquing figures\n\n\n\n\n\n\n\n\n\nExploring data with spreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to R\n\n\nWhy R we doing this?\n\n\n\n\n\n\n\nExploring data with R\n\n\nGathering & cleaning data\n\n\n\nMaking plots with ggplot2\n\n\n\n\nIntroduction to Python\n\n\n\n\n\n\n\n\n\nExploring data with Python\n\n\n\n\n\n\n\n\n\nMaking plots with JavaScript\n\n\n\n\n\n\n\n\n\nFinal Project Preparation\n\n\n\n\n\n\n\n\n\nStudent Projects"
+    "text": "Code"
   },
   {
     "objectID": "schedule.html#schedule",
     "href": "schedule.html#schedule",
-    "title": "Calendar",
-    "section": "",
-    "text": "Surveying the landscape\n\n\nCourse introduction\n\nSlides\n\n\n\n\n\nSlides\n\n\n\n\n\nWho visualizes data and why\n\n\nVisualization in business, industry, & government\n\n\n\nVisualization in science\n\n\n\n\nUnderstanding figures\n\n\nData types\n\nIn-class exercise on data creation.\n\n\n\n\nFigure types\n\n\n\n\nFrom perception to cognition\n\n\nFrom stimulus to sensation\n\n\n\nFrom sensation to perception\n\n\n\n\nFrom cognition to understanding\n\n\n\n\n\n\n\n\n\nStorytelling with data\n\n\n\n\n\n\n\n\n\nCritiquing figures\n\n\n\n\n\n\n\n\n\nExploring data with spreadsheets\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to R\n\n\nWhy R we doing this?\n\n\n\n\n\n\n\nExploring data with R\n\n\nGathering & cleaning data\n\n\n\nMaking plots with ggplot2\n\n\n\n\nIntroduction to Python\n\n\n\n\n\n\n\n\n\nExploring data with Python\n\n\n\n\n\n\n\n\n\nMaking plots with JavaScript\n\n\n\n\n\n\n\n\n\nFinal Project Preparation\n\n\n\n\n\n\n\n\n\nStudent Projects"
+    "title": "",
+    "section": "Schedule",
+    "text": "Schedule\n\nJanuary 13-17\nSurveying the landscape\n\nTuesday, January 14\nCourse introduction\n\nSlides\n\n\n\nThursday, January 16\nMaking (sense of) data\n\nRequired:\n\nStevens (1946)\n\nSlides\n\n\n\n\nJanuary 20-24\nWho visualizes data and why\n\nTuesday, January 21\nVisualization in business, industry, & government\n\n\nThursday, January 23\nVisualization in science\n\n\n\nJanuary 27-31\nUnderstanding figures\n\nTuesday, January 28\nData types\n\nIn-class exercise on data creation.\n\n\n\nThursday, January 30\nFigure types\n\n\n\nFebruary 3-7\nFrom perception to cognition\n\nTuesday, February 04\nFrom stimulus to sensation\n\n\nThursday, February 06\nFrom sensation to perception\n\n\n\nFebruary 10-14\nFrom cognition to understanding\n\nTuesday, February 11\n\n\nThursday, February 13\n\n\n\nFebruary 17-21\nStorytelling with data\n\nTuesday, February 18\n\n\nThursday, February 20\n\n\n\nFebruary 24-28\nCritiquing figures\n\nTuesday, February 25\n\n\nThursday, February 27\n\n\n\nMarch 3-7\nExploring data with spreadsheets\n\nTuesday, March 04\n\n\nThursday, March 06\n\n\n\nMarch 10-14 Spring Break\n\n\nMarch 17-21\nIntroduction to R\n\nTuesday, March 18\nWhy R we doing this?\n\n\nThursday, March 20\n\n\n\nMarch 24-28\nExploring data with R\n\nTuesday, March 25\nGathering & cleaning data\n\n\nThursday, March 27\nMaking plots with ggplot2\n\n\n\nMarch 31 - April 4\nIntroduction to Python\n\nTuesday, April 01\n\n\nThursday, April 03\n\n\n\nApril 7-11\nExploring data with Python\n\nTuesday, April 08\n\n\nThursday, April 10\n\n\n\nApril 14-18\nMaking plots with JavaScript\n\nTuesday, April 15\n\n\nThursday, April 17\n\n\n\nApril 21-25\nFinal Project Preparation\n\nTuesday, April 22\n\n\nThursday, April 24\n\n\n\nApril 28 - May 2\nStudent Projects\n\nTuesday, April 29"
   },
   {
-    "objectID": "evaluation.html",
-    "href": "evaluation.html",
+    "objectID": "deadlines.html",
+    "href": "deadlines.html",
     "title": "",
     "section": "",
     "text": "Code"
   },
   {
-    "objectID": "evaluation.html#student-evaluation",
-    "href": "evaluation.html#student-evaluation",
+    "objectID": "deadlines.html#important-deadlines",
+    "href": "deadlines.html#important-deadlines",
     "title": "",
-    "section": "Student Evaluation",
-    "text": "Student Evaluation\n\nElements\n\n\n\nComponent\nDescription\nPoints\n\n\n\n\nAttendance\nYou will receive 1 point for each class you attend up to a maximum of 40.\n40\n\n\nExercises\nThere will be eight (8) exercises that you must work on. Each exercise is worth 10 points. The top four (4) count toward your final grade.\n40\n\n\nFinal project\nYou will complete a final project, either on your own, or with a small group of 3 or less. Your final project is worth 40 points.\n40\n\n\n\nTOTAL POINTS POSSIBLE\n120\n\n\nExtra Credit\nIf you submit more than four exercise write-ups, you may earn up to 10 extra credit points.\n\n\n\n\n\n\nGrading Scheme\n\n\n\nPercent\nPoints\nGrade\n\n\n\n\n94+\n113\nA\n\n\n90-93\n108-112\nA-\n\n\n87-89\n104-107\nB+\n\n\n84-86\n100-103\nB\n\n\n80-83\n96-99\nB-\n\n\n77-79\n92-95\nC+\n\n\n70-76\n84-91\nC\n\n\n60-69\n72-93\nD\n\n\n&lt;59\n&lt;=71\nF"
+    "section": "Important deadlines",
+    "text": "Important deadlines\nThis page summarizes some of the key deadlines in the course.\n\n\n\nDate\nWhat’s due/happening\n\n\n\n\n2024-09-06\nExercise 01\n\n\n2024-09-20\nExercise 02\n\n\n2024-09-20\nExercise 03\n\n\n2024-10-04\nExercise 04\n\n\n2024-10-14\nExercise 05\n\n\n2024-10-18\nFinal project proposal due\n\n\n2024-11-01\nExercise 06\n\n\n2024-11-08\nExercise 07\n\n\n2024-11-22\nFinal Project Presentation Schedule Survey\n\n\n2024-12-06\nExercise 08\n\n\n2024-12-18\nFinal project writeup due"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
+    "objectID": "slides/wk01-2025-01-16-making-data.html#announcements",
+    "href": "slides/wk01-2025-01-16-making-data.html#announcements",
+    "title": "Making Data",
+    "section": "Announcements",
+    "text": "Announcements\n\nExercise-01 write-up due next Tuesday, January 21, 2025."
   },
   {
-    "objectID": "about.html#instructor",
-    "href": "about.html#instructor",
-    "title": "",
-    "section": "Instructor",
-    "text": "Instructor\nRick O. Gilmore, Ph.D. \nProfessor of Psychology\nrog1 AT-SIGN psu PERIOD edu\n\nSchedule an appointment: https://doodle.com/mm/rickgilmore/book-a-time\nLab web site: https://gilmore-lab.github.io"
+    "objectID": "slides/wk01-2025-01-16-making-data.html#last-time",
+    "href": "slides/wk01-2025-01-16-making-data.html#last-time",
+    "title": "Making Data",
+    "section": "Last time…",
+    "text": "Last time…\n\nCourse introduction\nStart on Exercise-01"
   },
   {
-    "objectID": "about.html#teaching-assistant",
-    "href": "about.html#teaching-assistant",
-    "title": "",
-    "section": "Teaching Assistant",
-    "text": "Teaching Assistant\n\n\n\n\n\n\nUnder construction\n\n\n\nTBD"
+    "objectID": "slides/wk01-2025-01-16-making-data.html#today",
+    "href": "slides/wk01-2025-01-16-making-data.html#today",
+    "title": "Making Data",
+    "section": "Today",
+    "text": "Today\n\nMaking Data\nTypes of data"
   },
   {
-    "objectID": "about.html#meeting-time-location",
-    "href": "about.html#meeting-time-location",
-    "title": "",
-    "section": "Meeting time & location",
-    "text": "Meeting time & location\nTuesday & Thursday, 9:05-10:20 am 207 Thomas Building"
+    "objectID": "slides/wk01-2025-01-16-making-data.html#how-are-data-made",
+    "href": "slides/wk01-2025-01-16-making-data.html#how-are-data-made",
+    "title": "Making Data",
+    "section": "How are data made?",
+    "text": "How are data made?\n\nBy measurement"
   },
   {
-    "objectID": "about.html#canvas-site",
-    "href": "about.html#canvas-site",
-    "title": "",
-    "section": "Canvas site",
-    "text": "Canvas site\nWe will use Canvas to submit assignments and grade them. The Canvas site may be found here:\n\nMost of the course content will be found on this site."
+    "objectID": "slides/wk01-2025-01-16-making-data.html#what-is-measurement",
+    "href": "slides/wk01-2025-01-16-making-data.html#what-is-measurement",
+    "title": "Making Data",
+    "section": "What is measurement?",
+    "text": "What is measurement?\n\nA procedure for mapping properties of X onto some numerical standard or scale Y\nPsychometrics: The study of psychological measurement"
   },
   {
-    "objectID": "about.html#course-structure",
-    "href": "about.html#course-structure",
-    "title": "",
-    "section": "Course structure",
-    "text": "Course structure\nThis is a discussion-focused course. On most days we will discuss readings assigned prior to class. On many days, we will work together or individually on the assigned exercises, the final project, or another assignment."
+    "objectID": "slides/wk01-2025-01-16-making-data.html#burkes-terministic-screen",
+    "href": "slides/wk01-2025-01-16-making-data.html#burkes-terministic-screen",
+    "title": "Making Data",
+    "section": "Burke’s ‘Terministic Screen’",
+    "text": "Burke’s ‘Terministic Screen’\n\nEven if any given terminology is a reflection of reality, by its very nature as a terminology, it must be a selection of reality; and to this extent must also as a deflection of reality\n\nBurke (1968)\n\nData ~ quantitative terminology\n\na symbol of the thing measured, not the thing itself\n\nData selects, reflects, and deflects"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-making-data.html#stevens-scales-of-measurement",
+    "href": "slides/wk01-2025-01-16-making-data.html#stevens-scales-of-measurement",
+    "title": "Making Data",
+    "section": "Stevens’ scales of measurement",
+    "text": "Stevens’ scales of measurement\n\nStevens (1946)"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-making-data.html#questions-about-measurement",
+    "href": "slides/wk01-2025-01-16-making-data.html#questions-about-measurement",
+    "title": "Making Data",
+    "section": "Questions about measurement",
+    "text": "Questions about measurement\n\nWhat’s the procedure for making this mapping?\nWhat are the rules for assigning numbers?\nWhat can we do with the assigned numbers (summarize, depict)?"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-making-data.html#in-other-domains",
+    "href": "slides/wk01-2025-01-16-making-data.html#in-other-domains",
+    "title": "Making Data",
+    "section": "In other domains",
+    "text": "In other domains\n\nBusiness/economics\nPolitics\nSports\nEntertainment\nWeather"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-making-data.html#in-psychology",
+    "href": "slides/wk01-2025-01-16-making-data.html#in-psychology",
+    "title": "Making Data",
+    "section": "In psychology",
+    "text": "In psychology\n\nInternal mental states\nBehaviors\nPhysiological processes\nPhysical characteristics\nEnvironmental properties"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-making-data.html#examples-of",
+    "href": "slides/wk01-2025-01-16-making-data.html#examples-of",
+    "title": "Making Data",
+    "section": "Examples of…",
+    "text": "Examples of…\n\nInternal mental states\nBehaviors\nPhysiological processes\nPhysical characteristics\nEnvironmental properties"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-making-data.html#how-to-measure",
+    "href": "slides/wk01-2025-01-16-making-data.html#how-to-measure",
+    "title": "Making Data",
+    "section": "How to measure…",
+    "text": "How to measure…\n\nInternal mental states\nBehaviors\nPhysiological processes\nPhysical characteristics\nEnvironmental properties"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-making-data.html#scales-of-measurement",
+    "href": "slides/wk01-2025-01-16-making-data.html#scales-of-measurement",
+    "title": "Making Data",
+    "section": "Scales of measurement",
+    "text": "Scales of measurement\n\nStevens (1946)"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-making-data.html#your-surveys",
+    "href": "slides/wk01-2025-01-16-making-data.html#your-surveys",
+    "title": "Making Data",
+    "section": "Your surveys…",
+    "text": "Your surveys…\n\nNominal\nOrdinal\nInterval\nRatio"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-making-data.html#references",
+    "href": "slides/wk01-2025-01-16-making-data.html#references",
+    "title": "Making Data",
+    "section": "References",
+    "text": "References\n\n\n\n\nPSYCH 490.003 • Spring 2025\n\n\n\n\nBurke, K. (1968). Language as Symbolic Action. University of California Press. Retrieved from https://www.ucpress.edu/books/language-as-symbolic-action/paper\n\n\nLucaas. (2007). Talking Heads - Girlfriend is Better (from stop making sense. Youtube. Retrieved from https://www.youtube.com/watch?v=9r7X3f2gFz4&list=PLXTs9Ss_E9ARDEum9WgaJ67rvpnzogpsA&index=7\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science (New York, N.Y.), 103, 677–680. https://doi.org/10.1126/science.103.2684.677"
   },
   {
     "objectID": "surveys/survey-01.html",
@@ -270,7 +333,7 @@
     "href": "meta.html#workflow",
     "title": "",
     "section": "Workflow",
-    "text": "Workflow\nThe site is written in Quarto.\nThe project root uses a src/ directory to store the source code.\nA site-wide YAML file (_quarto.yml) controls the rendering process.\nSeparate directories contain lecture slides (slides/), exercises (exercises/), class-specific R functions (R/), surveys (surveys/), and supplemental documents (supplemental/). Quarto files with underscores (e.g., _index.qmd, _about.qmd, _evaluation.qmd, _schedule.qmd, and values.qmd) are the main targets for editing and updating. Parent files (e.g., index.qmd, evaluation.qmd, policies.qmd, and schedule.qmd) call upon these child files in the rendering process.\nA separate Quarto file (psych-490.003-2025-spring-syllabus.qmd) generates a PDF version of a syllabus."
+    "text": "Workflow\nThe site is written in Quarto.\nThe project root uses a src/ directory to store the source code.\nA site-wide YAML file (_quarto.yml) controls the rendering process.\nSeparate directories contain lecture slides (slides/), exercises (exercises/), class-specific R functions (R/), surveys (surveys/), and tutorials (tutorials/). Quarto files with underscores (e.g., _index.qmd, _about.qmd, _evaluation.qmd, _schedule.qmd, and values.qmd) are the main targets for editing and updating. Parent files (e.g., index.qmd, evaluation.qmd, policies.qmd, and schedule.qmd) call upon these child files in the rendering process.\nA separate Quarto file (psych-490.003-2025-spring-syllabus.qmd) generates a PDF version of a syllabus."
   },
   {
     "objectID": "meta.html#rendering",
@@ -361,7 +424,7 @@
     "href": "slides/wk01-2025-01-14-course-intro.html#today",
     "title": "The Psychology of Data Visualization",
     "section": "Today",
-    "text": "Today\n\nIntroduction to the course"
+    "text": "Today\n\nIntroduction to the course\nMaking data"
   },
   {
     "objectID": "slides/wk01-2025-01-14-course-intro.html#people",
@@ -371,18 +434,18 @@
     "text": "People\n\nRick Gilmore, Professor of Psychology"
   },
   {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#why-this-course-why-now",
+    "href": "slides/wk01-2025-01-14-course-intro.html#why-this-course-why-now",
+    "title": "The Psychology of Data Visualization",
+    "section": "Why this course, why now",
+    "text": "Why this course, why now"
+  },
+  {
     "objectID": "slides/wk01-2025-01-14-course-intro.html#purpose-goals",
     "href": "slides/wk01-2025-01-14-course-intro.html#purpose-goals",
     "title": "The Psychology of Data Visualization",
     "section": "Purpose & goals",
     "text": "Purpose & goals\n\n\nWho visualizes data, how do they visualize it, and why?\nWhat are data? Where does data come from?\nHow does vision science inform how we perceive patterns in data?\nWhat’s the relationship between non-visual and visual ways of understanding data?\nWhat makes a data visualization effective?\nHow can we make better data visualizations?"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#themes-topics",
-    "href": "slides/wk01-2025-01-14-course-intro.html#themes-topics",
-    "title": "The Psychology of Data Visualization",
-    "section": "Themes & topics",
-    "text": "Themes & topics\n\n\nWhat is science trying to do?\nWhat practices and norms constitute better science?\nWhat practices and norms constitute poorer science?\nIs there a crisis of reproducibility or replicability in psychological science?\nIs there a crisis in other areas of science?\nWhat are scientists doing to address these criticisms?"
   },
   {
     "objectID": "slides/wk01-2025-01-14-course-intro.html#schedule",
@@ -420,6 +483,13 @@
     "text": "Culture & climate\n\nCreating a community of inquiry\nEncouraging vigorous & constructive criticism\nCriticism of work/ideas/behaviors vs. people\n\n‘Smith thinks that pigs can fly.’\n‘Smith is an idiot.’\n‘Smith tried to demonstrate that pigs can fly by tossing a few off the roof of Old Main. That’s nonsense and made a huge mess.’"
   },
   {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#exercise-01",
+    "href": "slides/wk01-2025-01-14-course-intro.html#exercise-01",
+    "title": "The Psychology of Data Visualization",
+    "section": "Exercise 01",
+    "text": "Exercise 01\n\nVisit Exercise-01\nDivide up into teams\nWrite-up due next Tuesday, January 21, 2025"
+  },
+  {
     "objectID": "slides/wk01-2025-01-14-course-intro.html#references",
     "href": "slides/wk01-2025-01-14-course-intro.html#references",
     "title": "The Psychology of Data Visualization",
@@ -427,18 +497,74 @@
     "text": "References\n\n\n\n\nPSYCH 490.003 • Spring 2025\n\n\n\n\nMatejka, J., & Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In Proceedings of the 2017 CHI conference on human factors in computing systems. New York, NY, USA: ACM. https://doi.org/10.1145/3025453.3025912\n\n\nSilberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. Advances in Methods and Practices in Psychological Science, 1, 337–356. https://doi.org/10.1177/2515245917747646\n\n\nThe Datasaurus dozen - same stats, different graphs | Autodesk Research. (n.d.). Retrieved June 2, 2019, from https://www.autodeskresearch.com/publications/samestats"
   },
   {
-    "objectID": "deadlines.html",
-    "href": "deadlines.html",
+    "objectID": "about.html",
+    "href": "about.html",
     "title": "",
     "section": "",
     "text": "Code"
   },
   {
-    "objectID": "deadlines.html#important-deadlines",
-    "href": "deadlines.html#important-deadlines",
+    "objectID": "about.html#instructor",
+    "href": "about.html#instructor",
     "title": "",
-    "section": "Important deadlines",
-    "text": "Important deadlines\nThis page summarizes some of the key deadlines in the course.\n\n\n\nDate\nWhat’s due/happening\n\n\n\n\n2024-09-06\nExercise 01\n\n\n2024-09-20\nExercise 02\n\n\n2024-09-20\nExercise 03\n\n\n2024-10-04\nExercise 04\n\n\n2024-10-14\nExercise 05\n\n\n2024-10-18\nFinal project proposal due\n\n\n2024-11-01\nExercise 06\n\n\n2024-11-08\nExercise 07\n\n\n2024-11-22\nFinal Project Presentation Schedule Survey\n\n\n2024-12-06\nExercise 08\n\n\n2024-12-18\nFinal project writeup due"
+    "section": "Instructor",
+    "text": "Instructor\nRick O. Gilmore, Ph.D. \nProfessor of Psychology\nrog1 AT-SIGN psu PERIOD edu\n\nSchedule an appointment: https://doodle.com/mm/rickgilmore/book-a-time\nLab web site: https://gilmore-lab.github.io"
+  },
+  {
+    "objectID": "about.html#teaching-assistant",
+    "href": "about.html#teaching-assistant",
+    "title": "",
+    "section": "Teaching Assistant",
+    "text": "Teaching Assistant\n\n\n\n\n\n\nUnder construction\n\n\n\nTBD"
+  },
+  {
+    "objectID": "about.html#meeting-time-location",
+    "href": "about.html#meeting-time-location",
+    "title": "",
+    "section": "Meeting time & location",
+    "text": "Meeting time & location\nTuesday & Thursday, 9:05-10:20 am 207 Thomas Building"
+  },
+  {
+    "objectID": "about.html#canvas-site",
+    "href": "about.html#canvas-site",
+    "title": "",
+    "section": "Canvas site",
+    "text": "Canvas site\nWe will use Canvas to submit assignments and grade them. The Canvas site may be found here:\n\nMost of the course content will be found on this site."
+  },
+  {
+    "objectID": "about.html#course-structure",
+    "href": "about.html#course-structure",
+    "title": "",
+    "section": "Course structure",
+    "text": "Course structure\nThis is a discussion-focused course. On most days we will discuss readings assigned prior to class. On many days, we will work together or individually on the assigned exercises, the final project, or another assignment."
+  },
+  {
+    "objectID": "evaluation.html",
+    "href": "evaluation.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "evaluation.html#student-evaluation",
+    "href": "evaluation.html#student-evaluation",
+    "title": "",
+    "section": "Student Evaluation",
+    "text": "Student Evaluation\n\nElements\n\n\n\nComponent\nDescription\nPoints\n\n\n\n\nAttendance\nYou will receive 1 point for each class you attend up to a maximum of 40.\n40\n\n\nExercises\nThere will be eight (8) exercises that you must work on. Each exercise is worth 10 points. The top four (4) count toward your final grade.\n40\n\n\nFinal project\nYou will complete a final project, either on your own, or with a small group of 3 or less. Your final project is worth 40 points.\n40\n\n\n\nTOTAL POINTS POSSIBLE\n120\n\n\nExtra Credit\nIf you submit more than four exercise write-ups, you may earn up to 10 extra credit points.\n\n\n\n\n\n\nGrading Scheme\n\n\n\nPercent\nPoints\nGrade\n\n\n\n\n94+\n113\nA\n\n\n90-93\n108-112\nA-\n\n\n87-89\n104-107\nB+\n\n\n84-86\n100-103\nB\n\n\n80-83\n96-99\nB-\n\n\n77-79\n92-95\nC+\n\n\n70-76\n84-91\nC\n\n\n60-69\n72-93\nD\n\n\n&lt;59\n&lt;=71\nF"
+  },
+  {
+    "objectID": "values.html",
+    "href": "values.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "values.html#values",
+    "href": "values.html#values",
+    "title": "",
+    "section": "Values",
+    "text": "Values\n\nPenn State Principles\nThe Pennsylvania State University is a community dedicated to personal and academic excellence. The Penn State Principles were developed to embody the values that we hope our students, faculty, staff, administration, and alumni possess. At the same time, the University is strongly committed to freedom of expression. Consequently, these Principles do not constitute University policy and are not intended to interfere in any way with an individual’s academic or personal freedoms. We hope, however, that individuals will voluntarily endorse these common principles, thereby contributing to the traditions and scholarly heritage left by those who preceded them, and will thus leave Penn State a better place for those who follow.\nI will respect the dignity of all individuals within the Penn State community. The University is committed to creating and maintaining an educational environment that respects the right of all individuals to participate fully in the community. Actions motivated by hate, prejudice, or intolerance violate this principle. I will not engage in any behaviors that compromise or demean the dignity of individuals or groups, including intimidation, stalking, harassment, discrimination, taunting, ridiculing, insulting, or acts of violence. I will demonstrate respect for others by striving to learn from differences between people, ideas, and opinions and by avoiding behaviors that inhibit the ability of other community members to feel safe or welcome as they pursue their academic goals.\nI will practice academic integrity. Academic integrity is a basic guiding principle for all academic activity at Penn State University, allowing the pursuit of scholarly activity in an open, honest, and responsible manner. In accordance with the University Code of Conduct, I will practice integrity in regard to all academic assignments. I will not engage in or tolerate acts of falsification, misrepresentation or deception because such acts of dishonesty violate the fundamental ethical principles of the University community and compromise the worth of work completed by others.\nI will demonstrate social and personal responsibility. The University is a community that promotes learning; any behaviors that are inconsistent with that goal are unacceptable. Irresponsible behaviors, including alcohol or drug abuse and the use of violence against people or property, undermine the educational climate by threatening the physical and mental health of members of the community. I will exercise personal responsibility for my actions and I will make sure that my actions do not interfere with the academic and social environment of the University. I will maintain a high standard of behavior by adhering to the Code of Conduct and respecting the rights of others.\nI will be responsible for my own academic progress and agree to comply with all University policies. The University allows students to identify and achieve their academic goals by providing the information needed to plan the chosen program of study and the necessary educational opportunities, but students assume final responsibility for course scheduling, program planning, and the successful completion of graduation requirements. I will be responsible for seeking the academic and career information needed to meet my educational goals by becoming knowledgeable about the relevant policies, procedures, and rules of the University and academic program, by consulting and meeting with my adviser, and by successfully completing all of the requirements for graduation.\n\n\nPenn State Values\nIntegrity: We act with integrity and honesty in accordance with the highest academic, professional, and ethical standards.\nRespect: We respect and honor the dignity of each person, embrace civil discourse, and foster a diverse and inclusive community.\nResponsibility: We act responsibly, and we are accountable for our decisions, actions, and their consequences.\nDiscovery: We seek and create new knowledge and understanding, and foster creativity and innovation, for the benefit of our communities, society, and the environment.\nExcellence: We strive for excellence in all our endeavors as individuals, an institution, and a leader in higher education.\nCommunity: We work together for the betterment of our University, the communities we serve, and the world."
   },
   {
     "objectID": "policies.html",
@@ -452,18 +578,11 @@
     "href": "policies.html#course-policies",
     "title": "",
     "section": "Course policies",
-    "text": "Course policies\n\nAcademic Integrity\nStudents with questions about academic integrity should visit http://www.la.psu.edu/current-students/undergraduate-students/education/academic-integrity.\nPenn State defines academic integrity as the pursuit of scholarly activity in an open, honest and responsible manner. All students should act with personal integrity, respect others dignity, rights and property, and help create and maintain an environment in which all can succeed through the fruits of their efforts (Faculty Senate Policy 49-20). Sanctions for academic misconduct can include a grade of F for the course as well as other penalties.\nUnless you are told otherwise, you must complete all course work entirely on your own, using only sources that have been permitted by your instructor, and you may not assist other students with papers, quizzes, exams, or other assessments. If I allow you to use ideas, images, or word phrases created by another person (e.g., from Course Hero or Chegg) or by generative technology, such as ChatGPT, you must identify their source.\nWhen you complete assignments, remember the ABCs to avoid plagiarism: Always place copied information within quotation marks, include information about the quoted or paraphrased source in a Bibliography, and Cite the source in the body (in the text) of your paper immediately after the quoted or paraphrased information. When in doubt, cite in the text and include the source in a bibliography.\nStudents with questions about academic integrity should ask me or the TA before submitting work.\nStudents facing allegations of academic misconduct may not drop/withdraw from the affected course unless they are cleared of wrongdoing (see G-9: Academic Integrity). Attempted drops will be prevented or reversed, and students will be expected to complete course work and meet course deadlines. Students who are found responsible for academic integrity violations face academic outcomes, which can be severe, and put themselves at jeopardy for other outcomes which may include ineligibility for Dean’s List, pass/fail elections, and grade forgiveness. Students may also face consequences from their home/major program and/or The Schreyer Honors College.\n\n\nAbsences or late assignments\n\nAbsence from class\nYour absence from class may be excused under unusual circumstances such as (a) an interview for graduate school or a job, (b) illness, (c) religious observance, (d) the death of a family member, or (e) any other event recognized by the university as a valid excuse for absence from class.\nIf you must miss class, you must contact the instructor and the TA in advance.\nUp to three (3) excused absences will be permitted.\n\n\nLate exercises\nExercises submitted after the published deadlines will not be eligible for full credit unless the instructor has given specific permission.\n\n\nLate final projects\nFinal projects submitted after the published deadline will not be eligible for full credit unless the instructor has given specific permission.\n\n\nAccommodation for persons with disabilities\nPenn State welcomes students with disabilities into the University’s educational programs. Please refer to the information provided by Student Disability Resources (SDR) at http://equity.psu.edu/student-disability-resources/ for information about the procedures required to obtain reasonable accommodations in this course. Students should discussSDR-approved accommodations with their instructor as early in the semester as possible, even if they have taken another course with the instructor. Please note: students are not required to provide their instructor with information about the nature of their condition.\nPenn State students are also welcome to contact other units for assistance with personal concerns that interfere with academic progress, including: Counseling and Psychological Services (CAPS; http://studentaffairs.psu.edu/counseling/), the Office of Student Affairs (http://studentaffairs.psu.edu/), Career Services (http://studentaffairs.psu.edu/career/), the Center for Women Students (http://studentaffairs.psu.edu/womenscenter/), the LGBTQA Student Resource Center (http://studentaffairs.psu.edu/lgbtqa/), the Office of Sexual Misconduct Prevention and Response (http://titleix.psu.edu/), Penn State Educational Equity (http://equity.psu.edu/), the Multicultural Resource Center (http://equity.psu.edu/mrc), and University Health Services (http://studentaffairs.psu.edu/health/).\n\n\n\nNondiscrimination Statement\nThe Pennsylvania State University is committed to equal access to programs, facilities, admission and employment for all persons. It is the policy of the University to maintain an environment free of harassment and free of discrimination against any person because of age, race, color, ancestry, national origin, religion, creed, service in the uniformed services (as defined in state and federal law), veteran status, sex, sexual orientation, marital or family status, pregnancy, pregnancy-related conditions, physical or mental disability, gender, perceived gender, gender identity, genetic information or political ideas.\nDiscriminatory conduct and harassment, as well as sexual misconduct and relationship violence, violates the dignity of individuals, impedes the realization of the University’s educational mission, and will not be tolerated.\nDirect all inquiries regarding the nondiscrimination policy to:\nDr. Kenneth Lehrman III Vice Provost for Affirmative Action Affirmative Action Office The Pennsylvania State University 328 Boucke Building University Park, PA 16802-5901 Email: kfl2@psu.edu Tel (814) 863-0471\n\n\nDiversity Statement\nThis classroom is a place where you will be treated with respect. All members of this class are expected to contribute to a respectful, welcoming and inclusive environment for every other member of the class.\nPenn State is committed to creating an educational environment which is free from intolerance directed toward individuals or groups and strives to create and maintain an environment that fosters respect for others as stated in Policy AD29 Statement on Intolerance.\n\n\nMandated Reporting Statement\nPenn State’s policies require me, as a faculty member, to share information about incidents of sex-based discrimination and harassment (discrimination, harassment, sexual harassment, sexual misconduct, dating violence, domestic violence, stalking, and retaliation) with Penn State’s Title IX coordinator or deputy coordinators, regardless of whether the incidents are stated to me in person or shared by students as part of their coursework. For more information regarding the University’s policies and procedures for responding to reports of sexual or gender-based harassment or misconduct, please visit http://titleix.psu.edu.\nAdditionally, I am required to make a report on any reasonable suspicion of child abuse in accordance with the Pennsylvania Child Protective Services Law.\n\n\n\n\n\n\nZoom\nAt some point in the semester, I may decide to use Zoom to allow students who are unable to attend class in person to participate.\nWhile you are on Zoom, keep in mind that this is a classroom environment and others should be treated with respect. Please keep your microphone muted unless you want to ask a question or interact with someone. If your microphone is not muted, the entire class will be able to hear what is going on in your environment. As an instructor, I personally like to see people’s faces. As a participant, I am more involved when I have my camera on. I realize, however, that there are many reasons why you might not want to turn on your camera such as poor internet connection, joining via phone, or other privacy concerns. It is your choice as to whether you would like to have the camera on or not."
+    "text": "Course policies\n\nAcademic Integrity\nStudents with questions about academic integrity should visit http://www.la.psu.edu/current-students/undergraduate-students/education/academic-integrity.\nPenn State defines academic integrity as the pursuit of scholarly activity in an open, honest and responsible manner. All students should act with personal integrity, respect others dignity, rights and property, and help create and maintain an environment in which all can succeed through the fruits of their efforts (Faculty Senate Policy 49-20). Sanctions for academic misconduct can include a grade of F for the course as well as other penalties.\nUnless you are told otherwise, you must complete all course work entirely on your own, using only sources that have been permitted by your instructor, and you may not assist other students with papers, quizzes, exams, or other assessments. If I allow you to use ideas, images, or word phrases created by another person (e.g., from Course Hero or Chegg) or by generative technology, such as ChatGPT, you must identify their source.\nWhen you complete assignments, remember the ABCs to avoid plagiarism: Always place copied information within quotation marks, include information about the quoted or paraphrased source in a Bibliography, and Cite the source in the body (in the text) of your paper immediately after the quoted or paraphrased information. When in doubt, cite in the text and include the source in a bibliography.\nStudents with questions about academic integrity should ask me or the TA before submitting work.\nStudents facing allegations of academic misconduct may not drop/withdraw from the affected course unless they are cleared of wrongdoing (see G-9: Academic Integrity). Attempted drops will be prevented or reversed, and students will be expected to complete course work and meet course deadlines. Students who are found responsible for academic integrity violations face academic outcomes, which can be severe, and put themselves at jeopardy for other outcomes which may include ineligibility for Dean’s List, pass/fail elections, and grade forgiveness. Students may also face consequences from their home/major program and/or The Schreyer Honors College.\n\n\nAbsences or late assignments\n\nAbsence from class\nYour absence from class may be excused under unusual circumstances such as (a) an interview for graduate school or a job, (b) illness, (c) religious observance, (d) the death of a family member, or (e) any other event recognized by the university as a valid excuse for absence from class.\nIf you must miss class, you must contact the instructor and the TA in advance.\nUp to three (3) excused absences will be permitted.\n\n\nLate exercises\nExercises submitted after the published deadlines will not be eligible for full credit unless the instructor has given specific permission.\n\n\nLate final projects\nFinal projects submitted after the published deadline will not be eligible for full credit unless the instructor has given specific permission.\n\n\nAccommodation for persons with disabilities\nPenn State welcomes students with disabilities into the University’s educational programs. Please refer to the information provided by Student Disability Resources (SDR) at http://equity.psu.edu/student-disability-resources/ for information about the procedures required to obtain reasonable accommodations in this course. Students should discussSDR-approved accommodations with their instructor as early in the semester as possible, even if they have taken another course with the instructor. Please note: students are not required to provide their instructor with information about the nature of their condition.\nPenn State students are also welcome to contact other units for assistance with personal concerns that interfere with academic progress, including: Counseling and Psychological Services (CAPS; http://studentaffairs.psu.edu/counseling/), the Office of Student Affairs (http://studentaffairs.psu.edu/), Career Services (http://studentaffairs.psu.edu/career/), the Center for Women Students (http://studentaffairs.psu.edu/womenscenter/), the LGBTQA Student Resource Center (http://studentaffairs.psu.edu/lgbtqa/), the Office of Sexual Misconduct Prevention and Response (http://titleix.psu.edu/), Penn State Educational Equity (http://equity.psu.edu/), the Multicultural Resource Center (http://equity.psu.edu/mrc), and University Health Services (http://studentaffairs.psu.edu/health/).\n\n\n\nNondiscrimination Statement\nThe Pennsylvania State University is committed to equal access to programs, facilities, admission and employment for all persons. It is the policy of the University to maintain an environment free of harassment and free of discrimination against any person because of age, race, color, ancestry, national origin, religion, creed, service in the uniformed services (as defined in state and federal law), veteran status, sex, sexual orientation, marital or family status, pregnancy, pregnancy-related conditions, physical or mental disability, gender, perceived gender, gender identity, genetic information or political ideas.\nDiscriminatory conduct and harassment, as well as sexual misconduct and relationship violence, violates the dignity of individuals, impedes the realization of the University’s educational mission, and will not be tolerated.\nDirect all inquiries regarding the nondiscrimination policy to:\nSuzanne C. Adair Associate Vice President for Equal Opportunity and Access Office of Equal Opportunity and Access The Pennsylvania State University 328 Boucke Building University Park, PA 16802-5901 Email: sca917@psu.edu Tel (814) 863-0471\n\n\nDiversity Statement\nThis classroom is a place where you will be treated with respect. All members of this class are expected to contribute to a respectful, welcoming and inclusive environment for every other member of the class.\nPenn State is committed to creating an educational environment which is free from intolerance directed toward individuals or groups and strives to create and maintain an environment that fosters respect for others as stated in Policy AD29 Statement on Intolerance.\n\n\nMandated Reporting Statement\nPenn State’s policies require me, as a faculty member, to share information about incidents of sex-based discrimination and harassment (discrimination, harassment, sexual harassment, sexual misconduct, dating violence, domestic violence, stalking, and retaliation) with Penn State’s Title IX coordinator or deputy coordinators, regardless of whether the incidents are stated to me in person or shared by students as part of their coursework. For more information regarding the University’s policies and procedures for responding to reports of sexual or gender-based harassment or misconduct, please visit http://titleix.psu.edu.\nAdditionally, I am required to make a report on any reasonable suspicion of child abuse in accordance with the Pennsylvania Child Protective Services Law.\n\n\nZoom\nAt some point in the semester, I may decide to use Zoom to allow students who are unable to attend class in person to participate.\nWhile you are on Zoom, keep in mind that this is a classroom environment and others should be treated with respect. Please keep your microphone muted unless you want to ask a question or interact with someone. If your microphone is not muted, the entire class will be able to hear what is going on in your environment. As an instructor, I personally like to see people’s faces. As a participant, I am more involved when I have my camera on. I realize, however, that there are many reasons why you might not want to turn on your camera such as poor internet connection, joining via phone, or other privacy concerns. It is your choice as to whether you would like to have the camera on or not."
   },
   {
-    "objectID": "values.html",
-    "href": "values.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "values.html#values",
-    "href": "values.html#values",
+    "objectID": "policies.html#values",
+    "href": "policies.html#values",
     "title": "",
     "section": "Values",
     "text": "Values\n\nPenn State Principles\nThe Pennsylvania State University is a community dedicated to personal and academic excellence. The Penn State Principles were developed to embody the values that we hope our students, faculty, staff, administration, and alumni possess. At the same time, the University is strongly committed to freedom of expression. Consequently, these Principles do not constitute University policy and are not intended to interfere in any way with an individual’s academic or personal freedoms. We hope, however, that individuals will voluntarily endorse these common principles, thereby contributing to the traditions and scholarly heritage left by those who preceded them, and will thus leave Penn State a better place for those who follow.\nI will respect the dignity of all individuals within the Penn State community. The University is committed to creating and maintaining an educational environment that respects the right of all individuals to participate fully in the community. Actions motivated by hate, prejudice, or intolerance violate this principle. I will not engage in any behaviors that compromise or demean the dignity of individuals or groups, including intimidation, stalking, harassment, discrimination, taunting, ridiculing, insulting, or acts of violence. I will demonstrate respect for others by striving to learn from differences between people, ideas, and opinions and by avoiding behaviors that inhibit the ability of other community members to feel safe or welcome as they pursue their academic goals.\nI will practice academic integrity. Academic integrity is a basic guiding principle for all academic activity at Penn State University, allowing the pursuit of scholarly activity in an open, honest, and responsible manner. In accordance with the University Code of Conduct, I will practice integrity in regard to all academic assignments. I will not engage in or tolerate acts of falsification, misrepresentation or deception because such acts of dishonesty violate the fundamental ethical principles of the University community and compromise the worth of work completed by others.\nI will demonstrate social and personal responsibility. The University is a community that promotes learning; any behaviors that are inconsistent with that goal are unacceptable. Irresponsible behaviors, including alcohol or drug abuse and the use of violence against people or property, undermine the educational climate by threatening the physical and mental health of members of the community. I will exercise personal responsibility for my actions and I will make sure that my actions do not interfere with the academic and social environment of the University. I will maintain a high standard of behavior by adhering to the Code of Conduct and respecting the rights of others.\nI will be responsible for my own academic progress and agree to comply with all University policies. The University allows students to identify and achieve their academic goals by providing the information needed to plan the chosen program of study and the necessary educational opportunities, but students assume final responsibility for course scheduling, program planning, and the successful completion of graduation requirements. I will be responsible for seeking the academic and career information needed to meet my educational goals by becoming knowledgeable about the relevant policies, procedures, and rules of the University and academic program, by consulting and meeting with my adviser, and by successfully completing all of the requirements for graduation.\n\n\nPenn State Values\nIntegrity: We act with integrity and honesty in accordance with the highest academic, professional, and ethical standards.\nRespect: We respect and honor the dignity of each person, embrace civil discourse, and foster a diverse and inclusive community.\nResponsibility: We act responsibly, and we are accountable for our decisions, actions, and their consequences.\nDiscovery: We seek and create new knowledge and understanding, and foster creativity and innovation, for the benefit of our communities, society, and the environment.\nExcellence: We strive for excellence in all our endeavors as individuals, an institution, and a leader in higher education.\nCommunity: We work together for the betterment of our University, the communities we serve, and the world."
@@ -516,19 +635,5 @@
     "title": "Plotting in Python",
     "section": "Other kinds of plots",
     "text": "Other kinds of plots\nThe following is copied verbatim from the Quarto website:\nhttps://quarto.org/docs/get-started/hello/vscode.html\nFor a demonstration of a line plot on a polar axis, see Figure 5.\n\n\nCode\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 5: A line plot on a polar axis"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#why-this-course-why-now",
-    "href": "slides/wk01-2025-01-14-course-intro.html#why-this-course-why-now",
-    "title": "The Psychology of Data Visualization",
-    "section": "Why this course, why now",
-    "text": "Why this course, why now"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#visit-survey-0",
-    "href": "slides/wk01-2025-01-14-course-intro.html#visit-survey-0",
-    "title": "The Psychology of Data Visualization",
-    "section": "Visit Survey 0",
-    "text": "Visit Survey 0"
   }
 ]

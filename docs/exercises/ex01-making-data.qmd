@@ -1,9 +1,13 @@
 ---
-title: "Exercise NN"
+title: "Exercise 01"
 subtitle: "Making data"
 ---
 
 ## Dates {-}
+
+In-class work on Tuesday, January 14 and Thursday, January 16.
+
+Submit write-up by Tuesday, January 21.
 
 ## Goals {-}
 
@@ -31,11 +35,11 @@ You will be assigned a team name/letter.
 - Generate two questions with ordinal (e.g., 1-5) answers analogous to a Likert scale.
 - Generate two questions with continuous answers (e.g., age and shoe size). It doesn't matter if these are interval or ratio scaled.
 - Generate one question with a date or time as an answer (e.g., a favorite relative's birthday).
-- Include one field for comments. Use the 'short answer' user interface for this question.
+- Include one field for comments.
 
 6. What type(s) of interfaces work best for these question types? Why?
 
-7. When you are happy with a draft of your survey, conduct a quality assurance (QA) review of it by having your team take the survey. The easiest way to do this is to use the 'Send' button to send your survey to your collaborators. 
+7. When you are happy with a draft of your survey, conduct a quality assurance (QA) review of it by having your team take the survey. The easiest way to do this is to use the 'Send' button to send your survey to your collaborators.
 
 ![Google Forms 'Send'](../include/img/google-forms-send-button.png)
 
@@ -47,7 +51,6 @@ Make sure to have your QA testers answer the Comments question with the same res
 
 ## Submit {-}
 
-A short write-up with answers to point 5. above. 
+A short write-up with answers to point 5. above via Canvas.
 
 Add Dr. Gilmore (rog1@psu.edu) and the TA as collaborators on the survey.
-
