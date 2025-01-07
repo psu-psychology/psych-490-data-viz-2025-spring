@@ -17,6 +17,16 @@ It looks like the answer is no.
 
 ## Web sites
 
+### Annual Reviews
+
+Annual Reviews has a great API that lets one search for figures within journals.
+
+- <https://www.annualreviews.org/search?value1=psychology&option1=fulltext&facetOptions=51&value51=%22Figure%22&facetNames=contentType_facet&option51=contentType_facet&operator51=AND>
+
+- <https://www.annualreviews.org/search?value1=neuroscience&option1=fulltext&facetOptions=51&value51=%22Figure%22&facetNames=contentType_facet&option51=contentType_facet&operator51=AND>
+
+Annual Reviews also publishes an electronic magazine, Knowable, that includes a graphics library: <https://www.flickr.com/photos/knowablemag/>
+
 ### rpsychologist.com
 
 <@software{magnussonCorrelation,
@@ -26,7 +36,6 @@ It looks like the answer is no.
     version = {0.7.1},
     date = {2023},
   }
-  
   
 
 ### https://clauswilke.com/dataviz

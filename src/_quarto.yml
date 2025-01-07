@@ -1,43 +1,60 @@
 project:
-  type: book
+  type: website
   render:
     - "./*.qmd"
     - "tutorials/*.qmd"
     - "surveys/*.qmd"
+    - "slides/*.qmd"
   output-dir: "../docs"
 
-book:
+website:
   title: "PSYCH 490 • Spr 2025"
-  chapters:
-    - href: index.qmd
-      text: Overview
-    - href: schedule.qmd
-    - part: Exercises
-      chapters:
-        - exercises/exNN-reading-figures.qmd
-    - part: Tutorials
-      chapters:
+  # chapters:
+    # - href: index.qmd
+    #   text: Overview
+    # - href: schedule.qmd
+    # - part: Exercises
+    #   chapters:
+    #     - exercises/exNN-reading-figures.qmd
+    # - part: Tutorials
+    #   chapters:
+    #     - tutorials/tutorial-rstudio-on-pc.qmd
+    #     - tutorials/tutorial-rstudio-on-psu.qmd
+    #     - tutorials/tutorial-r-ggplot.qmd
+    #     - tutorials/tutorial-python-matplotlib.qmd
+    # - part: Surveys
+    #   chapters:
+    #     - surveys/survey-01.qmd
+  navbar:
+    left:
+      - href: index.qmd
+        text: Overview
+      - href: schedule.qmd
+        text: Schedule
+      - href: evaluation.qmd
+        text: Evaluation
+      - href: deadlines.qmd
+        text: Deadlines
+      - href: policies.qmd
+        text: Policies
+      - href: values.qmd
+        text: Values
+      - text: exercises
+        menu: 
+          - href: "exercises/ex01-read-a-scientific-paper.qmd"
+          - href: "exercises/ex02-textbook-findings.qmd"
+      - text: Tutorials
+        menu:
         - tutorials/tutorial-rstudio-on-pc.qmd
         - tutorials/tutorial-rstudio-on-psu.qmd
         - tutorials/tutorial-r-ggplot.qmd
         - tutorials/tutorial-python-matplotlib.qmd
-    - part: Surveys
-      chapters:
-        - surveys/survey-01.qmd
-  # navbar:
-  #   left:
-  #     - href: index.qmd
-  #     - href: schedule.qmd
-  #       text: Schedule
-  #     - text: Tutorials
-  #       menu:
-  #         - href: "tutorials/plotting.qmd"
-  #           text: "Plotting"
-  #     - text: Surveys
-  #       menu: 
-  #         - href: "surveys/survey-01.qmd"
-  #           text: "Survey-01"
-  #     - href: resources.qmd
+      - text: Surveys
+        menu:
+          - href: "surveys/survey-01.qmd"
+            text: "Survey-01"
+      - href: resources.qmd
+      - href: meta.qmd
   repo-url: https://github.com/psu-psychology/psych-490-data-viz-2025-spring
   repo-actions: [edit, issue]
   repo-subdir: src
@@ -55,7 +72,7 @@ format:
     number-sections: false
     citations-hover: true
     footnotes-hover: true
-    date-modified: last-modified
+    # date-modified: last-modified
     bibliography: [include/bib/packages.bib, include/bib/data-viz.bib]
     csl: include/bib/apa.csl
     html-math-method: mathjax

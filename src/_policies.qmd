@@ -1,0 +1,93 @@
+## Course policies
+
+### Academic Integrity {- #academic-integrity}
+
+Students with questions about academic integrity should visit <http://www.la.psu.edu/current-students/undergraduate-students/education/academic-integrity>. 
+
+Penn State defines academic integrity as the pursuit of scholarly activity in an open, honest and responsible manner. All students should act with personal integrity, respect others dignity, rights and property, and help create and maintain an environment in which all can succeed through the fruits of their efforts (Faculty Senate Policy 49-20). Sanctions for academic misconduct can include a grade of F for the course as well as other penalties.
+
+Unless you are told otherwise, you must complete all course work entirely on your own, using only sources that have been permitted by your instructor, and you may not assist other students with papers, quizzes, exams, or other assessments. If I allow you to use ideas, images, or word phrases created by another person (e.g., from Course Hero or Chegg) or by generative technology, such as ChatGPT, you must identify their source.
+
+When you complete assignments, remember the **ABC**s to avoid plagiarism: **A**lways place copied information within quotation marks, include information about the quoted or paraphrased source in a **B**ibliography, and **C**ite the source in the body (in the text) of your paper immediately after the quoted or paraphrased information. When in doubt, cite in the text and include the source in a bibliography.
+
+**Students with questions about academic integrity should ask me or the TA before submitting work.**   
+
+Students facing allegations of academic misconduct may not drop/withdraw from the affected course unless they are cleared of wrongdoing (see G-9: Academic Integrity). Attempted drops will be prevented or reversed, and students will be expected to complete course work and meet course deadlines. Students who are found responsible for academic integrity violations face academic outcomes, which can be severe, and put themselves at jeopardy for other outcomes which may include ineligibility for Dean’s List, pass/fail elections, and grade forgiveness. Students may also face consequences from their home/major program and/or The Schreyer Honors College.
+
+### Absences or late assignments {- #late-missed-assignments}
+
+#### Absence from class
+
+Your absence from class may be excused under unusual circumstances such as (a) an interview for graduate school or a job, (b) illness, (c) religious observance, (d) the death of a family member, or (e) any other event recognized by the university as a valid excuse for absence from class.
+
+If you must miss class, you must contact the instructor and the TA **in advance**.
+
+Up to three (3) excused absences will be permitted.
+
+#### Late exercises {-}
+
+Exercises submitted after the published deadlines will not be eligible for full credit unless the instructor has given specific permission.
+
+#### Late final projects {-}
+
+Final projects submitted after the published deadline will not be eligible for full credit unless the instructor has given specific permission.
+
+#### Accommodation for persons with disabilities {- #disability-accommodations}
+
+Penn State welcomes students with disabilities into the University's educational programs. Please refer to the information provided by Student Disability Resources (SDR) at <http://equity.psu.edu/student-disability-resources/> for information about the procedures required to obtain reasonable accommodations in this course. 
+Students should discussSDR-approved accommodations with their instructor as early in the semester as possible, even if they have taken another course with the instructor. 
+Please note: students are not required to provide their instructor with information about the nature of their condition.
+ 
+Penn State students are also welcome to contact other units for assistance with personal concerns that interfere with academic progress, including: Counseling and Psychological Services (CAPS; <http://studentaffairs.psu.edu/counseling/>), the Office of Student Affairs (<http://studentaffairs.psu.edu/>), Career Services (<http://studentaffairs.psu.edu/career/>), the Center for Women Students (<http://studentaffairs.psu.edu/womenscenter/>), the LGBTQA Student Resource Center (<http://studentaffairs.psu.edu/lgbtqa/>), the Office of Sexual Misconduct
+Prevention and Response (<http://titleix.psu.edu/>), Penn State Educational Equity (<http://equity.psu.edu/>), the Multicultural Resource Center (<http://equity.psu.edu/mrc>), and University 
+Health Services (<http://studentaffairs.psu.edu/health/>).
+
+### Nondiscrimination Statement {- #non-discrimination-statement}
+
+The Pennsylvania State University is committed to equal access to programs, facilities, admission and employment for all persons. 
+It is the policy of the University to maintain an environment free of harassment and free of discrimination against any person because of age, race, color, ancestry, national origin, religion, creed, service in the uniformed services (as defined in state and federal law), veteran status, sex, sexual orientation, marital or family status, pregnancy, pregnancy-related conditions, physical or mental disability, gender, perceived gender, gender identity, genetic information or political ideas.  
+Discriminatory conduct and harassment, as well as sexual misconduct and relationship violence, violates the dignity of individuals, impedes the realization of the University's educational mission, and will not be tolerated.
+ 
+Direct all inquiries regarding the nondiscrimination policy to:
+ 
+Dr. Kenneth Lehrman III</br>
+Vice Provost for Affirmative Action</br>
+Affirmative Action Office</br>
+The Pennsylvania State University</br>
+328 Boucke Building</br>
+University Park, PA 16802-5901</br>
+Email: kfl2@psu.edu</br>
+Tel (814) 863-0471
+
+### Diversity Statement {- #diversity-statement}
+
+This classroom is a place where you will be treated with respect. 
+All members of this class are expected to contribute to a respectful, welcoming and inclusive environment for every other member of the class.  
+Penn State is committed to creating an educational environment which is free from intolerance directed toward individuals or groups and strives to create and maintain an environment that fosters respect for others as stated in Policy AD29 Statement on Intolerance.
+ 
+### Mandated Reporting Statement {- #mandated}
+
+Penn State's policies require me, as a faculty member, to share information about incidents of sex-based discrimination and harassment (discrimination, harassment, sexual harassment, sexual misconduct, dating violence, domestic violence, stalking, and retaliation) with Penn State's Title IX coordinator or deputy coordinators, regardless of whether the incidents are stated to me in person or shared by students as part of their coursework. 
+For more information regarding the University's policies and procedures for responding to reports of sexual or gender-based harassment or misconduct, please visit <http://titleix.psu.edu>.
+ 
+Additionally, I am required to make a report on any reasonable suspicion of child abuse in accordance with the Pennsylvania Child Protective Services Law.
+
+<!-- ## COVID safety information (last updated 2021-08-12) {- #covid} -->
+
+<!-- Please consult the Penn State Covid-19 Dashboard for updates on masking policies, instructional-mode changes, etc. <https://virusinfo.psu.edu/covid-19-dashboard/>. -->
+
+<!-- This class will meet in-person unless there is a change in University policy. -->
+
+<!-- Penn State University requires everyone to wear a face mask in all university buildings, including classrooms, regardless of vaccination status. **ALL STUDENTS MUST** wear a mask appropriately (i.e., covering both your mouth and nose) while you are indoors on campus.  This is to protect your health and safety as well as the health and safety of your classmates, instructor, and the university community. Anyone attending class without a mask will be asked to put one on or leave. Instructors may end class if anyone present refuses to appropriately wear a mask for the duration of class. Students who refuse to wear masks appropriately may face disciplinary action for Code of Conduct violations.  If you feel you cannot wear a mask during class, please speak with your adviser immediately about your options for altering your schedule. -->
+
+### Zoom {- #zoom}
+	
+At some point in the semester, I may decide to use Zoom to allow students who are unable to attend class in person to participate.
+
+While you are on Zoom, keep in mind that this is a classroom environment and others should be treated with respect. 
+Please keep your microphone muted unless you want to ask a question or interact with someone. 
+If your microphone is not muted, the entire class will be able to hear what is going on in your environment. 
+As an instructor, I personally like to see people’s faces. 
+As a participant, I am more involved when I have my camera on. 
+I realize, however, that there are many reasons why you might not want to turn on your camera such as poor internet connection, joining via phone, or other privacy concerns. 
+It is your choice as to whether you would like to have the camera on or not.

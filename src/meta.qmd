@@ -1,0 +1,31 @@
+# Meta
+
+## About
+
+This page describes how the site is created and rendered.
+
+## Workflow
+
+The site is written in [Quarto](https://quarto.org).
+
+The project root uses a `src/` directory to store the source code.
+
+A site-wide YAML file (`_quarto.yml`) controls the rendering process.
+
+Separate directories contain lecture slides (`slides/`), exercises (`exercises/`), class-specific R functions (`R/`), surveys (`surveys/`), and supplemental documents (`supplemental/`).
+Quarto files with underscores (e.g., `_index.qmd`, `_about.qmd`, `_evaluation.qmd`, `_schedule.qmd`, and `values.qmd`) are the main targets for editing and updating.
+Parent files (e.g., `index.qmd`, `evaluation.qmd`, `policies.qmd`, and `schedule.qmd`) call upon these child files in the rendering process.
+
+A separate Quarto file (`psych-490.003-2025-spring-syllabus.qmd`) generates a PDF version of a syllabus.
+
+## Rendering
+
+To render the full site, `quarto render src` is executed from the command line.
+The fully rendered website is written to `docs/`.
+
+## Software
+
+The site uses the [renv package](https://rstudio.github.io/renv/articles/renv.html) to try to make all computation reproducible.
+
+In addition, the site uses [softbib](https://cran.r-project.org/package=softbib) to generate a full reference list of the package dependencies.
+This is saved in `src/include/bib`.

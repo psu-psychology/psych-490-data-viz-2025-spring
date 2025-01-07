@@ -8,7 +8,11 @@
 
 *Course introduction*
 
+- [Slides](slides/wk01-2025-01-14-course-intro.qmd)
+
 #### Thursday, January 16 {-}
+
+- [Slides](slides/wk01-2025-01-14-course-intro.qmd)
 
 ### January 20-24 {- #week-02}
 
@@ -30,7 +34,7 @@
 
 *Data types*
 
-- In-class exercise on [data creation](exercises/exNN-making-data).
+- In-class exercise on [data creation](exercises/exNN-making-data.qmd).
 
 #### Thursday, January 30 {-}
 

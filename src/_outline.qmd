@@ -4,7 +4,20 @@
 
 This document outlines the major components and themes of the class.
 
+## Week-01
+### Course introduction
+- People
+- Aims/learning goals
+- Exercises/evaluation
+- Expectations/policies
+### Core concepts
+- What are data
+- Symbols
 ## Who visualizes data
+### Business, industry, government
+- Business/industry
+- Government
+### Science
 ## Why visualize data
 ### Explore/understand/analyze
 

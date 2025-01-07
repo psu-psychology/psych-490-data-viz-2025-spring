@@ -1,0 +1,25 @@
+## Student Evaluation
+
+### Elements {- #eval-components}
+
+| Component | Description                                  | Points |
+|-----------|----------------------------------------------|--------:|
+| Attendance | You will receive 1 point for each class you attend up to a maximum of 40. | 40 |
+| Exercises | There will be eight (8) exercises that you must work on. Each exercise is worth 10 points. The top four (4) count toward your final grade. | 40 |
+| Final project | You will complete a [final project](exercises/final-project.qmd), either on your own, or with a small group of 3 or less. Your final project is worth 40 points. | 40 |
+| | **TOTAL POINTS POSSIBLE** | 120 |
+| Extra Credit | If you submit more than four exercise write-ups, you may earn up to 10 extra credit points. | |
+
+### Grading Scheme {- #grading-scheme}
+
+| Percent | Points | Grade |
+|:--------|:------: | :------:|
+| 94+     | 113 | A     |
+| 90-93   | 108-112 | A-    |
+| 87-89   | 104-107 | B+    |
+| 84-86   | 100-103 | B     |
+| 80-83   | 96-99 | B-    |
+| 77-79   | 92-95 | C+    |
+| 70-76   | 84-91 | C     |
+| 60-69   | 72-93 | D     |
+| <59     | <=71 | F     |

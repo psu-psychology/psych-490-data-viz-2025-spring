@@ -1,0 +1,17 @@
+## Important deadlines
+
+This page summarizes some of the key deadlines in the course.
+
+| Date      | What's [due]{.orange_due}/happening |
+|-----------|----------------------|
+| [2024-09-06](schedule.qmd#friday-september-06)   | [Exercise 01](exercises/ex01-read-a-scientific-paper.qmd) |
+| [2024-09-20](schedule.qmd#friday-september-20) | [Exercise 02](exercises/ex02-textbook-findings.qmd) |
+| [2024-09-20](schedule.qmd#friday-september-27) | [Exercise 03](exercises/ex03-norms-counternorms.qmd) |
+| [2024-10-04](schedule.qmd#friday-october-04)  | [Exercise 04](exercises/ex04-scientific-integrity.qmd) |
+| [2024-10-14](schedule.qmd#monday-october-14)  | [Exercise 05](exercises/ex05-p-hacking.qmd") |
+| [2024-10-18](schedule.qmd#friday-october-18) | [Final project proposal](exercises/final-project.qmd) due |
+| [2024-11-01](schedule.qmd#friday-november-01) | [Exercise 06](exercises/ex06-apes.qmd) |
+| [2024-11-08](schedule.qmd#friday-november-08) | [Exercise 07](exercises/ex07-replication.qmd) |
+| [2024-11-22](schedule.qmd#friday-november-22) | [Final Project Presentation Schedule Survey](https://forms.gle/ajLqSsNfLiH2rJxi9) |
+| [2024-12-06](schedule.qmd#friday-december-06) | [Exercise 08](exercises/ex08-sharing.qmd) |
+| [2024-12-18](schedule.qmd#wednesday-december-18)  | [Final project](exercises/final-project.qmd) writeup due |

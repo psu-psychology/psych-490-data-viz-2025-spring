@@ -1,0 +1,143 @@
+---
+title: "The Psychology of Data Visualization"
+subtitle: "2025-01-14"
+---
+
+# Prelude
+
+# Overview
+
+## Announcements
+
+## Last time...
+
+## Today
+
+- Introduction to the course
+
+# Introduction to the course
+
+# Making data
+
+## People
+
+- Rick Gilmore, Professor of Psychology
+
+---
+
+<!-- Gilmore photo biography -->
+
+:::: {.columns}
+::: {.column width=50%}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/DenverCP.JPG/266px-DenverCP.JPG){height=150px}
+![](http://watson.brown.edu/ds/sites/all/themes/ds/img/header/brown_large.png){height=150px}
+![](https://images.unsplash.com/photo-1617581629397-a72507c3de9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZ3RvbiUyMGRjfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"){height=150px}
+![](https://banner2.cleanpng.com/20180623/uk/kisspng-carnegie-mellon-university-in-qatar-carnegie-mello-5b2e03c049ac30.3609480215297422723018.jpg){height=150px}
+:::
+::: {.column width=50%}
+![](../include/img/sleic.png){height=150px}
+![](https://nyu.databrary.org/web/images/logo/databrary-nav.svg){height=150px}
+![](https://www.play-project.org/img/PLAY-logo.png){height=150px}
+
+:::
+::::
+
+---
+
+## Why this course, why now
+
+---
+
+![](https://nyu.databrary.org/web/images/logo/databrary-nav.svg){height=150px}
+
+---
+
+![Figure 2 from @Silberzahn2018-st](../include/img/silberzahn-fig-02.jpeg)
+
+---
+
+[Visualizing the 'Many Analysts -- @Silberzahn2018-st -- data ](https://psu-psychology.github.io/psych-490-reproducibility-2024-fall/supplemental/many-viz.html)
+
+
+[On plots and degrees of freedom](https://psu-psychology.github.io/psych-490-reproducibility-2024-fall/supplemental/plotting-degrees-of-freedom.html)
+
+---
+
+![@datasaurus2019-us; @Matejka2017-xi](https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif)
+
+---
+
+![@datasaurus2019-us; @Matejka2017-xi](https://www.research.autodesk.com/app/uploads/2024/09/BoxViolinSmaller.gif)
+
+---
+
+![https://www.indexventures.com/perspectives/data-not-software-is-eating-the-world/](../include/img/data-is-eating-the-world.png)
+
+## Purpose & goals
+
+::: {.incremental}
+- Who visualizes data, how do they visualize it, and why?
+- What are data? Where does data come from?
+- How does vision science inform how we perceive patterns in data?
+- What's the relationship between non-visual and visual ways of understanding data?
+- What makes a data visualization effective?
+- How can we make better data visualizations?
+:::
+
+## Schedule
+
+<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/schedule.html>
+
+## Exercises & evaluation
+
+- Exercises
+  - 8 @ 10 pts/each
+  - Top 4 count
+  - Others count toward partial extra credit up to 10 pts
+- Attendance (up to 40 points)
+- Final project (40 points)
+
+## Resources
+
+- This site: <https://psu-psychology.github.io/psych-490-data-viz-2025-spring/>
+<!-- - [Canvas](https://psu.instructure.com/courses/2280122) -->
+- University Library
+
+---
+
+- Articles
+  - Retrieve them yourself via the URL (uniform resource locator) and the [DOI](https://www.doi.org) (digital object identifier).
+  - Why do I do this?
+    
+## Structure
+
+- Meet 2x weekly
+- Tuesday & Thursday: lecture + discussion + work session
+- Do your homework
+
+## Culture & climate
+
+- Creating a community of inquiry
+- Encouraging vigorous & constructive criticism
+- Criticism of *work/ideas/behaviors* vs. *people*
+  - 'Smith thinks that pigs can fly.'
+  - 'Smith is an idiot.'
+  - 'Smith tried to demonstrate that pigs can fly by tossing a few off the 
+  roof of Old Main. That's nonsense and made a huge mess.'
+  
+# Your turn: Making data
+
+## Visit Survey 0
+
+
+  
+# Main points
+
+# Next time
+
+- Making data, visualizing data
+- 
+
+# Resources
+
+## References
