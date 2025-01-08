@@ -11,6 +11,10 @@ subtitle: "2025-01-16"
 
 @Lucaas2007-dk
 
+---
+
+![@Dattani2024-yr](https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/7a759276-92f3-4912-7d32-78d2ebd52c00/w=1350)
+
 # Overview
 
 ## Announcements
@@ -21,6 +25,17 @@ subtitle: "2025-01-16"
 
 - Course introduction
 - Start on [Exercise-01](../exercises/ex01-making-data.qmd)
+
+---
+
+::: {.callout-important}
+## Your thoughts
+
+Should a scientific paper's main findings be visible in some sort of visualization?
+
+Why or why not?
+
+:::
 
 ## Today
 
@@ -33,21 +48,68 @@ subtitle: "2025-01-16"
 
 >- By measurement
 
+---
+
+![https://en.wikipedia.org/wiki/History_of_measurement](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Coud%C3%A9e-turin_detail.jpg/500px-Coud%C3%A9e-turin_detail.jpg)
+---
+
+![https://www.ritual.fashion/pages/measurement-guide](https://cdn.shopify.com/s/files/1/1008/5120/files/womens_measurementguideWEB3_2048x2048.jpg?v=1485592505)
+
 ## What is measurement?
 
->- A procedure for mapping properties of X onto some numerical standard or scale Y
->- *Psychometrics*: The study of psychological measurement
+>- A *procedure for mapping* properties of X onto some numerical standard or scale Y
+>- [*Metrology*](https://en.wikipedia.org/wiki/Metrology): The science of measurement
+>- [*Psychometrics*](https://en.wikipedia.org/wiki/Psychometrics): The study of psychological measurement
 
-## Burke's 'Terministic Screen'
+## Why 'mapping'
+
+:::: {.columns}
+::: {.column width=50%}
+```{mermaid}
+%%| label: fig-measurement-mapping
+%%| fig-cap: "Illustration of a mapping from observed entity to data"
+flowchart TB
+  A[Thing/Person]-- Procedure  -->B(Instrument)
+  B --> C{Data}
+```
+:::
+::: {.column width=50%}
+```{mermaid}
+%%| label: fig-measurement-mapping-2
+%%| fig-cap: "Illustration of multiple mappings from an observed entity to data"
+flowchart TB
+  A[Thing/Person]-- Procedure  -->B(Instrument)
+  A[Thing/Person]-- Procedure-2  -->C(Instrument-2)
+  B --> E{Data}
+  C --> D{Data-2}
+```
+:::
+::::
+
+## Data ~ quantitative terminology
+
+- Data a *symbol* of the thing measured, not the thing itself
+- E.g., Words are a *symbol* of the things they refer to
+
+```{mermaid}
+%%| label: fig-semantic-mapping
+%%| fig-cap: "Mapping from concept/entity to a word."
+flowchart TB
+  A[Cute animal with fur that purrs] --> B('cat')
+  A ---> C('gato')
+  A ---> D('chatte/chat')
+  A ---> E('猫')
+```
+
+## Data reflects, selects, and deflects
 
 >Even if any given terminology is a *reflection* of reality, by its very nature as a terminology, it must be a *selection* of reality; and to this extent must also as a *deflection* of reality
 
 @Burke1968-ye
 
-- Data ~ quantitative terminology
-  - a symbol of the thing measured, not the thing itself
-- Data selects, reflects, and deflects 
+## What is reflected, selected, deflected?
 
+![@Lindsey2024-ob](https://www.climate.gov/sites/default/files/styles/full_width_620_original_image/public/2024-04/ClimateDashboard-atmospheric-carbon-dioxide-image-paleo-20240405-1400px.png?itok=-g_Qgndc)
 
 ## Stevens' scales of measurement
 
@@ -107,8 +169,9 @@ subtitle: "2025-01-16"
 # Main points
 
 - Data are *made*
-- Map characteristics to quantities
-- By some measurment procedure
+  - Map characteristics to quantities
+  - By some measurement procedure
+  - Reflect, but also select and deflect
 - Mapping has different types of scales [@Stevens1946-sh]
 - Scales determine i) permissible stats & ii) best visualizations
 

@@ -341,6 +341,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -368,7 +371,11 @@ Rick Gilmore
 
 <iframe data-external="1" src="https://www.youtube.com/embed/9r7X3f2gFz4?si=V5l7oVU5yefPY6jd" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 <p><span class="citation" data-cites="Lucaas2007-dk">Lucaas (<a href="#/references" role="doc-biblioref" onclick="">2007</a>)</span></p>
-</section></section>
+</section>
+<section class="slide level2">
+
+
+<img data-src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/7a759276-92f3-4912-7d32-78d2ebd52c00/w=1350.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Dattani2024-yr">Dattani &amp; Roser (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span></p></section></section>
 <section>
 <section id="overview" class="title-slide slide level1 center">
 <h1>Overview</h1>
@@ -386,6 +393,23 @@ Rick Gilmore
 <li>Course introduction</li>
 <li>Start on <a href="../exercises/ex01-making-data.qmd">Exercise-01</a></li>
 </ul>
+</section>
+<section class="slide level2">
+
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Your thoughts</strong></p>
+</div>
+<div class="callout-content">
+<p>Should a scientific paper’s main findings be visible in some sort of visualization?</p>
+<p>Why or why not?</p>
+</div>
+</div>
+</div>
 </section>
 <section id="today" class="slide level2">
 <h2>Today</h2>
@@ -405,27 +429,108 @@ Rick Gilmore
 <li class="fragment">By measurement</li>
 </ul>
 </section>
+<section class="slide level2">
+
+
+<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Coud%C3%A9e-turin_detail.jpg/500px-Coud%C3%A9e-turin_detail.jpg" class="r-stretch quarto-figure-center"><p class="caption">https://en.wikipedia.org/wiki/History_of_measurement</p></section>
+<section class="slide level2">
+
+
+<img data-src="https://cdn.shopify.com/s/files/1/1008/5120/files/womens_measurementguideWEB3_2048x2048.jpg?v=1485592505" class="r-stretch quarto-figure-center"><p class="caption">https://www.ritual.fashion/pages/measurement-guide</p></section>
 <section id="what-is-measurement" class="slide level2">
 <h2>What is measurement?</h2>
 <ul>
-<li class="fragment">A procedure for mapping properties of X onto some numerical standard or scale Y</li>
-<li class="fragment"><em>Psychometrics</em>: The study of psychological measurement</li>
+<li class="fragment">A <em>procedure for mapping</em> properties of X onto some numerical standard or scale Y</li>
+<li class="fragment"><a href="https://en.wikipedia.org/wiki/Metrology"><em>Metrology</em></a>: The science of measurement</li>
+<li class="fragment"><a href="https://en.wikipedia.org/wiki/Psychometrics"><em>Psychometrics</em></a>: The study of psychological measurement</li>
 </ul>
 </section>
-<section id="burkes-terministic-screen" class="slide level2">
-<h2>Burke’s ‘Terministic Screen’</h2>
+<section id="why-mapping" class="slide level2">
+<h2>Why ‘mapping’</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-measurement-mapping" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-measurement-mapping-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-measurement-mapping">flowchart TB
+  A[Thing/Person]-- Procedure  --&gt;B(Instrument)
+  B --&gt; C{Data}
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-measurement-mapping-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Illustration of a mapping from observed entity to data
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-measurement-mapping-2" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-measurement-mapping-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-measurement-mapping-2">flowchart TB
+  A[Thing/Person]-- Procedure  --&gt;B(Instrument)
+  A[Thing/Person]-- Procedure-2  --&gt;C(Instrument-2)
+  B --&gt; E{Data}
+  C --&gt; D{Data-2}
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-measurement-mapping-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Illustration of multiple mappings from an observed entity to data
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="data-quantitative-terminology" class="slide level2">
+<h2>Data ~ quantitative terminology</h2>
+<ul>
+<li>Data a <em>symbol</em> of the thing measured, not the thing itself</li>
+<li>E.g., Words are a <em>symbol</em> of the things they refer to</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-semantic-mapping" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-semantic-mapping-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-semantic-mapping">flowchart TB
+  A[Cute animal with fur that purrs] --&gt; B('cat')
+  A ---&gt; C('gato')
+  A ---&gt; D('chatte/chat')
+  A ---&gt; E('猫')
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semantic-mapping-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Mapping from concept/entity to a word.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="data-reflects-selects-and-deflects" class="slide level2">
+<h2>Data reflects, selects, and deflects</h2>
 <blockquote>
 <p>Even if any given terminology is a <em>reflection</em> of reality, by its very nature as a terminology, it must be a <em>selection</em> of reality; and to this extent must also as a <em>deflection</em> of reality</p>
 </blockquote>
 <p><span class="citation" data-cites="Burke1968-ye">Burke (<a href="#/references" role="doc-biblioref" onclick="">1968</a>)</span></p>
-<ul>
-<li>Data ~ quantitative terminology
-<ul>
-<li>a symbol of the thing measured, not the thing itself</li>
-</ul></li>
-<li>Data selects, reflects, and deflects</li>
-</ul>
 </section>
+<section id="what-is-reflected-selected-deflected" class="slide level2">
+<h2>What is reflected, selected, deflected?</h2>
+
+<img data-src="https://www.climate.gov/sites/default/files/styles/full_width_620_original_image/public/2024-04/ClimateDashboard-atmospheric-carbon-dioxide-image-paleo-20240405-1400px.png?itok=-g_Qgndc" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Lindsey2024-ob">Lindsey (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span></p></section>
 <section id="stevens-scales-of-measurement" class="slide level2">
 <h2>Stevens’ scales of measurement</h2>
 
@@ -499,9 +604,12 @@ Rick Gilmore
 <section id="main-points" class="title-slide slide level1 center">
 <h1>Main points</h1>
 <ul>
-<li>Data are <em>made</em></li>
+<li>Data are <em>made</em>
+<ul>
 <li>Map characteristics to quantities</li>
-<li>By some measurment procedure</li>
+<li>By some measurement procedure</li>
+<li>Reflect, but also select and deflect</li>
+</ul></li>
 <li>Mapping has different types of scales <span class="citation" data-cites="Stevens1946-sh">(<a href="#/references" role="doc-biblioref" onclick="">Stevens, 1946</a>)</span></li>
 <li>Scales determine i) permissible stats &amp; ii) best visualizations</li>
 </ul>
@@ -529,6 +637,12 @@ Rick Gilmore
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-Burke1968-ye" class="csl-entry" role="listitem">
 Burke, K. (1968). <em>Language as <span>S</span>ymbolic <span>A</span>ction</em>. University of California Press. Retrieved from <a href="https://www.ucpress.edu/books/language-as-symbolic-action/paper">https://www.ucpress.edu/books/language-as-symbolic-action/paper</a>
+</div>
+<div id="ref-Dattani2024-yr" class="csl-entry" role="listitem">
+Dattani, S., &amp; Roser, M. (2024). What was the golden age of antibiotics, and how can we spark a new one? <em>Our World in Data</em>. Retrieved from <a href="https://ourworldindata.org/golden-age-antibiotics">https://ourworldindata.org/golden-age-antibiotics</a>
+</div>
+<div id="ref-Lindsey2024-ob" class="csl-entry" role="listitem">
+Lindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from <a href="http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide">http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide</a>
 </div>
 <div id="ref-Lucaas2007-dk" class="csl-entry" role="listitem">
 Lucaas. (2007). <em><span>T</span>alking <span>H</span>eads - <span>G</span>irlfriend is <span>B</span>etter (from stop making sense</em>. Youtube. Retrieved from <a href="https://www.youtube.com/watch?v=9r7X3f2gFz4&amp;list=PLXTs9Ss_E9ARDEum9WgaJ67rvpnzogpsA&amp;index=7">https://www.youtube.com/watch?v=9r7X3f2gFz4&amp;list=PLXTs9Ss_E9ARDEum9WgaJ67rvpnzogpsA&amp;index=7</a>

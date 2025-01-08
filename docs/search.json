@@ -172,14 +172,14 @@
     "href": "slides/wk01-2025-01-16-making-data.html#what-is-measurement",
     "title": "Making Data",
     "section": "What is measurement?",
-    "text": "What is measurement?\n\nA procedure for mapping properties of X onto some numerical standard or scale Y\nPsychometrics: The study of psychological measurement"
+    "text": "What is measurement?\n\nA procedure for mapping properties of X onto some numerical standard or scale Y\nMetrology: The science of measurement\nPsychometrics: The study of psychological measurement"
   },
   {
     "objectID": "slides/wk01-2025-01-16-making-data.html#burkes-terministic-screen",
     "href": "slides/wk01-2025-01-16-making-data.html#burkes-terministic-screen",
     "title": "Making Data",
     "section": "Burke’s ‘Terministic Screen’",
-    "text": "Burke’s ‘Terministic Screen’\n\nEven if any given terminology is a reflection of reality, by its very nature as a terminology, it must be a selection of reality; and to this extent must also as a deflection of reality\n\nBurke (1968)\n\nData ~ quantitative terminology\n\na symbol of the thing measured, not the thing itself\n\nData selects, reflects, and deflects"
+    "text": "Burke’s ‘Terministic Screen’\n\nData ~ quantitative terminology\n\na symbol of the thing measured, not the thing itself\n\n\n\n\nEven if any given terminology is a reflection of reality, by its very nature as a terminology, it must be a selection of reality; and to this extent must also as a deflection of reality\n\nBurke (1968)\n\n\nData selects, reflects, and deflects"
   },
   {
     "objectID": "slides/wk01-2025-01-16-making-data.html#stevens-scales-of-measurement",
@@ -242,7 +242,7 @@
     "href": "slides/wk01-2025-01-16-making-data.html#references",
     "title": "Making Data",
     "section": "References",
-    "text": "References\n\n\n\n\nPSYCH 490.003 • Spring 2025\n\n\n\n\nBurke, K. (1968). Language as Symbolic Action. University of California Press. Retrieved from https://www.ucpress.edu/books/language-as-symbolic-action/paper\n\n\nLucaas. (2007). Talking Heads - Girlfriend is Better (from stop making sense. Youtube. Retrieved from https://www.youtube.com/watch?v=9r7X3f2gFz4&list=PLXTs9Ss_E9ARDEum9WgaJ67rvpnzogpsA&index=7\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science (New York, N.Y.), 103, 677–680. https://doi.org/10.1126/science.103.2684.677"
+    "text": "References\n\n\n\n\nPSYCH 490.003 • Spring 2025\n\n\n\n\nBurke, K. (1968). Language as Symbolic Action. University of California Press. Retrieved from https://www.ucpress.edu/books/language-as-symbolic-action/paper\n\n\nDattani, S., & Roser, M. (2024). What was the golden age of antibiotics, and how can we spark a new one? Our World in Data. Retrieved from https://ourworldindata.org/golden-age-antibiotics\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nLucaas. (2007). Talking Heads - Girlfriend is Better (from stop making sense. Youtube. Retrieved from https://www.youtube.com/watch?v=9r7X3f2gFz4&list=PLXTs9Ss_E9ARDEum9WgaJ67rvpnzogpsA&index=7\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science (New York, N.Y.), 103, 677–680. https://doi.org/10.1126/science.103.2684.677"
   },
   {
     "objectID": "surveys/survey-01.html",
@@ -494,7 +494,7 @@
     "href": "slides/wk01-2025-01-14-course-intro.html#references",
     "title": "The Psychology of Data Visualization",
     "section": "References",
-    "text": "References\n\n\n\n\nPSYCH 490.003 • Spring 2025\n\n\n\n\nMatejka, J., & Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In Proceedings of the 2017 CHI conference on human factors in computing systems. New York, NY, USA: ACM. https://doi.org/10.1145/3025453.3025912\n\n\nSilberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. Advances in Methods and Practices in Psychological Science, 1, 337–356. https://doi.org/10.1177/2515245917747646\n\n\nThe Datasaurus dozen - same stats, different graphs | Autodesk Research. (n.d.). Retrieved June 2, 2019, from https://www.autodeskresearch.com/publications/samestats"
+    "text": "References\n\n\n\n\nPSYCH 490.003 • Spring 2025\n\n\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nMatejka, J., & Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In Proceedings of the 2017 CHI conference on human factors in computing systems. New York, NY, USA: ACM. https://doi.org/10.1145/3025453.3025912\n\n\nSilberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. Advances in Methods and Practices in Psychological Science, 1, 337–356. https://doi.org/10.1177/2515245917747646\n\n\nThe Datasaurus dozen - same stats, different graphs | Autodesk Research. (n.d.). Retrieved June 2, 2019, from https://www.autodeskresearch.com/publications/samestats"
   },
   {
     "objectID": "about.html",
@@ -635,5 +635,33 @@
     "title": "Plotting in Python",
     "section": "Other kinds of plots",
     "text": "Other kinds of plots\nThe following is copied verbatim from the Quarto website:\nhttps://quarto.org/docs/get-started/hello/vscode.html\nFor a demonstration of a line plot on a polar axis, see Figure 5.\n\n\nCode\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 5: A line plot on a polar axis"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-making-data.html#why-mapping",
+    "href": "slides/wk01-2025-01-16-making-data.html#why-mapping",
+    "title": "Making Data",
+    "section": "Why ‘mapping’",
+    "text": "Why ‘mapping’\n\n\n\n\n\n\n\n\nflowchart TB\n  A[Thing/Person]-- Procedure  --&gt;B(Instrument)\n  B --&gt; C{Data}\n\n\n\n\nFigure 1: Illustration of a mapping from observed entity to data\n\n\n\n\n\n\n\n\n\n\n\n\nflowchart TB\n  A[Thing/Person]-- Procedure  --&gt;B(Instrument)\n  A[Thing/Person]-- Procedure-2  --&gt;C(Instrument-2)\n  B --&gt; E{Data}\n  C --&gt; D{Data-2}\n\n\n\n\nFigure 2: Illustration of multiple mappings from an observed entity to data"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-making-data.html#data-quantitative-terminology",
+    "href": "slides/wk01-2025-01-16-making-data.html#data-quantitative-terminology",
+    "title": "Making Data",
+    "section": "Data ~ quantitative terminology",
+    "text": "Data ~ quantitative terminology\n\nData a symbol of the thing measured, not the thing itself\nE.g., Words are a symbol of the things they refer to\n\n\n\n\n\n\n\nflowchart TB\n  A[Cute animal with fur that purrs] --&gt; B('cat')\n  A ---&gt; C('gato')\n  A ---&gt; D('chatte/chat')\n  A ---&gt; E('猫')\n\n\n\n\nFigure 3: Mapping from concept/entity to a word."
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-making-data.html#data-reflects-selects-and-deflects",
+    "href": "slides/wk01-2025-01-16-making-data.html#data-reflects-selects-and-deflects",
+    "title": "Making Data",
+    "section": "Data reflects, selects, and deflects",
+    "text": "Data reflects, selects, and deflects\n\nEven if any given terminology is a reflection of reality, by its very nature as a terminology, it must be a selection of reality; and to this extent must also as a deflection of reality\n\nBurke (1968)"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-making-data.html#what-is-reflected-selected-deflected",
+    "href": "slides/wk01-2025-01-16-making-data.html#what-is-reflected-selected-deflected",
+    "title": "Making Data",
+    "section": "What is reflected, selected, deflected?",
+    "text": "What is reflected, selected, deflected?\n\nLindsey (2024)"
   }
 ]

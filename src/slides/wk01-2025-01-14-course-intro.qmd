@@ -3,6 +3,12 @@ title: "The Psychology of Data Visualization"
 subtitle: "2025-01-14"
 ---
 
+# Prelude
+
+---
+
+![@Lindsey2024-ob](https://www.climate.gov/sites/default/files/styles/full_width_620_original_image/public/2024-04/ClimateDashboard-atmospheric-carbon-dioxide-image-paleo-20240405-1400px.png?itok=-g_Qgndc)
+
 ## Today
 
 - Introduction to the course
