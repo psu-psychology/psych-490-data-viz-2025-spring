@@ -1,0 +1,35 @@
+---
+
+:::: {.columns}
+::: {.column width=50%}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/DenverCP.JPG/266px-DenverCP.JPG){height=150px}
+![](http://watson.brown.edu/ds/sites/all/themes/ds/img/header/brown_large.png){height=150px}
+![](https://images.unsplash.com/photo-1617581629397-a72507c3de9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZ3RvbiUyMGRjfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"){height=150px}
+![](https://banner2.cleanpng.com/20180623/uk/kisspng-carnegie-mellon-university-in-qatar-carnegie-mello-5b2e03c049ac30.3609480215297422723018.jpg){height=150px}
+:::
+::: {.column width=50%}
+![](../include/img/sleic.png){height=150px}
+![](../include/img/databrary-nav.svg){height=150px}
+![](../include/img/PLAY-logo.png){height=150px}
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+![](https://acousticbrew.org/wp-content/uploads/2022/03/Acoustic-Brew-logo.jpg){height=150px}
+
+![](https://static.wixstatic.com/media/10d8a4_e0c1f69c08d543c7a45bf03980dc7035~mv2.jpg/v1/fill/w_946,h_244,al_c,lg_1,q_80,enc_avif,quality_auto/Next%20Stage%20Logo%20as%20of%201%202019.jpg){height=150px}
+
+![](https://w3tm.org/img/w3tm-qsl.png){height=150px}
+:::
+::: {.column width=50%}
+![](../include/img/cpo-logo.jpg){height=150px}
+
+![](../include/img/2024-04-08-151856-Solar-timelapse_thn.jpeg){height=150px}
+
+![](../include/img/lola.jpeg){height=150px}
+
+:::
+::::

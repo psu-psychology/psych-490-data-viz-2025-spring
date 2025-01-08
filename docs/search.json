@@ -65,49 +65,49 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "PSYCH 490.003",
+    "title": "PSYCH 490.001",
     "section": "",
     "text": "ChatGPT/Dall-E-3 model response to ‘an image of “a picture paints a thousand words”’ on 2024-09-19"
   },
   {
     "objectID": "index.html#themes",
     "href": "index.html#themes",
-    "title": "PSYCH 490.003",
+    "title": "PSYCH 490.001",
     "section": "Themes",
     "text": "Themes\nIf a picture’s worth a thousand words (Wikipedia contributors, 2024), what exactly does it say? This course will focus on the psychology of data visualization—how to read, critique, and generate meaningful figures that inform but don’t mislead. We’ll take inspiration from recognized classic figures and unpack what makes them exemplary. We’ll critique figures that deliberately or inadvertently mislead or confuse. We’ll learn what 150 years of vision science, the foundation of experimental psychology, has to say about data visualization. And we’ll learn how to build our own reproducible figures using Python, R, and JavaScript. No prior programming experience is required."
   },
   {
     "objectID": "index.html#instructor",
     "href": "index.html#instructor",
-    "title": "PSYCH 490.003",
+    "title": "PSYCH 490.001",
     "section": "Instructor",
     "text": "Instructor\nRick O. Gilmore, Ph.D. \nProfessor of Psychology\nrog1 AT-SIGN psu PERIOD edu\n\nSchedule an appointment: https://doodle.com/mm/rickgilmore/book-a-time\nLab web site: https://gilmore-lab.github.io"
   },
   {
     "objectID": "index.html#teaching-assistant",
     "href": "index.html#teaching-assistant",
-    "title": "PSYCH 490.003",
+    "title": "PSYCH 490.001",
     "section": "Teaching Assistant",
-    "text": "Teaching Assistant\n\n\n\n\n\n\nUnder construction\n\n\n\nTBD"
+    "text": "Teaching Assistant\nSara He\nGraduate Student in Social Psychology\ncfh5558 AT-SIGN psu PERIOD edu"
   },
   {
     "objectID": "index.html#meeting-time-location",
     "href": "index.html#meeting-time-location",
-    "title": "PSYCH 490.003",
+    "title": "PSYCH 490.001",
     "section": "Meeting time & location",
     "text": "Meeting time & location\nTuesday & Thursday, 9:05-10:20 am 207 Thomas Building"
   },
   {
     "objectID": "index.html#canvas-site",
     "href": "index.html#canvas-site",
-    "title": "PSYCH 490.003",
+    "title": "PSYCH 490.001",
     "section": "Canvas site",
     "text": "Canvas site\nWe will use Canvas to submit assignments and grade them. The Canvas site may be found here:\n\nMost of the course content will be found on this site."
   },
   {
     "objectID": "index.html#course-structure",
     "href": "index.html#course-structure",
-    "title": "PSYCH 490.003",
+    "title": "PSYCH 490.001",
     "section": "Course structure",
     "text": "Course structure\nThis is a discussion-focused course. On most days we will discuss readings assigned prior to class. On many days, we will work together or individually on the assigned exercises, the final project, or another assignment."
   },
@@ -431,7 +431,7 @@
     "href": "slides/wk01-2025-01-14-course-intro.html#people",
     "title": "The Psychology of Data Visualization",
     "section": "People",
-    "text": "People\n\nRick Gilmore, Professor of Psychology"
+    "text": "People\n\nSara He, MS, Graduate Student\nRick Gilmore, Professor of Psychology"
   },
   {
     "objectID": "slides/wk01-2025-01-14-course-intro.html#why-this-course-why-now",
@@ -445,7 +445,7 @@
     "href": "slides/wk01-2025-01-14-course-intro.html#purpose-goals",
     "title": "The Psychology of Data Visualization",
     "section": "Purpose & goals",
-    "text": "Purpose & goals\n\n\nWho visualizes data, how do they visualize it, and why?\nWhat are data? Where does data come from?\nHow does vision science inform how we perceive patterns in data?\nWhat’s the relationship between non-visual and visual ways of understanding data?\nWhat makes a data visualization effective?\nHow can we make better data visualizations?"
+    "text": "Purpose & goals\n\n\nWhat are data? Where does data come from?\nWho visualizes data, how do they visualize it, and why?\nHow does vision science inform how we perceive patterns in data?\nWhat’s the relationship between non-visual and visual ways of understanding data?\nWhat makes a data visualization effective?\nHow can we make better data visualizations?"
   },
   {
     "objectID": "slides/wk01-2025-01-14-course-intro.html#schedule",
@@ -473,7 +473,7 @@
     "href": "slides/wk01-2025-01-14-course-intro.html#structure",
     "title": "The Psychology of Data Visualization",
     "section": "Structure",
-    "text": "Structure\n\nMeet 2x weekly\nTuesday & Thursday: lecture + discussion + work session\nDo your homework"
+    "text": "Structure\n\nMeet 2x weekly\n\nTuesday & Thursday\nLecture + discussion + work session\n\nDo your homework"
   },
   {
     "objectID": "slides/wk01-2025-01-14-course-intro.html#culture-climate",
@@ -494,7 +494,7 @@
     "href": "slides/wk01-2025-01-14-course-intro.html#references",
     "title": "The Psychology of Data Visualization",
     "section": "References",
-    "text": "References\n\n\n\n\nPSYCH 490.003 • Spring 2025\n\n\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nMatejka, J., & Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In Proceedings of the 2017 CHI conference on human factors in computing systems. New York, NY, USA: ACM. https://doi.org/10.1145/3025453.3025912\n\n\nSilberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. Advances in Methods and Practices in Psychological Science, 1, 337–356. https://doi.org/10.1177/2515245917747646\n\n\nThe Datasaurus dozen - same stats, different graphs | Autodesk Research. (n.d.). Retrieved June 2, 2019, from https://www.autodeskresearch.com/publications/samestats"
+    "text": "References\n\n\n\n\nPSYCH 490.003 • Spring 2025\n\n\n\n\nIso, A. (2016). Bread - if original [1971]. Youtube. Retrieved from https://www.youtube.com/watch?v=IQyKMueMFGk\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nMatejka, J., & Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In Proceedings of the 2017 CHI conference on human factors in computing systems. New York, NY, USA: ACM. https://doi.org/10.1145/3025453.3025912\n\n\nSilberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. Advances in Methods and Practices in Psychological Science, 1, 337–356. https://doi.org/10.1177/2515245917747646\n\n\nThe Datasaurus dozen - same stats, different graphs | Autodesk Research. (n.d.). Retrieved June 2, 2019, from https://www.autodeskresearch.com/publications/samestats"
   },
   {
     "objectID": "about.html",
@@ -663,5 +663,33 @@
     "title": "Making Data",
     "section": "What is reflected, selected, deflected?",
     "text": "What is reflected, selected, deflected?\n\nLindsey (2024)"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#this-is-a-seminar",
+    "href": "slides/wk01-2025-01-14-course-intro.html#this-is-a-seminar",
+    "title": "The Psychology of Data Visualization",
+    "section": "This is a seminar…",
+    "text": "This is a seminar…\n\nhttps://www.merriam-webster.com/dictionary/seminar"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#many-analysts",
+    "href": "slides/wk01-2025-01-14-course-intro.html#many-analysts",
+    "title": "The Psychology of Data Visualization",
+    "section": "Many analysts",
+    "text": "Many analysts\n\nFigure 2 from Silberzahn et al. (2018)"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#many-failures",
+    "href": "slides/wk01-2025-01-14-course-intro.html#many-failures",
+    "title": "The Psychology of Data Visualization",
+    "section": "Many failures",
+    "text": "Many failures\nVisualizing the ’Many Analysts – Silberzahn et al. (2018) – data"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#plot-your-data",
+    "href": "slides/wk01-2025-01-14-course-intro.html#plot-your-data",
+    "title": "The Psychology of Data Visualization",
+    "section": "“Plot your data!”",
+    "text": "“Plot your data!”\n\nGilmore’s graduate statistics professor"
   }
 ]

@@ -7,6 +7,12 @@ subtitle: "2025-01-14"
 
 ---
 
+{{< video https://youtu.be/IQyKMueMFGk?si=bj2pQN2wB-e79Ftu height=100% width=70% >}}
+
+@Iso2016-wd
+
+---
+
 ![@Lindsey2024-ob](https://www.climate.gov/sites/default/files/styles/full_width_620_original_image/public/2024-04/ClimateDashboard-atmospheric-carbon-dioxide-image-paleo-20240405-1400px.png?itok=-g_Qgndc)
 
 ## Today
@@ -16,30 +22,12 @@ subtitle: "2025-01-14"
 
 # Introduction to the course
 
-# Making data
-
 ## People
 
+- Sara He, MS, Graduate Student
 - Rick Gilmore, Professor of Psychology
 
----
-
-<!-- Gilmore photo biography -->
-
-:::: {.columns}
-::: {.column width=50%}
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/DenverCP.JPG/266px-DenverCP.JPG){height=150px}
-![](http://watson.brown.edu/ds/sites/all/themes/ds/img/header/brown_large.png){height=150px}
-![](https://images.unsplash.com/photo-1617581629397-a72507c3de9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZ3RvbiUyMGRjfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"){height=150px}
-![](https://banner2.cleanpng.com/20180623/uk/kisspng-carnegie-mellon-university-in-qatar-carnegie-mello-5b2e03c049ac30.3609480215297422723018.jpg){height=150px}
-:::
-::: {.column width=50%}
-![](../include/img/sleic.png){height=150px}
-![](https://nyu.databrary.org/web/images/logo/databrary-nav.svg){height=150px}
-![](https://www.play-project.org/img/PLAY-logo.png){height=150px}
-
-:::
-::::
+{{< include _gilmore-photo-bio.qmd >}}
 
 ---
 
@@ -47,18 +35,22 @@ subtitle: "2025-01-14"
 
 ---
 
-![](https://nyu.databrary.org/web/images/logo/databrary-nav.svg){height=150px}
+![](../include/img/databrary-nav.svg){height=250px}
 
----
+## {background-iframe="https://penn-state-open-science.github.io"}
+
+## Many analysts
 
 ![Figure 2 from @Silberzahn2018-st](../include/img/silberzahn-fig-02.jpeg)
 
----
+## Many failures
 
 [Visualizing the 'Many Analysts -- @Silberzahn2018-st -- data ](https://psu-psychology.github.io/psych-490-reproducibility-2024-fall/supplemental/many-viz.html)
 
 
-[On plots and degrees of freedom](https://psu-psychology.github.io/psych-490-reproducibility-2024-fall/supplemental/plotting-degrees-of-freedom.html)
+## "Plot your data!"
+
+![Gilmore's graduate statistics professor](../include/img/mike-meyer-linked-in.png)
 
 ---
 
@@ -75,8 +67,8 @@ subtitle: "2025-01-14"
 ## Purpose & goals
 
 ::: {.incremental}
-- Who visualizes data, how do they visualize it, and why?
 - What are data? Where does data come from?
+- Who visualizes data, how do they visualize it, and why?
 - How does vision science inform how we perceive patterns in data?
 - What's the relationship between non-visual and visual ways of understanding data?
 - What makes a data visualization effective?
@@ -111,8 +103,13 @@ subtitle: "2025-01-14"
 ## Structure
 
 - Meet 2x weekly
-- Tuesday & Thursday: lecture + discussion + work session
+  - Tuesday & Thursday
+  - Lecture + discussion + work session
 - Do your homework
+
+## This is a seminar...
+
+![https://www.merriam-webster.com/dictionary/seminar](../include/img/seminar-definition.png)
 
 ## Culture & climate
 
@@ -124,7 +121,7 @@ subtitle: "2025-01-14"
   - 'Smith tried to demonstrate that pigs can fly by tossing a few off the 
   roof of Old Main. That's nonsense and made a huge mess.'
   
-# Your turn: Making data
+# Making data
 
 ## Exercise 01
 
