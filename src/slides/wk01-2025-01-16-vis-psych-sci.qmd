@@ -1,0 +1,27 @@
+---
+title: "Visualization in Psychological Science"
+subtitle: "2025-01-16"
+---
+
+# Prelude
+
+# Overview
+
+## Announcements
+
+## Last time...
+
+## Today
+
+- Visualization in Psychological Science
+  - [Exercise-00](exercises/ex00-figs-in-psych-sci.qmd)
+
+# Main points
+
+# Next time
+
+*Visualization in government & business*
+
+# Resources
+
+## References

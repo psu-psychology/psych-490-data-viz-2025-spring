@@ -9,22 +9,6 @@ project:
 
 website:
   title: "PSYCH 490 • Spr 2025"
-  # chapters:
-    # - href: index.qmd
-    #   text: Overview
-    # - href: schedule.qmd
-    # - part: Exercises
-    #   chapters:
-    #     - exercises/exNN-reading-figures.qmd
-    # - part: Tutorials
-    #   chapters:
-    #     - tutorials/tutorial-rstudio-on-pc.qmd
-    #     - tutorials/tutorial-rstudio-on-psu.qmd
-    #     - tutorials/tutorial-r-ggplot.qmd
-    #     - tutorials/tutorial-python-matplotlib.qmd
-    # - part: Surveys
-    #   chapters:
-    #     - surveys/survey-01.qmd
   navbar:
     left:
       - href: index.qmd
@@ -39,11 +23,13 @@ website:
         text: "Policies & Values"
       - text: Exercises
         menu: 
-          - href: "exercises/ex01-making-data.qmd"
+          - href: "exercises/ex00-figs-in-psych-sci.qmd"
+          # - href: "exercises/ex01-making-data.qmd"
           # - href: "exercises/exNN-finding-data-sources.qmd"
           # - href: "exercises/exNN-reading-figures.qmd"
       - text: Tutorials
         menu:
+        - tutorial/tutorial-making-data.qmd
         - tutorials/tutorial-rstudio-on-pc.qmd
         - tutorials/tutorial-rstudio-on-psu.qmd
         - tutorials/tutorial-r-ggplot.qmd
@@ -58,7 +44,8 @@ website:
   repo-actions: [edit, issue]
   repo-subdir: src
   page-footer:
-    center: "Copyright 2025, Rick Gilmore" 
+    left: "Copyright © 2025- Rick Gilmore"
+    center: "Built with [Quarto](https://quarto.org/)"
     right:
       - icon: github
         href: https://github.com/rogilmore

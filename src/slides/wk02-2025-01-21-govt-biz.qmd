@@ -1,0 +1,77 @@
+---
+title: "The Psychology of Data Visualization"
+subtitle: "2025-01-14"
+---
+
+# Prelude
+
+# Overview
+
+## Announcements
+
+## Last time...
+
+- Data are *made* via a mapping procedure
+- Data reflect, select, and deflect
+
+---
+
+::: {.callout-important}
+## Your turn
+A set of data about self-reported favorite colors is of what type [@Stevens1946-sh]?
+
+A. Ratio</br>
+B. Ordinal</br>
+C. Nominal/Categorical
+:::
+
+---
+
+::: {.callout-important}
+## Your turn
+What kind of analyses can we do with these data?
+
+A. Counts by category</br>
+B. Average preference</br>
+C. Change across time
+:::
+
+---
+
+::: {.callout-important}
+## Your turn
+What kind of visualization(s) can we make with these data?
+
+See the [tutorial](../tutorials/tutorial-making-data.qmd#nominal-data) for more on this topic.
+:::
+
+## Today
+
+*Visualization in government & business*
+
+- Data visualization in government
+- Data visualization in business
+
+## Goals
+
+# Data visualization in government
+
+## Why do governments visualize data?
+
+## What data do governments visualize
+
+# Data visualization in business
+
+## Why do businesses visualize data?
+
+## What data do governments visualize
+
+# Main points
+
+# Next time
+
+*Visualization in science*
+
+# Resources
+
+## References

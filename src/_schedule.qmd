@@ -12,23 +12,26 @@
 
 #### Thursday, January 16 {-}
 
-*Making (sense of) data*
+*Visualization in psychological science*
 
-- Required:
-  - @Stevens1946-sh
-- [Slides](slides/wk01-2025-01-14-course-intro.qmd)
+- [Slides](slides/wk01-2025-01-16-viz-psych-sci.qmd)
+- [Exercise-00](exercises/ex00-figs-in-psych-sci.qmd)
 
 ### January 20-24 {- #week-02}
 
-*Who visualizes data and why*
+*Who (else) visualizes data and why*
 
 #### Tuesday, January 21 {-}
 
-*Visualization in business, industry, & government*
+*Visualization in government & business*
+
+- [Slides](slides/wk02-2025-01-21-govt-biz.qmd)
 
 #### Thursday, January 23 {-}
 
-*Visualization in science*
+*Visualization in art, sports, and journalism*
+
+- [Slides](slides/wk02-2025-01-23-art-sports.qmd)
 
 ### January 27-31 {- #week-03}
 
@@ -36,9 +39,11 @@
 
 #### Tuesday, January 28 {-}
 
-*Data types*
+*Making (sense of) data*
 
-- In-class exercise on [data creation](exercises/exNN-making-data.qmd).
+- Required:
+  - @Stevens1946-sh
+- [Slides](slides/wk03-2025-01-16-making-data.qmd)
 
 #### Thursday, January 30 {-}
 
@@ -151,3 +156,12 @@
 #### Tuesday, April 29 {-}
 
 #### Thursday, May 01 {-}
+
+### May 5-9 {- #finals-week}
+
+*Finals Week*
+
+#### Tuesday, April 29 {-}
+
+- Final project write-up due
+

@@ -1,6 +1,6 @@
 ---
 title: "Making Data"
-subtitle: "2025-01-16"
+subtitle: "2025-01-28"
 ---
 
 # Prelude

@@ -18,7 +18,8 @@ subtitle: "2025-01-14"
 ## Today
 
 - Introduction to the course
-- Making data
+- Getting to know you
+- Visualization in psychological science
 
 # Introduction to the course
 
@@ -121,22 +122,20 @@ subtitle: "2025-01-14"
   - 'Smith tried to demonstrate that pigs can fly by tossing a few off the 
   roof of Old Main. That's nonsense and made a huge mess.'
   
-# Making data
+# Getting to know you
 
-## Exercise 01
+## Survey-01
 
-- Visit [Exercise-01](../exercises/ex01-making-data.qmd)
-- Divide up into teams
-- Write-up due next Tuesday, January 21, 2025
-  
+# Visualization in psychological science
+
 # Main points
 
 - Visualizing data is important
-- Data are *made*
+- Visualizing data is interesting
 
 # Next time
 
-*Making (sense of) data*
+*Visualization in psychological science*
 
 # Resources
 

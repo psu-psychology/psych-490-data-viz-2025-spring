@@ -1,0 +1,62 @@
+---
+title: "Exercise 00"
+subtitle: "Data visualizaton in Psychological Science"
+---
+
+## Dates {-}
+
+In-class work on Tuesday, January 14 and Thursday, January 16.
+
+## Goals {-}
+
+In this exercise, you will work with a team of classmates to find data visualizations from the societies of three (3) professional associations and three (3) journals.
+You will add links to the visualizations to a common database that we will use for discussion about the types of visualizations and types of data that are commonly used in psychological science.
+
+## Assignment {-}
+
+1. Visit the websites of at least three (3) professional associations.
+
+The following are examples. Feel free to choose a different professional society.
+
+- [American Psychological Association (APA)](https://www.apa.org)
+- [Association for Psychological Science (APS)](https://www.psychologicalscience.org)
+- [Vision Sciences Society](https://www.visionsciences.org)
+- [Society for Personality and Social Psychology](https://spsp.org)
+- [Society for Research in Child Development](https://www.srcd.org)
+- [Society for Research on Adolescence](https://www.s-r-a.org)
+- [Cognitive Neuroscience Society](https://www.cogneurosociety.org)
+- [Society for Neuroscience](https://sfn.org)
+- [Psychonomics Society](https://www.psychonomic.org)
+- [Society for Industrial and Organizational Psychology](https://siop.org)
+
+2. For each society website, find at least two visualizations of data.
+
+Try to pick visualizations that are interesting to you in some way.
+
+3. Add information about the visualizations to a Google Sheet that all of us will share:
+
+<https://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6tRzpfdgXBYyPooCPo/edit?usp=sharing>
+
+Specifically, enter your team identifier in the `identifier` field, the source in `source_type`, and the URL in the `url` field. If you have any comments to add, put those in the `comments` field.
+
+4. Next, visit the websites of at least three (3) journals and do the same thing--pick at least two (2) visualizations from each of the journals.
+
+Note that some societies publish one or more journals, so you might find a journal that interests you from the society website.
+
+Here are some additional journal resources that you might find interesting to explore:
+
+- [Science Magazine](https://www.science.org)
+- [Nature](https://www.nature.com)
+- [Nature Human Behavior](https://www.nature.com/nathumbehav)
+- [Trends in Cognitive Sciences](https://www.cell.com/trends/cognitive-sciences/home)
+
+::: {.callout-important}
+
+The goal here is to gather via 'crowd-sourcing' a diverse set of visualizations.
+So, feel free to mix it up.
+
+:::
+
+## Submit {-}
+
+Your data to the shared Google Spreadsheet.

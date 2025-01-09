@@ -1,5 +1,320 @@
 [
   {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#announcements",
+    "href": "slides/wk03-2025-01-28-making-data.html#announcements",
+    "title": "Making Data",
+    "section": "Announcements",
+    "text": "Announcements\n\nExercise-01 write-up due next Tuesday, January 21, 2025."
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#last-time",
+    "href": "slides/wk03-2025-01-28-making-data.html#last-time",
+    "title": "Making Data",
+    "section": "Last time…",
+    "text": "Last time…\n\nCourse introduction\nStart on Exercise-01"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#today",
+    "href": "slides/wk03-2025-01-28-making-data.html#today",
+    "title": "Making Data",
+    "section": "Today",
+    "text": "Today\n\nMaking Data\nTypes of data"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#how-are-data-made",
+    "href": "slides/wk03-2025-01-28-making-data.html#how-are-data-made",
+    "title": "Making Data",
+    "section": "How are data made?",
+    "text": "How are data made?\n\n\n\nBy measurement"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#what-is-measurement",
+    "href": "slides/wk03-2025-01-28-making-data.html#what-is-measurement",
+    "title": "Making Data",
+    "section": "What is measurement?",
+    "text": "What is measurement?\n\n\n\nA procedure for mapping properties of X onto some numerical standard or scale Y\nMetrology: The science of measurement\nPsychometrics: The study of psychological measurement"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#why-mapping",
+    "href": "slides/wk03-2025-01-28-making-data.html#why-mapping",
+    "title": "Making Data",
+    "section": "Why ‘mapping’",
+    "text": "Why ‘mapping’\n\n\n\n\n\n\n\n\nflowchart TB\n  A[Thing/Person]-- Procedure  --&gt;B(Instrument)\n  B --&gt; C{Data}\n\n\n\n\nFigure 1: Illustration of a mapping from observed entity to data\n\n\n\n\n\n\n\n\n\n\n\n\nflowchart TB\n  A[Thing/Person]-- Procedure  --&gt;B(Instrument)\n  A[Thing/Person]-- Procedure-2  --&gt;C(Instrument-2)\n  B --&gt; E{Data}\n  C --&gt; D{Data-2}\n\n\n\n\nFigure 2: Illustration of multiple mappings from an observed entity to data"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#data-quantitative-terminology",
+    "href": "slides/wk03-2025-01-28-making-data.html#data-quantitative-terminology",
+    "title": "Making Data",
+    "section": "Data ~ quantitative terminology",
+    "text": "Data ~ quantitative terminology\n\nData a symbol of the thing measured, not the thing itself\nE.g., Words are a symbol of the things they refer to\n\n\n\n\n\n\n\nflowchart TB\n  A[Cute animal with fur that purrs] --&gt; B('cat')\n  A ---&gt; C('gato')\n  A ---&gt; D('chatte/chat')\n  A ---&gt; E('猫')\n\n\n\n\nFigure 3: Mapping from concept/entity to a word."
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#data-reflects-selects-and-deflects",
+    "href": "slides/wk03-2025-01-28-making-data.html#data-reflects-selects-and-deflects",
+    "title": "Making Data",
+    "section": "Data reflects, selects, and deflects",
+    "text": "Data reflects, selects, and deflects\n\nEven if any given terminology is a reflection of reality, by its very nature as a terminology, it must be a selection of reality; and to this extent must also as a deflection of reality\n\nBurke (1968)"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#what-is-reflected-selected-deflected",
+    "href": "slides/wk03-2025-01-28-making-data.html#what-is-reflected-selected-deflected",
+    "title": "Making Data",
+    "section": "What is reflected, selected, deflected?",
+    "text": "What is reflected, selected, deflected?\n\nLindsey (2024)"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#stevens-scales-of-measurement",
+    "href": "slides/wk03-2025-01-28-making-data.html#stevens-scales-of-measurement",
+    "title": "Making Data",
+    "section": "Stevens’ scales of measurement",
+    "text": "Stevens’ scales of measurement\n\nStevens (1946)"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#questions-about-measurement",
+    "href": "slides/wk03-2025-01-28-making-data.html#questions-about-measurement",
+    "title": "Making Data",
+    "section": "Questions about measurement",
+    "text": "Questions about measurement\n\nWhat’s the procedure for making this mapping?\nWhat are the rules for assigning numbers?\nWhat can we do with the assigned numbers (summarize, depict)?"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#in-other-domains",
+    "href": "slides/wk03-2025-01-28-making-data.html#in-other-domains",
+    "title": "Making Data",
+    "section": "In other domains",
+    "text": "In other domains\n\nBusiness/economics\nPolitics\nSports\nEntertainment\nWeather"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#in-psychology",
+    "href": "slides/wk03-2025-01-28-making-data.html#in-psychology",
+    "title": "Making Data",
+    "section": "In psychology",
+    "text": "In psychology\n\nInternal mental states\nBehaviors\nPhysiological processes\nPhysical characteristics\nEnvironmental properties"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#examples-of",
+    "href": "slides/wk03-2025-01-28-making-data.html#examples-of",
+    "title": "Making Data",
+    "section": "Examples of…",
+    "text": "Examples of…\n\nInternal mental states\nBehaviors\nPhysiological processes\nPhysical characteristics\nEnvironmental properties"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#how-to-measure",
+    "href": "slides/wk03-2025-01-28-making-data.html#how-to-measure",
+    "title": "Making Data",
+    "section": "How to measure…",
+    "text": "How to measure…\n\nInternal mental states\nBehaviors\nPhysiological processes\nPhysical characteristics\nEnvironmental properties"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#scales-of-measurement",
+    "href": "slides/wk03-2025-01-28-making-data.html#scales-of-measurement",
+    "title": "Making Data",
+    "section": "Scales of measurement",
+    "text": "Scales of measurement\n\nStevens (1946)"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#your-surveys",
+    "href": "slides/wk03-2025-01-28-making-data.html#your-surveys",
+    "title": "Making Data",
+    "section": "Your surveys…",
+    "text": "Your surveys…\n\nNominal\nOrdinal\nInterval\nRatio"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#references",
+    "href": "slides/wk03-2025-01-28-making-data.html#references",
+    "title": "Making Data",
+    "section": "References",
+    "text": "References\n\n\n\n\nBurke, K. (1968). Language as Symbolic Action. University of California Press. Retrieved from https://www.ucpress.edu/books/language-as-symbolic-action/paper\n\n\nDattani, S., & Roser, M. (2024). What was the golden age of antibiotics, and how can we spark a new one? Our World in Data. Retrieved from https://ourworldindata.org/golden-age-antibiotics\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nLucaas. (2007). Talking Heads - Girlfriend is Better (from stop making sense. Youtube. Retrieved from https://www.youtube.com/watch?v=9r7X3f2gFz4&list=PLXTs9Ss_E9ARDEum9WgaJ67rvpnzogpsA&index=7\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science (New York, N.Y.), 103, 677–680. https://doi.org/10.1126/science.103.2684.677"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-21-govt-biz.html#announcements",
+    "href": "slides/wk02-2025-01-21-govt-biz.html#announcements",
+    "title": "The Psychology of Data Visualization",
+    "section": "Announcements",
+    "text": "Announcements"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-21-govt-biz.html#last-time",
+    "href": "slides/wk02-2025-01-21-govt-biz.html#last-time",
+    "title": "The Psychology of Data Visualization",
+    "section": "Last time…",
+    "text": "Last time…\n\nData are made via a mapping procedure\nData reflect, select, and deflect"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-21-govt-biz.html#today",
+    "href": "slides/wk02-2025-01-21-govt-biz.html#today",
+    "title": "The Psychology of Data Visualization",
+    "section": "Today",
+    "text": "Today\nVisualization in government & business\n\nData visualization in government\nData visualization in business"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-21-govt-biz.html#goals",
+    "href": "slides/wk02-2025-01-21-govt-biz.html#goals",
+    "title": "The Psychology of Data Visualization",
+    "section": "Goals",
+    "text": "Goals"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-21-govt-biz.html#why-do-governments-visualize-data",
+    "href": "slides/wk02-2025-01-21-govt-biz.html#why-do-governments-visualize-data",
+    "title": "The Psychology of Data Visualization",
+    "section": "Why do governments visualize data?",
+    "text": "Why do governments visualize data?"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-21-govt-biz.html#what-data-do-governments-visualize",
+    "href": "slides/wk02-2025-01-21-govt-biz.html#what-data-do-governments-visualize",
+    "title": "The Psychology of Data Visualization",
+    "section": "What data do governments visualize",
+    "text": "What data do governments visualize"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-21-govt-biz.html#why-do-businesses-visualize-data",
+    "href": "slides/wk02-2025-01-21-govt-biz.html#why-do-businesses-visualize-data",
+    "title": "The Psychology of Data Visualization",
+    "section": "Why do businesses visualize data?",
+    "text": "Why do businesses visualize data?"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-21-govt-biz.html#what-data-do-governments-visualize-1",
+    "href": "slides/wk02-2025-01-21-govt-biz.html#what-data-do-governments-visualize-1",
+    "title": "The Psychology of Data Visualization",
+    "section": "What data do governments visualize",
+    "text": "What data do governments visualize"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-21-govt-biz.html#references",
+    "href": "slides/wk02-2025-01-21-govt-biz.html#references",
+    "title": "The Psychology of Data Visualization",
+    "section": "References",
+    "text": "References\n\n\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science (New York, N.Y.), 103, 677–680. https://doi.org/10.1126/science.103.2684.677"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#today",
+    "href": "slides/wk01-2025-01-14-course-intro.html#today",
+    "title": "The Psychology of Data Visualization",
+    "section": "Today",
+    "text": "Today\n\nIntroduction to the course\nGetting to know you\nVisualization in psychological science"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#people",
+    "href": "slides/wk01-2025-01-14-course-intro.html#people",
+    "title": "The Psychology of Data Visualization",
+    "section": "People",
+    "text": "People\n\nSara He, MS, Graduate Student\nRick Gilmore, Professor of Psychology"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#why-this-course-why-now",
+    "href": "slides/wk01-2025-01-14-course-intro.html#why-this-course-why-now",
+    "title": "The Psychology of Data Visualization",
+    "section": "Why this course, why now",
+    "text": "Why this course, why now"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#many-analysts",
+    "href": "slides/wk01-2025-01-14-course-intro.html#many-analysts",
+    "title": "The Psychology of Data Visualization",
+    "section": "Many analysts",
+    "text": "Many analysts\n\nFigure 2 from Silberzahn et al. (2018)"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#many-failures",
+    "href": "slides/wk01-2025-01-14-course-intro.html#many-failures",
+    "title": "The Psychology of Data Visualization",
+    "section": "Many failures",
+    "text": "Many failures\nVisualizing the ’Many Analysts – Silberzahn et al. (2018) – data"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#plot-your-data",
+    "href": "slides/wk01-2025-01-14-course-intro.html#plot-your-data",
+    "title": "The Psychology of Data Visualization",
+    "section": "“Plot your data!”",
+    "text": "“Plot your data!”\n\nGilmore’s graduate statistics professor"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#purpose-goals",
+    "href": "slides/wk01-2025-01-14-course-intro.html#purpose-goals",
+    "title": "The Psychology of Data Visualization",
+    "section": "Purpose & goals",
+    "text": "Purpose & goals\n\n\nWhat are data? Where does data come from?\nWho visualizes data, how do they visualize it, and why?\nHow does vision science inform how we perceive patterns in data?\nWhat’s the relationship between non-visual and visual ways of understanding data?\nWhat makes a data visualization effective?\nHow can we make better data visualizations?"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#schedule",
+    "href": "slides/wk01-2025-01-14-course-intro.html#schedule",
+    "title": "The Psychology of Data Visualization",
+    "section": "Schedule",
+    "text": "Schedule\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/schedule.html"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#exercises-evaluation",
+    "href": "slides/wk01-2025-01-14-course-intro.html#exercises-evaluation",
+    "title": "The Psychology of Data Visualization",
+    "section": "Exercises & evaluation",
+    "text": "Exercises & evaluation\n\nExercises\n\n8 @ 10 pts/each\nTop 4 count\nOthers count toward partial extra credit up to 10 pts\n\nAttendance (up to 40 points)\nFinal project (40 points)"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#resources",
+    "href": "slides/wk01-2025-01-14-course-intro.html#resources",
+    "title": "The Psychology of Data Visualization",
+    "section": "Resources",
+    "text": "Resources\n\nThis site: https://psu-psychology.github.io/psych-490-data-viz-2025-spring/ \nUniversity Library"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#structure",
+    "href": "slides/wk01-2025-01-14-course-intro.html#structure",
+    "title": "The Psychology of Data Visualization",
+    "section": "Structure",
+    "text": "Structure\n\nMeet 2x weekly\n\nTuesday & Thursday\nLecture + discussion + work session\n\nDo your homework"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#this-is-a-seminar",
+    "href": "slides/wk01-2025-01-14-course-intro.html#this-is-a-seminar",
+    "title": "The Psychology of Data Visualization",
+    "section": "This is a seminar…",
+    "text": "This is a seminar…\n\nhttps://www.merriam-webster.com/dictionary/seminar"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#culture-climate",
+    "href": "slides/wk01-2025-01-14-course-intro.html#culture-climate",
+    "title": "The Psychology of Data Visualization",
+    "section": "Culture & climate",
+    "text": "Culture & climate\n\nCreating a community of inquiry\nEncouraging vigorous & constructive criticism\nCriticism of work/ideas/behaviors vs. people\n\n‘Smith thinks that pigs can fly.’\n‘Smith is an idiot.’\n‘Smith tried to demonstrate that pigs can fly by tossing a few off the roof of Old Main. That’s nonsense and made a huge mess.’"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#survey-01",
+    "href": "slides/wk01-2025-01-14-course-intro.html#survey-01",
+    "title": "The Psychology of Data Visualization",
+    "section": "Survey-01",
+    "text": "Survey-01"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#references",
+    "href": "slides/wk01-2025-01-14-course-intro.html#references",
+    "title": "The Psychology of Data Visualization",
+    "section": "References",
+    "text": "References\n\n\n\n\nIso, A. (2016). Bread - if original [1971]. Youtube. Retrieved from https://www.youtube.com/watch?v=IQyKMueMFGk\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nMatejka, J., & Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In Proceedings of the 2017 CHI conference on human factors in computing systems. New York, NY, USA: ACM. https://doi.org/10.1145/3025453.3025912\n\n\nSilberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. Advances in Methods and Practices in Psychological Science, 1, 337–356. https://doi.org/10.1177/2515245917747646\n\n\nThe Datasaurus dozen - same stats, different graphs | Autodesk Research. (n.d.). Retrieved June 2, 2019, from https://www.autodeskresearch.com/publications/samestats"
+  },
+  {
+    "objectID": "tutorials/tutorial-rstudio-on-psu.html",
+    "href": "tutorials/tutorial-rstudio-on-psu.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "tutorials/tutorial-rstudio-on-psu.html#about",
+    "href": "tutorials/tutorial-rstudio-on-psu.html#about",
+    "title": "",
+    "section": "About",
+    "text": "About\nThis page provides help starting and using RStudio from a Penn State computer lab machine. For instructions on how to install this free progam on your own personal computer, see the accompanying tutorial."
+  },
+  {
+    "objectID": "tutorials/tutorial-rstudio-on-psu.html#what-is-rstudio",
+    "href": "tutorials/tutorial-rstudio-on-psu.html#what-is-rstudio",
+    "title": "",
+    "section": "1.1 What is RStudio?",
+    "text": "1.1 What is RStudio?\nRStudio is an integrated development environment (IDE) for doing data science. An IDE is a computer program that provides tools for people who are developing and testing software. You might not think of yourself as a software developer (yet). But RStudio is a powerful tool for beginners, too. It began life as a tool primarily for users writing code in R, hence the name. RStudio supports multiple programming languages, including R and Python."
+  },
+  {
     "objectID": "tutorials/tutorial-r-ggplot.html",
     "href": "tutorials/tutorial-r-ggplot.html",
     "title": "",
@@ -63,6 +378,146 @@
     "text": "Footnotes\n\n\nA collection of special commands for doing specific things.↩︎"
   },
   {
+    "objectID": "tutorials/tutorial-making-data.html",
+    "href": "tutorials/tutorial-making-data.html",
+    "title": "",
+    "section": "",
+    "text": "CodeShow All CodeHide All CodeView Source"
+  },
+  {
+    "objectID": "tutorials/tutorial-making-data.html#about",
+    "href": "tutorials/tutorial-making-data.html#about",
+    "title": "",
+    "section": "About",
+    "text": "About\nThis tutorial shows how we can construct data of different types.\n\n\nCode\nlibrary(ggplot2)\nlibrary(dplyr)\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union"
+  },
+  {
+    "objectID": "tutorials/tutorial-making-data.html#nominal-data",
+    "href": "tutorials/tutorial-making-data.html#nominal-data",
+    "title": "",
+    "section": "Nominal data",
+    "text": "Nominal data\nLet’s focus on nominal or categorical data, specifically the favorite colors of some imaginary set of people.\n\n\nCode\ncolors &lt;- c(\"red\", \"orange\", \"yellow\", \"green\", \"blue\", \"violet\", \"white\", \"black\", \"gray\", \"brown\")\n\n\nThere are n=10 colors in this set.\n\n\n\n\n\n\nYour turn\n\n\n\nWhy are these data nominal or nominally scaled? Or rather, why aren’t they ordinal, interval, or ratio?\n\n\n\nGenerating\nFor demonstration purposes, we want to take some number of random samples of these colors. Let’s pick n=200 and sample with replacement (replace=TRUE in the code below), meaning that we could have any number of colors in our sample of 200 imaginary people.\n\n\nCode\nour_color_sample &lt;- sample(colors, size=200, replace=TRUE)\nour_color_sample\n\n\n  [1] \"white\"  \"brown\"  \"green\"  \"white\"  \"green\"  \"blue\"   \"black\"  \"violet\"\n  [9] \"yellow\" \"yellow\" \"violet\" \"white\"  \"violet\" \"yellow\" \"brown\"  \"orange\"\n [17] \"green\"  \"yellow\" \"white\"  \"brown\"  \"gray\"   \"gray\"   \"red\"    \"blue\"  \n [25] \"yellow\" \"violet\" \"black\"  \"black\"  \"brown\"  \"green\"  \"gray\"   \"violet\"\n [33] \"gray\"   \"black\"  \"blue\"   \"black\"  \"white\"  \"brown\"  \"yellow\" \"white\" \n [41] \"violet\" \"red\"    \"gray\"   \"orange\" \"gray\"   \"yellow\" \"white\"  \"black\" \n [49] \"violet\" \"green\"  \"orange\" \"white\"  \"blue\"   \"gray\"   \"blue\"   \"brown\" \n [57] \"red\"    \"black\"  \"white\"  \"gray\"   \"red\"    \"violet\" \"black\"  \"brown\" \n [65] \"white\"  \"gray\"   \"blue\"   \"orange\" \"white\"  \"green\"  \"orange\" \"orange\"\n [73] \"blue\"   \"gray\"   \"brown\"  \"violet\" \"yellow\" \"violet\" \"blue\"   \"orange\"\n [81] \"blue\"   \"red\"    \"gray\"   \"orange\" \"violet\" \"red\"    \"brown\"  \"orange\"\n [89] \"green\"  \"yellow\" \"black\"  \"gray\"   \"violet\" \"gray\"   \"violet\" \"black\" \n [97] \"orange\" \"blue\"   \"orange\" \"orange\" \"yellow\" \"green\"  \"red\"    \"orange\"\n[105] \"blue\"   \"brown\"  \"green\"  \"green\"  \"green\"  \"white\"  \"gray\"   \"blue\"  \n[113] \"violet\" \"white\"  \"green\"  \"white\"  \"orange\" \"white\"  \"brown\"  \"orange\"\n[121] \"yellow\" \"black\"  \"gray\"   \"black\"  \"green\"  \"yellow\" \"violet\" \"green\" \n[129] \"orange\" \"red\"    \"blue\"   \"black\"  \"yellow\" \"red\"    \"brown\"  \"gray\"  \n[137] \"violet\" \"orange\" \"orange\" \"blue\"   \"orange\" \"gray\"   \"green\"  \"black\" \n[145] \"brown\"  \"white\"  \"green\"  \"black\"  \"white\"  \"blue\"   \"black\"  \"violet\"\n[153] \"white\"  \"black\"  \"yellow\" \"blue\"   \"black\"  \"white\"  \"green\"  \"black\" \n[161] \"black\"  \"brown\"  \"blue\"   \"green\"  \"orange\" \"violet\" \"white\"  \"brown\" \n[169] \"yellow\" \"orange\" \"blue\"   \"white\"  \"violet\" \"red\"    \"black\"  \"black\" \n[177] \"blue\"   \"blue\"   \"violet\" \"green\"  \"blue\"   \"red\"    \"orange\" \"orange\"\n[185] \"black\"  \"black\"  \"white\"  \"yellow\" \"orange\" \"brown\"  \"orange\" \"blue\"  \n[193] \"orange\" \"orange\" \"orange\" \"white\"  \"violet\" \"blue\"   \"white\"  \"green\" \n\n\nOn its own, that’s not especially easy to visualize. What if we sorted it?\n\n\nCode\nsort(our_color_sample)\n\n\n  [1] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n  [9] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n [17] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n [25] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [33] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [41] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"brown\" \n [49] \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\" \n [57] \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"gray\"  \n [65] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [73] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [81] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [89] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [97] \"green\"  \"green\"  \"green\"  \"green\"  \"orange\" \"orange\" \"orange\" \"orange\"\n[105] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[113] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[121] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[129] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[137] \"red\"    \"red\"    \"red\"    \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[145] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[153] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[161] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[169] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[177] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[185] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n[193] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n\n\nStill not all that helpful.\n\n\nSummarizing\nWhat can we say to summarize categorical data?\nWe can report the number of total responses.\n\n\nCode\nlength(our_color_sample)\n\n\n[1] 200\n\n\nWe can report the number of unique categories.\n\n\nCode\nlength(unique(our_color_sample))\n\n\n[1] 10\n\n\nWe can report the number of responses per category.\n\n\nCode\ncolors_df &lt;- data.frame(favorite_color = our_color_sample)\n\nxtabs(formula = ~favorite_color, data = colors_df)\n\n\nfavorite_color\n black   blue  brown   gray  green orange    red violet  white yellow \n    24     23     16     17     20     28     11     21     24     16 \n\n\n\n\nVisualizing\nSingle nominal variables don’t offer us many options for visualization. A bar plot showing the number of observations in each category seems to be it.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color) +\n  geom_bar()\n\n\n\n\n\n\n\n\nFigure 1: An (ugly) barplot of the random favorite color data\n\n\n\n\n\nIs one of these colors a particular favorite? Maybe. The observed data show some differences. But how can we know they aren’t just due to random chance.\n\n\n\n\n\n\nStop the presses!\n\n\n\nThese particular data are entirely random. We made them up!\nKeep that in mind while we work through what we would do to answer the question if these were not fake, random data.\n\n\nTo answer that question, we’d have to compare our results with some other pattern, a pattern where there is no favorite. In other words, we want a pattern where the counts are all equal. So, we’re back to summarizing.\nActually, data analysis in the real world usually involves a back-and-forth alternation between summarizing/analyzing and visualizing.\n\n\n\n\n\n\nflowchart LR\n  A[Summarize] --&gt; B[Visualize]\n  B ---&gt; A\n\n\n\n\nFigure 2: Illustration of the back and forth between summarizing and visualizing that characterizes real-life data analysis.\n\n\n\n\n\n\n\nSummarizing II\nLet’s make data that have an identical pattern across all colors.\nThere are several ways to do this, but here is one that works.\n\n\nCode\nno_favorite &lt;- rep(colors, length(our_color_sample)/length(colors))\n\ncompare_df &lt;- data.frame(favorite_color = no_favorite)\n\nxtabs(formula = ~favorite_color, data = compare_df)\n\n\nfavorite_color\n black   blue  brown   gray  green orange    red violet  white yellow \n    20     20     20     20     20     20     20     20     20     20 \n\n\nHow can we compare the data where there are no differences by category to the data where there are differences?"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "schedule.html#schedule",
+    "href": "schedule.html#schedule",
+    "title": "",
+    "section": "Schedule",
+    "text": "Schedule\n\nJanuary 13-17\nSurveying the landscape\n\nTuesday, January 14\nCourse introduction\n\nSlides\n\n\n\nThursday, January 16\nVisualization in psychological science\n\nSlides\nExercise-00\n\n\n\n\nJanuary 20-24\nWho (else) visualizes data and why\n\nTuesday, January 21\nVisualization in government & business\n\nSlides\n\n\n\nThursday, January 23\nVisualization in art, sports, and journalism\n\nSlides\n\n\n\n\nJanuary 27-31\nUnderstanding figures\n\nTuesday, January 28\nMaking (sense of) data\n\nRequired:\n\nStevens (1946)\n\nSlides\n\n\n\nThursday, January 30\nFigure types\n\n\n\nFebruary 3-7\nFrom perception to cognition\n\nTuesday, February 04\nFrom stimulus to sensation\n\n\nThursday, February 06\nFrom sensation to perception\n\n\n\nFebruary 10-14\nFrom cognition to understanding\n\nTuesday, February 11\n\n\nThursday, February 13\n\n\n\nFebruary 17-21\nStorytelling with data\n\nTuesday, February 18\n\n\nThursday, February 20\n\n\n\nFebruary 24-28\nCritiquing figures\n\nTuesday, February 25\n\n\nThursday, February 27\n\n\n\nMarch 3-7\nExploring data with spreadsheets\n\nTuesday, March 04\n\n\nThursday, March 06\n\n\n\nMarch 10-14 Spring Break\n\n\nMarch 17-21\nIntroduction to R\n\nTuesday, March 18\nWhy R we doing this?\n\n\nThursday, March 20\n\n\n\nMarch 24-28\nExploring data with R\n\nTuesday, March 25\nGathering & cleaning data\n\n\nThursday, March 27\nMaking plots with ggplot2\n\n\n\nMarch 31 - April 4\nIntroduction to Python\n\nTuesday, April 01\n\n\nThursday, April 03\n\n\n\nApril 7-11\nExploring data with Python\n\nTuesday, April 08\n\n\nThursday, April 10\n\n\n\nApril 14-18\nMaking plots with JavaScript\n\nTuesday, April 15\n\n\nThursday, April 17\n\n\n\nApril 21-25\nFinal Project Preparation\n\nTuesday, April 22\n\n\nThursday, April 24\n\n\n\nApril 28 - May 2\nStudent Projects\n\nTuesday, April 29\n\n\nThursday, May 01\n\n\n\nMay 5-9\nFinals Week\n\nTuesday, April 29\n\nFinal project write-up due"
+  },
+  {
+    "objectID": "meta.html",
+    "href": "meta.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "meta.html#about",
+    "href": "meta.html#about",
+    "title": "",
+    "section": "About",
+    "text": "About\nThis page describes how the site is created and rendered."
+  },
+  {
+    "objectID": "meta.html#workflow",
+    "href": "meta.html#workflow",
+    "title": "",
+    "section": "Workflow",
+    "text": "Workflow\nThe site is written in Quarto.\nThe project root uses a src/ directory to store the source code.\nA site-wide YAML file (_quarto.yml) controls the rendering process.\nSeparate directories contain lecture slides (slides/), exercises (exercises/), class-specific R functions (R/), surveys (surveys/), and tutorials (tutorials/). Quarto files with underscores (e.g., _index.qmd, _about.qmd, _evaluation.qmd, _schedule.qmd, and values.qmd) are the main targets for editing and updating. Parent files (e.g., index.qmd, evaluation.qmd, policies.qmd, and schedule.qmd) call upon these child files in the rendering process.\nA separate Quarto file (psych-490.003-2025-spring-syllabus.qmd) generates a PDF version of a syllabus."
+  },
+  {
+    "objectID": "meta.html#rendering",
+    "href": "meta.html#rendering",
+    "title": "",
+    "section": "Rendering",
+    "text": "Rendering\nTo render the full site, quarto render src is executed from the command line. The fully rendered website is written to docs/."
+  },
+  {
+    "objectID": "meta.html#software",
+    "href": "meta.html#software",
+    "title": "",
+    "section": "Software",
+    "text": "Software\nThe site uses the renv package to try to make all computation reproducible.\nIn addition, the site uses softbib to generate a full reference list of the package dependencies. This is saved in src/include/bib."
+  },
+  {
+    "objectID": "evaluation.html",
+    "href": "evaluation.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "evaluation.html#student-evaluation",
+    "href": "evaluation.html#student-evaluation",
+    "title": "",
+    "section": "Student Evaluation",
+    "text": "Student Evaluation\n\nElements\n\n\n\nComponent\nDescription\nPoints\n\n\n\n\nAttendance\nYou will receive 1 point for each class you attend up to a maximum of 40.\n40\n\n\nExercises\nThere will be eight (8) exercises that you must work on. Each exercise is worth 10 points. The top four (4) count toward your final grade.\n40\n\n\nFinal project\nYou will complete a final project, either on your own, or with a small group of 3 or less. Your final project is worth 40 points.\n40\n\n\n\nTOTAL POINTS POSSIBLE\n120\n\n\nExtra Credit\nIf you submit more than four exercise write-ups, you may earn up to 10 extra credit points.\n\n\n\n\n\n\nGrading Scheme\n\n\n\nPercent\nPoints\nGrade\n\n\n\n\n94+\n113\nA\n\n\n90-93\n108-112\nA-\n\n\n87-89\n104-107\nB+\n\n\n84-86\n100-103\nB\n\n\n80-83\n96-99\nB-\n\n\n77-79\n92-95\nC+\n\n\n70-76\n84-91\nC\n\n\n60-69\n72-93\nD\n\n\n&lt;59\n&lt;=71\nF"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "about.html#instructor",
+    "href": "about.html#instructor",
+    "title": "",
+    "section": "Instructor",
+    "text": "Instructor\nRick O. Gilmore, Ph.D. \nProfessor of Psychology\nrog1 AT-SIGN psu PERIOD edu\n\nSchedule an appointment: https://doodle.com/mm/rickgilmore/book-a-time\nLab web site: https://gilmore-lab.github.io"
+  },
+  {
+    "objectID": "about.html#teaching-assistant",
+    "href": "about.html#teaching-assistant",
+    "title": "",
+    "section": "Teaching Assistant",
+    "text": "Teaching Assistant\nSara He\nGraduate Student in Social Psychology\ncfh5558 AT-SIGN psu PERIOD edu"
+  },
+  {
+    "objectID": "about.html#meeting-time-location",
+    "href": "about.html#meeting-time-location",
+    "title": "",
+    "section": "Meeting time & location",
+    "text": "Meeting time & location\nTuesday & Thursday, 9:05-10:20 am 207 Thomas Building"
+  },
+  {
+    "objectID": "about.html#canvas-site",
+    "href": "about.html#canvas-site",
+    "title": "",
+    "section": "Canvas site",
+    "text": "Canvas site\nWe will use Canvas to submit assignments and grade them. The Canvas site may be found here:\n\nMost of the course content will be found on this site."
+  },
+  {
+    "objectID": "about.html#course-structure",
+    "href": "about.html#course-structure",
+    "title": "",
+    "section": "Course structure",
+    "text": "Course structure\nThis is a discussion-focused course. On most days we will discuss readings assigned prior to class. On many days, we will work together or individually on the assigned exercises, the final project, or another assignment."
+  },
+  {
+    "objectID": "deadlines.html",
+    "href": "deadlines.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "deadlines.html#important-deadlines",
+    "href": "deadlines.html#important-deadlines",
+    "title": "",
+    "section": "Important deadlines",
+    "text": "Important deadlines\nThis page summarizes some of the key deadlines in the course.\n\n\n\nDate\nWhat’s due/happening\n\n\n\n\n2024-09-06\nExercise 01\n\n\n2024-09-20\nExercise 02\n\n\n2024-09-20\nExercise 03\n\n\n2024-10-04\nExercise 04\n\n\n2024-10-14\nExercise 05\n\n\n2024-10-18\nFinal project proposal due\n\n\n2024-11-01\nExercise 06\n\n\n2024-11-08\nExercise 07\n\n\n2024-11-22\nFinal Project Presentation Schedule Survey\n\n\n2024-12-06\nExercise 08\n\n\n2024-12-18\nFinal project writeup due"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "PSYCH 490.001",
@@ -112,151 +567,123 @@
     "text": "Course structure\nThis is a discussion-focused course. On most days we will discuss readings assigned prior to class. On many days, we will work together or individually on the assigned exercises, the final project, or another assignment."
   },
   {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
+    "objectID": "policies.html",
+    "href": "policies.html",
     "title": "",
     "section": "",
     "text": "Code"
   },
   {
-    "objectID": "schedule.html#schedule",
-    "href": "schedule.html#schedule",
+    "objectID": "policies.html#course-policies",
+    "href": "policies.html#course-policies",
     "title": "",
-    "section": "Schedule",
-    "text": "Schedule\n\nJanuary 13-17\nSurveying the landscape\n\nTuesday, January 14\nCourse introduction\n\nSlides\n\n\n\nThursday, January 16\nMaking (sense of) data\n\nRequired:\n\nStevens (1946)\n\nSlides\n\n\n\n\nJanuary 20-24\nWho visualizes data and why\n\nTuesday, January 21\nVisualization in business, industry, & government\n\n\nThursday, January 23\nVisualization in science\n\n\n\nJanuary 27-31\nUnderstanding figures\n\nTuesday, January 28\nData types\n\nIn-class exercise on data creation.\n\n\n\nThursday, January 30\nFigure types\n\n\n\nFebruary 3-7\nFrom perception to cognition\n\nTuesday, February 04\nFrom stimulus to sensation\n\n\nThursday, February 06\nFrom sensation to perception\n\n\n\nFebruary 10-14\nFrom cognition to understanding\n\nTuesday, February 11\n\n\nThursday, February 13\n\n\n\nFebruary 17-21\nStorytelling with data\n\nTuesday, February 18\n\n\nThursday, February 20\n\n\n\nFebruary 24-28\nCritiquing figures\n\nTuesday, February 25\n\n\nThursday, February 27\n\n\n\nMarch 3-7\nExploring data with spreadsheets\n\nTuesday, March 04\n\n\nThursday, March 06\n\n\n\nMarch 10-14 Spring Break\n\n\nMarch 17-21\nIntroduction to R\n\nTuesday, March 18\nWhy R we doing this?\n\n\nThursday, March 20\n\n\n\nMarch 24-28\nExploring data with R\n\nTuesday, March 25\nGathering & cleaning data\n\n\nThursday, March 27\nMaking plots with ggplot2\n\n\n\nMarch 31 - April 4\nIntroduction to Python\n\nTuesday, April 01\n\n\nThursday, April 03\n\n\n\nApril 7-11\nExploring data with Python\n\nTuesday, April 08\n\n\nThursday, April 10\n\n\n\nApril 14-18\nMaking plots with JavaScript\n\nTuesday, April 15\n\n\nThursday, April 17\n\n\n\nApril 21-25\nFinal Project Preparation\n\nTuesday, April 22\n\n\nThursday, April 24\n\n\n\nApril 28 - May 2\nStudent Projects\n\nTuesday, April 29"
+    "section": "Course policies",
+    "text": "Course policies\n\nAcademic Integrity\nStudents with questions about academic integrity should visit http://www.la.psu.edu/current-students/undergraduate-students/education/academic-integrity.\nPenn State defines academic integrity as the pursuit of scholarly activity in an open, honest and responsible manner. All students should act with personal integrity, respect others dignity, rights and property, and help create and maintain an environment in which all can succeed through the fruits of their efforts (Faculty Senate Policy 49-20). Sanctions for academic misconduct can include a grade of F for the course as well as other penalties.\nUnless you are told otherwise, you must complete all course work entirely on your own, using only sources that have been permitted by your instructor, and you may not assist other students with papers, quizzes, exams, or other assessments. If I allow you to use ideas, images, or word phrases created by another person (e.g., from Course Hero or Chegg) or by generative technology, such as ChatGPT, you must identify their source.\nWhen you complete assignments, remember the ABCs to avoid plagiarism: Always place copied information within quotation marks, include information about the quoted or paraphrased source in a Bibliography, and Cite the source in the body (in the text) of your paper immediately after the quoted or paraphrased information. When in doubt, cite in the text and include the source in a bibliography.\nStudents with questions about academic integrity should ask me or the TA before submitting work.\nStudents facing allegations of academic misconduct may not drop/withdraw from the affected course unless they are cleared of wrongdoing (see G-9: Academic Integrity). Attempted drops will be prevented or reversed, and students will be expected to complete course work and meet course deadlines. Students who are found responsible for academic integrity violations face academic outcomes, which can be severe, and put themselves at jeopardy for other outcomes which may include ineligibility for Dean’s List, pass/fail elections, and grade forgiveness. Students may also face consequences from their home/major program and/or The Schreyer Honors College.\n\n\nAbsences or late assignments\n\nAbsence from class\nYour absence from class may be excused under unusual circumstances such as (a) an interview for graduate school or a job, (b) illness, (c) religious observance, (d) the death of a family member, or (e) any other event recognized by the university as a valid excuse for absence from class.\nIf you must miss class, you must contact the instructor and the TA in advance.\nUp to three (3) excused absences will be permitted.\n\n\nLate exercises\nExercises submitted after the published deadlines will not be eligible for full credit unless the instructor has given specific permission.\n\n\nLate final projects\nFinal projects submitted after the published deadline will not be eligible for full credit unless the instructor has given specific permission.\n\n\nAccommodation for persons with disabilities\nPenn State welcomes students with disabilities into the University’s educational programs. Please refer to the information provided by Student Disability Resources (SDR) at http://equity.psu.edu/student-disability-resources/ for information about the procedures required to obtain reasonable accommodations in this course. Students should discussSDR-approved accommodations with their instructor as early in the semester as possible, even if they have taken another course with the instructor. Please note: students are not required to provide their instructor with information about the nature of their condition.\nPenn State students are also welcome to contact other units for assistance with personal concerns that interfere with academic progress, including: Counseling and Psychological Services (CAPS; http://studentaffairs.psu.edu/counseling/), the Office of Student Affairs (http://studentaffairs.psu.edu/), Career Services (http://studentaffairs.psu.edu/career/), the Center for Women Students (http://studentaffairs.psu.edu/womenscenter/), the LGBTQA Student Resource Center (http://studentaffairs.psu.edu/lgbtqa/), the Office of Sexual Misconduct Prevention and Response (http://titleix.psu.edu/), Penn State Educational Equity (http://equity.psu.edu/), the Multicultural Resource Center (http://equity.psu.edu/mrc), and University Health Services (http://studentaffairs.psu.edu/health/).\n\n\n\nNondiscrimination Statement\nThe Pennsylvania State University is committed to equal access to programs, facilities, admission and employment for all persons. It is the policy of the University to maintain an environment free of harassment and free of discrimination against any person because of age, race, color, ancestry, national origin, religion, creed, service in the uniformed services (as defined in state and federal law), veteran status, sex, sexual orientation, marital or family status, pregnancy, pregnancy-related conditions, physical or mental disability, gender, perceived gender, gender identity, genetic information or political ideas.\nDiscriminatory conduct and harassment, as well as sexual misconduct and relationship violence, violates the dignity of individuals, impedes the realization of the University’s educational mission, and will not be tolerated.\nDirect all inquiries regarding the nondiscrimination policy to:\nSuzanne C. Adair Associate Vice President for Equal Opportunity and Access Office of Equal Opportunity and Access The Pennsylvania State University 328 Boucke Building University Park, PA 16802-5901 Email: sca917@psu.edu Tel (814) 863-0471\n\n\nDiversity Statement\nThis classroom is a place where you will be treated with respect. All members of this class are expected to contribute to a respectful, welcoming and inclusive environment for every other member of the class.\nPenn State is committed to creating an educational environment which is free from intolerance directed toward individuals or groups and strives to create and maintain an environment that fosters respect for others as stated in Policy AD29 Statement on Intolerance.\n\n\nMandated Reporting Statement\nPenn State’s policies require me, as a faculty member, to share information about incidents of sex-based discrimination and harassment (discrimination, harassment, sexual harassment, sexual misconduct, dating violence, domestic violence, stalking, and retaliation) with Penn State’s Title IX coordinator or deputy coordinators, regardless of whether the incidents are stated to me in person or shared by students as part of their coursework. For more information regarding the University’s policies and procedures for responding to reports of sexual or gender-based harassment or misconduct, please visit http://titleix.psu.edu.\nAdditionally, I am required to make a report on any reasonable suspicion of child abuse in accordance with the Pennsylvania Child Protective Services Law.\n\n\nZoom\nAt some point in the semester, I may decide to use Zoom to allow students who are unable to attend class in person to participate.\nWhile you are on Zoom, keep in mind that this is a classroom environment and others should be treated with respect. Please keep your microphone muted unless you want to ask a question or interact with someone. If your microphone is not muted, the entire class will be able to hear what is going on in your environment. As an instructor, I personally like to see people’s faces. As a participant, I am more involved when I have my camera on. I realize, however, that there are many reasons why you might not want to turn on your camera such as poor internet connection, joining via phone, or other privacy concerns. It is your choice as to whether you would like to have the camera on or not."
   },
   {
-    "objectID": "deadlines.html",
-    "href": "deadlines.html",
+    "objectID": "policies.html#values",
+    "href": "policies.html#values",
     "title": "",
-    "section": "",
-    "text": "Code"
+    "section": "Values",
+    "text": "Values\n\nPenn State Principles\nThe Pennsylvania State University is a community dedicated to personal and academic excellence. The Penn State Principles were developed to embody the values that we hope our students, faculty, staff, administration, and alumni possess. At the same time, the University is strongly committed to freedom of expression. Consequently, these Principles do not constitute University policy and are not intended to interfere in any way with an individual’s academic or personal freedoms. We hope, however, that individuals will voluntarily endorse these common principles, thereby contributing to the traditions and scholarly heritage left by those who preceded them, and will thus leave Penn State a better place for those who follow.\nI will respect the dignity of all individuals within the Penn State community. The University is committed to creating and maintaining an educational environment that respects the right of all individuals to participate fully in the community. Actions motivated by hate, prejudice, or intolerance violate this principle. I will not engage in any behaviors that compromise or demean the dignity of individuals or groups, including intimidation, stalking, harassment, discrimination, taunting, ridiculing, insulting, or acts of violence. I will demonstrate respect for others by striving to learn from differences between people, ideas, and opinions and by avoiding behaviors that inhibit the ability of other community members to feel safe or welcome as they pursue their academic goals.\nI will practice academic integrity. Academic integrity is a basic guiding principle for all academic activity at Penn State University, allowing the pursuit of scholarly activity in an open, honest, and responsible manner. In accordance with the University Code of Conduct, I will practice integrity in regard to all academic assignments. I will not engage in or tolerate acts of falsification, misrepresentation or deception because such acts of dishonesty violate the fundamental ethical principles of the University community and compromise the worth of work completed by others.\nI will demonstrate social and personal responsibility. The University is a community that promotes learning; any behaviors that are inconsistent with that goal are unacceptable. Irresponsible behaviors, including alcohol or drug abuse and the use of violence against people or property, undermine the educational climate by threatening the physical and mental health of members of the community. I will exercise personal responsibility for my actions and I will make sure that my actions do not interfere with the academic and social environment of the University. I will maintain a high standard of behavior by adhering to the Code of Conduct and respecting the rights of others.\nI will be responsible for my own academic progress and agree to comply with all University policies. The University allows students to identify and achieve their academic goals by providing the information needed to plan the chosen program of study and the necessary educational opportunities, but students assume final responsibility for course scheduling, program planning, and the successful completion of graduation requirements. I will be responsible for seeking the academic and career information needed to meet my educational goals by becoming knowledgeable about the relevant policies, procedures, and rules of the University and academic program, by consulting and meeting with my adviser, and by successfully completing all of the requirements for graduation.\n\n\nPenn State Values\nIntegrity: We act with integrity and honesty in accordance with the highest academic, professional, and ethical standards.\nRespect: We respect and honor the dignity of each person, embrace civil discourse, and foster a diverse and inclusive community.\nResponsibility: We act responsibly, and we are accountable for our decisions, actions, and their consequences.\nDiscovery: We seek and create new knowledge and understanding, and foster creativity and innovation, for the benefit of our communities, society, and the environment.\nExcellence: We strive for excellence in all our endeavors as individuals, an institution, and a leader in higher education.\nCommunity: We work together for the betterment of our University, the communities we serve, and the world."
   },
   {
-    "objectID": "deadlines.html#important-deadlines",
-    "href": "deadlines.html#important-deadlines",
-    "title": "",
-    "section": "Important deadlines",
-    "text": "Important deadlines\nThis page summarizes some of the key deadlines in the course.\n\n\n\nDate\nWhat’s due/happening\n\n\n\n\n2024-09-06\nExercise 01\n\n\n2024-09-20\nExercise 02\n\n\n2024-09-20\nExercise 03\n\n\n2024-10-04\nExercise 04\n\n\n2024-10-14\nExercise 05\n\n\n2024-10-18\nFinal project proposal due\n\n\n2024-11-01\nExercise 06\n\n\n2024-11-08\nExercise 07\n\n\n2024-11-22\nFinal Project Presentation Schedule Survey\n\n\n2024-12-06\nExercise 08\n\n\n2024-12-18\nFinal project writeup due"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#announcements",
-    "href": "slides/wk01-2025-01-16-making-data.html#announcements",
-    "title": "Making Data",
-    "section": "Announcements",
-    "text": "Announcements\n\nExercise-01 write-up due next Tuesday, January 21, 2025."
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#last-time",
-    "href": "slides/wk01-2025-01-16-making-data.html#last-time",
-    "title": "Making Data",
-    "section": "Last time…",
-    "text": "Last time…\n\nCourse introduction\nStart on Exercise-01"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#today",
-    "href": "slides/wk01-2025-01-16-making-data.html#today",
-    "title": "Making Data",
-    "section": "Today",
-    "text": "Today\n\nMaking Data\nTypes of data"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#how-are-data-made",
-    "href": "slides/wk01-2025-01-16-making-data.html#how-are-data-made",
-    "title": "Making Data",
-    "section": "How are data made?",
-    "text": "How are data made?\n\nBy measurement"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#what-is-measurement",
-    "href": "slides/wk01-2025-01-16-making-data.html#what-is-measurement",
-    "title": "Making Data",
-    "section": "What is measurement?",
-    "text": "What is measurement?\n\nA procedure for mapping properties of X onto some numerical standard or scale Y\nMetrology: The science of measurement\nPsychometrics: The study of psychological measurement"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#burkes-terministic-screen",
-    "href": "slides/wk01-2025-01-16-making-data.html#burkes-terministic-screen",
-    "title": "Making Data",
-    "section": "Burke’s ‘Terministic Screen’",
-    "text": "Burke’s ‘Terministic Screen’\n\nData ~ quantitative terminology\n\na symbol of the thing measured, not the thing itself\n\n\n\n\nEven if any given terminology is a reflection of reality, by its very nature as a terminology, it must be a selection of reality; and to this extent must also as a deflection of reality\n\nBurke (1968)\n\n\nData selects, reflects, and deflects"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#stevens-scales-of-measurement",
-    "href": "slides/wk01-2025-01-16-making-data.html#stevens-scales-of-measurement",
-    "title": "Making Data",
-    "section": "Stevens’ scales of measurement",
-    "text": "Stevens’ scales of measurement\n\nStevens (1946)"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#questions-about-measurement",
-    "href": "slides/wk01-2025-01-16-making-data.html#questions-about-measurement",
-    "title": "Making Data",
-    "section": "Questions about measurement",
-    "text": "Questions about measurement\n\nWhat’s the procedure for making this mapping?\nWhat are the rules for assigning numbers?\nWhat can we do with the assigned numbers (summarize, depict)?"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#in-other-domains",
-    "href": "slides/wk01-2025-01-16-making-data.html#in-other-domains",
-    "title": "Making Data",
-    "section": "In other domains",
-    "text": "In other domains\n\nBusiness/economics\nPolitics\nSports\nEntertainment\nWeather"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#in-psychology",
-    "href": "slides/wk01-2025-01-16-making-data.html#in-psychology",
-    "title": "Making Data",
-    "section": "In psychology",
-    "text": "In psychology\n\nInternal mental states\nBehaviors\nPhysiological processes\nPhysical characteristics\nEnvironmental properties"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#examples-of",
-    "href": "slides/wk01-2025-01-16-making-data.html#examples-of",
-    "title": "Making Data",
-    "section": "Examples of…",
-    "text": "Examples of…\n\nInternal mental states\nBehaviors\nPhysiological processes\nPhysical characteristics\nEnvironmental properties"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#how-to-measure",
-    "href": "slides/wk01-2025-01-16-making-data.html#how-to-measure",
-    "title": "Making Data",
-    "section": "How to measure…",
-    "text": "How to measure…\n\nInternal mental states\nBehaviors\nPhysiological processes\nPhysical characteristics\nEnvironmental properties"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#scales-of-measurement",
-    "href": "slides/wk01-2025-01-16-making-data.html#scales-of-measurement",
-    "title": "Making Data",
-    "section": "Scales of measurement",
-    "text": "Scales of measurement\n\nStevens (1946)"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#your-surveys",
-    "href": "slides/wk01-2025-01-16-making-data.html#your-surveys",
-    "title": "Making Data",
-    "section": "Your surveys…",
-    "text": "Your surveys…\n\nNominal\nOrdinal\nInterval\nRatio"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#references",
-    "href": "slides/wk01-2025-01-16-making-data.html#references",
-    "title": "Making Data",
-    "section": "References",
-    "text": "References\n\n\n\n\nPSYCH 490.003 • Spring 2025\n\n\n\n\nBurke, K. (1968). Language as Symbolic Action. University of California Press. Retrieved from https://www.ucpress.edu/books/language-as-symbolic-action/paper\n\n\nDattani, S., & Roser, M. (2024). What was the golden age of antibiotics, and how can we spark a new one? Our World in Data. Retrieved from https://ourworldindata.org/golden-age-antibiotics\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nLucaas. (2007). Talking Heads - Girlfriend is Better (from stop making sense. Youtube. Retrieved from https://www.youtube.com/watch?v=9r7X3f2gFz4&list=PLXTs9Ss_E9ARDEum9WgaJ67rvpnzogpsA&index=7\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science (New York, N.Y.), 103, 677–680. https://doi.org/10.1126/science.103.2684.677"
-  },
-  {
-    "objectID": "surveys/survey-01.html",
-    "href": "surveys/survey-01.html",
+    "objectID": "resources.html",
+    "href": "resources.html",
     "title": "",
     "section": "",
     "text": "Code"
   },
   {
-    "objectID": "surveys/survey-01.html#about",
-    "href": "surveys/survey-01.html#about",
+    "objectID": "resources.html#about",
+    "href": "resources.html#about",
     "title": "",
     "section": "About",
-    "text": "About\nThis page summarizes work related to Survey-01.\n\nLoading…"
+    "text": "About\nThis page captures some of the resources Rick Gilmore found in developing this course.\n\n\n\n\n\n\nNote\n\n\n\nSince I’m having some trouble with cross-references to figures, let’s see if they work when we’re linking to a figure generated in R:\nDoes this reference work: ?@fig-dual-boxplots-diff-ggplot2\nAnd for grins, does the reference to a Python-generated figure work: ?@fig-multiple-violin-plots\nIt looks like the answer is no."
+  },
+  {
+    "objectID": "resources.html#web-sites",
+    "href": "resources.html#web-sites",
+    "title": "",
+    "section": "Web sites",
+    "text": "Web sites\n\nAnnual Reviews\nAnnual Reviews has a great API that lets one search for figures within journals.\n\nhttps://www.annualreviews.org/search?value1=psychology&option1=fulltext&facetOptions=51&value51=%22Figure%22&facetNames=contentType_facet&option51=contentType_facet&operator51=AND\nhttps://www.annualreviews.org/search?value1=neuroscience&option1=fulltext&facetOptions=51&value51=%22Figure%22&facetNames=contentType_facet&option51=contentType_facet&operator51=AND\n\nAnnual Reviews also publishes an electronic magazine, Knowable, that includes a graphics library: https://www.flickr.com/photos/knowablemag/\n\n\nrpsychologist.com\n&lt;(software?){magnussonCorrelation, author = {Kristoffer Magnusson}, title = {Interpreting Correlations: An Interactive Visualization}, url = {https://rpsychologist.com/correlation/}, version = {0.7.1}, date = {2023}, }\n\n\nhttps://clauswilke.com/dataviz\n\nhttps://clauswilke.com/dataviz/coordinate-systems-axes.html\n\n\\(10 = 1\\times 10\\) and \\(0.1 = 1/10\\). The value 0, on the other hand, can never appear on a log scale. It lies infinitely far from 1. One way to see this is to consider that \\(log(0) = -\\infty\\). Or, alternatively, consider that to go from 1 to 0, it takes either an infinite number of divisions by a finite value (e.g., \\(1/10/10/10/10/10/10\\dots = 0\\)) or alternatively one division by infinity (i.e., \\(1/\\infty = 0\\)).\n\n\nDataCamp.com\n\n\nStatistical Methods for Data Science\nhttps://epurdom.github.io/Stat131A/book/\n\nR\n\nIntroduction to R (beginner)\nIntroduction to Data Visualization with ggplot2 (beginner)\nIntroduction to Exploratory Data Analysis (intermediate)\nData Visualization with R Track https://app.datacamp.com/learn/skill-tracks/data-visualization-with-r\n\n3 courses, 12 hours.\n\n\n\n\nPython\n\nData Visualization in Python Track https://app.datacamp.com/learn/skill-tracks/data-visualization-with-python\n\nFour courses, 16 hours\nIntroduction to Data Visualization with Matplotlib https://app.datacamp.com/learn/courses/introduction-to-data-visualization-with-matplotlib, 4 hours, is the beginning\n\n\n\n\n\nData Visualization Society\nInformation is Beautiful Awards\n\n\nFriendly’s Psychology 6135\nPsychology 6135: Psychology of Data Visualization, http://euclid.psych.yorku.ca/www/psy6135/index.html, by Michael Friendly at York University.\nHere is a more recent version: https://friendly.github.io/6135/\nFriendly might be a good guest.\nhttps://nicolas.kruchten.com/semiology_of_graphics/\n\n\nCenters for Disease Control (CDC)\nInfographics examples from the CDC: https://www.cdc.gov/nchs/hus/resources/infographics.htm\n\n\nNew York Times\nhttps://www.nytimes.com/spotlight/graphics\n\n\nThe Economist\nhttps://impact.economist.com/perspectives/search/infographic?f[0]=type%3Ainfographic&f[1]=\n\n\nNature Publishing\nFigure prep guidelines\n\n\nAmerican Psychological Association\nTables and Figures style guide\n\n\nOur World In Data\nhttps://ourworldindata.org/\n\n\nxkcd\nhttps://xkcd.com/about/\n\n\nTableau.com\nhttps://www.tableau.com/sports-data\n\n\nNFL.com\nhttps://operations.nfl.com/gameday/analytics/stats-articles/"
+  },
+  {
+    "objectID": "resources.html#books",
+    "href": "resources.html#books",
+    "title": "",
+    "section": "Books",
+    "text": "Books\n\nGraphical Data Analysis with R, Antony Unwin, http://www.gradaanwr.net"
+  },
+  {
+    "objectID": "resources.html#papers",
+    "href": "resources.html#papers",
+    "title": "",
+    "section": "Papers",
+    "text": "Papers"
+  },
+  {
+    "objectID": "values.html",
+    "href": "values.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "values.html#values",
+    "href": "values.html#values",
+    "title": "",
+    "section": "Values",
+    "text": "Values\n\nPenn State Principles\nThe Pennsylvania State University is a community dedicated to personal and academic excellence. The Penn State Principles were developed to embody the values that we hope our students, faculty, staff, administration, and alumni possess. At the same time, the University is strongly committed to freedom of expression. Consequently, these Principles do not constitute University policy and are not intended to interfere in any way with an individual’s academic or personal freedoms. We hope, however, that individuals will voluntarily endorse these common principles, thereby contributing to the traditions and scholarly heritage left by those who preceded them, and will thus leave Penn State a better place for those who follow.\nI will respect the dignity of all individuals within the Penn State community. The University is committed to creating and maintaining an educational environment that respects the right of all individuals to participate fully in the community. Actions motivated by hate, prejudice, or intolerance violate this principle. I will not engage in any behaviors that compromise or demean the dignity of individuals or groups, including intimidation, stalking, harassment, discrimination, taunting, ridiculing, insulting, or acts of violence. I will demonstrate respect for others by striving to learn from differences between people, ideas, and opinions and by avoiding behaviors that inhibit the ability of other community members to feel safe or welcome as they pursue their academic goals.\nI will practice academic integrity. Academic integrity is a basic guiding principle for all academic activity at Penn State University, allowing the pursuit of scholarly activity in an open, honest, and responsible manner. In accordance with the University Code of Conduct, I will practice integrity in regard to all academic assignments. I will not engage in or tolerate acts of falsification, misrepresentation or deception because such acts of dishonesty violate the fundamental ethical principles of the University community and compromise the worth of work completed by others.\nI will demonstrate social and personal responsibility. The University is a community that promotes learning; any behaviors that are inconsistent with that goal are unacceptable. Irresponsible behaviors, including alcohol or drug abuse and the use of violence against people or property, undermine the educational climate by threatening the physical and mental health of members of the community. I will exercise personal responsibility for my actions and I will make sure that my actions do not interfere with the academic and social environment of the University. I will maintain a high standard of behavior by adhering to the Code of Conduct and respecting the rights of others.\nI will be responsible for my own academic progress and agree to comply with all University policies. The University allows students to identify and achieve their academic goals by providing the information needed to plan the chosen program of study and the necessary educational opportunities, but students assume final responsibility for course scheduling, program planning, and the successful completion of graduation requirements. I will be responsible for seeking the academic and career information needed to meet my educational goals by becoming knowledgeable about the relevant policies, procedures, and rules of the University and academic program, by consulting and meeting with my adviser, and by successfully completing all of the requirements for graduation.\n\n\nPenn State Values\nIntegrity: We act with integrity and honesty in accordance with the highest academic, professional, and ethical standards.\nRespect: We respect and honor the dignity of each person, embrace civil discourse, and foster a diverse and inclusive community.\nResponsibility: We act responsibly, and we are accountable for our decisions, actions, and their consequences.\nDiscovery: We seek and create new knowledge and understanding, and foster creativity and innovation, for the benefit of our communities, society, and the environment.\nExcellence: We strive for excellence in all our endeavors as individuals, an institution, and a leader in higher education.\nCommunity: We work together for the betterment of our University, the communities we serve, and the world."
+  },
+  {
+    "objectID": "tutorials/tutorial-python-matplotlib.html",
+    "href": "tutorials/tutorial-python-matplotlib.html",
+    "title": "Plotting in Python",
+    "section": "",
+    "text": "Note\n\n\n\nFigures don’t seem to be cross-referencing across documents. Let’s see if they work within documents.\nDoes the link to Figure 1 work?\nHow about Figure 2?\nApparently so.\nOkay, so do the ggplot2 figures work in this document? Specifically, does the reference to ?@fig-dual-boxplots-diff-ggplot2 work?\nNo. So, the issue is cross-document figure references."
+  },
+  {
+    "objectID": "tutorials/tutorial-python-matplotlib.html#about",
+    "href": "tutorials/tutorial-python-matplotlib.html#about",
+    "title": "Plotting in Python",
+    "section": "About",
+    "text": "About\nThis page provides a very basic introduction to Python and the matplotlib plotting library."
+  },
+  {
+    "objectID": "tutorials/tutorial-python-matplotlib.html#why-python",
+    "href": "tutorials/tutorial-python-matplotlib.html#why-python",
+    "title": "Plotting in Python",
+    "section": "Why Python?",
+    "text": "Why Python?\nPython is an awesome language for data science and data visualization. It is more popular than R, and it is widely used in scientific research and in industry.\nI find that it has a very readable syntax, meaning that it’s relatively easy to see what well-written Python code is doing."
+  },
+  {
+    "objectID": "tutorials/tutorial-python-matplotlib.html#setup",
+    "href": "tutorials/tutorial-python-matplotlib.html#setup",
+    "title": "Plotting in Python",
+    "section": "Setup",
+    "text": "Setup\nWe start by importing the numpy and pyplot libraries and giving them convenient short names for future reference.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt"
+  },
+  {
+    "objectID": "tutorials/tutorial-python-matplotlib.html#plotting-one-variable",
+    "href": "tutorials/tutorial-python-matplotlib.html#plotting-one-variable",
+    "title": "Plotting in Python",
+    "section": "Plotting one variable",
+    "text": "Plotting one variable\n\nContinuous\n\nHistograms\nFrom https://matplotlib.org/stable/gallery/statistics/hist.html#sphx-glr-gallery-statistics-hist-py\nLoad components from matplotlib.\n\n\nCode\nfrom matplotlib import colors\nfrom matplotlib.ticker import PercentFormatter\n\n# Create a random number generator with a fixed seed for reproducibility\nrng = np.random.default_rng(19680801)\n\n\nGenerate data and render it.\n\n\nCode\nN_points = 100000\nn_bins = 20\n\n# Generate two normal distributions\ndist1 = rng.standard_normal(N_points)\ndist2 = 0.4 * rng.standard_normal(N_points) + 5\n\nfig, axs = plt.subplots(1, 2, sharey=True, tight_layout=True)\n\n# We can set the number of bins with the *bins* keyword argument.\naxs[0].hist(dist1, bins=n_bins)\naxs[1].hist(dist2, bins=n_bins)\n\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: Two histograms with 100K points each.\n\n\n\n\n\n\n\nViolin\nViolin plots are another way to depict the distribution of a single continuous variable.\nThe following code is copied verbatim from the following site:\nhttps://matplotlib.org/stable/gallery/statistics/violinplot.html\n\n\nCode\n# fake data\nfs = 10  # fontsize\npos = [1, 2, 4, 5, 7, 8]\ndata = [np.random.normal(0, std, size=100) for std in pos]\n\n# Create a plot with 2 rows and 6 columns\nfig, axs = plt.subplots(nrows=2, ncols=6, figsize=(10, 4))\n\naxs[0, 0].violinplot(data, pos, points=20, widths=0.3,\n                     showmeans=True, showextrema=True, showmedians=True)\naxs[0, 0].set_title('Custom violin 1', fontsize=fs)\n\naxs[0, 1].violinplot(data, pos, points=40, widths=0.5,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     bw_method='silverman')\naxs[0, 1].set_title('Custom violin 2', fontsize=fs)\n\naxs[0, 2].violinplot(data, pos, points=60, widths=0.7, showmeans=True,\n                     showextrema=True, showmedians=True, bw_method=0.5)\naxs[0, 2].set_title('Custom violin 3', fontsize=fs)\n\naxs[0, 3].violinplot(data, pos, points=60, widths=0.7, showmeans=True,\n                     showextrema=True, showmedians=True, bw_method=0.5,\n                     quantiles=[[0.1], [], [], [0.175, 0.954], [0.75], [0.25]])\naxs[0, 3].set_title('Custom violin 4', fontsize=fs)\n\naxs[0, 4].violinplot(data[-1:], pos[-1:], points=60, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5)\naxs[0, 4].set_title('Custom violin 5', fontsize=fs)\n\naxs[0, 5].violinplot(data[-1:], pos[-1:], points=60, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='low')\n\naxs[0, 5].violinplot(data[-1:], pos[-1:], points=60, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='high')\naxs[0, 5].set_title('Custom violin 6', fontsize=fs)\n\naxs[1, 0].violinplot(data, pos, points=80, vert=False, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True)\naxs[1, 0].set_title('Custom violin 7', fontsize=fs)\n\naxs[1, 1].violinplot(data, pos, points=100, vert=False, widths=0.9,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     bw_method='silverman')\naxs[1, 1].set_title('Custom violin 8', fontsize=fs)\n\naxs[1, 2].violinplot(data, pos, points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     bw_method=0.5)\naxs[1, 2].set_title('Custom violin 9', fontsize=fs)\n\naxs[1, 3].violinplot(data, pos, points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[[0.1], [], [], [0.175, 0.954], [0.75], [0.25]],\n                     bw_method=0.5)\naxs[1, 3].set_title('Custom violin 10', fontsize=fs)\n\naxs[1, 4].violinplot(data[-1:], pos[-1:], points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5)\naxs[1, 4].set_title('Custom violin 11', fontsize=fs)\n\naxs[1, 5].violinplot(data[-1:], pos[-1:], points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='low')\n\naxs[1, 5].violinplot(data[-1:], pos[-1:], points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='high')\naxs[1, 5].set_title('Custom violin 12', fontsize=fs)\n\n\nfor ax in axs.flat:\n    ax.set_yticklabels([])\n\nfig.suptitle(\"Violin Plotting Examples\")\nfig.subplots_adjust(hspace=0.4)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 2: Multiple violin plots with different parameters.\n\n\n\n\n\n\n\nBoxplot\nFrom https://matplotlib.org/stable/plot_types/stats/boxplot_plot.html#sphx-glr-plot-types-stats-boxplot-plot-py.\n\n\nCode\nplt.style.use('_mpl-gallery')\n\n# make data:\nnp.random.seed(10)\nD = np.random.normal((3, 5, 4), (1.25, 1.00, 1.25), (100, 3))\n\n# plot\nfig, ax = plt.subplots()\nVP = ax.boxplot(D, positions=[2, 4, 6], widths=1.5, patch_artist=True,\n                showmeans=False, showfliers=False,\n                medianprops={\"color\": \"white\", \"linewidth\": 0.5},\n                boxprops={\"facecolor\": \"C0\", \"edgecolor\": \"white\",\n                          \"linewidth\": 0.5},\n                whiskerprops={\"color\": \"C0\", \"linewidth\": 1.5},\n                capprops={\"color\": \"C0\", \"linewidth\": 1.5})\n\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\n\nplt.show()\n\n\n\n\n\n\n\n\nFigure 3: Example of several boxplots with whiskers.\n\n\n\n\n\n\n\n\nDiscrete/nominal\n\nBar chart\nSource: https://matplotlib.org/stable/plot_types/basic/bar.html#sphx-glr-plot-types-basic-bar-py\n\n\nCode\nplt.style.use('_mpl-gallery')\n\n# make data:\nx = 0.5 + np.arange(8)\ny = [4.8, 5.5, 3.5, 4.6, 6.5, 6.6, 2.6, 3.0]\n\n# plot\nfig, ax = plt.subplots()\n\nax.bar(x, y, width=1, edgecolor=\"white\", linewidth=0.7)\n\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\n\nplt.show()\n\n\n\n\n\n\n\n\nFigure 4: Example of a bar plot."
+  },
+  {
+    "objectID": "tutorials/tutorial-python-matplotlib.html#plotting-two-variables",
+    "href": "tutorials/tutorial-python-matplotlib.html#plotting-two-variables",
+    "title": "Plotting in Python",
+    "section": "Plotting two variables",
+    "text": "Plotting two variables\n\nScatter plots"
+  },
+  {
+    "objectID": "tutorials/tutorial-python-matplotlib.html#other-kinds-of-plots",
+    "href": "tutorials/tutorial-python-matplotlib.html#other-kinds-of-plots",
+    "title": "Plotting in Python",
+    "section": "Other kinds of plots",
+    "text": "Other kinds of plots\nThe following is copied verbatim from the Quarto website:\nhttps://quarto.org/docs/get-started/hello/vscode.html\nFor a demonstration of a line plot on a polar axis, see Figure 5.\n\n\nCode\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 5: A line plot on a polar axis"
   },
   {
     "objectID": "tutorials/tutorial-rstudio-on-pc.html",
@@ -315,381 +742,101 @@
     "text": "Configuring RStudio"
   },
   {
-    "objectID": "meta.html",
-    "href": "meta.html",
+    "objectID": "surveys/survey-01.html",
+    "href": "surveys/survey-01.html",
     "title": "",
     "section": "",
     "text": "Code"
   },
   {
-    "objectID": "meta.html#about",
-    "href": "meta.html#about",
+    "objectID": "surveys/survey-01.html#about",
+    "href": "surveys/survey-01.html#about",
     "title": "",
     "section": "About",
-    "text": "About\nThis page describes how the site is created and rendered."
+    "text": "About\nThis page summarizes work related to Survey-01.\n\nLoading…"
   },
   {
-    "objectID": "meta.html#workflow",
-    "href": "meta.html#workflow",
+    "objectID": "surveys/survey-01.html#gathering",
+    "href": "surveys/survey-01.html#gathering",
     "title": "",
-    "section": "Workflow",
-    "text": "Workflow\nThe site is written in Quarto.\nThe project root uses a src/ directory to store the source code.\nA site-wide YAML file (_quarto.yml) controls the rendering process.\nSeparate directories contain lecture slides (slides/), exercises (exercises/), class-specific R functions (R/), surveys (surveys/), and tutorials (tutorials/). Quarto files with underscores (e.g., _index.qmd, _about.qmd, _evaluation.qmd, _schedule.qmd, and values.qmd) are the main targets for editing and updating. Parent files (e.g., index.qmd, evaluation.qmd, policies.qmd, and schedule.qmd) call upon these child files in the rendering process.\nA separate Quarto file (psych-490.003-2025-spring-syllabus.qmd) generates a PDF version of a syllabus."
+    "section": "Gathering",
+    "text": "Gathering"
   },
   {
-    "objectID": "meta.html#rendering",
-    "href": "meta.html#rendering",
+    "objectID": "surveys/survey-01.html#cleaning",
+    "href": "surveys/survey-01.html#cleaning",
     "title": "",
-    "section": "Rendering",
-    "text": "Rendering\nTo render the full site, quarto render src is executed from the command line. The fully rendered website is written to docs/."
+    "section": "Cleaning",
+    "text": "Cleaning"
   },
   {
-    "objectID": "meta.html#software",
-    "href": "meta.html#software",
+    "objectID": "surveys/survey-01.html#visualizing",
+    "href": "surveys/survey-01.html#visualizing",
     "title": "",
-    "section": "Software",
-    "text": "Software\nThe site uses the renv package to try to make all computation reproducible.\nIn addition, the site uses softbib to generate a full reference list of the package dependencies. This is saved in src/include/bib."
+    "section": "Visualizing",
+    "text": "Visualizing"
   },
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "resources.html#about",
-    "href": "resources.html#about",
-    "title": "",
-    "section": "About",
-    "text": "About\nThis page captures some of the resources Rick Gilmore found in developing this course.\n\n\n\n\n\n\nNote\n\n\n\nSince I’m having some trouble with cross-references to figures, let’s see if they work when we’re linking to a figure generated in R:\nDoes this reference work: ?@fig-dual-boxplots-diff-ggplot2\nAnd for grins, does the reference to a Python-generated figure work: ?@fig-multiple-violin-plots\nIt looks like the answer is no."
-  },
-  {
-    "objectID": "resources.html#web-sites",
-    "href": "resources.html#web-sites",
-    "title": "",
-    "section": "Web sites",
-    "text": "Web sites\n\nAnnual Reviews\nAnnual Reviews has a great API that lets one search for figures within journals.\n\nhttps://www.annualreviews.org/search?value1=psychology&option1=fulltext&facetOptions=51&value51=%22Figure%22&facetNames=contentType_facet&option51=contentType_facet&operator51=AND\nhttps://www.annualreviews.org/search?value1=neuroscience&option1=fulltext&facetOptions=51&value51=%22Figure%22&facetNames=contentType_facet&option51=contentType_facet&operator51=AND\n\nAnnual Reviews also publishes an electronic magazine, Knowable, that includes a graphics library: https://www.flickr.com/photos/knowablemag/\n\n\nrpsychologist.com\n&lt;(software?){magnussonCorrelation, author = {Kristoffer Magnusson}, title = {Interpreting Correlations: An Interactive Visualization}, url = {https://rpsychologist.com/correlation/}, version = {0.7.1}, date = {2023}, }\n\n\nhttps://clauswilke.com/dataviz\n\nhttps://clauswilke.com/dataviz/coordinate-systems-axes.html\n\n\\(10 = 1\\times 10\\) and \\(0.1 = 1/10\\). The value 0, on the other hand, can never appear on a log scale. It lies infinitely far from 1. One way to see this is to consider that \\(log(0) = -\\infty\\). Or, alternatively, consider that to go from 1 to 0, it takes either an infinite number of divisions by a finite value (e.g., \\(1/10/10/10/10/10/10\\dots = 0\\)) or alternatively one division by infinity (i.e., \\(1/\\infty = 0\\)).\n\n\nDataCamp.com\n\n\nStatistical Methods for Data Science\nhttps://epurdom.github.io/Stat131A/book/\n\nR\n\nIntroduction to R (beginner)\nIntroduction to Data Visualization with ggplot2 (beginner)\nIntroduction to Exploratory Data Analysis (intermediate)\nData Visualization with R Track https://app.datacamp.com/learn/skill-tracks/data-visualization-with-r\n\n3 courses, 12 hours.\n\n\n\n\nPython\n\nData Visualization in Python Track https://app.datacamp.com/learn/skill-tracks/data-visualization-with-python\n\nFour courses, 16 hours\nIntroduction to Data Visualization with Matplotlib https://app.datacamp.com/learn/courses/introduction-to-data-visualization-with-matplotlib, 4 hours, is the beginning\n\n\n\n\n\nData Visualization Society\nInformation is Beautiful Awards\n\n\nFriendly’s Psychology 6135\nPsychology 6135: Psychology of Data Visualization, http://euclid.psych.yorku.ca/www/psy6135/index.html, by Michael Friendly at York University.\nHere is a more recent version: https://friendly.github.io/6135/\nFriendly might be a good guest.\nhttps://nicolas.kruchten.com/semiology_of_graphics/\n\n\nCenters for Disease Control (CDC)\nInfographics examples from the CDC: https://www.cdc.gov/nchs/hus/resources/infographics.htm\n\n\nNew York Times\nhttps://www.nytimes.com/spotlight/graphics\n\n\nThe Economist\nhttps://impact.economist.com/perspectives/search/infographic?f[0]=type%3Ainfographic&f[1]=\n\n\nNature Publishing\nFigure prep guidelines\n\n\nAmerican Psychological Association\nTables and Figures style guide\n\n\nOur World In Data\nhttps://ourworldindata.org/\n\n\nxkcd\nhttps://xkcd.com/about/\n\n\nTableau.com\nhttps://www.tableau.com/sports-data\n\n\nNFL.com\nhttps://operations.nfl.com/gameday/analytics/stats-articles/"
-  },
-  {
-    "objectID": "resources.html#books",
-    "href": "resources.html#books",
-    "title": "",
-    "section": "Books",
-    "text": "Books\n\nGraphical Data Analysis with R, Antony Unwin, http://www.gradaanwr.net"
-  },
-  {
-    "objectID": "resources.html#papers",
-    "href": "resources.html#papers",
-    "title": "",
-    "section": "Papers",
-    "text": "Papers"
-  },
-  {
-    "objectID": "tutorials/tutorial-rstudio-on-psu.html",
-    "href": "tutorials/tutorial-rstudio-on-psu.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "tutorials/tutorial-rstudio-on-psu.html#about",
-    "href": "tutorials/tutorial-rstudio-on-psu.html#about",
-    "title": "",
-    "section": "About",
-    "text": "About\nThis page provides help starting and using RStudio from a Penn State computer lab machine. For instructions on how to install this free progam on your own personal computer, see the accompanying tutorial."
-  },
-  {
-    "objectID": "tutorials/tutorial-rstudio-on-psu.html#what-is-rstudio",
-    "href": "tutorials/tutorial-rstudio-on-psu.html#what-is-rstudio",
-    "title": "",
-    "section": "1.1 What is RStudio?",
-    "text": "1.1 What is RStudio?\nRStudio is an integrated development environment (IDE) for doing data science. An IDE is a computer program that provides tools for people who are developing and testing software. You might not think of yourself as a software developer (yet). But RStudio is a powerful tool for beginners, too. It began life as a tool primarily for users writing code in R, hence the name. RStudio supports multiple programming languages, including R and Python."
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#announcements",
-    "href": "slides/wk01-2025-01-14-course-intro.html#announcements",
-    "title": "The Psychology of Data Visualization",
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#announcements",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#announcements",
+    "title": "Visualization in Psychological Science",
     "section": "Announcements",
     "text": "Announcements"
   },
   {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#last-time",
-    "href": "slides/wk01-2025-01-14-course-intro.html#last-time",
-    "title": "The Psychology of Data Visualization",
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#last-time",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#last-time",
+    "title": "Visualization in Psychological Science",
     "section": "Last time…",
     "text": "Last time…"
   },
   {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#today",
-    "href": "slides/wk01-2025-01-14-course-intro.html#today",
-    "title": "The Psychology of Data Visualization",
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#today",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#today",
+    "title": "Visualization in Psychological Science",
     "section": "Today",
-    "text": "Today\n\nIntroduction to the course\nMaking data"
+    "text": "Today\n\nVisualization in Psychological Science\n\nExercise-00"
   },
   {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#people",
-    "href": "slides/wk01-2025-01-14-course-intro.html#people",
-    "title": "The Psychology of Data Visualization",
-    "section": "People",
-    "text": "People\n\nSara He, MS, Graduate Student\nRick Gilmore, Professor of Psychology"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#why-this-course-why-now",
-    "href": "slides/wk01-2025-01-14-course-intro.html#why-this-course-why-now",
-    "title": "The Psychology of Data Visualization",
-    "section": "Why this course, why now",
-    "text": "Why this course, why now"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#purpose-goals",
-    "href": "slides/wk01-2025-01-14-course-intro.html#purpose-goals",
-    "title": "The Psychology of Data Visualization",
-    "section": "Purpose & goals",
-    "text": "Purpose & goals\n\n\nWhat are data? Where does data come from?\nWho visualizes data, how do they visualize it, and why?\nHow does vision science inform how we perceive patterns in data?\nWhat’s the relationship between non-visual and visual ways of understanding data?\nWhat makes a data visualization effective?\nHow can we make better data visualizations?"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#schedule",
-    "href": "slides/wk01-2025-01-14-course-intro.html#schedule",
-    "title": "The Psychology of Data Visualization",
-    "section": "Schedule",
-    "text": "Schedule\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/schedule.html"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#exercises-evaluation",
-    "href": "slides/wk01-2025-01-14-course-intro.html#exercises-evaluation",
-    "title": "The Psychology of Data Visualization",
-    "section": "Exercises & evaluation",
-    "text": "Exercises & evaluation\n\nExercises\n\n8 @ 10 pts/each\nTop 4 count\nOthers count toward partial extra credit up to 10 pts\n\nAttendance (up to 40 points)\nFinal project (40 points)"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#resources",
-    "href": "slides/wk01-2025-01-14-course-intro.html#resources",
-    "title": "The Psychology of Data Visualization",
-    "section": "Resources",
-    "text": "Resources\n\nThis site: https://psu-psychology.github.io/psych-490-data-viz-2025-spring/ \nUniversity Library"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#structure",
-    "href": "slides/wk01-2025-01-14-course-intro.html#structure",
-    "title": "The Psychology of Data Visualization",
-    "section": "Structure",
-    "text": "Structure\n\nMeet 2x weekly\n\nTuesday & Thursday\nLecture + discussion + work session\n\nDo your homework"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#culture-climate",
-    "href": "slides/wk01-2025-01-14-course-intro.html#culture-climate",
-    "title": "The Psychology of Data Visualization",
-    "section": "Culture & climate",
-    "text": "Culture & climate\n\nCreating a community of inquiry\nEncouraging vigorous & constructive criticism\nCriticism of work/ideas/behaviors vs. people\n\n‘Smith thinks that pigs can fly.’\n‘Smith is an idiot.’\n‘Smith tried to demonstrate that pigs can fly by tossing a few off the roof of Old Main. That’s nonsense and made a huge mess.’"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#exercise-01",
-    "href": "slides/wk01-2025-01-14-course-intro.html#exercise-01",
-    "title": "The Psychology of Data Visualization",
-    "section": "Exercise 01",
-    "text": "Exercise 01\n\nVisit Exercise-01\nDivide up into teams\nWrite-up due next Tuesday, January 21, 2025"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#references",
-    "href": "slides/wk01-2025-01-14-course-intro.html#references",
-    "title": "The Psychology of Data Visualization",
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#references",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#references",
+    "title": "Visualization in Psychological Science",
     "section": "References",
-    "text": "References\n\n\n\n\nPSYCH 490.003 • Spring 2025\n\n\n\n\nIso, A. (2016). Bread - if original [1971]. Youtube. Retrieved from https://www.youtube.com/watch?v=IQyKMueMFGk\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nMatejka, J., & Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In Proceedings of the 2017 CHI conference on human factors in computing systems. New York, NY, USA: ACM. https://doi.org/10.1145/3025453.3025912\n\n\nSilberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. Advances in Methods and Practices in Psychological Science, 1, 337–356. https://doi.org/10.1177/2515245917747646\n\n\nThe Datasaurus dozen - same stats, different graphs | Autodesk Research. (n.d.). Retrieved June 2, 2019, from https://www.autodeskresearch.com/publications/samestats"
+    "text": "References"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
+    "objectID": "slides/wk02-2025-01-23-art-sports.html#announcements",
+    "href": "slides/wk02-2025-01-23-art-sports.html#announcements",
+    "title": "Data visualization in art & sports",
+    "section": "Announcements",
+    "text": "Announcements"
   },
   {
-    "objectID": "about.html#instructor",
-    "href": "about.html#instructor",
-    "title": "",
-    "section": "Instructor",
-    "text": "Instructor\nRick O. Gilmore, Ph.D. \nProfessor of Psychology\nrog1 AT-SIGN psu PERIOD edu\n\nSchedule an appointment: https://doodle.com/mm/rickgilmore/book-a-time\nLab web site: https://gilmore-lab.github.io"
+    "objectID": "slides/wk02-2025-01-23-art-sports.html#last-time",
+    "href": "slides/wk02-2025-01-23-art-sports.html#last-time",
+    "title": "Data visualization in art & sports",
+    "section": "Last time…",
+    "text": "Last time…"
   },
   {
-    "objectID": "about.html#teaching-assistant",
-    "href": "about.html#teaching-assistant",
-    "title": "",
-    "section": "Teaching Assistant",
-    "text": "Teaching Assistant\n\n\n\n\n\n\nUnder construction\n\n\n\nTBD"
+    "objectID": "slides/wk02-2025-01-23-art-sports.html#today",
+    "href": "slides/wk02-2025-01-23-art-sports.html#today",
+    "title": "Data visualization in art & sports",
+    "section": "Today",
+    "text": "Today\nVisualization in art & sports"
   },
   {
-    "objectID": "about.html#meeting-time-location",
-    "href": "about.html#meeting-time-location",
-    "title": "",
-    "section": "Meeting time & location",
-    "text": "Meeting time & location\nTuesday & Thursday, 9:05-10:20 am 207 Thomas Building"
+    "objectID": "slides/wk02-2025-01-23-art-sports.html#goals",
+    "href": "slides/wk02-2025-01-23-art-sports.html#goals",
+    "title": "Data visualization in art & sports",
+    "section": "Goals",
+    "text": "Goals"
   },
   {
-    "objectID": "about.html#canvas-site",
-    "href": "about.html#canvas-site",
-    "title": "",
-    "section": "Canvas site",
-    "text": "Canvas site\nWe will use Canvas to submit assignments and grade them. The Canvas site may be found here:\n\nMost of the course content will be found on this site."
-  },
-  {
-    "objectID": "about.html#course-structure",
-    "href": "about.html#course-structure",
-    "title": "",
-    "section": "Course structure",
-    "text": "Course structure\nThis is a discussion-focused course. On most days we will discuss readings assigned prior to class. On many days, we will work together or individually on the assigned exercises, the final project, or another assignment."
-  },
-  {
-    "objectID": "evaluation.html",
-    "href": "evaluation.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "evaluation.html#student-evaluation",
-    "href": "evaluation.html#student-evaluation",
-    "title": "",
-    "section": "Student Evaluation",
-    "text": "Student Evaluation\n\nElements\n\n\n\nComponent\nDescription\nPoints\n\n\n\n\nAttendance\nYou will receive 1 point for each class you attend up to a maximum of 40.\n40\n\n\nExercises\nThere will be eight (8) exercises that you must work on. Each exercise is worth 10 points. The top four (4) count toward your final grade.\n40\n\n\nFinal project\nYou will complete a final project, either on your own, or with a small group of 3 or less. Your final project is worth 40 points.\n40\n\n\n\nTOTAL POINTS POSSIBLE\n120\n\n\nExtra Credit\nIf you submit more than four exercise write-ups, you may earn up to 10 extra credit points.\n\n\n\n\n\n\nGrading Scheme\n\n\n\nPercent\nPoints\nGrade\n\n\n\n\n94+\n113\nA\n\n\n90-93\n108-112\nA-\n\n\n87-89\n104-107\nB+\n\n\n84-86\n100-103\nB\n\n\n80-83\n96-99\nB-\n\n\n77-79\n92-95\nC+\n\n\n70-76\n84-91\nC\n\n\n60-69\n72-93\nD\n\n\n&lt;59\n&lt;=71\nF"
-  },
-  {
-    "objectID": "values.html",
-    "href": "values.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "values.html#values",
-    "href": "values.html#values",
-    "title": "",
-    "section": "Values",
-    "text": "Values\n\nPenn State Principles\nThe Pennsylvania State University is a community dedicated to personal and academic excellence. The Penn State Principles were developed to embody the values that we hope our students, faculty, staff, administration, and alumni possess. At the same time, the University is strongly committed to freedom of expression. Consequently, these Principles do not constitute University policy and are not intended to interfere in any way with an individual’s academic or personal freedoms. We hope, however, that individuals will voluntarily endorse these common principles, thereby contributing to the traditions and scholarly heritage left by those who preceded them, and will thus leave Penn State a better place for those who follow.\nI will respect the dignity of all individuals within the Penn State community. The University is committed to creating and maintaining an educational environment that respects the right of all individuals to participate fully in the community. Actions motivated by hate, prejudice, or intolerance violate this principle. I will not engage in any behaviors that compromise or demean the dignity of individuals or groups, including intimidation, stalking, harassment, discrimination, taunting, ridiculing, insulting, or acts of violence. I will demonstrate respect for others by striving to learn from differences between people, ideas, and opinions and by avoiding behaviors that inhibit the ability of other community members to feel safe or welcome as they pursue their academic goals.\nI will practice academic integrity. Academic integrity is a basic guiding principle for all academic activity at Penn State University, allowing the pursuit of scholarly activity in an open, honest, and responsible manner. In accordance with the University Code of Conduct, I will practice integrity in regard to all academic assignments. I will not engage in or tolerate acts of falsification, misrepresentation or deception because such acts of dishonesty violate the fundamental ethical principles of the University community and compromise the worth of work completed by others.\nI will demonstrate social and personal responsibility. The University is a community that promotes learning; any behaviors that are inconsistent with that goal are unacceptable. Irresponsible behaviors, including alcohol or drug abuse and the use of violence against people or property, undermine the educational climate by threatening the physical and mental health of members of the community. I will exercise personal responsibility for my actions and I will make sure that my actions do not interfere with the academic and social environment of the University. I will maintain a high standard of behavior by adhering to the Code of Conduct and respecting the rights of others.\nI will be responsible for my own academic progress and agree to comply with all University policies. The University allows students to identify and achieve their academic goals by providing the information needed to plan the chosen program of study and the necessary educational opportunities, but students assume final responsibility for course scheduling, program planning, and the successful completion of graduation requirements. I will be responsible for seeking the academic and career information needed to meet my educational goals by becoming knowledgeable about the relevant policies, procedures, and rules of the University and academic program, by consulting and meeting with my adviser, and by successfully completing all of the requirements for graduation.\n\n\nPenn State Values\nIntegrity: We act with integrity and honesty in accordance with the highest academic, professional, and ethical standards.\nRespect: We respect and honor the dignity of each person, embrace civil discourse, and foster a diverse and inclusive community.\nResponsibility: We act responsibly, and we are accountable for our decisions, actions, and their consequences.\nDiscovery: We seek and create new knowledge and understanding, and foster creativity and innovation, for the benefit of our communities, society, and the environment.\nExcellence: We strive for excellence in all our endeavors as individuals, an institution, and a leader in higher education.\nCommunity: We work together for the betterment of our University, the communities we serve, and the world."
-  },
-  {
-    "objectID": "policies.html",
-    "href": "policies.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "policies.html#course-policies",
-    "href": "policies.html#course-policies",
-    "title": "",
-    "section": "Course policies",
-    "text": "Course policies\n\nAcademic Integrity\nStudents with questions about academic integrity should visit http://www.la.psu.edu/current-students/undergraduate-students/education/academic-integrity.\nPenn State defines academic integrity as the pursuit of scholarly activity in an open, honest and responsible manner. All students should act with personal integrity, respect others dignity, rights and property, and help create and maintain an environment in which all can succeed through the fruits of their efforts (Faculty Senate Policy 49-20). Sanctions for academic misconduct can include a grade of F for the course as well as other penalties.\nUnless you are told otherwise, you must complete all course work entirely on your own, using only sources that have been permitted by your instructor, and you may not assist other students with papers, quizzes, exams, or other assessments. If I allow you to use ideas, images, or word phrases created by another person (e.g., from Course Hero or Chegg) or by generative technology, such as ChatGPT, you must identify their source.\nWhen you complete assignments, remember the ABCs to avoid plagiarism: Always place copied information within quotation marks, include information about the quoted or paraphrased source in a Bibliography, and Cite the source in the body (in the text) of your paper immediately after the quoted or paraphrased information. When in doubt, cite in the text and include the source in a bibliography.\nStudents with questions about academic integrity should ask me or the TA before submitting work.\nStudents facing allegations of academic misconduct may not drop/withdraw from the affected course unless they are cleared of wrongdoing (see G-9: Academic Integrity). Attempted drops will be prevented or reversed, and students will be expected to complete course work and meet course deadlines. Students who are found responsible for academic integrity violations face academic outcomes, which can be severe, and put themselves at jeopardy for other outcomes which may include ineligibility for Dean’s List, pass/fail elections, and grade forgiveness. Students may also face consequences from their home/major program and/or The Schreyer Honors College.\n\n\nAbsences or late assignments\n\nAbsence from class\nYour absence from class may be excused under unusual circumstances such as (a) an interview for graduate school or a job, (b) illness, (c) religious observance, (d) the death of a family member, or (e) any other event recognized by the university as a valid excuse for absence from class.\nIf you must miss class, you must contact the instructor and the TA in advance.\nUp to three (3) excused absences will be permitted.\n\n\nLate exercises\nExercises submitted after the published deadlines will not be eligible for full credit unless the instructor has given specific permission.\n\n\nLate final projects\nFinal projects submitted after the published deadline will not be eligible for full credit unless the instructor has given specific permission.\n\n\nAccommodation for persons with disabilities\nPenn State welcomes students with disabilities into the University’s educational programs. Please refer to the information provided by Student Disability Resources (SDR) at http://equity.psu.edu/student-disability-resources/ for information about the procedures required to obtain reasonable accommodations in this course. Students should discussSDR-approved accommodations with their instructor as early in the semester as possible, even if they have taken another course with the instructor. Please note: students are not required to provide their instructor with information about the nature of their condition.\nPenn State students are also welcome to contact other units for assistance with personal concerns that interfere with academic progress, including: Counseling and Psychological Services (CAPS; http://studentaffairs.psu.edu/counseling/), the Office of Student Affairs (http://studentaffairs.psu.edu/), Career Services (http://studentaffairs.psu.edu/career/), the Center for Women Students (http://studentaffairs.psu.edu/womenscenter/), the LGBTQA Student Resource Center (http://studentaffairs.psu.edu/lgbtqa/), the Office of Sexual Misconduct Prevention and Response (http://titleix.psu.edu/), Penn State Educational Equity (http://equity.psu.edu/), the Multicultural Resource Center (http://equity.psu.edu/mrc), and University Health Services (http://studentaffairs.psu.edu/health/).\n\n\n\nNondiscrimination Statement\nThe Pennsylvania State University is committed to equal access to programs, facilities, admission and employment for all persons. It is the policy of the University to maintain an environment free of harassment and free of discrimination against any person because of age, race, color, ancestry, national origin, religion, creed, service in the uniformed services (as defined in state and federal law), veteran status, sex, sexual orientation, marital or family status, pregnancy, pregnancy-related conditions, physical or mental disability, gender, perceived gender, gender identity, genetic information or political ideas.\nDiscriminatory conduct and harassment, as well as sexual misconduct and relationship violence, violates the dignity of individuals, impedes the realization of the University’s educational mission, and will not be tolerated.\nDirect all inquiries regarding the nondiscrimination policy to:\nSuzanne C. Adair Associate Vice President for Equal Opportunity and Access Office of Equal Opportunity and Access The Pennsylvania State University 328 Boucke Building University Park, PA 16802-5901 Email: sca917@psu.edu Tel (814) 863-0471\n\n\nDiversity Statement\nThis classroom is a place where you will be treated with respect. All members of this class are expected to contribute to a respectful, welcoming and inclusive environment for every other member of the class.\nPenn State is committed to creating an educational environment which is free from intolerance directed toward individuals or groups and strives to create and maintain an environment that fosters respect for others as stated in Policy AD29 Statement on Intolerance.\n\n\nMandated Reporting Statement\nPenn State’s policies require me, as a faculty member, to share information about incidents of sex-based discrimination and harassment (discrimination, harassment, sexual harassment, sexual misconduct, dating violence, domestic violence, stalking, and retaliation) with Penn State’s Title IX coordinator or deputy coordinators, regardless of whether the incidents are stated to me in person or shared by students as part of their coursework. For more information regarding the University’s policies and procedures for responding to reports of sexual or gender-based harassment or misconduct, please visit http://titleix.psu.edu.\nAdditionally, I am required to make a report on any reasonable suspicion of child abuse in accordance with the Pennsylvania Child Protective Services Law.\n\n\nZoom\nAt some point in the semester, I may decide to use Zoom to allow students who are unable to attend class in person to participate.\nWhile you are on Zoom, keep in mind that this is a classroom environment and others should be treated with respect. Please keep your microphone muted unless you want to ask a question or interact with someone. If your microphone is not muted, the entire class will be able to hear what is going on in your environment. As an instructor, I personally like to see people’s faces. As a participant, I am more involved when I have my camera on. I realize, however, that there are many reasons why you might not want to turn on your camera such as poor internet connection, joining via phone, or other privacy concerns. It is your choice as to whether you would like to have the camera on or not."
-  },
-  {
-    "objectID": "policies.html#values",
-    "href": "policies.html#values",
-    "title": "",
-    "section": "Values",
-    "text": "Values\n\nPenn State Principles\nThe Pennsylvania State University is a community dedicated to personal and academic excellence. The Penn State Principles were developed to embody the values that we hope our students, faculty, staff, administration, and alumni possess. At the same time, the University is strongly committed to freedom of expression. Consequently, these Principles do not constitute University policy and are not intended to interfere in any way with an individual’s academic or personal freedoms. We hope, however, that individuals will voluntarily endorse these common principles, thereby contributing to the traditions and scholarly heritage left by those who preceded them, and will thus leave Penn State a better place for those who follow.\nI will respect the dignity of all individuals within the Penn State community. The University is committed to creating and maintaining an educational environment that respects the right of all individuals to participate fully in the community. Actions motivated by hate, prejudice, or intolerance violate this principle. I will not engage in any behaviors that compromise or demean the dignity of individuals or groups, including intimidation, stalking, harassment, discrimination, taunting, ridiculing, insulting, or acts of violence. I will demonstrate respect for others by striving to learn from differences between people, ideas, and opinions and by avoiding behaviors that inhibit the ability of other community members to feel safe or welcome as they pursue their academic goals.\nI will practice academic integrity. Academic integrity is a basic guiding principle for all academic activity at Penn State University, allowing the pursuit of scholarly activity in an open, honest, and responsible manner. In accordance with the University Code of Conduct, I will practice integrity in regard to all academic assignments. I will not engage in or tolerate acts of falsification, misrepresentation or deception because such acts of dishonesty violate the fundamental ethical principles of the University community and compromise the worth of work completed by others.\nI will demonstrate social and personal responsibility. The University is a community that promotes learning; any behaviors that are inconsistent with that goal are unacceptable. Irresponsible behaviors, including alcohol or drug abuse and the use of violence against people or property, undermine the educational climate by threatening the physical and mental health of members of the community. I will exercise personal responsibility for my actions and I will make sure that my actions do not interfere with the academic and social environment of the University. I will maintain a high standard of behavior by adhering to the Code of Conduct and respecting the rights of others.\nI will be responsible for my own academic progress and agree to comply with all University policies. The University allows students to identify and achieve their academic goals by providing the information needed to plan the chosen program of study and the necessary educational opportunities, but students assume final responsibility for course scheduling, program planning, and the successful completion of graduation requirements. I will be responsible for seeking the academic and career information needed to meet my educational goals by becoming knowledgeable about the relevant policies, procedures, and rules of the University and academic program, by consulting and meeting with my adviser, and by successfully completing all of the requirements for graduation.\n\n\nPenn State Values\nIntegrity: We act with integrity and honesty in accordance with the highest academic, professional, and ethical standards.\nRespect: We respect and honor the dignity of each person, embrace civil discourse, and foster a diverse and inclusive community.\nResponsibility: We act responsibly, and we are accountable for our decisions, actions, and their consequences.\nDiscovery: We seek and create new knowledge and understanding, and foster creativity and innovation, for the benefit of our communities, society, and the environment.\nExcellence: We strive for excellence in all our endeavors as individuals, an institution, and a leader in higher education.\nCommunity: We work together for the betterment of our University, the communities we serve, and the world."
-  },
-  {
-    "objectID": "tutorials/tutorial-python-matplotlib.html",
-    "href": "tutorials/tutorial-python-matplotlib.html",
-    "title": "Plotting in Python",
-    "section": "",
-    "text": "Note\n\n\n\nFigures don’t seem to be cross-referencing across documents. Let’s see if they work within documents.\nDoes the link to Figure 1 work?\nHow about Figure 2?\nApparently so.\nOkay, so do the ggplot2 figures work in this document? Specifically, does the reference to ?@fig-dual-boxplots-diff-ggplot2 work?\nNo. So, the issue is cross-document figure references."
-  },
-  {
-    "objectID": "tutorials/tutorial-python-matplotlib.html#about",
-    "href": "tutorials/tutorial-python-matplotlib.html#about",
-    "title": "Plotting in Python",
-    "section": "About",
-    "text": "About\nThis page provides a very basic introduction to Python and the matplotlib plotting library."
-  },
-  {
-    "objectID": "tutorials/tutorial-python-matplotlib.html#why-python",
-    "href": "tutorials/tutorial-python-matplotlib.html#why-python",
-    "title": "Plotting in Python",
-    "section": "Why Python?",
-    "text": "Why Python?\nPython is an awesome language for data science and data visualization. It is more popular than R, and it is widely used in scientific research and in industry.\nI find that it has a very readable syntax, meaning that it’s relatively easy to see what well-written Python code is doing."
-  },
-  {
-    "objectID": "tutorials/tutorial-python-matplotlib.html#setup",
-    "href": "tutorials/tutorial-python-matplotlib.html#setup",
-    "title": "Plotting in Python",
-    "section": "Setup",
-    "text": "Setup\nWe start by importing the numpy and pyplot libraries and giving them convenient short names for future reference.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt"
-  },
-  {
-    "objectID": "tutorials/tutorial-python-matplotlib.html#plotting-one-variable",
-    "href": "tutorials/tutorial-python-matplotlib.html#plotting-one-variable",
-    "title": "Plotting in Python",
-    "section": "Plotting one variable",
-    "text": "Plotting one variable\n\nContinuous\n\nHistograms\nFrom https://matplotlib.org/stable/gallery/statistics/hist.html#sphx-glr-gallery-statistics-hist-py\nLoad components from matplotlib.\n\n\nCode\nfrom matplotlib import colors\nfrom matplotlib.ticker import PercentFormatter\n\n# Create a random number generator with a fixed seed for reproducibility\nrng = np.random.default_rng(19680801)\n\n\nGenerate data and render it.\n\n\nCode\nN_points = 100000\nn_bins = 20\n\n# Generate two normal distributions\ndist1 = rng.standard_normal(N_points)\ndist2 = 0.4 * rng.standard_normal(N_points) + 5\n\nfig, axs = plt.subplots(1, 2, sharey=True, tight_layout=True)\n\n# We can set the number of bins with the *bins* keyword argument.\naxs[0].hist(dist1, bins=n_bins)\naxs[1].hist(dist2, bins=n_bins)\n\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: Two histograms with 100K points each.\n\n\n\n\n\n\n\nViolin\nViolin plots are another way to depict the distribution of a single continuous variable.\nThe following code is copied verbatim from the following site:\nhttps://matplotlib.org/stable/gallery/statistics/violinplot.html\n\n\nCode\n# fake data\nfs = 10  # fontsize\npos = [1, 2, 4, 5, 7, 8]\ndata = [np.random.normal(0, std, size=100) for std in pos]\n\n# Create a plot with 2 rows and 6 columns\nfig, axs = plt.subplots(nrows=2, ncols=6, figsize=(10, 4))\n\naxs[0, 0].violinplot(data, pos, points=20, widths=0.3,\n                     showmeans=True, showextrema=True, showmedians=True)\naxs[0, 0].set_title('Custom violin 1', fontsize=fs)\n\naxs[0, 1].violinplot(data, pos, points=40, widths=0.5,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     bw_method='silverman')\naxs[0, 1].set_title('Custom violin 2', fontsize=fs)\n\naxs[0, 2].violinplot(data, pos, points=60, widths=0.7, showmeans=True,\n                     showextrema=True, showmedians=True, bw_method=0.5)\naxs[0, 2].set_title('Custom violin 3', fontsize=fs)\n\naxs[0, 3].violinplot(data, pos, points=60, widths=0.7, showmeans=True,\n                     showextrema=True, showmedians=True, bw_method=0.5,\n                     quantiles=[[0.1], [], [], [0.175, 0.954], [0.75], [0.25]])\naxs[0, 3].set_title('Custom violin 4', fontsize=fs)\n\naxs[0, 4].violinplot(data[-1:], pos[-1:], points=60, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5)\naxs[0, 4].set_title('Custom violin 5', fontsize=fs)\n\naxs[0, 5].violinplot(data[-1:], pos[-1:], points=60, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='low')\n\naxs[0, 5].violinplot(data[-1:], pos[-1:], points=60, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='high')\naxs[0, 5].set_title('Custom violin 6', fontsize=fs)\n\naxs[1, 0].violinplot(data, pos, points=80, vert=False, widths=0.7,\n                     showmeans=True, showextrema=True, showmedians=True)\naxs[1, 0].set_title('Custom violin 7', fontsize=fs)\n\naxs[1, 1].violinplot(data, pos, points=100, vert=False, widths=0.9,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     bw_method='silverman')\naxs[1, 1].set_title('Custom violin 8', fontsize=fs)\n\naxs[1, 2].violinplot(data, pos, points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     bw_method=0.5)\naxs[1, 2].set_title('Custom violin 9', fontsize=fs)\n\naxs[1, 3].violinplot(data, pos, points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[[0.1], [], [], [0.175, 0.954], [0.75], [0.25]],\n                     bw_method=0.5)\naxs[1, 3].set_title('Custom violin 10', fontsize=fs)\n\naxs[1, 4].violinplot(data[-1:], pos[-1:], points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5)\naxs[1, 4].set_title('Custom violin 11', fontsize=fs)\n\naxs[1, 5].violinplot(data[-1:], pos[-1:], points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='low')\n\naxs[1, 5].violinplot(data[-1:], pos[-1:], points=200, vert=False, widths=1.1,\n                     showmeans=True, showextrema=True, showmedians=True,\n                     quantiles=[0.05, 0.1, 0.8, 0.9], bw_method=0.5, side='high')\naxs[1, 5].set_title('Custom violin 12', fontsize=fs)\n\n\nfor ax in axs.flat:\n    ax.set_yticklabels([])\n\nfig.suptitle(\"Violin Plotting Examples\")\nfig.subplots_adjust(hspace=0.4)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 2: Multiple violin plots with different parameters.\n\n\n\n\n\n\n\nBoxplot\nFrom https://matplotlib.org/stable/plot_types/stats/boxplot_plot.html#sphx-glr-plot-types-stats-boxplot-plot-py.\n\n\nCode\nplt.style.use('_mpl-gallery')\n\n# make data:\nnp.random.seed(10)\nD = np.random.normal((3, 5, 4), (1.25, 1.00, 1.25), (100, 3))\n\n# plot\nfig, ax = plt.subplots()\nVP = ax.boxplot(D, positions=[2, 4, 6], widths=1.5, patch_artist=True,\n                showmeans=False, showfliers=False,\n                medianprops={\"color\": \"white\", \"linewidth\": 0.5},\n                boxprops={\"facecolor\": \"C0\", \"edgecolor\": \"white\",\n                          \"linewidth\": 0.5},\n                whiskerprops={\"color\": \"C0\", \"linewidth\": 1.5},\n                capprops={\"color\": \"C0\", \"linewidth\": 1.5})\n\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\n\nplt.show()\n\n\n\n\n\n\n\n\nFigure 3: Example of several boxplots with whiskers.\n\n\n\n\n\n\n\n\nDiscrete/nominal\n\nBar chart\nSource: https://matplotlib.org/stable/plot_types/basic/bar.html#sphx-glr-plot-types-basic-bar-py\n\n\nCode\nplt.style.use('_mpl-gallery')\n\n# make data:\nx = 0.5 + np.arange(8)\ny = [4.8, 5.5, 3.5, 4.6, 6.5, 6.6, 2.6, 3.0]\n\n# plot\nfig, ax = plt.subplots()\n\nax.bar(x, y, width=1, edgecolor=\"white\", linewidth=0.7)\n\nax.set(xlim=(0, 8), xticks=np.arange(1, 8),\n       ylim=(0, 8), yticks=np.arange(1, 8))\n\nplt.show()\n\n\n\n\n\n\n\n\nFigure 4: Example of a bar plot."
-  },
-  {
-    "objectID": "tutorials/tutorial-python-matplotlib.html#plotting-two-variables",
-    "href": "tutorials/tutorial-python-matplotlib.html#plotting-two-variables",
-    "title": "Plotting in Python",
-    "section": "Plotting two variables",
-    "text": "Plotting two variables\n\nScatter plots"
-  },
-  {
-    "objectID": "tutorials/tutorial-python-matplotlib.html#other-kinds-of-plots",
-    "href": "tutorials/tutorial-python-matplotlib.html#other-kinds-of-plots",
-    "title": "Plotting in Python",
-    "section": "Other kinds of plots",
-    "text": "Other kinds of plots\nThe following is copied verbatim from the Quarto website:\nhttps://quarto.org/docs/get-started/hello/vscode.html\nFor a demonstration of a line plot on a polar axis, see Figure 5.\n\n\nCode\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 5: A line plot on a polar axis"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#why-mapping",
-    "href": "slides/wk01-2025-01-16-making-data.html#why-mapping",
-    "title": "Making Data",
-    "section": "Why ‘mapping’",
-    "text": "Why ‘mapping’\n\n\n\n\n\n\n\n\nflowchart TB\n  A[Thing/Person]-- Procedure  --&gt;B(Instrument)\n  B --&gt; C{Data}\n\n\n\n\nFigure 1: Illustration of a mapping from observed entity to data\n\n\n\n\n\n\n\n\n\n\n\n\nflowchart TB\n  A[Thing/Person]-- Procedure  --&gt;B(Instrument)\n  A[Thing/Person]-- Procedure-2  --&gt;C(Instrument-2)\n  B --&gt; E{Data}\n  C --&gt; D{Data-2}\n\n\n\n\nFigure 2: Illustration of multiple mappings from an observed entity to data"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#data-quantitative-terminology",
-    "href": "slides/wk01-2025-01-16-making-data.html#data-quantitative-terminology",
-    "title": "Making Data",
-    "section": "Data ~ quantitative terminology",
-    "text": "Data ~ quantitative terminology\n\nData a symbol of the thing measured, not the thing itself\nE.g., Words are a symbol of the things they refer to\n\n\n\n\n\n\n\nflowchart TB\n  A[Cute animal with fur that purrs] --&gt; B('cat')\n  A ---&gt; C('gato')\n  A ---&gt; D('chatte/chat')\n  A ---&gt; E('猫')\n\n\n\n\nFigure 3: Mapping from concept/entity to a word."
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#data-reflects-selects-and-deflects",
-    "href": "slides/wk01-2025-01-16-making-data.html#data-reflects-selects-and-deflects",
-    "title": "Making Data",
-    "section": "Data reflects, selects, and deflects",
-    "text": "Data reflects, selects, and deflects\n\nEven if any given terminology is a reflection of reality, by its very nature as a terminology, it must be a selection of reality; and to this extent must also as a deflection of reality\n\nBurke (1968)"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-16-making-data.html#what-is-reflected-selected-deflected",
-    "href": "slides/wk01-2025-01-16-making-data.html#what-is-reflected-selected-deflected",
-    "title": "Making Data",
-    "section": "What is reflected, selected, deflected?",
-    "text": "What is reflected, selected, deflected?\n\nLindsey (2024)"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#this-is-a-seminar",
-    "href": "slides/wk01-2025-01-14-course-intro.html#this-is-a-seminar",
-    "title": "The Psychology of Data Visualization",
-    "section": "This is a seminar…",
-    "text": "This is a seminar…\n\nhttps://www.merriam-webster.com/dictionary/seminar"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#many-analysts",
-    "href": "slides/wk01-2025-01-14-course-intro.html#many-analysts",
-    "title": "The Psychology of Data Visualization",
-    "section": "Many analysts",
-    "text": "Many analysts\n\nFigure 2 from Silberzahn et al. (2018)"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#many-failures",
-    "href": "slides/wk01-2025-01-14-course-intro.html#many-failures",
-    "title": "The Psychology of Data Visualization",
-    "section": "Many failures",
-    "text": "Many failures\nVisualizing the ’Many Analysts – Silberzahn et al. (2018) – data"
-  },
-  {
-    "objectID": "slides/wk01-2025-01-14-course-intro.html#plot-your-data",
-    "href": "slides/wk01-2025-01-14-course-intro.html#plot-your-data",
-    "title": "The Psychology of Data Visualization",
-    "section": "“Plot your data!”",
-    "text": "“Plot your data!”\n\nGilmore’s graduate statistics professor"
+    "objectID": "slides/wk02-2025-01-23-art-sports.html#references",
+    "href": "slides/wk02-2025-01-23-art-sports.html#references",
+    "title": "Data visualization in art & sports",
+    "section": "References",
+    "text": "References"
   }
 ]

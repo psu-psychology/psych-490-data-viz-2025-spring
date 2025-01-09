@@ -1,0 +1,129 @@
+# Making data {-}
+
+## About {-}
+
+This tutorial shows how we can construct data of different types.
+
+```{r}
+library(ggplot2)
+library(dplyr)
+```
+
+## Nominal data {-}
+
+Let's focus on nominal or categorical data, specifically the favorite colors of some imaginary set of people.
+
+```{r}
+colors <- c("red", "orange", "yellow", "green", "blue", "violet", "white", "black", "gray", "brown")
+```
+
+There are *n*=`{r} length(colors)` colors in this set.
+
+::: {.callout-note}
+## Your turn
+
+Why are these data nominal or nominally scaled?
+Or rather, why *aren't* they ordinal, interval, or ratio?
+
+:::
+
+### Generating {-}
+
+For demonstration purposes, we want to take some number of random samples of these colors. 
+Let's pick *n*=200 and sample *with replacement* (`replace=TRUE` in the code below), meaning that we could have any number of colors in our sample of 200 imaginary people.
+
+```{r}
+our_color_sample <- sample(colors, size=200, replace=TRUE)
+our_color_sample
+```
+
+On its own, that's not especially easy to visualize.
+What if we sorted it?
+
+```{r}
+sort(our_color_sample)
+```
+
+Still not all that helpful.
+
+### Summarizing {-}
+
+What can we say to summarize categorical data?
+
+We can report the number of total responses.
+
+```{r}
+length(our_color_sample)
+```
+
+We can report the number of unique categories.
+
+```{r}
+length(unique(our_color_sample))
+```
+
+We can report the number of responses per category.
+
+```{r}
+colors_df <- data.frame(favorite_color = our_color_sample)
+
+xtabs(formula = ~favorite_color, data = colors_df)
+```
+
+### Visualizing {-}
+
+Single nominal variables don't offer us many options for visualization.
+A bar plot showing the number of observations in each category seems to be it.
+
+```{r}
+#| label: fig-nominal-barplot
+#| fig-cap: "An (ugly) barplot of the random favorite color data"
+colors_df |>
+  ggplot() +
+  aes(x = favorite_color) +
+  geom_bar()
+```
+
+Is one of these colors a particular favorite?
+Maybe.
+The observed data show some differences.
+But how can we know they aren't just due to random chance.
+
+::: {.callout-warning}
+## Stop the presses!
+
+These *particular* data are entirely random.
+We made them up!
+
+Keep that in mind while we work through what we would do to answer the question if these were *not* fake, random data.
+:::
+
+To answer that question, we'd have to compare our results with some other pattern, a pattern where there is **no** favorite.
+In other words, we want a pattern where the counts are all equal.
+So, we're back to summarizing.
+
+Actually, data analysis in the real world usually involves a back-and-forth alternation between summarizing/analyzing and visualizing.
+
+```{mermaid}
+%%| label: fig-data-dialetic
+%%| fig-cap: "Illustration of the back and forth between summarizing and visualizing that characterizes real-life data analysis."
+flowchart LR
+  A[Summarize] --> B[Visualize]
+  B ---> A
+```
+
+### Summarizing II {-}
+
+Let's make data that have an identical pattern across all colors.
+
+There are several ways to do this, but here is one that works.
+
+```{r}
+no_favorite <- rep(colors, length(our_color_sample)/length(colors))
+
+compare_df <- data.frame(favorite_color = no_favorite)
+
+xtabs(formula = ~favorite_color, data = compare_df)
+```
+
+How can we compare the data where there are no differences by category to the data where there *are* differences?
