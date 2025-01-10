@@ -84,6 +84,10 @@ Friendly might be a good guest.
 
 Infographics examples from the CDC: <https://www.cdc.gov/nchs/hus/resources/infographics.htm>
 
+## healthdata.gov
+
+<https://healthdata.gov/browse?limitTo=charts&sortBy=last_modified&utf8=%E2%9C%93&pageSize=20&page=1>
+
 ### New York Times
 
 <https://www.nytimes.com/spotlight/graphics>

@@ -1,7 +1,7 @@
 author: "Rick Gilmore"
 format: 
   revealjs:
-    footer: "[PSYCH 490.003 • Spring 2025](../index.html)"
+    footer: "[PSYCH 490.001 • Spring 2025](../index.html)"
     slide-number: true
     fig-align: center
     logo: https://brand.psu.edu/images/backgrounds/penn-state-shield.jpg

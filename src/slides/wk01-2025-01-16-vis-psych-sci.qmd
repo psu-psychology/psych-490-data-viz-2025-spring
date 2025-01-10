@@ -1,22 +1,180 @@
 ---
-title: "Visualization in Psychological Science"
+title: "Semiotics of data visualization"
 subtitle: "2025-01-16"
 ---
 
 # Prelude
 
+## William Playfair
+
+:::: {.columns}
+::: {.column width=50%}
+- "engineer, political economist, and scoundrel" [@Spence2017-hp]
+- Founder of graphical methods of statistics
+- Introduced line, area, and bar chart
+- Likely published first pie chart and circle graphs
+:::
+::: {.column width=50%}
+![Earliest statistical graphic, William Playfair; [Wikipedia](https://en.wikipedia.org/wiki/William_Playfair)](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Playfair_TimeSeries-2.png/520px-Playfair_TimeSeries-2.png)
+:::
+::::
+
 # Overview
 
-## Announcements
+<!-- ## Announcements -->
 
 ## Last time...
+
+- Course introduction
+- Visualization in psychological science
 
 ## Today
 
 - Visualization in Psychological Science
-  - [Exercise-00](exercises/ex00-figs-in-psych-sci.qmd)
+  - [Exercise-00](../exercises/ex00-figs-in-psych-sci.qmd)
+- Semiotics of data visualization
+  
+# Semiotics of data visualization
+
+## Semi-whatics?
+
+![@The-Editors-of-Encyclopedia-Britannica2024-ot](../include/img/semiotics-britannica.png)
+
+## The symbolic animal
+
+- [Ernst Cassirer](https://en.wikipedia.org/wiki/Ernst_Cassirer)
+
+>Cassirer argues that the classic Aristotelian definition of the human being as a rational animal is wrong, or at least incomplete. Instead we should think of ourselves as “symbolic animals,” since ratiocination is only one expression of the human instinct to think in symbols. @Kirsch2021-fd
+
+## The communicating animal
+
+- Communication as transmission of information
+- From world
+
+```{mermaid}
+flowchart LR
+  A[World] --> B[You]
+```
+
+
+## Communication
+
+- From others (direct)
+
+```{mermaid}
+flowchart LR
+  A[Me] --> B[You]
+```
+
+- From others (via some medium)
+
+```{mermaid}
+flowchart LR
+  A[Me] --> B((Medium))
+  B --> C[You]
+```
+
+## Media
+
+- Source of [*signs*](https://en.wikipedia.org/wiki/Sign_(semiotics))^[more general than language]
+- Sign relation
+  - Sign itself --> Meaning
+  - Relation is arbitrary, defined by social convention (Sausurre)
+  
+![@UnknownUnknown-ey](https://arxiv.org/html/2402.14311v1/x1.png)
+## Multiple channels
+
+:::: {.columns}
+::: {.column width=40%}
+- Acoustic
+- Tactile
+- Olfactory
+- Visual
+:::
+::: {.column width=60%}
+![https://elearning.adobe.com/2018/04/classic-learning-research-practice-sensory-channels-keep-learners-attention/](https://elearningimages.adobe.com/files/2017/12/Sensory-Brain.png-1024x591.png)
+:::
+::::
+
+## More or less meaningful
+
+:::: {.columns}
+::: {.column width=50%}
+![https://www.religious-symbols.net/](https://www.religious-symbols.net/Pictures/religious-symbols_2.png)
+:::
+::: {.column width=50%
+![https://www.vecteezy.com/free-vector/symbols](https://static.vecteezy.com/system/resources/previews/038/920/831/non_2x/abstract-collection-2-graphic-geometric-symbols-and-objects-in-y2k-style-templates-for-notes-posters-banners-stickers-business-cards-logo-vector.jpg)
+:::
+::::
+
+## Communication between minds
+
+- Via symbols
+- Based on shared social conventions
+- About sign relations (what signs "mean" or convey)
+- Open vs. closed symbol systems
+
+## Sign systems can unite
+
+![@Steiner1998-a](https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Steiner_AfterBabel.jpg/200px-Steiner_AfterBabel.jpg)
+
+- or divide
+
+## How scientists communicate
+
+- Papers
+- Posters
+- Textbooks
+- Websites
+- Talks
+
+## Components of a scientific papers
+
+- Text
+  - Explanation/argument
+  - Evidence (statistical summaries)
+- Figures
+- Tables
+  - Evidence (statistical summaries)
+- References
+- Data, materials
+
+## Questions about scientific communication
+
+- What do the words mean?
+- What do the numbers/statistics mean?
+- What do the figures mean?
+- Does the evidence (+ argument) persuade?
+
+## Semiotics of data visualization
+
+- What do the components mean?
+- What message is the visualization creator trying to convey?
+
+# Visualization in psychological science
+
+## Questions
+
+- Are there common types of visualizations in psychological science?
+- What (types) messages are conveyed?
+- How clearly are they conveyed?
+- How are the following depicted:
+  - Responses to surveys
+  - Performance on tasks/tests
+  - Brain structure or activity
 
 # Main points
+
+## Semiotics of data visualization
+
+- *Semiotics*: study of signs and symbols
+- What meanings do the visual elements of data graphics convey?
+- How do data visualizations related to other communicative elements?
+
+## Visualization in psychological science
+
+- Conventions (common patterns) in data visualization
+- Different viz types for different psychological measures
 
 # Next time
 

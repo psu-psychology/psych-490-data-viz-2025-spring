@@ -11,6 +11,13 @@ subtitle: "2025-01-14"
 
 @Iso2016-wd
 
+
+## A picture is worth a thousand words...
+
+- "An [adage](https://www.merriam-webster.com/dictionary/adage) in multiple languages..." [Wikipedia](https://en.wikipedia.org/wiki/A_picture_is_worth_a_thousand_words)
+- Theme for the course
+- What words does this figure convey...
+
 ---
 
 ![@Lindsey2024-ob](https://www.climate.gov/sites/default/files/styles/full_width_620_original_image/public/2024-04/ClimateDashboard-atmospheric-carbon-dioxide-image-paleo-20240405-1400px.png?itok=-g_Qgndc)
@@ -18,7 +25,6 @@ subtitle: "2025-01-14"
 ## Today
 
 - Introduction to the course
-- Getting to know you
 - Visualization in psychological science
 
 # Introduction to the course
@@ -30,9 +36,13 @@ subtitle: "2025-01-14"
 
 {{< include _gilmore-photo-bio.qmd >}}
 
----
-
 ## Why this course, why now
+
+## My journey
+
+- Cognitive Science major, psycholinguistics & [semiotics](https://en.wikipedia.org/wiki/Semiotics) minor
+- Introduced to vision science via [Marr](https://en.wikipedia.org/wiki/David_Marr_(neuroscientist)) and [J.J. Gibson](https://en.wikipedia.org/wiki/James_J._Gibson)
+- [Research](https://gilmore-lab.github.io) in visual development, visual neuroscience
 
 ---
 
@@ -63,16 +73,34 @@ subtitle: "2025-01-14"
 
 ---
 
+![@Huff1993-pt](https://m.media-amazon.com/images/I/71ASFP9sBXL._SY522_.jpg)
+
+---
+
+![@Monmonier2018-jc](https://m.media-amazon.com/images/I/71reVbvgoVL._SY522_.jpg)
+
+## Vision can be unreliable or ambiguous
+
+::: {#visual-illusions layout-ncol=2}
+
+![](https://www.rd.com/wp-content/uploads/2021/07/GettyImages-1278770741.jpg?fit=300,300&webp=1)
+
+![](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*JXwHAPXkg05Y6IZF.jpg)
+:::
+
+---
+
 ![https://www.indexventures.com/perspectives/data-not-software-is-eating-the-world/](../include/img/data-is-eating-the-world.png)
 
 ## Purpose & goals
 
 ::: {.incremental}
-- What are data? Where does data come from?
+- What are data? Where do data come from?
 - Who visualizes data, how do they visualize it, and why?
 - How does vision science inform how we perceive patterns in data?
 - What's the relationship between non-visual and visual ways of understanding data?
 - What makes a data visualization effective?
+- What makes a data visualization misleading?
 - How can we make better data visualizations?
 :::
 
@@ -114,6 +142,7 @@ subtitle: "2025-01-14"
 
 ## Culture & climate
 
+::: {.incremental}
 - Creating a community of inquiry
 - Encouraging vigorous & constructive criticism
 - Criticism of *work/ideas/behaviors* vs. *people*
@@ -121,12 +150,19 @@ subtitle: "2025-01-14"
   - 'Smith is an idiot.'
   - 'Smith tried to demonstrate that pigs can fly by tossing a few off the 
   roof of Old Main. That's nonsense and made a huge mess.'
-  
-# Getting to know you
-
-## Survey-01
+:::
 
 # Visualization in psychological science
+
+## Exercise 00
+
+- Visit [Exercise-00](exercises/ex00-figs-in-psych-sci.qmd)
+
+```{r}
+#| echo: false
+#| fig-align: center
+plot(qrcode::qr_code("https://psu-psychology.github.io/psych-490-data-viz-2025-spring/exercises/ex00-figs-in-psych-sci.html"))
+```
 
 # Main points
 
@@ -135,7 +171,7 @@ subtitle: "2025-01-14"
 
 # Next time
 
-*Visualization in psychological science*
+*The semiotics of data visualization*
 
 # Resources
 

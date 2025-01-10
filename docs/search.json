@@ -193,7 +193,7 @@
     "href": "slides/wk01-2025-01-14-course-intro.html#today",
     "title": "The Psychology of Data Visualization",
     "section": "Today",
-    "text": "Today\n\nIntroduction to the course\nGetting to know you\nVisualization in psychological science"
+    "text": "Today\n\nIntroduction to the course\nVisualization in psychological science"
   },
   {
     "objectID": "slides/wk01-2025-01-14-course-intro.html#people",
@@ -235,7 +235,7 @@
     "href": "slides/wk01-2025-01-14-course-intro.html#purpose-goals",
     "title": "The Psychology of Data Visualization",
     "section": "Purpose & goals",
-    "text": "Purpose & goals\n\n\nWhat are data? Where does data come from?\nWho visualizes data, how do they visualize it, and why?\nHow does vision science inform how we perceive patterns in data?\nWhat’s the relationship between non-visual and visual ways of understanding data?\nWhat makes a data visualization effective?\nHow can we make better data visualizations?"
+    "text": "Purpose & goals\n\n\nWhat are data? Where do data come from?\nWho visualizes data, how do they visualize it, and why?\nHow does vision science inform how we perceive patterns in data?\nWhat’s the relationship between non-visual and visual ways of understanding data?\nWhat makes a data visualization effective?\nWhat makes a data visualization misleading?\nHow can we make better data visualizations?"
   },
   {
     "objectID": "slides/wk01-2025-01-14-course-intro.html#schedule",
@@ -277,7 +277,7 @@
     "href": "slides/wk01-2025-01-14-course-intro.html#culture-climate",
     "title": "The Psychology of Data Visualization",
     "section": "Culture & climate",
-    "text": "Culture & climate\n\nCreating a community of inquiry\nEncouraging vigorous & constructive criticism\nCriticism of work/ideas/behaviors vs. people\n\n‘Smith thinks that pigs can fly.’\n‘Smith is an idiot.’\n‘Smith tried to demonstrate that pigs can fly by tossing a few off the roof of Old Main. That’s nonsense and made a huge mess.’"
+    "text": "Culture & climate\n\n\nCreating a community of inquiry\nEncouraging vigorous & constructive criticism\nCriticism of work/ideas/behaviors vs. people\n\n‘Smith thinks that pigs can fly.’\n‘Smith is an idiot.’\n‘Smith tried to demonstrate that pigs can fly by tossing a few off the roof of Old Main. That’s nonsense and made a huge mess.’"
   },
   {
     "objectID": "slides/wk01-2025-01-14-course-intro.html#survey-01",
@@ -291,7 +291,7 @@
     "href": "slides/wk01-2025-01-14-course-intro.html#references",
     "title": "The Psychology of Data Visualization",
     "section": "References",
-    "text": "References\n\n\n\n\nIso, A. (2016). Bread - if original [1971]. Youtube. Retrieved from https://www.youtube.com/watch?v=IQyKMueMFGk\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nMatejka, J., & Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In Proceedings of the 2017 CHI conference on human factors in computing systems. New York, NY, USA: ACM. https://doi.org/10.1145/3025453.3025912\n\n\nSilberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. Advances in Methods and Practices in Psychological Science, 1, 337–356. https://doi.org/10.1177/2515245917747646\n\n\nThe Datasaurus dozen - same stats, different graphs | Autodesk Research. (n.d.). Retrieved June 2, 2019, from https://www.autodeskresearch.com/publications/samestats"
+    "text": "References\n\n\n\n\nHuff, D. (1993). How to lie with statistics. New York, NY: WW Norton. Retrieved from https://www.amazon.com/How-Lie-Statistics-Darrell-Huff/dp/0393310728\n\n\nIso, A. (2016). Bread - if original [1971]. Youtube. Retrieved from https://www.youtube.com/watch?v=IQyKMueMFGk\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nMatejka, J., & Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In Proceedings of the 2017 CHI conference on human factors in computing systems. New York, NY, USA: ACM. https://doi.org/10.1145/3025453.3025912\n\n\nMonmonier, M. (2018). How to lie with maps (3rd ed.). Chicago, IL: University of Chicago Press. https://doi.org/10.7208/chicago/9780226436081.001.0001\n\n\nSilberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. Advances in Methods and Practices in Psychological Science, 1, 337–356. https://doi.org/10.1177/2515245917747646\n\n\nThe Datasaurus dozen - same stats, different graphs | Autodesk Research. (n.d.). Retrieved June 2, 2019, from https://www.autodeskresearch.com/publications/samestats"
   },
   {
     "objectID": "tutorials/tutorial-rstudio-on-psu.html",
@@ -786,23 +786,23 @@
   {
     "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#last-time",
     "href": "slides/wk01-2025-01-16-vis-psych-sci.html#last-time",
-    "title": "Visualization in Psychological Science",
+    "title": "Semiotics of data visualization",
     "section": "Last time…",
-    "text": "Last time…"
+    "text": "Last time…\n\nCourse introduction\nVisualization in psychological science"
   },
   {
     "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#today",
     "href": "slides/wk01-2025-01-16-vis-psych-sci.html#today",
-    "title": "Visualization in Psychological Science",
+    "title": "Semiotics of data visualization",
     "section": "Today",
-    "text": "Today\n\nVisualization in Psychological Science\n\nExercise-00"
+    "text": "Today\n\nVisualization in Psychological Science\n\nExercise-00\n\nSemiotics of data visualization"
   },
   {
     "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#references",
     "href": "slides/wk01-2025-01-16-vis-psych-sci.html#references",
-    "title": "Visualization in Psychological Science",
+    "title": "Semiotics of data visualization",
     "section": "References",
-    "text": "References"
+    "text": "References\n\n\n\n\nFont style interpolation with diffusion models. (n.d.). Retrieved January 10, 2025, from https://arxiv.org/html/2402.14311v1\n\n\nKirsch, A. (2021, March 18). The symbolic animal. Retrieved January 10, 2025, from https://www.nybooks.com/articles/2021/04/08/ernst-cassirer-symbolic-animal/\n\n\nSpence, I., & Wainer, H. (2017). William Playfair and the invention of statistical graphs. In Information design (1st Edition, pp. 59–76). Routledge. https://doi.org/10.4324/9781315585680-10\n\n\nThe Editors of Encyclopedia Britannica. (2024, December 19). Semiotics. In Encyclopedia britannica. Retrieved from https://www.britannica.com/science/semiotics"
   },
   {
     "objectID": "slides/wk02-2025-01-23-art-sports.html#announcements",
@@ -838,5 +838,166 @@
     "title": "Data visualization in art & sports",
     "section": "References",
     "text": "References"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#william-playfair",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#william-playfair",
+    "title": "Semiotics of data visualization",
+    "section": "William Playfair",
+    "text": "William Playfair\n\n\n\n“engineer, political economist, and scoundrel” (Spence & Wainer, 2017)\nFounder of graphical methods of statistics\nIntroduced line, area, and bar chart\nLikely published first pie chart and circle graphs\n\n\n\n\n\nEarliest statistical graphic, William Playfair; Wikipedia"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#components-of-a-scientific-paper",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#components-of-a-scientific-paper",
+    "title": "Visualization in Psychological Science",
+    "section": "Components of a scientific paper",
+    "text": "Components of a scientific paper\n\nText\n\nExplanation/argument\nEvidence (statistical summaries)\n\nFigures\nTables\n\nEvidence (statistical summaries)\n\nReferences\nData, materials"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#a-picture-is-worth-a-thousand-words",
+    "href": "slides/wk01-2025-01-14-course-intro.html#a-picture-is-worth-a-thousand-words",
+    "title": "The Psychology of Data Visualization",
+    "section": "A picture is worth a thousand words…",
+    "text": "A picture is worth a thousand words…\n\n“An adage in multiple languages…” Wikipedia\nTheme for the course\nWhat words does this figure convey…"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#my-journey",
+    "href": "slides/wk01-2025-01-14-course-intro.html#my-journey",
+    "title": "The Psychology of Data Visualization",
+    "section": "My journey",
+    "text": "My journey\n\nCognitive Science major, psycholinguistics & semiotics minor\nIntroduced to vision science via Marr and J.J. Gibson\nResearch in visual development, visual neuroscience"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#vision-can-be-unreliable-or-ambiguous",
+    "href": "slides/wk01-2025-01-14-course-intro.html#vision-can-be-unreliable-or-ambiguous",
+    "title": "The Psychology of Data Visualization",
+    "section": "Vision can be unreliable or ambiguous",
+    "text": "Vision can be unreliable or ambiguous"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-14-course-intro.html#exercise-00",
+    "href": "slides/wk01-2025-01-14-course-intro.html#exercise-00",
+    "title": "The Psychology of Data Visualization",
+    "section": "Exercise 00",
+    "text": "Exercise 00\n\nVisit Exercise-00"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#semi-whatics",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#semi-whatics",
+    "title": "Semiotics of data visualization",
+    "section": "Semi-whatics?",
+    "text": "Semi-whatics?\n\nThe Editors of Encyclopedia Britannica (2024)"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#the-symbolic-animal",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#the-symbolic-animal",
+    "title": "Semiotics of data visualization",
+    "section": "The symbolic animal",
+    "text": "The symbolic animal\n\nErnst Cassirer\n\n\nCassirer argues that the classic Aristotelian definition of the human being as a rational animal is wrong, or at least incomplete. Instead we should think of ourselves as “symbolic animals,” since ratiocination is only one expression of the human instinct to think in symbols. Kirsch (2021)"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#the-communicating-animal",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#the-communicating-animal",
+    "title": "Semiotics of data visualization",
+    "section": "The communicating animal",
+    "text": "The communicating animal\n\nCommunication as transmission of information\nFrom world\n\n\n\n\n\n\nflowchart LR\n  A[World] --&gt; B[You]"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#multiple-input-channels",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#multiple-input-channels",
+    "title": "Visualization in Psychological Science",
+    "section": "Multiple input channels",
+    "text": "Multiple input channels\n\n\n\nAcoustic\nTactile\nOlfactory\nVisual\n\n\n\n\n\nhttps://elearning.adobe.com/2018/04/classic-learning-research-practice-sensory-channels-keep-learners-attention/"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#communication",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#communication",
+    "title": "Semiotics of data visualization",
+    "section": "Communication",
+    "text": "Communication\n\nFrom others (direct)\n\n\n\n\n\n\nflowchart LR\n  A[Me] --&gt; B[You]\n\n\n\n\n\n\n\nFrom others (via some medium)\n\n\n\n\n\n\nflowchart LR\n  A[Me] --&gt; B((Medium))\n  B --&gt; C[You]"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#multiple-channels",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#multiple-channels",
+    "title": "Visualization in Psychological Science",
+    "section": "Multiple channels",
+    "text": "Multiple channels\n\n\n\nAcoustic\nTactile\nOlfactory\nVisual\n\n\n\n\n\nhttps://elearning.adobe.com/2018/04/classic-learning-research-practice-sensory-channels-keep-learners-attention/"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#media",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#media",
+    "title": "Semiotics of data visualization",
+    "section": "Media",
+    "text": "Media\n\nSource of signs1\nSign relation\n\nSign itself –&gt; Meaning\nRelation is arbitrary, defined by social convention (Sausurre)\n\n\n ## Multiple channels\n\n\n\nAcoustic\nTactile\nOlfactory\nVisual\n\n\n\n\n\nhttps://elearning.adobe.com/2018/04/classic-learning-research-practice-sensory-channels-keep-learners-attention/\n\n\n\nmore general than language"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#more-or-less-meaningful",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#more-or-less-meaningful",
+    "title": "Semiotics of data visualization",
+    "section": "More or less meaningful",
+    "text": "More or less meaningful\n\n\n\n\n\nhttps://www.religious-symbols.net/\n\n\n::: {.column width=50% \n\n::::"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#communication-between-minds",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#communication-between-minds",
+    "title": "Semiotics of data visualization",
+    "section": "Communication between minds",
+    "text": "Communication between minds\n\nVia symbols\nBased on shared social conventions\nAbout sign relations (what signs “mean” or convey)\nOpen vs. closed symbol systems"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#how-scientists-communicate",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#how-scientists-communicate",
+    "title": "Semiotics of data visualization",
+    "section": "How scientists communicate",
+    "text": "How scientists communicate\n\nPapers\nPosters\nTextbooks\nWebsites\nTalks"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#components-of-a-scientific-papers",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#components-of-a-scientific-papers",
+    "title": "Semiotics of data visualization",
+    "section": "Components of a scientific papers",
+    "text": "Components of a scientific papers\n\nText\n\nExplanation/argument\nEvidence (statistical summaries)\n\nFigures\nTables\n\nEvidence (statistical summaries)\n\nReferences\nData, materials"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#questions-about-scientific-communication",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#questions-about-scientific-communication",
+    "title": "Semiotics of data visualization",
+    "section": "Questions about scientific communication",
+    "text": "Questions about scientific communication\n\nWhat do the words mean?\nWhat do the numbers/statistics mean?\nWhat do the figures mean?\nDoes the evidence (+ argument) persuade?"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#semiotics-of-data-visualization-1",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#semiotics-of-data-visualization-1",
+    "title": "Semiotics of data visualization",
+    "section": "Semiotics of data visualization",
+    "text": "Semiotics of data visualization\n\nWhat do the components mean?\nWhat message is the visualization creator trying to convey?"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#questions",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#questions",
+    "title": "Semiotics of data visualization",
+    "section": "Questions",
+    "text": "Questions\n\nAre there common types of visualizations in psychological science?\nWhat (types) messages are conveyed?\nHow clearly are they conveyed?\nHow are the following depicted:\n\nResponses to surveys\nPerformance on tasks/tests\nBrain structure or activity"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#sign-systems-can-unite",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#sign-systems-can-unite",
+    "title": "Semiotics of data visualization",
+    "section": "Sign systems can unite",
+    "text": "Sign systems can unite\n\n(Steiner1998-a?)\nor divide"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#semiotics-of-data-visualization-2",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#semiotics-of-data-visualization-2",
+    "title": "Semiotics of data visualization",
+    "section": "Semiotics of data visualization",
+    "text": "Semiotics of data visualization\n\nSemiotics: study of signs and symbols\nWhat meanings do the visual elements of data graphics convey?\nHow do data visualizations related to other communicative elements?"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-vis-psych-sci.html#visualization-in-psychological-science-1",
+    "href": "slides/wk01-2025-01-16-vis-psych-sci.html#visualization-in-psychological-science-1",
+    "title": "Semiotics of data visualization",
+    "section": "Visualization in psychological science",
+    "text": "Visualization in psychological science\n\nConventions (common patterns) in data visualization\nDifferent viz types for different psychological measures"
   }
 ]

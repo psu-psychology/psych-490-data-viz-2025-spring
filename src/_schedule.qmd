@@ -8,18 +8,19 @@
 
 *Course introduction*
 
+- Read: @Cairo2013-hm, Chapter 1
 - [Slides](slides/wk01-2025-01-14-course-intro.qmd)
 
 #### Thursday, January 16 {-}
 
-*Visualization in psychological science*
+*The semiotics of data visualization*
 
 - [Slides](slides/wk01-2025-01-16-viz-psych-sci.qmd)
 - [Exercise-00](exercises/ex00-figs-in-psych-sci.qmd)
 
 ### January 20-24 {- #week-02}
 
-*Who (else) visualizes data and why*
+*Who visualizes data and why*
 
 #### Tuesday, January 21 {-}
 
@@ -57,15 +58,21 @@
 
 *From stimulus to sensation*
 
+- Read: @Cairo2013-hm, Chapter 5
+
 #### Thursday, February 06 {-}
 
 *From sensation to perception*
+
+- Read: @Cairo2013-hm, Chapter 6
 
 ### February 10-14 {- #week-05}
 
 *From cognition to understanding*
 
 #### Tuesday, February 11 {-}
+
+- Read: @Cairo2013-hm, Chapter 7
 
 #### Thursday, February 13 {-}
 
@@ -75,7 +82,12 @@
 
 #### Tuesday, February 18 {-}
 
+- Read: @Knaflic2015-wq, pp. ix-33
+- Skim: @Woodside2008-yv
+
 #### Thursday, February 20 {-}
+
+- Read: @Knaflic2015-wq, pp. 33-69
 
 ### February 24-28 {- #week-07}
 
@@ -83,13 +95,19 @@
 
 #### Tuesday, February 25 {-}
 
+- Read: @Tufte2001-cb, Chapter 1
+
 #### Thursday, February 27 {-}
+
+- Read: @Tufte2001-cb, Chapter 2
 
 ### March 3-7 {- #week-08}
 
-*Exploring data with spreadsheets*
+*Exploring data*
 
 #### Tuesday, March 04 {-}
+
+- Read: @Tukey1977-ro, Chapter 1
 
 #### Thursday, March 06 {-}
 

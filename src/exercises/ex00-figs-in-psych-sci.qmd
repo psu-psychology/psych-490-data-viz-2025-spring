@@ -37,7 +37,7 @@ Try to pick visualizations that are interesting to you in some way.
 
 <https://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6tRzpfdgXBYyPooCPo/edit?usp=sharing>
 
-Specifically, enter your team identifier in the `identifier` field, the source in `source_type`, and the URL in the `url` field. If you have any comments to add, put those in the `comments` field.
+Specifically, enter your team identifier in the `identifier` field, the source in `source_type`, and the URL in the `url` field. Please say briefly why you chose this particular visualization. If you have any comments to add, put those in the `comments` field.
 
 4. Next, visit the websites of at least three (3) journals and do the same thing--pick at least two (2) visualizations from each of the journals.
 
@@ -59,4 +59,6 @@ So, feel free to mix it up.
 
 ## Submit {-}
 
-Your data to the shared Google Spreadsheet.
+- Your data to the shared Google Spreadsheet.
+
+

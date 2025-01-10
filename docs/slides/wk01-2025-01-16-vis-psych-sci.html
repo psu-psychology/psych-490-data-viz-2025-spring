@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.6.40">
 
   <meta name="author" content="Rick Gilmore">
-  <title>PSYCH 490 • Spr 2025 – Visualization in Psychological Science</title>
+  <title>PSYCH 490 • Spr 2025 – Semiotics of data visualization</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,7 +28,27 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
   <link rel="stylesheet" href="../include/css/gilmore-revealjs.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -122,13 +142,16 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Visualization in Psychological Science</h1>
+  <h1 class="title">Semiotics of data visualization</h1>
   <p class="subtitle">2025-01-16</p>
 
 <div class="quarto-title-authors">
@@ -140,36 +163,266 @@ Rick Gilmore
 </div>
 
 </section>
+<section>
 <section id="prelude" class="title-slide slide level1 center">
 <h1>Prelude</h1>
 
 </section>
-
+<section id="william-playfair" class="slide level2">
+<h2>William Playfair</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>“engineer, political economist, and scoundrel” <span class="citation" data-cites="Spence2017-hp">(<a href="#/references" role="doc-biblioref" onclick="">Spence &amp; Wainer, 2017</a>)</span></li>
+<li>Founder of graphical methods of statistics</li>
+<li>Introduced line, area, and bar chart</li>
+<li>Likely published first pie chart and circle graphs</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Playfair_TimeSeries-2.png/520px-Playfair_TimeSeries-2.png"></p>
+<figcaption>Earliest statistical graphic, William Playfair; <a href="https://en.wikipedia.org/wiki/William_Playfair">Wikipedia</a></figcaption>
+</figure>
+</div>
+</div></div>
+</section></section>
 <section>
 <section id="overview" class="title-slide slide level1 center">
 <h1>Overview</h1>
-
-</section>
-<section id="announcements" class="slide level2">
-<h2>Announcements</h2>
+<!-- ## Announcements -->
 </section>
 <section id="last-time" class="slide level2">
 <h2>Last time…</h2>
+<ul>
+<li>Course introduction</li>
+<li>Visualization in psychological science</li>
+</ul>
 </section>
 <section id="today" class="slide level2">
 <h2>Today</h2>
 <ul>
 <li>Visualization in Psychological Science
 <ul>
-<li><a href="exercises/ex00-figs-in-psych-sci.qmd">Exercise-00</a></li>
+<li><a href="../exercises/ex00-figs-in-psych-sci.qmd">Exercise-00</a></li>
+</ul></li>
+<li>Semiotics of data visualization</li>
+</ul>
+</section></section>
+<section>
+<section id="semiotics-of-data-visualization" class="title-slide slide level1 center">
+<h1>Semiotics of data visualization</h1>
+
+</section>
+<section id="semi-whatics" class="slide level2">
+<h2>Semi-whatics?</h2>
+
+<img data-src="../include/img/semiotics-britannica.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="The-Editors-of-Encyclopedia-Britannica2024-ot">The Editors of Encyclopedia Britannica (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span></p></section>
+<section id="the-symbolic-animal" class="slide level2">
+<h2>The symbolic animal</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Ernst_Cassirer">Ernst Cassirer</a></li>
+</ul>
+<blockquote>
+<p>Cassirer argues that the classic Aristotelian definition of the human being as a rational animal is wrong, or at least incomplete. Instead we should think of ourselves as “symbolic animals,” since ratiocination is only one expression of the human instinct to think in symbols. <span class="citation" data-cites="Kirsch2021-fd">Kirsch (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span></p>
+</blockquote>
+</section>
+<section id="the-communicating-animal" class="slide level2">
+<h2>The communicating animal</h2>
+<ul>
+<li>Communication as transmission of information</li>
+<li>From world</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[World] --&gt; B[You]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="communication" class="slide level2">
+<h2>Communication</h2>
+<ul>
+<li>From others (direct)</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[Me] --&gt; B[You]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
+<li>From others (via some medium)</li>
+</ul>
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[Me] --&gt; B((Medium))
+  B --&gt; C[You]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="media" class="slide level2">
+<h2>Media</h2>
+<ul>
+<li>Source of <a href="https://en.wikipedia.org/wiki/Sign_(semiotics)"><em>signs</em></a><sup>1</sup></li>
+<li>Sign relation
+<ul>
+<li>Sign itself –&gt; Meaning</li>
+<li>Relation is arbitrary, defined by social convention (Sausurre)</li>
+</ul></li>
+</ul>
+<p><img data-src="https://arxiv.org/html/2402.14311v1/x1.png" alt="“Font style interpolation with diffusion models” (n.d.)"> ## Multiple channels</p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>Acoustic</li>
+<li>Tactile</li>
+<li>Olfactory</li>
+<li>Visual</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://elearningimages.adobe.com/files/2017/12/Sensory-Brain.png-1024x591.png"></p>
+<figcaption>https://elearning.adobe.com/2018/04/classic-learning-research-practice-sensory-channels-keep-learners-attention/</figcaption>
+</figure>
+</div>
+</div></div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>more general than language</p></li></ol></aside></section>
+<section id="more-or-less-meaningful" class="slide level2">
+<h2>More or less meaningful</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://www.religious-symbols.net/Pictures/religious-symbols_2.png"></p>
+<figcaption>https://www.religious-symbols.net/</figcaption>
+</figure>
+</div>
+</div><p>::: {.column width=50% <img data-src="https://static.vecteezy.com/system/resources/previews/038/920/831/non_2x/abstract-collection-2-graphic-geometric-symbols-and-objects-in-y2k-style-templates-for-notes-posters-banners-stickers-business-cards-logo-vector.jpg" alt="https://www.vecteezy.com/free-vector/symbols"></p>
+</div>
+<p>::::</p>
+</section>
+<section id="communication-between-minds" class="slide level2">
+<h2>Communication between minds</h2>
+<ul>
+<li>Via symbols</li>
+<li>Based on shared social conventions</li>
+<li>About sign relations (what signs “mean” or convey)</li>
+<li>Open vs.&nbsp;closed symbol systems</li>
+</ul>
+</section>
+<section id="sign-systems-can-unite" class="slide level2">
+<h2>Sign systems can unite</h2>
+
+<img data-src="https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Steiner_AfterBabel.jpg/200px-Steiner_AfterBabel.jpg" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Steiner1998-a">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Steiner1998-a?</strong></a>)</span></p><ul>
+<li>or divide</li>
+</ul>
+</section>
+<section id="how-scientists-communicate" class="slide level2">
+<h2>How scientists communicate</h2>
+<ul>
+<li>Papers</li>
+<li>Posters</li>
+<li>Textbooks</li>
+<li>Websites</li>
+<li>Talks</li>
+</ul>
+</section>
+<section id="components-of-a-scientific-papers" class="slide level2">
+<h2>Components of a scientific papers</h2>
+<ul>
+<li>Text
+<ul>
+<li>Explanation/argument</li>
+<li>Evidence (statistical summaries)</li>
+</ul></li>
+<li>Figures</li>
+<li>Tables
+<ul>
+<li>Evidence (statistical summaries)</li>
+</ul></li>
+<li>References</li>
+<li>Data, materials</li>
+</ul>
+</section>
+<section id="questions-about-scientific-communication" class="slide level2">
+<h2>Questions about scientific communication</h2>
+<ul>
+<li>What do the words mean?</li>
+<li>What do the numbers/statistics mean?</li>
+<li>What do the figures mean?</li>
+<li>Does the evidence (+ argument) persuade?</li>
+</ul>
+</section>
+<section id="semiotics-of-data-visualization-1" class="slide level2">
+<h2>Semiotics of data visualization</h2>
+<ul>
+<li>What do the components mean?</li>
+<li>What message is the visualization creator trying to convey?</li>
+</ul>
+</section></section>
+<section>
+<section id="visualization-in-psychological-science" class="title-slide slide level1 center">
+<h1>Visualization in psychological science</h1>
+
+</section>
+<section id="questions" class="slide level2">
+<h2>Questions</h2>
+<ul>
+<li>Are there common types of visualizations in psychological science?</li>
+<li>What (types) messages are conveyed?</li>
+<li>How clearly are they conveyed?</li>
+<li>How are the following depicted:
+<ul>
+<li>Responses to surveys</li>
+<li>Performance on tasks/tests</li>
+<li>Brain structure or activity</li>
 </ul></li>
 </ul>
 </section></section>
+<section>
 <section id="main-points" class="title-slide slide level1 center">
 <h1>Main points</h1>
 
 </section>
-
+<section id="semiotics-of-data-visualization-2" class="slide level2">
+<h2>Semiotics of data visualization</h2>
+<ul>
+<li><em>Semiotics</em>: study of signs and symbols</li>
+<li>What meanings do the visual elements of data graphics convey?</li>
+<li>How do data visualizations related to other communicative elements?</li>
+</ul>
+</section>
+<section id="visualization-in-psychological-science-1" class="slide level2">
+<h2>Visualization in psychological science</h2>
+<ul>
+<li>Conventions (common patterns) in data visualization</li>
+<li>Different viz types for different psychological measures</li>
+</ul>
+</section></section>
 <section id="next-time" class="title-slide slide level1 center">
 <h1>Next time</h1>
 <p><em>Visualization in government &amp; business</em></p>
@@ -180,16 +433,31 @@ Rick Gilmore
 <h1>Resources</h1>
 
 </section>
-<section id="references" class="slide level2">
+<section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-UnknownUnknown-ey" class="csl-entry" role="listitem">
+Font style interpolation with diffusion models. (n.d.). Retrieved January 10, 2025, from <a href="https://arxiv.org/html/2402.14311v1">https://arxiv.org/html/2402.14311v1</a>
+</div>
+<div id="ref-Kirsch2021-fd" class="csl-entry" role="listitem">
+Kirsch, A. (2021, March 18). The symbolic animal. Retrieved January 10, 2025, from <a href="https://www.nybooks.com/articles/2021/04/08/ernst-cassirer-symbolic-animal/">https://www.nybooks.com/articles/2021/04/08/ernst-cassirer-symbolic-animal/</a>
+</div>
+<div id="ref-Spence2017-hp" class="csl-entry" role="listitem">
+Spence, I., &amp; Wainer, H. (2017). William <span>P</span>layfair and the invention of statistical graphs. In <em>Information design</em> (1st Edition, pp. 59–76). Routledge. <a href="https://doi.org/10.4324/9781315585680-10">https://doi.org/10.4324/9781315585680-10</a>
+</div>
+<div id="ref-The-Editors-of-Encyclopedia-Britannica2024-ot" class="csl-entry" role="listitem">
+The Editors of Encyclopedia Britannica. (2024, December 19). Semiotics. In <em>Encyclopedia britannica</em>. Retrieved from <a href="https://www.britannica.com/science/semiotics">https://www.britannica.com/science/semiotics</a>
+</div>
+</div>
 </section></section>
+
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="https://brand.psu.edu/images/backgrounds/penn-state-shield.jpg" class="slide-logo"></p>
 <div class="footer footer-default">
-<p><a href="../index.html">PSYCH 490.003 • Spring 2025</a></p>
+<p><a href="../index.html">PSYCH 490.001 • Spring 2025</a></p>
 </div>
 </div></div>
 
