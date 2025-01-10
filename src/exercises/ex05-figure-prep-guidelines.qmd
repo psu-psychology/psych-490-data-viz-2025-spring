@@ -1,0 +1,31 @@
+---
+title: "Exercise XX"
+subtitle: "Making better figures"
+---
+
+## Dates {-}
+
+## Goals {-}
+
+1. Read and understand published figure preparation guidelines for prospective authors of scientific manuscripts.
+2. Evaluate the guidelines relative to the best practices we've discussed this semester in class.
+
+## Assignment {-}
+
+### Background
+
+Some scientific journals provide advice to prospective authors about how to prepare figures for manuscripts submitted to the journals.
+Here are two examples:
+
+- [Nature](https://www.nature.com/documents/natrev-figure-guidelines-v1.pdf)
+- [American Psychological Association (APA)](https://apastyle.apa.org/style-grammar-guidelines/tables-figures)
+
+### Tasks
+
+1. Find and read critically the guidelines for publishing figures in a journal of your choosing.
+2. Compare the guidelines to the best practices that we have discussed this semester in class [@@Franconeri2021-uv; @Knaflic2015-wq; @Tufte2001-cb].
+3. Do the guidelines reflect current knowledge about data visualization practices. If not how could the guidelines be amended to provide better guidance to authors in these journals?
+
+## Submit {-}
+
+A 3-5 pp (750-1,300 word) write-up of your findings.

@@ -16,7 +16,7 @@
 *The semiotics of data visualization*
 
 - [Slides](slides/wk01-2025-01-16-viz-psych-sci.qmd)
-- [Exercise-00](exercises/ex00-figs-in-psych-sci.qmd)
+- [Exercise 01](exercises/ex01-figs-in-psych-sci.qmd) [assigned]{.green-assigned}
 
 ### January 20-24 {- #week-02}
 
@@ -33,6 +33,7 @@
 *Visualization in art, sports, and journalism*
 
 - [Slides](slides/wk02-2025-01-23-art-sports.qmd)
+- [Exercise 02](exercise/ex02-data-viz-outside-psych.qmd)
 
 ### January 27-31 {- #week-03}
 
@@ -49,6 +50,8 @@
 #### Thursday, January 30 {-}
 
 *Figure types*
+
+- [Exercise-03](exercises/ex03-making-data.qmd) [assigned]{.green-assigned}
 
 ### February 3-7 {- #week-04}
 
@@ -72,22 +75,35 @@
 
 #### Tuesday, February 11 {-}
 
-- Read: @Cairo2013-hm, Chapter 7
+- Read:
+  - @Franconeri2021-uv, pp. 109-122
+  - @Cairo2013-hm, Chapter 7
 
 #### Thursday, February 13 {-}
 
+*Designing efficient & understandable visualizations*
+
+- Read:
+  - @Franconeri2021-uv, pp. 123-139
+- [Exercise-04](exercise/ex04-science-of-data-viz.qmd) [assigned]{.green-assigned}
+  
 ### February 17-21 {- #week-06}
 
 *Storytelling with data*
 
 #### Tuesday, February 18 {-}
 
-- Read: @Knaflic2015-wq, pp. ix-33
-- Skim: @Woodside2008-yv
+*Communicating uncertainty and risk*  
+
+- Read: @Franconeri2021-uv, pp. 139-150 
 
 #### Thursday, February 20 {-}
 
+*Storytelling with data*
+
+- Read: @Knaflic2015-wq, pp. ix-33
 - Read: @Knaflic2015-wq, pp. 33-69
+- Skim: @Woodside2008-yv
 
 ### February 24-28 {- #week-07}
 
@@ -95,12 +111,14 @@
 
 #### Tuesday, February 25 {-}
 
-- Read: @Tufte2001-cb, Chapter 1
+- Read: 
+  - @Tufte2001-cb, Chapter 1
 
 #### Thursday, February 27 {-}
 
 - Read: @Tufte2001-cb, Chapter 2
-
+- [Final Project](exercises/final-project.qmd) proposal [due]{.orange-due}
+ 
 ### March 3-7 {- #week-08}
 
 *Exploring data*
@@ -110,6 +128,8 @@
 - Read: @Tukey1977-ro, Chapter 1
 
 #### Thursday, March 06 {-}
+
+- [Exercise-05](exercise/ex05-figure-prep-guidelines.qmd) [assigned]{.green-assigned}
 
 ### March 10-14 *Spring Break* {- #spring-break}
 
@@ -123,6 +143,8 @@
 
 #### Thursday, March 20 {-}
 
+**NO CLASS**
+
 ### March 24-28 {- #week-10}
 
 *Exploring data with R*
@@ -134,6 +156,8 @@
 #### Thursday, March 27 {-}
 
 *Making plots with `ggplot2`*
+
+- [Exercise-06](exercise/ex06-figs-w-r.qmd) [assigned]{.green-assigned}
 
 ### March 31 - April 4 {- #week-11}
 
@@ -150,6 +174,8 @@
 #### Tuesday, April 08 {-}
 
 #### Thursday, April 10 {-}
+
+- [Exercise-YY](exercise/ex07-figs-w-python.qmd) [assigned]{.green-assigned}
 
 ### April 14-18 {- #week-13}
 
@@ -169,7 +195,7 @@
 
 ### April 28 - May 2 {- #week-15}
 
-*Student Projects*
+*Final Project Presentations*
 
 #### Tuesday, April 29 {-}
 
