@@ -156,12 +156,12 @@ subtitle: "2025-01-14"
 
 ## Exercise 00
 
-- Visit [Exercise-00](exercises/ex00-figs-in-psych-sci.qmd)
+- Visit [Exercise-00](exercises/ex01-figs-in-psych-sci.qmd)
 
 ```{r}
 #| echo: false
 #| fig-align: center
-plot(qrcode::qr_code("https://psu-psychology.github.io/psych-490-data-viz-2025-spring/exercises/ex00-figs-in-psych-sci.html"))
+plot(qrcode::qr_code("https://psu-psychology.github.io/psych-490-data-viz-2025-spring/exercises/ex01-figs-in-psych-sci.html"))
 ```
 
 # Main points

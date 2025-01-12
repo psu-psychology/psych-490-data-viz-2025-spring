@@ -30,9 +30,9 @@ subtitle: "2025-01-16"
 
 ## Today
 
-- Visualization in Psychological Science
-  - [Exercise-00](../exercises/ex00-figs-in-psych-sci.qmd)
 - Semiotics of data visualization
+- Visualization in psychological science
+  - [Exercise-01](../exercises/ex01-figs-in-psych-sci.qmd)
   
 # Semiotics of data visualization
 
@@ -78,10 +78,21 @@ flowchart LR
 
 - Source of [*signs*](https://en.wikipedia.org/wiki/Sign_(semiotics))^[more general than language]
 - Sign relation
-  - Sign itself --> Meaning
+  - Sign (as a thing) --> Meaning
   - Relation is arbitrary, defined by social convention (Sausurre)
   
+---
+  
 ![@UnknownUnknown-ey](https://arxiv.org/html/2402.14311v1/x1.png)
+
+## Core qualities of sign systems
+
+- Semantics
+  - Relation between signs --> meaning
+- Syntax (grammar)
+  - Rules/conventions for arranging signs
+  
+
 ## Multiple channels
 
 :::: {.columns}
@@ -96,31 +107,53 @@ flowchart LR
 :::
 ::::
 
-## More or less meaningful
+## Vary in 'meaningfulness'
 
 :::: {.columns}
 ::: {.column width=50%}
 ![https://www.religious-symbols.net/](https://www.religious-symbols.net/Pictures/religious-symbols_2.png)
 :::
-::: {.column width=50%
+::: {.column width=50%}
 ![https://www.vecteezy.com/free-vector/symbols](https://static.vecteezy.com/system/resources/previews/038/920/831/non_2x/abstract-collection-2-graphic-geometric-symbols-and-objects-in-y2k-style-templates-for-notes-posters-banners-stickers-business-cards-logo-vector.jpg)
 :::
 ::::
 
 ## Communication between minds
 
-- Via symbols
+- Via signs and symbols
 - Based on shared social conventions
 - About sign relations (what signs "mean" or convey)
 - Open vs. closed symbol systems
 
-## Sign systems can unite
+## Sign systems can unite/inform or divide/confuse
 
 ![@Steiner1998-a](https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Steiner_AfterBabel.jpg/200px-Steiner_AfterBabel.jpg)
 
-- or divide
+## Sign system grammars
 
-## How scientists communicate
+:::: {.columns}
+::: {.column width=50%}
+- $2+2*3=4$ vs. $2+(2*3)=4$
+- "Up with you I will not put." vs. "I will not put up with you."
+- 
+:::
+::: {.column width=50%}
+![](../include/img/yoda-failure-teacher.jpg)
+:::
+::::
+
+## Grammar of Graphics
+
+:::: {.columns}
+::: {.column width=50%}
+![@Wilkinson2005-do](../include/img/wilkinson-grammar-of-graphics.jpg)
+:::
+::: {.column width=50%}
+![@WickhamUnknown-kj](../include/img/ggplot2-cover.jpg)
+:::
+::::
+
+## How scientists communicate (formally)
 
 - Papers
 - Posters

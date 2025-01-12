@@ -15,7 +15,7 @@
 
 *The semiotics of data visualization*
 
-- [Slides](slides/wk01-2025-01-16-viz-psych-sci.qmd)
+- [Slides](slides/wk01-2025-01-16-semiotics-data-viz.qmd)
 - [Exercise 01](exercises/ex01-figs-in-psych-sci.qmd) [assigned]{.green-assigned}
 
 ### January 20-24 {- #week-02}
@@ -33,7 +33,8 @@
 *Visualization in art, sports, and journalism*
 
 - [Slides](slides/wk02-2025-01-23-art-sports.qmd)
-- [Exercise 02](exercise/ex02-data-viz-outside-psych.qmd)
+- [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd) [assigned]{.green-assigned}
+- [Exercise 01](exercises/ex01-figs-in-psych-sci.qmd) [due]{.orange-due}
 
 ### January 27-31 {- #week-03}
 
@@ -45,13 +46,14 @@
 
 - Required:
   - @Stevens1946-sh
-- [Slides](slides/wk03-2025-01-16-making-data.qmd)
+- [Slides](slides/wk03-2025-01-28-making-data.qmd)
 
 #### Thursday, January 30 {-}
 
 *Figure types*
 
 - [Exercise-03](exercises/ex03-making-data.qmd) [assigned]{.green-assigned}
+- [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd) [due]{.orange-due}
 
 ### February 3-7 {- #week-04}
 
@@ -68,6 +70,7 @@
 *From sensation to perception*
 
 - Read: @Cairo2013-hm, Chapter 6
+- [Exercise-03](exercises/ex03-making-data.qmd) [due]{.orange-due}
 
 ### February 10-14 {- #week-05}
 
@@ -85,7 +88,7 @@
 
 - Read:
   - @Franconeri2021-uv, pp. 123-139
-- [Exercise-04](exercise/ex04-science-of-data-viz.qmd) [assigned]{.green-assigned}
+- [Exercise-04](exercises/ex04-sci-of-data-viz.qmd) [assigned]{.green-assigned}
   
 ### February 17-21 {- #week-06}
 
@@ -104,6 +107,7 @@
 - Read: @Knaflic2015-wq, pp. ix-33
 - Read: @Knaflic2015-wq, pp. 33-69
 - Skim: @Woodside2008-yv
+- [Final Project](exercises/final-project.qmd) proposal [assigned]{.green-assigned}
 
 ### February 24-28 {- #week-07}
 
@@ -117,8 +121,7 @@
 #### Thursday, February 27 {-}
 
 - Read: @Tufte2001-cb, Chapter 2
-- [Final Project](exercises/final-project.qmd) proposal [due]{.orange-due}
- 
+
 ### March 3-7 {- #week-08}
 
 *Exploring data*
@@ -126,10 +129,12 @@
 #### Tuesday, March 04 {-}
 
 - Read: @Tukey1977-ro, Chapter 1
+- [Final Project](exercises/final-project.qmd) proposal [due]{.orange-due}
 
 #### Thursday, March 06 {-}
 
-- [Exercise-05](exercise/ex05-figure-prep-guidelines.qmd) [assigned]{.green-assigned}
+- [Exercise-04](exercises/ex04-sci-of-data-viz.qmd) [due]{.orange-due}
+- [Exercise-05](exercises/ex05-figure-prep-guidelines.qmd) [assigned]{.green-assigned}
 
 ### March 10-14 *Spring Break* {- #spring-break}
 
@@ -145,6 +150,8 @@
 
 **NO CLASS**
 
+- [Exercise-05](exercises/ex05-figure-prep-guidelines.qmd) [due]{.orange-due}
+
 ### March 24-28 {- #week-10}
 
 *Exploring data with R*
@@ -157,7 +164,7 @@
 
 *Making plots with `ggplot2`*
 
-- [Exercise-06](exercise/ex06-figs-w-r.qmd) [assigned]{.green-assigned}
+- [Exercise-06](exercises/ex06-figs-w-r.qmd) [assigned]{.green-assigned}
 
 ### March 31 - April 4 {- #week-11}
 
@@ -167,6 +174,8 @@
 
 #### Thursday, April 03 {-}
 
+- [Exercise-06](exercises/ex06-figs-w-r.qmd) [due]{.orange-due}
+
 ### April 7-11 {- #week-12}
 
 *Exploring data with Python*
@@ -175,7 +184,7 @@
 
 #### Thursday, April 10 {-}
 
-- [Exercise-YY](exercise/ex07-figs-w-python.qmd) [assigned]{.green-assigned}
+- [Exercise-07](exercises/ex07-figs-w-python.qmd) [assigned]{.green-assigned}
 
 ### April 14-18 {- #week-13}
 
@@ -184,6 +193,8 @@
 #### Tuesday, April 15 {-}
 
 #### Thursday, April 17 {-}
+
+- [Exercise-07](exercises/ex07-figs-w-python.qmd) [due]{.orange-due}
 
 ### April 21-25 {- #week-14}
 
@@ -205,7 +216,6 @@
 
 *Finals Week*
 
-#### Tuesday, April 29 {-}
+#### Tuesday, May 05 {-}
 
-- Final project write-up due
-
+- [Final project](exercises/final-project.qmd) write-up [due]{.orange-due}
