@@ -9,6 +9,10 @@ subtitle: "2025-01-21"
 
 ## Announcements
 
+- Free access to newspapers
+
+![https://studentaffairs.psu.edu/involvement-student-life/student-services/student-news-readership-program](../include/img/psu-news-readership.png)
+
 ## Last time...
 
 *Semiotics of data visualization*

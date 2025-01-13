@@ -154,9 +154,9 @@ subtitle: "2025-01-14"
 
 # Visualization in psychological science
 
-## Exercise 00
+## Exercise 01
 
-- Visit [Exercise-00](exercises/ex01-figs-in-psych-sci.qmd)
+- Visit [Exercise-01](../exercises/ex01-figs-in-psych-sci.qmd)
 
 ```{r}
 #| echo: false

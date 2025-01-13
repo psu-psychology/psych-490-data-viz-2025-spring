@@ -13,7 +13,7 @@ subtitle: "2025-01-23"
 
 ## Announcements
 
-- [Exercise 01](../exercise/ex01-figs-in-psych-sci.qmd) [due]{.orange-due}
+- [Exercise 01](../exercises/ex01-figs-in-psych-sci.qmd) [due]{.orange-due}
 
 ## Last time...
 
@@ -28,6 +28,13 @@ subtitle: "2025-01-23"
 # Data visualization in sports
 
 # Data visualization in journalism
+
+---
+
+![@Paris2025-lf](../include/img/paris-nyt-vax-2025-01-13.fig1.png)
+---
+
+![@Paris2025-lf](../include/img/paris-nyt-vax-2025-01-13-fig2.png)
 
 ## Data journalism
 

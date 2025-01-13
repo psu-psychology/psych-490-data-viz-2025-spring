@@ -8,13 +8,13 @@
 
 *Course introduction*
 
-- Read: @Cairo2013-hm, Chapter 1
 - [Slides](slides/wk01-2025-01-14-course-intro.qmd)
 
 #### Thursday, January 16 {-}
 
 *The semiotics of data visualization*
 
+- Read: @Cairo2013-hm, Chapter 1-2, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927889)
 - [Slides](slides/wk01-2025-01-16-semiotics-data-viz.qmd)
 - [Exercise 01](exercises/ex01-figs-in-psych-sci.qmd) [assigned]{.green-assigned}
 
@@ -32,7 +32,7 @@
 
 *Visualization in art, sports, and journalism*
 
-- [Slides](slides/wk02-2025-01-23-art-sports.qmd)
+- [Slides](slides/wk02-2025-01-23-art-sports-journ.qmd)
 - [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd) [assigned]{.green-assigned}
 - [Exercise 01](exercises/ex01-figs-in-psych-sci.qmd) [due]{.orange-due}
 
@@ -44,8 +44,7 @@
 
 *Making (sense of) data*
 
-- Required:
-  - @Stevens1946-sh
+- Read: @Stevens1946-sh
 - [Slides](slides/wk03-2025-01-28-making-data.qmd)
 
 #### Thursday, January 30 {-}
@@ -63,13 +62,13 @@
 
 *From stimulus to sensation*
 
-- Read: @Cairo2013-hm, Chapter 5
+- Read: @Cairo2013-hm, Chapter 5, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892)
 
 #### Thursday, February 06 {-}
 
 *From sensation to perception*
 
-- Read: @Cairo2013-hm, Chapter 6
+- Read: @Cairo2013-hm, Chapter 6, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892)
 - [Exercise-03](exercises/ex03-making-data.qmd) [due]{.orange-due}
 
 ### February 10-14 {- #week-05}
@@ -80,7 +79,7 @@
 
 - Read:
   - @Franconeri2021-uv, pp. 109-122
-  - @Cairo2013-hm, Chapter 7
+  - @Cairo2013-hm, Chapter 7, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892)
 
 #### Thursday, February 13 {-}
 
@@ -104,8 +103,8 @@
 
 *Storytelling with data*
 
-- Read: @Knaflic2015-wq, pp. ix-33
-- Read: @Knaflic2015-wq, pp. 33-69
+- Read: @Knaflic2015-wq, pp. ix-33, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927897)
+- Read: @Knaflic2015-wq, pp. 33-69, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927897)
 - Skim: @Woodside2008-yv
 - [Final Project](exercises/final-project.qmd) proposal [assigned]{.green-assigned}
 
@@ -116,11 +115,11 @@
 #### Tuesday, February 25 {-}
 
 - Read: 
-  - @Tufte2001-cb, Chapter 1
+  - @Tufte2001-cb, Chapter 1, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927901)
 
 #### Thursday, February 27 {-}
 
-- Read: @Tufte2001-cb, Chapter 2
+- Read: @Tufte2001-cb, Chapter 2, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927901)
 
 ### March 3-7 {- #week-08}
 
@@ -128,7 +127,7 @@
 
 #### Tuesday, March 04 {-}
 
-- Read: @Tukey1977-ro, Chapter 1
+- Read: @Tukey1977-ro, Chapter 1, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927904)
 - [Final Project](exercises/final-project.qmd) proposal [due]{.orange-due}
 
 #### Thursday, March 06 {-}

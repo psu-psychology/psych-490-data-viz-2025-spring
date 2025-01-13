@@ -21,7 +21,11 @@ subtitle: "2025-01-16"
 
 # Overview
 
-<!-- ## Announcements -->
+## Announcements
+
+- Free access to newspapers
+
+![https://studentaffairs.psu.edu/involvement-student-life/student-services/student-news-readership-program](../include/img/psu-news-readership.png)
 
 ## Last time...
 
@@ -127,7 +131,7 @@ flowchart LR
 
 ## Sign systems can unite/inform or divide/confuse
 
-![@Steiner1998-a](https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Steiner_AfterBabel.jpg/200px-Steiner_AfterBabel.jpg)
+![@Steiner1998-al](https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Steiner_AfterBabel.jpg/200px-Steiner_AfterBabel.jpg)
 
 ## Sign system grammars
 

@@ -1,6 +1,6 @@
 ---
 title: "Exercise 01"
-subtitle: "Data visualizaton in Psychological Science"
+subtitle: "Data visualization in Psychological Science"
 ---
 
 ## Dates {-}
@@ -53,14 +53,13 @@ Here are some additional journal resources that you might find interesting to ex
 - [Trends in Cognitive Sciences](https://www.cell.com/trends/cognitive-sciences/home)
 
 ::: {.callout-important}
-
 The goal here is to gather via 'crowd-sourcing' a diverse set of visualizations.
 So, feel free to mix it up.
-
 :::
 
 ## Submit {-}
 
-- Your data to the shared Google Spreadsheet.
-
-
+- Everyone
+  - Your data to the shared Google Spreadsheet.
+- Students who want this submission to count for one of their four (4) *required* exercises
+  - A 2-3 page write-up in APA format where you describe three (3) figures your group found, the data that are presented, and what "story" the data are intended to tell.

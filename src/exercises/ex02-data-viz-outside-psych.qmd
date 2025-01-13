@@ -1,0 +1,44 @@
+---
+title: "Exercise 02"
+subtitle: "Data visualizaton outside Psychological Science"
+---
+
+## Dates {-}
+
+In-class work on Tuesday, January 21-23.
+
+[Due]{.orange-due} on [Thursday, January 30](../schedule.qmd#thursday-january-30).
+
+## Goals {-}
+
+In this exercise, you will work alone or a with a team of no more than two other classmates to find and describe data visualizations from business (for profit or not-for-profit), government, the arts, sports, or journalism.
+You will add links to the visualizations to a common database that we will use for discussion about the types of visualizations and types of data that are commonly used fields outside of psychological science.
+
+## Assignment {-}
+
+1. Choose at least three categories (business, government, the arts, sports, or journalism) to focus on.
+
+2. For category, find at least two visualizations of data.
+
+Try to pick visualizations that are interesting to you in some way.
+
+3. Add information about the visualizations to a Google Sheet that all of us will share:
+
+<https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0>
+
+Specifically, enter your team identifier in the `identifier` field, the source in `source_type`, and the URL in the `url` field. Please say briefly why you chose this particular visualization. If you have any comments to add, put those in the `comments` field.
+
+4. If you want to submit a write-up for evaluation, please select three visualizations and evaluate them based on the following questions:
+
+- What data are presented?
+- Why is the source presenting these data?
+- What story or message is the source trying to communicate and to what audience?
+- How effective is the message?
+
+## Submit {-}
+
+- Everyone
+  - Your data to the shared [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0).
+- Students who want this submission to count for one of their four (4) *required* exercises
+  - A 2-3 page write-up in APA format where you describe three (3) figures your group found, answering the questions in 4. above.
+
