@@ -31,7 +31,7 @@ subtitle: "2025-01-23"
 
 ---
 
-![@Paris2025-lf](../include/img/paris-nyt-vax-2025-01-13.fig1.png)
+![@Paris2025-lf](../include/img/paris-nyt-vax-2025-01-13-fig1.png)
 ---
 
 ![@Paris2025-lf](../include/img/paris-nyt-vax-2025-01-13-fig2.png)

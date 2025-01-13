@@ -5,6 +5,10 @@ subtitle: "2025-01-21"
 
 # Prelude
 
+---
+
+![@van-Teutem2024-ie](https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/7e2aabcf-bab9-4162-901a-bee5df1ef200/w=3774)
+
 # Overview
 
 ## Announcements
@@ -48,7 +52,6 @@ code <- qrcode::qr_code("https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauO
 plot(code)
 ```
 
-
 ## {background-iframe="https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0"}
 
 # Data visualization in government
@@ -68,18 +71,25 @@ https://data.pa.gov
 
 # Data visualization in business
 
-## What data do businesses visualize
+## What data do not-for-profit businesses visualize?
 
 - [PSU Office of Planning, Assessment, and Institutional Research](https://opair.psu.edu/institutional-research/resources/)
+- [Our World in Data](https://ourworldindata.org)
+- [Gapminder](https://www.gapminder.org/)
+  - [Dollar Street](https://www.gapminder.org/dollar-street)
 
 ## Why do businesses visualize data?
 
-# Let's assess
+# Let's explore
+
+- [Exercise 02](../exercises/ex02-data-viz-outside-psych.qmd)
+- [Google Sheet](https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?usp=sharing)
 
 # Main points
 
 - Governments collect & report on lots of data
-
+- Non-profits collect varied types of data, and many visualize it
+- For-profit business entities collect a ton of data, but most visualizations remain private
 
 # Next time
 
