@@ -1,0 +1,4 @@
+---
+title: "Exercise 07"
+subtitle: "Making figures with Python"
+---

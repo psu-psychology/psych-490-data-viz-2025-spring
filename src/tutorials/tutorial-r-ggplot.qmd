@@ -1,4 +1,4 @@
-# Plotting with ggplot
+# Plotting with `ggplot2` {-}
 
 ## About {-}
 
@@ -208,7 +208,7 @@ boxplot_2_diff
 This page is under construction. Many components are missing.
 :::
 
-### Scatterplot
+### Scatterplot {-}
 
 A scatterplot is a great way to compare two continuous variables.
 

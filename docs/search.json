@@ -389,7 +389,7 @@
     "href": "tutorials/tutorial-r-ggplot.html#plotting-two-variables",
     "title": "",
     "section": "Plotting two variables",
-    "text": "Plotting two variables\n\n\n\n\n\n\nWarning\n\n\n\nThis page is under construction. Many components are missing.\n\n\n\n1.0.1 Scatterplot\nA scatterplot is a great way to compare two continuous variables.\n\n\nCode\nscatter_data &lt;- tibble::tibble(norm = x_norm,\n                               unif = x_unif)\n\nscatter_data |&gt;\n  ggplot() +\n  aes(x = x_norm, y = x_unif) +\n  geom_point()"
+    "text": "Plotting two variables\n\n\n\n\n\n\nWarning\n\n\n\nThis page is under construction. Many components are missing.\n\n\n\nScatterplot\nA scatterplot is a great way to compare two continuous variables.\n\n\nCode\nscatter_data &lt;- tibble::tibble(norm = x_norm,\n                               unif = x_unif)\n\nscatter_data |&gt;\n  ggplot() +\n  aes(x = x_norm, y = x_unif) +\n  geom_point()"
   },
   {
     "objectID": "tutorials/tutorial-r-ggplot.html#footnotes",
@@ -515,7 +515,7 @@
     "href": "deadlines.html#important-deadlines",
     "title": "",
     "section": "Important deadlines",
-    "text": "Important deadlines\nThis page summarizes some of the key deadlines in the course.\n\n\n\nDate\nWhat’s due/happening\n\n\n\n\n2025-01-23\nExercise 01\n\n\n2025-02-30\nExercise 02\n\n\n2025-02-06\nExercise 03\n\n\n2025-03-04\nFinal project proposal due\n\n\n[2025-03-06](schedule.qmd#thursday-march-06](exercises/ex04-sci-of-data-viz.qmd)\n\n\n\n2025-03-20\nExercise 05\n\n\n2024-03-27\nExercise 06\n\n\n2025-04-17\nExercise 07\n\n\n2025-05-05\nFinal project writeup due"
+    "text": "Important deadlines\nThis page summarizes some of the key deadlines in the course.\n\n\n\nDate\nWhat’s due/happening\n\n\n\n\n2025-01-23\nExercise 01\n\n\n2025-02-30\nExercise 02\n\n\n2025-02-06\nExercise 03\n\n\n2025-03-04\nFinal project proposal due\n\n\n2025-03-06\nExercise 04\n\n\n2025-03-20\nExercise 05\n\n\n2024-03-27\nExercise 06\n\n\n2025-04-17\nExercise 07\n\n\n2025-05-05\nFinal project writeup due"
   },
   {
     "objectID": "about.html",
