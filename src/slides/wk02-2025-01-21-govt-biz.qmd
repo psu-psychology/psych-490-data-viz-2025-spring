@@ -1,6 +1,6 @@
 ---
-title: "The Psychology of Data Visualization"
-subtitle: "2025-01-14"
+title: "Data viz in government & business"
+subtitle: "2025-01-21"
 ---
 
 # Prelude
@@ -11,66 +11,75 @@ subtitle: "2025-01-14"
 
 ## Last time...
 
-- Data are *made* via a mapping procedure
-- Data reflect, select, and deflect
+*Semiotics of data visualization*
 
----
+## Symbol or thing symbolized?
 
-::: {.callout-important}
-## Your turn
-A set of data about self-reported favorite colors is of what type [@Stevens1946-sh]?
-
-A. Ratio</br>
-B. Ordinal</br>
-C. Nominal/Categorical
+:::: {.columns}
+::: {.column width=50%}
+![](../include/img/central-pa-map.png)
 :::
-
----
-
-::: {.callout-important}
-## Your turn
-What kind of analyses can we do with these data?
-
-A. Counts by category</br>
-B. Average preference</br>
-C. Change across time
+::: {.column width=50%}
+![](../include/img/central-pa-satellite.png)
 :::
-
----
-
-::: {.callout-important}
-## Your turn
-What kind of visualization(s) can we make with these data?
-
-See the [tutorial](../tutorials/tutorial-making-data.qmd#nominal-data) for more on this topic.
-:::
+::::
 
 ## Today
 
 *Visualization in government & business*
 
-- Data visualization in government
-- Data visualization in business
-
 ## Goals
+
+- Explore the landscape
+- What types of visualizations?
+- What types of data?
+- Why visualize?
+
+---
+
+```{r}
+#| echo: false
+#| fig-align: center
+code <- qrcode::qr_code("https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0")
+plot(code)
+```
+
+
+## {background-iframe="https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0"}
 
 # Data visualization in government
 
-## Why do governments visualize data?
-
 ## What data do governments visualize
+
+- What data are collected?
+- Primary sources
+  - [Bureau of the Census](https://data.census.gov)
+  - [Data.gov](https://data.gov)
+  - [Open Data PA](https://data.pa.gov)
+https://data.pa.gov
+  - Secondary sources
+  - <https://datausa.io/profile/geo/state-college-pa?redirect=true>
+
+## Why do governments visualize data?
 
 # Data visualization in business
 
+## What data do businesses visualize
+
+- [PSU Office of Planning, Assessment, and Institutional Research](https://opair.psu.edu/institutional-research/resources/)
+
 ## Why do businesses visualize data?
 
-## What data do governments visualize
+# Let's assess
 
 # Main points
 
+- Governments collect & report on lots of data
+
+
 # Next time
 
-*Visualization in science*
+*Visualization in art, sports, and journalism*
 
 # Resources
 

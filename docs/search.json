@@ -128,49 +128,49 @@
   {
     "objectID": "slides/wk02-2025-01-21-govt-biz.html#announcements",
     "href": "slides/wk02-2025-01-21-govt-biz.html#announcements",
-    "title": "The Psychology of Data Visualization",
+    "title": "Data viz in government & business",
     "section": "Announcements",
     "text": "Announcements"
   },
   {
     "objectID": "slides/wk02-2025-01-21-govt-biz.html#last-time",
     "href": "slides/wk02-2025-01-21-govt-biz.html#last-time",
-    "title": "The Psychology of Data Visualization",
+    "title": "Data viz in government & business",
     "section": "Last time…",
-    "text": "Last time…\n\nData are made via a mapping procedure\nData reflect, select, and deflect"
+    "text": "Last time…\nSemiotics of data visualization"
   },
   {
     "objectID": "slides/wk02-2025-01-21-govt-biz.html#today",
     "href": "slides/wk02-2025-01-21-govt-biz.html#today",
-    "title": "The Psychology of Data Visualization",
+    "title": "Data viz in government & business",
     "section": "Today",
-    "text": "Today\nVisualization in government & business\n\nData visualization in government\nData visualization in business"
+    "text": "Today\nVisualization in government & business"
   },
   {
     "objectID": "slides/wk02-2025-01-21-govt-biz.html#goals",
     "href": "slides/wk02-2025-01-21-govt-biz.html#goals",
-    "title": "The Psychology of Data Visualization",
+    "title": "Data viz in government & business",
     "section": "Goals",
-    "text": "Goals"
+    "text": "Goals\n\nExplore the landscape\nWhat types of visualizations?\nWhat types of data?\nWhy visualize?"
   },
   {
     "objectID": "slides/wk02-2025-01-21-govt-biz.html#why-do-governments-visualize-data",
     "href": "slides/wk02-2025-01-21-govt-biz.html#why-do-governments-visualize-data",
-    "title": "The Psychology of Data Visualization",
+    "title": "Data viz in government & business",
     "section": "Why do governments visualize data?",
     "text": "Why do governments visualize data?"
   },
   {
     "objectID": "slides/wk02-2025-01-21-govt-biz.html#what-data-do-governments-visualize",
     "href": "slides/wk02-2025-01-21-govt-biz.html#what-data-do-governments-visualize",
-    "title": "The Psychology of Data Visualization",
+    "title": "Data viz in government & business",
     "section": "What data do governments visualize",
-    "text": "What data do governments visualize"
+    "text": "What data do governments visualize\n\nWhat data are collected?\nPrimary sources\n\nBureau of the Census\nData.gov\nOpen Data PA https://data.pa.gov\nSecondary sources\nhttps://datausa.io/profile/geo/state-college-pa?redirect=true"
   },
   {
     "objectID": "slides/wk02-2025-01-21-govt-biz.html#why-do-businesses-visualize-data",
     "href": "slides/wk02-2025-01-21-govt-biz.html#why-do-businesses-visualize-data",
-    "title": "The Psychology of Data Visualization",
+    "title": "Data viz in government & business",
     "section": "Why do businesses visualize data?",
     "text": "Why do businesses visualize data?"
   },
@@ -184,9 +184,9 @@
   {
     "objectID": "slides/wk02-2025-01-21-govt-biz.html#references",
     "href": "slides/wk02-2025-01-21-govt-biz.html#references",
-    "title": "The Psychology of Data Visualization",
+    "title": "Data viz in government & business",
     "section": "References",
-    "text": "References\n\n\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science (New York, N.Y.), 103, 677–680. https://doi.org/10.1126/science.103.2684.677"
+    "text": "References"
   },
   {
     "objectID": "slides/wk01-2025-01-14-course-intro.html#a-picture-is-worth-a-thousand-words",
@@ -964,5 +964,19 @@
     "title": "Data visualization in art, sports, & journalism",
     "section": "References",
     "text": "References\n\n\n\n\nStiles, M., O’Key, S., Manley, B., Robinson, L., Merrill, C., Choi, A., … Rigdon, R. (2025, January 8). Visualizing the los angeles wildfires in maps and charts. Retrieved January 12, 2025, from https://www.cnn.com/2025/01/08/us/maps-visuals-los-angeles-wildfires-dg/index.html"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-21-govt-biz.html#symbol-or-thing-symbolized",
+    "href": "slides/wk02-2025-01-21-govt-biz.html#symbol-or-thing-symbolized",
+    "title": "Data viz in government & business",
+    "section": "Symbol or thing symbolized?",
+    "text": "Symbol or thing symbolized?"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-21-govt-biz.html#what-data-do-businesses-visualize",
+    "href": "slides/wk02-2025-01-21-govt-biz.html#what-data-do-businesses-visualize",
+    "title": "Data viz in government & business",
+    "section": "What data do businesses visualize",
+    "text": "What data do businesses visualize\n\nPSU Office of Planning, Assessment, and Institutional Research"
   }
 ]

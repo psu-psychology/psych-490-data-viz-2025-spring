@@ -184,6 +184,16 @@ flowchart LR
 - What do the components mean?
 - What message is the visualization creator trying to convey?
 
+---
+
+::: {.callout-warning}
+A semiotic perspective can be infectious and addictive.
+
+Signs and sign systems are *everywhere*
+
+![https://www.lifehack.org/868287/perspective-on-life](https://cdn.lifehack.org/wp-content/uploads/2020/03/perspective.jpeg)
+:::
+
 # Visualization in psychological science
 
 ## Questions
@@ -202,12 +212,12 @@ flowchart LR
 
 - *Semiotics*: study of signs and symbols
 - What meanings do the visual elements of data graphics convey?
-- How do data visualizations related to other communicative elements?
+- How do data visualizations relate to other communicative elements?
 
 ## Visualization in psychological science
 
 - Conventions (common patterns) in data visualization
-- Different viz types for different psychological measures
+- Different viz types for different psychological measures?
 
 # Next time
 
