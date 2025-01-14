@@ -1,0 +1,19 @@
+---
+title: "Exercise 04"
+subtitle: "The science of data visualization"
+---
+
+::: {.callout-warning}
+# Work in progress
+
+This page is under construction.
+
+:::
+
+## Dates {-}
+
+## Goals {-}
+
+## Assignment {-}
+
+## Submit {-}

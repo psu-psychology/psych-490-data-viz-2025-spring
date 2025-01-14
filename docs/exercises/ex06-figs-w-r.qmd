@@ -1,4 +1,0 @@
----
-title: "Exercise 06"
-subtitle: "Making figures with ggplot2"
----

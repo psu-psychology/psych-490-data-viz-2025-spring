@@ -2,3 +2,10 @@
 title: "Exercise 06"
 subtitle: "Making figures with ggplot2"
 ---
+
+::: {.callout-warning}
+# Work in progress
+
+This page is under construction.
+
+:::

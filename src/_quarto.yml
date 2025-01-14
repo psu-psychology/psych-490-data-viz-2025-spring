@@ -5,6 +5,7 @@ project:
     - "tutorials/*.qmd"
     - "surveys/*.qmd"
     - "slides/*.qmd"
+    - "exercises/*.qmd"
   output-dir: "../docs"
 
 website:
@@ -23,13 +24,13 @@ website:
         text: "Policies & Values"
       - text: Exercises
         menu: 
-          - exercises/ex01-figs-in-psych-sci.qmd
-          - exercises/ex02-data-viz-outside-psych.qmd
-          - exercises/ex03-making-data.qmd
-          - exercises/ex04-sci-of-data-viz.qmd
-          # - href: "exercises/ex01-making-data.qmd"
-          # - href: "exercises/exNN-finding-data-sources.qmd"
-          # - href: "exercises/exNN-reading-figures.qmd"
+        - exercises/ex01-figs-in-psych-sci.qmd
+        - exercises/ex02-data-viz-outside-psych.qmd
+        - exercises/ex03-making-data.qmd
+        - exercises/ex04-sci-of-data-viz.qmd
+          # - exercises/ex01-making-data.qmd
+          # - exercises/exNN-finding-data-sources.qmd
+          # - exercises/exNN-reading-figures.qmd
       - text: Tutorials
         menu:
         - tutorials/tutorial-making-data.qmd

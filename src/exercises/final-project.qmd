@@ -3,3 +3,17 @@ title: "final-project"
 format: html
 ---
 
+::: {.callout-warning}
+# Work in progress
+
+This page is under construction.
+
+:::
+
+## Dates {-}
+
+## Goals {-}
+
+## Assignment {-}
+
+## Submit {-}

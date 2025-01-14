@@ -2,3 +2,10 @@
 title: "Exercise 07"
 subtitle: "Making figures with Python"
 ---
+
+::: {.callout-warning}
+# Work in progress
+
+This page is under construction.
+
+:::
