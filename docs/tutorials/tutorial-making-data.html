@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-01-14">
 
 <title>tutorial-making-data – PSYCH 490 • Spr 2025</title>
 <style>
@@ -130,7 +131,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Overview</span></a>
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../schedule.html"> 
@@ -233,9 +234,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="toc-actions"><ul><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/edit/main/src/tutorials/tutorial-making-data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7"></h1></header><div class="quarto-title-block"><div class="quarto-title-tools-only"><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<main class="content" id="quarto-document-content"><div class="quarto-title-block"><div class="quarto-title-tools-only"><h1></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
 
 
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 14, 2025</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">January 9, 2025</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
 
 
 <section id="making-data" class="level1 unnumbered">
@@ -298,31 +326,31 @@ Your turn
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>our_color_sample</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>  [1] "violet" "violet" "orange" "orange" "yellow" "orange" "orange" "red"   
-  [9] "orange" "orange" "yellow" "yellow" "red"    "black"  "gray"   "green" 
- [17] "orange" "red"    "yellow" "orange" "red"    "black"  "violet" "blue"  
- [25] "white"  "green"  "black"  "orange" "green"  "black"  "gray"   "brown" 
- [33] "green"  "black"  "blue"   "green"  "violet" "black"  "red"    "black" 
- [41] "green"  "gray"   "blue"   "brown"  "brown"  "green"  "orange" "violet"
- [49] "red"    "black"  "white"  "red"    "red"    "green"  "black"  "brown" 
- [57] "black"  "green"  "red"    "gray"   "yellow" "black"  "gray"   "violet"
- [65] "white"  "red"    "black"  "red"    "violet" "black"  "gray"   "green" 
- [73] "yellow" "blue"   "orange" "yellow" "green"  "violet" "yellow" "red"   
- [81] "white"  "red"    "black"  "violet" "red"    "blue"   "green"  "green" 
- [89] "orange" "green"  "yellow" "gray"   "yellow" "blue"   "blue"   "green" 
- [97] "green"  "red"    "orange" "gray"   "gray"   "black"  "violet" "yellow"
-[105] "white"  "green"  "brown"  "orange" "green"  "violet" "yellow" "gray"  
-[113] "brown"  "green"  "gray"   "violet" "gray"   "brown"  "violet" "black" 
-[121] "gray"   "black"  "brown"  "white"  "black"  "red"    "brown"  "violet"
-[129] "green"  "blue"   "violet" "brown"  "brown"  "violet" "yellow" "yellow"
-[137] "violet" "black"  "green"  "green"  "brown"  "white"  "black"  "green" 
-[145] "brown"  "green"  "yellow" "yellow" "brown"  "green"  "yellow" "violet"
-[153] "yellow" "gray"   "gray"   "red"    "yellow" "red"    "violet" "blue"  
-[161] "green"  "yellow" "gray"   "blue"   "white"  "violet" "orange" "brown" 
-[169] "green"  "gray"   "red"    "brown"  "brown"  "red"    "red"    "black" 
-[177] "green"  "white"  "red"    "red"    "white"  "violet" "brown"  "green" 
-[185] "orange" "green"  "violet" "black"  "white"  "yellow" "yellow" "gray"  
-[193] "black"  "black"  "orange" "orange" "orange" "blue"   "yellow" "blue"  </code></pre>
+<pre><code>  [1] "brown"  "white"  "orange" "brown"  "white"  "gray"   "white"  "violet"
+  [9] "red"    "red"    "red"    "yellow" "black"  "black"  "orange" "black" 
+ [17] "yellow" "white"  "green"  "gray"   "gray"   "green"  "gray"   "white" 
+ [25] "red"    "yellow" "white"  "green"  "red"    "brown"  "black"  "violet"
+ [33] "green"  "violet" "red"    "green"  "orange" "black"  "gray"   "blue"  
+ [41] "white"  "violet" "red"    "green"  "red"    "yellow" "gray"   "red"   
+ [49] "blue"   "yellow" "yellow" "white"  "gray"   "green"  "brown"  "blue"  
+ [57] "blue"   "orange" "green"  "orange" "blue"   "gray"   "orange" "white" 
+ [65] "yellow" "brown"  "red"    "yellow" "orange" "black"  "gray"   "red"   
+ [73] "violet" "white"  "yellow" "blue"   "black"  "white"  "black"  "white" 
+ [81] "violet" "brown"  "white"  "blue"   "gray"   "violet" "violet" "brown" 
+ [89] "black"  "orange" "green"  "brown"  "yellow" "white"  "green"  "black" 
+ [97] "yellow" "brown"  "violet" "brown"  "orange" "brown"  "black"  "brown" 
+[105] "red"    "blue"   "yellow" "yellow" "black"  "blue"   "yellow" "black" 
+[113] "yellow" "violet" "brown"  "gray"   "orange" "yellow" "brown"  "violet"
+[121] "yellow" "orange" "black"  "green"  "blue"   "brown"  "yellow" "blue"  
+[129] "white"  "yellow" "blue"   "black"  "blue"   "red"    "red"    "violet"
+[137] "orange" "red"    "orange" "red"    "green"  "brown"  "red"    "yellow"
+[145] "yellow" "brown"  "black"  "violet" "gray"   "gray"   "violet" "brown" 
+[153] "red"    "blue"   "red"    "yellow" "green"  "yellow" "orange" "green" 
+[161] "red"    "orange" "white"  "white"  "yellow" "green"  "orange" "yellow"
+[169] "orange" "gray"   "gray"   "yellow" "yellow" "yellow" "yellow" "yellow"
+[177] "blue"   "black"  "yellow" "yellow" "yellow" "brown"  "gray"   "orange"
+[185] "gray"   "gray"   "orange" "orange" "green"  "white"  "black"  "black" 
+[193] "blue"   "brown"  "red"    "black"  "red"    "white"  "red"    "black" </code></pre>
 </div>
 </div>
 <p>On its own, that’s not especially easy to visualize. What if we sorted it?</p>
@@ -334,27 +362,27 @@ Your turn
 <div class="cell-output cell-output-stdout">
 <pre><code>  [1] "black"  "black"  "black"  "black"  "black"  "black"  "black"  "black" 
   [9] "black"  "black"  "black"  "black"  "black"  "black"  "black"  "black" 
- [17] "black"  "black"  "black"  "black"  "black"  "black"  "black"  "black" 
+ [17] "black"  "black"  "black"  "black"  "black"  "blue"   "blue"   "blue"  
  [25] "blue"   "blue"   "blue"   "blue"   "blue"   "blue"   "blue"   "blue"  
- [33] "blue"   "blue"   "blue"   "blue"   "brown"  "brown"  "brown"  "brown" 
+ [33] "blue"   "blue"   "blue"   "blue"   "blue"   "brown"  "brown"  "brown" 
  [41] "brown"  "brown"  "brown"  "brown"  "brown"  "brown"  "brown"  "brown" 
- [49] "brown"  "brown"  "brown"  "brown"  "brown"  "brown"  "gray"   "gray"  
- [57] "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"  
+ [49] "brown"  "brown"  "brown"  "brown"  "brown"  "brown"  "brown"  "brown" 
+ [57] "brown"  "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"  
  [65] "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"  
- [73] "green"  "green"  "green"  "green"  "green"  "green"  "green"  "green" 
+ [73] "gray"   "gray"   "gray"   "green"  "green"  "green"  "green"  "green" 
  [81] "green"  "green"  "green"  "green"  "green"  "green"  "green"  "green" 
- [89] "green"  "green"  "green"  "green"  "green"  "green"  "green"  "green" 
- [97] "green"  "green"  "green"  "green"  "green"  "green"  "orange" "orange"
-[105] "orange" "orange" "orange" "orange" "orange" "orange" "orange" "orange"
-[113] "orange" "orange" "orange" "orange" "orange" "orange" "orange" "orange"
-[121] "orange" "red"    "red"    "red"    "red"    "red"    "red"    "red"   
-[129] "red"    "red"    "red"    "red"    "red"    "red"    "red"    "red"   
-[137] "red"    "red"    "red"    "red"    "red"    "red"    "red"    "red"   
-[145] "violet" "violet" "violet" "violet" "violet" "violet" "violet" "violet"
-[153] "violet" "violet" "violet" "violet" "violet" "violet" "violet" "violet"
-[161] "violet" "violet" "violet" "violet" "violet" "violet" "white"  "white" 
-[169] "white"  "white"  "white"  "white"  "white"  "white"  "white"  "white" 
-[177] "white"  "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow"
+ [89] "green"  "green"  "green"  "orange" "orange" "orange" "orange" "orange"
+ [97] "orange" "orange" "orange" "orange" "orange" "orange" "orange" "orange"
+[105] "orange" "orange" "orange" "orange" "orange" "orange" "orange" "red"   
+[113] "red"    "red"    "red"    "red"    "red"    "red"    "red"    "red"   
+[121] "red"    "red"    "red"    "red"    "red"    "red"    "red"    "red"   
+[129] "red"    "red"    "red"    "red"    "red"    "red"    "violet" "violet"
+[137] "violet" "violet" "violet" "violet" "violet" "violet" "violet" "violet"
+[145] "violet" "violet" "violet" "violet" "white"  "white"  "white"  "white" 
+[153] "white"  "white"  "white"  "white"  "white"  "white"  "white"  "white" 
+[161] "white"  "white"  "white"  "white"  "white"  "white"  "white"  "yellow"
+[169] "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow"
+[177] "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow"
 [185] "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow"
 [193] "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow"</code></pre>
 </div>
@@ -395,7 +423,7 @@ Your turn
 <div class="cell-output cell-output-stdout">
 <pre><code>favorite_color
  black   blue  brown   gray  green orange    red violet  white yellow 
-    24     12     18     18     30     19     23     22     11     23 </code></pre>
+    21     16     20     18     16     20     23     14     19     33 </code></pre>
 </div>
 </div>
 </section>

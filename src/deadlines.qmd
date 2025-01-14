@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Deadlines"
 ---
 
 {{< include _deadlines.qmd >}}

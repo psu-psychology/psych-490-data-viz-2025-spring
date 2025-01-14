@@ -1,6 +1,4 @@
-## Student Evaluation
-
-### Elements {- #eval-components}
+## Elements {- #eval-components}
 
 | Component | Description                                  | Points |
 |-----------|----------------------------------------------|--------:|
@@ -10,16 +8,16 @@
 | | **TOTAL POINTS POSSIBLE** | 120 |
 | Extra Credit | If you submit more than four (4) exercise write-ups, you may earn up to 10 extra credit points for these exercises. | |
 
-### Grading Scheme {- #grading-scheme}
+## Grading Scheme {- #grading-scheme}
 
 | Percent | Points | Grade |
 |:--------|:------: | :------:|
-| 94+     | 113 | A     |
-| 90-93   | 108-112 | A-    |
-| 87-89   | 104-107 | B+    |
-| 84-86   | 100-103 | B     |
-| 80-83   | 96-99 | B-    |
-| 77-79   | 92-95 | C+    |
-| 70-76   | 84-91 | C     |
-| 60-69   | 72-93 | D     |
-| <59     | <=71 | F     |
+| 94+     | 94+ | A     |
+| 90-93   | 90-93 | A-    |
+| 87-89   | 87-89 | B+    |
+| 84-86   | 84-86 | B     |
+| 80-83   | 80-83 | B-    |
+| 77-79   | 77-70 | C+    |
+| 70-76   | 70-76 | C     |
+| 60-69   | 60-69 | D     |
+| <59     | <=59 | F     |

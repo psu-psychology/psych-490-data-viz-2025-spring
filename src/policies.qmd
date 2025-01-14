@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Policies & Values"
 ---
 
 {{< include _policies.qmd >}}

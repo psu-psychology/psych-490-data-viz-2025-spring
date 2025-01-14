@@ -12,7 +12,7 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Overview
+        text: Home
       - href: schedule.qmd
         text: Schedule
       - href: evaluation.qmd
@@ -23,10 +23,10 @@ website:
         text: "Policies & Values"
       - text: Exercises
         menu: 
-          - href: "exercises/ex01-figs-in-psych-sci.qmd"
-          - href: "exercises/ex02-data-viz-outside-psych.qmd"
-          - href: "exercises/ex03-making-data.qmd"
-          - href: "exercises/ex04-sci-of-data-viz.qmd"
+          - exercises/ex01-figs-in-psych-sci.qmd
+          - exercises/ex02-data-viz-outside-psych.qmd
+          - exercises/ex03-making-data.qmd
+          - exercises/ex04-sci-of-data-viz.qmd
           # - href: "exercises/ex01-making-data.qmd"
           # - href: "exercises/exNN-finding-data-sources.qmd"
           # - href: "exercises/exNN-reading-figures.qmd"
@@ -61,7 +61,8 @@ format:
     number-sections: false
     citations-hover: true
     footnotes-hover: true
-    # date-modified: last-modified
+    date-modified: last-modified
+    date: today
     bibliography: [include/bib/packages.bib, include/bib/data-viz.bib]
     csl: include/bib/apa.csl
     html-math-method: mathjax

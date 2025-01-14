@@ -1,16 +1,14 @@
-## Schedule
-
-### January 13-17 {- #week-01}
+## January 13-17 {- #week-01}
 
 *Surveying the landscape*
 
-#### Tuesday, January 14 {-}
+### Tuesday, January 14 {-}
 
 *Course introduction*
 
 - [Slides](slides/wk01-2025-01-14-course-intro.qmd)
 
-#### Thursday, January 16 {-}
+### Thursday, January 16 {-}
 
 *The semiotics of data visualization*
 
@@ -18,17 +16,17 @@
 - [Slides](slides/wk01-2025-01-16-semiotics-data-viz.qmd)
 - [Exercise 01](exercises/ex01-figs-in-psych-sci.qmd) [assigned]{.green-assigned}
 
-### January 20-24 {- #week-02}
+## January 20-24 {- #week-02}
 
 *Who visualizes data and why*
 
-#### Tuesday, January 21 {-}
+### Tuesday, January 21 {-}
 
 *Visualization in government & business*
 
 - [Slides](slides/wk02-2025-01-21-govt-biz.qmd)
 
-#### Thursday, January 23 {-}
+### Thursday, January 23 {-}
 
 *Visualization in art, sports, and journalism*
 
@@ -36,52 +34,52 @@
 - [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd) [assigned]{.green-assigned}
 - [Exercise 01](exercises/ex01-figs-in-psych-sci.qmd) [due]{.orange-due}
 
-### January 27-31 {- #week-03}
+## January 27-31 {- #week-03}
 
 *Understanding figures*
 
-#### Tuesday, January 28 {-}
+### Tuesday, January 28 {-}
 
 *Making (sense of) data*
 
 - Read: @Stevens1946-sh
 - [Slides](slides/wk03-2025-01-28-making-data.qmd)
 
-#### Thursday, January 30 {-}
+### Thursday, January 30 {-}
 
 *Figure types*
 
 - [Exercise-03](exercises/ex03-making-data.qmd) [assigned]{.green-assigned}
 - [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd) [due]{.orange-due}
 
-### February 3-7 {- #week-04}
+## February 3-7 {- #week-04}
 
 *From perception to cognition*
 
-#### Tuesday, February 04 {-}
+### Tuesday, February 04 {-}
 
 *From stimulus to sensation*
 
 - Read: @Cairo2013-hm, Chapter 5, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892)
 
-#### Thursday, February 06 {-}
+### Thursday, February 06 {-}
 
 *From sensation to perception*
 
 - Read: @Cairo2013-hm, Chapter 6, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892)
 - [Exercise-03](exercises/ex03-making-data.qmd) [due]{.orange-due}
 
-### February 10-14 {- #week-05}
+## February 10-14 {- #week-05}
 
 *From cognition to understanding*
 
-#### Tuesday, February 11 {-}
+### Tuesday, February 11 {-}
 
 - Read:
   - @Franconeri2021-uv, pp. 109-122
   - @Cairo2013-hm, Chapter 7, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892)
 
-#### Thursday, February 13 {-}
+### Thursday, February 13 {-}
 
 *Designing efficient & understandable visualizations*
 
@@ -89,17 +87,17 @@
   - @Franconeri2021-uv, pp. 123-139
 - [Exercise-04](exercises/ex04-sci-of-data-viz.qmd) [assigned]{.green-assigned}
   
-### February 17-21 {- #week-06}
+## February 17-21 {- #week-06}
 
 *Storytelling with data*
 
-#### Tuesday, February 18 {-}
+### Tuesday, February 18 {-}
 
 *Communicating uncertainty and risk*  
 
 - Read: @Franconeri2021-uv, pp. 139-150 
 
-#### Thursday, February 20 {-}
+### Thursday, February 20 {-}
 
 *Storytelling with data*
 
@@ -108,113 +106,113 @@
 - Skim: @Woodside2008-yv
 - [Final Project](exercises/final-project.qmd) proposal [assigned]{.green-assigned}
 
-### February 24-28 {- #week-07}
+## February 24-28 {- #week-07}
 
 *Critiquing figures*
 
-#### Tuesday, February 25 {-}
+### Tuesday, February 25 {-}
 
 - Read: 
   - @Tufte2001-cb, Chapter 1, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927901)
 
-#### Thursday, February 27 {-}
+### Thursday, February 27 {-}
 
 - Read: @Tufte2001-cb, Chapter 2, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927901)
 
-### March 3-7 {- #week-08}
+## March 3-7 {- #week-08}
 
 *Exploring data*
 
-#### Tuesday, March 04 {-}
+### Tuesday, March 04 {-}
 
 - Read: @Tukey1977-ro, Chapter 1, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927904)
 - [Final Project](exercises/final-project.qmd) proposal [due]{.orange-due}
 
-#### Thursday, March 06 {-}
+### Thursday, March 06 {-}
 
 - [Exercise-04](exercises/ex04-sci-of-data-viz.qmd) [due]{.orange-due}
 - [Exercise-05](exercises/ex05-figure-prep-guidelines.qmd) [assigned]{.green-assigned}
 
-### March 10-14 *Spring Break* {- #spring-break}
+## March 10-14 *Spring Break* {- #spring-break}
 
-### March 17-21 {- #week-09}
+## March 17-21 {- #week-09}
 
 *Introduction to R*
 
-#### Tuesday, March 18 {-}
+### Tuesday, March 18 {-}
 
 *Why R we doing this?*
 
-#### Thursday, March 20 {-}
+### Thursday, March 20 {-}
 
 **NO CLASS**
 
 - [Exercise-05](exercises/ex05-figure-prep-guidelines.qmd) [due]{.orange-due}
 
-### March 24-28 {- #week-10}
+## March 24-28 {- #week-10}
 
 *Exploring data with R*
 
-#### Tuesday, March 25 {-}
+### Tuesday, March 25 {-}
 
 *Gathering & cleaning data*
 
-#### Thursday, March 27 {-}
+### Thursday, March 27 {-}
 
 *Making plots with `ggplot2`*
 
 - [Exercise-06](exercises/ex06-figs-w-r.qmd) [assigned]{.green-assigned}
 
-### March 31 - April 4 {- #week-11}
+## March 31 - April 4 {- #week-11}
 
 *Introduction to Python*
 
-#### Tuesday, April 01 {-}
+### Tuesday, April 01 {-}
 
-#### Thursday, April 03 {-}
+### Thursday, April 03 {-}
 
 - [Exercise-06](exercises/ex06-figs-w-r.qmd) [due]{.orange-due}
 
-### April 7-11 {- #week-12}
+## April 7-11 {- #week-12}
 
 *Exploring data with Python*
 
-#### Tuesday, April 08 {-}
+### Tuesday, April 08 {-}
 
-#### Thursday, April 10 {-}
+### Thursday, April 10 {-}
 
 - [Exercise-07](exercises/ex07-figs-w-python.qmd) [assigned]{.green-assigned}
 
-### April 14-18 {- #week-13}
+## April 14-18 {- #week-13}
 
 *Making plots with JavaScript*
 
-#### Tuesday, April 15 {-}
+### Tuesday, April 15 {-}
 
-#### Thursday, April 17 {-}
+### Thursday, April 17 {-}
 
 - [Exercise-07](exercises/ex07-figs-w-python.qmd) [due]{.orange-due}
 
-### April 21-25 {- #week-14}
+## April 21-25 {- #week-14}
 
 *Final Project Preparation*
 
-#### Tuesday, April 22 {-}
+### Tuesday, April 22 {-}
 
-#### Thursday, April 24 {-}
+### Thursday, April 24 {-}
 
-### April 28 - May 2 {- #week-15}
+## April 28 - May 2 {- #week-15}
 
 *Final Project Presentations*
 
-#### Tuesday, April 29 {-}
+### Tuesday, April 29 {-}
 
-#### Thursday, May 01 {-}
+### Thursday, May 01 {-}
 
-### May 5-9 {- #finals-week}
+## May 5-9 {- #finals-week}
 
 *Finals Week*
 
-#### Tuesday, May 05 {-}
+### Tuesday, May 05 {-}
 
 - [Final project](exercises/final-project.qmd) write-up [due]{.orange-due}
