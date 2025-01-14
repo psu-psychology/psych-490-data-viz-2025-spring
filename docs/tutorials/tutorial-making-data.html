@@ -154,7 +154,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-exercises">    
         <li>
-    <a class="dropdown-item" href="../exercises/ex00-figs-in-psych-sci.qmd">
+    <a class="dropdown-item" href="../exercises/ex01-figs-in-psych-sci.qmd">
+ <span class="dropdown-text"></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../exercises/ex02-data-viz-outside-psych.qmd">
+ <span class="dropdown-text"></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../exercises/ex03-making-data.qmd">
+ <span class="dropdown-text"></span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../exercises/ex04-sci-of-data-viz.qmd">
  <span class="dropdown-text"></span></a>
   </li>  
     </ul>
@@ -164,7 +176,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Tutorials</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
-        <li class="dropdown-header">tutorial/tutorial-making-data.qmd</li>
+        <li>
+    <a class="dropdown-item" href="../tutorials/tutorial-making-data.html">
+ <span class="dropdown-text">Making data</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="../tutorials/tutorial-rstudio-on-pc.html">
  <span class="dropdown-text">Setting up RStudio</span></a>
@@ -283,31 +298,31 @@ Your turn
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>our_color_sample</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>  [1] "black"  "red"    "violet" "yellow" "red"    "white"  "violet" "brown" 
-  [9] "orange" "black"  "white"  "blue"   "violet" "black"  "violet" "orange"
- [17] "white"  "gray"   "gray"   "white"  "orange" "yellow" "green"  "black" 
- [25] "white"  "red"    "yellow" "yellow" "violet" "gray"   "green"  "green" 
- [33] "brown"  "red"    "black"  "green"  "green"  "green"  "red"    "brown" 
- [41] "orange" "black"  "black"  "green"  "gray"   "green"  "blue"   "brown" 
- [49] "white"  "white"  "violet" "yellow" "white"  "black"  "orange" "gray"  
- [57] "gray"   "red"    "green"  "violet" "red"    "orange" "yellow" "red"   
- [65] "red"    "green"  "black"  "brown"  "blue"   "green"  "white"  "brown" 
- [73] "gray"   "white"  "yellow" "black"  "orange" "white"  "orange" "green" 
- [81] "red"    "red"    "orange" "yellow" "white"  "red"    "black"  "yellow"
- [89] "brown"  "green"  "gray"   "gray"   "yellow" "violet" "black"  "red"   
- [97] "black"  "gray"   "green"  "violet" "yellow" "green"  "red"    "red"   
-[105] "green"  "blue"   "violet" "violet" "green"  "red"    "gray"   "blue"  
-[113] "yellow" "violet" "white"  "gray"   "black"  "gray"   "red"    "white" 
-[121] "blue"   "red"    "brown"  "yellow" "brown"  "violet" "brown"  "gray"  
-[129] "blue"   "orange" "white"  "gray"   "green"  "blue"   "green"  "gray"  
-[137] "orange" "yellow" "yellow" "yellow" "gray"   "yellow" "violet" "yellow"
-[145] "white"  "white"  "blue"   "yellow" "gray"   "orange" "red"    "white" 
-[153] "violet" "black"  "blue"   "gray"   "gray"   "gray"   "black"  "green" 
-[161] "blue"   "green"  "blue"   "red"    "white"  "violet" "brown"  "red"   
-[169] "green"  "black"  "red"    "yellow" "white"  "brown"  "gray"   "brown" 
-[177] "blue"   "white"  "red"    "blue"   "black"  "gray"   "black"  "green" 
-[185] "yellow" "yellow" "red"    "black"  "black"  "white"  "white"  "orange"
-[193] "yellow" "red"    "yellow" "blue"   "blue"   "white"  "violet" "yellow"</code></pre>
+<pre><code>  [1] "violet" "violet" "orange" "orange" "yellow" "orange" "orange" "red"   
+  [9] "orange" "orange" "yellow" "yellow" "red"    "black"  "gray"   "green" 
+ [17] "orange" "red"    "yellow" "orange" "red"    "black"  "violet" "blue"  
+ [25] "white"  "green"  "black"  "orange" "green"  "black"  "gray"   "brown" 
+ [33] "green"  "black"  "blue"   "green"  "violet" "black"  "red"    "black" 
+ [41] "green"  "gray"   "blue"   "brown"  "brown"  "green"  "orange" "violet"
+ [49] "red"    "black"  "white"  "red"    "red"    "green"  "black"  "brown" 
+ [57] "black"  "green"  "red"    "gray"   "yellow" "black"  "gray"   "violet"
+ [65] "white"  "red"    "black"  "red"    "violet" "black"  "gray"   "green" 
+ [73] "yellow" "blue"   "orange" "yellow" "green"  "violet" "yellow" "red"   
+ [81] "white"  "red"    "black"  "violet" "red"    "blue"   "green"  "green" 
+ [89] "orange" "green"  "yellow" "gray"   "yellow" "blue"   "blue"   "green" 
+ [97] "green"  "red"    "orange" "gray"   "gray"   "black"  "violet" "yellow"
+[105] "white"  "green"  "brown"  "orange" "green"  "violet" "yellow" "gray"  
+[113] "brown"  "green"  "gray"   "violet" "gray"   "brown"  "violet" "black" 
+[121] "gray"   "black"  "brown"  "white"  "black"  "red"    "brown"  "violet"
+[129] "green"  "blue"   "violet" "brown"  "brown"  "violet" "yellow" "yellow"
+[137] "violet" "black"  "green"  "green"  "brown"  "white"  "black"  "green" 
+[145] "brown"  "green"  "yellow" "yellow" "brown"  "green"  "yellow" "violet"
+[153] "yellow" "gray"   "gray"   "red"    "yellow" "red"    "violet" "blue"  
+[161] "green"  "yellow" "gray"   "blue"   "white"  "violet" "orange" "brown" 
+[169] "green"  "gray"   "red"    "brown"  "brown"  "red"    "red"    "black" 
+[177] "green"  "white"  "red"    "red"    "white"  "violet" "brown"  "green" 
+[185] "orange" "green"  "violet" "black"  "white"  "yellow" "yellow" "gray"  
+[193] "black"  "black"  "orange" "orange" "orange" "blue"   "yellow" "blue"  </code></pre>
 </div>
 </div>
 <p>On its own, that’s not especially easy to visualize. What if we sorted it?</p>
@@ -319,27 +334,27 @@ Your turn
 <div class="cell-output cell-output-stdout">
 <pre><code>  [1] "black"  "black"  "black"  "black"  "black"  "black"  "black"  "black" 
   [9] "black"  "black"  "black"  "black"  "black"  "black"  "black"  "black" 
- [17] "black"  "black"  "black"  "black"  "black"  "blue"   "blue"   "blue"  
+ [17] "black"  "black"  "black"  "black"  "black"  "black"  "black"  "black" 
  [25] "blue"   "blue"   "blue"   "blue"   "blue"   "blue"   "blue"   "blue"  
- [33] "blue"   "blue"   "blue"   "blue"   "blue"   "brown"  "brown"  "brown" 
+ [33] "blue"   "blue"   "blue"   "blue"   "brown"  "brown"  "brown"  "brown" 
  [41] "brown"  "brown"  "brown"  "brown"  "brown"  "brown"  "brown"  "brown" 
- [49] "brown"  "brown"  "gray"   "gray"   "gray"   "gray"   "gray"   "gray"  
+ [49] "brown"  "brown"  "brown"  "brown"  "brown"  "brown"  "gray"   "gray"  
  [57] "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"  
  [65] "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"  
- [73] "gray"   "green"  "green"  "green"  "green"  "green"  "green"  "green" 
+ [73] "green"  "green"  "green"  "green"  "green"  "green"  "green"  "green" 
  [81] "green"  "green"  "green"  "green"  "green"  "green"  "green"  "green" 
  [89] "green"  "green"  "green"  "green"  "green"  "green"  "green"  "green" 
- [97] "orange" "orange" "orange" "orange" "orange" "orange" "orange" "orange"
-[105] "orange" "orange" "orange" "orange" "orange" "red"    "red"    "red"   
-[113] "red"    "red"    "red"    "red"    "red"    "red"    "red"    "red"   
-[121] "red"    "red"    "red"    "red"    "red"    "red"    "red"    "red"   
-[129] "red"    "red"    "red"    "red"    "red"    "red"    "violet" "violet"
-[137] "violet" "violet" "violet" "violet" "violet" "violet" "violet" "violet"
-[145] "violet" "violet" "violet" "violet" "violet" "violet" "violet" "white" 
-[153] "white"  "white"  "white"  "white"  "white"  "white"  "white"  "white" 
-[161] "white"  "white"  "white"  "white"  "white"  "white"  "white"  "white" 
-[169] "white"  "white"  "white"  "white"  "white"  "white"  "white"  "yellow"
-[177] "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow"
+ [97] "green"  "green"  "green"  "green"  "green"  "green"  "orange" "orange"
+[105] "orange" "orange" "orange" "orange" "orange" "orange" "orange" "orange"
+[113] "orange" "orange" "orange" "orange" "orange" "orange" "orange" "orange"
+[121] "orange" "red"    "red"    "red"    "red"    "red"    "red"    "red"   
+[129] "red"    "red"    "red"    "red"    "red"    "red"    "red"    "red"   
+[137] "red"    "red"    "red"    "red"    "red"    "red"    "red"    "red"   
+[145] "violet" "violet" "violet" "violet" "violet" "violet" "violet" "violet"
+[153] "violet" "violet" "violet" "violet" "violet" "violet" "violet" "violet"
+[161] "violet" "violet" "violet" "violet" "violet" "violet" "white"  "white" 
+[169] "white"  "white"  "white"  "white"  "white"  "white"  "white"  "white" 
+[177] "white"  "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow"
 [185] "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow"
 [193] "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow"</code></pre>
 </div>
@@ -380,7 +395,7 @@ Your turn
 <div class="cell-output cell-output-stdout">
 <pre><code>favorite_color
  black   blue  brown   gray  green orange    red violet  white yellow 
-    21     16     13     23     23     13     25     17     24     25 </code></pre>
+    24     12     18     18     30     19     23     22     11     23 </code></pre>
 </div>
 </div>
 </section>
