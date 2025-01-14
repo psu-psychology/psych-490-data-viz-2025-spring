@@ -2,14 +2,17 @@
 
 Files related to a PSYCH 490 course on data visualization that Rick Gilmore taught in Spring 2025.
 
+This site is built using [Quarto](https://quarto.org).
+
 The rendered website can be found at:
 
 <https://psu-psychology.github.io/psych-490-data-viz-2025-spring/>
 
 ## Contents
 
-- The source files are in `/src`. Most of the input files are in Quarto.
-- The rendered website is in `/docs`.
+- `src/`: contains the source files.
+- `docs/`: contains the rendered site.
+- `renv/`: files related to the site dependencies that are managed using `{renv}`.
 
 ## Rendering
 
