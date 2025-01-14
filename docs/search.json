@@ -1,10 +1,94 @@
 [
   {
+    "objectID": "exercises/final-project.html",
+    "href": "exercises/final-project.html",
+    "title": "final-project",
+    "section": "",
+    "text": "Work in progress\n\n\n\nThis page is under construction."
+  },
+  {
+    "objectID": "exercises/final-project.html#background",
+    "href": "exercises/final-project.html#background",
+    "title": "final-project",
+    "section": "Background",
+    "text": "Background\nYour final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.\nYou may work alone or with up to two other students in the class. If you work with others, you will need to complete a statement about who did what, and all of the members of your team will get the same grade."
+  },
+  {
+    "objectID": "exercises/final-project.html#dates",
+    "href": "exercises/final-project.html#dates",
+    "title": "final-project",
+    "section": "Dates",
+    "text": "Dates\n\nProposal assigned Thursday, February 13\nFinal project survey due Tuesday, April 08\nFinal write-up due Tuesday, May 05"
+  },
+  {
+    "objectID": "exercises/final-project.html#topics",
+    "href": "exercises/final-project.html#topics",
+    "title": "final-project",
+    "section": "Topics",
+    "text": "Topics\nYou may choose any of a wide range of topics for your final project:\n\nA tutorial on a tool or resource for data visualization you find especially useful.\nA discussion of a specific data visualization or type of visualization and how it does or does not accurately and persuasively convey some specific finding.\nA showcase of one or more data visualizations that you have made."
+  },
+  {
+    "objectID": "exercises/final-project.html#formats",
+    "href": "exercises/final-project.html#formats",
+    "title": "final-project",
+    "section": "Formats",
+    "text": "Formats\nThere are multiple formats for your final project.\n\nShort (5-10 min) in-class talk\nPoster\nLesson plan/exercise\nTutorial\nResearch project (& write-up)\nOpinion piece"
+  },
+  {
+    "objectID": "exercises/final-project.html#components",
+    "href": "exercises/final-project.html#components",
+    "title": "final-project",
+    "section": "Components",
+    "text": "Components\n\nProject proposal\n\nEvery student or team must submit a one-page single-spaced project proposal. Your proposal should state the aim or objective of your project, the format, and a include a brief description of how you intend to go about achieving your objectives.\n\n\n\nProject presentation\n\nEvery student or team may make an optional presentation to the class about their project. Please indicate whether you are willing to make a presentation when you complete the survey.\nNote: Giving a presentation is worth 5 extra credit points.\nThe presentations will occur during class on December 6, 9, and 11.\nIf you wish to have your presentation made available publicly on the course website, please let me know. This is also completely optional.\n\n\n\nProject write-up\n\nEvery student or team must submit a write-up, due during finals week on Tuesday, May 05.\nDepending on the format of the project (talk, poster, paper), different written materials may be submitted (slides, poster, etc.).\nFor an in-class talk, submit a separate document with your talk text or notes and your slides. You may also submit slides that include presenter notes embedded within them.\nFor a poster, submit a PowerPoint or PDF of your poster along with any talking points.\n\nRubic: An example of potential grading template we may use: https://commons.erau.edu/db-srs/poster-scoring-rubric.pdf\nArticle: How to make a good scientific poster https://www.nature.com/articles/nj7614-115a\nTutorial video: how to make a poster https://www.youtube.com/watch?v=EL5YwkiqBho&ab_channel=SamHertig\nOther basics: https://guides.libraries.psu.edu/posters\n\nFor research paper, please submit an APA-formatted manuscript 1,500-2,000 words in length.\nFor an opinion piece, please submit a document up to 1,500 words in length.\nFor an interactive website or presentation, please submit a complete set of files needed to evaluate your website or presentation.\nFor a lesson plan, please submit a document up up to 1,500 words in length."
+  },
+  {
+    "objectID": "exercises/final-project.html#survey",
+    "href": "exercises/final-project.html#survey",
+    "title": "final-project",
+    "section": "Survey",
+    "text": "Survey\n\nPlease provide information about your project via this Google Form: https://forms.gle/oyotxgnnqchqnSgTA"
+  },
+  {
+    "objectID": "exercises/ex06-figs-w-r.html",
+    "href": "exercises/ex06-figs-w-r.html",
+    "title": "Exercise 06",
+    "section": "",
+    "text": "Work in progress\n\n\n\nThis page is under construction."
+  },
+  {
     "objectID": "exercises/ex04-sci-of-data-viz.html",
     "href": "exercises/ex04-sci-of-data-viz.html",
     "title": "Exercise 04",
     "section": "",
     "text": "Work in progress\n\n\n\nThis page is under construction."
+  },
+  {
+    "objectID": "exercises/ex04-sci-of-data-viz.html#dates",
+    "href": "exercises/ex04-sci-of-data-viz.html#dates",
+    "title": "Exercise 04",
+    "section": "Dates",
+    "text": "Dates"
+  },
+  {
+    "objectID": "exercises/ex04-sci-of-data-viz.html#goals",
+    "href": "exercises/ex04-sci-of-data-viz.html#goals",
+    "title": "Exercise 04",
+    "section": "Goals",
+    "text": "Goals"
+  },
+  {
+    "objectID": "exercises/ex04-sci-of-data-viz.html#assignment",
+    "href": "exercises/ex04-sci-of-data-viz.html#assignment",
+    "title": "Exercise 04",
+    "section": "Assignment",
+    "text": "Assignment"
+  },
+  {
+    "objectID": "exercises/ex04-sci-of-data-viz.html#submit",
+    "href": "exercises/ex04-sci-of-data-viz.html#submit",
+    "title": "Exercise 04",
+    "section": "Submit",
+    "text": "Submit"
   },
   {
     "objectID": "exercises/ex02-data-viz-outside-psych.html",
@@ -487,14 +571,14 @@
     "href": "evaluation.html",
     "title": "Evaluation",
     "section": "",
-    "text": "Component\nDescription\nPoints\n\n\n\n\nAttendance\nYou will receive 1 point for each class you attend up to a maximum of 25.\n25\n\n\nExercises\nThere will be seven (7) exercises that we will work on. Each exercise is worth 10 points. You are required to submit four (4) toward your final grade.\n40\n\n\nFinal project\nYou will complete a final project, either on your own, or with a small group of 3 or less. Your final project is worth 35 points.\n35\n\n\n\nTOTAL POINTS POSSIBLE\n120\n\n\nExtra Credit\nIf you submit more than four (4) exercise write-ups, you may earn up to 10 extra credit points for these exercises."
+    "text": "Component\nDescription\nPoints\n\n\n\n\nAttendance\nYou will receive 1 point for each class you attend up to a maximum of 25.\n25\n\n\nExercises\nThere will be seven (7) exercises that we will work on. Each exercise is worth 10 points. You are required to submit four (4) toward your final grade.\n40\n\n\nFinal project\nYou will complete a final project, either on your own, or with a small group of 3 or less. Your final project is worth 35 points.\n35\n\n\n\nTOTAL POINTS POSSIBLE\n100\n\n\nExtra Credit\nIf you submit more than four (4) exercise write-ups, you may earn up to 10 extra credit points for these exercises."
   },
   {
     "objectID": "evaluation.html#eval-components",
     "href": "evaluation.html#eval-components",
     "title": "Evaluation",
     "section": "",
-    "text": "Component\nDescription\nPoints\n\n\n\n\nAttendance\nYou will receive 1 point for each class you attend up to a maximum of 25.\n25\n\n\nExercises\nThere will be seven (7) exercises that we will work on. Each exercise is worth 10 points. You are required to submit four (4) toward your final grade.\n40\n\n\nFinal project\nYou will complete a final project, either on your own, or with a small group of 3 or less. Your final project is worth 35 points.\n35\n\n\n\nTOTAL POINTS POSSIBLE\n120\n\n\nExtra Credit\nIf you submit more than four (4) exercise write-ups, you may earn up to 10 extra credit points for these exercises."
+    "text": "Component\nDescription\nPoints\n\n\n\n\nAttendance\nYou will receive 1 point for each class you attend up to a maximum of 25.\n25\n\n\nExercises\nThere will be seven (7) exercises that we will work on. Each exercise is worth 10 points. You are required to submit four (4) toward your final grade.\n40\n\n\nFinal project\nYou will complete a final project, either on your own, or with a small group of 3 or less. Your final project is worth 35 points.\n35\n\n\n\nTOTAL POINTS POSSIBLE\n100\n\n\nExtra Credit\nIf you submit more than four (4) exercise write-ups, you may earn up to 10 extra credit points for these exercises."
   },
   {
     "objectID": "evaluation.html#grading-scheme",
@@ -550,7 +634,7 @@
     "href": "deadlines.html",
     "title": "Deadlines",
     "section": "",
-    "text": "This page summarizes some of the key deadlines in the course.\n\n\n\nDate\nWhat’s due/happening\n\n\n\n\n2025-01-23\nExercise 01\n\n\n2025-02-30\nExercise 02\n\n\n2025-02-06\nExercise 03\n\n\n2025-03-04\nFinal project proposal due\n\n\n2025-03-06\nExercise 04\n\n\n2025-03-20\nExercise 05\n\n\n2024-03-27\nExercise 06\n\n\n2025-04-17\nExercise 07\n\n\n2025-05-05\nFinal project writeup due"
+    "text": "This page summarizes some of the key deadlines in the course.\n\n\n\nDate\nWhat’s due/happening\n\n\n\n\n2025-01-23\nExercise 01\n\n\n2025-02-30\nExercise 02\n\n\n2025-02-06\nExercise 03\n\n\n2025-03-04\nFinal project proposal due\n\n\n2025-03-06\nExercise 04\n\n\n2025-03-20\nExercise 05\n\n\n2025-03-27\nExercise 06\n\n\n2025-04-08\nFinal project survey\n\n\n2025-04-17\nExercise 07\n\n\n2025-05-05\nFinal project writeup due"
   },
   {
     "objectID": "index.html",
@@ -620,14 +704,14 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Surveying the landscape\n\n\nCourse introduction\n\nSlides\n\n\n\n\nThe semiotics of data visualization\n\nRead: Cairo (2013), Chapter 1-2, PDF on Canvas\nSlides\nExercise 01 assigned"
+    "text": "Surveying the landscape\n\n\nCourse introduction\n\nSlides\nExercise 01 assigned\n\n\n\n\nThe semiotics of data visualization\n\nRead: Cairo (2013), Chapter 1-2, PDF on Canvas\nSlides"
   },
   {
     "objectID": "schedule.html#week-01",
     "href": "schedule.html#week-01",
     "title": "Schedule",
     "section": "",
-    "text": "Surveying the landscape\n\n\nCourse introduction\n\nSlides\n\n\n\n\nThe semiotics of data visualization\n\nRead: Cairo (2013), Chapter 1-2, PDF on Canvas\nSlides\nExercise 01 assigned"
+    "text": "Surveying the landscape\n\n\nCourse introduction\n\nSlides\nExercise 01 assigned\n\n\n\n\nThe semiotics of data visualization\n\nRead: Cairo (2013), Chapter 1-2, PDF on Canvas\nSlides"
   },
   {
     "objectID": "schedule.html#week-02",
@@ -655,7 +739,7 @@
     "href": "schedule.html#week-05",
     "title": "Schedule",
     "section": "February 10-14",
-    "text": "February 10-14\nFrom cognition to understanding\n\nTuesday, February 11\n\nRead:\n\nFranconeri, Padilla, Shah, Zacks, & Hullman (2021), pp. 109-122\nCairo (2013), Chapter 7, PDF on Canvas\n\n\n\n\nThursday, February 13\nDesigning efficient & understandable visualizations\n\nRead:\n\nFranconeri et al. (2021), pp. 123-139\n\nExercise-04 assigned"
+    "text": "February 10-14\nFrom cognition to understanding\n\nTuesday, February 11\n\nRead:\n\nFranconeri, Padilla, Shah, Zacks, & Hullman (2021), pp. 109-122\nCairo (2013), Chapter 7, PDF on Canvas\n\nFinal Project proposal assigned\n\n\n\nThursday, February 13\nDesigning efficient & understandable visualizations\n\nRead:\n\nFranconeri et al. (2021), pp. 123-139\n\nExercise-04 assigned"
   },
   {
     "objectID": "schedule.html#week-06",
@@ -704,14 +788,14 @@
     "href": "schedule.html#week-11",
     "title": "Schedule",
     "section": "March 31 - April 4",
-    "text": "March 31 - April 4\nIntroduction to Python\n\nTuesday, April 01\n\n\nThursday, April 03\n\nExercise-06 due"
+    "text": "March 31 - April 4\nIntroduction to Python\n\nTuesday, April 01\n\nFinal project preferences survey assigned\n\n\n\nThursday, April 03\n\nExercise-06 due"
   },
   {
     "objectID": "schedule.html#week-12",
     "href": "schedule.html#week-12",
     "title": "Schedule",
     "section": "April 7-11",
-    "text": "April 7-11\nExploring data with Python\n\nTuesday, April 08\n\n\nThursday, April 10\n\nExercise-07 assigned"
+    "text": "April 7-11\nExploring data with Python\n\nTuesday, April 08\n\nFinal project preferences survey due\n\n\n\nThursday, April 10\n\nExercise-07 assigned"
   },
   {
     "objectID": "schedule.html#week-13",
@@ -760,7 +844,7 @@
     "href": "tutorials/tutorial-making-data.html#nominal-data",
     "title": "",
     "section": "Nominal data",
-    "text": "Nominal data\nLet’s focus on nominal or categorical data, specifically the favorite colors of some imaginary set of people.\n\n\nCode\ncolors &lt;- c(\"red\", \"orange\", \"yellow\", \"green\", \"blue\", \"violet\", \"white\", \"black\", \"gray\", \"brown\")\n\n\nThere are n=10 colors in this set.\n\n\n\n\n\n\nYour turn\n\n\n\nWhy are these data nominal or nominally scaled? Or rather, why aren’t they ordinal, interval, or ratio?\n\n\n\nGenerating\nFor demonstration purposes, we want to take some number of random samples of these colors. Let’s pick n=200 and sample with replacement (replace=TRUE in the code below), meaning that we could have any number of colors in our sample of 200 imaginary people.\n\n\nCode\nour_color_sample &lt;- sample(colors, size=200, replace=TRUE)\nour_color_sample\n\n\n  [1] \"brown\"  \"black\"  \"white\"  \"gray\"   \"violet\" \"blue\"   \"violet\" \"gray\"  \n  [9] \"brown\"  \"violet\" \"brown\"  \"black\"  \"black\"  \"brown\"  \"black\"  \"gray\"  \n [17] \"violet\" \"white\"  \"white\"  \"white\"  \"white\"  \"red\"    \"green\"  \"orange\"\n [25] \"green\"  \"brown\"  \"gray\"   \"black\"  \"green\"  \"red\"    \"brown\"  \"orange\"\n [33] \"green\"  \"orange\" \"gray\"   \"green\"  \"green\"  \"brown\"  \"green\"  \"green\" \n [41] \"blue\"   \"violet\" \"blue\"   \"blue\"   \"green\"  \"blue\"   \"gray\"   \"orange\"\n [49] \"blue\"   \"brown\"  \"brown\"  \"brown\"  \"red\"    \"red\"    \"violet\" \"yellow\"\n [57] \"brown\"  \"blue\"   \"white\"  \"brown\"  \"black\"  \"yellow\" \"brown\"  \"green\" \n [65] \"gray\"   \"red\"    \"gray\"   \"blue\"   \"black\"  \"gray\"   \"orange\" \"gray\"  \n [73] \"blue\"   \"orange\" \"brown\"  \"black\"  \"blue\"   \"violet\" \"gray\"   \"green\" \n [81] \"blue\"   \"green\"  \"blue\"   \"yellow\" \"green\"  \"orange\" \"yellow\" \"orange\"\n [89] \"orange\" \"yellow\" \"white\"  \"black\"  \"white\"  \"orange\" \"green\"  \"white\" \n [97] \"gray\"   \"black\"  \"gray\"   \"black\"  \"white\"  \"red\"    \"black\"  \"red\"   \n[105] \"green\"  \"red\"    \"orange\" \"black\"  \"orange\" \"gray\"   \"violet\" \"brown\" \n[113] \"violet\" \"green\"  \"blue\"   \"yellow\" \"violet\" \"yellow\" \"green\"  \"white\" \n[121] \"blue\"   \"red\"    \"orange\" \"violet\" \"red\"    \"gray\"   \"yellow\" \"orange\"\n[129] \"orange\" \"black\"  \"white\"  \"black\"  \"gray\"   \"gray\"   \"white\"  \"violet\"\n[137] \"red\"    \"violet\" \"orange\" \"violet\" \"violet\" \"orange\" \"green\"  \"white\" \n[145] \"orange\" \"brown\"  \"violet\" \"violet\" \"red\"    \"gray\"   \"yellow\" \"green\" \n[153] \"brown\"  \"brown\"  \"gray\"   \"brown\"  \"blue\"   \"white\"  \"yellow\" \"yellow\"\n[161] \"brown\"  \"yellow\" \"white\"  \"green\"  \"orange\" \"yellow\" \"orange\" \"black\" \n[169] \"gray\"   \"gray\"   \"gray\"   \"blue\"   \"orange\" \"violet\" \"green\"  \"green\" \n[177] \"violet\" \"red\"    \"violet\" \"black\"  \"orange\" \"orange\" \"yellow\" \"brown\" \n[185] \"yellow\" \"orange\" \"black\"  \"violet\" \"green\"  \"violet\" \"brown\"  \"white\" \n[193] \"violet\" \"yellow\" \"blue\"   \"white\"  \"black\"  \"blue\"   \"green\"  \"green\" \n\n\nOn its own, that’s not especially easy to visualize. What if we sorted it?\n\n\nCode\nsort(our_color_sample)\n\n\n  [1] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n  [9] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n [17] \"black\"  \"black\"  \"black\"  \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [25] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [33] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"brown\"  \"brown\"  \"brown\" \n [41] \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\" \n [49] \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\" \n [57] \"brown\"  \"brown\"  \"brown\"  \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [65] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [73] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [81] \"gray\"   \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [89] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [97] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n[105] \"green\"  \"green\"  \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[113] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[121] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[129] \"orange\" \"orange\" \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[137] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"violet\"\n[145] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[153] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[161] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"white\"  \"white\" \n[169] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[177] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[185] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n[193] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n\n\nStill not all that helpful.\n\n\nSummarizing\nWhat can we say to summarize categorical data?\nWe can report the number of total responses.\n\n\nCode\nlength(our_color_sample)\n\n\n[1] 200\n\n\nWe can report the number of unique categories.\n\n\nCode\nlength(unique(our_color_sample))\n\n\n[1] 10\n\n\nWe can report the number of responses per category.\n\n\nCode\ncolors_df &lt;- data.frame(favorite_color = our_color_sample)\n\nxtabs(formula = ~favorite_color, data = colors_df)\n\n\nfavorite_color\n black   blue  brown   gray  green orange    red violet  white yellow \n    19     18     22     22     25     24     13     23     18     16 \n\n\n\n\nVisualizing\nSingle nominal variables don’t offer us many options for visualization. A bar plot showing the number of observations in each category seems to be it.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color) +\n  geom_bar()\n\n\n\n\n\n\n\n\nFigure 1: An (ugly) barplot of the random favorite color data\n\n\n\n\n\nIs one of these colors a particular favorite? Maybe. The observed data show some differences. But how can we know they aren’t just due to random chance.\n\n\n\n\n\n\nStop the presses!\n\n\n\nThese particular data are entirely random. We made them up!\nKeep that in mind while we work through what we would do to answer the question if these were not fake, random data.\n\n\nTo answer that question, we’d have to compare our results with some other pattern, a pattern where there is no favorite. In other words, we want a pattern where the counts are all equal. So, we’re back to summarizing.\nActually, data analysis in the real world usually involves a back-and-forth alternation between summarizing/analyzing and visualizing.\n\n\n\n\n\n\nflowchart LR\n  A[Summarize] --&gt; B[Visualize]\n  B ---&gt; A\n\n\n\n\nFigure 2: Illustration of the back and forth between summarizing and visualizing that characterizes real-life data analysis.\n\n\n\n\n\n\n\nSummarizing II\nLet’s make data that have an identical pattern across all colors.\nThere are several ways to do this, but here is one that works.\n\n\nCode\nno_favorite &lt;- rep(colors, length(our_color_sample)/length(colors))\n\ncompare_df &lt;- data.frame(favorite_color = no_favorite)\n\nxtabs(formula = ~favorite_color, data = compare_df)\n\n\nfavorite_color\n black   blue  brown   gray  green orange    red violet  white yellow \n    20     20     20     20     20     20     20     20     20     20 \n\n\nHow can we compare the data where there are no differences by category to the data where there are differences?"
+    "text": "Nominal data\nLet’s focus on nominal or categorical data, specifically the favorite colors of some imaginary set of people.\n\n\nCode\ncolors &lt;- c(\"red\", \"orange\", \"yellow\", \"green\", \"blue\", \"violet\", \"white\", \"black\", \"gray\", \"brown\")\n\n\nThere are n=10 colors in this set.\n\n\n\n\n\n\nYour turn\n\n\n\nWhy are these data nominal or nominally scaled? Or rather, why aren’t they ordinal, interval, or ratio?\n\n\n\nGenerating\nFor demonstration purposes, we want to take some number of random samples of these colors. Let’s pick n=200 and sample with replacement (replace=TRUE in the code below), meaning that we could have any number of colors in our sample of 200 imaginary people.\n\n\nCode\nour_color_sample &lt;- sample(colors, size=200, replace=TRUE)\nour_color_sample\n\n\n  [1] \"brown\"  \"white\"  \"white\"  \"green\"  \"violet\" \"blue\"   \"orange\" \"orange\"\n  [9] \"white\"  \"red\"    \"blue\"   \"violet\" \"gray\"   \"yellow\" \"black\"  \"white\" \n [17] \"yellow\" \"blue\"   \"green\"  \"blue\"   \"violet\" \"white\"  \"yellow\" \"black\" \n [25] \"violet\" \"brown\"  \"gray\"   \"yellow\" \"brown\"  \"violet\" \"orange\" \"yellow\"\n [33] \"white\"  \"black\"  \"orange\" \"white\"  \"white\"  \"white\"  \"blue\"   \"green\" \n [41] \"black\"  \"blue\"   \"yellow\" \"orange\" \"brown\"  \"violet\" \"orange\" \"orange\"\n [49] \"gray\"   \"green\"  \"yellow\" \"blue\"   \"white\"  \"green\"  \"red\"    \"orange\"\n [57] \"yellow\" \"orange\" \"green\"  \"black\"  \"green\"  \"white\"  \"orange\" \"black\" \n [65] \"red\"    \"violet\" \"brown\"  \"blue\"   \"brown\"  \"black\"  \"yellow\" \"orange\"\n [73] \"violet\" \"orange\" \"violet\" \"gray\"   \"white\"  \"orange\" \"black\"  \"violet\"\n [81] \"black\"  \"black\"  \"violet\" \"gray\"   \"red\"    \"blue\"   \"blue\"   \"yellow\"\n [89] \"blue\"   \"red\"    \"red\"    \"black\"  \"brown\"  \"blue\"   \"yellow\" \"violet\"\n [97] \"blue\"   \"yellow\" \"blue\"   \"black\"  \"gray\"   \"white\"  \"blue\"   \"green\" \n[105] \"black\"  \"yellow\" \"red\"    \"yellow\" \"red\"    \"yellow\" \"green\"  \"brown\" \n[113] \"yellow\" \"orange\" \"green\"  \"gray\"   \"violet\" \"gray\"   \"yellow\" \"white\" \n[121] \"white\"  \"red\"    \"orange\" \"brown\"  \"yellow\" \"blue\"   \"blue\"   \"black\" \n[129] \"violet\" \"green\"  \"brown\"  \"brown\"  \"red\"    \"black\"  \"green\"  \"blue\"  \n[137] \"orange\" \"gray\"   \"gray\"   \"orange\" \"yellow\" \"red\"    \"yellow\" \"red\"   \n[145] \"green\"  \"violet\" \"green\"  \"gray\"   \"gray\"   \"yellow\" \"white\"  \"gray\"  \n[153] \"violet\" \"gray\"   \"green\"  \"blue\"   \"red\"    \"green\"  \"brown\"  \"white\" \n[161] \"white\"  \"black\"  \"blue\"   \"orange\" \"blue\"   \"black\"  \"blue\"   \"brown\" \n[169] \"white\"  \"gray\"   \"green\"  \"black\"  \"violet\" \"violet\" \"red\"    \"red\"   \n[177] \"yellow\" \"yellow\" \"blue\"   \"black\"  \"black\"  \"orange\" \"brown\"  \"blue\"  \n[185] \"orange\" \"black\"  \"brown\"  \"violet\" \"orange\" \"black\"  \"green\"  \"white\" \n[193] \"violet\" \"brown\"  \"green\"  \"green\"  \"red\"    \"orange\" \"black\"  \"black\" \n\n\nOn its own, that’s not especially easy to visualize. What if we sorted it?\n\n\nCode\nsort(our_color_sample)\n\n\n  [1] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n  [9] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n [17] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n [25] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [33] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [41] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [49] \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\" \n [57] \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\" \n [65] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [73] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"green\" \n [81] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [89] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [97] \"green\"  \"green\"  \"green\"  \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[105] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[113] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[121] \"orange\" \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[129] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[137] \"red\"    \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[145] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[153] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"white\"  \"white\"  \"white\" \n[161] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[169] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[177] \"white\"  \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n[185] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n[193] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n\n\nStill not all that helpful.\n\n\nSummarizing\nWhat can we say to summarize categorical data?\nWe can report the number of total responses.\n\n\nCode\nlength(our_color_sample)\n\n\n[1] 200\n\n\nWe can report the number of unique categories.\n\n\nCode\nlength(unique(our_color_sample))\n\n\n[1] 10\n\n\nWe can report the number of responses per category.\n\n\nCode\ncolors_df &lt;- data.frame(favorite_color = our_color_sample)\n\nxtabs(formula = ~favorite_color, data = colors_df)\n\n\nfavorite_color\n black   blue  brown   gray  green orange    red violet  white yellow \n    24     24     16     15     20     22     16     20     20     23 \n\n\n\n\nVisualizing\nSingle nominal variables don’t offer us many options for visualization. A bar plot showing the number of observations in each category seems to be it.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color) +\n  geom_bar()\n\n\n\n\n\n\n\n\nFigure 1: An (ugly) barplot of the random favorite color data\n\n\n\n\n\nIs one of these colors a particular favorite? Maybe. The observed data show some differences. But how can we know they aren’t just due to random chance.\n\n\n\n\n\n\nStop the presses!\n\n\n\nThese particular data are entirely random. We made them up!\nKeep that in mind while we work through what we would do to answer the question if these were not fake, random data.\n\n\nTo answer that question, we’d have to compare our results with some other pattern, a pattern where there is no favorite. In other words, we want a pattern where the counts are all equal. So, we’re back to summarizing.\nActually, data analysis in the real world usually involves a back-and-forth alternation between summarizing/analyzing and visualizing.\n\n\n\n\n\n\nflowchart LR\n  A[Summarize] --&gt; B[Visualize]\n  B ---&gt; A\n\n\n\n\nFigure 2: Illustration of the back and forth between summarizing and visualizing that characterizes real-life data analysis.\n\n\n\n\n\n\n\nSummarizing II\nLet’s make data that have an identical pattern across all colors.\nThere are several ways to do this, but here is one that works.\n\n\nCode\nno_favorite &lt;- rep(colors, length(our_color_sample)/length(colors))\n\ncompare_df &lt;- data.frame(favorite_color = no_favorite)\n\nxtabs(formula = ~favorite_color, data = compare_df)\n\n\nfavorite_color\n black   blue  brown   gray  green orange    red violet  white yellow \n    20     20     20     20     20     20     20     20     20     20 \n\n\nHow can we compare the data where there are no differences by category to the data where there are differences?"
   },
   {
     "objectID": "tutorials/tutorial-r-ggplot.html",
@@ -1173,14 +1257,14 @@
     "href": "exercises/ex01-figs-in-psych-sci.html",
     "title": "Exercise 01",
     "section": "",
-    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nDue on Thursday, January 16."
+    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nWrite-up for credit due on Thursday, January 23."
   },
   {
     "objectID": "exercises/ex01-figs-in-psych-sci.html#dates",
     "href": "exercises/ex01-figs-in-psych-sci.html#dates",
     "title": "Exercise 01",
     "section": "",
-    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nDue on Thursday, January 16."
+    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nWrite-up for credit due on Thursday, January 23."
   },
   {
     "objectID": "exercises/ex01-figs-in-psych-sci.html#goals",
@@ -1239,6 +1323,20 @@
     "text": "Submit\nA short 2-3 pp write-up with answers to point 5. above via Canvas.\nAdd Dr. Gilmore (rog1@psu.edu) and the TA as collaborators on the survey."
   },
   {
+    "objectID": "exercises/ex05-figure-prep-guidelines.html",
+    "href": "exercises/ex05-figure-prep-guidelines.html",
+    "title": "Exercise 05",
+    "section": "",
+    "text": "Work in progress\n\n\n\nThis page is under construction."
+  },
+  {
+    "objectID": "exercises/ex05-figure-prep-guidelines.html#dates",
+    "href": "exercises/ex05-figure-prep-guidelines.html#dates",
+    "title": "Exercise 05",
+    "section": "Dates",
+    "text": "Dates"
+  },
+  {
     "objectID": "exercises/ex05-figure-prep-guidelines.html#goals",
     "href": "exercises/ex05-figure-prep-guidelines.html#goals",
     "title": "Exercise 05",
@@ -1258,90 +1356,6 @@
     "title": "Exercise 05",
     "section": "Submit",
     "text": "Submit\nA 3-5 pp (750-1,300 word) write-up of your findings."
-  },
-  {
-    "objectID": "exercises/final-project.html",
-    "href": "exercises/final-project.html",
-    "title": "final-project",
-    "section": "",
-    "text": "Work in progress\n\n\n\nThis page is under construction."
-  },
-  {
-    "objectID": "exercises/final-project.html#dates",
-    "href": "exercises/final-project.html#dates",
-    "title": "final-project",
-    "section": "Dates",
-    "text": "Dates"
-  },
-  {
-    "objectID": "exercises/final-project.html#goals",
-    "href": "exercises/final-project.html#goals",
-    "title": "final-project",
-    "section": "Goals",
-    "text": "Goals"
-  },
-  {
-    "objectID": "exercises/final-project.html#assignment",
-    "href": "exercises/final-project.html#assignment",
-    "title": "final-project",
-    "section": "Assignment",
-    "text": "Assignment"
-  },
-  {
-    "objectID": "exercises/final-project.html#submit",
-    "href": "exercises/final-project.html#submit",
-    "title": "final-project",
-    "section": "Submit",
-    "text": "Submit"
-  },
-  {
-    "objectID": "exercises/ex06-figs-w-r.html",
-    "href": "exercises/ex06-figs-w-r.html",
-    "title": "Exercise 06",
-    "section": "",
-    "text": "Work in progress\n\n\n\nThis page is under construction."
-  },
-  {
-    "objectID": "exercises/ex04-sci-of-data-viz.html#dates",
-    "href": "exercises/ex04-sci-of-data-viz.html#dates",
-    "title": "Exercise 04",
-    "section": "Dates",
-    "text": "Dates"
-  },
-  {
-    "objectID": "exercises/ex04-sci-of-data-viz.html#goals",
-    "href": "exercises/ex04-sci-of-data-viz.html#goals",
-    "title": "Exercise 04",
-    "section": "Goals",
-    "text": "Goals"
-  },
-  {
-    "objectID": "exercises/ex04-sci-of-data-viz.html#assignment",
-    "href": "exercises/ex04-sci-of-data-viz.html#assignment",
-    "title": "Exercise 04",
-    "section": "Assignment",
-    "text": "Assignment"
-  },
-  {
-    "objectID": "exercises/ex04-sci-of-data-viz.html#submit",
-    "href": "exercises/ex04-sci-of-data-viz.html#submit",
-    "title": "Exercise 04",
-    "section": "Submit",
-    "text": "Submit"
-  },
-  {
-    "objectID": "exercises/ex05-figure-prep-guidelines.html",
-    "href": "exercises/ex05-figure-prep-guidelines.html",
-    "title": "Exercise 05",
-    "section": "",
-    "text": "Work in progress\n\n\n\nThis page is under construction."
-  },
-  {
-    "objectID": "exercises/ex05-figure-prep-guidelines.html#dates",
-    "href": "exercises/ex05-figure-prep-guidelines.html#dates",
-    "title": "Exercise 05",
-    "section": "Dates",
-    "text": "Dates"
   },
   {
     "objectID": "exercises/ex07-figs-w-python.html",

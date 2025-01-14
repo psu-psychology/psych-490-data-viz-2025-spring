@@ -13,7 +13,7 @@ subtitle: "2025-01-23"
 
 ## Announcements
 
-- [Exercise 01](../exercises/ex01-figs-in-psych-sci.qmd) [due]{.orange-due}
+- [Exercise 01](../exercises/ex01-figs-in-psych-sci.qmd) [due]{.orange_due}
 
 ## Last time...
 

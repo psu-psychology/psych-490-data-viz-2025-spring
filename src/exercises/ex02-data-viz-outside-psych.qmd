@@ -7,7 +7,7 @@ subtitle: "Data visualizaton outside Psychological Science"
 
 In-class work on Tuesday, January 21-23.
 
-[Due]{.orange-due} on [Thursday, January 30](../schedule.qmd#thursday-january-30).
+[Due]{.orange_due} on [Thursday, January 30](../schedule.qmd#thursday-january-30).
 
 ## Goals {-}
 

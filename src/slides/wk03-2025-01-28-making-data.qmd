@@ -19,7 +19,7 @@ subtitle: "2025-01-28"
 
 ## Announcements
 
-- [Exercise-01](../exercises/ex01-making-data.qmd) write-up [due next Tuesday, January 21, 2025]{.orange-due}.
+- [Exercise-01](../exercises/ex01-making-data.qmd) write-up [due next Tuesday, January 21, 2025]{.orange_due}.
 
 ## Last time...
 

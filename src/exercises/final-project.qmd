@@ -10,10 +10,69 @@ This page is under construction.
 
 :::
 
+## Background {-}
+
+Your final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.
+
+You may work alone or with up to two other students in the class.
+If you work with others, you will need to complete a statement about who did what, and all of the members of your team will get the same grade.
+
 ## Dates {-}
 
-## Goals {-}
+- Proposal [assigned]{.green_assigned} [Thursday, February 13](../schedule.qmd#thursday-february-13)
+- Final [project survey](https://forms.gle/oyotxgnnqchqnSgTA) [due]{.orange_due} [Tuesday, April 08](../schedule.qmd#tuesday-april-08)
+- Final write-up [due]{.orange_due} [Tuesday, May 05](../schedule.qmd#tuesday-may-05)
 
-## Assignment {-}
+## Topics {-}
 
-## Submit {-}
+You may choose any of a wide range of topics for your final project:
+
+- A tutorial on a tool or resource for data visualization you find especially useful.
+- A discussion of a specific data visualization or type of visualization and how it does or does not accurately and persuasively convey some specific finding.
+- A showcase of one or more data visualizations that you have made.
+
+## Formats {-}
+
+There are multiple formats for your final project.
+
+- Short (5-10 min) in-class talk
+- Poster
+- Lesson plan/exercise
+- Tutorial
+- Research project (& write-up)
+- Opinion piece
+
+## Components {-}
+
+### Project proposal
+
+- Every student or team must submit a one-page *single-spaced* project proposal. Your proposal should state the aim or objective of your project, the format, and a include a brief description of how you intend to go about achieving your objectives.
+
+### Project presentation
+
+- Every student or team may make an *optional* presentation to the class about their project. Please indicate whether you are willing to make a presentation when you complete the [survey](final-project.qmd#survey).
+- **Note**: Giving a presentation is worth 5 extra credit points.
+- The presentations will occur during class on December 6, 9, and 11.
+- If you wish to have your presentation made available publicly on the course website, please let me know. This is also completely optional.
+
+### Project write-up
+    
+- Every student or team must submit a write-up, [due]{.orange_due} during finals week on [Tuesday, May 05](../schedule.qmd#tuesday-may-05).
+- Depending on the format of the project (talk, poster, paper), different written materials may be submitted (slides, poster, etc.).
+- For an in-class talk, submit a separate document with your talk text or notes and your slides. You may also submit slides that include presenter notes embedded within them.
+- For a poster, submit a PowerPoint or PDF of your poster along with any talking points.
+  - *Rubic*: An example of potential grading template we may use:
+<https://commons.erau.edu/db-srs/poster-scoring-rubric.pdf>
+  - *Article*: How to make a good scientific poster
+<https://www.nature.com/articles/nj7614-115a>
+  - *Tutorial video*: how to make a poster
+<https://www.youtube.com/watch?v=EL5YwkiqBho&ab_channel=SamHertig>
+  - *Other basics*: <https://guides.libraries.psu.edu/posters>
+- For research paper, please submit an APA-formatted manuscript 1,500-2,000 words in length.
+- For an opinion piece, please submit a document up to 1,500 words in length.
+- For an interactive website or presentation, please submit a complete set of files needed to evaluate your website or presentation.
+- For a lesson plan, please submit a document up up to 1,500 words in length.
+
+## Survey
+
+- Please provide information about your project via this Google Form: <https://forms.gle/oyotxgnnqchqnSgTA>
