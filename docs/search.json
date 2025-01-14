@@ -221,14 +221,14 @@
     "href": "slides/wk01-2025-01-16-semiotics-data-viz.html#last-time",
     "title": "Semiotics of data visualization",
     "section": "Last time…",
-    "text": "Last time…\n\nCourse introduction\nVisualization in psychological science"
+    "text": "Last time…\n\nCourse introduction"
   },
   {
     "objectID": "slides/wk01-2025-01-16-semiotics-data-viz.html#today",
     "href": "slides/wk01-2025-01-16-semiotics-data-viz.html#today",
     "title": "Semiotics of data visualization",
     "section": "Today",
-    "text": "Today\n\nSemiotics of data visualization\nVisualization in psychological science\n\nExercise-01"
+    "text": "Today\n\nVisualization in psychological science\n\nExercise-01\n\nSemiotics of data visualization"
   },
   {
     "objectID": "slides/wk01-2025-01-16-semiotics-data-viz.html#semi-whatics",
@@ -354,7 +354,7 @@
     "href": "slides/wk01-2025-01-16-semiotics-data-viz.html#questions",
     "title": "Semiotics of data visualization",
     "section": "Questions",
-    "text": "Questions\n\nAre there common types of visualizations in psychological science?\nWhat (types) messages are conveyed?\nHow clearly are they conveyed?\nHow are the following depicted:\n\nResponses to surveys\nPerformance on tasks/tests\nBrain structure or activity"
+    "text": "Questions\n\nAre there common types of visualizations in psychological science?\nWhat (types) messages are conveyed?\nHow clearly are they conveyed?\nHow are the following depicted?\n\nResponses to surveys\nPerformance on tasks/tests\nBrain structure or activity"
   },
   {
     "objectID": "slides/wk01-2025-01-16-semiotics-data-viz.html#semiotics-of-data-visualization-2",
@@ -375,7 +375,7 @@
     "href": "slides/wk01-2025-01-16-semiotics-data-viz.html#references",
     "title": "Semiotics of data visualization",
     "section": "References",
-    "text": "References\n\n\n\n\nBertin, J. (2010). Semiology of graphics: Diagrams, networks, maps. Redlands, CA: ESRI Press.\n\n\nFont style interpolation with diffusion models. (n.d.). Retrieved January 10, 2025, from https://arxiv.org/html/2402.14311v1\n\n\nKirsch, A. (2021, March 18). The symbolic animal. Retrieved January 10, 2025, from https://www.nybooks.com/articles/2021/04/08/ernst-cassirer-symbolic-animal/\n\n\nSpence, I., & Wainer, H. (2017). William Playfair and the invention of statistical graphs. In Information design (1st Edition, pp. 59–76). Routledge. https://doi.org/10.4324/9781315585680-10\n\n\nSteiner, G. (1998). After babel: Aspects of language and translation (3rd ed.). London, England: Oxford University Press. Retrieved from https://www.amazon.com/After-Babel-Aspects-Language-Translation/dp/0192880934\n\n\nThe Editors of Encyclopedia Britannica. (2024, December 19). Semiotics. In Encyclopedia britannica. Retrieved from https://www.britannica.com/science/semiotics\n\n\nWickham, H., Navarro, D., & Pedersen, T. L. (n.d.). ggplot2: Elegant graphics for data analysis (3e). Retrieved January 12, 2025, from https://ggplot2-book.org/\n\n\nWilkinson, L., Wills, D., Rope, D., Norton, A., & Dubbs, R. (2005). The grammar of graphics (statistics and computing) (2nd edition). Springer. Retrieved from https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448"
+    "text": "References\n\n\n\n\nBertin, J. (2010). Semiology of graphics: Diagrams, networks, maps. Redlands, CA: ESRI Press.\n\n\nDenton, C. A., Asphaug, E., Emsenhuber, A., & Melikyan, R. (2025). Capture of an ancient charon around pluto. Nature Geoscience, 18, 37–43. https://doi.org/10.1038/s41561-024-01612-0\n\n\nFont style interpolation with diffusion models. (n.d.). Retrieved January 10, 2025, from https://arxiv.org/html/2402.14311v1\n\n\nKirsch, A. (2021, March 18). The symbolic animal. Retrieved January 10, 2025, from https://www.nybooks.com/articles/2021/04/08/ernst-cassirer-symbolic-animal/\n\n\nSpence, I., & Wainer, H. (2017). William Playfair and the invention of statistical graphs. In Information design (1st Edition, pp. 59–76). Routledge. https://doi.org/10.4324/9781315585680-10\n\n\nSteiner, G. (1998). After babel: Aspects of language and translation (3rd ed.). London, England: Oxford University Press. Retrieved from https://www.amazon.com/After-Babel-Aspects-Language-Translation/dp/0192880934\n\n\nThe Editors of Encyclopedia Britannica. (2024, December 19). Semiotics. In Encyclopedia britannica. Retrieved from https://www.britannica.com/science/semiotics\n\n\nWickham, H., Navarro, D., & Pedersen, T. L. (n.d.). ggplot2: Elegant graphics for data analysis (3e). Retrieved January 12, 2025, from https://ggplot2-book.org/\n\n\nWilkinson, L., Wills, D., Rope, D., Norton, A., & Dubbs, R. (2005). The grammar of graphics (statistics and computing) (2nd edition). Springer. Retrieved from https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448"
   },
   {
     "objectID": "surveys/survey-01.html",
@@ -1271,7 +1271,7 @@
     "href": "exercises/ex01-figs-in-psych-sci.html#goals",
     "title": "Exercise 01",
     "section": "Goals",
-    "text": "Goals\nIn this exercise, you will work with a team of classmates to find data visualizations from the societies of three (3) professional associations and three (3) journals. You will add links to the visualizations to a common database that we will use for discussion about the types of visualizations and types of data that are commonly used in psychological science."
+    "text": "Goals\nIn this exercise, you may choose to work alone or with a team of classmates to find data visualizations from the societies of three (3) professional associations and three (3) journals. You will add links to the visualizations to a common database that we will use for discussion about the types of visualizations and types of data that are commonly used in psychological science."
   },
   {
     "objectID": "exercises/ex01-figs-in-psych-sci.html#assignment",
@@ -1363,5 +1363,12 @@
     "title": "Exercise 07",
     "section": "",
     "text": "Work in progress\n\n\n\nThis page is under construction."
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-semiotics-data-viz.html#resources",
+    "href": "slides/wk01-2025-01-16-semiotics-data-viz.html#resources",
+    "title": "Semiotics of data visualization",
+    "section": "Resources",
+    "text": "Resources\n\nAssignment\nGoogle Sheet for capturing & sharing data"
   }
 ]

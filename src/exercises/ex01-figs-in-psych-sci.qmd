@@ -11,7 +11,7 @@ Write-up for credit [due]{.orange_due} on [Thursday, January 23](../schedule.qmd
 
 ## Goals {-}
 
-In this exercise, you will work with a team of classmates to find data visualizations from the societies of three (3) professional associations and three (3) journals.
+In this exercise, you may choose to work alone or with a team of classmates to find data visualizations from the societies of three (3) professional associations and three (3) journals.
 You will add links to the visualizations to a common database that we will use for discussion about the types of visualizations and types of data that are commonly used in psychological science.
 
 ## Assignment {-}

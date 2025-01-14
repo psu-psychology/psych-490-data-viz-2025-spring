@@ -19,6 +19,12 @@ subtitle: "2025-01-16"
 :::
 ::::
 
+---
+
+{{< video https://dyz6l42c0kkca.cloudfront.net/publishers/nature/videos/e6655d631673941c7c1b5b28e83c7530aa2202f3b1a38c065cb7f3ea9ec4f090/1.mp4?Expires=1736985600&Signature=TSJj9wfaurWdBRc6DGr4fPHDbub7c5roeqnsMxx4a1NiUFlYgspFjP0e8hF3N-EHaExLkfG0-0kTZLQYjwpkCPfg0e3B646v83Qxmh4Qf00nNOmxj7nFVx3H~a0D6zb9MYhz0clRouq4aFbAZuatOpQN7~WDNF7t6GXIvNfWZ-Q_&Key-Pair-Id=APKAI2AQJBOTGLBL6N3A >}}
+
+@Denton2025-bu
+
 # Overview
 
 ## Announcements
@@ -30,13 +36,29 @@ subtitle: "2025-01-16"
 ## Last time...
 
 - Course introduction
-- Visualization in psychological science
 
 ## Today
 
-- Semiotics of data visualization
 - Visualization in psychological science
   - [Exercise-01](../exercises/ex01-figs-in-psych-sci.qmd)
+- Semiotics of data visualization
+
+# Visualization in psychological science
+
+## Resources
+
+- [Assignment](../exercises/ex01-figs-in-psych-sci.qmd)
+- [Google Sheet](https://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6tRzpfdgXBYyPooCPo/edit?usp=sharing) for capturing & sharing data
+
+## Questions
+
+- Are there common types of visualizations in psychological science?
+- What (types) messages are conveyed?
+- How clearly are they conveyed?
+- How are the following depicted?
+  - Responses to surveys
+  - Performance on tasks/tests
+  - Brain structure or activity
   
 # Semiotics of data visualization
 
@@ -231,17 +253,6 @@ Signs and sign systems are *everywhere*!
 ![https://www.lifehack.org/868287/perspective-on-life](https://cdn.lifehack.org/wp-content/uploads/2020/03/perspective.jpeg){height=350px}
 :::
 
-# Visualization in psychological science
-
-## Questions
-
-- Are there common types of visualizations in psychological science?
-- What (types) messages are conveyed?
-- How clearly are they conveyed?
-- How are the following depicted:
-  - Responses to surveys
-  - Performance on tasks/tests
-  - Brain structure or activity
 
 # Main points
 

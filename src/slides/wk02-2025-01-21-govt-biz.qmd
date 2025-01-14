@@ -15,7 +15,11 @@ subtitle: "2025-01-21"
 
 - Free access to newspapers
 
-![https://studentaffairs.psu.edu/involvement-student-life/student-services/student-news-readership-program](../include/img/psu-news-readership.png)
+![<https://studentaffairs.psu.edu/involvement-student-life/student-services/student-news-readership-program>](../include/img/psu-news-readership.png)
+
+---
+
+!<[https://opair.psu.edu/data-summit/>](../include/img/psu-data-summit.png)
 
 ## Last time...
 
