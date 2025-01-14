@@ -242,7 +242,7 @@
     "href": "slides/wk01-2025-01-16-semiotics-data-viz.html#references",
     "title": "Semiotics of data visualization",
     "section": "References",
-    "text": "References\n\n\n\n\nFont style interpolation with diffusion models. (n.d.). Retrieved January 10, 2025, from https://arxiv.org/html/2402.14311v1\n\n\nKirsch, A. (2021, March 18). The symbolic animal. Retrieved January 10, 2025, from https://www.nybooks.com/articles/2021/04/08/ernst-cassirer-symbolic-animal/\n\n\nSpence, I., & Wainer, H. (2017). William Playfair and the invention of statistical graphs. In Information design (1st Edition, pp. 59–76). Routledge. https://doi.org/10.4324/9781315585680-10\n\n\nSteiner, G. (1998). After babel: Aspects of language and translation (3rd ed.). London, England: Oxford University Press. Retrieved from https://www.amazon.com/After-Babel-Aspects-Language-Translation/dp/0192880934\n\n\nThe Editors of Encyclopedia Britannica. (2024, December 19). Semiotics. In Encyclopedia britannica. Retrieved from https://www.britannica.com/science/semiotics\n\n\nWickham, H., Navarro, D., & Pedersen, T. L. (n.d.). ggplot2: Elegant graphics for data analysis (3e). Retrieved January 12, 2025, from https://ggplot2-book.org/\n\n\nWilkinson, L., Wills, D., Rope, D., Norton, A., & Dubbs, R. (2005). The grammar of graphics (statistics and computing) (2nd edition). Springer. Retrieved from https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448"
+    "text": "References\n\n\n\n\nBertin, J. (2010). Semiology of graphics: Diagrams, networks, maps. Redlands, CA: ESRI Press.\n\n\nFont style interpolation with diffusion models. (n.d.). Retrieved January 10, 2025, from https://arxiv.org/html/2402.14311v1\n\n\nKirsch, A. (2021, March 18). The symbolic animal. Retrieved January 10, 2025, from https://www.nybooks.com/articles/2021/04/08/ernst-cassirer-symbolic-animal/\n\n\nSpence, I., & Wainer, H. (2017). William Playfair and the invention of statistical graphs. In Information design (1st Edition, pp. 59–76). Routledge. https://doi.org/10.4324/9781315585680-10\n\n\nSteiner, G. (1998). After babel: Aspects of language and translation (3rd ed.). London, England: Oxford University Press. Retrieved from https://www.amazon.com/After-Babel-Aspects-Language-Translation/dp/0192880934\n\n\nThe Editors of Encyclopedia Britannica. (2024, December 19). Semiotics. In Encyclopedia britannica. Retrieved from https://www.britannica.com/science/semiotics\n\n\nWickham, H., Navarro, D., & Pedersen, T. L. (n.d.). ggplot2: Elegant graphics for data analysis (3e). Retrieved January 12, 2025, from https://ggplot2-book.org/\n\n\nWilkinson, L., Wills, D., Rope, D., Norton, A., & Dubbs, R. (2005). The grammar of graphics (statistics and computing) (2nd edition). Springer. Retrieved from https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448"
   },
   {
     "objectID": "surveys/survey-01.html",
@@ -1020,5 +1020,12 @@
     "title": "Data viz in government & business",
     "section": "What data do not-for-profit businesses visualize?",
     "text": "What data do not-for-profit businesses visualize?\n\nPSU Office of Planning, Assessment, and Institutional Research\nOur World in Data\nGapminder\n\nDollar Street"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-semiotics-data-viz.html#semioticssemiology-of-graphics",
+    "href": "slides/wk01-2025-01-16-semiotics-data-viz.html#semioticssemiology-of-graphics",
+    "title": "Semiotics of data visualization",
+    "section": "Semiotics/Semiology of Graphics",
+    "text": "Semiotics/Semiology of Graphics\n\nBertin (2010)"
   }
 ]

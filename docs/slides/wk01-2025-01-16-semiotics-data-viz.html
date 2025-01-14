@@ -388,14 +388,14 @@ Rick Gilmore
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../include/img/wilkinson-grammar-of-graphics.jpg"></p>
+<p><img data-src="../include/img/wilkinson-grammar-of-graphics.jpg" height="450"></p>
 <figcaption><span class="citation" data-cites="Wilkinson2005-do">Wilkinson, Wills, Rope, Norton, &amp; Dubbs (<a href="#/references" role="doc-biblioref" onclick="">2005</a>)</span></figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../include/img/ggplot2-cover.jpg"></p>
+<p><img data-src="../include/img/ggplot2-cover.jpg" height="450"></p>
 <figcaption><span class="citation" data-cites="WickhamUnknown-kj">Wickham, Navarro, &amp; Pedersen (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span></figcaption>
 </figure>
 </div>
@@ -437,12 +437,67 @@ Rick Gilmore
 <li>Does the evidence (+ argument) persuade?</li>
 </ul>
 </section>
+<section id="semioticssemiology-of-graphics" class="slide level2">
+<h2>Semiotics/Semiology of Graphics</h2>
+
+<img data-src="../include/img/bertin-semiology-of-graphics.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Bertin2010-dz">Bertin (<a href="#/references" role="doc-biblioref" onclick="">2010</a>)</span></p></section>
 <section id="semiotics-of-data-visualization-1" class="slide level2">
 <h2>Semiotics of data visualization</h2>
 <ul>
 <li>What do the components mean?</li>
 <li>What message is the visualization creator trying to convey?</li>
 </ul>
+</section>
+<section class="slide level2">
+
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-measurement-process" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-measurement-process-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-measurement-process">flowchart LR
+  A((Person)) ---&gt; B[Measure]
+  F((Researcher)) ---&gt; B
+  F ---&gt; A
+  B ---&gt; G(Text)
+  B ---&gt; C(Data)
+  C ---&gt; D[Statistics]
+  C ---&gt; E[Visualization]
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-measurement-process-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The measurement &amp; reporting process
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-perception-process" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-perception-process-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-perception-process">flowchart LR
+  C(Data) -.-&gt; D[Statistics]
+  C -.-&gt; F
+  C -.-&gt; E[Visualization]
+  E ---&gt; A((Student))
+  D ---&gt; A
+  A ---&gt; A
+  F[Text] ---&gt; A
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-perception-process-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: The perception process
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section class="slide level2">
 
@@ -456,10 +511,10 @@ Rick Gilmore
 </div>
 <div class="callout-content">
 <p>A semiotic perspective can be infectious and addictive.</p>
-<p>Signs and sign systems are <em>everywhere</em></p>
+<p>Signs and sign systems are <em>everywhere</em>!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://cdn.lifehack.org/wp-content/uploads/2020/03/perspective.jpeg"></p>
+<p><img data-src="https://cdn.lifehack.org/wp-content/uploads/2020/03/perspective.jpeg" height="350"></p>
 <figcaption>https://www.lifehack.org/868287/perspective-on-life</figcaption>
 </figure>
 </div>
@@ -521,6 +576,9 @@ Rick Gilmore
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Bertin2010-dz" class="csl-entry" role="listitem">
+Bertin, J. (2010). <em>Semiology of graphics: Diagrams, networks, maps</em>. Redlands, CA: ESRI Press.
+</div>
 <div id="ref-UnknownUnknown-ey" class="csl-entry" role="listitem">
 Font style interpolation with diffusion models. (n.d.). Retrieved January 10, 2025, from <a href="https://arxiv.org/html/2402.14311v1">https://arxiv.org/html/2402.14311v1</a>
 </div>

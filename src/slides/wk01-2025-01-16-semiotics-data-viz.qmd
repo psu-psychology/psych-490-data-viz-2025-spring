@@ -150,12 +150,13 @@ flowchart LR
 
 :::: {.columns}
 ::: {.column width=50%}
-![@Wilkinson2005-do](../include/img/wilkinson-grammar-of-graphics.jpg)
+![@Wilkinson2005-do](../include/img/wilkinson-grammar-of-graphics.jpg){height=450px}
 :::
 ::: {.column width=50%}
-![@WickhamUnknown-kj](../include/img/ggplot2-cover.jpg)
+![@WickhamUnknown-kj](../include/img/ggplot2-cover.jpg){height=450px}
 :::
 ::::
+
 
 ## How scientists communicate (formally)
 
@@ -183,6 +184,10 @@ flowchart LR
 - What do the figures mean?
 - Does the evidence (+ argument) persuade?
 
+## Semiotics/Semiology of Graphics
+
+![@Bertin2010-dz](../include/img/bertin-semiology-of-graphics.png)
+
 ## Semiotics of data visualization
 
 - What do the components mean?
@@ -190,12 +195,40 @@ flowchart LR
 
 ---
 
+```{mermaid}
+%%| label: fig-measurement-process
+%%| fig-cap: "The measurement & reporting process"
+flowchart LR
+  A((Person)) ---> B[Measure]
+  F((Researcher)) ---> B
+  F ---> A
+  B ---> G(Text)
+  B ---> C(Data)
+  C ---> D[Statistics]
+  C ---> E[Visualization]
+```
+
+```{mermaid}
+%%| label: fig-perception-process
+%%| fig-cap: "The perception process"
+flowchart LR
+  C(Data) -.-> D[Statistics]
+  C -.-> F
+  C -.-> E[Visualization]
+  E ---> A((Student))
+  D ---> A
+  A ---> A
+  F[Text] ---> A
+```
+
+---
+
 ::: {.callout-warning}
 A semiotic perspective can be infectious and addictive.
 
-Signs and sign systems are *everywhere*
+Signs and sign systems are *everywhere*!
 
-![https://www.lifehack.org/868287/perspective-on-life](https://cdn.lifehack.org/wp-content/uploads/2020/03/perspective.jpeg)
+![https://www.lifehack.org/868287/perspective-on-life](https://cdn.lifehack.org/wp-content/uploads/2020/03/perspective.jpeg){height=350px}
 :::
 
 # Visualization in psychological science
