@@ -12,7 +12,8 @@ Lab web site: <https://gilmore-lab.github.io>
 
 Sara He \
 Graduate Student in Social Psychology \
-cfh5558 AT-SIGN psu PERIOD edu
+cfh5558 AT-SIGN psu PERIOD edu \
+Meetings by appointment over Zoom \
 
 ## Meeting time & location {-}
 
