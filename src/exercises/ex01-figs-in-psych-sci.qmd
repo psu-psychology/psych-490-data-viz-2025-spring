@@ -63,3 +63,5 @@ So, feel free to mix it up.
   - Your data to the shared Google Spreadsheet.
 - Students who want this submission to count for one of their four (4) *required* exercises
   - A 2-3 page write-up in APA format where you describe three (3) figures your group found, the data that are presented, and what "story" the data are intended to tell.
+  - Students who work in teams should submit one (1) write-up with all of the authors' names. One grade will be assigned.
+  
