@@ -1,5 +1,5 @@
 ---
-title: "Data visualization in art, sports, & journalism"
+title: "Data viz in art, sports, & journalism"
 subtitle: "2025-01-23"
 ---
 
@@ -8,6 +8,14 @@ subtitle: "2025-01-23"
 ---
 
 ![@Stiles2025-ty](../include/img/la-fires-viz-cnn.png)
+
+## Mortality trends by education level
+
+![@Novosad2022-yz](../include/img/novosad-etal-2022-fig-01.png)
+
+---
+
+![@Novosad2022-yz](../include/img/novosad-etal-2022-fig-05.png)
 
 # Overview
 

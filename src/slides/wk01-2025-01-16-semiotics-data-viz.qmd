@@ -50,6 +50,15 @@ subtitle: "2025-01-16"
 - [Assignment](../exercises/ex01-figs-in-psych-sci.qmd)
 - [Google Sheet](https://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6tRzpfdgXBYyPooCPo/edit?usp=sharing) for capturing & sharing data
 
+## Measures in $\Psi$ science
+
+::: {.incremental}
+- Internal states (thoughts, feelings, memories, opinions, decisions, judgments...)
+- Physiological states
+- Individual characteristics
+- Environmental characteristics
+:::
+
 ## Questions
 
 - Are there common types of visualizations in psychological science?

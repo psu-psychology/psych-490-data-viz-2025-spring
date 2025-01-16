@@ -200,7 +200,7 @@
     "href": "slides/wk02-2025-01-23-art-sports-journ.html#references",
     "title": "Data visualization in art, sports, & journalism",
     "section": "References",
-    "text": "References\n\n\n\n\nParis, F. (2025, January 13). Childhood vaccination rates were falling even before the rise of R.F.K. jr. The New York Times. The New York Times. Retrieved from https://www.nytimes.com/interactive/2025/01/13/upshot/vaccination-rates.html\n\n\nStiles, M., O’Key, S., Manley, B., Robinson, L., Merrill, C., Choi, A., … Rigdon, R. (2025, January 8). Visualizing the los angeles wildfires in maps and charts. Retrieved January 12, 2025, from https://www.cnn.com/2025/01/08/us/maps-visuals-los-angeles-wildfires-dg/index.html"
+    "text": "References\n\n\n\n\nNovosad, P., Rafkin, C., & Asher, S. (2022). Mortality change among less educated americans. American Economic Journal. Applied Economics, 14, 1–34. https://doi.org/10.1257/app.20190297\n\n\nParis, F. (2025, January 13). Childhood vaccination rates were falling even before the rise of R.F.K. jr. The New York Times. The New York Times. Retrieved from https://www.nytimes.com/interactive/2025/01/13/upshot/vaccination-rates.html\n\n\nStiles, M., O’Key, S., Manley, B., Robinson, L., Merrill, C., Choi, A., … Rigdon, R. (2025, January 8). Visualizing the los angeles wildfires in maps and charts. Retrieved January 12, 2025, from https://www.cnn.com/2025/01/08/us/maps-visuals-los-angeles-wildfires-dg/index.html"
   },
   {
     "objectID": "slides/wk01-2025-01-16-semiotics-data-viz.html#william-playfair",
@@ -1054,7 +1054,7 @@
     "href": "slides/wk01-2025-01-14-course-intro.html#references",
     "title": "The Psychology of Data Visualization",
     "section": "References",
-    "text": "References\n\n\n\n\nHuff, D. (1993). How to lie with statistics. New York, NY: WW Norton. Retrieved from https://www.amazon.com/How-Lie-Statistics-Darrell-Huff/dp/0393310728\n\n\nIso, A. (2016). Bread - if original [1971]. Youtube. Retrieved from https://www.youtube.com/watch?v=IQyKMueMFGk\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nMatejka, J., & Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In Proceedings of the 2017 CHI conference on human factors in computing systems. New York, NY, USA: ACM. https://doi.org/10.1145/3025453.3025912\n\n\nMonmonier, M. (2018). How to lie with maps (3rd ed.). Chicago, IL: University of Chicago Press. https://doi.org/10.7208/chicago/9780226436081.001.0001\n\n\nSilberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. Advances in Methods and Practices in Psychological Science, 1, 337–356. https://doi.org/10.1177/2515245917747646\n\n\nThe Datasaurus dozen - same stats, different graphs | Autodesk Research. (n.d.). Retrieved June 2, 2019, from https://www.autodeskresearch.com/publications/samestats"
+    "text": "References\n\n\n\n\nGilmore, R. O., Thomas, A. L., & Fesi, J. (2016). Children’s brain responses to optic flow vary by pattern type and motion speed. PloS One, 11, e0157911. https://doi.org/10.1371/journal.pone.0157911\n\n\nHuff, D. (1993). How to lie with statistics. New York, NY: WW Norton. Retrieved from https://www.amazon.com/How-Lie-Statistics-Darrell-Huff/dp/0393310728\n\n\nIso, A. (2016). Bread - if original [1971]. Youtube. Retrieved from https://www.youtube.com/watch?v=IQyKMueMFGk\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nMatejka, J., & Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In Proceedings of the 2017 CHI conference on human factors in computing systems. New York, NY, USA: ACM. https://doi.org/10.1145/3025453.3025912\n\n\nMonmonier, M. (2018). How to lie with maps (3rd ed.). Chicago, IL: University of Chicago Press. https://doi.org/10.7208/chicago/9780226436081.001.0001\n\n\nQian, Y., Berenbaum, S. A., & Gilmore, R. O. (2022). Vision contributes to sex differences in spatial cognition and activity interests. Scientific Reports, 12, 17623. https://doi.org/10.1038/s41598-022-22269-y\n\n\nSilberzahn, R., Uhlmann, E. L., Martin, D. P., Anselmi, P., Aust, F., Awtrey, E., … Nosek, B. A. (2018). Many analysts, one data set: Making transparent how variations in analytic choices affect results. Advances in Methods and Practices in Psychological Science, 1, 337–356. https://doi.org/10.1177/2515245917747646\n\n\nThe Datasaurus dozen - same stats, different graphs | Autodesk Research. (n.d.). Retrieved June 2, 2019, from https://www.autodeskresearch.com/publications/samestats"
   },
   {
     "objectID": "slides/wk02-2025-01-21-govt-biz.html#announcements",
@@ -1370,5 +1370,19 @@
     "title": "Semiotics of data visualization",
     "section": "Resources",
     "text": "Resources\n\nAssignment\nGoogle Sheet for capturing & sharing data"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-23-art-sports-journ.html#mortality-trends-by-education-level",
+    "href": "slides/wk02-2025-01-23-art-sports-journ.html#mortality-trends-by-education-level",
+    "title": "Data visualization in art, sports, & journalism",
+    "section": "Mortality trends by education level",
+    "text": "Mortality trends by education level\n\nNovosad, Rafkin, & Asher (2022)"
+  },
+  {
+    "objectID": "slides/wk01-2025-01-16-semiotics-data-viz.html#measures-in-psi-science",
+    "href": "slides/wk01-2025-01-16-semiotics-data-viz.html#measures-in-psi-science",
+    "title": "Semiotics of data visualization",
+    "section": "Measures in \\(\\Psi\\) science",
+    "text": "Measures in \\(\\Psi\\) science\n\n\nInternal states (thoughts, feelings, memories, opinions, decisions, judgments…)\nPhysiological states\nIndividual characteristics\nEnvironmental characteristics"
   }
 ]
