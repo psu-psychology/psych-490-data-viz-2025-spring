@@ -38,11 +38,9 @@ website:
         - tutorials/tutorial-rstudio-on-psu.qmd
         - tutorials/tutorial-r-ggplot.qmd
         - tutorials/tutorial-python-matplotlib.qmd
-      # - text: Surveys
-      #   menu:
-          # - href: "surveys/survey-01.qmd"
-          #   text: "Survey-01"
-      # - href: resources.qmd
+      - text: Supplemental
+        menu:
+        - href: supplemental/psych-sci-figs.qmd
       - href: meta.qmd
   repo-url: https://github.com/psu-psychology/psych-490-data-viz-2025-spring
   repo-actions: [edit, issue]

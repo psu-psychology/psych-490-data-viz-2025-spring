@@ -107,11 +107,14 @@ ex01_qs <- names(ex01)
 ex01_qs
 ```
 
+For simplicity, we visualize below only those with non-empty URLs to the specific figure.
+
 ## Source samples
 
 ```{r many-tables-lapply, results = "asis", warning=FALSE}
-these_urls <- ex01$url
+these_figs <- ex01 |>
+  filter(!is.na(url_to_figure))
 
-res <- invisible(lapply(these_urls, return_iframe_chunk, data = ex01))
+res <- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))
 cat(unlist(res), sep = "\n")
 ```

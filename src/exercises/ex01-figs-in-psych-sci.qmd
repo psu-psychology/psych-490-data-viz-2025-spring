@@ -39,7 +39,15 @@ Try to pick visualizations that are interesting to you in some way.
 
 <https://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6tRzpfdgXBYyPooCPo/edit?usp=sharing>
 
-Specifically, enter your team identifier in the `identifier` field, the source in `source_type`, and the URL in the `url` field. Please say briefly why you chose this particular visualization. If you have any comments to add, put those in the `comments` field.
+Specifically, enter your team identifier in the `identifier` field, the source in `source_type`, and the URL in the `url` field. Please say briefly why you chose this particular visualization. If you have any comments to add, put those in the `comments` field. 
+
+During class on 2025-01-16, Gilmore added a `url_to_figure` field. If you want to add that, right click on the image and see if an option to 'open image in new tab' or 'copy image address' is available.
+
+::: {.callout-important}
+You do **not** have to use your PSU ID as your identifier.
+
+Gilmore did so just to provide some sample data.
+:::
 
 4. Next, visit the websites of at least three (3) journals and do the same thing--pick at least two (2) visualizations from each of the journals.
 

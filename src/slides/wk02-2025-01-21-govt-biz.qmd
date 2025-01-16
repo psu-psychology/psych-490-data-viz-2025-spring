@@ -9,6 +9,12 @@ subtitle: "2025-01-21"
 
 ![@van-Teutem2024-ie](https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/7e2aabcf-bab9-4162-901a-bee5df1ef200/w=3774)
 
+## Video as data viz
+
+{{< video ../include/vid/41561_2024_1612_MOESM2_ESM.mp4 >}}
+
+@Denton2025-bu
+
 # Overview
 
 ## Announcements
@@ -35,6 +41,10 @@ subtitle: "2025-01-21"
 ![](../include/img/central-pa-satellite.png)
 :::
 ::::
+
+## What did we discover?
+
+
 
 ## Today
 

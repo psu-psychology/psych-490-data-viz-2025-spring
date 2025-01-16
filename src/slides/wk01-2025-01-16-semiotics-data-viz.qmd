@@ -21,7 +21,7 @@ subtitle: "2025-01-16"
 
 ---
 
-{{< video https://dyz6l42c0kkca.cloudfront.net/publishers/nature/videos/e6655d631673941c7c1b5b28e83c7530aa2202f3b1a38c065cb7f3ea9ec4f090/1.mp4?Expires=1736985600&Signature=TSJj9wfaurWdBRc6DGr4fPHDbub7c5roeqnsMxx4a1NiUFlYgspFjP0e8hF3N-EHaExLkfG0-0kTZLQYjwpkCPfg0e3B646v83Qxmh4Qf00nNOmxj7nFVx3H~a0D6zb9MYhz0clRouq4aFbAZuatOpQN7~WDNF7t6GXIvNfWZ-Q_&Key-Pair-Id=APKAI2AQJBOTGLBL6N3A >}}
+{{< video ../include/vid/41561_2024_1612_MOESM2_ESM.mp4 >}}
 
 @Denton2025-bu
 

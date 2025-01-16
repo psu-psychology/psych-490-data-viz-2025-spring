@@ -1,0 +1,120 @@
+---
+title: "psych-sci-figs"
+format: html
+params:
+  update_data: true
+  fn: "ex01-figs-in-psych-sci.csv"
+---
+
+## About
+
+This page extracts information about the data visualizations we explored in [Exercise-01](../exercises/ex01-figs-in-psych-sci.qmd) from the shared Google Sheet.
+
+## Survey
+
+Direct link: <https://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6tRzpfdgXBYyPooCPo/edit?gid=0#gid=0>
+
+<iframe src="https://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6tRzpfdgXBYyPooCPo/edit?gid=0#gid=0" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+## Preparation
+
+First, we load the external packages (groups of R commands) that we will be using.
+
+```{r}
+library('ggplot2')
+library('dplyr')
+
+source("../R/make_iframe_from_url.R")
+```
+
+## Gathering
+
+Next, we download the data from the Google Sheet where it is collected.
+Dr. Gilmore has stored his Google account credentials in a special environment file that can be accessed by the R command `Sys.getenv("GMAIL_SURVEY")`.
+
+::: {.callout-tip}
+It's vital to be *very* careful when creating and sharing code like this that involves sensitive information like login credentials.
+
+Gilmore likes to put credentials in an `.Renviron` file that lives in his home directory. 
+This is a [recommended practice](https://support.posit.co/hc/en-us/articles/360047157094-Managing-R-with-Rprofile-Renviron-Rprofile-site-Renviron-site-rsession-conf-and-repos-conf).
+On Mac OS and Linux, that's `~/.Renviron`. 
+You can use the `usethis::edit_r_profile()` command *at the R console* (not the Terminal) to open your own `.Renviron` file.
+In Gilmore's case, he has added the following line to that file:
+
+```
+GMAIL_SURVEY="<my-google-account>"
+```
+
+Here, he has substituted his Google account with credentials/access to the required files for `<my-google-account>`.
+Then, when the R code below calls `Sys.getenv("GMAIL_SURVEY")`, the value of those credentials is returned as a text string.
+
+Make sure to close and save the `.Renviron` file and restart your R session before testing this yourself.
+
+:::
+
+```{r, eval=params$update_data}
+#| label: gather-data-from-google
+#| message: false
+#| echo: true
+if (!dir.exists('csv')) {
+  message("Creating missing `csv/`.")
+  dir.create("csv")
+}
+
+if (params$update_data) {
+  options(gargle_oauth_email = Sys.getenv("GMAIL_SURVEY"))
+  googledrive::drive_auth()
+
+  googledrive::drive_download(
+    "PSYCH-490.003-Spr-2025-Psych-Viz",
+    path = file.path("csv", params$fn),
+    type = "csv",
+    overwrite = TRUE
+  )
+  message("Data updated.")
+} else {
+  message("Using stored data.")
+}
+```
+
+The data file has been saved as a comma-separated value (CSV) format data file in a special directory called `csv/`.
+
+::: {.callout-note}
+Because these data *might* contain sensitive or identifiable information, we only keep a local copy and do not share it publicly via GitHub.
+This is achieved by adding the name of the data directory to a special `.gitignore` file.
+:::
+
+## Cleaning
+
+Next we load the saved data file, and then proceed to clean it.
+
+```{r, eval=params$update_data}
+#| label: load-saved-data
+#| message: false
+#| echo: true
+ex01 <-
+  readr::read_csv(file.path("csv", params$fn), show_col_types = FALSE)
+```
+
+There are `{r} dim(ex01)[1]` responses.
+
+These are the column/variable names.
+
+```{r}
+# Google Forms puts the full question in the top row of the data file.
+# We use the names() function to extract and print the original questions.
+ex01_qs <- names(ex01)
+ex01_qs
+```
+
+For simplicity, we visualize below only those with non-empty URLs to the specific figure.
+
+## Source samples
+
+```{r many-tables-lapply, results = "asis", warning=FALSE}
+these_figs <- ex01 |>
+  filter(!is.na(url_to_figure))
+
+res <- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))
+cat(unlist(res), sep = "\n")
+```

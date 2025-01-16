@@ -19,12 +19,13 @@ subtitle: "2025-01-28"
 
 ## Announcements
 
-- [Exercise-01](../exercises/ex01-making-data.qmd) write-up [due next Tuesday, January 21, 2025]{.orange_due}.
+- [Exercise-03](../exercises/ex03-making-data.qmd) write-up [due next Tuesday, January 21, 2025]{.orange_due}.
 
 ## Last time...
 
-- Course introduction
-- Start on [Exercise-01](../exercises/ex01-making-data.qmd)
+*Visualization in government & business*
+
+- [Exercise-03](../exercises/ex03-making-data.qmd) write-up [due next Tuesday, January 21, 2025]{.orange_due}.
 
 ---
 

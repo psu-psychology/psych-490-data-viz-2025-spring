@@ -6,7 +6,9 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.40">
 
   <meta name="author" content="Rick Gilmore">
@@ -54,6 +56,8 @@
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
@@ -168,7 +172,12 @@ Rick Gilmore
 <section class="slide level2">
 
 
-<img data-src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/7e2aabcf-bab9-4162-901a-bee5df1ef200/w=3774.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="van-Teutem2024-ie">Teutem &amp; Acisu (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span></p></section></section>
+<img data-src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/7e2aabcf-bab9-4162-901a-bee5df1ef200/w=3774.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="van-Teutem2024-ie">Teutem &amp; Acisu (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span></p></section>
+<section id="video-as-data-viz" class="slide level2">
+<h2>Video as data viz</h2>
+<video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../include/vid/41561_2024_1612_MOESM2_ESM.mp4"></video>
+<p><span class="citation" data-cites="Denton2025-bu">Denton, Asphaug, Emsenhuber, &amp; Melikyan (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></p>
+</section></section>
 <section>
 <section id="overview" class="title-slide slide level1 center">
 <h1>Overview</h1>
@@ -197,6 +206,9 @@ Rick Gilmore
 </div><div class="column" style="width:50%;">
 <p><img data-src="../include/img/central-pa-satellite.png"></p>
 </div></div>
+</section>
+<section id="what-did-we-discover" class="slide level2">
+<h2>What did we discover?</h2>
 </section>
 <section id="today" class="slide level2">
 <h2>Today</h2>
@@ -291,6 +303,9 @@ Rick Gilmore
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Denton2025-bu" class="csl-entry" role="listitem">
+Denton, C. A., Asphaug, E., Emsenhuber, A., &amp; Melikyan, R. (2025). Capture of an ancient charon around pluto. <em>Nature Geoscience</em>, <em>18</em>, 37–43. <a href="https://doi.org/10.1038/s41561-024-01612-0">https://doi.org/10.1038/s41561-024-01612-0</a>
+</div>
 <div id="ref-van-Teutem2024-ie" class="csl-entry" role="listitem">
 Teutem, S. van, &amp; Acisu, T. (2024). Most international migrants don’t move very far from their home countries. <em>Our World in Data</em>. Retrieved from <a href="https://ourworldindata.org/international-migrants-dont-move-far">https://ourworldindata.org/international-migrants-dont-move-far</a>
 </div>
@@ -311,6 +326,7 @@ Teutem, S. van, &amp; Acisu, T. (2024). Most international migrants don’t move
   <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -332,7 +348,8 @@ Teutem, S. van, &amp; Acisu, T. (2024). Most international migrants don’t move
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -503,7 +520,7 @@ Teutem, S. van, &amp; Acisu, T. (2024). Most international migrants don’t move
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
           RevealMath,
           RevealNotes,
@@ -735,6 +752,7 @@ Teutem, S. van, &amp; Acisu, T. (2024). Most international migrants don’t move
       }
     });
     </script>
+    <script>videojs(video_shortcode_videojs_video1);</script>
     
 
 </body></html>

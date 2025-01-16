@@ -193,7 +193,7 @@ Note
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>ex01 <span class="ot">&lt;-</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="fu">file.path</span>(<span class="st">"csv"</span>, params<span class="sc">$</span>fn), <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>There are 2 responses.</p>
+<p>There are 32 responses.</p>
 <p>These are the column/variable names.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Google Forms puts the full question in the top row of the data file.</span></span>
@@ -201,25 +201,90 @@ Note
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>ex01_qs <span class="ot">&lt;-</span> <span class="fu">names</span>(ex01)</span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>ex01_qs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "identifier"   "source_type"  "url"          "why_selected" "comment"     </code></pre>
+<pre><code>[1] "identifier"    "source_type"   "url_to_src"    "why_selected" 
+[5] "comment"       "url_to_figure"</code></pre>
 </div>
 </div>
+<p>For simplicity, we visualize below only those with non-empty URLs to the specific figure.</p>
 </section>
 <section id="source-samples" class="level2">
 <h2 class="anchored" data-anchor-id="source-samples">Source samples</h2>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>these_urls <span class="ot">&lt;-</span> ex01<span class="sc">$</span>url</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">invisible</span>(<span class="fu">lapply</span>(these_urls, return_iframe_chunk, <span class="at">data =</span> ex01))</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">unlist</span>(res), <span class="at">sep =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<section id="data-from-httpswww.psychologicalscience.orgobserverteaching-current-directions-in-psychological-science-27lives" class="level3">
-<h3 class="anchored" data-anchor-id="data-from-httpswww.psychologicalscience.orgobserverteaching-current-directions-in-psychological-science-27lives">Data from: ‘https://www.psychologicalscience.org/observer/teaching-current-directions-in-psychological-science-27#lives’</h3>
-<iframe src="https://www.psychologicalscience.org/observer/teaching-current-directions-in-psychological-science-27#lives" width="640px" height="800px">
-</iframe>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>these_figs <span class="ot">&lt;-</span> ex01 <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(url_to_figure))</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">invisible</span>(<span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">dim</span>(these_figs)[<span class="dv">1</span>], return_img_chunk, <span class="at">df =</span> these_figs))</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">unlist</span>(res), <span class="at">sep =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="figure-from" class="level3">
+<h3 class="anchored" data-anchor-id="figure-from">Figure from:</h3>
+<p>https://www.psychologicalscience.org/observer/teaching-current-directions-in-psychological-science-27#lives</p>
+<p><img src="https://www.psychologicalscience.org/redesign/wp-content/uploads/2015/12/TCD_fig_1.jpg" class="img-fluid"> <strong>Analyst</strong>: rog1 | <strong>Type</strong>: web_site</p>
+<p><strong>Why selected</strong>: NA</p>
 </section>
-<section id="data-from-httpsjournals.sagepub.comdoifull10.117721677026241301298" class="level3">
-<h3 class="anchored" data-anchor-id="data-from-httpsjournals.sagepub.comdoifull10.117721677026241301298">Data from: ‘https://journals.sagepub.com/doi/full/10.1177/21677026241301298’</h3>
-<iframe src="https://journals.sagepub.com/doi/full/10.1177/21677026241301298" width="640px" height="800px">
-</iframe>
+<section id="figure-from-1" class="level3">
+<h3 class="anchored" data-anchor-id="figure-from-1">Figure from:</h3>
+<p>https://journals.sagepub.com/doi/full/10.1177/21677026241301298</p>
+<p><img src="https://journals.sagepub.com/cms/10.1177/21677026241301298/asset/images/large/10.1177_21677026241301298-fig1.jpeg" class="img-fluid"> <strong>Analyst</strong>: rog1 | <strong>Type</strong>: article</p>
+<p><strong>Why selected</strong>: ROC figures are used only in specialized contexts</p>
+</section>
+<section id="figure-from-2" class="level3">
+<h3 class="anchored" data-anchor-id="figure-from-2">Figure from:</h3>
+<p>https://journals.sagepub.com/doi/full/10.1177/19485506231204463</p>
+<p><img src="https://journals.sagepub.com/cms/10.1177/19485506231204463/asset/images/large/10.1177_19485506231204463-fig1.jpeg" class="img-fluid"> <strong>Analyst</strong>: ayc 1 | <strong>Type</strong>: article</p>
+<p><strong>Why selected</strong>: Network and mediation/moderation example</p>
+</section>
+<section id="figure-from-3" class="level3">
+<h3 class="anchored" data-anchor-id="figure-from-3">Figure from:</h3>
+<p>https://www.jneurosci.org/content/44/44/e0231242024/tab-figures-data</p>
+<p><img src="https://www.jneurosci.org/content/jneuro/44/44/e0231242024/F1.large.jpg?width=800&amp;height=600&amp;carousel=1" class="img-fluid"> <strong>Analyst</strong>: ayc 1 | <strong>Type</strong>: article</p>
+<p><strong>Why selected</strong>: Extremely complex and dense visualization</p>
+</section>
+<section id="figure-from-4" class="level3">
+<h3 class="anchored" data-anchor-id="figure-from-4">Figure from:</h3>
+<p>https://www.jneurosci.org/content/44/37/e2236232024/tab-figures-data</p>
+<p><img src="https://www.jneurosci.org/content/jneuro/44/37/e2236232024/F3.large.jpg?width=800&amp;height=600&amp;carousel=1" class="img-fluid"> <strong>Analyst</strong>: ayc 1 | <strong>Type</strong>: article</p>
+<p><strong>Why selected</strong>: Example of neuroimaging, BOLD signal visualization</p>
+</section>
+<section id="figure-from-5" class="level3">
+<h3 class="anchored" data-anchor-id="figure-from-5">Figure from:</h3>
+<p>https://journals.sagepub.com/doi/full/10.1177/19485506231211628</p>
+<p><img src="https://journals.sagepub.com/cms/10.1177/19485506231211628/asset/images/large/10.1177_19485506231211628-fig1.jpeg" class="img-fluid"> <strong>Analyst</strong>: ayc 1 | <strong>Type</strong>: article</p>
+<p><strong>Why selected</strong>: Simple comparative visualization</p>
+</section>
+<section id="figure-from-6" class="level3">
+<h3 class="anchored" data-anchor-id="figure-from-6">Figure from:</h3>
+<p>https://srcd.onlinelibrary.wiley.com/doi/10.1111/cdev.14152</p>
+<p><img src="https://srcd.onlinelibrary.wiley.com/cms/asset/c8f7b2bd-4fb1-4b2a-8e8d-2819f014efda/cdev14152-fig-0003-m.png" class="img-fluid"> <strong>Analyst</strong>: Apf1 | <strong>Type</strong>: article</p>
+<p><strong>Why selected</strong>: I liked the topic of study and how the data was displayed</p>
+</section>
+<section id="figure-from-7" class="level3">
+<h3 class="anchored" data-anchor-id="figure-from-7">Figure from:</h3>
+<p>https://link.springer.com/article/10.3758/s13421-017-0708-1?fromPaywallRec=false</p>
+<p><img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.3758%2Fs13421-017-0708-1/MediaObjects/13421_2017_708_Fig3_HTML.gif?" class="img-fluid"> <strong>Analyst</strong>: jxu5065 | <strong>Type</strong>: article</p>
+<p><strong>Why selected</strong>: NA</p>
+</section>
+<section id="figure-from-8" class="level3">
+<h3 class="anchored" data-anchor-id="figure-from-8">Figure from:</h3>
+<p>https://www.science.org/doi/10.1126/scirobotics.adn3802</p>
+<p><img src="https://www.science.org/cms/10.1126/scirobotics.adn3802/asset/7fd9a692-9ff7-49ac-98c7-2129a288c643/assets/images/large/scirobotics.adn3802-f2.jpg" class="img-fluid"> <strong>Analyst</strong>: jxu5065 | <strong>Type</strong>: article</p>
+<p><strong>Why selected</strong>: NA</p>
+</section>
+<section id="figure-from-9" class="level3">
+<h3 class="anchored" data-anchor-id="figure-from-9">Figure from:</h3>
+<p>https://www.nature.com/articles/s41598-024-75262-y?fromPaywallRec=false</p>
+<p><img src="https://www.nature.com/articles/s41598-024-75262-y/figures/2.png" class="img-fluid"> <strong>Analyst</strong>: student_1 | <strong>Type</strong>: article</p>
+<p><strong>Why selected</strong>: NA</p>
+</section>
+<section id="figure-from-10" class="level3">
+<h3 class="anchored" data-anchor-id="figure-from-10">Figure from:</h3>
+<p>https://www.apa.org/pubs/reports/practitioner/2024</p>
+<p><img src="https://www.apa.org/pubs/reports/practitioner/2024/infographics/artificial-intelligence-use.png" class="img-fluid"> <strong>Analyst</strong>: zw1 | <strong>Type</strong>: website</p>
+<p><strong>Why selected</strong>: The graph is about the frequency of AI usage for psychologists at different career stage and I find that interesting</p>
+</section>
+<section id="figure-from-11" class="level3">
+<h3 class="anchored" data-anchor-id="figure-from-11">Figure from:</h3>
+<p>https://journals.sagepub.com/doi/epub/10.1177/21677026221121762</p>
+<p><img src="https://journals.sagepub.com/doi/epub/10.1177/21677026221121762.png" class="img-fluid"> <strong>Analyst</strong>: ssw, hrq, tjd | <strong>Type</strong>: journal (APS)</p>
+<p><strong>Why selected</strong>: NA</p>
 </section>
 </section>
 
