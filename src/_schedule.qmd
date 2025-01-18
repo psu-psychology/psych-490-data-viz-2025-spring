@@ -25,6 +25,7 @@
 *Visualization in government & business*
 
 - [Slides](slides/wk02-2025-01-21-govt-biz.qmd)
+- [Results](supplemental/psych-sci-figs.qmd) from [Exercise 01](exercises/ex01-figs-in-psych-sci.qmd)
 
 ### Thursday, January 23 {-}
 

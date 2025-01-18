@@ -1,5 +1,5 @@
 ---
-title: "psych-sci-figs"
+title: "Findings: Data viz in psych sci"
 format: html
 params:
   update_data: true
@@ -119,7 +119,7 @@ ex01_qs
 
 For simplicity, we visualize below only those with non-empty URLs to the specific figure.
 
-## Source samples
+## Figures found
 
 ```{r many-tables-lapply, results = "asis", warning=FALSE}
 these_figs <- ex01 |>
