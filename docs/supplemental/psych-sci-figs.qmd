@@ -21,10 +21,13 @@ Direct link: <https://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6
 First, we load the external packages (groups of R commands) that we will be using.
 
 ```{r}
+#| warning: false
 library('ggplot2')
 library('dplyr')
 
-source("../R/make_iframe_from_url.R")
+r_functions <- list.files(file.path(here::here(), "src", "R"), "\\.R$", full.names = TRUE)
+
+purrr::map(r_functions, source)
 ```
 
 ## Gathering

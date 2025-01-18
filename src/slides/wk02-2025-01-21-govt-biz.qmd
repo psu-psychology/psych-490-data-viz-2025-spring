@@ -42,9 +42,9 @@ subtitle: "2025-01-21"
 :::
 ::::
 
-## What did we discover?
+## What did we uncover?
 
-
+- Summary [report](../supplemental/psych-sci-figs.qmd)
 
 ## Today
 

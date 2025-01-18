@@ -6,10 +6,14 @@ project:
     - "surveys/*.qmd"
     - "slides/*.qmd"
     - "exercises/*.qmd"
+    - "supplemental/*.qmd"
   output-dir: "../docs"
 
 website:
   title: "PSYCH 490 • Spr 2025"
+  announcement: 
+    content: "We're moving to 009 Sparks!" 
+    position: below-navbar 
   navbar:
     left:
       - href: index.qmd
