@@ -3,12 +3,12 @@ This page summarizes some of the key deadlines in the course.
 | Date      | What's [due]{.orange_due}/happening |
 |-----------|----------------------|
 | [2025-01-23](schedule.qmd#thursday-january-23)   | [Exercise 01](exercises/ex01-figs-in-psych-sci.qmd) |
-| [2025-02-30](schedule.qmd#thursday-january-30) | [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd) |
+| [2025-01-30](schedule.qmd#thursday-january-30) | [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd) |
 | [2025-02-06](schedule.qmd#thursday-february-06) | [Exercise 03](exercises/ex03-making-data.qmd) |
 | [2025-03-04](schedule.qmd#thursday-march-04) | [Final project proposal](exercises/final-project.qmd) due |
 | [2025-03-06](schedule.qmd#thursday-march-06) | [Exercise 04](exercises/ex04-sci-of-data-viz.qmd) |
-| [2025-03-20](schedule.qmd#thursday-march-20)  | [Exercise 05](exercises/ex05-figure-prep-guidelines.qmd) |
-| [2025-03-27](schedule.qmd#thursday-march-27) | [Exercise 06](exercises/ex06-figs-w-r.qmd) |
-| [2025-04-08](schedule.qmd#thursday-march-27) | Final project [survey](exercises/final-project.qmd#survey) |
-| [2025-04-17](schedule.qmd#tuesday-april-08) | [Exercise 07](exercises/ex07-figs-w-python.qmd) |
+| [2025-03-27](schedule.qmd#thursday-march-27)  | [Exercise 05](exercises/ex05-figure-prep-guidelines.qmd) |
+| [2025-04-03](schedule.qmd#thursday-april-03) | [Exercise 06](exercises/ex06-figs-w-r.qmd) |
+| [2025-04-08](schedule.qmd#tuesday-april-08) | Final project [survey](exercises/final-project.qmd#survey) |
+| [2025-04-17](schedule.qmd#thursday-april-17) | [Exercise 07](exercises/ex07-figs-w-python.qmd) |
 | [2025-05-05](schedule.qmd#tuesday-may-05)  | [Final project](exercises/final-project.qmd) writeup due |

@@ -5,9 +5,9 @@ subtitle: "Making data"
 
 ## Dates {-}
 
-In-class work on Tuesday, January 14 and Thursday, January 16.
+In-class work on Tuesday, January 28 and Thursday, January 30.
 
-Submit write-up by Tuesday, January 21.
+Submit write-up by Thursday, Feburary 6.
 
 ## Goals {-}
 

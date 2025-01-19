@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-01-18">
+<meta name="dcterms.date" content="2025-01-19">
 
 <title>Findings: Data viz in psych sci – PSYCH 490 • Spr 2025</title>
 <style>
@@ -235,6 +235,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a></li>
   <li><a href="#gathering" id="toc-gathering" class="nav-link" data-scroll-target="#gathering">Gathering</a></li>
   <li><a href="#cleaning" id="toc-cleaning" class="nav-link" data-scroll-target="#cleaning">Cleaning</a></li>
+  <li><a href="#summary-data" id="toc-summary-data" class="nav-link" data-scroll-target="#summary-data">Summary data</a></li>
   <li><a href="#figures-found" id="toc-figures-found" class="nav-link" data-scroll-target="#figures-found">Figures found</a>
   <ul class="collapse">
   <li><a href="#figure-1" id="toc-figure-1" class="nav-link" data-scroll-target="#figure-1">Figure 1</a></li>
@@ -269,6 +270,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#figure-30" id="toc-figure-30" class="nav-link" data-scroll-target="#figure-30">Figure 30</a></li>
   <li><a href="#figure-31" id="toc-figure-31" class="nav-link" data-scroll-target="#figure-31">Figure 31</a></li>
   <li><a href="#figure-32" id="toc-figure-32" class="nav-link" data-scroll-target="#figure-32">Figure 32</a></li>
+  <li><a href="#figure-33" id="toc-figure-33" class="nav-link" data-scroll-target="#figure-33">Figure 33</a></li>
+  <li><a href="#figure-34" id="toc-figure-34" class="nav-link" data-scroll-target="#figure-34">Figure 34</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/edit/main/src/supplemental/psych-sci-figs.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -289,14 +292,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 18, 2025</p>
+      <p class="date">January 19, 2025</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">January 18, 2025</p>
+      <p class="date-modified">January 19, 2025</p>
     </div>
   </div>
     
@@ -348,8 +351,8 @@ Important
 <div class="cell-output cell-output-stdout">
 <pre><code>function (...) 
 capture_output(.f(...))
-&lt;bytecode: 0x10edb9de8&gt;
-&lt;environment: 0x10edb9b10&gt;</code></pre>
+&lt;bytecode: 0x11f6d36e8&gt;
+&lt;environment: 0x11f6d3410&gt;</code></pre>
 </div>
 </div>
 </section>
@@ -422,7 +425,7 @@ Note
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="fu">file.path</span>(<span class="st">"csv"</span>, params<span class="sc">$</span>fn), <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>There are 49 responses.</p>
+<p>There are 46 responses.</p>
 <p>These are the column/variable names.</p>
 <div class="cell">
 <details class="code-fold">
@@ -439,15 +442,27 @@ Note
 </div>
 <p>For simplicity, we visualize below only those with non-empty URLs to the specific figure.</p>
 </section>
+<section id="summary-data" class="level2">
+<h2 class="anchored" data-anchor-id="summary-data">Summary data</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>figs_w_urls <span class="ot">&lt;-</span> ex01 <span class="sc">|&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(url_to_figure))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>There were <em>n</em>=22 unique respondents.</p>
+<p>Of the 46 responses from these individuals or teams, <em>n</em>=34 had URLs we could link to directly.</p>
+</section>
 <section id="figures-found" class="level2">
 <h2 class="anchored" data-anchor-id="figures-found">Figures found</h2>
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>these_figs <span class="ot">&lt;-</span> ex01 <span class="sc">|&gt;</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(url_to_figure))</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">invisible</span>(<span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">dim</span>(these_figs)[<span class="dv">1</span>], return_img_chunk, <span class="at">df =</span> these_figs))</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">unlist</span>(res), <span class="at">sep =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>these_figs <span class="ot">&lt;-</span> ex01 <span class="sc">|&gt;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(url_to_figure))</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">invisible</span>(<span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">dim</span>(these_figs)[<span class="dv">1</span>], return_img_chunk, <span class="at">df =</span> these_figs))</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">unlist</span>(res), <span class="at">sep =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <section id="figure-1" class="level3">
 <h3 class="anchored" data-anchor-id="figure-1">Figure 1</h3>
@@ -537,7 +552,7 @@ Note
 <tbody>
 <tr class="odd">
 <td>tjd1</td>
-<td>artle</td>
+<td>article</td>
 <td>I thought this visualization was about an interesting topic, and also enjoyed exploring story it tells - the ages of onset for various mental illnesses in young people.</td>
 </tr>
 </tbody>
@@ -702,8 +717,29 @@ Note
 </section>
 <section id="figure-12" class="level3">
 <h3 class="anchored" data-anchor-id="figure-12">Figure 12</h3>
+<p><a href="https://www.apa.org/pubs/reports/stress-in-america/2024/postelection-stress-coping-during-holidays" class="uri">https://www.apa.org/pubs/reports/stress-in-america/2024/postelection-stress-coping-during-holidays</a></p>
+<p><a href="https://www.apa.org/images/postelection-stress-coping-during-holidays_tcm7-334062.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="https://www.apa.org/images/postelection-stress-coping-during-holidays_tcm7-334062.png" class="img-fluid"></a></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Analyst</th>
+<th>Source Type</th>
+<th>Why Selected</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ses1</td>
+<td>article</td>
+<td>NA</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-13" class="level3">
+<h3 class="anchored" data-anchor-id="figure-13">Figure 13</h3>
 <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0022399923002945?via%3Dihub" class="uri">https://www.sciencedirect.com/science/article/abs/pii/S0022399923002945?via%3Dihub</a></p>
-<p><a href="https://ars.els-cdn.com/content/image/1-s2.0-S0022399923002945-gr1_lrg.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0022399923002945-gr1_lrg.jpg" class="img-fluid"></a></p>
+<p><a href="https://ars.els-cdn.com/content/image/1-s2.0-S0022399923002945-gr1_lrg.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0022399923002945-gr1_lrg.jpg" class="img-fluid"></a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -726,10 +762,10 @@ Note
 </tbody>
 </table>
 </section>
-<section id="figure-13" class="level3">
-<h3 class="anchored" data-anchor-id="figure-13">Figure 13</h3>
+<section id="figure-14" class="level3">
+<h3 class="anchored" data-anchor-id="figure-14">Figure 14</h3>
 <p><a href="https://srcd.onlinelibrary.wiley.com/doi/10.1111/cdev.14152" class="uri">https://srcd.onlinelibrary.wiley.com/doi/10.1111/cdev.14152</a></p>
-<p><a href="https://srcd.onlinelibrary.wiley.com/cms/asset/c8f7b2bd-4fb1-4b2a-8e8d-2819f014efda/cdev14152-fig-0003-m.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="https://srcd.onlinelibrary.wiley.com/cms/asset/c8f7b2bd-4fb1-4b2a-8e8d-2819f014efda/cdev14152-fig-0003-m.png" class="img-fluid"></a></p>
+<p><a href="https://srcd.onlinelibrary.wiley.com/cms/asset/c8f7b2bd-4fb1-4b2a-8e8d-2819f014efda/cdev14152-fig-0003-m.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="https://srcd.onlinelibrary.wiley.com/cms/asset/c8f7b2bd-4fb1-4b2a-8e8d-2819f014efda/cdev14152-fig-0003-m.png" class="img-fluid"></a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -752,31 +788,10 @@ Note
 </tbody>
 </table>
 </section>
-<section id="figure-14" class="level3">
-<h3 class="anchored" data-anchor-id="figure-14">Figure 14</h3>
-<p><a href="https://link.springer.com/article/10.3758/s13421-017-0708-1?fromPaywallRec=false" class="uri">https://link.springer.com/article/10.3758/s13421-017-0708-1?fromPaywallRec=false</a></p>
-<p><a href="https://media.springernature.com/lw685/springer-static/image/art%3A10.3758%2Fs13421-017-0708-1/MediaObjects/13421_2017_708_Fig3_HTML.gif?" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.3758%2Fs13421-017-0708-1/MediaObjects/13421_2017_708_Fig3_HTML.gif?" class="img-fluid"></a></p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Analyst</th>
-<th>Source Type</th>
-<th>Why Selected</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>jxu5065</td>
-<td>article</td>
-<td>NA</td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="figure-15" class="level3">
 <h3 class="anchored" data-anchor-id="figure-15">Figure 15</h3>
-<p><a href="https://www.science.org/doi/10.1126/scirobotics.adn3802" class="uri">https://www.science.org/doi/10.1126/scirobotics.adn3802</a></p>
-<p><a href="https://www.science.org/cms/10.1126/scirobotics.adn3802/asset/7fd9a692-9ff7-49ac-98c7-2129a288c643/assets/images/large/scirobotics.adn3802-f2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="https://www.science.org/cms/10.1126/scirobotics.adn3802/asset/7fd9a692-9ff7-49ac-98c7-2129a288c643/assets/images/large/scirobotics.adn3802-f2.jpg" class="img-fluid"></a></p>
+<p><a href="https://link.springer.com/article/10.3758/s13421-017-0708-1?fromPaywallRec=false" class="uri">https://link.springer.com/article/10.3758/s13421-017-0708-1?fromPaywallRec=false</a></p>
+<p><a href="https://media.springernature.com/lw685/springer-static/image/art%3A10.3758%2Fs13421-017-0708-1/MediaObjects/13421_2017_708_Fig3_HTML.gif?" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.3758%2Fs13421-017-0708-1/MediaObjects/13421_2017_708_Fig3_HTML.gif?" class="img-fluid"></a></p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -796,8 +811,29 @@ Note
 </section>
 <section id="figure-16" class="level3">
 <h3 class="anchored" data-anchor-id="figure-16">Figure 16</h3>
+<p><a href="https://www.science.org/doi/10.1126/scirobotics.adn3802" class="uri">https://www.science.org/doi/10.1126/scirobotics.adn3802</a></p>
+<p><a href="https://www.science.org/cms/10.1126/scirobotics.adn3802/asset/7fd9a692-9ff7-49ac-98c7-2129a288c643/assets/images/large/scirobotics.adn3802-f2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="https://www.science.org/cms/10.1126/scirobotics.adn3802/asset/7fd9a692-9ff7-49ac-98c7-2129a288c643/assets/images/large/scirobotics.adn3802-f2.jpg" class="img-fluid"></a></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Analyst</th>
+<th>Source Type</th>
+<th>Why Selected</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>jxu5065</td>
+<td>article</td>
+<td>NA</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-17" class="level3">
+<h3 class="anchored" data-anchor-id="figure-17">Figure 17</h3>
 <p><a href="https://www.nature.com/articles/s41562-024-02077-2" class="uri">https://www.nature.com/articles/s41562-024-02077-2</a></p>
-<p><a href="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41562-024-02077-2/MediaObjects/41562_2024_2077_Fig1_HTML.png?as=webp" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41562-024-02077-2/MediaObjects/41562_2024_2077_Fig1_HTML.png?as=webp" class="img-fluid"></a></p>
+<p><a href="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41562-024-02077-2/MediaObjects/41562_2024_2077_Fig1_HTML.png?as=webp" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41562-024-02077-2/MediaObjects/41562_2024_2077_Fig1_HTML.png?as=webp" class="img-fluid"></a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -820,10 +856,10 @@ Note
 </tbody>
 </table>
 </section>
-<section id="figure-17" class="level3">
-<h3 class="anchored" data-anchor-id="figure-17">Figure 17</h3>
+<section id="figure-18" class="level3">
+<h3 class="anchored" data-anchor-id="figure-18">Figure 18</h3>
 <p><a href="https://www.nature.com/articles/s41598-024-75262-y?fromPaywallRec=false" class="uri">https://www.nature.com/articles/s41598-024-75262-y?fromPaywallRec=false</a></p>
-<p><a href="https://www.nature.com/articles/s41598-024-75262-y/figures/2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="https://www.nature.com/articles/s41598-024-75262-y/figures/2.png" class="img-fluid"></a></p>
+<p><a href="https://www.nature.com/articles/s41598-024-75262-y/figures/2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="https://www.nature.com/articles/s41598-024-75262-y/figures/2.png" class="img-fluid"></a></p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -841,10 +877,10 @@ Note
 </tbody>
 </table>
 </section>
-<section id="figure-18" class="level3">
-<h3 class="anchored" data-anchor-id="figure-18">Figure 18</h3>
+<section id="figure-19" class="level3">
+<h3 class="anchored" data-anchor-id="figure-19">Figure 19</h3>
 <p><a href="https://journals.sagepub.com/doi/epub/10.1177/21677026221121762" class="uri">https://journals.sagepub.com/doi/epub/10.1177/21677026221121762</a></p>
-<p><a href="https://journals.sagepub.com/doi/epub/10.1177/21677026221121762.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="https://journals.sagepub.com/doi/epub/10.1177/21677026221121762.png" class="img-fluid"></a></p>
+<p><a href="https://journals.sagepub.com/doi/epub/10.1177/21677026221121762.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="https://journals.sagepub.com/doi/epub/10.1177/21677026221121762.png" class="img-fluid"></a></p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -856,42 +892,42 @@ Note
 <tbody>
 <tr class="odd">
 <td>ssw, hrq, tjd</td>
-<td>journal</td>
+<td>article</td>
 <td>NA</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="figure-19" class="level3">
-<h3 class="anchored" data-anchor-id="figure-19">Figure 19</h3>
-<p><a href="https://iovs.arvojournals.org/article.aspx?articleid=2793527" class="uri">https://iovs.arvojournals.org/article.aspx?articleid=2793527</a></p>
-<p><a href="https://arvo.silverchair-cdn.com/arvo/content_public/journal/iovs/938669/m_i1552-5783-65-4-9-f1_1712066895.57334.png?Expires=1739882783&amp;Signature=v6Wa0qGCCJSj73B0YxksSjVjldh87ug~asu5Xb0KlxKMvIAIh7PGxjwDPf0~OCkbUuGEvqsz-PAsZ5JJcagkr8FKFMRuaI3BpNtwiTYNHMbe7S0tk68dERHgY6TBtPTQDvbKj9wO5FTMtd0EtRfcqiHS0PF097KsQIWUeGwdnBnpkz64us8Ce0X8I2i8NaCFMFpiT43M7Lej9lfse7tiuoh3Ts8l7aEwCkYZRdYGM0jmtnqLWWNuU~1XKsGeco6F-OVp0O6aiWDKjD1OTg1N~utgbrPEw76CSZup1EWrnh-1R-aCrSwj7RW80VOFiPhp1YY2dQkFmfbIRmst6wE2dQ__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="https://arvo.silverchair-cdn.com/arvo/content_public/journal/iovs/938669/m_i1552-5783-65-4-9-f1_1712066895.57334.png?Expires=1739882783&amp;Signature=v6Wa0qGCCJSj73B0YxksSjVjldh87ug~asu5Xb0KlxKMvIAIh7PGxjwDPf0~OCkbUuGEvqsz-PAsZ5JJcagkr8FKFMRuaI3BpNtwiTYNHMbe7S0tk68dERHgY6TBtPTQDvbKj9wO5FTMtd0EtRfcqiHS0PF097KsQIWUeGwdnBnpkz64us8Ce0X8I2i8NaCFMFpiT43M7Lej9lfse7tiuoh3Ts8l7aEwCkYZRdYGM0jmtnqLWWNuU~1XKsGeco6F-OVp0O6aiWDKjD1OTg1N~utgbrPEw76CSZup1EWrnh-1R-aCrSwj7RW80VOFiPhp1YY2dQkFmfbIRmst6wE2dQ__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" class="img-fluid"></a></p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Analyst</th>
-<th>Source Type</th>
-<th>Why Selected</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>mec</td>
-<td>journal</td>
-<td>This figure shows an easy to understand representation for the experiment taking place of a drug injection into the eye with results of leakage</td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="figure-20" class="level3">
 <h3 class="anchored" data-anchor-id="figure-20">Figure 20</h3>
-<p><a href="https://www.apa.org/news/press/releases/stress/2023/collective-trauma-recovery" class="uri">https://www.apa.org/news/press/releases/stress/2023/collective-trauma-recovery</a></p>
-<p><a href="https://www.apa.org/news/press/releases/stress/2023/infographics/infographic-pandemic-stress-by-age.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img src="https://www.apa.org/news/press/releases/stress/2023/infographics/infographic-pandemic-stress-by-age.png" class="img-fluid"></a></p>
+<p><a href="https://www.nature.com/articles/s41380-023-02202-z/figures/1" class="uri">https://www.nature.com/articles/s41380-023-02202-z/figures/1</a></p>
+<p><a href="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41380-023-02202-z/MediaObjects/41380_2023_2202_Fig1_HTML.png?as=webp" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41380-023-02202-z/MediaObjects/41380_2023_2202_Fig1_HTML.png?as=webp" class="img-fluid"></a></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Analyst</th>
+<th>Source Type</th>
+<th>Why Selected</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ssw,hrq, tjd</td>
+<td>article</td>
+<td>I thought this visualization was about an interesting topic, and also enjoyed exploring story it tells - the ages of onset for various mental illnesses in young people.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-21" class="level3">
+<h3 class="anchored" data-anchor-id="figure-21">Figure 21</h3>
+<p><a href="https://iovs.arvojournals.org/article.aspx?articleid=2793527" class="uri">https://iovs.arvojournals.org/article.aspx?articleid=2793527</a></p>
+<p><a href="https://arvo.silverchair-cdn.com/arvo/content_public/journal/iovs/938669/m_i1552-5783-65-4-9-f1_1712066895.57334.png?Expires=1739882783&amp;Signature=v6Wa0qGCCJSj73B0YxksSjVjldh87ug~asu5Xb0KlxKMvIAIh7PGxjwDPf0~OCkbUuGEvqsz-PAsZ5JJcagkr8FKFMRuaI3BpNtwiTYNHMbe7S0tk68dERHgY6TBtPTQDvbKj9wO5FTMtd0EtRfcqiHS0PF097KsQIWUeGwdnBnpkz64us8Ce0X8I2i8NaCFMFpiT43M7Lej9lfse7tiuoh3Ts8l7aEwCkYZRdYGM0jmtnqLWWNuU~1XKsGeco6F-OVp0O6aiWDKjD1OTg1N~utgbrPEw76CSZup1EWrnh-1R-aCrSwj7RW80VOFiPhp1YY2dQkFmfbIRmst6wE2dQ__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img src="https://arvo.silverchair-cdn.com/arvo/content_public/journal/iovs/938669/m_i1552-5783-65-4-9-f1_1712066895.57334.png?Expires=1739882783&amp;Signature=v6Wa0qGCCJSj73B0YxksSjVjldh87ug~asu5Xb0KlxKMvIAIh7PGxjwDPf0~OCkbUuGEvqsz-PAsZ5JJcagkr8FKFMRuaI3BpNtwiTYNHMbe7S0tk68dERHgY6TBtPTQDvbKj9wO5FTMtd0EtRfcqiHS0PF097KsQIWUeGwdnBnpkz64us8Ce0X8I2i8NaCFMFpiT43M7Lej9lfse7tiuoh3Ts8l7aEwCkYZRdYGM0jmtnqLWWNuU~1XKsGeco6F-OVp0O6aiWDKjD1OTg1N~utgbrPEw76CSZup1EWrnh-1R-aCrSwj7RW80VOFiPhp1YY2dQkFmfbIRmst6wE2dQ__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" class="img-fluid"></a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -908,42 +944,16 @@ Note
 <tbody>
 <tr class="odd">
 <td>mec</td>
-<td>Article</td>
-<td>Figure clearly puts data into seperate visual categories to make their point on stress levels pre pandemic vs post pandemic by age specifically</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="figure-21" class="level3">
-<h3 class="anchored" data-anchor-id="figure-21">Figure 21</h3>
-<p><a href="https://www.tandfonline.com/doi/full/10.1080/00221325.2024.2400362#d1e771" class="uri">https://www.tandfonline.com/doi/full/10.1080/00221325.2024.2400362#d1e771</a></p>
-<p><a href="https://www.tandfonline.com/cms/asset/792cf0b2-bfc8-474b-8ddc-2c13bfcc4310/vgnt_a_2400362_f0004_c.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img src="https://www.tandfonline.com/cms/asset/792cf0b2-bfc8-474b-8ddc-2c13bfcc4310/vgnt_a_2400362_f0004_c.jpg" class="img-fluid"></a></p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Analyst</th>
-<th>Source Type</th>
-<th>Why Selected</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>abc</td>
-<td>Article</td>
-<td>This figure is interesting because it shows the association between teacher-student relationship quality and maternal depressive symptoms and children’t externalizing behavior problem. This shows the importance of maternal depressive symptom to teacher-student relationship.</td>
+<td>article</td>
+<td>This figure shows an easy to understand representation for the experiment taking place of a drug injection into the eye with results of leakage</td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="figure-22" class="level3">
 <h3 class="anchored" data-anchor-id="figure-22">Figure 22</h3>
-<p><a href="https://onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/doi/10.1002/dys.1790" class="uri">https://onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/doi/10.1002/dys.1790</a></p>
-<p><a href="https://onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/cms/asset/4a9768aa-9349-45f6-8599-c3fb84ca30b9/dys1790-fig-0001-m.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img src="https://onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/cms/asset/4a9768aa-9349-45f6-8599-c3fb84ca30b9/dys1790-fig-0001-m.jpg" class="img-fluid"></a></p>
+<p><a href="https://www.apa.org/news/press/releases/stress/2023/collective-trauma-recovery" class="uri">https://www.apa.org/news/press/releases/stress/2023/collective-trauma-recovery</a></p>
+<p><a href="https://www.apa.org/news/press/releases/stress/2023/infographics/infographic-pandemic-stress-by-age.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img src="https://www.apa.org/news/press/releases/stress/2023/infographics/infographic-pandemic-stress-by-age.png" class="img-fluid"></a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -959,17 +969,17 @@ Note
 </thead>
 <tbody>
 <tr class="odd">
-<td>abc</td>
-<td>Article</td>
-<td>This figure shows an word cloud of 25 interviews on raising awareness of dyslexia, it shows a simple photo that has the result of 25 interviews</td>
+<td>mec</td>
+<td>article</td>
+<td>Figure clearly puts data into seperate visual categories to make their point on stress levels pre pandemic vs post pandemic by age specifically</td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="figure-23" class="level3">
 <h3 class="anchored" data-anchor-id="figure-23">Figure 23</h3>
-<p><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jora.13045" class="uri">https://onlinelibrary.wiley.com/doi/full/10.1111/jora.13045</a></p>
-<p><a href="https://onlinelibrary.wiley.com/cms/asset/8fa503ea-a3f6-47b7-9a61-700725ad7779/jora13045-fig-0003-m.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img src="https://onlinelibrary.wiley.com/cms/asset/8fa503ea-a3f6-47b7-9a61-700725ad7779/jora13045-fig-0003-m.jpg" class="img-fluid"></a></p>
+<p><a href="https://www.tandfonline.com/doi/full/10.1080/00221325.2024.2400362#d1e771" class="uri">https://www.tandfonline.com/doi/full/10.1080/00221325.2024.2400362#d1e771</a></p>
+<p><a href="https://www.tandfonline.com/cms/asset/792cf0b2-bfc8-474b-8ddc-2c13bfcc4310/vgnt_a_2400362_f0004_c.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img src="https://www.tandfonline.com/cms/asset/792cf0b2-bfc8-474b-8ddc-2c13bfcc4310/vgnt_a_2400362_f0004_c.jpg" class="img-fluid"></a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -986,16 +996,16 @@ Note
 <tbody>
 <tr class="odd">
 <td>abc</td>
-<td>Article</td>
-<td>This figure shows how adolescent with elevated depression before and during the COVID-19 will more likely to be in the high risk profile.</td>
+<td>article</td>
+<td>This figure is interesting because it shows the association between teacher-student relationship quality and maternal depressive symptoms and children’t externalizing behavior problem. This shows the importance of maternal depressive symptom to teacher-student relationship.</td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="figure-24" class="level3">
 <h3 class="anchored" data-anchor-id="figure-24">Figure 24</h3>
-<p><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jora.13052" class="uri">https://onlinelibrary.wiley.com/doi/full/10.1111/jora.13052</a></p>
-<p><a href="https://onlinelibrary.wiley.com/cms/asset/ced8e007-ddce-483f-aeaa-0cc6a3519925/jora13052-fig-0001-m.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img src="https://onlinelibrary.wiley.com/cms/asset/ced8e007-ddce-483f-aeaa-0cc6a3519925/jora13052-fig-0001-m.jpg" class="img-fluid"></a></p>
+<p><a href="https://onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/doi/10.1002/dys.1790" class="uri">https://onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/doi/10.1002/dys.1790</a></p>
+<p><a href="https://onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/cms/asset/4a9768aa-9349-45f6-8599-c3fb84ca30b9/dys1790-fig-0001-m.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img src="https://onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/cms/asset/4a9768aa-9349-45f6-8599-c3fb84ca30b9/dys1790-fig-0001-m.jpg" class="img-fluid"></a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1012,16 +1022,16 @@ Note
 <tbody>
 <tr class="odd">
 <td>abc</td>
-<td>Article</td>
-<td>This figure shows the correlation of LGBTQ+ state policies and mental health symptomology with other factors like school safety, peer victimization, and others.</td>
+<td>article</td>
+<td>This figure shows an word cloud of 25 interviews on raising awareness of dyslexia, it shows a simple photo that has the result of 25 interviews</td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="figure-25" class="level3">
 <h3 class="anchored" data-anchor-id="figure-25">Figure 25</h3>
-<p><a href="https://myscp-onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/doi/10.1002/jcpy.1446" class="uri">https://myscp-onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/doi/10.1002/jcpy.1446</a></p>
-<p><a href="https://myscp-onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/cms/asset/72e1e0fa-38f5-4417-b25a-0015d81a95b8/jcpy1446-fig-0002-m.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img src="https://myscp-onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/cms/asset/72e1e0fa-38f5-4417-b25a-0015d81a95b8/jcpy1446-fig-0002-m.jpg" class="img-fluid"></a></p>
+<p><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jora.13045" class="uri">https://onlinelibrary.wiley.com/doi/full/10.1111/jora.13045</a></p>
+<p><a href="https://onlinelibrary.wiley.com/cms/asset/8fa503ea-a3f6-47b7-9a61-700725ad7779/jora13045-fig-0003-m.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img src="https://onlinelibrary.wiley.com/cms/asset/8fa503ea-a3f6-47b7-9a61-700725ad7779/jora13045-fig-0003-m.jpg" class="img-fluid"></a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1038,16 +1048,16 @@ Note
 <tbody>
 <tr class="odd">
 <td>abc</td>
-<td>Article</td>
-<td>This figure shows the anticipated negative impact on the relationship between gift given on time and late, from gift recipient and gift giver.</td>
+<td>article</td>
+<td>This figure shows how adolescent with elevated depression before and during the COVID-19 will more likely to be in the high risk profile.</td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="figure-26" class="level3">
 <h3 class="anchored" data-anchor-id="figure-26">Figure 26</h3>
-<p><a href="https://journals-sagepub-com.ezaccess.libraries.psu.edu/doi/10.1177/1077801212440017" class="uri">https://journals-sagepub-com.ezaccess.libraries.psu.edu/doi/10.1177/1077801212440017</a></p>
-<p><a href="https://journals-sagepub-com.ezaccess.libraries.psu.edu/cms/10.1177/1077801212440017/asset/images/large/10.1177_1077801212440017-fig2.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-26"><img src="https://journals-sagepub-com.ezaccess.libraries.psu.edu/cms/10.1177/1077801212440017/asset/images/large/10.1177_1077801212440017-fig2.jpeg" class="img-fluid"></a></p>
+<p><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jora.13052" class="uri">https://onlinelibrary.wiley.com/doi/full/10.1111/jora.13052</a></p>
+<p><a href="https://onlinelibrary.wiley.com/cms/asset/ced8e007-ddce-483f-aeaa-0cc6a3519925/jora13052-fig-0001-m.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-26"><img src="https://onlinelibrary.wiley.com/cms/asset/ced8e007-ddce-483f-aeaa-0cc6a3519925/jora13052-fig-0001-m.jpg" class="img-fluid"></a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1064,16 +1074,68 @@ Note
 <tbody>
 <tr class="odd">
 <td>abc</td>
-<td>Article</td>
-<td>This figure shows the rate of reports and arrest for forcible rape per 100,000 U.S. inhabitants. It shows how there is a large amount of reported rape compared to a small amount of arrest</td>
+<td>article</td>
+<td>This figure shows the correlation of LGBTQ+ state policies and mental health symptomology with other factors like school safety, peer victimization, and others.</td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="figure-27" class="level3">
 <h3 class="anchored" data-anchor-id="figure-27">Figure 27</h3>
+<p><a href="https://myscp-onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/doi/10.1002/jcpy.1446" class="uri">https://myscp-onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/doi/10.1002/jcpy.1446</a></p>
+<p><a href="https://myscp-onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/cms/asset/72e1e0fa-38f5-4417-b25a-0015d81a95b8/jcpy1446-fig-0002-m.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-27"><img src="https://myscp-onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/cms/asset/72e1e0fa-38f5-4417-b25a-0015d81a95b8/jcpy1446-fig-0002-m.jpg" class="img-fluid"></a></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Analyst</th>
+<th>Source Type</th>
+<th>Why Selected</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>abc</td>
+<td>article</td>
+<td>This figure shows the anticipated negative impact on the relationship between gift given on time and late, from gift recipient and gift giver.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-28" class="level3">
+<h3 class="anchored" data-anchor-id="figure-28">Figure 28</h3>
+<p><a href="https://journals-sagepub-com.ezaccess.libraries.psu.edu/doi/10.1177/1077801212440017" class="uri">https://journals-sagepub-com.ezaccess.libraries.psu.edu/doi/10.1177/1077801212440017</a></p>
+<p><a href="https://journals-sagepub-com.ezaccess.libraries.psu.edu/cms/10.1177/1077801212440017/asset/images/large/10.1177_1077801212440017-fig2.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-28"><img src="https://journals-sagepub-com.ezaccess.libraries.psu.edu/cms/10.1177/1077801212440017/asset/images/large/10.1177_1077801212440017-fig2.jpeg" class="img-fluid"></a></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Analyst</th>
+<th>Source Type</th>
+<th>Why Selected</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>abc</td>
+<td>article</td>
+<td>This figure shows the rate of reports and arrest for forcible rape per 100,000 U.S. inhabitants. It shows how there is a large amount of reported rape compared to a small amount of arrest</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="figure-29" class="level3">
+<h3 class="anchored" data-anchor-id="figure-29">Figure 29</h3>
 <p><a href="https://www.apa.org/pubs/reports/practitioner/2024" class="uri">https://www.apa.org/pubs/reports/practitioner/2024</a></p>
-<p><a href="https://www.apa.org/pubs/reports/practitioner/2024/infographics/artificial-intelligence-use.png" class="lightbox" data-gallery="quarto-lightbox-gallery-27"><img src="https://www.apa.org/pubs/reports/practitioner/2024/infographics/artificial-intelligence-use.png" class="img-fluid"></a></p>
+<p><a href="https://www.apa.org/pubs/reports/practitioner/2024/infographics/artificial-intelligence-use.png" class="lightbox" data-gallery="quarto-lightbox-gallery-29"><img src="https://www.apa.org/pubs/reports/practitioner/2024/infographics/artificial-intelligence-use.png" class="img-fluid"></a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1096,10 +1158,10 @@ Note
 </tbody>
 </table>
 </section>
-<section id="figure-28" class="level3">
-<h3 class="anchored" data-anchor-id="figure-28">Figure 28</h3>
+<section id="figure-30" class="level3">
+<h3 class="anchored" data-anchor-id="figure-30">Figure 30</h3>
 <p><a href="https://www.apa.org/monitor/2024/01/trends-pathways-access-mental-health-care" class="uri">https://www.apa.org/monitor/2024/01/trends-pathways-access-mental-health-care</a></p>
-<p><a href="https://www.apa.org/images/2024-01-trends-mental-health-crisis-graph_tcm7-323425.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28"><img src="https://www.apa.org/images/2024-01-trends-mental-health-crisis-graph_tcm7-323425.png" class="img-fluid"></a></p>
+<p><a href="https://www.apa.org/images/2024-01-trends-mental-health-crisis-graph_tcm7-323425.png" class="lightbox" data-gallery="quarto-lightbox-gallery-30"><img src="https://www.apa.org/images/2024-01-trends-mental-health-crisis-graph_tcm7-323425.png" class="img-fluid"></a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1122,10 +1184,10 @@ Note
 </tbody>
 </table>
 </section>
-<section id="figure-29" class="level3">
-<h3 class="anchored" data-anchor-id="figure-29">Figure 29</h3>
+<section id="figure-31" class="level3">
+<h3 class="anchored" data-anchor-id="figure-31">Figure 31</h3>
 <p>&lt;Self‐reported alcohol consumption during participation in a text messaging‐based online drinking moderation platform - Vadhan - 2024 - Alcohol, Clinical and Experimental Research - Wiley Online Library&gt;</p>
-<p><a href="https://onlinelibrary.wiley.com/cms/asset/8cd66854-6365-4cdb-9e45-ba25938f1384/acer15414-fig-0003-m.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-29"><img src="https://onlinelibrary.wiley.com/cms/asset/8cd66854-6365-4cdb-9e45-ba25938f1384/acer15414-fig-0003-m.jpg" class="img-fluid"></a></p>
+<p><a href="https://onlinelibrary.wiley.com/cms/asset/8cd66854-6365-4cdb-9e45-ba25938f1384/acer15414-fig-0003-m.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-31"><img src="https://onlinelibrary.wiley.com/cms/asset/8cd66854-6365-4cdb-9e45-ba25938f1384/acer15414-fig-0003-m.jpg" class="img-fluid"></a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1142,16 +1204,16 @@ Note
 <tbody>
 <tr class="odd">
 <td>zw</td>
-<td>Article</td>
+<td>article</td>
 <td>I am working on a lab projject that is related to drinking</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="figure-30" class="level3">
-<h3 class="anchored" data-anchor-id="figure-30">Figure 30</h3>
+<section id="figure-32" class="level3">
+<h3 class="anchored" data-anchor-id="figure-32">Figure 32</h3>
 <p><a href="https://journals.sagepub.com/doi/10.1177/1077801212440017" class="uri">https://journals.sagepub.com/doi/10.1177/1077801212440017</a></p>
-<p><a href="https://journals.sagepub.com/cms/10.1177/1077801212440017/asset/images/large/10.1177_1077801212440017-fig2.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-30"><img src="https://journals.sagepub.com/cms/10.1177/1077801212440017/asset/images/large/10.1177_1077801212440017-fig2.jpeg" class="img-fluid"></a></p>
+<p><a href="https://journals.sagepub.com/cms/10.1177/1077801212440017/asset/images/large/10.1177_1077801212440017-fig2.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-32"><img src="https://journals.sagepub.com/cms/10.1177/1077801212440017/asset/images/large/10.1177_1077801212440017-fig2.jpeg" class="img-fluid"></a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1168,16 +1230,16 @@ Note
 <tbody>
 <tr class="odd">
 <td>zw</td>
-<td>Article</td>
+<td>article</td>
 <td>This figure is about reports of forcible rape to law enforcement and the number of arrests resulted, as a woman I care about this kind of issue</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="figure-31" class="level3">
-<h3 class="anchored" data-anchor-id="figure-31">Figure 31</h3>
+<section id="figure-33" class="level3">
+<h3 class="anchored" data-anchor-id="figure-33">Figure 33</h3>
 <p><a href="https://featuredcontent.psychonomic.org/color-me-impressed-psychology-research-links-colors-and-emotions-for-over-a-century/" class="uri">https://featuredcontent.psychonomic.org/color-me-impressed-psychology-research-links-colors-and-emotions-for-over-a-century/</a></p>
-<p><a href="https://i0.wp.com/featuredcontent.psychonomic.org/wp-content/uploads/Jon_fig3.png?w=1224&amp;ssl=1" class="lightbox" data-gallery="quarto-lightbox-gallery-31"><img src="https://i0.wp.com/featuredcontent.psychonomic.org/wp-content/uploads/Jon_fig3.png?w=1224&amp;ssl=1" class="img-fluid"></a></p>
+<p><a href="https://i0.wp.com/featuredcontent.psychonomic.org/wp-content/uploads/Jon_fig3.png?w=1224&amp;ssl=1" class="lightbox" data-gallery="quarto-lightbox-gallery-33"><img src="https://i0.wp.com/featuredcontent.psychonomic.org/wp-content/uploads/Jon_fig3.png?w=1224&amp;ssl=1" class="img-fluid"></a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1200,10 +1262,10 @@ Note
 </tbody>
 </table>
 </section>
-<section id="figure-32" class="level3">
-<h3 class="anchored" data-anchor-id="figure-32">Figure 32</h3>
+<section id="figure-34" class="level3">
+<h3 class="anchored" data-anchor-id="figure-34">Figure 34</h3>
 <p><a href="https://featuredcontent.psychonomic.org/neural-processing-of-sarcasm-hows-that-for-a-great-title/" class="uri">https://featuredcontent.psychonomic.org/neural-processing-of-sarcasm-hows-that-for-a-great-title/</a></p>
-<p><a href="https://i0.wp.com/featuredcontent.psychonomic.org/wp-content/uploads/Mauchand_Fig4.png?w=1330&amp;ssl=1" class="lightbox" data-gallery="quarto-lightbox-gallery-32"><img src="https://i0.wp.com/featuredcontent.psychonomic.org/wp-content/uploads/Mauchand_Fig4.png?w=1330&amp;ssl=1" class="img-fluid"></a></p>
+<p><a href="https://i0.wp.com/featuredcontent.psychonomic.org/wp-content/uploads/Mauchand_Fig4.png?w=1330&amp;ssl=1" class="lightbox" data-gallery="quarto-lightbox-gallery-34"><img src="https://i0.wp.com/featuredcontent.psychonomic.org/wp-content/uploads/Mauchand_Fig4.png?w=1330&amp;ssl=1" class="img-fluid"></a></p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1701,136 +1763,147 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb9" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Findings: Data viz in psych sci"</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="an">params:</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co">  update_data: true</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co">  fn: "ex01-figs-in-psych-sci.csv"</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## About</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>This page extracts information about the data visualizations we explored in <span class="co">[</span><span class="ot">Exercise-01</span><span class="co">](../exercises/ex01-figs-in-psych-sci.qmd)</span> from the shared Google Sheet.</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Survey</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>Direct link: <span class="ot">&lt;https://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6tRzpfdgXBYyPooCPo/edit?gid=0#gid=0&gt;</span></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>&lt;iframe src="https://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6tRzpfdgXBYyPooCPo/edit?gid=0#gid=0" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading…&lt;/iframe&gt;</span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Preparation</span></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>First, we load the external packages (groups of R commands) that we will be using.</span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>The code uses the <span class="in">`quietly()`</span> function from the <span class="in">`purrr`</span> package to suppress most of the feedback.</span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
-<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'ggplot2'</span>)</span>
-<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'dplyr'</span>)</span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>r_functions <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="fu">file.path</span>(here<span class="sc">::</span><span class="fu">here</span>(), <span class="st">"src"</span>, <span class="st">"R"</span>), <span class="st">"</span><span class="sc">\\</span><span class="st">.R$"</span>, <span class="at">full.names =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>purrr<span class="sc">::</span><span class="fu">map</span>(r_functions, source) <span class="sc">|&gt;</span></span>
-<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>  purrr<span class="sc">::</span><span class="fu">quietly</span>()</span>
-<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a><span class="fu">## Gathering</span></span>
-<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>Next, we download the data from the Google Sheet where it is collected.</span>
-<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>Dr. Gilmore has stored his Google account credentials in a special environment file that can be accessed by the R command <span class="in">`Sys.getenv("GMAIL_SURVEY")`</span>.</span>
-<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>It's vital to be *very* careful when creating and sharing code like this that involves sensitive information like login credentials.</span>
-<span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a>Gilmore likes to put credentials in an <span class="in">`.Renviron`</span> file that lives in his home directory. </span>
-<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a>This is a <span class="co">[</span><span class="ot">recommended practice</span><span class="co">](https://support.posit.co/hc/en-us/articles/360047157094-Managing-R-with-Rprofile-Renviron-Rprofile-site-Renviron-site-rsession-conf-and-repos-conf)</span>.</span>
-<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a>On Mac OS and Linux, that's <span class="in">`~/.Renviron`</span>. </span>
-<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a>You can use the <span class="in">`usethis::edit_r_profile()`</span> command *at the R console* (not the Terminal) to open your own <span class="in">`.Renviron`</span> file.</span>
-<span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a>In Gilmore's case, he has added the following line to that file:</span>
-<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a><span class="in">GMAIL_SURVEY="&lt;my-google-account&gt;"</span></span>
-<span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a>Here, he has substituted his Google account with credentials/access to the required files for <span class="in">`&lt;my-google-account&gt;`</span>.</span>
-<span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a>Then, when the R code below calls <span class="in">`Sys.getenv("GMAIL_SURVEY")`</span>, the value of those credentials is returned as a text string.</span>
-<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a>Make sure to close and save the <span class="in">`.Renviron`</span> file and restart your R session before testing this yourself.</span>
-<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval=params$update_data}</span></span>
-<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: gather-data-from-google</span></span>
-<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a><span class="in">#| message: false</span></span>
-<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a><span class="in">#| echo: true</span></span>
-<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a><span class="in">if (!dir.exists('csv')) {</span></span>
-<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a><span class="in">  message("Creating missing `csv/`.")</span></span>
-<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a><span class="in">  dir.create("csv")</span></span>
-<span id="cb9-74"><a href="#cb9-74" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
-<span id="cb9-75"><a href="#cb9-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-76"><a href="#cb9-76" aria-hidden="true" tabindex="-1"></a><span class="in">if (params$update_data) {</span></span>
-<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a><span class="in">  options(gargle_oauth_email = Sys.getenv("GMAIL_SURVEY"))</span></span>
-<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a><span class="in">  googledrive::drive_auth()</span></span>
-<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-80"><a href="#cb9-80" aria-hidden="true" tabindex="-1"></a><span class="in">  googledrive::drive_download(</span></span>
-<span id="cb9-81"><a href="#cb9-81" aria-hidden="true" tabindex="-1"></a><span class="in">    "PSYCH-490.003-Spr-2025-Psych-Viz",</span></span>
-<span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a><span class="in">    path = file.path("csv", params$fn),</span></span>
-<span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a><span class="in">    type = "csv",</span></span>
-<span id="cb9-84"><a href="#cb9-84" aria-hidden="true" tabindex="-1"></a><span class="in">    overwrite = TRUE</span></span>
-<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a><span class="in">  )</span></span>
-<span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a><span class="in">  message("Data updated.")</span></span>
-<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a><span class="in">} else {</span></span>
-<span id="cb9-88"><a href="#cb9-88" aria-hidden="true" tabindex="-1"></a><span class="in">  message("Using stored data.")</span></span>
-<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
-<span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a>The data file has been saved as a comma-separated value (CSV) format data file in a special directory called <span class="in">`csv/`</span>.</span>
-<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a>Because these data *might* contain sensitive or identifiable information, we only keep a local copy and do not share it publicly via GitHub.</span>
-<span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a>This is achieved by adding the name of the data directory to a special <span class="in">`.gitignore`</span> file.</span>
-<span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a><span class="fu">## Cleaning</span></span>
-<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-101"><a href="#cb9-101" aria-hidden="true" tabindex="-1"></a>Next we load the saved data file, and then proceed to clean it.</span>
-<span id="cb9-102"><a href="#cb9-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-103"><a href="#cb9-103" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval=params$update_data}</span></span>
-<span id="cb9-104"><a href="#cb9-104" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: load-saved-data</span></span>
-<span id="cb9-105"><a href="#cb9-105" aria-hidden="true" tabindex="-1"></a><span class="in">#| message: false</span></span>
-<span id="cb9-106"><a href="#cb9-106" aria-hidden="true" tabindex="-1"></a><span class="in">#| echo: true</span></span>
-<span id="cb9-107"><a href="#cb9-107" aria-hidden="true" tabindex="-1"></a><span class="in">ex01 &lt;-</span></span>
-<span id="cb9-108"><a href="#cb9-108" aria-hidden="true" tabindex="-1"></a><span class="in">  readr::read_csv(file.path("csv", params$fn), show_col_types = FALSE)</span></span>
-<span id="cb9-109"><a href="#cb9-109" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-110"><a href="#cb9-110" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-111"><a href="#cb9-111" aria-hidden="true" tabindex="-1"></a>There are <span class="in">`{r} dim(ex01)[1]`</span> responses.</span>
-<span id="cb9-112"><a href="#cb9-112" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-113"><a href="#cb9-113" aria-hidden="true" tabindex="-1"></a>These are the column/variable names.</span>
-<span id="cb9-114"><a href="#cb9-114" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-117"><a href="#cb9-117" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb9-118"><a href="#cb9-118" aria-hidden="true" tabindex="-1"></a><span class="co"># Google Forms puts the full question in the top row of the data file.</span></span>
-<span id="cb9-119"><a href="#cb9-119" aria-hidden="true" tabindex="-1"></a><span class="co"># We use the names() function to extract and print the original questions.</span></span>
-<span id="cb9-120"><a href="#cb9-120" aria-hidden="true" tabindex="-1"></a>ex01_qs <span class="ot">&lt;-</span> <span class="fu">names</span>(ex01)</span>
-<span id="cb9-121"><a href="#cb9-121" aria-hidden="true" tabindex="-1"></a>ex01_qs</span>
-<span id="cb9-122"><a href="#cb9-122" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-123"><a href="#cb9-123" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-124"><a href="#cb9-124" aria-hidden="true" tabindex="-1"></a>For simplicity, we visualize below only those with non-empty URLs to the specific figure.</span>
-<span id="cb9-125"><a href="#cb9-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-126"><a href="#cb9-126" aria-hidden="true" tabindex="-1"></a><span class="fu">## Figures found</span></span>
-<span id="cb9-127"><a href="#cb9-127" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-128"><a href="#cb9-128" aria-hidden="true" tabindex="-1"></a><span class="in">```{r many-tables-lapply, results = "asis", warning=FALSE}</span></span>
-<span id="cb9-129"><a href="#cb9-129" aria-hidden="true" tabindex="-1"></a><span class="in">these_figs &lt;- ex01 |&gt;</span></span>
-<span id="cb9-130"><a href="#cb9-130" aria-hidden="true" tabindex="-1"></a><span class="in">  filter(!is.na(url_to_figure))</span></span>
-<span id="cb9-131"><a href="#cb9-131" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-132"><a href="#cb9-132" aria-hidden="true" tabindex="-1"></a><span class="in">res &lt;- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))</span></span>
-<span id="cb9-133"><a href="#cb9-133" aria-hidden="true" tabindex="-1"></a><span class="in">cat(unlist(res), sep = "\n")</span></span>
-<span id="cb9-134"><a href="#cb9-134" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<div class="sourceCode" id="cb10" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Findings: Data viz in psych sci"</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="an">params:</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co">  update_data: true</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co">  fn: "ex01-figs-in-psych-sci.csv"</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## About</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>This page extracts information about the data visualizations we explored in <span class="co">[</span><span class="ot">Exercise-01</span><span class="co">](../exercises/ex01-figs-in-psych-sci.qmd)</span> from the shared Google Sheet.</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Survey</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>Direct link: <span class="ot">&lt;https://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6tRzpfdgXBYyPooCPo/edit?gid=0#gid=0&gt;</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>&lt;iframe src="https://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6tRzpfdgXBYyPooCPo/edit?gid=0#gid=0" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading…&lt;/iframe&gt;</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Preparation</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>First, we load the external packages (groups of R commands) that we will be using.</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>The code uses the <span class="in">`quietly()`</span> function from the <span class="in">`purrr`</span> package to suppress most of the feedback.</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'ggplot2'</span>)</span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">'dplyr'</span>)</span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>r_functions <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="fu">file.path</span>(here<span class="sc">::</span><span class="fu">here</span>(), <span class="st">"src"</span>, <span class="st">"R"</span>), <span class="st">"</span><span class="sc">\\</span><span class="st">.R$"</span>, <span class="at">full.names =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>purrr<span class="sc">::</span><span class="fu">map</span>(r_functions, source) <span class="sc">|&gt;</span></span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a>  purrr<span class="sc">::</span><span class="fu">quietly</span>()</span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a><span class="fu">## Gathering</span></span>
+<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a>Next, we download the data from the Google Sheet where it is collected.</span>
+<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a>Dr. Gilmore has stored his Google account credentials in a special environment file that can be accessed by the R command <span class="in">`Sys.getenv("GMAIL_SURVEY")`</span>.</span>
+<span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-47"><a href="#cb10-47" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb10-48"><a href="#cb10-48" aria-hidden="true" tabindex="-1"></a>It's vital to be *very* careful when creating and sharing code like this that involves sensitive information like login credentials.</span>
+<span id="cb10-49"><a href="#cb10-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-50"><a href="#cb10-50" aria-hidden="true" tabindex="-1"></a>Gilmore likes to put credentials in an <span class="in">`.Renviron`</span> file that lives in his home directory. </span>
+<span id="cb10-51"><a href="#cb10-51" aria-hidden="true" tabindex="-1"></a>This is a <span class="co">[</span><span class="ot">recommended practice</span><span class="co">](https://support.posit.co/hc/en-us/articles/360047157094-Managing-R-with-Rprofile-Renviron-Rprofile-site-Renviron-site-rsession-conf-and-repos-conf)</span>.</span>
+<span id="cb10-52"><a href="#cb10-52" aria-hidden="true" tabindex="-1"></a>On Mac OS and Linux, that's <span class="in">`~/.Renviron`</span>. </span>
+<span id="cb10-53"><a href="#cb10-53" aria-hidden="true" tabindex="-1"></a>You can use the <span class="in">`usethis::edit_r_profile()`</span> command *at the R console* (not the Terminal) to open your own <span class="in">`.Renviron`</span> file.</span>
+<span id="cb10-54"><a href="#cb10-54" aria-hidden="true" tabindex="-1"></a>In Gilmore's case, he has added the following line to that file:</span>
+<span id="cb10-55"><a href="#cb10-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-56"><a href="#cb10-56" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-57"><a href="#cb10-57" aria-hidden="true" tabindex="-1"></a><span class="in">GMAIL_SURVEY="&lt;my-google-account&gt;"</span></span>
+<span id="cb10-58"><a href="#cb10-58" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-59"><a href="#cb10-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-60"><a href="#cb10-60" aria-hidden="true" tabindex="-1"></a>Here, he has substituted his Google account with credentials/access to the required files for <span class="in">`&lt;my-google-account&gt;`</span>.</span>
+<span id="cb10-61"><a href="#cb10-61" aria-hidden="true" tabindex="-1"></a>Then, when the R code below calls <span class="in">`Sys.getenv("GMAIL_SURVEY")`</span>, the value of those credentials is returned as a text string.</span>
+<span id="cb10-62"><a href="#cb10-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-63"><a href="#cb10-63" aria-hidden="true" tabindex="-1"></a>Make sure to close and save the <span class="in">`.Renviron`</span> file and restart your R session before testing this yourself.</span>
+<span id="cb10-64"><a href="#cb10-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-65"><a href="#cb10-65" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb10-66"><a href="#cb10-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-67"><a href="#cb10-67" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval=params$update_data}</span></span>
+<span id="cb10-68"><a href="#cb10-68" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: gather-data-from-google</span></span>
+<span id="cb10-69"><a href="#cb10-69" aria-hidden="true" tabindex="-1"></a><span class="in">#| message: false</span></span>
+<span id="cb10-70"><a href="#cb10-70" aria-hidden="true" tabindex="-1"></a><span class="in">#| echo: true</span></span>
+<span id="cb10-71"><a href="#cb10-71" aria-hidden="true" tabindex="-1"></a><span class="in">if (!dir.exists('csv')) {</span></span>
+<span id="cb10-72"><a href="#cb10-72" aria-hidden="true" tabindex="-1"></a><span class="in">  message("Creating missing `csv/`.")</span></span>
+<span id="cb10-73"><a href="#cb10-73" aria-hidden="true" tabindex="-1"></a><span class="in">  dir.create("csv")</span></span>
+<span id="cb10-74"><a href="#cb10-74" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb10-75"><a href="#cb10-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-76"><a href="#cb10-76" aria-hidden="true" tabindex="-1"></a><span class="in">if (params$update_data) {</span></span>
+<span id="cb10-77"><a href="#cb10-77" aria-hidden="true" tabindex="-1"></a><span class="in">  options(gargle_oauth_email = Sys.getenv("GMAIL_SURVEY"))</span></span>
+<span id="cb10-78"><a href="#cb10-78" aria-hidden="true" tabindex="-1"></a><span class="in">  googledrive::drive_auth()</span></span>
+<span id="cb10-79"><a href="#cb10-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-80"><a href="#cb10-80" aria-hidden="true" tabindex="-1"></a><span class="in">  googledrive::drive_download(</span></span>
+<span id="cb10-81"><a href="#cb10-81" aria-hidden="true" tabindex="-1"></a><span class="in">    "PSYCH-490.003-Spr-2025-Psych-Viz",</span></span>
+<span id="cb10-82"><a href="#cb10-82" aria-hidden="true" tabindex="-1"></a><span class="in">    path = file.path("csv", params$fn),</span></span>
+<span id="cb10-83"><a href="#cb10-83" aria-hidden="true" tabindex="-1"></a><span class="in">    type = "csv",</span></span>
+<span id="cb10-84"><a href="#cb10-84" aria-hidden="true" tabindex="-1"></a><span class="in">    overwrite = TRUE</span></span>
+<span id="cb10-85"><a href="#cb10-85" aria-hidden="true" tabindex="-1"></a><span class="in">  )</span></span>
+<span id="cb10-86"><a href="#cb10-86" aria-hidden="true" tabindex="-1"></a><span class="in">  message("Data updated.")</span></span>
+<span id="cb10-87"><a href="#cb10-87" aria-hidden="true" tabindex="-1"></a><span class="in">} else {</span></span>
+<span id="cb10-88"><a href="#cb10-88" aria-hidden="true" tabindex="-1"></a><span class="in">  message("Using stored data.")</span></span>
+<span id="cb10-89"><a href="#cb10-89" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb10-90"><a href="#cb10-90" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-91"><a href="#cb10-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-92"><a href="#cb10-92" aria-hidden="true" tabindex="-1"></a>The data file has been saved as a comma-separated value (CSV) format data file in a special directory called <span class="in">`csv/`</span>.</span>
+<span id="cb10-93"><a href="#cb10-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-94"><a href="#cb10-94" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb10-95"><a href="#cb10-95" aria-hidden="true" tabindex="-1"></a>Because these data *might* contain sensitive or identifiable information, we only keep a local copy and do not share it publicly via GitHub.</span>
+<span id="cb10-96"><a href="#cb10-96" aria-hidden="true" tabindex="-1"></a>This is achieved by adding the name of the data directory to a special <span class="in">`.gitignore`</span> file.</span>
+<span id="cb10-97"><a href="#cb10-97" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb10-98"><a href="#cb10-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-99"><a href="#cb10-99" aria-hidden="true" tabindex="-1"></a><span class="fu">## Cleaning</span></span>
+<span id="cb10-100"><a href="#cb10-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-101"><a href="#cb10-101" aria-hidden="true" tabindex="-1"></a>Next we load the saved data file, and then proceed to clean it.</span>
+<span id="cb10-102"><a href="#cb10-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-103"><a href="#cb10-103" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, eval=params$update_data}</span></span>
+<span id="cb10-104"><a href="#cb10-104" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: load-saved-data</span></span>
+<span id="cb10-105"><a href="#cb10-105" aria-hidden="true" tabindex="-1"></a><span class="in">#| message: false</span></span>
+<span id="cb10-106"><a href="#cb10-106" aria-hidden="true" tabindex="-1"></a><span class="in">#| echo: true</span></span>
+<span id="cb10-107"><a href="#cb10-107" aria-hidden="true" tabindex="-1"></a><span class="in">ex01 &lt;-</span></span>
+<span id="cb10-108"><a href="#cb10-108" aria-hidden="true" tabindex="-1"></a><span class="in">  readr::read_csv(file.path("csv", params$fn), show_col_types = FALSE)</span></span>
+<span id="cb10-109"><a href="#cb10-109" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-110"><a href="#cb10-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-111"><a href="#cb10-111" aria-hidden="true" tabindex="-1"></a>There are <span class="in">`{r} dim(ex01)[1]`</span> responses.</span>
+<span id="cb10-112"><a href="#cb10-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-113"><a href="#cb10-113" aria-hidden="true" tabindex="-1"></a>These are the column/variable names.</span>
+<span id="cb10-114"><a href="#cb10-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-117"><a href="#cb10-117" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-118"><a href="#cb10-118" aria-hidden="true" tabindex="-1"></a><span class="co"># Google Forms puts the full question in the top row of the data file.</span></span>
+<span id="cb10-119"><a href="#cb10-119" aria-hidden="true" tabindex="-1"></a><span class="co"># We use the names() function to extract and print the original questions.</span></span>
+<span id="cb10-120"><a href="#cb10-120" aria-hidden="true" tabindex="-1"></a>ex01_qs <span class="ot">&lt;-</span> <span class="fu">names</span>(ex01)</span>
+<span id="cb10-121"><a href="#cb10-121" aria-hidden="true" tabindex="-1"></a>ex01_qs</span>
+<span id="cb10-122"><a href="#cb10-122" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-123"><a href="#cb10-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-124"><a href="#cb10-124" aria-hidden="true" tabindex="-1"></a>For simplicity, we visualize below only those with non-empty URLs to the specific figure.</span>
+<span id="cb10-125"><a href="#cb10-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-126"><a href="#cb10-126" aria-hidden="true" tabindex="-1"></a><span class="fu">## Summary data</span></span>
+<span id="cb10-127"><a href="#cb10-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-130"><a href="#cb10-130" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb10-131"><a href="#cb10-131" aria-hidden="true" tabindex="-1"></a>figs_w_urls <span class="ot">&lt;-</span> ex01 <span class="sc">|&gt;</span></span>
+<span id="cb10-132"><a href="#cb10-132" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(url_to_figure))</span>
+<span id="cb10-133"><a href="#cb10-133" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb10-134"><a href="#cb10-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-135"><a href="#cb10-135" aria-hidden="true" tabindex="-1"></a>There were *n*=<span class="in">`{r} length(unique(ex01$identifier))`</span> unique respondents.</span>
+<span id="cb10-136"><a href="#cb10-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-137"><a href="#cb10-137" aria-hidden="true" tabindex="-1"></a>Of the <span class="in">`{r} dim(ex01)[1]`</span> responses from these individuals or teams, *n*=<span class="in">`{r} dim(figs_w_urls)[1]`</span> had URLs we could link to directly.</span>
+<span id="cb10-138"><a href="#cb10-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-139"><a href="#cb10-139" aria-hidden="true" tabindex="-1"></a><span class="fu">## Figures found</span></span>
+<span id="cb10-140"><a href="#cb10-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-141"><a href="#cb10-141" aria-hidden="true" tabindex="-1"></a><span class="in">```{r many-tables-lapply, results = "asis", warning=FALSE}</span></span>
+<span id="cb10-142"><a href="#cb10-142" aria-hidden="true" tabindex="-1"></a><span class="in">these_figs &lt;- ex01 |&gt;</span></span>
+<span id="cb10-143"><a href="#cb10-143" aria-hidden="true" tabindex="-1"></a><span class="in">  filter(!is.na(url_to_figure))</span></span>
+<span id="cb10-144"><a href="#cb10-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-145"><a href="#cb10-145" aria-hidden="true" tabindex="-1"></a><span class="in">res &lt;- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))</span></span>
+<span id="cb10-146"><a href="#cb10-146" aria-hidden="true" tabindex="-1"></a><span class="in">cat(unlist(res), sep = "\n")</span></span>
+<span id="cb10-147"><a href="#cb10-147" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

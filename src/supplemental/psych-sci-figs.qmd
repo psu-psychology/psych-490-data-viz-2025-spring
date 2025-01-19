@@ -119,6 +119,17 @@ ex01_qs
 
 For simplicity, we visualize below only those with non-empty URLs to the specific figure.
 
+## Summary data
+
+```{r}
+figs_w_urls <- ex01 |>
+  filter(!is.na(url_to_figure))
+```
+
+There were *n*=`{r} length(unique(ex01$identifier))` unique respondents.
+
+Of the `{r} dim(ex01)[1]` responses from these individuals or teams, *n*=`{r} dim(figs_w_urls)[1]` had URLs we could link to directly.
+
 ## Figures found
 
 ```{r many-tables-lapply, results = "asis", warning=FALSE}
