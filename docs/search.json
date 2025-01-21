@@ -340,7 +340,7 @@
     "href": "slides/wk02-2025-01-21-govt-biz.html#what-data-do-governments-visualize",
     "title": "Data viz in government & business",
     "section": "What data do governments visualize",
-    "text": "What data do governments visualize\n\nWhat data are collected?\nPrimary sources\n\nBureau of the Census\nData.gov\nOpen Data PA https://data.pa.gov\nSecondary sources\nhttps://datausa.io/profile/geo/state-college-pa?redirect=true"
+    "text": "What data do governments visualize\n\nWhat data are collected?\nPrimary sources\n\nBureau of the Census\nData.gov\nOpen Data PA: https://data.pa.gov\n\nSecondary sources\n\nhttps://datausa.io/profile/geo/state-college-pa?redirect=true"
   },
   {
     "objectID": "slides/wk02-2025-01-21-govt-biz.html#why-do-governments-visualize-data",
@@ -1468,5 +1468,12 @@
     "title": "Findings: Data viz in psych sci",
     "section": "Summary data",
     "text": "Summary data\n\n\nCode\nfigs_w_urls &lt;- ex01 |&gt;\n  filter(!is.na(url_to_figure))\n\n\nThere were n=22 unique respondents.\nOf the 46 responses from these individuals or teams, n=34 had URLs we could link to directly."
+  },
+  {
+    "objectID": "slides/wk02-2025-01-21-govt-biz.html#exercise-02",
+    "href": "slides/wk02-2025-01-21-govt-biz.html#exercise-02",
+    "title": "Data viz in government & business",
+    "section": "Exercise 02",
+    "text": "Exercise 02\n\nExercise 02\nGoogle Sheet"
   }
 ]

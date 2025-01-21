@@ -25,7 +25,7 @@ subtitle: "2025-01-21"
 
 ---
 
-!<[https://opair.psu.edu/data-summit/>](../include/img/psu-data-summit.png)
+![<https://opair.psu.edu/data-summit/>](../include/img/psu-data-summit.png)
 
 ## Last time...
 
@@ -76,9 +76,9 @@ plot(code)
 - Primary sources
   - [Bureau of the Census](https://data.census.gov)
   - [Data.gov](https://data.gov)
-  - [Open Data PA](https://data.pa.gov)
+  - [Open Data PA](https://data.pa.gov): 
 https://data.pa.gov
-  - Secondary sources
+- Secondary sources
   - <https://datausa.io/profile/geo/state-college-pa?redirect=true>
 
 ## Why do governments visualize data?
@@ -96,10 +96,14 @@ https://data.pa.gov
 
 # Let's explore
 
+## Exercise 02
+
 - [Exercise 02](../exercises/ex02-data-viz-outside-psych.qmd)
 - [Google Sheet](https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?usp=sharing)
 
 # Main points
+
+---
 
 - Governments collect & report on lots of data
 - Non-profits collect varied types of data, and many visualize it
