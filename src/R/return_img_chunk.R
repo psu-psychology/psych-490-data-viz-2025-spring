@@ -16,8 +16,9 @@ return_img_chunk <- function(i, df) {
   url_txt <- paste0("<", df_i$url_to_src, ">", "\n")
   body_txt <- paste0("\n\n| Analyst | Source Type | Why Selected |\n|---|---|---|\n", 
   "| ", df_i$identifier, " | ", df_i$source_type, " | ", df_i$why_selected, " | ")
+  comment_txt <- paste0("\n\n | Comments |\n|-----------|\n|", df_i$comment, "|\n\n")
   knitr::knit_child(
-    text = c(chunk_hdr, url_txt, img_markdown, body_txt),
+    text = c(chunk_hdr, url_txt, img_markdown, body_txt, comment_txt),
     envir = environment(),
     quiet = TRUE
   )  

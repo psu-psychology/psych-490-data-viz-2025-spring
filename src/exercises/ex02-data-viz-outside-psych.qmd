@@ -18,7 +18,7 @@ You will add links to the visualizations to a common database that we will use f
 
 1. Choose at least three categories (business, government, the arts, sports, or journalism) to focus on.
 
-2. For category, find at least two visualizations of data.
+2. For each category, find at least one or two visualizations of data.
 
 Try to pick visualizations that are interesting to you in some way.
 
@@ -28,9 +28,11 @@ Try to pick visualizations that are interesting to you in some way.
 
 Specifically, enter your team identifier in the `identifier` field, the source in `source_type`, and the URL in the `url` field. Please say briefly why you chose this particular visualization. If you have any comments to add, put those in the `comments` field.
 
-4. If you want to submit a write-up for evaluation, please select three visualizations and evaluate them based on the following questions:
+4. If you want to submit a write-up for evaluation, please select three (3) visualizations and evaluate them based on the following questions:
 
 - What data are presented?
+- What graphic elements of the visualization map to which aspects of the data?
+- What prior knowledge does someone viewing these data need to have in order to understand the visualizations clearly?
 - Why is the source presenting these data?
 - What story or message is the source trying to communicate and to what audience?
 - How effective is the message?
