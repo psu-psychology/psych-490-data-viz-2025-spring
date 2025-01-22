@@ -1,0 +1,65 @@
+# Capturing images {-}
+
+## About {-}
+
+This short tutorial shows how to capture images in web pages and how to make screenshots on Mac OS and Windows OS.
+
+## Capturing images in web pages {-}
+
+Most browsers support "right-clicking", clicking on the right button of a multibutton mouse (or the equivalent motion on a trackpad) when you hover over an image.
+
+Using Chrome on Mac OS for example, I visited the Penn State homepage at <https://www.psu.edu>.
+In mousing over a photo, I right clicked and had the following panel appear:
+
+![Image from psu.edu in Chrome using MacOS](../include/img/psu-edu-right-click.png){#fig-right-click-mac-os}
+
+Note that there are several options. 
+I find that these are the most useful:
+
+1. "Open Image in New Tab". I often do this to make sure that the web page link (URL) actually contains the image I want it to. Then I switch to that tab for further steps.
+2. "Save Image As...". This is useful if you want to download a local copy.
+3. "Copy Image Address". Use this for capturing URLs of images, but not the images themselves.
+
+Here is an illustration of the same process on Windows 11:
+
+![Image from psu.edu on Chrome using Windows 11](../include/img/psu-edu-chrome-win-11.png){#fig-right-click-win-11}
+
+Not that the pop-up has similar options.
+
+::: {.callout-warning}
+## Word to the wise
+
+Some websites do *not* support this feature. That's why I prefer to use "open image in new tab" to see if I'm actually capturing what I want to capture.
+As a back-up, you can usually resort to your computer's built-in screen capture tool that we'll describe next.
+
+:::
+
+## Capturing images on your screen {-}
+
+When the image you want is *not* a static image, you may need to use your computer's screen capture tool.
+
+From the same Penn State home page, I try right-clicking on the top ["hero"](https://www.optimizely.com/optimization-glossary/hero-image/) animation.
+This is the result.
+
+![Results of right-clicking on psu.edu 'hero' image/animation.](../include/img/psu-edu-hero-mac-os.png){#fig-right-click-hero-mac-os}
+
+Notice that the pop-up window does not have the same menu items as it did for a static image.
+Of course, this is an animation, and so it's not that surprising that things would differ.
+Let's say I want to capture a static image from this animation.
+
+1. Press the screen capture keystroke combination for your computer. On Mac OS, you have two choices, command+shift+3 (pressed simultaneously) immediately takes a screenshot of your entire window.
+
+![Capturing entire screen on Mac OS using command+shift+3.](../include/img/command-shift-3.png){#fig-command-shift-3}
+
+Note that to capture a specific segment of a video, you have to wait until that image appears and press these keys quickly.
+
+2. As an alternative on Mac OS, you can use command+shift+4. Then, you click and drag your mouse to indicate the *region* of the screen you want to capture. When the image appears in the animation, just release the mouse button and that image will be captured.
+
+![Capturing a segment of the screen on Mac OS using command+shift+4.](../include/img/command-shift-4.png){#fig-command-shift-4}
+
+::: {.callout-note}
+## Under construction
+
+Instructions about how to do this on Windows are a work-in-progress.
+
+:::

@@ -19,24 +19,19 @@ subtitle: "2025-01-28"
 
 ## Announcements
 
-- [Exercise-03](../exercises/ex03-making-data.qmd) write-up [due next Tuesday, January 21, 2025]{.orange_due}.
+- [Exercise-02](../exercises/ex02-data-viz-outside-psych.qmd) write-up [due Thursday, January 30](../schedule.qmd#thursday-january-30){.orange_due}.
 
 ## Last time...
 
-*Visualization in government & business*
+*Visualization in the arts, sports, & journalism*
 
-- [Exercise-03](../exercises/ex03-making-data.qmd) write-up [due next Tuesday, January 21, 2025]{.orange_due}.
+## Your observations
 
----
+- Distinctive features of data viz in different fields?
 
-::: {.callout-important}
-## Your thoughts
+## Preliminary findings
 
-Should a scientific paper's main findings be visible in some sort of visualization?
-
-Why or why not?
-
-:::
+- [Visualization](../supplemental/other-field-figs.qmd) of [Exercise 02](../exercises/ex02-data-viz-outside-psych.qmd) results
 
 ## Today
 
@@ -44,6 +39,22 @@ Why or why not?
 - Types of data
 
 # Making Data
+
+---
+
+>Data are made, not born.
+
+Gilmore 2025
+
+---
+
+>No one really knows how the game is played... \
+>The art of the trade \
+>How the sausage gets made \
+>We just assume that it happens \
+>But no one else is in the room where it happens
+
+"The Room Where it Happens", Leslie Odom Jr. and Lin-Manuel Miranda, "Hamilton"
 
 ## How are data made?
 
@@ -119,7 +130,7 @@ flowchart TB
 ## Questions about measurement
 
 - What's the procedure for making this mapping?
-- What are the rules for assigning numbers?
+- What are the rules for assigning numbers/categories?
 - What can we do with the assigned numbers (summarize, depict)?
 
 # Types of data
@@ -160,14 +171,13 @@ flowchart TB
 
 ![@Stevens1946-sh](../include/img/stevens-1946-table.png)
 
-## Your surveys...
+## Making data
 
-- Nominal
-- Ordinal
-- Interval
-- Ratio
+- [Exercise 03](../exercises/ex03-making-data.qmd)
 
 # Main points
+
+---
 
 - Data are *made*
   - Map characteristics to quantities
@@ -178,7 +188,7 @@ flowchart TB
 
 # Next time
 
-*Visualization in business, industry, & government*
+*Types of figures*
 
 # Resources
 

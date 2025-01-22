@@ -11,7 +11,7 @@ Submit write-up by Thursday, Feburary 6.
 
 ## Goals {-}
 
-In this exercise, you will work with a team of classmates to create a survey using the Google [Forms](https://forms.google.com) tool.
+In this exercise, you will work alone or with a team of classmates to create a survey using the Google [Forms](https://forms.google.com) tool.
 The survey you create will be used later in the course for data visualizations that you will also create.
 
 ## Assignment {-}
@@ -21,10 +21,12 @@ The survey you create will be used later in the course for data visualizations t
 2. Create a new form by clicking on the 'Blank Form' button.
 
 ![Blank form button](../include/img/google-forms-blank-form.png){fig-google-form-blank-form}
-3. Give your form a useful title, for example, 'PSYCH-490.003-2025-spring-team-A'
+3. Give your form a useful title, for example, 'PSYCH-490.003-2025-spring-team-A' or 'PSYCH-490.003-2025-spring-rog1'.
 
 ::: {.callout-important}
-You will be assigned a team name/letter.
+You can be assigned a team name/letter if you choose.
+
+If you 
 :::
 
 4. Customize the theme if you wish by clicking on the palette icon.
@@ -32,25 +34,30 @@ You will be assigned a team name/letter.
 5. Create a survey with 8 questions. Your questions should be ones that your classmates can answer without embarrassment or loss of privacy and which meet the following criteria:
 
 - Generate two questions with nominal (un-ordered) answers (e.g., favorite color).
-- Generate two questions with ordinal (e.g., 1-5) answers analogous to a Likert scale.
+- Generate two questions with ordinal (e.g., 1-5) answers analogous to a [Likert](https://en.wikipedia.org/wiki/Likert_scale) scale.
 - Generate two questions with continuous answers (e.g., age and shoe size). It doesn't matter if these are interval or ratio scaled.
 - Generate one question with a date or time as an answer (e.g., a favorite relative's birthday).
 - Include one field for comments.
 
-6. What type(s) of interfaces work best for these question types? Why?
-
-7. When you are happy with a draft of your survey, conduct a quality assurance (QA) review of it by having your team take the survey. The easiest way to do this is to use the 'Send' button to send your survey to your collaborators.
+6. When you are happy with a draft of your survey, conduct a quality assurance (QA) review of it by having your team or someone else take the survey. The easiest way to do this is to use the 'Send' button to send your survey to you collaborator(s).
 
 ![Google Forms 'Send'](../include/img/google-forms-send-button.png)
 
 Make sure to have your QA testers answer the Comments question with the same response, e.g., 'test-response'. This will make it easier later to filter-out the test responses.
 
-8. Make sure that all of your collaborators have edit privileges on the form. Click on the 'more' button with three dots and add collaborators.
+7. Make sure that all of your collaborators have edit privileges on the form. Click on the 'more' button with three dots and add collaborators.
 
 ![Add collaborators](../include/img/google-forms-add-collaborators.png)
 
 ## Submit {-}
 
-A short 2-3 pp write-up with answers to point 5. above via Canvas. 
+Whether or not you are submitting a write-up for Exercise 03, please dd Dr. Gilmore (rog1@psu.edu) and Sara He (cfh5558@psu.edu) as collaborators on the survey.
 
-Add Dr. Gilmore (rog1@psu.edu) and the TA as collaborators on the survey.
+If you are submitting a short 2-4 page write-up via Canvas with answers to the following questions:
+
+1. What is a *defining* feature of data items that are nominal? \
+2. What assumptions might analysts make about *ordinal* data when it comes time to visualize or analyze the results? \
+3. What assumptions must a researcher make when conducting survey research of this sort? \
+4. Focusing on those available within Google Forms, what user interface(s) work best for different types of data? \
+5. If you've used Qualtics previously to generate surveys, briefly compare Qualtrics with Google Forms.
+

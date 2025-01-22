@@ -13,7 +13,7 @@ return_img_chunk <- function(i, df) {
     img_markdown = "**No direct link to figure**"
   }
   
-  url_txt <- paste0("<", df_i$url_to_src, ">", "\n")
+  url_txt <- paste0("**Source**: <", df_i$url_to_src, ">\n")
   body_txt <- paste0("\n\n| Analyst | Source Type | Why Selected |\n|---|---|---|\n", 
   "| ", df_i$identifier, " | ", df_i$source_type, " | ", df_i$why_selected, " | ")
   comment_txt <- paste0("\n\n | Comments |\n|-----------|\n|", df_i$comment, "|\n\n")

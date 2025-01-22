@@ -1,6 +1,6 @@
 ---
 title: "Exercise 02"
-subtitle: "Data visualizaton outside Psychological Science"
+subtitle: "Data visualizaton outside psychological science"
 ---
 
 ## Dates {-}

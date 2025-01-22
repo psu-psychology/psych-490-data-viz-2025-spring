@@ -59,6 +59,11 @@ Here are some additional journal resources that you might find interesting to ex
 - [Nature](https://www.nature.com)
 - [Nature Human Behavior](https://www.nature.com/nathumbehav)
 - [Trends in Cognitive Sciences](https://www.cell.com/trends/cognitive-sciences/home)
+- [Annual Reviews]
+  - [Figures with "psychology" as search term](https://www.annualreviews.org/search?value1=psychology&option1=fulltext&facetOptions=51&value51=%22Figure%22&facetNames=contentType_facet&option51=contentType_facet&operator51=AND)
+  - ![Figures with "neuroscience" as search term](https://www.annualreviews.org/search?value1=neuroscience&option1=fulltext&facetOptions=51&value51=%22Figure%22&facetNames=contentType_facet&option51=contentType_facet&operator51=AND)
+  - [Knowable Magazine](https://knowablemagazine.org/) has a [graphics library](https://www.flickr.com/photos/knowablemag/)
+
 
 ::: {.callout-important}
 The goal here is to gather via 'crowd-sourcing' a diverse set of visualizations.
@@ -70,6 +75,12 @@ So, feel free to mix it up.
 - Everyone
   - Your data to the shared Google Spreadsheet.
 - Students who want this submission to count for one of their four (4) *required* exercises
-  - A 2-3 page write-up in APA format where you describe three (3) figures your group found, the data that are presented, and what "story" the data are intended to tell.
+  - A 2-3 page write-up in APA format where you describe three (3) figures your group found, focusing on these questions:
+    - What graphic elements of the visualization map to which aspects of the data?
+    - What prior knowledge does someone viewing these data need to have in order to understand the visualizations clearly?
+    - Why is the source presenting these data?
+    - What story or message is the source trying to communicate and to what audience?
+    - How effective is the message?
   - Students who work in teams should submit one (1) write-up with all of the authors' names. One grade will be assigned.
+  - **Note**: Your references section need only include the citation to the source paper or website. You should identify in your text which figure you have chosen to analyze.
   

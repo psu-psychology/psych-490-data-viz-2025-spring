@@ -126,12 +126,12 @@ flowchart LR
 ## Core qualities of sign systems
 
 - Semantics
-  - Relation between signs --> meaning
+  - Relations between signs --> meaning
 - Syntax (grammar)
   - Rules/conventions for arranging signs
   
 
-## Multiple channels
+## Multiple input channels
 
 :::: {.columns}
 ::: {.column width=40%}

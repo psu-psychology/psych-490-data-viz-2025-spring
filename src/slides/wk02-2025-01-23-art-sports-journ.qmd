@@ -7,6 +7,12 @@ subtitle: "2025-01-23"
 
 ---
 
+{{< video https://www.youtube.com/watch?v=ljGMhDSSGFU width=100% height=70% >}}
+
+@Smalin2011-vr
+
+---
+
 ![@Stiles2025-ty](../include/img/la-fires-viz-cnn.png)
 
 ## Mortality trends by education level
@@ -22,18 +28,76 @@ subtitle: "2025-01-23"
 ## Announcements
 
 - [Exercise 01](../exercises/ex01-figs-in-psych-sci.qmd) [due]{.orange_due}
+- Tutorial on [capturing images](../tutorials/tutorial-screenshots.qmd)
 
 ## Last time...
 
+**Visualization in government and business**
+
+## What did we uncover?
+
+- Summary [report](../supplemental/other-field-figs.qmd)
+
 ## Today
 
-*Visualization in art & sports*
+*Visualization in art, sports, & journalism*
 
 ## Goals
 
-# Data visualization in art
+- What sort(s) of visualizations are common in these fields?
+- Apply principles of [semiotics](wk01-2025-01-16-semiotics-data-viz.qmd#semiotics-of-data-visualization) to these visualizations.
+  - Semantics: Mappings between signs and what they signify?
+  - Syntax: Rules for arrangement/organization
+
+# Data visualization in the arts
+
+## Musical notation
+
+![https://www.britannica.com/art/musical-notation](https://cdn.britannica.com/01/72201-004-2995C318/symbols-notation.jpg)
+
+## Antecdents
+
+![https://www.britannica.com/art/musical-notation/Evolution-of-Western-staff-notation](https://cdn.britannica.com/93/2893-004-908441FD/Music-notation-neumes.jpg)
+
+
+---
+
+![@Wikipedia-contributors2025-rz](https://upload.wikimedia.org/wikipedia/commons/7/7e/Hurritische_hymne.gif)
+
+## Hebrew trope
+
+![@Wikipedia-contributors2025-hl](https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Example_of_biblical_Hebrew_trope.svg/2880px-Example_of_biblical_Hebrew_trope.svg.png)
+
+## Styles
+
+- [Style guide](https://blogs.iu.edu/jsomcomposition/music-notation-style-guide/)
+
+## What is being mapped?
+
+- Pitch
+- Timing, tempo
+- Loudness
+- Stylistic properties
+- etc.
+
+---
+
+{{< video https://www.youtube.com/watch?v=ljGMhDSSGFU width=100% height=70% >}}
+
+@Smalin2011-vr
+
+## Dance
+
+{{< video https://www.youtube.com/watch?v=VQYuNKvbPDg width=100% height=70%>}}
+
+@Flores2021-pt
 
 # Data visualization in sports
+
+## Examples
+
+- <https://operations.nfl.com/gameday/analytics/stats-articles/>
+- <https://www.tableau.com/sports-data>
 
 # Data visualization in journalism
 
@@ -46,7 +110,43 @@ subtitle: "2025-01-23"
 
 ## Data journalism
 
+- [The Economist](https://impact.economist.com/perspectives/search/infographic?f[0]=type%3Ainfographic&f[1]=)
+- [The New York Times](https://www.nytimes.com/spotlight/graphics)
+
+---
+
+![https://www.foxnews.com/search-results/search 'data'](../include/img/fox-news-search-data.png)
+
+---
+
+![https://www.cnn.com/search?q=data](../include/img/cnn-search-data.png)
+
+## The Washington Post
+
+![@Van-Dam2022-mr](../include/img/wapo-dept-data.png)
+
+---
+
+<iframe src="https://datawrapper.dwcdn.net/j4zy7/7/" width=100% height=80%></iframe>
+
+@Fowers2024-hu
+
+## Accuweather.com
+
+![https://www.accuweather.com/en/us/state-college/16801/weather-forecast/335315?current=true](../include/img/accuweather.png)
+
+## Knowable Magazine
+
+![https://knowablemagazine.org/](../include/img/knowable-magazine.png)
+
+- Graphics [library](https://www.flickr.com/photos/knowablemag/)
+
 # Main points
+
+## Data viz outside $\Psi$
+
+- Non-science fields visualize data, too
+- Multiple purposes/uses of data viz
 
 # Next time
 
