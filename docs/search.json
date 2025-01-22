@@ -298,7 +298,7 @@
     "href": "slides/wk02-2025-01-23-art-sports-journ.html#dance",
     "title": "Data viz in art, sports, & journalism",
     "section": "Dance",
-    "text": "Dance\n\n\nNovosad, P., Rafkin, C., & Asher, S. (2022). Mortality change among less educated americans. American Economic Journal. Applied Economics, 14, 1–34. https://doi.org/10.1257/app.20190297\n\n\nsmalin. (2011). Beethoven, symphony 9, 4th movement (complete) ode to joy, presto, philharmonia baroque. Youtube. Retrieved from https://www.youtube.com/watch?v=ljGMhDSSGFU\n\n\nStiles, M., O’Key, S., Manley, B., Robinson, L., Merrill, C., Choi, A., … Rigdon, R. (2025, January 8). Visualizing the los angeles wildfires in maps and charts. Retrieved January 12, 2025, from https://www.cnn.com/2025/01/08/us/maps-visuals-los-angeles-wildfires-dg/index.html\n\n\nWikipedia contributors. (2025a, January 5). Hebrew cantillation. Retrieved from https://en.wikipedia.org/wiki/Hebrew_cantillation\n\n\nWikipedia contributors. (2025b, January 12). Musical notation. Retrieved from https://en.wikipedia.org/wiki/Musical_notation"
+    "text": "Dance\n\nFlores (2021)"
   },
   {
     "objectID": "slides/wk01-2025-01-16-semiotics-data-viz.html#william-playfair",
@@ -1594,5 +1594,61 @@
     "title": "Findings: Data viz outside psych sci",
     "section": "Figures found",
     "text": "Figures found\n\nCode\nthese_figs &lt;- ex02 |&gt;\n  filter(!is.na(url_to_figure))\n\nres &lt;- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))\ncat(unlist(res), sep = \"\\n\")\n\n\nFigure 1\nSource: https://wpdatatables.com/sports-data-visualization/#:~:text=What%20is%20Sports%20Data%20Visualization,drawn%20from%20sports%2Drelated%20data.\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\nReport\nBasketball Fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 2\nSource: \n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nPoster\nSeen in person\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of physicians by resident year in a hospital department"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-23-art-sports-journ.html#visual-arts",
+    "href": "slides/wk02-2025-01-23-art-sports-journ.html#visual-arts",
+    "title": "Data viz in art, sports, & journalism",
+    "section": "Visual arts",
+    "text": "Visual arts\n\n“Blue Skies and Cloud Cover” by Laura Guertin, BTAA Data Viz 2024 Champion"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-23-art-sports-journ.html#examples",
+    "href": "slides/wk02-2025-01-23-art-sports-journ.html#examples",
+    "title": "Data viz in art, sports, & journalism",
+    "section": "Examples",
+    "text": "Examples\n\nhttps://operations.nfl.com/gameday/analytics/stats-articles/\nhttps://www.tableau.com/sports-data"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-23-art-sports-journ.html#data-journalism",
+    "href": "slides/wk02-2025-01-23-art-sports-journ.html#data-journalism",
+    "title": "Data viz in art, sports, & journalism",
+    "section": "Data journalism",
+    "text": "Data journalism\n\nThe Economist\nThe New York Times"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-23-art-sports-journ.html#the-washington-post",
+    "href": "slides/wk02-2025-01-23-art-sports-journ.html#the-washington-post",
+    "title": "Data viz in art, sports, & journalism",
+    "section": "The Washington Post",
+    "text": "The Washington Post\n\nVan Dam (2022)"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-23-art-sports-journ.html#accuweather.com",
+    "href": "slides/wk02-2025-01-23-art-sports-journ.html#accuweather.com",
+    "title": "Data viz in art, sports, & journalism",
+    "section": "Accuweather.com",
+    "text": "Accuweather.com\n\nhttps://www.accuweather.com/en/us/state-college/16801/weather-forecast/335315?current=true"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-23-art-sports-journ.html#knowable-magazine",
+    "href": "slides/wk02-2025-01-23-art-sports-journ.html#knowable-magazine",
+    "title": "Data viz in art, sports, & journalism",
+    "section": "Knowable Magazine",
+    "text": "Knowable Magazine\n\nhttps://knowablemagazine.org/\nGraphics library"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-23-art-sports-journ.html#data-viz-outside-psi",
+    "href": "slides/wk02-2025-01-23-art-sports-journ.html#data-viz-outside-psi",
+    "title": "Data viz in art, sports, & journalism",
+    "section": "Data viz outside \\(\\Psi\\)",
+    "text": "Data viz outside \\(\\Psi\\)\n\nNon-science fields visualize data, too\nMultiple purposes/uses of data viz"
+  },
+  {
+    "objectID": "slides/wk02-2025-01-23-art-sports-journ.html#references",
+    "href": "slides/wk02-2025-01-23-art-sports-journ.html#references",
+    "title": "Data viz in art, sports, & journalism",
+    "section": "References",
+    "text": "References\n\n\n\n\nFlores, M. S. (2021). Graph dance 2021 (STEM ingenuity grp 2). Youtube. Retrieved from https://www.youtube.com/watch?v=VQYuNKvbPDg\n\n\nFowers, A., & Van Dam, A. (2024, December 13). Unraveling america’s great puritan-name resurgence. The Washington Post. The Washington Post. Retrieved from https://www.washingtonpost.com/business/2024/12/13/virtue-names-hope-faith-charity/\n\n\nNovosad, P., Rafkin, C., & Asher, S. (2022). Mortality change among less educated americans. American Economic Journal. Applied Economics, 14, 1–34. https://doi.org/10.1257/app.20190297\n\n\nParis, F. (2025, January 13). Childhood vaccination rates were falling even before the rise of R.F.K. jr. The New York Times. The New York Times. Retrieved from https://www.nytimes.com/interactive/2025/01/13/upshot/vaccination-rates.html\n\n\nsmalin. (2011). Beethoven, symphony 9, 4th movement (complete) ode to joy, presto, philharmonia baroque. Youtube. Retrieved from https://www.youtube.com/watch?v=ljGMhDSSGFU\n\n\nStiles, M., O’Key, S., Manley, B., Robinson, L., Merrill, C., Choi, A., … Rigdon, R. (2025, January 8). Visualizing the los angeles wildfires in maps and charts. Retrieved January 12, 2025, from https://www.cnn.com/2025/01/08/us/maps-visuals-los-angeles-wildfires-dg/index.html\n\n\nVan Dam, A. (2022, June 29). Where fun facts are serious business. The Washington Post. The Washington Post. Retrieved from https://www.washingtonpost.com/business/2022/06/29/dept-of-data/\n\n\nWikipedia contributors. (2025a, January 5). Hebrew cantillation. Retrieved from https://en.wikipedia.org/wiki/Hebrew_cantillation\n\n\nWikipedia contributors. (2025b, January 12). Musical notation. Retrieved from https://en.wikipedia.org/wiki/Musical_notation"
   }
 ]
