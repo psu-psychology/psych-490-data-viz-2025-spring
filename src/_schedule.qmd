@@ -34,7 +34,7 @@
 - Read (recommended): @Gelman2013-he
 - [Slides](slides/wk02-2025-01-23-art-sports-journ.qmd)
 - [Assigned]{.green_assigned}: [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd) 
-- [Exercise 01](exercises/ex01-figs-in-psych-sci.qmd) 
+- [Due]{.orange_due}: [Exercise 01](exercises/ex01-figs-in-psych-sci.qmd). [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998394)
 
 ## January 27-31 {- #week-03}
 
@@ -52,7 +52,7 @@
 
 *Figure types*
 
-- [Due]{.orange_due}: [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd)
+- [Due]{.orange_due}: [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd). [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998399)
 
 ## February 3-7 {- #week-04}
 

@@ -9,6 +9,8 @@ In-class work on Tuesday, January 14 and Thursday, January 16.
 
 Write-up for credit [due]{.orange_due} on [Thursday, January 23](../schedule.qmd#thursday-january-16).
 
+[Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998394)
+
 ## Goals {-}
 
 In this exercise, you may choose to work alone or with a team of classmates to find data visualizations from the societies of three (3) professional associations and three (3) journals.

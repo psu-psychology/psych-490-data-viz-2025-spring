@@ -7,7 +7,9 @@ subtitle: "Data visualizaton outside psychological science"
 
 In-class work on Tuesday, January 21-23.
 
-[Due]{.orange_due} on [Thursday, January 30](../schedule.qmd#thursday-january-30).
+[Due]{.orange_due} on [Thursday, January 30](../schedule.qmd#thursday-january-30). 
+
+[Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998399).
 
 ## Goals {-}
 

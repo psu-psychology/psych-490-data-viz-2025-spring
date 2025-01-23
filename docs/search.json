@@ -151,14 +151,14 @@
     "href": "exercises/ex02-data-viz-outside-psych.html",
     "title": "Exercise 02",
     "section": "",
-    "text": "In-class work on Tuesday, January 21-23.\nDue on Thursday, January 30."
+    "text": "In-class work on Tuesday, January 21-23.\nDue on Thursday, January 30.\nCanvas dropbox."
   },
   {
     "objectID": "exercises/ex02-data-viz-outside-psych.html#dates",
     "href": "exercises/ex02-data-viz-outside-psych.html#dates",
     "title": "Exercise 02",
     "section": "",
-    "text": "In-class work on Tuesday, January 21-23.\nDue on Thursday, January 30."
+    "text": "In-class work on Tuesday, January 21-23.\nDue on Thursday, January 30.\nCanvas dropbox."
   },
   {
     "objectID": "exercises/ex02-data-viz-outside-psych.html#goals",
@@ -1495,14 +1495,14 @@
     "href": "exercises/ex01-figs-in-psych-sci.html",
     "title": "Exercise 01",
     "section": "",
-    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nWrite-up for credit due on Thursday, January 23."
+    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nWrite-up for credit due on Thursday, January 23.\nCanvas dropbox"
   },
   {
     "objectID": "exercises/ex01-figs-in-psych-sci.html#dates",
     "href": "exercises/ex01-figs-in-psych-sci.html#dates",
     "title": "Exercise 01",
     "section": "",
-    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nWrite-up for credit due on Thursday, January 23."
+    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nWrite-up for credit due on Thursday, January 23.\nCanvas dropbox"
   },
   {
     "objectID": "exercises/ex01-figs-in-psych-sci.html#goals",
@@ -1530,14 +1530,14 @@
     "href": "exercises/ex03-making-data.html",
     "title": "Exercise 03",
     "section": "",
-    "text": "In-class work on Tuesday, January 28 and Thursday, January 30.\nSubmit write-up by Thursday, Feburary 6."
+    "text": "In-class work on Tuesday, January 28 and Thursday, January 30.\nSubmit write-up for credit due by Thursday, Feburary 6."
   },
   {
     "objectID": "exercises/ex03-making-data.html#dates",
     "href": "exercises/ex03-making-data.html#dates",
     "title": "Exercise 03",
     "section": "",
-    "text": "In-class work on Tuesday, January 28 and Thursday, January 30.\nSubmit write-up by Thursday, Feburary 6."
+    "text": "In-class work on Tuesday, January 28 and Thursday, January 30.\nSubmit write-up for credit due by Thursday, Feburary 6."
   },
   {
     "objectID": "exercises/ex03-making-data.html#goals",
@@ -1628,7 +1628,7 @@
     "href": "supplemental/other-field-figs.html#preparation",
     "title": "Findings: Data viz outside psych sci",
     "section": "Preparation",
-    "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using.\n\n\n\n\n\n\nImportant\n\n\n\nThe code uses the quietly() function from the purrr package to suppress most of the feedback.\n\n\n\n\nCode\nlibrary('ggplot2')\nlibrary('dplyr')\n\nr_functions &lt;- list.files(file.path(here::here(), \"src\", \"R\"), \"\\\\.R$\", full.names = TRUE)\n\npurrr::map(r_functions, source) |&gt;\n  purrr::quietly()\n\n\nfunction (...) \ncapture_output(.f(...))\n&lt;bytecode: 0x10cc057e8&gt;\n&lt;environment: 0x10cc05510&gt;"
+    "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using.\n\n\n\n\n\n\nImportant\n\n\n\nThe code uses the quietly() function from the purrr package to suppress most of the feedback.\n\n\n\n\nCode\nlibrary('ggplot2')\nlibrary('dplyr')\n\nr_functions &lt;- list.files(file.path(here::here(), \"src\", \"R\"), \"\\\\.R$\", full.names = TRUE)\n\npurrr::map(r_functions, source) |&gt;\n  purrr::quietly()\n\n\nfunction (...) \ncapture_output(.f(...))\n&lt;bytecode: 0x1191eaa00&gt;\n&lt;environment: 0x1191ea728&gt;"
   },
   {
     "objectID": "supplemental/other-field-figs.html#gathering",
@@ -1642,20 +1642,20 @@
     "href": "supplemental/other-field-figs.html#cleaning",
     "title": "Findings: Data viz outside psych sci",
     "section": "Cleaning",
-    "text": "Cleaning\nNext we load the saved data file, and then proceed to clean it.\n\n\nCode\nex02 &lt;-\n  readr::read_csv(file.path(\"csv\", params$fn), show_col_types = FALSE)\n\n\nThere are 7 responses.\nThese are the column/variable names.\n\n\nCode\n# Google Forms puts the full question in the top row of the data file.\n# We use the names() function to extract and print the original questions.\nex02_qs &lt;- names(ex02)\nex02_qs\n\n\n[1] \"identifier\"    \"source_type\"   \"url_to_src\"    \"url_to_figure\"\n[5] \"why_selected\"  \"comment\"      \n\n\nFor simplicity, we visualize below only those with non-empty URLs to the specific figure."
+    "text": "Cleaning\nNext we load the saved data file, and then proceed to clean it.\n\n\nCode\nex02 &lt;-\n  readr::read_csv(file.path(\"csv\", params$fn), show_col_types = FALSE)\n\n\nThere are 39 responses.\nThese are the column/variable names.\n\n\nCode\n# Google Forms puts the full question in the top row of the data file.\n# We use the names() function to extract and print the original questions.\nex02_qs &lt;- names(ex02)\nex02_qs\n\n\n[1] \"identifier\"    \"source_type\"   \"url_to_src\"    \"url_to_figure\"\n[5] \"why_selected\"  \"comment\"      \n\n\nFor simplicity, we visualize below only those with non-empty URLs to the specific figure."
   },
   {
     "objectID": "supplemental/other-field-figs.html#summary-data",
     "href": "supplemental/other-field-figs.html#summary-data",
     "title": "Findings: Data viz outside psych sci",
     "section": "Summary data",
-    "text": "Summary data\n\n\nCode\nfigs_w_urls &lt;- ex02 |&gt;\n  filter(!is.na(url_to_figure))\n\n\nThere were n=5 unique respondents.\nOf the 7 responses from these individuals or teams, n=2 had URLs we could link to directly."
+    "text": "Summary data\n\n\nCode\nfigs_w_urls &lt;- ex02 |&gt;\n  filter(!is.na(url_to_figure))\n\n\nThere were n=10 unique respondents.\nOf the 39 responses from these individuals or teams, n=7 had URLs we could link to directly."
   },
   {
     "objectID": "supplemental/other-field-figs.html#figures-found",
     "href": "supplemental/other-field-figs.html#figures-found",
     "title": "Findings: Data viz outside psych sci",
     "section": "Figures found",
-    "text": "Figures found\n\nCode\nthese_figs &lt;- ex02 |&gt;\n  filter(!is.na(url_to_figure))\n\nres &lt;- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))\ncat(unlist(res), sep = \"\\n\")\n\n\nFigure 1\nSource: https://wpdatatables.com/sports-data-visualization/#:~:text=What%20is%20Sports%20Data%20Visualization,drawn%20from%20sports%2Drelated%20data.\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\nReport\nBasketball Fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 2\nSource: \n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nPoster\nSeen in person\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of physicians by resident year in a hospital department"
+    "text": "Figures found\n\nCode\nthese_figs &lt;- ex02 |&gt;\n  filter(!is.na(url_to_figure))\n\nres &lt;- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))\ncat(unlist(res), sep = \"\\n\")\n\n\nFigure 1\nSource: https://wpdatatables.com/sports-data-visualization/#:~:text=What%20is%20Sports%20Data%20Visualization,drawn%20from%20sports%2Drelated%20data.\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\nReport\nBasketball Fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 2\nSource: \n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nPoster\nSeen in person\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of physicians by resident year in a hospital department\n\n\n\n\n\nFigure 3\nSource: https://hcup-us.ahrq.gov/reports/statbriefs/sb253-Influenza-Hospitalizations-ED-Visits-2006-2016.jsp\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nReport\nPublic health/medical example\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 4\nSource: https://www.bruinsportsanalytics.com/post/growth-of-nwsl\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nArticle\nNWSL fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 5\nSource: https://www.hockeyviz.com/team/CAR/2425\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nNHL, Canes fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 6\nSource: https://www.nbcnews.com/data-graphics/2023-college-football-season-data-6-maps-charts-rcna102444\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI am very interested in college sports and I found this graphic very interesting and easy to comprehend\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nLocations of student-athlete recruits for the major athletic conferences in the past 10 years\n\n\n\n\n\nFigure 7\nSource: https://osf.io/preprints/osf/3nyrq\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\napl1\n3D Art\nI like 3D Art and I liked how the data was visualized in this example, it shows how varied it can be\n\n\n\n\n\n\nComments\n\n\n\n\nNA"
   }
 ]
