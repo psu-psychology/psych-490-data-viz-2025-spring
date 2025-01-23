@@ -84,3 +84,9 @@ So, feel free to mix it up.
   - Students who work in teams should submit one (1) write-up with all of the authors' names. One grade will be assigned.
   - **Note**: Your references section need only include the citation to the source paper or website. You should identify in your text which figure you have chosen to analyze.
   
+::: {.callout-important}
+## APA template
+
+This [template](https://docs.google.com/document/d/1gkQKBTc7yW03VAndEtX6loWjm7BAmmhO/edit) document  may be helpful.
+
+:::

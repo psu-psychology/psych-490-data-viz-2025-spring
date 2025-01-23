@@ -45,3 +45,9 @@ Specifically, enter your team identifier in the `identifier` field, the source i
 - Students who want this submission to count for one of their four (4) *required* exercises
   - A 2-3 page write-up in APA format where you describe three (3) figures your group found, answering the questions in 4. above.
 
+::: {.callout-important}
+## APA template
+
+This [template](https://docs.google.com/document/d/1gkQKBTc7yW03VAndEtX6loWjm7BAmmhO/edit) document  may be helpful.
+
+:::
