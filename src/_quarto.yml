@@ -10,10 +10,12 @@ project:
   output-dir: "../docs"
 
 website:
-  title: "PSYCH 490 • Spr 2025"
+  title: "PSYCH 490 • Spr 25"
   announcement: 
-    content: "We're moving to 009 Sparks starting **Tuesday, January 21**!" 
-    position: below-navbar 
+    content: "[Exercise 01](exercises/ex01-figs-in-psych-sci.qmd) due Thu Jan 23" 
+    position: below-navbar
+    icon: info-circle
+    dismissable: true
   navbar:
     left:
       - href: index.qmd

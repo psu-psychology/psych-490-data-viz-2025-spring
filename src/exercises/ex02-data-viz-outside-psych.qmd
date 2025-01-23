@@ -36,6 +36,7 @@ Specifically, enter your team identifier in the `identifier` field, the source i
 - Why is the source presenting these data?
 - What story or message is the source trying to communicate and to what audience?
 - How effective is the message?
+- Are the figures statistical visualizations or information visualizations (Infovis) as described by @Gelman2013-he?
 
 ## Submit {-}
 
