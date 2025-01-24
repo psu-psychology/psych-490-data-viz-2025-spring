@@ -12,7 +12,7 @@ This page extracts information about the data visualizations we explored in [Exe
 
 ## Survey
 
-Direct link: <https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0
+Direct link: <https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0>
 
 <iframe src="https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 

@@ -183,8 +183,8 @@ flowchart TB
   - Map characteristics to quantities
   - By some measurement procedure
   - Reflect, but also select and deflect
-- Mapping has different types of scales [@Stevens1946-sh]
-- Scales determine i) permissible stats & ii) best visualizations
+- Mapping has different scale types [@Stevens1946-sh]
+- Scales determine i) permissible/logical stats & ii) best visualizations
 
 # Next time
 

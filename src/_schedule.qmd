@@ -45,6 +45,7 @@
 *Making (sense of) data*
 
 - Read: @Stevens1946-sh
+- Optional: @Wikipedia-contributors2024-xu
 - [Slides](slides/wk03-2025-01-28-making-data.qmd)
 - [Assigned]{.green_assigned}: [Exercise-03](exercises/ex03-making-data.qmd)
 
@@ -52,6 +53,8 @@
 
 *Figure types*
 
+- Explore (pick at least two): @RibeccaUnknown-tz, @Hammond2024-ow, or @Discovery2024-la, or @AtlassianUnknown-ob
+- Watch: @Channel2024-so
 - [Due]{.orange_due}: [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd). [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998399)
 
 ## February 3-7 {- #week-04}

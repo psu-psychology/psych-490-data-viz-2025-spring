@@ -47,14 +47,31 @@ See the [tutorial](../tutorials/tutorial-making-data.qmd#nominal-data) for more 
 
 ## Today
 
-- Topic 1
-- Topic 2
+- Mapping data types to statistics
+- Mapping data types to figures
 
 ## Goals
 
-# Topic 1
+- Understand how different data types map to 
+  - different types of quantitative summaries
+  - different types of data visualizations
+- Gain an appreciation of the variety of data visualizations
 
-# Topic 2
+# Mapping data types to statistics
+
+# Mapping data types to figures
+
+## Considerations
+
+- What figure type(s) are appropriate for the data type
+- What figure type(s) are most informative/least misleading
+
+## What did we find?
+
+- [Figures in fields outside of psychology](../supplemental/other-field-figs.qmd)
+- [Figures in psychology](../supplemental/psych-sci-figs.qmd)
+
+## What does Google Forms suggest?
 
 # Main points
 
