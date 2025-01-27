@@ -45,7 +45,9 @@
 *Making (sense of) data*
 
 - Read: @Stevens1946-sh
-- Optional: @Wikipedia-contributors2024-xu
+- Optional: 
+  - @Wikipedia-contributors2024-xu
+  - @Tourangeau2012-fr. [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=173503626).
 - [Slides](slides/wk03-2025-01-28-making-data.qmd)
 - [Assigned]{.green_assigned}: [Exercise-03](exercises/ex03-making-data.qmd)
 

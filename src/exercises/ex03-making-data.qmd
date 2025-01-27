@@ -51,7 +51,7 @@ Make sure to have your QA testers answer the Comments question with the same res
 
 ## Submit {-}
 
-Whether or not you are submitting a write-up for Exercise 03, please dd Dr. Gilmore (rog1@psu.edu) and Sara He (cfh5558@psu.edu) as collaborators on the survey.
+Whether or not you are submitting a write-up for Exercise 03, please dd Dr. Gilmore (rog1@psu.edu) and Sara He (cfh5558@psu.edu) as collaborators on the survey so that we can all benefit from your good work.
 
 If you are submitting a short 2-4 page write-up via Canvas with answers to the following questions:
 

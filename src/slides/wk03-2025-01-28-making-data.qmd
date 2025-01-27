@@ -73,7 +73,7 @@ Gilmore 2025
 >- [*Metrology*](https://en.wikipedia.org/wiki/Metrology): The science of measurement
 >- [*Psychometrics*](https://en.wikipedia.org/wiki/Psychometrics): The study of psychological measurement
 
-## Why 'mapping'
+## Why 'mapping'?
 
 :::: {.columns}
 ::: {.column width=50%}
@@ -101,7 +101,7 @@ flowchart TB
 ## Data ~ quantitative terminology
 
 - Data a *symbol* of the thing measured, not the thing itself
-- E.g., Words are a *symbol* of the things they refer to
+- E.g., words are a *symbol* of the things they refer to
 
 ```{mermaid}
 %%| label: fig-semantic-mapping
@@ -113,7 +113,7 @@ flowchart TB
   A ---> E('猫')
 ```
 
-## Data reflects, selects, and deflects
+## Symbols reflect, select, and deflect
 
 >Even if any given terminology is a *reflection* of reality, by its very nature as a terminology, it must be a *selection* of reality; and to this extent must also as a *deflection* of reality
 
@@ -122,6 +122,10 @@ flowchart TB
 ## What is reflected, selected, deflected?
 
 ![@Lindsey2024-ob](https://www.climate.gov/sites/default/files/styles/full_width_620_original_image/public/2024-04/ClimateDashboard-atmospheric-carbon-dioxide-image-paleo-20240405-1400px.png?itok=-g_Qgndc)
+
+---
+
+![@Aviv2024-vh](../include/img/aviv-etal-2024.png)
 
 ## Stevens' scales of measurement
 
@@ -132,6 +136,10 @@ flowchart TB
 - What's the procedure for making this mapping?
 - What are the rules for assigning numbers/categories?
 - What can we do with the assigned numbers (summarize, depict)?
+
+## Why does measurement matter?
+
+![Garbage in, garbage out](../include/img/gigo.png)
 
 # Types of data
 
@@ -166,6 +174,10 @@ flowchart TB
 - Physiological processes
 - Physical characteristics
 - Environmental properties
+
+## Psychology of survey response
+
+![@Tourangeau2012-fr Table 1.1](../include/img/tourangeau-etal-table-1.1.png)
 
 ## Scales of measurement
 

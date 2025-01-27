@@ -34,9 +34,6 @@ website:
         - exercises/ex02-data-viz-outside-psych.qmd
         - exercises/ex03-making-data.qmd
         - exercises/ex04-sci-of-data-viz.qmd
-          # - exercises/ex01-making-data.qmd
-          # - exercises/exNN-finding-data-sources.qmd
-          # - exercises/exNN-reading-figures.qmd
       - text: Tutorials
         menu:
         - tutorials/tutorial-making-data.qmd
