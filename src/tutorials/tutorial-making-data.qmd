@@ -6,6 +6,7 @@ This tutorial shows how we can construct data of different types.
 
 ```{r}
 library(ggplot2)
+library(ggmosaic)
 library(dplyr)
 ```
 
@@ -14,17 +15,15 @@ library(dplyr)
 Let's focus on nominal or categorical data, specifically the favorite colors of some imaginary set of people.
 
 ```{r}
-colors <- c("red", "orange", "yellow", "green", "blue", "violet", "white", "black", "gray", "brown")
+colors <- c("red", "orange", "yellow", "green", "cyan", "blue", "violet", "white", "black", "gray")
 ```
 
 There are *n*=`{r} length(colors)` colors in this set.
 
 ::: {.callout-note}
 ## Your turn
-
 Why are these data nominal or nominally scaled?
 Or rather, why *aren't* they ordinal, interval, or ratio?
-
 :::
 
 ### Generating {-}
@@ -80,9 +79,135 @@ A bar plot showing the number of observations in each category seems to be it.
 #| fig-cap: "An (ugly) barplot of the random favorite color data"
 colors_df |>
   ggplot() +
-  aes(x = favorite_color) +
+  aes(x = favorite_color, fill = favorite_color) +
+  scale_fill_identity() +
   geom_bar()
 ```
+
+We can also flip the axis just for fun.
+
+#### Horizontal barplot {-}
+
+```{r}
+#| label: fig-nominal-barplot-horiz
+#| fig-cap: "An (ugly) horizontal barplot of the random favorite color data"
+colors_df |>
+  ggplot() +
+  aes(x = favorite_color, fill = favorite_color) +
+  scale_fill_identity() +
+  geom_bar() +
+  coord_flip()
+```
+
+#### Stacked barplot {-}
+
+We can also stack them, but this makes more sense with another nominal variable.
+
+```{r}
+#| label: fig-nominal-barplot-stacked
+#| fig-cap: "A horizontal barplot of the random favorite color data"
+school <- sample(c("psu", "osu", "mich", "usc"), size=200, replace=TRUE)
+colors_school_df <- colors_df
+colors_school_df$school <- school
+
+colors_school_xtab <- data.frame(table(colors_school_df))
+names(colors_school_xtab) <- c("favorite_color", "school", "count")
+
+colors_school_xtab |>
+  ggplot() +
+  aes(x = school, y=count, fill = favorite_color) +
+  scale_fill_identity() +
+  geom_bar(stat="identity", position="stack")
+```
+
+#### Stacked barplot alternative
+
+```{r}
+#| label: fig-nominal-barplot-stacked-alt
+#| fig-cap: "Another stacked barplot of the random favorite color data "
+colors_school_xtab |>
+  ggplot() +
+  aes(x = favorite_color, y=count, fill = school) +
+  geom_bar(stat="identity", position="stack")
+```
+
+#### Dodged barplot {-}
+
+Using the 'dodge' parameter is another way to show data with two categorical variables.
+
+```{r}
+#| label: fig-nominal-barplot-dodge
+#| fig-cap: "A horizontal barplot of the random favorite color data"
+colors_school_xtab |>
+  ggplot() +
+  aes(x = school, y=count, fill = favorite_color) +
+  # aes(x = favorite_color, y = school, fill = favorite_color) +
+  scale_fill_identity() +
+  geom_bar(stat="identity", position="dodge")
+```
+
+#### Pie chart {-}
+
+```{r}
+#| label: fig-nominal-pie-chart
+#| fig-cap: "A piechart of the random favorite color data"
+#| 
+colors_xtab <- data.frame(table(colors_df))
+names(colors_xtab) <- c("favorite_color", "count")
+
+colors_xtab |>
+  ggplot(aes(x = "", y = count, fill = favorite_color)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar("y", start = 0) +
+  scale_fill_identity()
+```
+
+#### Ring chart {-}
+
+```{r}
+#| label: fig-nominal-ring-chart
+#| fig-cap: "A ring/donut chart of the random favorite color data"
+ 
+# https://r-graph-gallery.com/128-ring-or-donut-plot.html
+
+# Compute percentages
+colors_xtab$fraction = colors_xtab$count / sum(colors_xtab$count)
+
+# Compute the cumulative percentages (top of each rectangle)
+colors_xtab$ymax = cumsum(colors_xtab$fraction)
+
+# Compute the bottom of each rectangle
+colors_xtab$ymin = c(0, head(colors_xtab$ymax, n = -1))
+
+# Make the plot
+colors_xtab |>
+  ggplot(aes(
+    ymax = ymax,
+    ymin = ymin,
+    xmax = 4,
+    xmin = 3,
+    fill = favorite_color
+  )) +
+  geom_rect() +
+  coord_polar(theta = "y") + # Try to remove that to understand how the chart is built initially
+  xlim(c(2, 4)) + # Try to remove that to see how to make a pie chart
+  scale_fill_identity()
+```
+
+#### Mosaic plot {-}
+
+```{r}
+#| label: fig-nominal-mosaic-chart
+#| fig-cap: "A mosaic chart of the random favorite color by school data"
+
+ggplot(data = colors_school_df) +
+  geom_mosaic(aes(x = product(favorite_color, school), fill = favorite_color)) +   
+  labs(y="Favorite", x="School", title = "Favorite colors by school") +
+  scale_fill_identity()
+```
+
+
+### Analysis {-}
 
 Is one of these colors a particular favorite?
 Maybe.
@@ -105,8 +230,8 @@ So, we're back to summarizing.
 Actually, data analysis in the real world usually involves a back-and-forth alternation between summarizing/analyzing and visualizing.
 
 ```{mermaid}
-%%| label: fig-data-dialetic
-%%| fig-cap: "Illustration of the back and forth between summarizing and visualizing that characterizes real-life data analysis."
+%%| label: fig-data-dialectic
+%%| fig-cap: "Illustration of the back and forth process between summarizing and visualizing that characterizes real-life data analysis."
 flowchart LR
   A[Summarize] --> B[Visualize]
   B ---> A
@@ -127,3 +252,90 @@ xtabs(formula = ~favorite_color, data = compare_df)
 ```
 
 How can we compare the data where there are no differences by category to the data where there *are* differences?
+
+::: {.callout-warning}
+## Under construction
+
+This section is under construction.
+
+:::
+
+## Ordinal data {-}
+
+We usually consider colors as nominal or categorical variables.
+But the physical input to the visual system is *continuous*.
+
+![<https://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/>](https://rmit.pressbooks.pub/app/uploads/sites/42/2022/10/visitble-spectrum-nm.png)
+
+The continuous variable that underlies color is *wavelength*, a property of electromagnetic radiation.
+The human visual system maps wavelength to color.
+
+Curiously, human color perception shows that this mapping wraps back on itself in a way that wavelength does not.
+
+![https://pixabay.com/vectors/rainbow-colors-circle-color-spectrum-154569/](https://cdn.pixabay.com/photo/2013/07/12/19/20/rainbow-colors-154569_1280.png)
+
+### Generating {-}
+
+But rather than dive down that particular rat hole now, let's make some ordinal data from the random color dataset.
+Imagine that we had *n*=50 participants and each gave a rating to these colors. The ratings had numbers, with 1 assigned to the participant's first choice, and 4 assigned to the fourth choice.
+We won't keep track of the specific users at this point.
+
+```{r}
+ratings <- c("1st", "2nd", "3rd", "4th")
+
+our_rating_sample <- sample(ratings, size=200, replace=TRUE)
+colors_rating_df <- colors_df
+colors_rating_df$rating <- our_rating_sample
+
+colors_rating_xtab <- data.frame(table(colors_rating_df))
+names(colors_rating_xtab) <- c("favorite_color", "rating", "count")
+```
+
+### Visualizing {-}
+
+Many of the same plot types are available for ordinal data.
+
+#### Bar plot ordinal dodge {-}
+
+```{r}
+#| label: fig-ordinal-barplot-dodge
+#| fig-cap: "A barplot of the random favorite color data with an ordinal rating"
+
+colors_rating_xtab |>
+  ggplot() +
+  aes(x=rating, y=count, fill = favorite_color) +
+  # aes(x = favorite_color, y = school, fill = favorite_color) +
+  scale_fill_identity() +
+  geom_bar(stat="identity", position="dodge")
+```
+
+#### Bar plot ordinal stacked {-}
+
+```{r}
+#| label: fig-ordinal-barplot-stacked
+#| fig-cap: "A stacked barplot of the random favorite color data with an ordinal rating"
+
+# colors_rating_xtab |>
+#   ggplot() +
+#   aes(x=favorite_color, y=count, fill = favorite_color) +
+#   scale_fill_identity() +
+#   geom_bar(stat="identity", position="dodge")
+
+colors_rating_xtab |>
+  ggplot() +
+  aes(x = rating, y=count, fill = favorite_color) +
+  scale_fill_identity() +
+  geom_bar(stat="identity", position="stack")
+```
+
+#### Bar plot ordinal stacked alternative {-}
+
+```{r}
+#| label: fig-ordinal-barplot-stacked-alt
+#| fig-cap: "Another stacked barplot of the random favorite color data with an ordinal rating"
+colors_rating_xtab |>
+  ggplot() +
+  aes(x = favorite_color, y=count, fill = rating) +
+  #scale_fill_identity() +
+  geom_bar(stat="identity", position="stack")
+```

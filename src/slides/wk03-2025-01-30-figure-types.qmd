@@ -9,55 +9,65 @@ subtitle: "2025-01-30"
 
 ## Announcements
 
+- [Due]{.orange_due} on Tuesday, February 11: [Exercise-03](exercises/ex03-making-data.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998400)
+
 ## Last time...
 
 *Making data*
 
----
+## Data types
 
-::: {.callout-important}
-## Your turn
-A set of data about self-reported favorite colors is of what type [@Stevens1946-sh]?
+- Extending @Stevens1946-sh, see @Wikipedia-contributors2024-xu
 
-A. Ratio</br>
-B. Ordinal</br>
-C. Nominal/Categorical
+::: {.incremental}
+- Nominal
+  - Binary (0,1)
+  - Categorical
+- Ordinal
+  - e.g., 1st, 2nd, 3rd, ...
 :::
 
----
+## Data types (continued)
 
-::: {.callout-important}
-## Your turn
-What kind of analyses can we do with these data?
-
-A. Counts by category</br>
-B. Average preference</br>
-C. Change across time
+::: {.incremental}
+- Counts
+  - e.g., 1, 2, 3, 4, ...
+- Continuous/Real-valued
+  - Interval
+  - Ratio
 :::
 
----
+## What data type(s)?
 
-::: {.callout-important}
-## Your turn
-What kind of visualization(s) can we make with these data?
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-1>](https://www.psychologicalscience.org/redesign/wp-content/uploads/2015/12/TCD_fig_1.jpg)
 
-See the [tutorial](../tutorials/tutorial-making-data.qmd#nominal-data) for more on this topic.
-:::
+## What data type(s)?
 
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-3>](https://www.sfn.org/-/media/SfN/Images/NEW-SfN/Publications/2020/January/20200127_Brain_Needs_Iron_Cognitive_Dev.png)
+
+## What data type(s)?
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-26>](https://media.springernature.com/lw685/springer-static/image/art%3A10.3758%2Fs13421-017-0708-1/MediaObjects/13421_2017_708_Fig3_HTML.gif?)
+
+## What data type(s)?
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-15>](https://fivethirtyeight.com/wp-content/uploads/2019/05/SPRAWLBALL_Fig_013_kg_edit.png?resize=590,450)
+
+## What data type(s)?
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21>](https://impact.economist.com/perspectives/sites/default/files/eiu_amgen_cvd_secondary_prevention_infographic_final_22jun-page-001.jpg)
 
 ## Today
 
-- Mapping data types to statistics
 - Mapping data types to figures
+- (if time) Mapping data types to statistics
 
 ## Goals
 
 - Understand how different data types map to 
-  - different types of quantitative summaries
   - different types of data visualizations
+  - different types of data summaries
 - Gain an appreciation of the variety of data visualizations
-
-# Mapping data types to statistics
 
 # Mapping data types to figures
 
@@ -66,12 +76,58 @@ See the [tutorial](../tutorials/tutorial-making-data.qmd#nominal-data) for more 
 - What figure type(s) are appropriate for the data type
 - What figure type(s) are most informative/least misleading
 
-## What did we find?
+## Nominal data
 
-- [Figures in fields outside of psychology](../supplemental/other-field-figs.qmd)
-- [Figures in psychology](../supplemental/psych-sci-figs.qmd)
+- Bar chart
+- Pie chart
+- Ring/donut chart
+- Mosaic chart (2 variables)
 
-## What does Google Forms suggest?
+## Ordinal data
+
+- All of the nominal types...
+- Sorted
+
+##
+
+## Bar chart
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#visualizing>](../include/fig/fig-nominal-barplot-1.png)
+---
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#horizontal-barplot>](../include/fig/fig-nominal-barplot-horiz-1.png)
+---
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#dodged-barplot>](../include/fig/fig-nominal-barplot-stacked-1.png)
+
+## Bar chart mappings
+
+>- Number of observations in category $\rightarrow$ height/length
+>- Color-category $\rightarrow$ fill color
+>- School $\rightarrow$ position on horizontal axis
+
+## Pie charts
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart>](../include/fig/fig-nominal-pie-chart-1.png)
+
+## Ring charts
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart>](../include/fig/fig-nominal-ring-chart-1.png)
+
+## Mosaic chart
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorial-making-data.html#mosaic-plot>](../include/fig/fig-nominal-mosaic-chart-1.png)
+
+## Pie, ring, mosaic chart mappings
+
+- Heights & widths $\rightarrow$ counts (or proportions)
+- Areas $\rightarrow$ counts (or proportions)
+
+# Mapping data types to statistics
+
+## Nominal
+
+- Counts or proportions
 
 # Main points
 

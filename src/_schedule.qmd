@@ -34,7 +34,7 @@
 - Read (recommended): @Gelman2013-he
 - [Slides](slides/wk02-2025-01-23-art-sports-journ.qmd)
 - [Assigned]{.green_assigned}: [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd) 
-- [Due]{.orange_due}: [Exercise 01](exercises/ex01-figs-in-psych-sci.qmd). [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998394)
+- [Due]{.orange_due}: [Exercise 01](exercises/ex01-figs-in-psych-sci.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998394)
 
 ## January 27-31 {- #week-03}
 
@@ -61,54 +61,60 @@
   - @Discovery2024-la
   - @AtlassianUnknown-ob
 - Watch: @Channel2024-so
-- [Due]{.orange_due}: [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd). [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998399)
+- [Slides](slides/wk03-2025-01-30-figure-types.qmd)
+- [Due]{.orange_due}: [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998399)
 
 ## February 3-7 {- #week-04}
 
-*From perception to cognition*
-
 ### Tuesday, February 04 {-}
+
+*Figure components*
+
+- [Slides](slides/wk04-2025-02-04-figure-components.qmd)
+- [Review](tutorials/tutorial-making-data.qmd)
+
+### Thursday, February 06 {-}
 
 *From stimulus to sensation*
 
 - Read: @Cairo2013-hm, Chapter 5, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892)
 
-### Thursday, February 06 {-}
+## February 10-14 {- #week-05}
+
+### Tuesday, February 11 {-}
 
 *From sensation to perception*
 
 - Read: @Cairo2013-hm, Chapter 6, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892)
-- [Due]{.orange_due}: [Exercise-03](exercises/ex03-making-data.qmd)
+- [Due]{.orange_due}: [Exercise-03](exercises/ex03-making-data.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998400)
 
-## February 10-14 {- #week-05}
+### Thursday, February 13 {-}
 
 *From cognition to understanding*
 
-### Tuesday, February 11 {-}
-
-- Read:
+ - Read:
   - @Franconeri2021-uv, pp. 109-122
   - @Cairo2013-hm, Chapter 7, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892)
 - [Assigned]{.green_assigned}: [Final Project](exercises/final-project.qmd) proposal
+ 
+## February 17-21 {- #week-06}
 
-### Thursday, February 13 {-}
+### Tuesday, February 18 {-}
 
 *Designing efficient & understandable visualizations*
 
 - Read: @Franconeri2021-uv, pp. 123-139
 - [Assigned]{.green_assigned}: [Exercise-04](exercises/ex04-sci-of-data-viz.qmd)
-  
-## February 17-21 {- #week-06}
 
-*Storytelling with data*
-
-### Tuesday, February 18 {-}
+### Thursday, February 20 {-}
 
 *Communicating uncertainty and risk*  
 
 - Read: @Franconeri2021-uv, pp. 139-150 
 
-### Thursday, February 20 {-}
+## February 24-28 {- #week-07}
+
+### Tuesday, February 25 {-}
 
 *Storytelling with data*
 
@@ -116,29 +122,24 @@
 - Read: @Knaflic2015-wq, pp. 33-69, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927897)
 - Skim: @Woodside2008-yv
 
-## February 24-28 {- #week-07}
+### Thursday, February 27 {-}
 
 *Critiquing figures*
 
-### Tuesday, February 25 {-}
-
 - Read: @Tufte2001-cb, Chapter 1, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927901)
-
-### Thursday, February 27 {-}
-
-- Read: @Tufte2001-cb, Chapter 2, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927901)
 
 ## March 3-7 {- #week-08}
 
-*Exploring data*
-
 ### Tuesday, March 04 {-}
 
-- Read: @Tukey1977-ro, Chapter 1, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927904)
+- Read: @Tufte2001-cb, Chapter 2, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927901)
 - [Due]{.orange_due}: [Final Project](exercises/final-project.qmd) proposal
 
 ### Thursday, March 06 {-}
 
+*Exploring data*
+
+- Read: @Tukey1977-ro, Chapter 1, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927904)
 - [Due]{.orange_due}: [Exercise-04](exercises/ex04-sci-of-data-viz.qmd)
 - [Assigned]{.green_assigned}: [Exercise-05](exercises/ex05-figure-prep-guidelines.qmd)
 

@@ -186,7 +186,7 @@
     "href": "slides/wk03-2025-01-30-figure-types.html#announcements",
     "title": "Figure types",
     "section": "Announcements",
-    "text": "Announcements"
+    "text": "Announcements\n\nDue on Tuesday, February 11: Exercise-03 | Canvas dropbox"
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#last-time",
@@ -200,14 +200,14 @@
     "href": "slides/wk03-2025-01-30-figure-types.html#today",
     "title": "Figure types",
     "section": "Today",
-    "text": "Today\n\nMapping data types to statistics\nMapping data types to figures"
+    "text": "Today\n\nMapping data types to figures\n(if time) Mapping data types to statistics"
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#goals",
     "href": "slides/wk03-2025-01-30-figure-types.html#goals",
     "title": "Figure types",
     "section": "Goals",
-    "text": "Goals\n\nUnderstand how different data types map to\n\ndifferent types of quantitative summaries\ndifferent types of data visualizations\n\nGain an appreciation of the variety of data visualizations"
+    "text": "Goals\n\nUnderstand how different data types map to\n\ndifferent types of data visualizations\ndifferent types of data summaries\n\nGain an appreciation of the variety of data visualizations"
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#considerations",
@@ -235,7 +235,7 @@
     "href": "slides/wk03-2025-01-30-figure-types.html#references",
     "title": "Figure types",
     "section": "References",
-    "text": "References\n\n\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science (New York, N.Y.), 103, 677–680. https://doi.org/10.1126/science.103.2684.677"
+    "text": "References\n\n\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science (New York, N.Y.), 103, 677–680. https://doi.org/10.1126/science.103.2684.677\n\n\nWikipedia contributors. (2024, November 23). Statistical data type. Retrieved from https://en.wikipedia.org/wiki/Statistical_data_type"
   },
   {
     "objectID": "slides/wk02-2025-01-23-art-sports-journ.html#mortality-trends-by-education-level",
@@ -697,14 +697,14 @@
     "href": "tutorials/tutorial-making-data.html#about",
     "title": "",
     "section": "About",
-    "text": "About\nThis tutorial shows how we can construct data of different types.\n\n\nCode\nlibrary(ggplot2)\nlibrary(dplyr)\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union"
+    "text": "About\nThis tutorial shows how we can construct data of different types.\n\n\nCode\nlibrary(ggplot2)\nlibrary(ggmosaic)\nlibrary(dplyr)\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union"
   },
   {
     "objectID": "tutorials/tutorial-making-data.html#nominal-data",
     "href": "tutorials/tutorial-making-data.html#nominal-data",
     "title": "",
     "section": "Nominal data",
-    "text": "Nominal data\nLet’s focus on nominal or categorical data, specifically the favorite colors of some imaginary set of people.\n\n\nCode\ncolors &lt;- c(\"red\", \"orange\", \"yellow\", \"green\", \"blue\", \"violet\", \"white\", \"black\", \"gray\", \"brown\")\n\n\nThere are n=10 colors in this set.\n\n\n\n\n\n\nYour turn\n\n\n\nWhy are these data nominal or nominally scaled? Or rather, why aren’t they ordinal, interval, or ratio?\n\n\n\nGenerating\nFor demonstration purposes, we want to take some number of random samples of these colors. Let’s pick n=200 and sample with replacement (replace=TRUE in the code below), meaning that we could have any number of colors in our sample of 200 imaginary people.\n\n\nCode\nour_color_sample &lt;- sample(colors, size=200, replace=TRUE)\nour_color_sample\n\n\n  [1] \"red\"    \"gray\"   \"blue\"   \"orange\" \"brown\"  \"green\"  \"blue\"   \"violet\"\n  [9] \"blue\"   \"blue\"   \"black\"  \"black\"  \"yellow\" \"green\"  \"green\"  \"red\"   \n [17] \"yellow\" \"gray\"   \"violet\" \"green\"  \"red\"    \"red\"    \"white\"  \"orange\"\n [25] \"blue\"   \"brown\"  \"gray\"   \"green\"  \"black\"  \"white\"  \"violet\" \"red\"   \n [33] \"black\"  \"red\"    \"yellow\" \"blue\"   \"blue\"   \"yellow\" \"violet\" \"gray\"  \n [41] \"white\"  \"gray\"   \"brown\"  \"green\"  \"yellow\" \"brown\"  \"red\"    \"black\" \n [49] \"red\"    \"violet\" \"white\"  \"green\"  \"green\"  \"gray\"   \"green\"  \"green\" \n [57] \"yellow\" \"brown\"  \"yellow\" \"orange\" \"violet\" \"blue\"   \"green\"  \"orange\"\n [65] \"red\"    \"violet\" \"red\"    \"white\"  \"white\"  \"violet\" \"orange\" \"orange\"\n [73] \"red\"    \"green\"  \"white\"  \"violet\" \"white\"  \"red\"    \"red\"    \"red\"   \n [81] \"green\"  \"brown\"  \"green\"  \"black\"  \"violet\" \"green\"  \"violet\" \"orange\"\n [89] \"gray\"   \"yellow\" \"red\"    \"brown\"  \"violet\" \"red\"    \"brown\"  \"brown\" \n [97] \"blue\"   \"gray\"   \"gray\"   \"violet\" \"blue\"   \"violet\" \"blue\"   \"red\"   \n[105] \"white\"  \"orange\" \"blue\"   \"brown\"  \"black\"  \"red\"    \"gray\"   \"yellow\"\n[113] \"green\"  \"violet\" \"red\"    \"white\"  \"violet\" \"red\"    \"brown\"  \"yellow\"\n[121] \"gray\"   \"gray\"   \"gray\"   \"yellow\" \"black\"  \"violet\" \"white\"  \"black\" \n[129] \"green\"  \"yellow\" \"green\"  \"blue\"   \"orange\" \"blue\"   \"violet\" \"blue\"  \n[137] \"violet\" \"blue\"   \"black\"  \"yellow\" \"blue\"   \"white\"  \"black\"  \"orange\"\n[145] \"red\"    \"white\"  \"red\"    \"gray\"   \"black\"  \"brown\"  \"white\"  \"violet\"\n[153] \"gray\"   \"orange\" \"orange\" \"orange\" \"yellow\" \"brown\"  \"yellow\" \"black\" \n[161] \"yellow\" \"orange\" \"black\"  \"green\"  \"blue\"   \"yellow\" \"yellow\" \"violet\"\n[169] \"green\"  \"gray\"   \"green\"  \"white\"  \"blue\"   \"orange\" \"orange\" \"blue\"  \n[177] \"blue\"   \"violet\" \"orange\" \"yellow\" \"red\"    \"black\"  \"green\"  \"blue\"  \n[185] \"brown\"  \"gray\"   \"violet\" \"green\"  \"white\"  \"blue\"   \"violet\" \"white\" \n[193] \"black\"  \"blue\"   \"white\"  \"black\"  \"blue\"   \"violet\" \"blue\"   \"brown\" \n\n\nOn its own, that’s not especially easy to visualize. What if we sorted it?\n\n\nCode\nsort(our_color_sample)\n\n\n  [1] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n  [9] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n [17] \"black\"  \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [25] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [33] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [41] \"blue\"   \"blue\"   \"blue\"   \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\" \n [49] \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\"  \"brown\" \n [57] \"brown\"  \"brown\"  \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [65] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [73] \"gray\"   \"gray\"   \"gray\"   \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [81] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [89] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [97] \"green\"  \"green\"  \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[105] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[113] \"orange\" \"orange\" \"orange\" \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[121] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[129] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[137] \"red\"    \"red\"    \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[145] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[153] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[161] \"violet\" \"violet\" \"violet\" \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[169] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[177] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"yellow\" \"yellow\" \"yellow\"\n[185] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n[193] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n\n\nStill not all that helpful.\n\n\nSummarizing\nWhat can we say to summarize categorical data?\nWe can report the number of total responses.\n\n\nCode\nlength(our_color_sample)\n\n\n[1] 200\n\n\nWe can report the number of unique categories.\n\n\nCode\nlength(unique(our_color_sample))\n\n\n[1] 10\n\n\nWe can report the number of responses per category.\n\n\nCode\ncolors_df &lt;- data.frame(favorite_color = our_color_sample)\n\nxtabs(formula = ~favorite_color, data = colors_df)\n\n\nfavorite_color\n black   blue  brown   gray  green orange    red violet  white yellow \n    17     26     15     17     23     17     23     25     18     19 \n\n\n\n\nVisualizing\nSingle nominal variables don’t offer us many options for visualization. A bar plot showing the number of observations in each category seems to be it.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color) +\n  geom_bar()\n\n\n\n\n\n\n\n\nFigure 1: An (ugly) barplot of the random favorite color data\n\n\n\n\n\nIs one of these colors a particular favorite? Maybe. The observed data show some differences. But how can we know they aren’t just due to random chance.\n\n\n\n\n\n\nStop the presses!\n\n\n\nThese particular data are entirely random. We made them up!\nKeep that in mind while we work through what we would do to answer the question if these were not fake, random data.\n\n\nTo answer that question, we’d have to compare our results with some other pattern, a pattern where there is no favorite. In other words, we want a pattern where the counts are all equal. So, we’re back to summarizing.\nActually, data analysis in the real world usually involves a back-and-forth alternation between summarizing/analyzing and visualizing.\n\n\n\n\n\n\nflowchart LR\n  A[Summarize] --&gt; B[Visualize]\n  B ---&gt; A\n\n\n\n\nFigure 2: Illustration of the back and forth between summarizing and visualizing that characterizes real-life data analysis.\n\n\n\n\n\n\n\nSummarizing II\nLet’s make data that have an identical pattern across all colors.\nThere are several ways to do this, but here is one that works.\n\n\nCode\nno_favorite &lt;- rep(colors, length(our_color_sample)/length(colors))\n\ncompare_df &lt;- data.frame(favorite_color = no_favorite)\n\nxtabs(formula = ~favorite_color, data = compare_df)\n\n\nfavorite_color\n black   blue  brown   gray  green orange    red violet  white yellow \n    20     20     20     20     20     20     20     20     20     20 \n\n\nHow can we compare the data where there are no differences by category to the data where there are differences?"
+    "text": "Nominal data\nLet’s focus on nominal or categorical data, specifically the favorite colors of some imaginary set of people.\n\n\nCode\ncolors &lt;- c(\"red\", \"orange\", \"yellow\", \"green\", \"cyan\", \"blue\", \"violet\", \"white\", \"black\", \"gray\")\n\n\nThere are n=10 colors in this set.\n\n\n\n\n\n\nYour turn\n\n\n\nWhy are these data nominal or nominally scaled? Or rather, why aren’t they ordinal, interval, or ratio?\n\n\n\nGenerating\nFor demonstration purposes, we want to take some number of random samples of these colors. Let’s pick n=200 and sample with replacement (replace=TRUE in the code below), meaning that we could have any number of colors in our sample of 200 imaginary people.\n\n\nCode\nour_color_sample &lt;- sample(colors, size=200, replace=TRUE)\nour_color_sample\n\n\n  [1] \"orange\" \"white\"  \"black\"  \"yellow\" \"violet\" \"violet\" \"yellow\" \"white\" \n  [9] \"green\"  \"blue\"   \"red\"    \"red\"    \"gray\"   \"cyan\"   \"cyan\"   \"violet\"\n [17] \"orange\" \"violet\" \"orange\" \"black\"  \"blue\"   \"white\"  \"red\"    \"cyan\"  \n [25] \"violet\" \"blue\"   \"red\"    \"cyan\"   \"cyan\"   \"red\"    \"orange\" \"gray\"  \n [33] \"cyan\"   \"green\"  \"black\"  \"green\"  \"yellow\" \"violet\" \"red\"    \"yellow\"\n [41] \"yellow\" \"yellow\" \"black\"  \"cyan\"   \"blue\"   \"orange\" \"cyan\"   \"white\" \n [49] \"orange\" \"blue\"   \"white\"  \"cyan\"   \"white\"  \"cyan\"   \"green\"  \"blue\"  \n [57] \"black\"  \"orange\" \"gray\"   \"green\"  \"orange\" \"blue\"   \"cyan\"   \"red\"   \n [65] \"white\"  \"yellow\" \"cyan\"   \"white\"  \"yellow\" \"cyan\"   \"yellow\" \"orange\"\n [73] \"white\"  \"red\"    \"gray\"   \"cyan\"   \"violet\" \"gray\"   \"black\"  \"violet\"\n [81] \"red\"    \"blue\"   \"green\"  \"cyan\"   \"yellow\" \"orange\" \"red\"    \"blue\"  \n [89] \"green\"  \"red\"    \"blue\"   \"white\"  \"black\"  \"gray\"   \"blue\"   \"violet\"\n [97] \"blue\"   \"green\"  \"black\"  \"yellow\" \"cyan\"   \"red\"    \"cyan\"   \"gray\"  \n[105] \"gray\"   \"green\"  \"cyan\"   \"blue\"   \"violet\" \"yellow\" \"black\"  \"white\" \n[113] \"yellow\" \"white\"  \"blue\"   \"blue\"   \"green\"  \"gray\"   \"yellow\" \"white\" \n[121] \"orange\" \"white\"  \"white\"  \"violet\" \"orange\" \"gray\"   \"black\"  \"yellow\"\n[129] \"cyan\"   \"black\"  \"black\"  \"blue\"   \"blue\"   \"orange\" \"violet\" \"green\" \n[137] \"cyan\"   \"gray\"   \"yellow\" \"white\"  \"yellow\" \"green\"  \"red\"    \"cyan\"  \n[145] \"red\"    \"gray\"   \"violet\" \"red\"    \"green\"  \"white\"  \"violet\" \"violet\"\n[153] \"orange\" \"white\"  \"gray\"   \"green\"  \"violet\" \"red\"    \"cyan\"   \"gray\"  \n[161] \"blue\"   \"cyan\"   \"white\"  \"gray\"   \"orange\" \"red\"    \"green\"  \"white\" \n[169] \"gray\"   \"gray\"   \"red\"    \"orange\" \"yellow\" \"red\"    \"white\"  \"blue\"  \n[177] \"white\"  \"black\"  \"gray\"   \"blue\"   \"yellow\" \"white\"  \"cyan\"   \"gray\"  \n[185] \"red\"    \"gray\"   \"black\"  \"black\"  \"blue\"   \"violet\" \"red\"    \"blue\"  \n[193] \"violet\" \"violet\" \"violet\" \"white\"  \"red\"    \"red\"    \"blue\"   \"green\" \n\n\nOn its own, that’s not especially easy to visualize. What if we sorted it?\n\n\nCode\nsort(our_color_sample)\n\n\n  [1] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n  [9] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"blue\"  \n [17] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [25] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [33] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"cyan\"   \"cyan\"  \n [41] \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [49] \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [57] \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"gray\"   \"gray\"  \n [65] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [73] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [81] \"gray\"   \"gray\"   \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [89] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [97] \"green\"  \"green\"  \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[105] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[113] \"orange\" \"orange\" \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[121] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[129] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[137] \"red\"    \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[145] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[153] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"white\"  \"white\"  \"white\" \n[161] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[169] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[177] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"yellow\" \"yellow\" \"yellow\"\n[185] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n[193] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n\n\nStill not all that helpful.\n\n\nSummarizing\nWhat can we say to summarize categorical data?\nWe can report the number of total responses.\n\n\nCode\nlength(our_color_sample)\n\n\n[1] 200\n\n\nWe can report the number of unique categories.\n\n\nCode\nlength(unique(our_color_sample))\n\n\n[1] 10\n\n\nWe can report the number of responses per category.\n\n\nCode\ncolors_df &lt;- data.frame(favorite_color = our_color_sample)\n\nxtabs(formula = ~favorite_color, data = colors_df)\n\n\nfavorite_color\n black   blue   cyan   gray  green orange    red violet  white yellow \n    15     23     24     20     16     16     23     20     24     19 \n\n\n\n\nVisualizing\nSingle nominal variables don’t offer us many options for visualization. A bar plot showing the number of observations in each category seems to be it.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar()\n\n\n\n\n\n\n\n\nFigure 1: An (ugly) barplot of the random favorite color data\n\n\n\n\n\nWe can also flip the axis just for fun.\n\nHorizontal barplot\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar() +\n  coord_flip()\n\n\n\n\n\n\n\n\nFigure 2: An (ugly) horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nStacked barplot\nWe can also stack them, but this makes more sense with another nominal variable.\n\n\nCode\nschool &lt;- sample(c(\"psu\", \"osu\", \"mich\", \"usc\"), size=200, replace=TRUE)\ncolors_school_df &lt;- colors_df\ncolors_school_df$school &lt;- school\n\ncolors_school_xtab &lt;- data.frame(table(colors_school_df))\nnames(colors_school_xtab) &lt;- c(\"favorite_color\", \"school\", \"count\")\n\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = school, y=count, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 3: A horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\n0.0.0.1 Stacked barplot alternative\n\n\nCode\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y=count, fill = school) +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 4: Another stacked barplot of the random favorite color data\n\n\n\n\n\n\n\nDodged barplot\nUsing the ‘dodge’ parameter is another way to show data with two categorical variables.\n\n\nCode\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = school, y=count, fill = favorite_color) +\n  # aes(x = favorite_color, y = school, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"dodge\")\n\n\n\n\n\n\n\n\nFigure 5: A horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nPie chart\n\n\nCode\ncolors_xtab &lt;- data.frame(table(colors_df))\nnames(colors_xtab) &lt;- c(\"favorite_color\", \"count\")\n\ncolors_xtab |&gt;\n  ggplot(aes(x = \"\", y = count, fill = favorite_color)) +\n  geom_bar(stat = \"identity\", width = 1) +\n  coord_polar(\"y\", start = 0) +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 6: A piechart of the random favorite color data\n\n\n\n\n\n\n\nRing chart\n\n\nCode\n# https://r-graph-gallery.com/128-ring-or-donut-plot.html\n\n# Compute percentages\ncolors_xtab$fraction = colors_xtab$count / sum(colors_xtab$count)\n\n# Compute the cumulative percentages (top of each rectangle)\ncolors_xtab$ymax = cumsum(colors_xtab$fraction)\n\n# Compute the bottom of each rectangle\ncolors_xtab$ymin = c(0, head(colors_xtab$ymax, n = -1))\n\n# Make the plot\ncolors_xtab |&gt;\n  ggplot(aes(\n    ymax = ymax,\n    ymin = ymin,\n    xmax = 4,\n    xmin = 3,\n    fill = favorite_color\n  )) +\n  geom_rect() +\n  coord_polar(theta = \"y\") + # Try to remove that to understand how the chart is built initially\n  xlim(c(2, 4)) + # Try to remove that to see how to make a pie chart\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 7: A ring/donut chart of the random favorite color data\n\n\n\n\n\n\n\nMosaic plot\n\n\nCode\nggplot(data = colors_school_df) +\n  geom_mosaic(aes(x = product(favorite_color, school), fill = favorite_color)) +   \n  labs(y=\"Favorite\", x=\"School\", title = \"Favorite colors by school\") +\n  scale_fill_identity()\n\n\nWarning: The `scale_name` argument of `continuous_scale()` is deprecated as of ggplot2\n3.5.0.\n\n\nWarning: The `trans` argument of `continuous_scale()` is deprecated as of ggplot2 3.5.0.\nℹ Please use the `transform` argument instead.\n\n\nWarning: `unite_()` was deprecated in tidyr 1.2.0.\nℹ Please use `unite()` instead.\nℹ The deprecated feature was likely used in the ggmosaic package.\n  Please report the issue at &lt;https://github.com/haleyjeppson/ggmosaic&gt;.\n\n\n\n\n\n\n\n\nFigure 8: A mosaic chart of the random favorite color by school data\n\n\n\n\n\n\n\n\nAnalysis\nIs one of these colors a particular favorite? Maybe. The observed data show some differences. But how can we know they aren’t just due to random chance.\n\n\n\n\n\n\nStop the presses!\n\n\n\nThese particular data are entirely random. We made them up!\nKeep that in mind while we work through what we would do to answer the question if these were not fake, random data.\n\n\nTo answer that question, we’d have to compare our results with some other pattern, a pattern where there is no favorite. In other words, we want a pattern where the counts are all equal. So, we’re back to summarizing.\nActually, data analysis in the real world usually involves a back-and-forth alternation between summarizing/analyzing and visualizing.\n\n\n\n\n\n\nflowchart LR\n  A[Summarize] --&gt; B[Visualize]\n  B ---&gt; A\n\n\n\n\nFigure 9: Illustration of the back and forth process between summarizing and visualizing that characterizes real-life data analysis.\n\n\n\n\n\n\n\nSummarizing II\nLet’s make data that have an identical pattern across all colors.\nThere are several ways to do this, but here is one that works.\n\n\nCode\nno_favorite &lt;- rep(colors, length(our_color_sample)/length(colors))\n\ncompare_df &lt;- data.frame(favorite_color = no_favorite)\n\nxtabs(formula = ~favorite_color, data = compare_df)\n\n\nfavorite_color\n black   blue   cyan   gray  green orange    red violet  white yellow \n    20     20     20     20     20     20     20     20     20     20 \n\n\nHow can we compare the data where there are no differences by category to the data where there are differences?\n\n\n\n\n\n\nUnder construction\n\n\n\nThis section is under construction."
   },
   {
     "objectID": "schedule.html",
@@ -725,49 +725,49 @@
     "href": "schedule.html#week-02",
     "title": "Schedule",
     "section": "January 20-24",
-    "text": "January 20-24\nWho visualizes data and why\n\nTuesday, January 21\nVisualization in government & business\n\nSlides\nResults from Exercise 01\n\n\n\nThursday, January 23\nVisualization in art, sports, and journalism\n\nRead (recommended): Gelman & Unwin (2013)\nSlides\nAssigned: Exercise 02\nDue: Exercise 01. Canvas dropbox"
+    "text": "January 20-24\nWho visualizes data and why\n\nTuesday, January 21\nVisualization in government & business\n\nSlides\nResults from Exercise 01\n\n\n\nThursday, January 23\nVisualization in art, sports, and journalism\n\nRead (recommended): Gelman & Unwin (2013)\nSlides\nAssigned: Exercise 02\nDue: Exercise 01 | Canvas dropbox"
   },
   {
     "objectID": "schedule.html#week-03",
     "href": "schedule.html#week-03",
     "title": "Schedule",
     "section": "January 27-31",
-    "text": "January 27-31\nUnderstanding figures\n\nTuesday, January 28\nMaking (sense of) data\n\nRead: Stevens (1946)\nOptional:\n\nWikipedia contributors (2024)\nTourangeau, Rips, & Rasinski (2012) | PDF on Canvas.\n\nSlides\nAssigned: Exercise-03\n\n\n\nThursday, January 30\nFigure types\n\nExplore (pick at least two):\n\nRibecca (n.d.)\nHammond (2024)\nDiscovery (2024)\nAtlassian (n.d.)\n\nWatch: Channel (2024)\nDue: Exercise 02. Canvas dropbox"
+    "text": "January 27-31\nUnderstanding figures\n\nTuesday, January 28\nMaking (sense of) data\n\nRead: Stevens (1946)\nOptional:\n\nWikipedia contributors (2024)\nTourangeau, Rips, & Rasinski (2012) | PDF on Canvas.\n\nSlides\nAssigned: Exercise-03\n\n\n\nThursday, January 30\nFigure types\n\nExplore (pick at least two):\n\nRibecca (n.d.)\nHammond (2024)\nDiscovery (2024)\nAtlassian (n.d.)\n\nWatch: Channel (2024)\nSlides\nDue: Exercise 02 | Canvas dropbox"
   },
   {
     "objectID": "schedule.html#week-04",
     "href": "schedule.html#week-04",
     "title": "Schedule",
     "section": "February 3-7",
-    "text": "February 3-7\nFrom perception to cognition\n\nTuesday, February 04\nFrom stimulus to sensation\n\nRead: Cairo (2013), Chapter 5, PDF on Canvas\n\n\n\nThursday, February 06\nFrom sensation to perception\n\nRead: Cairo (2013), Chapter 6, PDF on Canvas\nDue: Exercise-03"
+    "text": "February 3-7\n\nTuesday, February 04\nFigure components\n\nSlides\nReview\n\n\n\nThursday, February 06\nFrom stimulus to sensation\n\nRead: Cairo (2013), Chapter 5, PDF on Canvas"
   },
   {
     "objectID": "schedule.html#week-05",
     "href": "schedule.html#week-05",
     "title": "Schedule",
     "section": "February 10-14",
-    "text": "February 10-14\nFrom cognition to understanding\n\nTuesday, February 11\n\nRead:\n\nFranconeri, Padilla, Shah, Zacks, & Hullman (2021), pp. 109-122\nCairo (2013), Chapter 7, PDF on Canvas\n\nAssigned: Final Project proposal\n\n\n\nThursday, February 13\nDesigning efficient & understandable visualizations\n\nRead: Franconeri et al. (2021), pp. 123-139\nAssigned: Exercise-04"
+    "text": "February 10-14\n\nTuesday, February 11\nFrom sensation to perception\n\nRead: Cairo (2013), Chapter 6, PDF on Canvas\nDue: Exercise-03 | Canvas dropbox\n\n\n\nThursday, February 13\nFrom cognition to understanding\n\nRead:\nFranconeri, Padilla, Shah, Zacks, & Hullman (2021), pp. 109-122\nCairo (2013), Chapter 7, PDF on Canvas\nAssigned: Final Project proposal"
   },
   {
     "objectID": "schedule.html#week-06",
     "href": "schedule.html#week-06",
     "title": "Schedule",
     "section": "February 17-21",
-    "text": "February 17-21\nStorytelling with data\n\nTuesday, February 18\nCommunicating uncertainty and risk\n\nRead: Franconeri et al. (2021), pp. 139-150\n\n\n\nThursday, February 20\nStorytelling with data\n\nRead: Knaflic (2015), pp. ix-33, PDF on Canvas\nRead: Knaflic (2015), pp. 33-69, PDF on Canvas\nSkim: Woodside, Sood, & Miller (2008)"
+    "text": "February 17-21\n\nTuesday, February 18\nDesigning efficient & understandable visualizations\n\nRead: Franconeri et al. (2021), pp. 123-139\nAssigned: Exercise-04\n\n\n\nThursday, February 20\nCommunicating uncertainty and risk\n\nRead: Franconeri et al. (2021), pp. 139-150"
   },
   {
     "objectID": "schedule.html#week-07",
     "href": "schedule.html#week-07",
     "title": "Schedule",
     "section": "February 24-28",
-    "text": "February 24-28\nCritiquing figures\n\nTuesday, February 25\n\nRead: Tufte (2001), Chapter 1, PDF on Canvas\n\n\n\nThursday, February 27\n\nRead: Tufte (2001), Chapter 2, PDF on Canvas"
+    "text": "February 24-28\n\nTuesday, February 25\nStorytelling with data\n\nRead: Knaflic (2015), pp. ix-33, PDF on Canvas\nRead: Knaflic (2015), pp. 33-69, PDF on Canvas\nSkim: Woodside, Sood, & Miller (2008)\n\n\n\nThursday, February 27\nCritiquing figures\n\nRead: Tufte (2001), Chapter 1, PDF on Canvas"
   },
   {
     "objectID": "schedule.html#week-08",
     "href": "schedule.html#week-08",
     "title": "Schedule",
     "section": "March 3-7",
-    "text": "March 3-7\nExploring data\n\nTuesday, March 04\n\nRead: Tukey (1977), Chapter 1, PDF on Canvas\nDue: Final Project proposal\n\n\n\nThursday, March 06\n\nDue: Exercise-04\nAssigned: Exercise-05"
+    "text": "March 3-7\n\nTuesday, March 04\n\nRead: Tufte (2001), Chapter 2, PDF on Canvas\nDue: Final Project proposal\n\n\n\nThursday, March 06\nExploring data\n\nRead: Tukey (1977), Chapter 1, PDF on Canvas\nDue: Exercise-04\nAssigned: Exercise-05"
   },
   {
     "objectID": "schedule.html#spring-break",
@@ -1706,5 +1706,313 @@
     "title": "Making Data",
     "section": "Why does measurement matter?",
     "text": "Why does measurement matter?\n\nGarbage in, garbage out"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types",
+    "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types",
+    "title": "Figure types",
+    "section": "What data type(s)?",
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-1"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-1",
+    "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-1",
+    "title": "Figure types",
+    "section": "What data type(s)?",
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-3"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-2",
+    "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-2",
+    "title": "Figure types",
+    "section": "What data type(s)?",
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-26"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-3",
+    "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-3",
+    "title": "Figure types",
+    "section": "What data type(s)?",
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-15"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-4",
+    "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-4",
+    "title": "Figure types",
+    "section": "What data type(s)?",
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#data-types",
+    "href": "slides/wk03-2025-01-30-figure-types.html#data-types",
+    "title": "Figure types",
+    "section": "Data types",
+    "text": "Data types\n\nExtending Stevens (1946), see Wikipedia contributors (2024)\n\n\n\nNominal\n\nBinary (0,1)\nCategorical\n\nOrdinal\n\ne.g., 1st, 2nd, 3rd, …"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#extending-stevens1946-sh",
+    "href": "slides/wk03-2025-01-30-figure-types.html#extending-stevens1946-sh",
+    "title": "Figure types",
+    "section": "Extending Stevens (1946)",
+    "text": "Extending Stevens (1946)\n\nNominal/categorical\nOrdinal\nContinuous\n\nInterval\nRatio"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#data-types-continued",
+    "href": "slides/wk03-2025-01-30-figure-types.html#data-types-continued",
+    "title": "Figure types",
+    "section": "Data types (continued)",
+    "text": "Data types (continued)\n\n\nCounts\n\ne.g., 1, 2, 3, 4, …\n\nContinuous/Real-valued\n\nInterval\nRatio"
+  },
+  {
+    "objectID": "tutorials/tutorial-making-data.html#ordinal-data",
+    "href": "tutorials/tutorial-making-data.html#ordinal-data",
+    "title": "",
+    "section": "Ordinal data",
+    "text": "Ordinal data\nWe usually consider colors as nominal or categorical variables. But the physical input to the visual system is continuous.\n\n\n\nhttps://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/\n\n\nThe continuous variable that underlies color is wavelength, a property of electromagnetic radiation. The human visual system maps wavelength to color.\nCuriously, human color perception shows that this mapping wraps back on itself in a way that wavelength does not.\n\n\n\nhttps://pixabay.com/vectors/rainbow-colors-circle-color-spectrum-154569/\n\n\n\nGenerating\nBut rather than dive down that particular rat hole now, let’s make some ordinal data from the random color dataset. Imagine that we had n=50 participants and each gave a rating to these colors. The ratings had numbers, with 1 assigned to the participant’s first choice, and 4 assigned to the fourth choice. We won’t keep track of the specific users at this point.\n\n\nCode\nratings &lt;- c(\"1st\", \"2nd\", \"3rd\", \"4th\")\n\nour_rating_sample &lt;- sample(ratings, size=200, replace=TRUE)\ncolors_rating_df &lt;- colors_df\ncolors_rating_df$rating &lt;- our_rating_sample\n\ncolors_rating_xtab &lt;- data.frame(table(colors_rating_df))\nnames(colors_rating_xtab) &lt;- c(\"favorite_color\", \"rating\", \"count\")\n\n\n\n\nVisualizing\nMany of the same plot types are available for ordinal data.\n\nBar plot ordinal dodge\n\n\nCode\ncolors_rating_xtab |&gt;\n  ggplot() +\n  aes(x=rating, y=count, fill = favorite_color) +\n  # aes(x = favorite_color, y = school, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"dodge\")\n\n\n\n\n\n\n\n\nFigure 10: A barplot of the random favorite color data with an ordinal rating\n\n\n\n\n\n\n\nBar plot ordinal stacked\n\n\nCode\n# colors_rating_xtab |&gt;\n#   ggplot() +\n#   aes(x=favorite_color, y=count, fill = favorite_color) +\n#   scale_fill_identity() +\n#   geom_bar(stat=\"identity\", position=\"dodge\")\n\ncolors_rating_xtab |&gt;\n  ggplot() +\n  aes(x = rating, y=count, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 11: A stacked barplot of the random favorite color data with an ordinal rating\n\n\n\n\n\n\n\nBar plot ordinal stacked alternative\n\n\nCode\ncolors_rating_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y=count, fill = rating) +\n  #scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 12: Another stacked barplot of the random favorite color data with an ordinal rating"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#announcements",
+    "href": "slides/wk03-2025-02-04-figure-components.html#announcements",
+    "title": "Figure components",
+    "section": "Announcements",
+    "text": "Announcements"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#last-time",
+    "href": "slides/wk03-2025-02-04-figure-components.html#last-time",
+    "title": "Figure components",
+    "section": "Last time…",
+    "text": "Last time…\nFigure types"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#data-types",
+    "href": "slides/wk03-2025-02-04-figure-components.html#data-types",
+    "title": "Figure components",
+    "section": "Data types",
+    "text": "Data types\n\nExtending Stevens (1946), see Wikipedia contributors (2024)\n\n\n\nNominal\n\nBinary (0,1)\nCategorical\n\nOrdinal\n\ne.g., 1st, 2nd, 3rd, …"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#data-types-continued",
+    "href": "slides/wk03-2025-02-04-figure-components.html#data-types-continued",
+    "title": "Figure components",
+    "section": "Data types (continued)",
+    "text": "Data types (continued)\n\n\nCounts\n\ne.g., 1, 2, 3, 4, …\n\nContinuous/Real-valued\n\nInterval\nRatio"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-data-types",
+    "href": "slides/wk03-2025-02-04-figure-components.html#what-data-types",
+    "title": "Figure types",
+    "section": "What data type(s)?",
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-1"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-data-types-1",
+    "href": "slides/wk03-2025-02-04-figure-components.html#what-data-types-1",
+    "title": "Figure types",
+    "section": "What data type(s)?",
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-3"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-data-types-2",
+    "href": "slides/wk03-2025-02-04-figure-components.html#what-data-types-2",
+    "title": "Figure types",
+    "section": "What data type(s)?",
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-26"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-data-types-3",
+    "href": "slides/wk03-2025-02-04-figure-components.html#what-data-types-3",
+    "title": "Figure types",
+    "section": "What data type(s)?",
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-15"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-data-types-4",
+    "href": "slides/wk03-2025-02-04-figure-components.html#what-data-types-4",
+    "title": "Figure types",
+    "section": "What data type(s)?",
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#today",
+    "href": "slides/wk03-2025-02-04-figure-components.html#today",
+    "title": "Figure components",
+    "section": "Today",
+    "text": "Today\n\nThe components of data figures"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#goals",
+    "href": "slides/wk03-2025-02-04-figure-components.html#goals",
+    "title": "Figure types",
+    "section": "Goals",
+    "text": "Goals\n\nUnderstand how different data types map to\n\ndifferent types of quantitative summaries\ndifferent types of data visualizations\n\nGain an appreciation of the variety of data visualizations"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#considerations",
+    "href": "slides/wk03-2025-02-04-figure-components.html#considerations",
+    "title": "Figure types",
+    "section": "Considerations",
+    "text": "Considerations\n\nWhat figure type(s) are appropriate for the data type\nWhat figure type(s) are most informative/least misleading"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#references",
+    "href": "slides/wk03-2025-02-04-figure-components.html#references",
+    "title": "Figure components",
+    "section": "References",
+    "text": "References"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-type",
+    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-type",
+    "title": "Figure components",
+    "section": "What figure type?",
+    "text": "What figure type?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-26"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-1",
+    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-1",
+    "title": "Figure components",
+    "section": "What figure type?",
+    "text": "What figure type?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-15"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-2",
+    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-2",
+    "title": "Figure components",
+    "section": "What figure type?",
+    "text": "What figure type?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-3",
+    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-3",
+    "title": "Figure components",
+    "section": "What figure type?",
+    "text": "What figure type?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-4",
+    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-4",
+    "title": "Figure components",
+    "section": "What figure type?",
+    "text": "What figure type?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-types",
+    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-types",
+    "title": "Figure components",
+    "section": "What figure type(s)?",
+    "text": "What figure type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-1"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-1",
+    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-1",
+    "title": "Figure components",
+    "section": "What figure type(s)?",
+    "text": "What figure type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-3"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-2",
+    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-2",
+    "title": "Figure components",
+    "section": "What figure type(s)?",
+    "text": "What figure type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-26"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-3",
+    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-3",
+    "title": "Figure components",
+    "section": "What figure type(s)?",
+    "text": "What figure type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-15"
+  },
+  {
+    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-4",
+    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-4",
+    "title": "Figure components",
+    "section": "What figure type(s)?",
+    "text": "What figure type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#nominal-data",
+    "href": "slides/wk03-2025-01-30-figure-types.html#nominal-data",
+    "title": "Figure types",
+    "section": "Nominal data",
+    "text": "Nominal data\n\nBar chart\nPie chart\nRing/donut chart\nMosaic chart (2 variables)"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#bar-chart",
+    "href": "slides/wk03-2025-01-30-figure-types.html#bar-chart",
+    "title": "Figure types",
+    "section": "Bar chart",
+    "text": "Bar chart\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#visualizing"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#bar-chart-mappings",
+    "href": "slides/wk03-2025-01-30-figure-types.html#bar-chart-mappings",
+    "title": "Figure types",
+    "section": "Bar chart mappings",
+    "text": "Bar chart mappings\n\n\n\nNumber of observations in category \\(\\rightarrow\\) height/length\nColor-category \\(\\rightarrow\\) fill color\nSchool \\(\\rightarrow\\) position on horizontal axis"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#pie-charts",
+    "href": "slides/wk03-2025-01-30-figure-types.html#pie-charts",
+    "title": "Figure types",
+    "section": "Pie charts",
+    "text": "Pie charts\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#ring-charts",
+    "href": "slides/wk03-2025-01-30-figure-types.html#ring-charts",
+    "title": "Figure types",
+    "section": "Ring charts",
+    "text": "Ring charts\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#pie-ring-chart-mappings",
+    "href": "slides/wk03-2025-01-30-figure-types.html#pie-ring-chart-mappings",
+    "title": "Figure types",
+    "section": "Pie, ring chart mappings",
+    "text": "Pie, ring chart mappings\n\nWedge area \\(\\rightarrow\\) counts (or proportions)"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#mosaic-chart",
+    "href": "slides/wk03-2025-01-30-figure-types.html#mosaic-chart",
+    "title": "Figure types",
+    "section": "Mosaic chart",
+    "text": "Mosaic chart\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorial-making-data.html#mosaic-plot"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#pie-ring-mosaic-chart-mappings",
+    "href": "slides/wk03-2025-01-30-figure-types.html#pie-ring-mosaic-chart-mappings",
+    "title": "Figure types",
+    "section": "Pie, ring, mosaic chart mappings",
+    "text": "Pie, ring, mosaic chart mappings\n\nHeights & widths \\(\\rightarrow\\) counts (or proportions)\nAreas \\(\\rightarrow\\) counts (or proportions)"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#nominal",
+    "href": "slides/wk03-2025-01-30-figure-types.html#nominal",
+    "title": "Figure types",
+    "section": "Nominal",
+    "text": "Nominal\n\nCounts or proportions"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#ordinal-data",
+    "href": "slides/wk03-2025-01-30-figure-types.html#ordinal-data",
+    "title": "Figure types",
+    "section": "Ordinal data",
+    "text": "Ordinal data\n\nAll of the nominal types…\nSorted"
+  },
+  {
+    "objectID": "tutorials/tutorial-making-data.html#bar-plot-ordinal",
+    "href": "tutorials/tutorial-making-data.html#bar-plot-ordinal",
+    "title": "",
+    "section": "Bar plot ordinal",
+    "text": "Bar plot ordinal\n\n\nCode\ncolors_rating_xtab |&gt;\n  ggplot() +\n  aes(x=rating, y=count, fill = favorite_color) +\n  # aes(x = favorite_color, y = school, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"dodge\")\n\n\n\n\n\n\n\n\nFigure 9: A barplot of the random favorite color data with an ordinal rating"
+  },
+  {
+    "objectID": "tutorials/tutorial-making-data.html#bar-plot-ordinal-stacked-alternative",
+    "href": "tutorials/tutorial-making-data.html#bar-plot-ordinal-stacked-alternative",
+    "title": "",
+    "section": "Bar plot ordinal stacked alternative",
+    "text": "Bar plot ordinal stacked alternative\n\n\nCode\ncolors_rating_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y=count, fill = rating) +\n  #scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 11: Another stacked barplot of the random favorite color data with an ordinal rating"
   }
 ]

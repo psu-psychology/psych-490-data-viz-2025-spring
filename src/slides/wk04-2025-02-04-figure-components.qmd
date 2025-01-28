@@ -1,0 +1,65 @@
+---
+title: "Figure components"
+subtitle: "2025-02-04"
+---
+
+# Prelude
+
+# Overview
+
+## Announcements
+
+## Last time...
+
+*Figure types*
+
+## What figure type(s)?
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-1>](https://www.psychologicalscience.org/redesign/wp-content/uploads/2015/12/TCD_fig_1.jpg)
+
+## What figure type(s)?
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-3>](https://www.sfn.org/-/media/SfN/Images/NEW-SfN/Publications/2020/January/20200127_Brain_Needs_Iron_Cognitive_Dev.png)
+
+## What figure type(s)?
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-26>](https://media.springernature.com/lw685/springer-static/image/art%3A10.3758%2Fs13421-017-0708-1/MediaObjects/13421_2017_708_Fig3_HTML.gif?)
+
+## What figure type(s)?
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-15>](https://fivethirtyeight.com/wp-content/uploads/2019/05/SPRAWLBALL_Fig_013_kg_edit.png?resize=590,450)
+
+## What figure type(s)?
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21>](https://impact.economist.com/perspectives/sites/default/files/eiu_amgen_cvd_secondary_prevention_infographic_final_22jun-page-001.jpg)
+
+## Today
+
+- More on figure types
+- The components of data figures
+
+# More on figure types
+
+## Ordinal data
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#bar-plot-ordinal>](../include/fig/fig-ordinal-barplot-dodge-1.png)
+
+---
+
+![](../include/fig/fig-ordinal-barplot-dodge-1.png)
+
+---
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#fig-ordinal-barplot-stacked>](../include/fig/fig-ordinal-barplot-stacked-1.png)
+
+---
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#bar-plot-ordinal-stacked-alternative>](../include/fig/fig-ordinal-barplot-stacked-alt-1.png)
+
+# Main points
+
+# Next time
+
+# Resources
+
+## References
