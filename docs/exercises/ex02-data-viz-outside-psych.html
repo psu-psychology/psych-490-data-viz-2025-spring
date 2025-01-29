@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-01-24">
+<meta name="dcterms.date" content="2025-01-29">
 
 <title>Exercise 02 – PSYCH 490 • Spr 25</title>
 <style>
@@ -193,7 +193,7 @@ div.csl-indent {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
         <li>
     <a class="dropdown-item" href="../tutorials/tutorial-making-data.html">
- <span class="dropdown-text">Making data</span></a>
+ <span class="dropdown-text">Making and visualizing data</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../tutorials/tutorial-rstudio-on-pc.html">
@@ -205,7 +205,7 @@ div.csl-indent {
   </li>  
         <li>
     <a class="dropdown-item" href="../tutorials/tutorial-r-ggplot.html">
- <span class="dropdown-text">Plotting with <code>ggplot2</code></span></a>
+ <span class="dropdown-text">Plotting with ggplot2</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../tutorials/tutorial-python-matplotlib.html">
@@ -218,6 +218,10 @@ div.csl-indent {
  <span class="menu-text">Supplemental</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-supplemental">    
+        <li>
+    <a class="dropdown-item" href="../supplemental/ex01-feedback.html">
+ <span class="dropdown-text">Feedback on Exercise 01</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="../supplemental/psych-sci-figs.html">
  <span class="dropdown-text">Findings: Data viz in psych sci</span></a>
@@ -238,8 +242,8 @@ div.csl-indent {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="d5daa3625a381f8c053712f70c833bce" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p><a href="exercises/ex02-data-viz-outside-psych.qmd">Exercise 02</a> due Thu Jan 30. <a href="https://psu.instructure.com/courses/2381584/assignments/16998399">Canvas dropbox</a></p>
+  <div id="quarto-announcement" data-announcement-id="74ec4ed1c906a78d0c49c4df10e3ce19" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><a href="exercises/ex02-data-viz-outside-psych.qmd">Exercise 02</a> due Thu Jan 30. | <a href="https://psu.instructure.com/courses/2381584/assignments/16998399">Canvas dropbox</a></p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
@@ -254,7 +258,11 @@ div.csl-indent {
   <li><a href="#dates" id="toc-dates" class="nav-link active" data-scroll-target="#dates">Dates</a></li>
   <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
   <li><a href="#assignment" id="toc-assignment" class="nav-link" data-scroll-target="#assignment">Assignment</a></li>
-  <li><a href="#submit" id="toc-submit" class="nav-link" data-scroll-target="#submit">Submit</a></li>
+  <li><a href="#submit" id="toc-submit" class="nav-link" data-scroll-target="#submit">Submit</a>
+  <ul class="collapse">
+  <li><a href="#everyone" id="toc-everyone" class="nav-link" data-scroll-target="#everyone">Everyone</a></li>
+  <li><a href="#students-submitting-write-ups" id="toc-students-submitting-write-ups" class="nav-link" data-scroll-target="#students-submitting-write-ups">Students submitting write-ups</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/edit/main/src/exercises/ex02-data-viz-outside-psych.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -275,14 +283,14 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 24, 2025</p>
+      <p class="date">January 29, 2025</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">January 23, 2025</p>
+      <p class="date-modified">January 29, 2025</p>
     </div>
   </div>
     
@@ -327,19 +335,35 @@ div.csl-indent {
 <li>How effective is the message?</li>
 <li>Are the figures statistical visualizations or information visualizations (Infovis) as described by <span class="citation" data-cites="Gelman2013-he">Gelman &amp; Unwin (<a href="#ref-Gelman2013-he" role="doc-biblioref">2013</a>)</span>?</li>
 </ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The visualizations you choose to write about may be the ones you found yourself or those that others found and <a href="../supplemental/other-field-figs.html">shared</a>.</p>
+</div>
+</div>
 </section>
 <section id="submit" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="submit">Submit</h2>
-<ul>
-<li>Everyone
+<section id="everyone" class="level3">
+<h3 class="anchored" data-anchor-id="everyone">Everyone</h3>
 <ul>
 <li>Your data to the shared <a href="https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0">Google Spreadsheet</a>.</li>
-</ul></li>
-<li>Students who want this submission to count for one of their four (4) <em>required</em> exercises
+</ul>
+</section>
+<section id="students-submitting-write-ups" class="level3">
+<h3 class="anchored" data-anchor-id="students-submitting-write-ups">Students submitting write-ups</h3>
+<p>Students who want this submission to count for one of their four (4) <em>required</em> exercises should submit the following:</p>
 <ul>
 <li>A 2-3 page write-up in APA format where you describe three (3) figures your group found, answering the questions in 4. above.</li>
-</ul></li>
 </ul>
+<p>Make sure to write a complete essay. See the <a href="../supplemental/ex01-feedback.html">feedback for Exercise 01</a> for other hints about how to improve your submission. While we will not require it because the deadline is soon, if you are able to include images of the figures you discuss, please do so. <a href="../tutorials/tutorial-screenshots.html">Here</a> is a tutorial to help.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -358,6 +382,7 @@ APA template
 <!-- -->
 
 
+</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
@@ -875,19 +900,30 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How effective is the message?</span>
 <span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Are the figures statistical visualizations or information visualizations (Infovis) as described by @Gelman2013-he?</span>
 <span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## Submit {-}</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Everyone</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Your data to the shared <span class="co">[</span><span class="ot">Google Spreadsheet</span><span class="co">](https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0)</span>.</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Students who want this submission to count for one of their four (4) *required* exercises</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>A 2-3 page write-up in APA format where you describe three (3) figures your group found, answering the questions in 4. above.</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="fu">## APA template</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>The visualizations you choose to write about may be the ones you found yourself or those that others found and <span class="co">[</span><span class="ot">shared</span><span class="co">](../supplemental/other-field-figs.qmd)</span>.</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="fu">## Submit {-}</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="fu">### Everyone</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Your data to the shared <span class="co">[</span><span class="ot">Google Spreadsheet</span><span class="co">](https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0)</span>.</span>
 <span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>This <span class="co">[</span><span class="ot">template</span><span class="co">](https://docs.google.com/document/d/1gkQKBTc7yW03VAndEtX6loWjm7BAmmhO/edit)</span> document  may be helpful.</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="fu">### Students submitting write-ups</span></span>
 <span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>Students who want this submission to count for one of their four (4) *required* exercises should submit the following:</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A 2-3 page write-up in APA format where you describe three (3) figures your group found, answering the questions in 4. above.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>Make sure to write a complete essay. See the <span class="co">[</span><span class="ot">feedback for Exercise 01</span><span class="co">](../supplemental/ex01-feedback.qmd)</span> for other hints about how to improve your submission. While we will not require it because the deadline is soon, if you are able to include images of the figures you discuss, please do so. <span class="co">[</span><span class="ot">Here</span><span class="co">](../tutorials/tutorial-screenshots.qmd)</span> is a tutorial to help.</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="fu">## APA template</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>This <span class="co">[</span><span class="ot">template</span><span class="co">](https://docs.google.com/document/d/1gkQKBTc7yW03VAndEtX6loWjm7BAmmhO/edit)</span> document  may be helpful.</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

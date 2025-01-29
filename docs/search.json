@@ -25,7 +25,7 @@
     "href": "supplemental/psych-sci-figs.html#preparation",
     "title": "Findings: Data viz in psych sci",
     "section": "Preparation",
-    "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using.\n\n\n\n\n\n\nImportant\n\n\n\nThe code uses the quietly() function from the purrr package to suppress most of the feedback.\n\n\n\n\nCode\nlibrary('ggplot2')\nlibrary('dplyr')\n\nr_functions &lt;- list.files(file.path(here::here(), \"src\", \"R\"), \"\\\\.R$\", full.names = TRUE)\n\npurrr::map(r_functions, source) |&gt;\n  purrr::quietly()\n\n\nfunction (...) \ncapture_output(.f(...))\n&lt;bytecode: 0x10efd3ee8&gt;\n&lt;environment: 0x10efd7b20&gt;"
+    "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using.\n\n\n\n\n\n\nImportant\n\n\n\nThe code uses the quietly() function from the purrr package to suppress most of the feedback.\n\n\n\n\nCode\nlibrary('ggplot2')\nlibrary('dplyr')\n\nr_functions &lt;- list.files(file.path(here::here(), \"src\", \"R\"), \"\\\\.R$\", full.names = TRUE)\n\npurrr::map(r_functions, source) |&gt;\n  purrr::quietly()\n\n\nfunction (...) \ncapture_output(.f(...))\n&lt;bytecode: 0x10889de78&gt;\n&lt;environment: 0x10889dba0&gt;"
   },
   {
     "objectID": "supplemental/psych-sci-figs.html#gathering",
@@ -56,130 +56,137 @@
     "text": "Figures found\n\nCode\nthese_figs &lt;- ex01 |&gt;\n  filter(!is.na(url_to_figure))\n\nres &lt;- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))\ncat(unlist(res), sep = \"\\n\")\n\n\nFigure 1\nSource: https://www.psychologicalscience.org/observer/teaching-current-directions-in-psychological-science-27#lives\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nrog1\nweb_site\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 2\nSource: https://journals.sagepub.com/doi/full/10.1177/21677026241301298\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nrog1\narticle\nROC figures are used only in specialized contexts\n\n\n\n\n\n\nComments\n\n\n\n\nMore info about sensitivity and specificity: https://en.wikipedia.org/wiki/Sensitivity_and_specificity\n\n\n\n\n\nFigure 3\nSource: https://www.sfn.org/publications/latest-news/2020/01/27/the-brain-may-need-iron-for-healthy-cognitive-development\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nbre1\narticle\nI was drawn in to the topic examining the impact of iron on cognitive development and found the scatterplot to be very informative, however a bit difficult to interpret at first glance.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 4\nSource: https://psycnet.apa.org/fulltext/2025-31206-001.pdf?auth_token=7fcec614b0825ba1032680320e7e094213c3f483\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nbre1\narticle\nI enjoyed the mindmap used within the article, I felt it was very digestible to the public eye and conveyed the meaning and significance of the topic.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 5\nSource: https://psycnet.apa.org/doiLanding?doi=10.1037%2Fdev0001841\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nbre1\narticle\nThe conceptual diagram caught my eye as it provided a great visual of the upward incline and the severity of this effect.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 6\nSource: https://www.nature.com/articles/s41380-023-02202-z/figures/1\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\ntjd1\narticle\nI thought this visualization was about an interesting topic, and also enjoyed exploring story it tells - the ages of onset for various mental illnesses in young people.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 7\nSource: https://www.eneuro.org/content/11/10/ENEURO.0210-24.2024/tab-figures-data\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nilw 1\narticle\nIllusionism and visual processing.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 8\nSource: https://journals.sagepub.com/cms/10.1177/0956797618761373/asset/images/large/10.1177_0956797618761373-fig2.jpeg\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nilw 1\narticle\nI had not seen a study conducted on a mundane idea like this before which makes it intriguing. It compares the enjoyment level of the giver versus the reciever of a personalized versus a “normal” or plain mug. It is very straightforward and easy to read.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 9\nSource: https://srcd.onlinelibrary.wiley.com/cms/asset/907c790a-fabe-474b-b142-3b4799f38ce3/cdev14156-fig-0002-m.png\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nilw 1\narticle\nParents’ judgement of their children’s cognitive ability versus children’s actual cognitive ability level. It is straightforward and easy to read, interesting concept.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 10\nSource: https://journals.sagepub.com/doi/full/10.1177/19485506231204463\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc 1\narticle\nNetwork and mediation/moderation example\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 11\nSource: https://www.jneurosci.org/content/44/44/e0231242024/tab-figures-data\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc 1\narticle\nExtremely complex and dense visualization\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 12\nSource: https://www.jneurosci.org/content/44/37/e2236232024/tab-figures-data\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc 1\narticle\nExample of neuroimaging, BOLD signal visualization\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 13\nSource: https://journals.sagepub.com/doi/full/10.1177/19485506231211628\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc 1\narticle\nSimple comparative visualization\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 14\nSource: https://piktochart.com/wp-content/uploads/2023/03/track-national-unemployment.jpg\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\njvm\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 15\nSource: https://www.apa.org/pubs/reports/stress-in-america/2024/postelection-stress-coping-during-holidays\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\narticle\nI thought the small pictures next to each item was a unique feature that I have not seen on many other graphics of that nature\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 16\nSource: https://journals.sagepub.com/doi/10.1177/09567976241286865\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\narticle\nI have never seen this type of visualization with areas of colors surrounding the lines showing the range of values. I think the differences in colors greatly help to distinguish data and show how they may interact\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 5\n\n\n\n\n\nFigure 17\nSource: https://journals.sagepub.com/doi/10.1177/15291006231221978\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\narticle\nI found the separate graph breakdown of number of studies to be very thorough and the differing graphs with different colors ensured that the data could be visualized appropriately based on the category\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 2\n\n\n\n\n\nFigure 18\nSource: https://www.proquest.com/psycarticles/docview/3156133891/B9D8033C647D446CPQ/11?accountid=13158&sourcetype=Scholarly%20Journals\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\narticle\nI appreciate the overlap in the data being shown directly on the same graph to better understand differences in data\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 3\n\n\n\n\n\nFigure 19\nSource: https://www.proquest.com/psycarticles/docview/3108366413/902261B578114B8FPQ/1?accountid=13158&sourcetype=Scholarly%20Journals\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\narticle\nI have never seen this type of visualization with the length of vector used to symbolize data.\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 1\n\n\n\n\n\nFigure 20\nSource: https://www.proquest.com/psycarticles/docview/3156133920/B9D8033C647D446CPQ/13?accountid=13158&sourcetype=Scholarly%20Journals\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\narticle\nThis graph distinguishes data by total and direct effect to understand variable significance and I have never seen a graph of this nature.\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 4\n\n\n\n\n\nFigure 21\nSource: https://www.proquest.com/psycarticles/docview/3156133916/B33C55DC844C41DEPQ/1?accountid=13158&sourcetype=Scholarly%20Journals\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\narticle\nI appreciate the distinguishing of demographic by color to quickly identify varying categories of interaction\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 2\n\n\n\n\n\nFigure 22\nSource: https://www.proquest.com/psycarticles/docview/3154909502/298FE26D70EF4859PQ/14?accountid=13158&sourcetype=Scholarly%20Journals\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\narticle\nI think this study researching the differences in number of words men and women speak each day is insightful and I appreciate the further breakdown by age group\n\n\n\n\n\n\nComments\n\n\n\n\nFigures 3-4\n\n\n\n\n\nFigure 23\nSource: https://www.proquest.com/psycarticles/docview/1539480322/FDF2333734CC41FBPQ/9?accountid=13158&sourcetype=Scholarly%20Journals\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\narticle\nI am interested in the relationship between life satisfaction regarding the workplace and I feel this graph concisely presents the data related to life satiafaction in couples after an unemployment event\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 2\n\n\n\n\n\nFigure 24\nSource: https://www.sciencedirect.com/science/article/abs/pii/S0022399923002945?via%3Dihub\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nrta5133 (Rand)\narticle\nI selected this because it particularly visualizes cross-lagged variables which I thought is interesting. It also has signs such as epsilons to denote residuals and a lot of arrows which I thought merit a second peek.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 25\nSource: https://srcd.onlinelibrary.wiley.com/doi/10.1111/cdev.14152\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nApf1\narticle\nI liked the topic of study and how the data was displayed\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 26\nSource: https://link.springer.com/article/10.3758/s13421-017-0708-1?fromPaywallRec=false\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\njxu5065\narticle\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 27\nSource: https://www.science.org/doi/10.1126/scirobotics.adn3802\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\njxu5065\narticle\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 28\nSource: https://www.nature.com/articles/s41562-024-02077-2\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nNMSL\narticle\nThe relation between AI and human communication is clearly showed.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 29\nSource: https://www.nature.com/articles/s41598-024-75262-y?fromPaywallRec=false\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nNMSL\narticle\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 30\nSource: https://journals.sagepub.com/doi/epub/10.1177/21677026221121762\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nssw, hrq, tjd\nJournal\nBar graph representing 3 different measured variables amongst racial populations within Los Angeles.\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 1\n\n\n\n\n\nFigure 31\nSource: https://journals.sagepub.com/stoken/default+domain/10.1177%2F15291006211051956-FREE/pdf\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nssw,hrq, tjd\nwebsite\nThis journal explains what creating effective visuals for data communication and research.\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nfigure 1: This is useful to understanding how visuals affect the growth of data.\n\n\n\n\n\nFigure 32\nSource: https://www.nature.com/articles/s41380-023-02202-z/figures/1\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nssw,hrq, tjd\narticle\nI thought this visualization was about an interesting topic, and also enjoyed exploring story it tells - the ages of onset for various mental illnesses in young people.\n\n\n\n\n\n\nComments\n\n\n\n\nFrom Society of Research on Adolesence\n\n\n\n\n\nFigure 33\nSource: https://journals.sagepub.com/doi/epub/10.1177/21677026221121762\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nssw,hrq, tjd\nJournal\nHeat map of Los Angeles showing health and economic status differences\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 2\n\n\n\n\n\nFigure 34\nSource: https://www.tandfonline.com/doi/full/10.1080/15622975.2022.2112074#d1e584\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\narticle\nThe flow chart shows the conceptual steps that a “lifestyle-based” mental health care provider would use\n\n\n\n\n\n\nComments\n\n\n\n\nAPA\n\n\n\n\n\nFigure 35\nSource: https://www.nature.com/articles/s41586-024-08359-z\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\narticle\nThis chart clearly shows the comparison of errors between languages that the program was created to know\n\n\n\n\n\n\nComments\n\n\n\n\nNature (Journal)\n\n\n\n\n\nFigure 36\nSource: https://www.nature.com/articles/s41586-024-08423-8\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\narticle\nThis “Image” shows 8 different graphs and charts that help to paint the whole picture of the validation of MAVs and PVVs in regards to the prolonged persistence of mutagenic DNA lesions in somatic cells\n\n\n\n\n\n\nComments\n\n\n\n\nNature (Journal)\n\n\n\n\n\nFigure 37\nSource: https://www.nature.com/articles/s41562-024-02077-2\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\narticle\nThis image shows the interaction between AI and humans through flow charts and points plotted on a graph\n\n\n\n\n\n\nComments\n\n\n\n\nNature Human Behavior (Journal)\n\n\n\n\n\nFigure 38\nSource: https://www.nature.com/articles/s41562-024-02061-w\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\narticle\nThis image shows 3 different types of visualizations of the data regarding reporting-error-adjusted participation weights\n\n\n\n\n\n\nComments\n\n\n\n\nNature Human Behavior (Journal)\n\n\n\n\n\nFigure 39\nSource: https://iovs.arvojournals.org/article.aspx?articleid=2793527\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nThis figure shows an easy to understand representation for the experiment taking place of a drug injection into the eye with results of leakage\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 1\n\n\n\n\n\nFigure 40\nSource: https://www.apa.org/news/press/releases/stress/2023/collective-trauma-recovery\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure clearly puts data into seperate visual categories to make their point on stress levels pre pandemic vs post pandemic by age specifically\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 2\n\n\n\n\n\nFigure 41\nSource: https://www.tandfonline.com/doi/full/10.1080/00221325.2024.2400362#d1e771\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\narticle\nThis figure is interesting because it shows the association between teacher-student relationship quality and maternal depressive symptoms and children’t externalizing behavior problem. This shows the importance of maternal depressive symptom to teacher-student relationship.\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 4\n\n\n\n\n\nFigure 42\nSource: https://onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/doi/10.1002/dys.1790\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\narticle\nThis figure shows an word cloud of 25 interviews on raising awareness of dyslexia, it shows a simple photo that has the result of 25 interviews\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 1\n\n\n\n\n\nFigure 43\nSource: https://onlinelibrary.wiley.com/doi/full/10.1111/jora.13045\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\narticle\nThis figure shows how adolescent with elevated depression before and during the COVID-19 will more likely to be in the high risk profile.\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 3\n\n\n\n\n\nFigure 44\nSource: https://onlinelibrary.wiley.com/doi/full/10.1111/jora.13052\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\narticle\nThis figure shows the correlation of LGBTQ+ state policies and mental health symptomology with other factors like school safety, peer victimization, and others.\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 1\n\n\n\n\n\nFigure 45\nSource: https://myscp-onlinelibrary-wiley-com.ezaccess.libraries.psu.edu/doi/10.1002/jcpy.1446\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\narticle\nThis figure shows the anticipated negative impact on the relationship between gift given on time and late, from gift recipient and gift giver.\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 2\n\n\n\n\n\nFigure 46\nSource: https://journals-sagepub-com.ezaccess.libraries.psu.edu/doi/10.1177/1077801212440017\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\narticle\nThis figure shows the rate of reports and arrest for forcible rape per 100,000 U.S. inhabitants. It shows how there is a large amount of reported rape compared to a small amount of arrest\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 2\n\n\n\n\n\nFigure 47\nSource: https://www.apa.org/pubs/reports/practitioner/2024\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nThe graph is about the frequency of AI usage for psychologists at different career stage and I find that interesting\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 48\nSource: https://www.apa.org/monitor/2024/01/trends-pathways-access-mental-health-care\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nThe figure shows 90% of the public believe there’s a mental health crisis in the US but a lot of the people I know dont even believe in mental health issues\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 49\nSource: &lt;Self‐reported alcohol consumption during participation in a text messaging‐based online drinking moderation platform - Vadhan - 2024 - Alcohol, Clinical and Experimental Research - Wiley Online Library&gt;\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\narticle\nI am working on a lab projject that is related to drinking\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 50\nSource: https://journals.sagepub.com/doi/10.1177/1077801212440017\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\narticle\nThis figure is about reports of forcible rape to law enforcement and the number of arrests resulted, as a woman I care about this kind of issue\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 2\n\n\n\n\n\nFigure 51\nSource: https://featuredcontent.psychonomic.org/color-me-impressed-psychology-research-links-colors-and-emotions-for-over-a-century/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nRta5133(Rand)\nNews article\nI thought they very intellignetly modeled the participants connection of color and emotion\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 52\nSource: https://featuredcontent.psychonomic.org/neural-processing-of-sarcasm-hows-that-for-a-great-title/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nRta5133 (Rand)\nNews article\nI thought they did a very good job to represent the brain activity results in an intuitive manner\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 53\nSource: https://featuredcontent.psychonomic.org/neural-processing-of-sarcasm-hows-that-for-a-great-title/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\narticle\nThe information shown on the figure is interesting because it shows the weighted mean of trust in scientist across countries and religion\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 1\n\n\n\n\n\nFigure 54\nSource: https://www.nature.com/articles/s41562-024-02071-8\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\narticle\nThis figure shows the nut-cracking efficiency of the chimpanzees.\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 3\n\n\n\n\n\nFigure 55\nSource: https://www.nature.com/articles/s41586-024-08375-z\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\narticle\nThis figure shows the pattern of extinction risk in tetrapods and freshwater species\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 1\n\n\n\n\n\nFigure 56\nSource: https://www.nature.com/articles/s41586-024-08448-z\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\narticle\nThis figure shows the percentage of catch with different levels of rights devolution in formally governed SSF\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 3\n\n\n\n\n\nFigure 57\nSource: https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(21)00051-6\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\narticle\nThis figure shows the percentage of “yes” response of whether the headline were accurate or whether they consider sharing to true and false headlines\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 2a\n\n\n\n\n\nFigure 58\nSource: https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(24)00269-9\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\narticle\nThis figure shows the memory decay in animals studied\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 1c\n\n\n\n\n\nFigure 59\nSource: https://featuredcontent.psychonomic.org/color-me-impressed-psychology-research-links-colors-and-emotions-for-over-a-century/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nkvv\narticle\nThe graph is interesting because it easily shows and connects different colors to different emotions.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 60\nSource: https://www.nature.com/articles/s41562-024-02077-2\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nkvv\narticle\nThis graph was a great way of demonstarting to someone how the affects of AI can disrupt human feedback compared to human-human interactions\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 1\n\n\n\n\n\nFigure 61\nSource: https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(24)00253-5\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nkvv\narticle\nI decided to pick this graph because it is very confusing. This graph is really interesting because it is (i feel) is overpacked. Too many graphs and images on 1 figure\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 1\n\n\n\n\n\nFigure 62\nSource: https://www.jneurosci.org/content/41/1/3#abstract-1\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\ntps5764\narticle\nI mainly chose this graph because I rarely see dot-plots like this one in papers. I see bar graphs used much more often, so I found the choice to use dots interesting.\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 1\n\n\n\n\n\nFigure 63\nSource: https://link.springer.com/article/10.3758/s13421-023-01476-6\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\ntps5764\narticle\nI chose this graph because I really like the topic of memory, and was one of my favorite classes.\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 1\n\n\n\n\n\nFigure 64\nSource: https://pmc.ncbi.nlm.nih.gov/articles/PMC5722463/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nhtt5112\narticle\nI chose this graph because with the rise of social media, we can see how it creates loneliness and social awkwardness\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 1\n\n\n\n\n\nFigure 65\nSource: https://psycnet.apa.org/fulltext/2005-03224-011.html\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nhtt5112\narticle\nI chose this graph because everyone experiences stressful situations, especially college students\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 2\n\n\n\n\n\nFigure 66\nSource: https://pmc.ncbi.nlm.nih.gov/articles/PMC4286245/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nhtt5112\narticle\nI chose this graph because college students are able to relate to it and can see how important sleep is for our brains\n\n\n\n\n\n\nComments\n\n\n\n\nFigure 3\n\n\n\n\n\nFigure 67\nSource: https://www.jneurosci.org/content/45/4/etwij45042025\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nash99\narticle\nI chose this figure because it does a great job of visually depicting brain activity when responding to sound and auditory rhythym processing by the brain.\n\n\n\n\n\n\nComments\n\n\n\n\nNA"
   },
   {
-    "objectID": "exercises/final-project.html",
-    "href": "exercises/final-project.html",
-    "title": "final-project",
+    "objectID": "supplemental/ex01-feedback.html",
+    "href": "supplemental/ex01-feedback.html",
+    "title": "Feedback on Exercise 01",
+    "section": "",
+    "text": "This page provides some general comments about the write-ups submitted for Exercise 01.\nPlease take these observations to heart and implement them in future assignments."
+  },
+  {
+    "objectID": "supplemental/ex01-feedback.html#about",
+    "href": "supplemental/ex01-feedback.html#about",
+    "title": "Feedback on Exercise 01",
+    "section": "",
+    "text": "This page provides some general comments about the write-ups submitted for Exercise 01.\nPlease take these observations to heart and implement them in future assignments."
+  },
+  {
+    "objectID": "supplemental/ex01-feedback.html#observations",
+    "href": "supplemental/ex01-feedback.html#observations",
+    "title": "Feedback on Exercise 01",
+    "section": "Observations",
+    "text": "Observations\n\nThe best submissions wrote a complete essay. The submissions included an introductory paragraph, several body paragraphs, usually one per figure, a conclusion, and a reference section.\nThe best submissions also mentioned the purpose of the exercise: To evaluate how some sample figures from various sources in psychological science communicated information about some topic.\nThe best submissions read the papers or websites where the figures were drawn from and provided helpful information about what the figures were depicting.\nThe best submissions adhered to the APA paper format. Here is a sample template.\nWhile it wasn’t required for the exercise, papers that provided excerpts of the figures under discussion were easier to evaluate. We did not penalize submissions that did not provide figure excerpts because the assignment did not require it. To capture images for future exercises, see the tutorial."
+  },
+  {
+    "objectID": "exercises/ex07-figs-w-python.html",
+    "href": "exercises/ex07-figs-w-python.html",
+    "title": "Exercise 07",
     "section": "",
     "text": "Work in progress\n\n\n\nThis page is under construction."
   },
   {
-    "objectID": "exercises/final-project.html#background",
-    "href": "exercises/final-project.html#background",
-    "title": "final-project",
-    "section": "Background",
-    "text": "Background\nYour final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.\nYou may work alone or with up to two other students in the class. If you work with others, you will need to complete a statement about who did what, and all of the members of your team will get the same grade."
-  },
-  {
-    "objectID": "exercises/final-project.html#dates",
-    "href": "exercises/final-project.html#dates",
-    "title": "final-project",
-    "section": "Dates",
-    "text": "Dates\n\nProposal assigned Thursday, February 13\nFinal project survey due Tuesday, April 08\nFinal write-up due Tuesday, May 05"
-  },
-  {
-    "objectID": "exercises/final-project.html#topics",
-    "href": "exercises/final-project.html#topics",
-    "title": "final-project",
-    "section": "Topics",
-    "text": "Topics\nYou may choose any of a wide range of topics for your final project:\n\nA tutorial on a tool or resource for data visualization you find especially useful.\nA discussion of a specific data visualization or type of visualization and how it does or does not accurately and persuasively convey some specific finding.\nA showcase of one or more data visualizations that you have made."
-  },
-  {
-    "objectID": "exercises/final-project.html#formats",
-    "href": "exercises/final-project.html#formats",
-    "title": "final-project",
-    "section": "Formats",
-    "text": "Formats\nThere are multiple formats for your final project.\n\nShort (5-10 min) in-class talk\nPoster\nLesson plan/exercise\nTutorial\nResearch project (& write-up)\nOpinion piece"
-  },
-  {
-    "objectID": "exercises/final-project.html#components",
-    "href": "exercises/final-project.html#components",
-    "title": "final-project",
-    "section": "Components",
-    "text": "Components\n\nProject proposal\n\nEvery student or team must submit a one-page single-spaced project proposal. Your proposal should state the aim or objective of your project, the format, and a include a brief description of how you intend to go about achieving your objectives.\n\n\n\nProject presentation\n\nEvery student or team may make an optional presentation to the class about their project. Please indicate whether you are willing to make a presentation when you complete the survey.\nNote: Giving a presentation is worth 5 extra credit points.\nThe presentations will occur during class on December 6, 9, and 11.\nIf you wish to have your presentation made available publicly on the course website, please let me know. This is also completely optional.\n\n\n\nProject write-up\n\nEvery student or team must submit a write-up, due during finals week on Tuesday, May 05.\nDepending on the format of the project (talk, poster, paper), different written materials may be submitted (slides, poster, etc.).\nFor an in-class talk, submit a separate document with your talk text or notes and your slides. You may also submit slides that include presenter notes embedded within them.\nFor a poster, submit a PowerPoint or PDF of your poster along with any talking points.\n\nRubic: An example of potential grading template we may use: https://commons.erau.edu/db-srs/poster-scoring-rubric.pdf\nArticle: How to make a good scientific poster https://www.nature.com/articles/nj7614-115a\nTutorial video: how to make a poster https://www.youtube.com/watch?v=EL5YwkiqBho&ab_channel=SamHertig\nOther basics: https://guides.libraries.psu.edu/posters\n\nFor research paper, please submit an APA-formatted manuscript 1,500-2,000 words in length.\nFor an opinion piece, please submit a document up to 1,500 words in length.\nFor an interactive website or presentation, please submit a complete set of files needed to evaluate your website or presentation.\nFor a lesson plan, please submit a document up up to 1,500 words in length."
-  },
-  {
-    "objectID": "exercises/final-project.html#survey",
-    "href": "exercises/final-project.html#survey",
-    "title": "final-project",
-    "section": "Survey",
-    "text": "Survey\n\nPlease provide information about your project via this Google Form: https://forms.gle/oyotxgnnqchqnSgTA"
-  },
-  {
-    "objectID": "exercises/ex06-figs-w-r.html",
-    "href": "exercises/ex06-figs-w-r.html",
-    "title": "Exercise 06",
+    "objectID": "exercises/ex05-figure-prep-guidelines.html",
+    "href": "exercises/ex05-figure-prep-guidelines.html",
+    "title": "Exercise 05",
     "section": "",
     "text": "Work in progress\n\n\n\nThis page is under construction."
   },
   {
-    "objectID": "exercises/ex04-sci-of-data-viz.html",
-    "href": "exercises/ex04-sci-of-data-viz.html",
-    "title": "Exercise 04",
-    "section": "",
-    "text": "Work in progress\n\n\n\nThis page is under construction."
-  },
-  {
-    "objectID": "exercises/ex04-sci-of-data-viz.html#dates",
-    "href": "exercises/ex04-sci-of-data-viz.html#dates",
-    "title": "Exercise 04",
+    "objectID": "exercises/ex05-figure-prep-guidelines.html#dates",
+    "href": "exercises/ex05-figure-prep-guidelines.html#dates",
+    "title": "Exercise 05",
     "section": "Dates",
     "text": "Dates"
   },
   {
-    "objectID": "exercises/ex04-sci-of-data-viz.html#goals",
-    "href": "exercises/ex04-sci-of-data-viz.html#goals",
-    "title": "Exercise 04",
+    "objectID": "exercises/ex05-figure-prep-guidelines.html#goals",
+    "href": "exercises/ex05-figure-prep-guidelines.html#goals",
+    "title": "Exercise 05",
     "section": "Goals",
-    "text": "Goals"
+    "text": "Goals\n\nRead and understand published figure preparation guidelines for prospective authors of scientific manuscripts.\nEvaluate the guidelines relative to the best practices we’ve discussed this semester in class."
   },
   {
-    "objectID": "exercises/ex04-sci-of-data-viz.html#assignment",
-    "href": "exercises/ex04-sci-of-data-viz.html#assignment",
-    "title": "Exercise 04",
+    "objectID": "exercises/ex05-figure-prep-guidelines.html#assignment",
+    "href": "exercises/ex05-figure-prep-guidelines.html#assignment",
+    "title": "Exercise 05",
     "section": "Assignment",
-    "text": "Assignment"
+    "text": "Assignment\n\nBackground\nSome scientific journals provide advice to prospective authors about how to prepare figures for manuscripts submitted to the journals. Here are two examples:\n\nNature\nAmerican Psychological Association (APA)\n\n\n\nTasks\n\nFind and read critically the guidelines for publishing figures in a journal of your choosing.\nCompare the guidelines to the best practices that we have discussed this semester in class (@ Franconeri, Padilla, Shah, Zacks, & Hullman, 2021; Knaflic, 2015; Tufte, 2001).\nDo the guidelines reflect current knowledge about data visualization practices. If not how could the guidelines be amended to provide better guidance to authors in these journals?"
   },
   {
-    "objectID": "exercises/ex04-sci-of-data-viz.html#submit",
-    "href": "exercises/ex04-sci-of-data-viz.html#submit",
-    "title": "Exercise 04",
+    "objectID": "exercises/ex05-figure-prep-guidelines.html#submit",
+    "href": "exercises/ex05-figure-prep-guidelines.html#submit",
+    "title": "Exercise 05",
     "section": "Submit",
-    "text": "Submit"
+    "text": "Submit\nA 3-5 pp (750-1,300 word) write-up of your findings."
   },
   {
-    "objectID": "exercises/ex02-data-viz-outside-psych.html",
-    "href": "exercises/ex02-data-viz-outside-psych.html",
-    "title": "Exercise 02",
+    "objectID": "exercises/ex03-making-data.html",
+    "href": "exercises/ex03-making-data.html",
+    "title": "Exercise 03",
     "section": "",
-    "text": "In-class work on Tuesday, January 21-23.\nDue on Thursday, January 30.\nCanvas dropbox."
+    "text": "In-class work on Tuesday, January 28 and Thursday, January 30.\nSubmit write-up for credit due by Thursday, Feburary 6."
   },
   {
-    "objectID": "exercises/ex02-data-viz-outside-psych.html#dates",
-    "href": "exercises/ex02-data-viz-outside-psych.html#dates",
-    "title": "Exercise 02",
+    "objectID": "exercises/ex03-making-data.html#dates",
+    "href": "exercises/ex03-making-data.html#dates",
+    "title": "Exercise 03",
     "section": "",
-    "text": "In-class work on Tuesday, January 21-23.\nDue on Thursday, January 30.\nCanvas dropbox."
+    "text": "In-class work on Tuesday, January 28 and Thursday, January 30.\nSubmit write-up for credit due by Thursday, Feburary 6."
   },
   {
-    "objectID": "exercises/ex02-data-viz-outside-psych.html#goals",
-    "href": "exercises/ex02-data-viz-outside-psych.html#goals",
-    "title": "Exercise 02",
+    "objectID": "exercises/ex03-making-data.html#goals",
+    "href": "exercises/ex03-making-data.html#goals",
+    "title": "Exercise 03",
     "section": "Goals",
-    "text": "Goals\nIn this exercise, you will work alone or a with a team of no more than two other classmates to find and describe data visualizations from business (for profit or not-for-profit), government, the arts, sports, or journalism. You will add links to the visualizations to a common database that we will use for discussion about the types of visualizations and types of data that are commonly used fields outside of psychological science."
+    "text": "Goals\nIn this exercise, you will work alone or with a team of classmates to create a survey using the Google Forms tool. The survey you create will be used later in the course for data visualizations that you will also create."
   },
   {
-    "objectID": "exercises/ex02-data-viz-outside-psych.html#assignment",
-    "href": "exercises/ex02-data-viz-outside-psych.html#assignment",
-    "title": "Exercise 02",
+    "objectID": "exercises/ex03-making-data.html#assignment",
+    "href": "exercises/ex03-making-data.html#assignment",
+    "title": "Exercise 03",
     "section": "Assignment",
-    "text": "Assignment\n\nChoose at least three categories (business, government, the arts, sports, or journalism) to focus on.\nFor each category, find at least one or two visualizations of data.\n\nTry to pick visualizations that are interesting to you in some way.\n\nAdd information about the visualizations to a Google Sheet that all of us will share:\n\nhttps://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0\nSpecifically, enter your team identifier in the identifier field, the source in source_type, and the URL in the url field. Please say briefly why you chose this particular visualization. If you have any comments to add, put those in the comments field.\n\nIf you want to submit a write-up for evaluation, please select three (3) visualizations and evaluate them based on the following questions:\n\n\nWhat data are presented?\nWhat graphic elements of the visualization map to which aspects of the data?\nWhat prior knowledge does someone viewing these data need to have in order to understand the visualizations clearly?\nWhy is the source presenting these data?\nWhat story or message is the source trying to communicate and to what audience?\nHow effective is the message?\nAre the figures statistical visualizations or information visualizations (Infovis) as described by Gelman & Unwin (2013)?"
+    "text": "Assignment\n\nSign-in to the Google drive account associated with your Penn State Access ID. This will make it somewhat easier for us to share forms.\nOpen Google Forms by visiting https://forms.google.com.\nCreate a new form by clicking on the ‘Blank Form’ button.\n\n{fig-google-form-blank-form} 3. Give your form a useful title, for example, ‘PSYCH-490.003-2025-spring-team-A’ or ‘PSYCH-490.003-2025-spring-rog1’.\n\n\n\n\n\n\nImportant\n\n\n\nYou can be assigned a team name/letter if you choose.\nIf you\n\n\n\nCustomize the theme if you wish by clicking on the palette icon.\nCreate a survey with 8 questions. Your questions should be ones that your classmates can answer without embarrassment or loss of privacy and which meet the following criteria:\n\n\nGenerate two questions with nominal (un-ordered) answers (e.g., favorite color).\nGenerate two questions with ordinal (e.g., 1-5) answers analogous to a Likert scale.\nGenerate two questions with continuous answers (e.g., age and shoe size). It doesn’t matter if these are interval or ratio scaled.\nGenerate one question with a date or time as an answer (e.g., a favorite relative’s birthday).\nInclude one field for comments.\n\n\nWhen you are happy with a draft of your survey, conduct a quality assurance (QA) review of it by having your team or someone else take the survey. The easiest way to do this is to use the ‘Send’ button to send your survey to you collaborator(s).\n\n\n\n\nGoogle Forms ‘Send’\n\n\nMake sure to have your QA testers answer the Comments question with the same response, e.g., ‘test-response’. This will make it easier later to filter-out the test responses.\n\nMake sure that all of your collaborators have edit privileges on the form. Click on the ‘more’ button with three dots and add collaborators.\n\n\n\n\nAdd collaborators"
   },
   {
-    "objectID": "exercises/ex02-data-viz-outside-psych.html#submit",
-    "href": "exercises/ex02-data-viz-outside-psych.html#submit",
-    "title": "Exercise 02",
+    "objectID": "exercises/ex03-making-data.html#submit",
+    "href": "exercises/ex03-making-data.html#submit",
+    "title": "Exercise 03",
     "section": "Submit",
-    "text": "Submit\n\nEveryone\n\nYour data to the shared Google Spreadsheet.\n\nStudents who want this submission to count for one of their four (4) required exercises\n\nA 2-3 page write-up in APA format where you describe three (3) figures your group found, answering the questions in 4. above.\n\n\n\n\n\n\n\n\nAPA template\n\n\n\nThis template document may be helpful."
+    "text": "Submit\nWhether or not you are submitting a write-up for Exercise 03, please dd Dr. Gilmore (rog1@psu.edu) and Sara He (cfh5558@psu.edu) as collaborators on the survey so that we can all benefit from your good work.\nPlease also add the URL to your survey to this Google Sheet:\nhttps://docs.google.com/spreadsheets/d/1Z-TJQLOQ-yFBs0UimtCtv4pWIqcfq7jhAUA1QjVX89w/edit?usp=sharing\nIf you are submitting a short 2-4 page write-up via Canvas, please provide answers to the following questions:\n\nWhat is a defining feature of data items that are nominal?\n\nWhat assumptions might analysts make about ordinal data when it comes time to visualize or analyze the results?\n\nWhat assumptions must a researcher make when conducting survey research of this sort?\n\nFocusing on those available within Google Forms, what user interface(s) work best for different types of data?\n\nIf you’ve used Qualtics previously to generate surveys, briefly compare Qualtrics with Google Forms."
+  },
+  {
+    "objectID": "exercises/ex01-figs-in-psych-sci.html",
+    "href": "exercises/ex01-figs-in-psych-sci.html",
+    "title": "Exercise 01",
+    "section": "",
+    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nWrite-up for credit due on Thursday, January 23.\nCanvas dropbox.\n\n\n\n\n\n\nPost-submission feedback\n\n\n\nWe have prepared a page with general feedback that should be helpful for future assignments. The feedback can be found here."
+  },
+  {
+    "objectID": "exercises/ex01-figs-in-psych-sci.html#dates",
+    "href": "exercises/ex01-figs-in-psych-sci.html#dates",
+    "title": "Exercise 01",
+    "section": "",
+    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nWrite-up for credit due on Thursday, January 23.\nCanvas dropbox.\n\n\n\n\n\n\nPost-submission feedback\n\n\n\nWe have prepared a page with general feedback that should be helpful for future assignments. The feedback can be found here."
+  },
+  {
+    "objectID": "exercises/ex01-figs-in-psych-sci.html#goals",
+    "href": "exercises/ex01-figs-in-psych-sci.html#goals",
+    "title": "Exercise 01",
+    "section": "Goals",
+    "text": "Goals\nIn this exercise, you may choose to work alone or with a team of classmates to find data visualizations from the societies of three (3) professional associations and three (3) journals. You will add links to the visualizations to a common database that we will use for discussion about the types of visualizations and types of data that are commonly used in psychological science."
+  },
+  {
+    "objectID": "exercises/ex01-figs-in-psych-sci.html#assignment",
+    "href": "exercises/ex01-figs-in-psych-sci.html#assignment",
+    "title": "Exercise 01",
+    "section": "Assignment",
+    "text": "Assignment\n\nVisit the websites of at least three (3) professional associations.\n\nThe following are examples. Feel free to choose a different professional society.\n\nAmerican Psychological Association (APA)\nAssociation for Psychological Science (APS)\nVision Sciences Society\nSociety for Personality and Social Psychology\nSociety for Research in Child Development\nSociety for Research on Adolescence\nCognitive Neuroscience Society\nSociety for Neuroscience\nPsychonomics Society\nSociety for Industrial and Organizational Psychology\n\n\nFor each society website, find at least two visualizations of data.\n\nTry to pick visualizations that are interesting to you in some way.\n\nAdd information about the visualizations to a Google Sheet that all of us will share:\n\nhttps://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6tRzpfdgXBYyPooCPo/edit?usp=sharing\nSpecifically, enter your team identifier in the identifier field, the source in source_type, and the URL in the url field. Please say briefly why you chose this particular visualization. If you have any comments to add, put those in the comments field.\nDuring class on 2025-01-16, Gilmore added a url_to_figure field. If you want to add that, right click on the image and see if an option to ‘open image in new tab’ or ‘copy image address’ is available.\n\n\n\n\n\n\nImportant\n\n\n\nYou do not have to use your PSU ID as your identifier.\nGilmore did so just to provide some sample data.\n\n\n\nNext, visit the websites of at least three (3) journals and do the same thing–pick at least two (2) visualizations from each of the journals.\n\nNote that some societies publish one or more journals, so you might find a journal that interests you from the society website.\nHere are some additional journal resources that you might find interesting to explore:\n\nScience Magazine\nNature\nNature Human Behavior\nTrends in Cognitive Sciences\nAnnual Reviews\n\nFigures with “psychology” as search term\nFigures with “neuroscience” as search term\nKnowable Magazine has a graphics library\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThe goal here is to gather via ‘crowd-sourcing’ a diverse set of visualizations. So, feel free to mix it up."
+  },
+  {
+    "objectID": "exercises/ex01-figs-in-psych-sci.html#submit",
+    "href": "exercises/ex01-figs-in-psych-sci.html#submit",
+    "title": "Exercise 01",
+    "section": "Submit",
+    "text": "Submit\n\nEveryone\n\nYour data to the shared Google Spreadsheet.\n\nStudents who want this submission to count for one of their four (4) required exercises\n\nA 2-3 page write-up in APA format where you describe three (3) figures your group found, focusing on these questions:\n\nWhat graphic elements of the visualization map to which aspects of the data?\nWhat prior knowledge does someone viewing these data need to have in order to understand the visualizations clearly?\nWhy is the source presenting these data?\nWhat story or message is the source trying to communicate and to what audience?\nHow effective is the message?\n\nStudents who work in teams should submit one (1) write-up with all of the authors’ names. One grade will be assigned.\nNote: Your references section need only include the citation to the source paper or website. You should identify in your text which figure you have chosen to analyze.\n\n\n\n\n\n\n\n\nAPA template\n\n\n\nThis template document may be helpful."
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#announcements",
@@ -194,6 +201,55 @@
     "title": "Figure types",
     "section": "Last time…",
     "text": "Last time…\nMaking data"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#data-types",
+    "href": "slides/wk03-2025-01-30-figure-types.html#data-types",
+    "title": "Figure types",
+    "section": "Data types",
+    "text": "Data types\n\nExtending Stevens (1946), see Wikipedia contributors (2024)\n\n\n\nNominal\n\nBinary (0,1)\nCategorical\n\nOrdinal\n\ne.g., 1st, 2nd, 3rd, …"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#data-types-continued",
+    "href": "slides/wk03-2025-01-30-figure-types.html#data-types-continued",
+    "title": "Figure types",
+    "section": "Data types (continued)",
+    "text": "Data types (continued)\n\n\nCounts\n\ne.g., 1, 2, 3, 4, …\n\nContinuous/Real-valued\n\nInterval\nRatio"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types",
+    "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types",
+    "title": "Figure types",
+    "section": "What data type(s)?",
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-1"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-1",
+    "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-1",
+    "title": "Figure types",
+    "section": "What data type(s)?",
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-3"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-2",
+    "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-2",
+    "title": "Figure types",
+    "section": "What data type(s)?",
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-26"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-3",
+    "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-3",
+    "title": "Figure types",
+    "section": "What data type(s)?",
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-15"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-4",
+    "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-4",
+    "title": "Figure types",
+    "section": "What data type(s)?",
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#today",
@@ -217,18 +273,67 @@
     "text": "Considerations\n\nWhat figure type(s) are appropriate for the data type\nWhat figure type(s) are most informative/least misleading"
   },
   {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-did-we-find",
-    "href": "slides/wk03-2025-01-30-figure-types.html#what-did-we-find",
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#nominal-data",
+    "href": "slides/wk03-2025-01-30-figure-types.html#nominal-data",
     "title": "Figure types",
-    "section": "What did we find?",
-    "text": "What did we find?\n\nFigures in fields outside of psychology\nFigures in psychology"
+    "section": "Nominal data",
+    "text": "Nominal data\n\nBar chart\nPie chart\nRing/donut chart\nMosaic chart (2 variables)"
   },
   {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-does-google-forms-suggest",
-    "href": "slides/wk03-2025-01-30-figure-types.html#what-does-google-forms-suggest",
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#ordinal-data",
+    "href": "slides/wk03-2025-01-30-figure-types.html#ordinal-data",
     "title": "Figure types",
-    "section": "What does Google Forms suggest?",
-    "text": "What does Google Forms suggest?"
+    "section": "Ordinal data",
+    "text": "Ordinal data\n\nAll of the nominal types…\nSorted"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#bar-chart",
+    "href": "slides/wk03-2025-01-30-figure-types.html#bar-chart",
+    "title": "Figure types",
+    "section": "Bar chart",
+    "text": "Bar chart\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#visualizing"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#barlollipop-chart-mappings",
+    "href": "slides/wk03-2025-01-30-figure-types.html#barlollipop-chart-mappings",
+    "title": "Figure types",
+    "section": "Bar/lollipop chart mappings",
+    "text": "Bar/lollipop chart mappings\n\n\n\nNumber of observations in category \\(\\rightarrow\\) height/length\nColor-category \\(\\rightarrow\\) fill color\nSchool \\(\\rightarrow\\) position on horizontal axis"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#pie-charts",
+    "href": "slides/wk03-2025-01-30-figure-types.html#pie-charts",
+    "title": "Figure types",
+    "section": "Pie charts",
+    "text": "Pie charts\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#ring-charts",
+    "href": "slides/wk03-2025-01-30-figure-types.html#ring-charts",
+    "title": "Figure types",
+    "section": "Ring charts",
+    "text": "Ring charts\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#mosaic-chart",
+    "href": "slides/wk03-2025-01-30-figure-types.html#mosaic-chart",
+    "title": "Figure types",
+    "section": "Mosaic chart",
+    "text": "Mosaic chart\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorial-making-data.html#mosaic-plot"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#pie-ring-mosaic-chart-mappings",
+    "href": "slides/wk03-2025-01-30-figure-types.html#pie-ring-mosaic-chart-mappings",
+    "title": "Figure types",
+    "section": "Pie, ring, mosaic chart mappings",
+    "text": "Pie, ring, mosaic chart mappings\n\nHeights & widths \\(\\rightarrow\\) counts (or proportions)\nAreas \\(\\rightarrow\\) counts (or proportions)"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#nominal",
+    "href": "slides/wk03-2025-01-30-figure-types.html#nominal",
+    "title": "Figure types",
+    "section": "Nominal",
+    "text": "Nominal\n\nCounts or proportions"
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#references",
@@ -625,86 +730,93 @@
   {
     "objectID": "tutorials/tutorial-r-ggplot.html",
     "href": "tutorials/tutorial-r-ggplot.html",
-    "title": "",
+    "title": "Plotting with ggplot2",
     "section": "",
-    "text": "CodeShow All CodeHide All CodeView Source"
+    "text": "This section describes some ways to generate plots using the R package ggplot2."
   },
   {
     "objectID": "tutorials/tutorial-r-ggplot.html#about",
     "href": "tutorials/tutorial-r-ggplot.html#about",
-    "title": "",
-    "section": "About",
-    "text": "About\nThis section describes some ways to generate plots using the R package ggplot2."
+    "title": "Plotting with ggplot2",
+    "section": "",
+    "text": "This section describes some ways to generate plots using the R package ggplot2."
   },
   {
     "objectID": "tutorials/tutorial-r-ggplot.html#why-r",
     "href": "tutorials/tutorial-r-ggplot.html#why-r",
-    "title": "",
+    "title": "Plotting with ggplot2",
     "section": "Why R",
     "text": "Why R\nR is a programming language specialized for data analysis and visualization."
   },
   {
     "objectID": "tutorials/tutorial-r-ggplot.html#background",
     "href": "tutorials/tutorial-r-ggplot.html#background",
-    "title": "",
+    "title": "Plotting with ggplot2",
     "section": "Background",
     "text": "Background\n‘ggplot2’ is a package1 for making 2D plots in R. It implements a special “language” for making plots based on the grammar of graphics suggested by Cleveland CITE. That’s where the ‘gg’ in the name comes from.\nIn ggplot, we create a base plot, then add layers to it using a plus sign + operator."
   },
   {
     "objectID": "tutorials/tutorial-r-ggplot.html#set-up",
     "href": "tutorials/tutorial-r-ggplot.html#set-up",
-    "title": "",
+    "title": "Plotting with ggplot2",
     "section": "Set-up",
     "text": "Set-up\nTo check whether {ggplot2} is already installed, run the following chunk:\n\n\nCode\n# The require() function returns TRUE if ggplot2 is installed and FALSE if it is not. The exclamation point symbol ('!') turns FALSE into TRUE and TRUE into FALSE. So, `!require(ggplot2)` will be TRUE if require(ggplot2) is FALSE. When this occurs, the `install.packages(ggplot)` commands runs and installs ggplot2.\nif (!require(ggplot2)) {\n  install.packages(ggplot2)\n}\n\n\nLoading required package: ggplot2"
   },
   {
     "objectID": "tutorials/tutorial-r-ggplot.html#plotting-one-variable",
     "href": "tutorials/tutorial-r-ggplot.html#plotting-one-variable",
-    "title": "",
+    "title": "Plotting with ggplot2",
     "section": "Plotting one variable",
     "text": "Plotting one variable\n\nDiscrete/nominal\nFirst, we make some data.\n\n\nCode\ndata_random_discrete &lt;- data.frame(category = c('ab', 'xy', 'mn', \n                                                'qp', 'ea', 'f2',\n                                                'gg', 'h*'),\n                                   value = c(4.8, 5.5, 3.5, \n                                           4.6, 6.5, 6.6, \n                                           2.6, 3.0))\n\n\n\nBarplot\nIf the variable we want to plot contains the values we care about plotting, then we use geom_col. A column plot is just a type of barplot.\n\n\nCode\ndata_random_discrete |&gt;\n  ggplot() +\n  aes(x = category, y = value) +\n  geom_col()\n\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\nHere, we have a categorical variable imaginatively named category and a continuous variable named value.\n\n\n\n\n\n\nYour turn\n\n\n\n\nWhat would we need to do to make the category variable ordinal?\nWhy do we think that value is continuous?\n\n\n\n\n\n\nContinuous\nFirst, let’s generate some random data.\n\n\nCode\n# Set a seed for our 'random' number generator\nset.seed(19680801)\nn_values &lt;- 100000\n\ndata_random_norm &lt;- data.frame(val = rnorm(n = n_values, mean = 0, sd = 1))\n\n\n\nHistogram\n\n\nCode\nhist_1 &lt;- data_random_norm |&gt;\n  ggplot() +\n  aes(x = val) +\n  geom_histogram()\n\n\nWhat the code is saying is this: Send data_random_norm to ggplot; make the plot and its various layers; then give the plot a name (hist_1) so we can use it later. Like now, for instance:\n\n\nCode\nhist_1\n\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 2: A simple histogram\n\n\n\n\n\nTo replicate the side-by-side histograms in ?@fig-dual-histograms-matplotlib, we do the following:\nMake two random data sets that differ slightly.\n\n\nCode\nx1 &lt;- rnorm(n = n_values, mean = 0, sd = 1)\ndata_random_norm_2 &lt;- data.frame(side = c(rep('l', n_values), rep('r', n_values)),\n                            val = c(x1,\n                                    0.4 * x1 + 5))\n\n\nThen plot the data.\n\n\nCode\nhist_2 &lt;- data_random_norm_2 |&gt;\n  ggplot() +\n  aes(x = val) +\n  geom_histogram() +\n  facet_wrap(vars(side), ncol = 2)\n\nhist_2\n\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 3: Side-by-side histograms of two random (normal) sets of data.\n\n\n\n\n\n\n\nViolin\n\n\nCode\nviolin_2 &lt;- data_random_norm_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_violin()\n\nviolin_2\n\n\n\n\n\n\n\n\nFigure 4: Side-by-side violin plots of two random (normal) sets of data.\n\n\n\n\n\n\n\nBoxplot\n\n\nCode\nboxplot_2 &lt;- data_random_norm_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_boxplot()\n\nboxplot_2\n\n\n\n\n\n\n\n\nFigure 5: Side-by-side violin plots of two random (normal) sets of data."
   },
   {
     "objectID": "tutorials/tutorial-r-ggplot.html#comparing-distributions",
     "href": "tutorials/tutorial-r-ggplot.html#comparing-distributions",
-    "title": "",
+    "title": "Plotting with ggplot2",
     "section": "Comparing distributions",
     "text": "Comparing distributions\nLet’s see how these plots can help us see when the distributions differ by more than just magnitude or standard deviation.\n\n\nCode\n# Normal \"bell\"-shaped like before\nx_norm &lt;- rnorm(n = n_values, mean = 0, sd = 1)\n\n# Uniform-shaped\nx_unif &lt;- runif(n = n_values, min = -2.75, max = 2.75)\n\ndata_random_2 &lt;- data.frame(side = c(rep('norm', n_values), rep('unif', n_values)),\n                            val = c(x_norm, x_unif))\n\n\n\n\nCode\nhist_2_diff &lt;- data_random_2 |&gt;\n  ggplot() +\n  aes(x = val) +\n  geom_histogram() +\n  facet_wrap(vars(side), ncol = 2)\n\nhist_2_diff\n\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 6: Side-by-side histograms of two random sets of data with different distributions.\n\n\n\n\n\n\n\nCode\nviolin_2_diff &lt;- data_random_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_violin()\n\nviolin_2_diff\n\n\n\n\n\n\n\n\nFigure 7: Side-by-side violin plots of two random sets of data with different distributions.\n\n\n\n\n\n\n\nCode\nboxplot_2_diff &lt;- data_random_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_boxplot()\n\nboxplot_2_diff\n\n\n\n\n\n\n\n\nFigure 8: Side-by-side box plots of two random sets of data with different distributions."
   },
   {
     "objectID": "tutorials/tutorial-r-ggplot.html#plotting-two-variables",
     "href": "tutorials/tutorial-r-ggplot.html#plotting-two-variables",
-    "title": "",
+    "title": "Plotting with ggplot2",
     "section": "Plotting two variables",
     "text": "Plotting two variables\n\n\n\n\n\n\nWarning\n\n\n\nThis page is under construction. Many components are missing.\n\n\n\nScatterplot\nA scatterplot is a great way to compare two continuous variables.\n\n\nCode\nscatter_data &lt;- tibble::tibble(norm = x_norm,\n                               unif = x_unif)\n\nscatter_data |&gt;\n  ggplot() +\n  aes(x = x_norm, y = x_unif) +\n  geom_point()"
   },
   {
     "objectID": "tutorials/tutorial-r-ggplot.html#footnotes",
     "href": "tutorials/tutorial-r-ggplot.html#footnotes",
-    "title": "",
+    "title": "Plotting with ggplot2",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nA collection of special commands for doing specific things.↩︎"
   },
   {
     "objectID": "tutorials/tutorial-making-data.html",
     "href": "tutorials/tutorial-making-data.html",
-    "title": "",
+    "title": "Making and visualizing data",
     "section": "",
-    "text": "CodeShow All CodeHide All CodeView Source"
+    "text": "This tutorial shows how we can construct data of different types.\nThe material serves as a companion to the classes on making data, figure types, and figure components.\n\n\nCode\n# Load required package dependencies \"quietly\"\nsuppressPackageStartupMessages(library(ggplot2))\nsuppressPackageStartupMessages(library(ggmosaic))\nsuppressPackageStartupMessages(library(dplyr))"
   },
   {
     "objectID": "tutorials/tutorial-making-data.html#about",
     "href": "tutorials/tutorial-making-data.html#about",
-    "title": "",
-    "section": "About",
-    "text": "About\nThis tutorial shows how we can construct data of different types.\nThe material serves as a companion to the classes on making data, figure types, and figure components.\n\n\nCode\n# Load required package dependencies \"quietly\"\nsuppressPackageStartupMessages(library(ggplot2))\nsuppressPackageStartupMessages(library(ggmosaic))\nsuppressPackageStartupMessages(library(dplyr))"
+    "title": "Making and visualizing data",
+    "section": "",
+    "text": "This tutorial shows how we can construct data of different types.\nThe material serves as a companion to the classes on making data, figure types, and figure components.\n\n\nCode\n# Load required package dependencies \"quietly\"\nsuppressPackageStartupMessages(library(ggplot2))\nsuppressPackageStartupMessages(library(ggmosaic))\nsuppressPackageStartupMessages(library(dplyr))"
   },
   {
     "objectID": "tutorials/tutorial-making-data.html#nominal-data",
     "href": "tutorials/tutorial-making-data.html#nominal-data",
-    "title": "",
+    "title": "Making and visualizing data",
     "section": "Nominal data",
-    "text": "Nominal data\nLet’s focus on nominal or categorical data, specifically the favorite colors of some imaginary set of people.\n\n\nCode\n# Make an array of color names\ncolors &lt;- c(\"red\", \"orange\", \"yellow\", \"green\", \"cyan\", \"blue\", \"violet\", \"white\", \"black\", \"gray\")\n\n\nThere are n=10 colors in this set.\n\n\n\n\n\n\nYour turn\n\n\n\nWhy are these data nominal or nominally scaled? Or rather, why aren’t they ordinal, interval, or ratio?\n\n\n\nGenerating\nFor demonstration purposes, we want to take some number of random samples of these colors. Let’s pick n=200 and sample with replacement (replace=TRUE in the code below), meaning that we could have any number of colors in our sample of 200 imaginary people.\n\n\nCode\n# Use `sample()` to pick a random sample of these *with* replacement so that \n# the numbers/color differ.\nour_color_sample &lt;- sample(colors, size=200, replace=TRUE)\nour_color_sample\n\n\n  [1] \"orange\" \"gray\"   \"black\"  \"black\"  \"green\"  \"violet\" \"gray\"   \"violet\"\n  [9] \"white\"  \"black\"  \"white\"  \"gray\"   \"orange\" \"yellow\" \"gray\"   \"yellow\"\n [17] \"black\"  \"violet\" \"white\"  \"green\"  \"blue\"   \"white\"  \"orange\" \"violet\"\n [25] \"red\"    \"gray\"   \"orange\" \"violet\" \"orange\" \"white\"  \"cyan\"   \"gray\"  \n [33] \"white\"  \"green\"  \"orange\" \"red\"    \"orange\" \"violet\" \"cyan\"   \"green\" \n [41] \"blue\"   \"white\"  \"gray\"   \"orange\" \"blue\"   \"green\"  \"white\"  \"blue\"  \n [49] \"white\"  \"white\"  \"red\"    \"cyan\"   \"blue\"   \"blue\"   \"orange\" \"blue\"  \n [57] \"red\"    \"cyan\"   \"yellow\" \"red\"    \"violet\" \"violet\" \"violet\" \"yellow\"\n [65] \"gray\"   \"cyan\"   \"green\"  \"cyan\"   \"blue\"   \"blue\"   \"white\"  \"white\" \n [73] \"green\"  \"red\"    \"yellow\" \"yellow\" \"blue\"   \"white\"  \"cyan\"   \"cyan\"  \n [81] \"red\"    \"cyan\"   \"black\"  \"blue\"   \"white\"  \"red\"    \"blue\"   \"black\" \n [89] \"cyan\"   \"cyan\"   \"blue\"   \"black\"  \"green\"  \"yellow\" \"green\"  \"red\"   \n [97] \"orange\" \"orange\" \"violet\" \"blue\"   \"white\"  \"red\"    \"yellow\" \"orange\"\n[105] \"violet\" \"yellow\" \"blue\"   \"yellow\" \"black\"  \"red\"    \"blue\"   \"red\"   \n[113] \"orange\" \"cyan\"   \"cyan\"   \"white\"  \"blue\"   \"violet\" \"orange\" \"orange\"\n[121] \"blue\"   \"red\"    \"black\"  \"violet\" \"yellow\" \"gray\"   \"green\"  \"white\" \n[129] \"blue\"   \"gray\"   \"violet\" \"yellow\" \"gray\"   \"white\"  \"orange\" \"violet\"\n[137] \"red\"    \"blue\"   \"blue\"   \"orange\" \"green\"  \"black\"  \"green\"  \"cyan\"  \n[145] \"green\"  \"green\"  \"gray\"   \"orange\" \"black\"  \"orange\" \"gray\"   \"black\" \n[153] \"blue\"   \"cyan\"   \"gray\"   \"violet\" \"white\"  \"black\"  \"orange\" \"white\" \n[161] \"red\"    \"blue\"   \"green\"  \"gray\"   \"green\"  \"white\"  \"orange\" \"gray\"  \n[169] \"yellow\" \"cyan\"   \"cyan\"   \"yellow\" \"blue\"   \"yellow\" \"green\"  \"red\"   \n[177] \"gray\"   \"black\"  \"violet\" \"white\"  \"cyan\"   \"black\"  \"blue\"   \"blue\"  \n[185] \"gray\"   \"orange\" \"blue\"   \"gray\"   \"red\"    \"black\"  \"yellow\" \"violet\"\n[193] \"blue\"   \"white\"  \"red\"    \"orange\" \"violet\" \"green\"  \"blue\"   \"orange\"\n\n\nOn its own, that’s not especially easy to visualize. What if we sorted it?\n\n\nCode\nsort(our_color_sample)\n\n\n  [1] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n  [9] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n [17] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [25] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [33] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [41] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [49] \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [57] \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"gray\"  \n [65] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [73] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [81] \"gray\"   \"gray\"   \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [89] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [97] \"green\"  \"green\"  \"green\"  \"green\"  \"orange\" \"orange\" \"orange\" \"orange\"\n[105] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[113] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[121] \"orange\" \"orange\" \"orange\" \"orange\" \"red\"    \"red\"    \"red\"    \"red\"   \n[129] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[137] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"violet\" \"violet\"\n[145] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[153] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[161] \"violet\" \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[169] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[177] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[185] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n[193] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n\n\nStill not all that helpful.\n\n\nSummarizing\nWhat can we say to summarize categorical data?\nWe can report the number of total responses.\n\n\nCode\nlength(our_color_sample)\n\n\n[1] 200\n\n\nWe can report the number of unique categories.\n\n\nCode\nlength(unique(our_color_sample))\n\n\n[1] 10\n\n\nWe can report the number of responses per category.\n\n\nCode\ncolors_df &lt;- data.frame(favorite_color = our_color_sample)\n\nxtabs(formula = ~favorite_color, data = colors_df)\n\n\nfavorite_color\n black   blue   cyan   gray  green orange    red violet  white yellow \n    16     29     18     19     18     24     18     19     23     16 \n\n\n\n\nVisualizing\nSingle nominal variables don’t offer us many options for visualization. A bar plot showing the number of observations in each category seems to be it.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color) +\n  geom_bar(stat = \"count\")\n\n\n\n\n\n\n\n\nFigure 1: A black and white barplot of the random favorite color data\n\n\n\n\n\nWe can also add colors to the bars.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  geom_bar() +\n  scale_discrete_manual(aesthetics = c(\"color\", \"fill\"),\n                        values = sort(colors))\n\n\n\n\n\n\n\n\nFigure 2: A colorful barplot of the random favorite color data\n\n\n\n\n\nWe can flip the axis just for fun. Which is more readable?\n\nHorizontal barplot\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar() +\n  coord_flip()\n\n\n\n\n\n\n\n\nFigure 3: An (ugly) horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nLollipop chart\n\n\nCode\ncolors_xtab &lt;- data.frame(table(colors_df))\nnames(colors_xtab) &lt;- c(\"favorite_color\", \"count\")\n\ncolors_xtab |&gt;\n  ggplot() +\n  geom_point(aes(\n    x = favorite_color,\n    y = count,\n    color = favorite_color,\n    fill = favorite_color\n  )) +\n  geom_segment(aes(\n    x = favorite_color,\n    xend = favorite_color,\n    y = 0,\n    yend = count,\n    color = favorite_color\n  )) +\n  scale_discrete_manual(aesthetics = c(\"color\", \"fill\"), values = sort(colors))\n\n\n\n\n\n\n\n\nFigure 4: A lollipop plot of the random favorite color data\n\n\n\n\n\n\n\nStacked barplot\nWe can also stack them, but this makes more sense with another nominal variable.\n\n\nCode\nschool &lt;- sample(c(\"psu\", \"osu\", \"mich\", \"usc\"), size=200, replace=TRUE)\ncolors_school_df &lt;- colors_df\ncolors_school_df$school &lt;- school\n\ncolors_school_xtab &lt;- data.frame(table(colors_school_df))\nnames(colors_school_xtab) &lt;- c(\"favorite_color\", \"school\", \"count\")\n\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = school, y=count, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 5: A horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nStacked barplot alternative\n\n\nCode\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y=count, fill = school) +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 6: Another stacked barplot of the random favorite color data.\n\n\n\n\n\n\n\nDodged barplot\nUsing the ‘dodge’ parameter is another way to show data with two categorical variables.\n\n\nCode\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = school, y=count, fill = favorite_color) +\n  # aes(x = favorite_color, y = school, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"dodge\")\n\n\n\n\n\n\n\n\nFigure 7: A horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nPie chart\n\n\nCode\ncolors_xtab &lt;- data.frame(table(colors_df))\nnames(colors_xtab) &lt;- c(\"favorite_color\", \"count\")\n\ncolors_xtab |&gt;\n  ggplot(aes(x = \"\", y = count, fill = favorite_color)) +\n  geom_bar(stat = \"identity\", width = 1) +\n  coord_polar(\"y\", start = 0) +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 8: A piechart of the random favorite color data\n\n\n\n\n\n\n\nRing chart\n\n\nCode\n# https://r-graph-gallery.com/128-ring-or-donut-plot.html\n\n# Compute percentages\ncolors_xtab$fraction = colors_xtab$count / sum(colors_xtab$count)\n\n# Compute the cumulative percentages (top of each rectangle)\ncolors_xtab$ymax = cumsum(colors_xtab$fraction)\n\n# Compute the bottom of each rectangle\ncolors_xtab$ymin = c(0, head(colors_xtab$ymax, n = -1))\n\n# Make the plot\ncolors_xtab |&gt;\n  ggplot(aes(\n    ymax = ymax,\n    ymin = ymin,\n    xmax = 4,\n    xmin = 3,\n    fill = favorite_color\n  )) +\n  geom_rect() +\n  coord_polar(theta = \"y\") + # Try to remove that to understand how the chart is built initially\n  xlim(c(2, 4)) + # Try to remove that to see how to make a pie chart\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 9: A ring/donut chart of the random favorite color data\n\n\n\n\n\n\n\nMosaic plot\n\n\nCode\nggplot(data = colors_school_df) +\n  geom_mosaic(aes(x = product(favorite_color, school), fill = favorite_color)) +   \n  labs(y=\"Favorite\", x=\"School\", title = \"Favorite colors by school\") +\n  scale_fill_identity()\n\n\nWarning: The `scale_name` argument of `continuous_scale()` is deprecated as of ggplot2\n3.5.0.\n\n\nWarning: The `trans` argument of `continuous_scale()` is deprecated as of ggplot2 3.5.0.\nℹ Please use the `transform` argument instead.\n\n\nWarning: `unite_()` was deprecated in tidyr 1.2.0.\nℹ Please use `unite()` instead.\nℹ The deprecated feature was likely used in the ggmosaic package.\n  Please report the issue at &lt;https://github.com/haleyjeppson/ggmosaic&gt;.\n\n\n\n\n\n\n\n\nFigure 10: A mosaic chart of the random favorite color by school data\n\n\n\n\n\n\n\n\nAnalysis\nIs one of these colors a particular favorite? Maybe. The observed data show some differences. But how can we know they aren’t just due to random chance.\n\n\n\n\n\n\nStop the presses!\n\n\n\nThese particular data are entirely random. We made them up!\nKeep that in mind while we work through what we would do to answer the question if these were not fake, random data.\n\n\nTo answer that question, we’d have to compare our results with some other pattern, a pattern where there is no favorite. In other words, we want a pattern where the counts are all equal. So, we’re back to summarizing.\nActually, data analysis in the real world usually involves a back-and-forth alternation between summarizing/analyzing and visualizing.\n\n\n\n\n\n\nflowchart LR\n  A[Summarize] --&gt; B[Visualize]\n  B ---&gt; A\n\n\n\n\nFigure 11: Illustration of the back and forth process between summarizing and visualizing that characterizes real-life data analysis.\n\n\n\n\n\n\n\nSummarizing II\nLet’s make data that have an identical pattern across all colors.\nThere are several ways to do this, but here is one that works.\n\n\nCode\nno_favorite &lt;- rep(colors, length(our_color_sample)/length(colors))\n\ncompare_df &lt;- data.frame(favorite_color = no_favorite)\n\nxtabs(formula = ~favorite_color, data = compare_df)\n\n\nfavorite_color\n black   blue   cyan   gray  green orange    red violet  white yellow \n    20     20     20     20     20     20     20     20     20     20 \n\n\nHow can we compare the data where there are no differences by category to the data where there are differences?\n\n\n\n\n\n\nUnder construction\n\n\n\nThis section is under construction."
+    "text": "Nominal data\nLet’s focus on nominal or categorical data, specifically the favorite colors of some imaginary set of people.\n\n\nCode\n# Make an array of color names\ncolors &lt;- c(\"red\", \"orange\", \"yellow\", \"green\", \"cyan\", \"blue\", \"violet\", \"white\", \"black\", \"gray\")\n\n\nThere are n=10 colors in this set.\n\n\n\n\n\n\nYour turn\n\n\n\nWhy are these data nominal or nominally scaled? Or rather, why aren’t they ordinal, interval, or ratio?\n\n\n\nGenerating\nFor demonstration purposes, we want to take some number of random samples of these colors. Let’s pick n=200 and sample with replacement (replace=TRUE in the code below), meaning that we could have any number of colors in our sample of 200 imaginary people.\n\n\nCode\n# Use `sample()` to pick a random sample of these *with* replacement so that \n# the numbers/color differ.\nour_color_sample &lt;- sample(colors, size=200, replace=TRUE)\nour_color_sample\n\n\n  [1] \"cyan\"   \"violet\" \"black\"  \"blue\"   \"orange\" \"yellow\" \"violet\" \"white\" \n  [9] \"green\"  \"white\"  \"orange\" \"blue\"   \"gray\"   \"blue\"   \"orange\" \"green\" \n [17] \"red\"    \"violet\" \"white\"  \"white\"  \"yellow\" \"white\"  \"violet\" \"red\"   \n [25] \"violet\" \"yellow\" \"orange\" \"violet\" \"violet\" \"orange\" \"red\"    \"blue\"  \n [33] \"white\"  \"orange\" \"violet\" \"violet\" \"red\"    \"black\"  \"red\"    \"cyan\"  \n [41] \"orange\" \"yellow\" \"green\"  \"cyan\"   \"red\"    \"gray\"   \"violet\" \"white\" \n [49] \"blue\"   \"red\"    \"gray\"   \"red\"    \"green\"  \"yellow\" \"black\"  \"violet\"\n [57] \"green\"  \"black\"  \"white\"  \"violet\" \"cyan\"   \"white\"  \"violet\" \"gray\"  \n [65] \"red\"    \"orange\" \"cyan\"   \"gray\"   \"black\"  \"green\"  \"yellow\" \"yellow\"\n [73] \"cyan\"   \"cyan\"   \"black\"  \"black\"  \"blue\"   \"white\"  \"orange\" \"red\"   \n [81] \"blue\"   \"violet\" \"gray\"   \"blue\"   \"gray\"   \"orange\" \"red\"    \"black\" \n [89] \"white\"  \"yellow\" \"gray\"   \"blue\"   \"red\"    \"red\"    \"orange\" \"green\" \n [97] \"orange\" \"green\"  \"red\"    \"gray\"   \"violet\" \"black\"  \"green\"  \"white\" \n[105] \"black\"  \"violet\" \"red\"    \"green\"  \"blue\"   \"blue\"   \"gray\"   \"cyan\"  \n[113] \"cyan\"   \"violet\" \"cyan\"   \"gray\"   \"white\"  \"cyan\"   \"orange\" \"green\" \n[121] \"cyan\"   \"orange\" \"green\"  \"blue\"   \"yellow\" \"violet\" \"blue\"   \"red\"   \n[129] \"gray\"   \"gray\"   \"cyan\"   \"blue\"   \"blue\"   \"red\"    \"blue\"   \"black\" \n[137] \"blue\"   \"gray\"   \"blue\"   \"green\"  \"cyan\"   \"white\"  \"black\"  \"gray\"  \n[145] \"red\"    \"red\"    \"orange\" \"white\"  \"blue\"   \"blue\"   \"orange\" \"orange\"\n[153] \"yellow\" \"violet\" \"blue\"   \"blue\"   \"orange\" \"blue\"   \"red\"    \"violet\"\n[161] \"cyan\"   \"gray\"   \"blue\"   \"yellow\" \"blue\"   \"red\"    \"white\"  \"green\" \n[169] \"red\"    \"gray\"   \"yellow\" \"cyan\"   \"blue\"   \"orange\" \"gray\"   \"black\" \n[177] \"green\"  \"violet\" \"violet\" \"green\"  \"blue\"   \"black\"  \"blue\"   \"black\" \n[185] \"orange\" \"gray\"   \"red\"    \"yellow\" \"green\"  \"white\"  \"yellow\" \"violet\"\n[193] \"gray\"   \"white\"  \"orange\" \"cyan\"   \"orange\" \"blue\"   \"yellow\" \"cyan\"  \n\n\nOn its own, that’s not especially easy to visualize. What if we sorted it?\n\n\nCode\nsort(our_color_sample)\n\n\n  [1] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n  [9] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"blue\"  \n [17] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [25] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [33] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [41] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [49] \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [57] \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"gray\"   \"gray\"  \n [65] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [73] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [81] \"gray\"   \"gray\"   \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [89] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [97] \"green\"  \"green\"  \"green\"  \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[105] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[113] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[121] \"orange\" \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[129] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[137] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[145] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[153] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[161] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"white\" \n[169] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[177] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[185] \"white\"  \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n[193] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n\n\nStill not all that helpful.\n\n\nSummarizing\nWhat can we say to summarize categorical data?\nWe can report the number of total responses.\n\n\nCode\nlength(our_color_sample)\n\n\n[1] 200\n\n\nWe can report the number of unique categories.\n\n\nCode\nlength(unique(our_color_sample))\n\n\n[1] 10\n\n\nWe can report the number of responses per category.\n\n\nCode\ncolors_df &lt;- data.frame(favorite_color = our_color_sample)\n\nxtabs(formula = ~favorite_color, data = colors_df)\n\n\nfavorite_color\n black   blue   cyan   gray  green orange    red violet  white yellow \n    15     29     18     20     17     22     23     23     18     15 \n\n\n\n\nVisualizing\nSingle nominal variables don’t offer us many options for visualization. A bar plot showing the number of observations in each category seems to be it.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color) +\n  geom_bar(stat = \"count\")\n\n\n\n\n\n\n\n\nFigure 1: A black and white barplot of the random favorite color data\n\n\n\n\n\nWe can also add colors to the bars.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  geom_bar() +\n  scale_discrete_manual(aesthetics = c(\"color\", \"fill\"),\n                        values = sort(colors))\n\n\n\n\n\n\n\n\nFigure 2: A colorful barplot of the random favorite color data\n\n\n\n\n\nWe can flip the axis just for fun. Which is more readable?\n\nHorizontal barplot\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar() +\n  coord_flip()\n\n\n\n\n\n\n\n\nFigure 3: An (ugly) horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nLollipop chart\n\n\nCode\ncolors_xtab &lt;- data.frame(table(colors_df))\nnames(colors_xtab) &lt;- c(\"favorite_color\", \"count\")\n\ncolors_xtab |&gt;\n  ggplot() +\n  geom_point(aes(\n    x = favorite_color,\n    y = count,\n    color = favorite_color,\n    fill = favorite_color\n  )) +\n  geom_segment(aes(\n    x = favorite_color,\n    xend = favorite_color,\n    y = 0,\n    yend = count,\n    color = favorite_color\n  )) +\n  scale_discrete_manual(aesthetics = c(\"color\", \"fill\"), values = sort(colors))\n\n\n\n\n\n\n\n\nFigure 4: A lollipop plot of the random favorite color data\n\n\n\n\n\n\n\nStacked barplot\nWe can also stack them, but this makes more sense with another nominal variable.\n\n\nCode\nschool &lt;- sample(c(\"psu\", \"osu\", \"mich\", \"usc\"), size=200, replace=TRUE)\ncolors_school_df &lt;- colors_df\ncolors_school_df$school &lt;- school\n\ncolors_school_xtab &lt;- data.frame(table(colors_school_df))\nnames(colors_school_xtab) &lt;- c(\"favorite_color\", \"school\", \"count\")\n\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = school, y=count, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 5: A horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nStacked barplot alternative\n\n\nCode\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y=count, fill = school) +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 6: Another stacked barplot of the random favorite color data.\n\n\n\n\n\n\n\nDodged barplot\nUsing the ‘dodge’ parameter is another way to show data with two categorical variables.\n\n\nCode\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = school, y=count, fill = favorite_color) +\n  # aes(x = favorite_color, y = school, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"dodge\")\n\n\n\n\n\n\n\n\nFigure 7: A horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nPie chart\n\n\nCode\ncolors_xtab &lt;- data.frame(table(colors_df))\nnames(colors_xtab) &lt;- c(\"favorite_color\", \"count\")\n\ncolors_xtab |&gt;\n  ggplot(aes(x = \"\", y = count, fill = favorite_color)) +\n  geom_bar(stat = \"identity\", width = 1) +\n  coord_polar(\"y\", start = 0) +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 8: A piechart of the random favorite color data\n\n\n\n\n\n\n\nRing chart\n\n\nCode\n# https://r-graph-gallery.com/128-ring-or-donut-plot.html\n\n# Compute percentages\ncolors_xtab$fraction = colors_xtab$count / sum(colors_xtab$count)\n\n# Compute the cumulative percentages (top of each rectangle)\ncolors_xtab$ymax = cumsum(colors_xtab$fraction)\n\n# Compute the bottom of each rectangle\ncolors_xtab$ymin = c(0, head(colors_xtab$ymax, n = -1))\n\n# Make the plot\ncolors_xtab |&gt;\n  ggplot(aes(\n    ymax = ymax,\n    ymin = ymin,\n    xmax = 4,\n    xmin = 3,\n    fill = favorite_color\n  )) +\n  geom_rect() +\n  coord_polar(theta = \"y\") + # Try to remove that to understand how the chart is built initially\n  xlim(c(2, 4)) + # Try to remove that to see how to make a pie chart\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 9: A ring/donut chart of the random favorite color data\n\n\n\n\n\n\n\nMosaic plot\n\n\nCode\nggplot(data = colors_school_df) +\n  geom_mosaic(aes(x = product(favorite_color, school), fill = favorite_color)) +   \n  labs(y=\"Favorite\", x=\"School\", title = \"Favorite colors by school\") +\n  scale_fill_identity()\n\n\nWarning: The `scale_name` argument of `continuous_scale()` is deprecated as of ggplot2\n3.5.0.\n\n\nWarning: The `trans` argument of `continuous_scale()` is deprecated as of ggplot2 3.5.0.\nℹ Please use the `transform` argument instead.\n\n\nWarning: `unite_()` was deprecated in tidyr 1.2.0.\nℹ Please use `unite()` instead.\nℹ The deprecated feature was likely used in the ggmosaic package.\n  Please report the issue at &lt;https://github.com/haleyjeppson/ggmosaic&gt;.\n\n\n\n\n\n\n\n\nFigure 10: A mosaic chart of the random favorite color by school data\n\n\n\n\n\n\n\n\nAnalysis\nIs one of these colors a particular favorite? Maybe. The observed data show some differences. But how can we know they aren’t just due to random chance.\n\n\n\n\n\n\nStop the presses!\n\n\n\nThese particular data are entirely random. We made them up!\nKeep that in mind while we work through what we would do to answer the question if these were not fake, random data.\n\n\nTo answer that question, we’d have to compare our results with some other pattern, a pattern where there is no favorite. In other words, we want a pattern where the counts are all equal. So, we’re back to summarizing.\nActually, data analysis in the real world usually involves a back-and-forth alternation between summarizing/analyzing and visualizing.\n\n\n\n\n\n\nflowchart LR\n  A[Summarize] --&gt; B[Visualize]\n  B ---&gt; A\n\n\n\n\nFigure 11: Illustration of the back and forth process between summarizing and visualizing that characterizes real-life data analysis.\n\n\n\n\n\n\n\nSummarizing II\nLet’s make data that have an identical pattern across all colors.\nThere are several ways to do this, but here is one that works.\n\n\nCode\nno_favorite &lt;- rep(colors, length(our_color_sample)/length(colors))\n\ncompare_df &lt;- data.frame(favorite_color = no_favorite)\n\nxtabs(formula = ~favorite_color, data = compare_df)\n\n\nfavorite_color\n black   blue   cyan   gray  green orange    red violet  white yellow \n    20     20     20     20     20     20     20     20     20     20 \n\n\nHow can we compare the data where there are no differences by category to the data where there are differences?\n\n\n\n\n\n\nUnder construction\n\n\n\nThis section is under construction."
+  },
+  {
+    "objectID": "tutorials/tutorial-making-data.html#ordinal-data",
+    "href": "tutorials/tutorial-making-data.html#ordinal-data",
+    "title": "Making and visualizing data",
+    "section": "Ordinal data",
+    "text": "Ordinal data\nWe usually consider colors as nominal or categorical variables. But the physical input to the visual system is continuous.\n\n\n\nhttps://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/\n\n\nThe continuous variable that underlies color is wavelength, a property of electromagnetic radiation. The human visual system maps wavelength to color.\nCuriously, human color perception shows that this mapping wraps back on itself in a way that wavelength does not.\n\n\n\nhttps://pixabay.com/vectors/rainbow-colors-circle-color-spectrum-154569/\n\n\n\nGenerating\nBut rather than dive down that particular rat hole now, let’s make some ordinal data from the random color dataset. Imagine that we had n=50 participants and each gave a rating to these colors. The ratings had numbers, with 1 assigned to the participant’s first choice, and 4 assigned to the fourth choice. We won’t keep track of the specific users at this point.\n\n\nCode\nratings &lt;- c(\"1st\", \"2nd\", \"3rd\", \"4th\")\n\nour_rating_sample &lt;- sample(ratings, size=200, replace=TRUE)\ncolors_rating_df &lt;- colors_df\ncolors_rating_df$rating &lt;- our_rating_sample\n\ncolors_rating_xtab &lt;- data.frame(table(colors_rating_df))\nnames(colors_rating_xtab) &lt;- c(\"favorite_color\", \"rating\", \"count\")\n\n\n\n\nVisualizing\nMany of the same plot types are available for ordinal data.\n\nBar plot ordinal dodge\n\n\nCode\ncolors_rating_xtab |&gt;\n  ggplot() +\n  aes(x=rating, y=count, fill = favorite_color) +\n  # aes(x = favorite_color, y = school, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"dodge\")\n\n\n\n\n\n\n\n\nFigure 12: A barplot of the random favorite color data with an ordinal rating\n\n\n\n\n\n\n\nBar plot ordinal stacked\n\n\nCode\n# colors_rating_xtab |&gt;\n#   ggplot() +\n#   aes(x=favorite_color, y=count, fill = favorite_color) +\n#   scale_fill_identity() +\n#   geom_bar(stat=\"identity\", position=\"dodge\")\n\ncolors_rating_xtab |&gt;\n  ggplot() +\n  aes(x = rating, y=count, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 13: A stacked barplot of the random favorite color data with an ordinal rating\n\n\n\n\n\n\n\nBar plot ordinal stacked alternative\n\n\nCode\ncolors_rating_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y=count, fill = rating) +\n  #scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 14: Another stacked barplot of the random favorite color data with an ordinal rating"
   },
   {
     "objectID": "schedule.html",
@@ -1073,84 +1185,84 @@
   {
     "objectID": "tutorials/tutorial-rstudio-on-pc.html",
     "href": "tutorials/tutorial-rstudio-on-pc.html",
-    "title": "",
+    "title": "Setting up RStudio",
     "section": "",
-    "text": "Code"
+    "text": "This page provides help downloading, installing, and running RStudio on your personal computer (Windows, Mac, or Linux).\nYou may also use RStudio from a Penn State computer lab machine. For those instructions, see the accompanying tutorial."
   },
   {
     "objectID": "tutorials/tutorial-rstudio-on-pc.html#about",
     "href": "tutorials/tutorial-rstudio-on-pc.html#about",
-    "title": "",
-    "section": "About",
-    "text": "About\nThis page provides help downloading, installing, and running RStudio on your personal computer (Windows, Mac, or Linux).\nYou may also use RStudio from a Penn State computer lab machine. For those instructions, see the accompanying tutorial."
+    "title": "Setting up RStudio",
+    "section": "",
+    "text": "This page provides help downloading, installing, and running RStudio on your personal computer (Windows, Mac, or Linux).\nYou may also use RStudio from a Penn State computer lab machine. For those instructions, see the accompanying tutorial."
   },
   {
     "objectID": "tutorials/tutorial-rstudio-on-pc.html#what-is-rstudio",
     "href": "tutorials/tutorial-rstudio-on-pc.html#what-is-rstudio",
-    "title": "",
+    "title": "Setting up RStudio",
     "section": "What is RStudio?",
     "text": "What is RStudio?\nRStudio is an integrated development environment (IDE) for doing data science. An IDE is a computer program that provides tools for people who are developing and testing software. You might not think of yourself as a software developer (yet). But RStudio is a powerful tool for beginners, too. It began life as a tool primarily for users writing code in R, hence the name. RStudio supports multiple programming languages, including R and Python."
   },
   {
     "objectID": "tutorials/tutorial-rstudio-on-pc.html#why-install-rstudio",
     "href": "tutorials/tutorial-rstudio-on-pc.html#why-install-rstudio",
-    "title": "",
+    "title": "Setting up RStudio",
     "section": "Why install RStudio?",
     "text": "Why install RStudio?\nIf you have your own personal computer, it’s very helpful to have RStudio installed on your computer. That way you can work whether you’re connected to the internet or not."
   },
   {
     "objectID": "tutorials/tutorial-rstudio-on-pc.html#overview",
     "href": "tutorials/tutorial-rstudio-on-pc.html#overview",
-    "title": "",
+    "title": "Setting up RStudio",
     "section": "Overview",
     "text": "Overview\nInstalling RStudio consists of several steps:\n\nDownloading and installing R.\nDownloading and installing RStudio.\nConfiguring RStudio.\n\nYou can complete these in about 45 minutes, or maybe less if you have a fast internet connection."
   },
   {
     "objectID": "tutorials/tutorial-rstudio-on-pc.html#installing-r",
     "href": "tutorials/tutorial-rstudio-on-pc.html#installing-r",
-    "title": "",
+    "title": "Setting up RStudio",
     "section": "Installing R",
     "text": "Installing R\nRStudio requires you to download and install R even if you ultimately plan to do very little programming in R.\nVisit https://cran.wustl.edu/bin/.\n\n\n\nhttps://cran.wustl.edu/bin/\n\n\nSelect the subdirectory depending on what operating system your computer is running. Windows users will select windows and Mac users will select macosx.\n\nMac users\nHere is the window that opens:\n\nNotice that there are two links under the “Latest release:” section. To decide which version is appropriate for you, you need to select the version of R that is appropriate for your computer’s central processing unit (CPU) and operating system (OS). Here’s how to find out what CPU and OS you’re running:\n\nClick on the Apple icon in the top left corner of your menu bar.\n\n\n\nSelect the ‘About This Mac’ menu item.\nA window will appear with information about your computer.\n\n\nIf the ‘macOS’ field has a number greater than 11 (MacOS Big Sur), then you can download the latest version of R. If the ‘Chip’ field says “Apple M1”, “Apple M2”, “Apple M3”, or “Apple M4”, you will want to select the ARM version, e.g. “R-4.4.2-arm64.pkg”. If the ‘Chip’ field says you have some version of an Intel chip, pick the other version of R, e.g., “R-4.4.2-x86_64.pkg”.\n\nOnce the software has downloaded, open it by double-clicking."
   },
   {
     "objectID": "tutorials/tutorial-rstudio-on-pc.html#installing-rstudio",
     "href": "tutorials/tutorial-rstudio-on-pc.html#installing-rstudio",
-    "title": "",
+    "title": "Setting up RStudio",
     "section": "Installing RStudio",
     "text": "Installing RStudio"
   },
   {
     "objectID": "tutorials/tutorial-rstudio-on-pc.html#configuring-rstudio",
     "href": "tutorials/tutorial-rstudio-on-pc.html#configuring-rstudio",
-    "title": "",
+    "title": "Setting up RStudio",
     "section": "Configuring RStudio",
     "text": "Configuring RStudio"
   },
   {
     "objectID": "tutorials/tutorial-screenshots.html",
     "href": "tutorials/tutorial-screenshots.html",
-    "title": "",
+    "title": "Capturing images",
     "section": "",
-    "text": "Code"
+    "text": "This short tutorial shows how to capture images in web pages and how to make screenshots on Mac OS and Windows OS."
   },
   {
     "objectID": "tutorials/tutorial-screenshots.html#about",
     "href": "tutorials/tutorial-screenshots.html#about",
-    "title": "",
-    "section": "About",
-    "text": "About\nThis short tutorial shows how to capture images in web pages and how to make screenshots on Mac OS and Windows OS."
+    "title": "Capturing images",
+    "section": "",
+    "text": "This short tutorial shows how to capture images in web pages and how to make screenshots on Mac OS and Windows OS."
   },
   {
     "objectID": "tutorials/tutorial-screenshots.html#capturing-images-in-web-pages",
     "href": "tutorials/tutorial-screenshots.html#capturing-images-in-web-pages",
-    "title": "",
+    "title": "Capturing images",
     "section": "Capturing images in web pages",
     "text": "Capturing images in web pages\nMost browsers support “right-clicking”, clicking on the right button of a multibutton mouse (or the equivalent motion on a trackpad) when you hover over an image.\nUsing Chrome on Mac OS for example, I visited the Penn State homepage at https://www.psu.edu. In mousing over a photo, I right clicked and had the following panel appear:\n\n\n\n\n\n\nFigure 1: Image from psu.edu in Chrome using MacOS\n\n\n\nNote that there are several options. I find that these are the most useful:\n\n“Open Image in New Tab”. I often do this to make sure that the web page link (URL) actually contains the image I want it to. Then I switch to that tab for further steps.\n“Save Image As…”. This is useful if you want to download a local copy.\n“Copy Image Address”. Use this for capturing URLs of images, but not the images themselves.\n\nHere is an illustration of the same process on Windows 11:\n\n\n\n\n\n\nFigure 2: Image from psu.edu on Chrome using Windows 11\n\n\n\nNot that the pop-up has similar options.\n\n\n\n\n\n\nWord to the wise\n\n\n\nSome websites do not support this feature. That’s why I prefer to use “open image in new tab” to see if I’m actually capturing what I want to capture. As a back-up, you can usually resort to your computer’s built-in screen capture tool that we’ll describe next."
   },
   {
     "objectID": "tutorials/tutorial-screenshots.html#capturing-images-on-your-screen",
     "href": "tutorials/tutorial-screenshots.html#capturing-images-on-your-screen",
-    "title": "",
+    "title": "Capturing images",
     "section": "Capturing images on your screen",
     "text": "Capturing images on your screen\nWhen the image you want is not a static image, you may need to use your computer’s screen capture tool.\nFrom the same Penn State home page, I try right-clicking on the top “hero” animation. This is the result.\n\n\n\n\n\n\nFigure 3: Results of right-clicking on psu.edu ‘hero’ image/animation.\n\n\n\nNotice that the pop-up window does not have the same menu items as it did for a static image. Of course, this is an animation, and so it’s not that surprising that things would differ. Let’s say I want to capture a static image from this animation.\n\nPress the screen capture keystroke combination for your computer. On Mac OS, you have two choices, command+shift+3 (pressed simultaneously) immediately takes a screenshot of your entire window.\n\n\n\n\n\n\n\nFigure 4: Capturing entire screen on Mac OS using command+shift+3.\n\n\n\nNote that to capture a specific segment of a video, you have to wait until that image appears and press these keys quickly.\n\nAs an alternative on Mac OS, you can use command+shift+4. Then, you click and drag your mouse to indicate the region of the screen you want to capture. When the image appears in the animation, just release the mouse button and that image will be captured.\n\n\n\n\n\n\n\nFigure 5: Capturing a segment of the screen on Mac OS using command+shift+4.\n\n\n\n\n\n\n\n\n\nUnder construction\n\n\n\nInstructions about how to do this on Windows are a work-in-progress."
   },
@@ -1435,11 +1547,11 @@
     "text": "Data ~ quantitative terminology\n\nData a symbol of the thing measured, not the thing itself\nE.g., words are a symbol of the things they refer to\n\n\n\n\n\n\n\nflowchart TB\n  A[Cute animal with fur that purrs] --&gt; B('cat')\n  A ---&gt; C('gato')\n  A ---&gt; D('chatte/chat')\n  A ---&gt; E('猫')\n\n\n\n\nFigure 3: Mapping from concept/entity to a word."
   },
   {
-    "objectID": "slides/wk03-2025-01-28-making-data.html#data-reflects-selects-and-deflects",
-    "href": "slides/wk03-2025-01-28-making-data.html#data-reflects-selects-and-deflects",
+    "objectID": "slides/wk03-2025-01-28-making-data.html#symbols-reflect-select-and-deflect",
+    "href": "slides/wk03-2025-01-28-making-data.html#symbols-reflect-select-and-deflect",
     "title": "Making Data",
-    "section": "Data reflects, selects, and deflects",
-    "text": "Data reflects, selects, and deflects\n\nEven if any given terminology is a reflection of reality, by its very nature as a terminology, it must be a selection of reality; and to this extent must also as a deflection of reality\n\nBurke (1968)"
+    "section": "Symbols reflect, select, and deflect",
+    "text": "Symbols reflect, select, and deflect\n\nEven if any given terminology is a reflection of reality, by its very nature as a terminology, it must be a selection of reality; and to this extent must also as a deflection of reality\n\nBurke (1968)"
   },
   {
     "objectID": "slides/wk03-2025-01-28-making-data.html#what-is-reflected-selected-deflected",
@@ -1461,6 +1573,13 @@
     "title": "Making Data",
     "section": "Questions about measurement",
     "text": "Questions about measurement\n\nWhat’s the procedure for making this mapping?\nWhat are the rules for assigning numbers/categories?\nWhat can we do with the assigned numbers (summarize, depict)?"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#why-does-measurement-matter",
+    "href": "slides/wk03-2025-01-28-making-data.html#why-does-measurement-matter",
+    "title": "Making Data",
+    "section": "Why does measurement matter?",
+    "text": "Why does measurement matter?\n\nGarbage in, garbage out"
   },
   {
     "objectID": "slides/wk03-2025-01-28-making-data.html#in-other-domains",
@@ -1491,6 +1610,13 @@
     "text": "How to measure…\n\nInternal mental states\nBehaviors\nPhysiological processes\nPhysical characteristics\nEnvironmental properties"
   },
   {
+    "objectID": "slides/wk03-2025-01-28-making-data.html#psychology-of-survey-response",
+    "href": "slides/wk03-2025-01-28-making-data.html#psychology-of-survey-response",
+    "title": "Making Data",
+    "section": "Psychology of survey response",
+    "text": "Psychology of survey response\n\nTourangeau, Rips, & Rasinski (2012) Table 1.1"
+  },
+  {
     "objectID": "slides/wk03-2025-01-28-making-data.html#scales-of-measurement",
     "href": "slides/wk03-2025-01-28-making-data.html#scales-of-measurement",
     "title": "Making Data",
@@ -1509,119 +1635,203 @@
     "href": "slides/wk03-2025-01-28-making-data.html#references",
     "title": "Making Data",
     "section": "References",
-    "text": "References\n\n\n\n\nAviv, L., Saxbe, D., Messer, D., & Rao, S. (2024). The fair play method (technical report). University of Southern California. Retrieved from https://publicexchange.usc.edu/wp-content/uploads/2024/11/PX_FairPlay-Final-Report_Dec2024.pdf\n\n\nBurke, K. (1968). Language as Symbolic Action. University of California Press. Retrieved from https://www.ucpress.edu/books/language-as-symbolic-action/paper\n\n\nDattani, S., & Roser, M. (2024). What was the golden age of antibiotics, and how can we spark a new one? Our World in Data. Retrieved from https://ourworldindata.org/golden-age-antibiotics\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nLucaas. (2007). Talking Heads - Girlfriend is Better (from stop making sense. Youtube. Retrieved from https://www.youtube.com/watch?v=9r7X3f2gFz4&list=PLXTs9Ss_E9ARDEum9WgaJ67rvpnzogpsA&index=7\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science (New York, N.Y.), 103, 677–680. https://doi.org/10.1126/science.103.2684.677\n\n\nTourangeau, R., Rips, L. J., & Rasinski, K. (2012). The psychology of survey response. Cambridge, England: Cambridge University Press. https://doi.org/10.1017/cbo9780511819322"
+    "text": "References\n\n\n\n\nAviv, L., Saxbe, D., Messer, D., & Rao, S. (2024). The fair play method (technical report). University of Southern California. Retrieved from https://publicexchange.usc.edu/wp-content/uploads/2024/11/PX_FairPlay-Final-Report_Dec2024.pdf\n\n\nBurke, K. (1968). Language as Symbolic Action. University of California Press. Retrieved from https://www.ucpress.edu/books/language-as-symbolic-action/paper\n\n\nDattani, S., & Roser, M. (2024). What was the golden age of antibiotics, and how can we spark a new one? Our World in Data. Retrieved from https://ourworldindata.org/golden-age-antibiotics\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nLucaas. (2007). Talking Heads - Girlfriend is Better (from stop making sense. Youtube. Retrieved from https://www.youtube.com/watch?v=9r7X3f2gFz4&list=PLXTs9Ss_E9ARDEum9WgaJ67rvpnzogpsA&index=7\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science (New York, N.Y.), 103, 677–680. https://doi.org/10.1126/science.103.2684.677\n\n\nTourangeau, R., Rips, L. J., & Rasinski, K. (2012). The Psychology of Survey Response. Cambridge, England: Cambridge University Press. https://doi.org/10.1017/cbo9780511819322"
   },
   {
-    "objectID": "exercises/ex01-figs-in-psych-sci.html",
-    "href": "exercises/ex01-figs-in-psych-sci.html",
-    "title": "Exercise 01",
+    "objectID": "slides/wk04-2025-02-04-figure-components.html#announcements",
+    "href": "slides/wk04-2025-02-04-figure-components.html#announcements",
+    "title": "Figure components",
+    "section": "Announcements",
+    "text": "Announcements"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-04-figure-components.html#last-time",
+    "href": "slides/wk04-2025-02-04-figure-components.html#last-time",
+    "title": "Figure components",
+    "section": "Last time…",
+    "text": "Last time…\nFigure types"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-04-figure-components.html#what-figure-types",
+    "href": "slides/wk04-2025-02-04-figure-components.html#what-figure-types",
+    "title": "Figure components",
+    "section": "What figure type(s)?",
+    "text": "What figure type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-1"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-04-figure-components.html#what-figure-types-1",
+    "href": "slides/wk04-2025-02-04-figure-components.html#what-figure-types-1",
+    "title": "Figure components",
+    "section": "What figure type(s)?",
+    "text": "What figure type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-3"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-04-figure-components.html#what-figure-types-2",
+    "href": "slides/wk04-2025-02-04-figure-components.html#what-figure-types-2",
+    "title": "Figure components",
+    "section": "What figure type(s)?",
+    "text": "What figure type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-26"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-04-figure-components.html#what-figure-types-3",
+    "href": "slides/wk04-2025-02-04-figure-components.html#what-figure-types-3",
+    "title": "Figure components",
+    "section": "What figure type(s)?",
+    "text": "What figure type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-15"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-04-figure-components.html#what-figure-types-4",
+    "href": "slides/wk04-2025-02-04-figure-components.html#what-figure-types-4",
+    "title": "Figure components",
+    "section": "What figure type(s)?",
+    "text": "What figure type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-04-figure-components.html#today",
+    "href": "slides/wk04-2025-02-04-figure-components.html#today",
+    "title": "Figure components",
+    "section": "Today",
+    "text": "Today\n\nMore on figure types\nThe components of data figures"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-04-figure-components.html#ordinal-data",
+    "href": "slides/wk04-2025-02-04-figure-components.html#ordinal-data",
+    "title": "Figure components",
+    "section": "Ordinal data",
+    "text": "Ordinal data\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#bar-plot-ordinal"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-04-figure-components.html#references",
+    "href": "slides/wk04-2025-02-04-figure-components.html#references",
+    "title": "Figure components",
+    "section": "References",
+    "text": "References"
+  },
+  {
+    "objectID": "exercises/ex02-data-viz-outside-psych.html",
+    "href": "exercises/ex02-data-viz-outside-psych.html",
+    "title": "Exercise 02",
     "section": "",
-    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nWrite-up for credit due on Thursday, January 23.\nCanvas dropbox"
+    "text": "In-class work on Tuesday, January 21-23.\nDue on Thursday, January 30.\nCanvas dropbox."
   },
   {
-    "objectID": "exercises/ex01-figs-in-psych-sci.html#dates",
-    "href": "exercises/ex01-figs-in-psych-sci.html#dates",
-    "title": "Exercise 01",
+    "objectID": "exercises/ex02-data-viz-outside-psych.html#dates",
+    "href": "exercises/ex02-data-viz-outside-psych.html#dates",
+    "title": "Exercise 02",
     "section": "",
-    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nWrite-up for credit due on Thursday, January 23.\nCanvas dropbox"
+    "text": "In-class work on Tuesday, January 21-23.\nDue on Thursday, January 30.\nCanvas dropbox."
   },
   {
-    "objectID": "exercises/ex01-figs-in-psych-sci.html#goals",
-    "href": "exercises/ex01-figs-in-psych-sci.html#goals",
-    "title": "Exercise 01",
+    "objectID": "exercises/ex02-data-viz-outside-psych.html#goals",
+    "href": "exercises/ex02-data-viz-outside-psych.html#goals",
+    "title": "Exercise 02",
     "section": "Goals",
-    "text": "Goals\nIn this exercise, you may choose to work alone or with a team of classmates to find data visualizations from the societies of three (3) professional associations and three (3) journals. You will add links to the visualizations to a common database that we will use for discussion about the types of visualizations and types of data that are commonly used in psychological science."
+    "text": "Goals\nIn this exercise, you will work alone or a with a team of no more than two other classmates to find and describe data visualizations from business (for profit or not-for-profit), government, the arts, sports, or journalism. You will add links to the visualizations to a common database that we will use for discussion about the types of visualizations and types of data that are commonly used fields outside of psychological science."
   },
   {
-    "objectID": "exercises/ex01-figs-in-psych-sci.html#assignment",
-    "href": "exercises/ex01-figs-in-psych-sci.html#assignment",
-    "title": "Exercise 01",
+    "objectID": "exercises/ex02-data-viz-outside-psych.html#assignment",
+    "href": "exercises/ex02-data-viz-outside-psych.html#assignment",
+    "title": "Exercise 02",
     "section": "Assignment",
-    "text": "Assignment\n\nVisit the websites of at least three (3) professional associations.\n\nThe following are examples. Feel free to choose a different professional society.\n\nAmerican Psychological Association (APA)\nAssociation for Psychological Science (APS)\nVision Sciences Society\nSociety for Personality and Social Psychology\nSociety for Research in Child Development\nSociety for Research on Adolescence\nCognitive Neuroscience Society\nSociety for Neuroscience\nPsychonomics Society\nSociety for Industrial and Organizational Psychology\n\n\nFor each society website, find at least two visualizations of data.\n\nTry to pick visualizations that are interesting to you in some way.\n\nAdd information about the visualizations to a Google Sheet that all of us will share:\n\nhttps://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6tRzpfdgXBYyPooCPo/edit?usp=sharing\nSpecifically, enter your team identifier in the identifier field, the source in source_type, and the URL in the url field. Please say briefly why you chose this particular visualization. If you have any comments to add, put those in the comments field.\nDuring class on 2025-01-16, Gilmore added a url_to_figure field. If you want to add that, right click on the image and see if an option to ‘open image in new tab’ or ‘copy image address’ is available.\n\n\n\n\n\n\nImportant\n\n\n\nYou do not have to use your PSU ID as your identifier.\nGilmore did so just to provide some sample data.\n\n\n\nNext, visit the websites of at least three (3) journals and do the same thing–pick at least two (2) visualizations from each of the journals.\n\nNote that some societies publish one or more journals, so you might find a journal that interests you from the society website.\nHere are some additional journal resources that you might find interesting to explore:\n\nScience Magazine\nNature\nNature Human Behavior\nTrends in Cognitive Sciences\nAnnual Reviews\n\nFigures with “psychology” as search term\nFigures with “neuroscience” as search term\nKnowable Magazine has a graphics library\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThe goal here is to gather via ‘crowd-sourcing’ a diverse set of visualizations. So, feel free to mix it up."
+    "text": "Assignment\n\nChoose at least three categories (business, government, the arts, sports, or journalism) to focus on.\nFor each category, find at least one or two visualizations of data.\n\nTry to pick visualizations that are interesting to you in some way.\n\nAdd information about the visualizations to a Google Sheet that all of us will share:\n\nhttps://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0\nSpecifically, enter your team identifier in the identifier field, the source in source_type, and the URL in the url field. Please say briefly why you chose this particular visualization. If you have any comments to add, put those in the comments field.\n\nIf you want to submit a write-up for evaluation, please select three (3) visualizations and evaluate them based on the following questions:\n\n\nWhat data are presented?\nWhat graphic elements of the visualization map to which aspects of the data?\nWhat prior knowledge does someone viewing these data need to have in order to understand the visualizations clearly?\nWhy is the source presenting these data?\nWhat story or message is the source trying to communicate and to what audience?\nHow effective is the message?\nAre the figures statistical visualizations or information visualizations (Infovis) as described by Gelman & Unwin (2013)?\n\n\n\n\n\n\n\nNote\n\n\n\nThe visualizations you choose to write about may be the ones you found yourself or those that others found and shared."
   },
   {
-    "objectID": "exercises/ex01-figs-in-psych-sci.html#submit",
-    "href": "exercises/ex01-figs-in-psych-sci.html#submit",
-    "title": "Exercise 01",
+    "objectID": "exercises/ex02-data-viz-outside-psych.html#submit",
+    "href": "exercises/ex02-data-viz-outside-psych.html#submit",
+    "title": "Exercise 02",
     "section": "Submit",
-    "text": "Submit\n\nEveryone\n\nYour data to the shared Google Spreadsheet.\n\nStudents who want this submission to count for one of their four (4) required exercises\n\nA 2-3 page write-up in APA format where you describe three (3) figures your group found, focusing on these questions:\n\nWhat graphic elements of the visualization map to which aspects of the data?\nWhat prior knowledge does someone viewing these data need to have in order to understand the visualizations clearly?\nWhy is the source presenting these data?\nWhat story or message is the source trying to communicate and to what audience?\nHow effective is the message?\n\nStudents who work in teams should submit one (1) write-up with all of the authors’ names. One grade will be assigned.\nNote: Your references section need only include the citation to the source paper or website. You should identify in your text which figure you have chosen to analyze.\n\n\n\n\n\n\n\n\nAPA template\n\n\n\nThis template document may be helpful."
+    "text": "Submit\n\nEveryone\n\nYour data to the shared Google Spreadsheet.\n\n\n\nStudents submitting write-ups\nStudents who want this submission to count for one of their four (4) required exercises should submit the following:\n\nA 2-3 page write-up in APA format where you describe three (3) figures your group found, answering the questions in 4. above.\n\nMake sure to write a complete essay. See the feedback for Exercise 01 for other hints about how to improve your submission. While we will not require it because the deadline is soon, if you are able to include images of the figures you discuss, please do so. Here is a tutorial to help.\n\n\n\n\n\n\nAPA template\n\n\n\nThis template document may be helpful."
   },
   {
-    "objectID": "exercises/ex03-making-data.html",
-    "href": "exercises/ex03-making-data.html",
-    "title": "Exercise 03",
-    "section": "",
-    "text": "In-class work on Tuesday, January 28 and Thursday, January 30.\nSubmit write-up for credit due by Thursday, Feburary 6."
-  },
-  {
-    "objectID": "exercises/ex03-making-data.html#dates",
-    "href": "exercises/ex03-making-data.html#dates",
-    "title": "Exercise 03",
-    "section": "",
-    "text": "In-class work on Tuesday, January 28 and Thursday, January 30.\nSubmit write-up for credit due by Thursday, Feburary 6."
-  },
-  {
-    "objectID": "exercises/ex03-making-data.html#goals",
-    "href": "exercises/ex03-making-data.html#goals",
-    "title": "Exercise 03",
-    "section": "Goals",
-    "text": "Goals\nIn this exercise, you will work alone or with a team of classmates to create a survey using the Google Forms tool. The survey you create will be used later in the course for data visualizations that you will also create."
-  },
-  {
-    "objectID": "exercises/ex03-making-data.html#assignment",
-    "href": "exercises/ex03-making-data.html#assignment",
-    "title": "Exercise 03",
-    "section": "Assignment",
-    "text": "Assignment\n\nSign-in to the Google drive account associated with your Penn State Access ID. This will make it somewhat easier for us to share forms.\nOpen Google Forms by visiting https://forms.google.com.\nCreate a new form by clicking on the ‘Blank Form’ button.\n\n{fig-google-form-blank-form} 3. Give your form a useful title, for example, ‘PSYCH-490.003-2025-spring-team-A’ or ‘PSYCH-490.003-2025-spring-rog1’.\n\n\n\n\n\n\nImportant\n\n\n\nYou can be assigned a team name/letter if you choose.\nIf you\n\n\n\nCustomize the theme if you wish by clicking on the palette icon.\nCreate a survey with 8 questions. Your questions should be ones that your classmates can answer without embarrassment or loss of privacy and which meet the following criteria:\n\n\nGenerate two questions with nominal (un-ordered) answers (e.g., favorite color).\nGenerate two questions with ordinal (e.g., 1-5) answers analogous to a Likert scale.\nGenerate two questions with continuous answers (e.g., age and shoe size). It doesn’t matter if these are interval or ratio scaled.\nGenerate one question with a date or time as an answer (e.g., a favorite relative’s birthday).\nInclude one field for comments.\n\n\nWhen you are happy with a draft of your survey, conduct a quality assurance (QA) review of it by having your team or someone else take the survey. The easiest way to do this is to use the ‘Send’ button to send your survey to you collaborator(s).\n\n\n\n\nGoogle Forms ‘Send’\n\n\nMake sure to have your QA testers answer the Comments question with the same response, e.g., ‘test-response’. This will make it easier later to filter-out the test responses.\n\nMake sure that all of your collaborators have edit privileges on the form. Click on the ‘more’ button with three dots and add collaborators.\n\n\n\n\nAdd collaborators"
-  },
-  {
-    "objectID": "exercises/ex03-making-data.html#submit",
-    "href": "exercises/ex03-making-data.html#submit",
-    "title": "Exercise 03",
-    "section": "Submit",
-    "text": "Submit\nWhether or not you are submitting a write-up for Exercise 03, please dd Dr. Gilmore (rog1@psu.edu) and Sara He (cfh5558@psu.edu) as collaborators on the survey so that we can all benefit from your good work.\nPlease also add the URL to your survey to this Google Sheet:\nhttps://docs.google.com/spreadsheets/d/1Z-TJQLOQ-yFBs0UimtCtv4pWIqcfq7jhAUA1QjVX89w/edit?usp=sharing\nIf you are submitting a short 2-4 page write-up via Canvas, please provide answers to the following questions:\n\nWhat is a defining feature of data items that are nominal?\n\nWhat assumptions might analysts make about ordinal data when it comes time to visualize or analyze the results?\n\nWhat assumptions must a researcher make when conducting survey research of this sort?\n\nFocusing on those available within Google Forms, what user interface(s) work best for different types of data?\n\nIf you’ve used Qualtics previously to generate surveys, briefly compare Qualtrics with Google Forms."
-  },
-  {
-    "objectID": "exercises/ex05-figure-prep-guidelines.html",
-    "href": "exercises/ex05-figure-prep-guidelines.html",
-    "title": "Exercise 05",
+    "objectID": "exercises/ex04-sci-of-data-viz.html",
+    "href": "exercises/ex04-sci-of-data-viz.html",
+    "title": "Exercise 04",
     "section": "",
     "text": "Work in progress\n\n\n\nThis page is under construction."
   },
   {
-    "objectID": "exercises/ex05-figure-prep-guidelines.html#dates",
-    "href": "exercises/ex05-figure-prep-guidelines.html#dates",
-    "title": "Exercise 05",
+    "objectID": "exercises/ex04-sci-of-data-viz.html#dates",
+    "href": "exercises/ex04-sci-of-data-viz.html#dates",
+    "title": "Exercise 04",
     "section": "Dates",
     "text": "Dates"
   },
   {
-    "objectID": "exercises/ex05-figure-prep-guidelines.html#goals",
-    "href": "exercises/ex05-figure-prep-guidelines.html#goals",
-    "title": "Exercise 05",
+    "objectID": "exercises/ex04-sci-of-data-viz.html#goals",
+    "href": "exercises/ex04-sci-of-data-viz.html#goals",
+    "title": "Exercise 04",
     "section": "Goals",
-    "text": "Goals\n\nRead and understand published figure preparation guidelines for prospective authors of scientific manuscripts.\nEvaluate the guidelines relative to the best practices we’ve discussed this semester in class."
+    "text": "Goals"
   },
   {
-    "objectID": "exercises/ex05-figure-prep-guidelines.html#assignment",
-    "href": "exercises/ex05-figure-prep-guidelines.html#assignment",
-    "title": "Exercise 05",
+    "objectID": "exercises/ex04-sci-of-data-viz.html#assignment",
+    "href": "exercises/ex04-sci-of-data-viz.html#assignment",
+    "title": "Exercise 04",
     "section": "Assignment",
-    "text": "Assignment\n\nBackground\nSome scientific journals provide advice to prospective authors about how to prepare figures for manuscripts submitted to the journals. Here are two examples:\n\nNature\nAmerican Psychological Association (APA)\n\n\n\nTasks\n\nFind and read critically the guidelines for publishing figures in a journal of your choosing.\nCompare the guidelines to the best practices that we have discussed this semester in class (@ Franconeri, Padilla, Shah, Zacks, & Hullman, 2021; Knaflic, 2015; Tufte, 2001).\nDo the guidelines reflect current knowledge about data visualization practices. If not how could the guidelines be amended to provide better guidance to authors in these journals?"
+    "text": "Assignment"
   },
   {
-    "objectID": "exercises/ex05-figure-prep-guidelines.html#submit",
-    "href": "exercises/ex05-figure-prep-guidelines.html#submit",
-    "title": "Exercise 05",
+    "objectID": "exercises/ex04-sci-of-data-viz.html#submit",
+    "href": "exercises/ex04-sci-of-data-viz.html#submit",
+    "title": "Exercise 04",
     "section": "Submit",
-    "text": "Submit\nA 3-5 pp (750-1,300 word) write-up of your findings."
+    "text": "Submit"
   },
   {
-    "objectID": "exercises/ex07-figs-w-python.html",
-    "href": "exercises/ex07-figs-w-python.html",
-    "title": "Exercise 07",
+    "objectID": "exercises/ex06-figs-w-r.html",
+    "href": "exercises/ex06-figs-w-r.html",
+    "title": "Exercise 06",
     "section": "",
     "text": "Work in progress\n\n\n\nThis page is under construction."
+  },
+  {
+    "objectID": "exercises/final-project.html",
+    "href": "exercises/final-project.html",
+    "title": "final-project",
+    "section": "",
+    "text": "Work in progress\n\n\n\nThis page is under construction."
+  },
+  {
+    "objectID": "exercises/final-project.html#background",
+    "href": "exercises/final-project.html#background",
+    "title": "final-project",
+    "section": "Background",
+    "text": "Background\nYour final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.\nYou may work alone or with up to two other students in the class. If you work with others, you will need to complete a statement about who did what, and all of the members of your team will get the same grade."
+  },
+  {
+    "objectID": "exercises/final-project.html#dates",
+    "href": "exercises/final-project.html#dates",
+    "title": "final-project",
+    "section": "Dates",
+    "text": "Dates\n\nProposal assigned Thursday, February 13\nFinal project survey due Tuesday, April 08\nFinal write-up due Tuesday, May 05"
+  },
+  {
+    "objectID": "exercises/final-project.html#topics",
+    "href": "exercises/final-project.html#topics",
+    "title": "final-project",
+    "section": "Topics",
+    "text": "Topics\nYou may choose any of a wide range of topics for your final project:\n\nA tutorial on a tool or resource for data visualization you find especially useful.\nA discussion of a specific data visualization or type of visualization and how it does or does not accurately and persuasively convey some specific finding.\nA showcase of one or more data visualizations that you have made."
+  },
+  {
+    "objectID": "exercises/final-project.html#formats",
+    "href": "exercises/final-project.html#formats",
+    "title": "final-project",
+    "section": "Formats",
+    "text": "Formats\nThere are multiple formats for your final project.\n\nShort (5-10 min) in-class talk\nPoster\nLesson plan/exercise\nTutorial\nResearch project (& write-up)\nOpinion piece"
+  },
+  {
+    "objectID": "exercises/final-project.html#components",
+    "href": "exercises/final-project.html#components",
+    "title": "final-project",
+    "section": "Components",
+    "text": "Components\n\nProject proposal\n\nEvery student or team must submit a one-page single-spaced project proposal. Your proposal should state the aim or objective of your project, the format, and a include a brief description of how you intend to go about achieving your objectives.\n\n\n\nProject presentation\n\nEvery student or team may make an optional presentation to the class about their project. Please indicate whether you are willing to make a presentation when you complete the survey.\nNote: Giving a presentation is worth 5 extra credit points.\nThe presentations will occur during class on December 6, 9, and 11.\nIf you wish to have your presentation made available publicly on the course website, please let me know. This is also completely optional.\n\n\n\nProject write-up\n\nEvery student or team must submit a write-up, due during finals week on Tuesday, May 05.\nDepending on the format of the project (talk, poster, paper), different written materials may be submitted (slides, poster, etc.).\nFor an in-class talk, submit a separate document with your talk text or notes and your slides. You may also submit slides that include presenter notes embedded within them.\nFor a poster, submit a PowerPoint or PDF of your poster along with any talking points.\n\nRubic: An example of potential grading template we may use: https://commons.erau.edu/db-srs/poster-scoring-rubric.pdf\nArticle: How to make a good scientific poster https://www.nature.com/articles/nj7614-115a\nTutorial video: how to make a poster https://www.youtube.com/watch?v=EL5YwkiqBho&ab_channel=SamHertig\nOther basics: https://guides.libraries.psu.edu/posters\n\nFor research paper, please submit an APA-formatted manuscript 1,500-2,000 words in length.\nFor an opinion piece, please submit a document up to 1,500 words in length.\nFor an interactive website or presentation, please submit a complete set of files needed to evaluate your website or presentation.\nFor a lesson plan, please submit a document up up to 1,500 words in length."
+  },
+  {
+    "objectID": "exercises/final-project.html#survey",
+    "href": "exercises/final-project.html#survey",
+    "title": "final-project",
+    "section": "Survey",
+    "text": "Survey\n\nPlease provide information about your project via this Google Form: https://forms.gle/oyotxgnnqchqnSgTA"
   },
   {
     "objectID": "supplemental/other-field-figs.html",
@@ -1638,18 +1848,18 @@
     "text": "This page extracts information about the data visualizations we explored in Exercise-02 from the shared Google Sheet."
   },
   {
-    "objectID": "supplemental/other-field-figs.html#survey",
-    "href": "supplemental/other-field-figs.html#survey",
+    "objectID": "supplemental/other-field-figs.html#google-sheet",
+    "href": "supplemental/other-field-figs.html#google-sheet",
     "title": "Findings: Data viz outside psych sci",
-    "section": "Survey",
-    "text": "Survey\nDirect link: https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0\n\nLoading…"
+    "section": "Google Sheet",
+    "text": "Google Sheet\nDirect link: https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0\n\nLoading…"
   },
   {
     "objectID": "supplemental/other-field-figs.html#preparation",
     "href": "supplemental/other-field-figs.html#preparation",
     "title": "Findings: Data viz outside psych sci",
     "section": "Preparation",
-    "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using.\n\n\n\n\n\n\nImportant\n\n\n\nThe code uses the quietly() function from the purrr package to suppress most of the feedback.\n\n\n\n\nCode\nlibrary('ggplot2')\nlibrary('dplyr')\n\nr_functions &lt;- list.files(file.path(here::here(), \"src\", \"R\"), \"\\\\.R$\", full.names = TRUE)\n\npurrr::map(r_functions, source) |&gt;\n  purrr::quietly()\n\n\nfunction (...) \ncapture_output(.f(...))\n&lt;bytecode: 0x12b9a8a00&gt;\n&lt;environment: 0x12b9a8728&gt;"
+    "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using.\n\n\n\n\n\n\nImportant\n\n\n\nThe code uses the quietly() function from the purrr package to suppress most of the feedback.\n\n\n\n\nCode\nlibrary('ggplot2')\nlibrary('dplyr')\n\nr_functions &lt;- list.files(file.path(here::here(), \"src\", \"R\"), \"\\\\.R$\", full.names = TRUE)\n\npurrr::map(r_functions, source) |&gt;\n  purrr::quietly()\n\n\nfunction (...) \ncapture_output(.f(...))\n&lt;bytecode: 0x10e178790&gt;\n&lt;environment: 0x10e1784b8&gt;"
   },
   {
     "objectID": "supplemental/other-field-figs.html#gathering",
@@ -1663,363 +1873,20 @@
     "href": "supplemental/other-field-figs.html#cleaning",
     "title": "Findings: Data viz outside psych sci",
     "section": "Cleaning",
-    "text": "Cleaning\nNext we load the saved data file, and then proceed to clean it.\n\n\nCode\nex02 &lt;-\n  readr::read_csv(file.path(\"csv\", params$fn), show_col_types = FALSE)\n\n\nThere are 38 responses.\nThese are the column/variable names.\n\n\nCode\n# Google Forms puts the full question in the top row of the data file.\n# We use the names() function to extract and print the original questions.\nex02_qs &lt;- names(ex02)\nex02_qs\n\n\n[1] \"identifier\"    \"source_type\"   \"url_to_src\"    \"url_to_figure\"\n[5] \"why_selected\"  \"comment\"      \n\n\nFor simplicity, we visualize below only those with non-empty URLs to the specific figure."
+    "text": "Cleaning\nNext we load the saved data file, and then proceed to clean it.\n\n\nCode\nex02 &lt;-\n  readr::read_csv(file.path(\"csv\", params$fn), show_col_types = FALSE)\n\n\nThere are 46 responses.\nThese are the column/variable names.\n\n\nCode\n# Google Forms puts the full question in the top row of the data file.\n# We use the names() function to extract and print the original questions.\nex02_qs &lt;- names(ex02)\nex02_qs\n\n\n[1] \"identifier\"    \"source_type\"   \"url_to_src\"    \"url_to_figure\"\n[5] \"why_selected\"  \"comment\"      \n\n\nFor simplicity, we visualize below only those with non-empty URLs to the specific figure."
   },
   {
     "objectID": "supplemental/other-field-figs.html#summary-data",
     "href": "supplemental/other-field-figs.html#summary-data",
     "title": "Findings: Data viz outside psych sci",
     "section": "Summary data",
-    "text": "Summary data\n\n\nCode\nfigs_w_urls &lt;- ex02 |&gt;\n  filter(!is.na(url_to_figure))\n\n\nThere were n=13 unique respondents.\nOf the 38 responses from these individuals or teams, n=22 had URLs we could link to directly."
+    "text": "Summary data\n\n\nCode\nfigs_w_urls &lt;- ex02 |&gt;\n  filter(!is.na(url_to_figure))\n\n\nThere were n=14 unique respondents.\nOf the 46 responses from these individuals or teams, n=27 had URLs we could link to directly."
   },
   {
     "objectID": "supplemental/other-field-figs.html#figures-found",
     "href": "supplemental/other-field-figs.html#figures-found",
     "title": "Findings: Data viz outside psych sci",
     "section": "Figures found",
-    "text": "Figures found\n\nCode\nthese_figs &lt;- ex02 |&gt;\n  filter(!is.na(url_to_figure))\n\nres &lt;- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))\ncat(unlist(res), sep = \"\\n\")\n\n\nFigure 1\nSource: https://wpdatatables.com/sports-data-visualization/#:~:text=What%20is%20Sports%20Data%20Visualization,drawn%20from%20sports%2Drelated%20data.\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\nReport\nBasketball Fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 2\nSource: https://kinesiology.csp.edu/sports-coaches-and-trainers/infographic-top-paid-athletes-by-gender/?nab=1\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\narticle\nThis image breaksdown a few different types of sport business issues in regard to male vs female salary in sport.\n\n\n\n\n\n\nComments\n\n\n\n\nGraphic\n\n\n\n\n\nFigure 3\nSource: \n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nPoster\nSeen in person\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of physicians by resident year in a hospital department\n\n\n\n\n\nFigure 4\nSource: https://hcup-us.ahrq.gov/reports/statbriefs/sb253-Influenza-Hospitalizations-ED-Visits-2006-2016.jsp\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nReport\nPublic health/medical example\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 5\nSource: https://www.bruinsportsanalytics.com/post/growth-of-nwsl\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nArticle\nNWSL fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 6\nSource: https://www.hockeyviz.com/team/CAR/2425\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nNHL, Canes fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 7\nSource: https://manual.audacityteam.org/\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nVisualization of sound data\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 8\nSource: https://www.nbcnews.com/data-graphics/2023-college-football-season-data-6-maps-charts-rcna102444\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI am very interested in college sports and I found this graphic very interesting and easy to comprehend\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nLocations of student-athlete recruits for the major athletic conferences in the past 10 years\n\n\n\n\n\nFigure 9\nSource: https://news.gallup.com/poll/650318/grocery-restaurant-industry-images-slide.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI thought this was an interesting trend to map, especially because sports appear to be a large part of American entertainment culture\n\n\n\n\n\n\nComments\n\n\n\n\nAmerican’s overall opinions of the sports industry from 2001-2024\n\n\n\n\n\nFigure 10\nSource: https://informationisbeautiful.net/beautifulnews/595-childrens-lives-saved/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nInfographic\nI thought this was very visually appealing yet provided a lot of useful information\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of children’s lives saved in varying regions over the last 25 years\n\n\n\n\n\nFigure 11\nSource: https://petapixel.com/2019/10/01/photos-of-endangered-species-where-every-pixel-represents-one-animal/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nDigital Art\nSea turtles are my favorite animal, but I thought this was a very interesting way to use digital art to bring awareness to endangerment\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nDigital image made of pixels correlating to how the number of animals left in the population\n\n\n\n\n\nFigure 12\nSource: https://news.gallup.com/poll/655220/satisfaction-democracy-edges-record-low.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nEspecially after the election and inauguration day, this trend is interesting to me\n\n\n\n\n\n\nComments\n\n\n\n\nPercentage of Americans satisfied with the way democracy is working\n\n\n\n\n\nFigure 13\nSource: https://osf.io/preprints/osf/3nyrq\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\napl1\n3D Art\nI like 3D Art and I liked how the data was visualized in this example, it shows how varied it can be\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 14\nSource: https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\npp\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 15\nSource: https://fivethirtyeight.com/features/how-mapping-shots-in-the-nba-changed-it-forever/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nThe figure lays out a clear image of field shots paired with percentages\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 16\nSource: https://journals.sagepub.com/doi/full/10.3233/THC-231875\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\njournal\nThe figure shows their methods through images of demonstrations\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 17\nSource: https://www.nature.com/articles/s43247-023-00856-9\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure 3 shows comparisons of negative and positive emotions tied to treatment groups in a simple way\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 18\nSource: https://pmc.ncbi.nlm.nih.gov/articles/PMC8639497/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure shows an easy to read graph showing data of publications per year\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 19\nSource: https://zapier.com/blog/pandemic-business-boom-report/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the importance of the pandemic when it comes to an explanation for the rise of businesses\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 20\nSource: https://www.businessinsider.com/17-charts-that-show-just-how-scary-amazons-275-billion-business-really-is-2016-3#its-also-the-top-seller-for-personal-care-and-beauty-products-in-the-us-5\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the stats on how amazon exceeds other sellers specifically for beauty products and personal care\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 21\nSource: https://impact.economist.com/perspectives/health/addressing-recurrent-cardiovascular-events-asia-pacific\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 22\nSource: https://impact.economist.com/perspectives/technology-innovation/putting-iot-work-business-operations\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-28-making-data.html",
-    "href": "slides/wk03-2025-01-28-making-data.html",
-    "title": "Making Data",
-    "section": "",
-    "text": "Lucaas (2007)\n\n\n\n\nDattani & Roser (2024)"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-28-making-data.html#psychology-of-survey-response",
-    "href": "slides/wk03-2025-01-28-making-data.html#psychology-of-survey-response",
-    "title": "Making Data",
-    "section": "Psychology of survey response",
-    "text": "Psychology of survey response\n\nTourangeau, Rips, & Rasinski (2012) Table 1.1"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-28-making-data.html#symbols-reflect-select-and-deflect",
-    "href": "slides/wk03-2025-01-28-making-data.html#symbols-reflect-select-and-deflect",
-    "title": "Making Data",
-    "section": "Symbols reflect, select, and deflect",
-    "text": "Symbols reflect, select, and deflect\n\nEven if any given terminology is a reflection of reality, by its very nature as a terminology, it must be a selection of reality; and to this extent must also as a deflection of reality\n\nBurke (1968)"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-28-making-data.html#why-does-measurement-matter",
-    "href": "slides/wk03-2025-01-28-making-data.html#why-does-measurement-matter",
-    "title": "Making Data",
-    "section": "Why does measurement matter?",
-    "text": "Why does measurement matter?\n\nGarbage in, garbage out"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types",
-    "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types",
-    "title": "Figure types",
-    "section": "What data type(s)?",
-    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-1"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-1",
-    "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-1",
-    "title": "Figure types",
-    "section": "What data type(s)?",
-    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-3"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-2",
-    "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-2",
-    "title": "Figure types",
-    "section": "What data type(s)?",
-    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-26"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-3",
-    "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-3",
-    "title": "Figure types",
-    "section": "What data type(s)?",
-    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-15"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-4",
-    "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-4",
-    "title": "Figure types",
-    "section": "What data type(s)?",
-    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#data-types",
-    "href": "slides/wk03-2025-01-30-figure-types.html#data-types",
-    "title": "Figure types",
-    "section": "Data types",
-    "text": "Data types\n\nExtending Stevens (1946), see Wikipedia contributors (2024)\n\n\n\nNominal\n\nBinary (0,1)\nCategorical\n\nOrdinal\n\ne.g., 1st, 2nd, 3rd, …"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#extending-stevens1946-sh",
-    "href": "slides/wk03-2025-01-30-figure-types.html#extending-stevens1946-sh",
-    "title": "Figure types",
-    "section": "Extending Stevens (1946)",
-    "text": "Extending Stevens (1946)\n\nNominal/categorical\nOrdinal\nContinuous\n\nInterval\nRatio"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#data-types-continued",
-    "href": "slides/wk03-2025-01-30-figure-types.html#data-types-continued",
-    "title": "Figure types",
-    "section": "Data types (continued)",
-    "text": "Data types (continued)\n\n\nCounts\n\ne.g., 1, 2, 3, 4, …\n\nContinuous/Real-valued\n\nInterval\nRatio"
-  },
-  {
-    "objectID": "tutorials/tutorial-making-data.html#ordinal-data",
-    "href": "tutorials/tutorial-making-data.html#ordinal-data",
-    "title": "",
-    "section": "Ordinal data",
-    "text": "Ordinal data\nWe usually consider colors as nominal or categorical variables. But the physical input to the visual system is continuous.\n\n\n\nhttps://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/\n\n\nThe continuous variable that underlies color is wavelength, a property of electromagnetic radiation. The human visual system maps wavelength to color.\nCuriously, human color perception shows that this mapping wraps back on itself in a way that wavelength does not.\n\n\n\nhttps://pixabay.com/vectors/rainbow-colors-circle-color-spectrum-154569/\n\n\n\nGenerating\nBut rather than dive down that particular rat hole now, let’s make some ordinal data from the random color dataset. Imagine that we had n=50 participants and each gave a rating to these colors. The ratings had numbers, with 1 assigned to the participant’s first choice, and 4 assigned to the fourth choice. We won’t keep track of the specific users at this point.\n\n\nCode\nratings &lt;- c(\"1st\", \"2nd\", \"3rd\", \"4th\")\n\nour_rating_sample &lt;- sample(ratings, size=200, replace=TRUE)\ncolors_rating_df &lt;- colors_df\ncolors_rating_df$rating &lt;- our_rating_sample\n\ncolors_rating_xtab &lt;- data.frame(table(colors_rating_df))\nnames(colors_rating_xtab) &lt;- c(\"favorite_color\", \"rating\", \"count\")\n\n\n\n\nVisualizing\nMany of the same plot types are available for ordinal data.\n\nBar plot ordinal dodge\n\n\nCode\ncolors_rating_xtab |&gt;\n  ggplot() +\n  aes(x=rating, y=count, fill = favorite_color) +\n  # aes(x = favorite_color, y = school, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"dodge\")\n\n\n\n\n\n\n\n\nFigure 12: A barplot of the random favorite color data with an ordinal rating\n\n\n\n\n\n\n\nBar plot ordinal stacked\n\n\nCode\n# colors_rating_xtab |&gt;\n#   ggplot() +\n#   aes(x=favorite_color, y=count, fill = favorite_color) +\n#   scale_fill_identity() +\n#   geom_bar(stat=\"identity\", position=\"dodge\")\n\ncolors_rating_xtab |&gt;\n  ggplot() +\n  aes(x = rating, y=count, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 13: A stacked barplot of the random favorite color data with an ordinal rating\n\n\n\n\n\n\n\nBar plot ordinal stacked alternative\n\n\nCode\ncolors_rating_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y=count, fill = rating) +\n  #scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 14: Another stacked barplot of the random favorite color data with an ordinal rating"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#announcements",
-    "href": "slides/wk03-2025-02-04-figure-components.html#announcements",
-    "title": "Figure components",
-    "section": "Announcements",
-    "text": "Announcements"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#last-time",
-    "href": "slides/wk03-2025-02-04-figure-components.html#last-time",
-    "title": "Figure components",
-    "section": "Last time…",
-    "text": "Last time…\nFigure types"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#data-types",
-    "href": "slides/wk03-2025-02-04-figure-components.html#data-types",
-    "title": "Figure components",
-    "section": "Data types",
-    "text": "Data types\n\nExtending Stevens (1946), see Wikipedia contributors (2024)\n\n\n\nNominal\n\nBinary (0,1)\nCategorical\n\nOrdinal\n\ne.g., 1st, 2nd, 3rd, …"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#data-types-continued",
-    "href": "slides/wk03-2025-02-04-figure-components.html#data-types-continued",
-    "title": "Figure components",
-    "section": "Data types (continued)",
-    "text": "Data types (continued)\n\n\nCounts\n\ne.g., 1, 2, 3, 4, …\n\nContinuous/Real-valued\n\nInterval\nRatio"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-data-types",
-    "href": "slides/wk03-2025-02-04-figure-components.html#what-data-types",
-    "title": "Figure types",
-    "section": "What data type(s)?",
-    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-1"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-data-types-1",
-    "href": "slides/wk03-2025-02-04-figure-components.html#what-data-types-1",
-    "title": "Figure types",
-    "section": "What data type(s)?",
-    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-3"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-data-types-2",
-    "href": "slides/wk03-2025-02-04-figure-components.html#what-data-types-2",
-    "title": "Figure types",
-    "section": "What data type(s)?",
-    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-26"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-data-types-3",
-    "href": "slides/wk03-2025-02-04-figure-components.html#what-data-types-3",
-    "title": "Figure types",
-    "section": "What data type(s)?",
-    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-15"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-data-types-4",
-    "href": "slides/wk03-2025-02-04-figure-components.html#what-data-types-4",
-    "title": "Figure types",
-    "section": "What data type(s)?",
-    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#today",
-    "href": "slides/wk03-2025-02-04-figure-components.html#today",
-    "title": "Figure components",
-    "section": "Today",
-    "text": "Today\n\nThe components of data figures"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#goals",
-    "href": "slides/wk03-2025-02-04-figure-components.html#goals",
-    "title": "Figure types",
-    "section": "Goals",
-    "text": "Goals\n\nUnderstand how different data types map to\n\ndifferent types of quantitative summaries\ndifferent types of data visualizations\n\nGain an appreciation of the variety of data visualizations"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#considerations",
-    "href": "slides/wk03-2025-02-04-figure-components.html#considerations",
-    "title": "Figure types",
-    "section": "Considerations",
-    "text": "Considerations\n\nWhat figure type(s) are appropriate for the data type\nWhat figure type(s) are most informative/least misleading"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#references",
-    "href": "slides/wk03-2025-02-04-figure-components.html#references",
-    "title": "Figure components",
-    "section": "References",
-    "text": "References"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-type",
-    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-type",
-    "title": "Figure components",
-    "section": "What figure type?",
-    "text": "What figure type?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-26"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-1",
-    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-1",
-    "title": "Figure components",
-    "section": "What figure type?",
-    "text": "What figure type?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-15"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-2",
-    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-2",
-    "title": "Figure components",
-    "section": "What figure type?",
-    "text": "What figure type?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-3",
-    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-3",
-    "title": "Figure components",
-    "section": "What figure type?",
-    "text": "What figure type?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-4",
-    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-type-4",
-    "title": "Figure components",
-    "section": "What figure type?",
-    "text": "What figure type?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-types",
-    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-types",
-    "title": "Figure components",
-    "section": "What figure type(s)?",
-    "text": "What figure type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-1"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-1",
-    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-1",
-    "title": "Figure components",
-    "section": "What figure type(s)?",
-    "text": "What figure type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-3"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-2",
-    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-2",
-    "title": "Figure components",
-    "section": "What figure type(s)?",
-    "text": "What figure type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-26"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-3",
-    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-3",
-    "title": "Figure components",
-    "section": "What figure type(s)?",
-    "text": "What figure type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-15"
-  },
-  {
-    "objectID": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-4",
-    "href": "slides/wk03-2025-02-04-figure-components.html#what-figure-types-4",
-    "title": "Figure components",
-    "section": "What figure type(s)?",
-    "text": "What figure type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#nominal-data",
-    "href": "slides/wk03-2025-01-30-figure-types.html#nominal-data",
-    "title": "Figure types",
-    "section": "Nominal data",
-    "text": "Nominal data\n\nBar chart\nPie chart\nRing/donut chart\nMosaic chart (2 variables)"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#bar-chart",
-    "href": "slides/wk03-2025-01-30-figure-types.html#bar-chart",
-    "title": "Figure types",
-    "section": "Bar chart",
-    "text": "Bar chart\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#visualizing"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#bar-chart-mappings",
-    "href": "slides/wk03-2025-01-30-figure-types.html#bar-chart-mappings",
-    "title": "Figure types",
-    "section": "Bar chart mappings",
-    "text": "Bar chart mappings\n\n\n\nNumber of observations in category \\(\\rightarrow\\) height/length\nColor-category \\(\\rightarrow\\) fill color\nSchool \\(\\rightarrow\\) position on horizontal axis"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#pie-charts",
-    "href": "slides/wk03-2025-01-30-figure-types.html#pie-charts",
-    "title": "Figure types",
-    "section": "Pie charts",
-    "text": "Pie charts\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#ring-charts",
-    "href": "slides/wk03-2025-01-30-figure-types.html#ring-charts",
-    "title": "Figure types",
-    "section": "Ring charts",
-    "text": "Ring charts\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#pie-ring-chart-mappings",
-    "href": "slides/wk03-2025-01-30-figure-types.html#pie-ring-chart-mappings",
-    "title": "Figure types",
-    "section": "Pie, ring chart mappings",
-    "text": "Pie, ring chart mappings\n\nWedge area \\(\\rightarrow\\) counts (or proportions)"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#mosaic-chart",
-    "href": "slides/wk03-2025-01-30-figure-types.html#mosaic-chart",
-    "title": "Figure types",
-    "section": "Mosaic chart",
-    "text": "Mosaic chart\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorial-making-data.html#mosaic-plot"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#pie-ring-mosaic-chart-mappings",
-    "href": "slides/wk03-2025-01-30-figure-types.html#pie-ring-mosaic-chart-mappings",
-    "title": "Figure types",
-    "section": "Pie, ring, mosaic chart mappings",
-    "text": "Pie, ring, mosaic chart mappings\n\nHeights & widths \\(\\rightarrow\\) counts (or proportions)\nAreas \\(\\rightarrow\\) counts (or proportions)"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#nominal",
-    "href": "slides/wk03-2025-01-30-figure-types.html#nominal",
-    "title": "Figure types",
-    "section": "Nominal",
-    "text": "Nominal\n\nCounts or proportions"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#ordinal-data",
-    "href": "slides/wk03-2025-01-30-figure-types.html#ordinal-data",
-    "title": "Figure types",
-    "section": "Ordinal data",
-    "text": "Ordinal data\n\nAll of the nominal types…\nSorted"
-  },
-  {
-    "objectID": "tutorials/tutorial-making-data.html#bar-plot-ordinal",
-    "href": "tutorials/tutorial-making-data.html#bar-plot-ordinal",
-    "title": "",
-    "section": "Bar plot ordinal",
-    "text": "Bar plot ordinal\n\n\nCode\ncolors_rating_xtab |&gt;\n  ggplot() +\n  aes(x=rating, y=count, fill = favorite_color) +\n  # aes(x = favorite_color, y = school, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"dodge\")\n\n\n\n\n\n\n\n\nFigure 9: A barplot of the random favorite color data with an ordinal rating"
-  },
-  {
-    "objectID": "tutorials/tutorial-making-data.html#bar-plot-ordinal-stacked-alternative",
-    "href": "tutorials/tutorial-making-data.html#bar-plot-ordinal-stacked-alternative",
-    "title": "",
-    "section": "Bar plot ordinal stacked alternative",
-    "text": "Bar plot ordinal stacked alternative\n\n\nCode\ncolors_rating_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y=count, fill = rating) +\n  #scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 11: Another stacked barplot of the random favorite color data with an ordinal rating"
-  },
-  {
-    "objectID": "slides/wk03-2025-01-30-figure-types.html#barlollipop-chart-mappings",
-    "href": "slides/wk03-2025-01-30-figure-types.html#barlollipop-chart-mappings",
-    "title": "Figure types",
-    "section": "Bar/lollipop chart mappings",
-    "text": "Bar/lollipop chart mappings\n\n\n\nNumber of observations in category \\(\\rightarrow\\) height/length\nColor-category \\(\\rightarrow\\) fill color\nSchool \\(\\rightarrow\\) position on horizontal axis"
+    "text": "Figures found\n\nCode\nthese_figs &lt;- ex02 |&gt;\n  filter(!is.na(url_to_figure))\n\nres &lt;- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))\ncat(unlist(res), sep = \"\\n\")\n\n\nFigure 1\nSource: https://wpdatatables.com/sports-data-visualization/#:~:text=What%20is%20Sports%20Data%20Visualization,drawn%20from%20sports%2Drelated%20data.\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\nReport\nBasketball Fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 2\nSource: https://kinesiology.csp.edu/sports-coaches-and-trainers/infographic-top-paid-athletes-by-gender/?nab=1\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\narticle\nThis image breaksdown a few different types of sport business issues in regard to male vs female salary in sport.\n\n\n\n\n\n\nComments\n\n\n\n\nGraphic\n\n\n\n\n\nFigure 3\nSource: \n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nPoster\nSeen in person\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of physicians by resident year in a hospital department\n\n\n\n\n\nFigure 4\nSource: https://hcup-us.ahrq.gov/reports/statbriefs/sb253-Influenza-Hospitalizations-ED-Visits-2006-2016.jsp\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nReport\nPublic health/medical example\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 5\nSource: https://www.bruinsportsanalytics.com/post/growth-of-nwsl\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nArticle\nNWSL fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 6\nSource: https://www.hockeyviz.com/team/CAR/2425\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nNHL, Canes fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 7\nSource: https://manual.audacityteam.org/\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nVisualization of sound data\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 8\nSource: https://www.nbcnews.com/data-graphics/2023-college-football-season-data-6-maps-charts-rcna102444\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI am very interested in college sports and I found this graphic very interesting and easy to comprehend\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nLocations of student-athlete recruits for the major athletic conferences in the past 10 years\n\n\n\n\n\nFigure 9\nSource: https://news.gallup.com/poll/650318/grocery-restaurant-industry-images-slide.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI thought this was an interesting trend to map, especially because sports appear to be a large part of American entertainment culture\n\n\n\n\n\n\nComments\n\n\n\n\nAmerican’s overall opinions of the sports industry from 2001-2024\n\n\n\n\n\nFigure 10\nSource: https://informationisbeautiful.net/beautifulnews/595-childrens-lives-saved/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nInfographic\nI thought this was very visually appealing yet provided a lot of useful information\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of children’s lives saved in varying regions over the last 25 years\n\n\n\n\n\nFigure 11\nSource: https://petapixel.com/2019/10/01/photos-of-endangered-species-where-every-pixel-represents-one-animal/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nDigital Art\nSea turtles are my favorite animal, but I thought this was a very interesting way to use digital art to bring awareness to endangerment\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nDigital image made of pixels correlating to how the number of animals left in the population\n\n\n\n\n\nFigure 12\nSource: https://news.gallup.com/poll/655220/satisfaction-democracy-edges-record-low.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nEspecially after the election and inauguration day, this trend is interesting to me\n\n\n\n\n\n\nComments\n\n\n\n\nPercentage of Americans satisfied with the way democracy is working\n\n\n\n\n\nFigure 13\nSource: https://osf.io/preprints/osf/3nyrq\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\napl1\n3D Art\nI like 3D Art and I liked how the data was visualized in this example, it shows how varied it can be\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 14\nSource: https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\npp\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 15\nSource: https://fivethirtyeight.com/features/how-mapping-shots-in-the-nba-changed-it-forever/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nThe figure lays out a clear image of field shots paired with percentages\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 16\nSource: https://journals.sagepub.com/doi/full/10.3233/THC-231875\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\njournal\nThe figure shows their methods through images of demonstrations\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 17\nSource: https://www.nature.com/articles/s43247-023-00856-9\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure 3 shows comparisons of negative and positive emotions tied to treatment groups in a simple way\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 18\nSource: https://pmc.ncbi.nlm.nih.gov/articles/PMC8639497/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure shows an easy to read graph showing data of publications per year\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 19\nSource: https://zapier.com/blog/pandemic-business-boom-report/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the importance of the pandemic when it comes to an explanation for the rise of businesses\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 20\nSource: https://www.businessinsider.com/17-charts-that-show-just-how-scary-amazons-275-billion-business-really-is-2016-3#its-also-the-top-seller-for-personal-care-and-beauty-products-in-the-us-5\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the stats on how amazon exceeds other sellers specifically for beauty products and personal care\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 21\nSource: https://impact.economist.com/perspectives/health/addressing-recurrent-cardiovascular-events-asia-pacific\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 22\nSource: https://impact.economist.com/perspectives/technology-innovation/putting-iot-work-business-operations\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 23\nSource: https://ygoprodeck.com/tournament/richmond-wcq-regional-2626\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nI play Yugioh, so that’s why I chose the graph\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nI find the choice to use a Pie chart to represent proportion of decks used to be interesing, as compared to a bar chart for frequency\n\n\n\n\n\nFigure 24\nSource: https://www.census.gov/construction/nrs/current/index.html\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nThe census beuaru collects a lot of data, so i felt they’d be a great source to look ino.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 25\nSource: https://www.iea.org/data-and-statistics/charts/installed-nuclear-power-capacity-by-country-and-age-in-advanced-economies-end-2023\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nI’m really interested in Nuclear power, and did a research project on it, so I wanted to include something on it. And this bar graph shows that the US still leads in Nuclear Power production\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 26\nSource: https://thecuriousprofessor.com/2019/12/14/visualizing-data-through-art-2/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\nwebsite\nThe visual shows a scarf knitted, with each row shows the temperature of the day\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 27\nSource: https://thecuriousprofessor.com/2019/12/14/visualizing-data-through-art-2/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\nwebsite\nThe visual shows the sleep pattern of baby, showsing the wake time and sleep time\n\n\n\n\n\n\nComments\n\n\n\n\nNA"
   }
 ]

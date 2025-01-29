@@ -1,0 +1,22 @@
+---
+title: "Feedback on Exercise 01"
+format: html
+---
+
+## About
+
+This page provides some general comments about the write-ups submitted for [Exercise 01](../exercises/ex01-figs-in-psych-sci.qmd).
+
+Please take these observations to heart and implement them in future assignments.
+
+## Observations
+
+1. The best submissions wrote a complete essay. The submissions included an introductory paragraph, several body paragraphs, usually one per figure, a conclusion, and a reference section.
+
+2. The best submissions also mentioned the purpose of the exercise: To evaluate how some sample figures from various sources in psychological science communicated information about some topic.
+
+3. The best submissions *read* the papers or websites where the figures were drawn from and provided helpful information about what the figures were depicting.
+
+4. The best submissions adhered to the APA paper format. Here is a [sample template](https://docs.google.com/document/d/1gkQKBTc7yW03VAndEtX6loWjm7BAmmhO/edit).
+
+5. While it wasn't required for the exercise, papers that provided excerpts of the figures under discussion were easier to evaluate. We did not penalize submissions that did not provide figure excerpts because the assignment did not require it. To capture images for future exercises, see the [tutorial](../tutorials/tutorial-screenshots.qmd).

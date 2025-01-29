@@ -1,4 +1,7 @@
-# Setting up RStudio
+---
+title: "Setting up RStudio"
+format: html
+---
 
 ## About {-}
 

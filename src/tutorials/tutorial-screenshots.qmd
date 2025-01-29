@@ -1,4 +1,7 @@
-# Capturing images {-}
+---
+title: "Capturing images"
+format: html
+---
 
 ## About {-}
 

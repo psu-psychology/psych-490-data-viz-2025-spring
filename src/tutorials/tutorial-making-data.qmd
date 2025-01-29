@@ -1,4 +1,7 @@
-# Making and visualizing data {-}
+---
+title: "Making and visualizing data"
+format: html
+---
 
 ## About {-}
 

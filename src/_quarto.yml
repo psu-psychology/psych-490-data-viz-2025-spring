@@ -43,6 +43,7 @@ website:
         - tutorials/tutorial-python-matplotlib.qmd
       - text: Supplemental
         menu:
+        - href: supplemental/ex01-feedback.qmd
         - href: supplemental/psych-sci-figs.qmd
         - href: supplemental/other-field-figs.qmd
       - href: meta.qmd

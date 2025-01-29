@@ -9,7 +9,15 @@ In-class work on Tuesday, January 14 and Thursday, January 16.
 
 Write-up for credit [due]{.orange_due} on [Thursday, January 23](../schedule.qmd#thursday-january-16).
 
-[Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998394)
+[Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998394).
+
+::: {.callout-important}
+## Post-submission feedback
+
+We have prepared a page with general feedback that should be helpful for future assignments.
+The feedback can be found [here](../supplemental/ex01-feedback.qmd).
+
+:::
 
 ## Goals {-}
 

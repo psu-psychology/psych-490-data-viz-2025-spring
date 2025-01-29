@@ -2,7 +2,7 @@
 title: "Findings: Data viz outside psych sci"
 format: html
 params:
-  update_data: true
+  update_data: false
   fn: "ex02-figs-outside-psych-sci.csv"
 ---
 
@@ -10,7 +10,7 @@ params:
 
 This page extracts information about the data visualizations we explored in [Exercise-02](../exercises/ex02-data-viz-outside-psych.qmd) from the shared Google Sheet.
 
-## Survey
+## Google Sheet
 
 Direct link: <https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0>
 
@@ -98,7 +98,7 @@ This is achieved by adding the name of the data directory to a special `.gitigno
 
 Next we load the saved data file, and then proceed to clean it.
 
-```{r, eval=params$update_data}
+```{r}
 #| label: load-saved-data
 #| message: false
 #| echo: true

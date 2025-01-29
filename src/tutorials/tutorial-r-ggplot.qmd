@@ -1,4 +1,7 @@
-# Plotting with ggplot2 {-}
+---
+title: "Plotting with ggplot2"
+format: html
+---
 
 ## About {-}
 

@@ -40,12 +40,23 @@ Specifically, enter your team identifier in the `identifier` field, the source i
 - How effective is the message?
 - Are the figures statistical visualizations or information visualizations (Infovis) as described by @Gelman2013-he?
 
+::: {.callout-note}
+The visualizations you choose to write about may be the ones you found yourself or those that others found and [shared](../supplemental/other-field-figs.qmd).
+:::
+
 ## Submit {-}
 
-- Everyone
-  - Your data to the shared [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0).
-- Students who want this submission to count for one of their four (4) *required* exercises
-  - A 2-3 page write-up in APA format where you describe three (3) figures your group found, answering the questions in 4. above.
+### Everyone
+
+- Your data to the shared [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0).
+
+### Students submitting write-ups
+
+Students who want this submission to count for one of their four (4) *required* exercises should submit the following:
+
+- A 2-3 page write-up in APA format where you describe three (3) figures your group found, answering the questions in 4. above.
+
+Make sure to write a complete essay. See the [feedback for Exercise 01](../supplemental/ex01-feedback.qmd) for other hints about how to improve your submission. While we will not require it because the deadline is soon, if you are able to include images of the figures you discuss, please do so. [Here](../tutorials/tutorial-screenshots.qmd) is a tutorial to help.
 
 ::: {.callout-important}
 ## APA template

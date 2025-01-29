@@ -1,4 +1,7 @@
-# Plotting in Python
+---
+title: "Plotting in Python"
+format: html
+---
 
 ::: {.callout-note}
 Figures don't seem to be cross-referencing *across* documents.
