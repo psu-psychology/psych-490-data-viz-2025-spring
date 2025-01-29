@@ -23,7 +23,7 @@ subtitle: "2025-01-30"
 
 ## Data types
 
-- Extending @Stevens1946-sh, see @Wikipedia-contributors2024-xu
+- Extending @Stevens1946-sh, see also @Wikipedia-contributors2024-xu
 
 ::: {.incremental}
 - Nominal
@@ -41,6 +41,7 @@ subtitle: "2025-01-30"
 - Continuous/Real-valued
   - Interval
   - Ratio
+- Spatial data
 :::
 
 ## What data type(s)?
@@ -65,11 +66,12 @@ subtitle: "2025-01-30"
 
 ## Today
 
+- [Exercise 03 Making Data](../exercises/ex03-making-data.qmd)
 - Mapping data types to figures
-- (if time) Mapping data types to statistics
 
 ## Goals
 
+- Practice making instruments for different data types
 - Understand how different data types map to 
   - different types of data visualizations
   - different types of data summaries
@@ -92,9 +94,11 @@ subtitle: "2025-01-30"
 ## Ordinal data
 
 - All of the nominal types...
-- Sorted
+- Sorted in some order based on the ordinal variable
 
-##
+## Some examples
+
+- Using data created [here](../tutorials/tutorial-making-data.qmd)
 
 ## Bar chart
 
@@ -111,7 +115,9 @@ subtitle: "2025-01-30"
 
 ![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#dodged-barplot>](../include/fig/fig-nominal-barplot-stacked-1.png)
 
-## Bar/lollipop chart mappings
+## Bar, lollipop chart mappings
+
+- What *data* component maps to what *figure* dimension?
 
 >- Number of observations in category $\rightarrow$ height/length
 >- Color-category $\rightarrow$ fill color
@@ -121,9 +127,9 @@ subtitle: "2025-01-30"
 
 ::: {.callout-important}
 ## Your turn
-
 - What aspects of these figures are helpful, informative?
-- What aspects are unhelpful?
+- What aspects are unhelpful, potentially confusing?
+- What are the advantages and disadvantages of having so many choices of figures?
 :::
 
 ## Pie charts
@@ -143,15 +149,21 @@ subtitle: "2025-01-30"
 - Heights & widths $\rightarrow$ counts (or proportions)
 - Areas $\rightarrow$ counts (or proportions)
 
-# Mapping data types to statistics
-
-## Nominal
-
-- Counts or proportions
-
 # Main points
 
+## Making figures
+
+- Multiple figure types for each data type
+- Different data $\rightarrow$ figure feature mappings
+- Figure types vary in clarity
+- Perceiving length/height vs. area
+
 # Next time
+
+- More figure types
+  - Ordinal
+  - Continuous
+- Components of data figures
 
 # Resources
 

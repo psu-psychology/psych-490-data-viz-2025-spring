@@ -255,59 +255,58 @@ ggplot(data = colors_school_df) +
   scale_fill_identity()
 ```
 
+<!-- ### Analysis {-} -->
 
-### Analysis {-}
+<!-- Is one of these colors a particular favorite? -->
+<!-- Maybe. -->
+<!-- The observed data show some differences. -->
+<!-- But how can we know they aren't just due to random chance. -->
 
-Is one of these colors a particular favorite?
-Maybe.
-The observed data show some differences.
-But how can we know they aren't just due to random chance.
+<!-- ::: {.callout-warning} -->
+<!-- ## Stop the presses! -->
 
-::: {.callout-warning}
-## Stop the presses!
+<!-- These *particular* data are entirely random. -->
+<!-- We made them up! -->
 
-These *particular* data are entirely random.
-We made them up!
+<!-- Keep that in mind while we work through what we would do to answer the question if these were *not* fake, random data. -->
+<!-- ::: -->
 
-Keep that in mind while we work through what we would do to answer the question if these were *not* fake, random data.
-:::
+<!-- To answer that question, we'd have to compare our results with some other pattern, a pattern where there is **no** favorite. -->
+<!-- In other words, we want a pattern where the counts are all equal. -->
+<!-- So, we're back to summarizing. -->
 
-To answer that question, we'd have to compare our results with some other pattern, a pattern where there is **no** favorite.
-In other words, we want a pattern where the counts are all equal.
-So, we're back to summarizing.
+<!-- Actually, data analysis in the real world usually involves a back-and-forth alternation between summarizing/analyzing and visualizing. -->
 
-Actually, data analysis in the real world usually involves a back-and-forth alternation between summarizing/analyzing and visualizing.
+<!-- ```{mermaid} -->
+<!-- %%| label: fig-data-dialectic -->
+<!-- %%| fig-cap: "Illustration of the back and forth process between summarizing and visualizing that characterizes real-life data analysis." -->
+<!-- %%| flowchart LR --> -->
+<!-- %%|   A[Summarize] --> B[Visualize] --> -->
+<!-- %%|   B ---> A --> -->
+<!-- ``` -->
 
-```{mermaid}
-%%| label: fig-data-dialectic
-%%| fig-cap: "Illustration of the back and forth process between summarizing and visualizing that characterizes real-life data analysis."
-flowchart LR
-  A[Summarize] --> B[Visualize]
-  B ---> A
-```
+<!-- ### Summarizing II {-} -->
 
-### Summarizing II {-}
+<!-- Let's make data that have an identical pattern across all colors. -->
 
-Let's make data that have an identical pattern across all colors.
+<!-- There are several ways to do this, but here is one that works. -->
 
-There are several ways to do this, but here is one that works.
+<!-- ```{r} -->
+<!-- no_favorite <- rep(colors, length(our_color_sample)/length(colors)) -->
 
-```{r}
-no_favorite <- rep(colors, length(our_color_sample)/length(colors))
+<!-- compare_df <- data.frame(favorite_color = no_favorite) -->
 
-compare_df <- data.frame(favorite_color = no_favorite)
+<!-- xtabs(formula = ~favorite_color, data = compare_df) -->
+<!-- ``` -->
 
-xtabs(formula = ~favorite_color, data = compare_df)
-```
+<!-- How can we compare the data where there are no differences by category to the data where there *are* differences? -->
 
-How can we compare the data where there are no differences by category to the data where there *are* differences?
+<!-- ::: {.callout-warning} -->
+<!-- ## Under construction -->
 
-::: {.callout-warning}
-## Under construction
+<!-- This section is under construction. -->
 
-This section is under construction.
-
-:::
+<!-- ::: -->
 
 ## Ordinal data {-}
 
@@ -387,4 +386,176 @@ colors_rating_xtab |>
   aes(x = favorite_color, y=count, fill = rating) +
   #scale_fill_identity() +
   geom_bar(stat="identity", position="stack")
+```
+
+## Continuous data {-}
+
+### Generating {-}
+
+Let's imagine that we are studying a group of people who vary in age and body temperature.
+
+We'll assume that they are healthy--fever free.
+
+And we assume that we're sampling *uniformly* across children (0-18 years) and adults (18-85).
+
+```{r}
+n_kids <- 100
+n_adults <- 100
+age_days_kids <- runif(n_kids, 0, 18*365)
+age_days_adults <- runif(n_adults, 18*365+1, 85*365)
+
+# https://www.webmd.com/first-aid/normal-body-temperature
+body_temps_kids <- runif(n_kids, 95.9, 99.5)
+body_temps_adults <- runif(n_adults, 97, 99)
+
+age_days <- c(age_days_kids, age_days_adults)
+body_temp_F <- c(body_temps_kids, body_temps_adults)
+
+age_temp_df <- data.frame(age_days = age_days, body_temp = body_temp_F)
+
+# Mix them up a bit
+age_temp_df <- age_temp_df[sample(nrow(age_temp_df)),]
+```
+
+### Visualizing {-}
+
+To visualize continuous data, we have to decide what question(s) we want to answer.
+
+#### Scatterplot {-}
+
+The simplest visualization of two continuous variables is a scatterplot.
+
+```{r}
+#| label: fig-continuous-scatter
+#| fig-cap: "A scatterplot of the age and body temperature data."
+age_temp_df |>
+  ggplot() +
+  aes(x = age_days, y = body_temp) +
+  geom_point()
+```
+
+#### Histograms {-}
+
+```{r}
+#| label: fig-continuous-histogram-age
+#| fig-cap: "A histogram of the age data."
+age_temp_df |>
+  ggplot() +
+  aes(x = age_days) +
+  geom_histogram()
+```
+
+```{r}
+#| label: fig-continuous-histogram-temp
+#| fig-cap: "A histogram of the body temperature data."
+age_temp_df |>
+  ggplot() +
+  aes(x = body_temp) +
+  geom_histogram()
+```
+
+#### Violin plots {-}
+
+```{r}
+#| label: fig-continuous-violin-age
+#| fig-cap: "A violin plot of the age data."
+age_temp_df |>
+  ggplot() +
+  aes(x = age_days, y = "") +
+  geom_violin()
+```
+
+```{r}
+#| label: fig-continuous-violin-temp
+#| fig-cap: "A violin plot of the body temperature data."
+age_temp_df |>
+  ggplot() +
+  aes(y = "", x = body_temp) +
+  geom_violin()
+```
+
+#### Density {-}
+
+```{r}
+#| label: fig-continuous-density-age
+#| fig-cap: "A density plot of the age data."
+age_temp_df |>
+  ggplot() +
+  aes(x = age_days) +
+  geom_density()
+```
+
+```{r}
+#| label: fig-continuous-density-temp
+#| fig-cap: "A density plot of the body temperature data."
+age_temp_df |>
+  ggplot() +
+  aes(x = body_temp) +
+  geom_density()
+```
+
+#### Boxplot {-}
+
+```{r}
+#| label: fig-continuous-boxplot-age
+#| fig-cap: "A boxplot of the age data."
+age_temp_df |>
+  ggplot() +
+  aes(x = age_days) +
+  geom_boxplot()
+```
+
+```{r}
+#| label: fig-continuous-boxplot-temp
+#| fig-cap: "A boxplot of the body temperature data."
+age_temp_df |>
+  ggplot() +
+  aes(x = body_temp) +
+  geom_boxplot()
+```
+
+#### Violin + Boxplot {-}
+
+```{r}
+#| label: fig-continuous-violin-boxplot-age
+#| fig-cap: "A combined violin/boxplot of the age data."
+age_temp_df |>
+  ggplot() +
+  aes(x = age_days, y = "") +
+  geom_violin() +
+  geom_boxplot(alpha = .4)
+```
+
+```{r}
+#| label: fig-continuous-violin-boxplot-temp
+#| fig-cap: "A combined violin/boxplot of the body temperature data."
+age_temp_df |>
+  ggplot() +
+  aes(x = body_temp, y = "") +
+  geom_violin() +
+  geom_boxplot(alpha = .4)
+```
+
+#### Violin + Boxplot + Scatter {-}
+
+```{r}
+#| label: fig-continuous-violin-boxplot-scatter-age
+#| fig-cap: "A combined violin/boxplot/scatterplot of the age data."
+age_temp_df |>
+  ggplot() +
+  aes(x = age_days, y = "") +
+  geom_violin() +
+  geom_boxplot(alpha = .4) +
+  geom_jitter(width = 0, height = .2)
+```
+
+```{r}
+#| label: fig-continuous-violin-boxplot-scatter-temp
+#| fig-cap: "A combined violin/boxplot/scatterplot of the body temperature data."
+age_temp_df |>
+  ggplot() +
+  aes(x = body_temp, y = "") +
+  geom_violin() +
+  geom_boxplot(alpha = .4) +
+  geom_jitter(width = 0, height = .2)
 ```

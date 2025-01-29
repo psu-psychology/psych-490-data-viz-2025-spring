@@ -75,6 +75,8 @@
 
 ### Thursday, February 06 {-}
 
+<!-- No Sara -->
+
 *From stimulus to sensation*
 
 - Read: @Cairo2013-hm, Chapter 5, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892) |
@@ -136,6 +138,8 @@
 - [Due]{.orange_due}: [Final Project](exercises/final-project.qmd) proposal
 
 ### Thursday, March 06 {-}
+
+<!-- No Sara -->
 
 *Exploring data*
 
