@@ -61,9 +61,9 @@ Here are some additional journal resources that you might find interesting to ex
 - [Nature](https://www.nature.com)
 - [Nature Human Behavior](https://www.nature.com/nathumbehav)
 - [Trends in Cognitive Sciences](https://www.cell.com/trends/cognitive-sciences/home)
-- [Annual Reviews]
+- [Annual Reviews](https://www.annualreviews.org)
   - [Figures with "psychology" as search term](https://www.annualreviews.org/search?value1=psychology&option1=fulltext&facetOptions=51&value51=%22Figure%22&facetNames=contentType_facet&option51=contentType_facet&operator51=AND)
-  - ![Figures with "neuroscience" as search term](https://www.annualreviews.org/search?value1=neuroscience&option1=fulltext&facetOptions=51&value51=%22Figure%22&facetNames=contentType_facet&option51=contentType_facet&operator51=AND)
+  - [Figures with "neuroscience" as search term](https://www.annualreviews.org/search?value1=neuroscience&option1=fulltext&facetOptions=51&value51=%22Figure%22&facetNames=contentType_facet&option51=contentType_facet&operator51=AND)
   - [Knowable Magazine](https://knowablemagazine.org/) has a [graphics library](https://www.flickr.com/photos/knowablemag/)
 
 
