@@ -12,7 +12,7 @@ project:
 website:
   title: "PSYCH 490 • Spr 25"
   announcement: 
-    content: "[Exercise 02](exercises/ex02-data-viz-outside-psych.qmd) due Thu Jan 30. [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998399)" 
+    content: "[Exercise 02](exercises/ex02-data-viz-outside-psych.qmd) due Thu Jan 30. | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998399)" 
     position: below-navbar
     icon: info-circle
     dismissable: true

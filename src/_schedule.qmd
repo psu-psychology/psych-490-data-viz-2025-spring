@@ -62,7 +62,7 @@
   - @AtlassianUnknown-ob
 - Watch: @Channel2024-so
 - [Slides](slides/wk03-2025-01-30-figure-types.qmd)
-- [Due]{.orange_due}: [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998399)
+- [Due]{.orange_due}: [Exercise 02](exercises/ex02-data-viz-outside-psych.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998399) |
 
 ## February 3-7 {- #week-04}
 
@@ -71,13 +71,13 @@
 *Figure components*
 
 - [Slides](slides/wk04-2025-02-04-figure-components.qmd)
-- [Review](tutorials/tutorial-making-data.qmd)
+- Review: [Making and visualizing data](tutorials/tutorial-making-data.qmd)
 
 ### Thursday, February 06 {-}
 
 *From stimulus to sensation*
 
-- Read: @Cairo2013-hm, Chapter 5, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892)
+- Read: @Cairo2013-hm, Chapter 5, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892) |
 
 ## February 10-14 {- #week-05}
 
@@ -85,8 +85,8 @@
 
 *From sensation to perception*
 
-- Read: @Cairo2013-hm, Chapter 6, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892)
-- [Due]{.orange_due}: [Exercise-03](exercises/ex03-making-data.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998400)
+- Read: @Cairo2013-hm, Chapter 6, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892) |
+- [Due]{.orange_due}: [Exercise-03](exercises/ex03-making-data.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998400) |
 
 ### Thursday, February 13 {-}
 

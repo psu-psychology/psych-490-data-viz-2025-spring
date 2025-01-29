@@ -5,6 +5,12 @@ subtitle: "2025-01-30"
 
 # Prelude
 
+---
+
+{{< video https://www.youtube.com/watch?v=cuMwWvtNmJ0 width=100% height=70% >}}
+
+@Channel2024-so
+
 # Overview
 
 ## Announcements
@@ -96,15 +102,29 @@ subtitle: "2025-01-30"
 ---
 
 ![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#horizontal-barplot>](../include/fig/fig-nominal-barplot-horiz-1.png)
+
+---
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#lollipop-chart>](../include/fig/fig-nominal-lollipop-1.png)
+
 ---
 
 ![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#dodged-barplot>](../include/fig/fig-nominal-barplot-stacked-1.png)
 
-## Bar chart mappings
+## Bar/lollipop chart mappings
 
 >- Number of observations in category $\rightarrow$ height/length
 >- Color-category $\rightarrow$ fill color
 >- School $\rightarrow$ position on horizontal axis
+
+---
+
+::: {.callout-important}
+## Your turn
+
+- What aspects of these figures are helpful, informative?
+- What aspects are unhelpful?
+:::
 
 ## Pie charts
 

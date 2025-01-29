@@ -1,13 +1,16 @@
-# Making data {-}
+# Making and visualizing data {-}
 
 ## About {-}
 
 This tutorial shows how we can construct data of different types.
 
-```{r}
-library(ggplot2)
-library(ggmosaic)
-library(dplyr)
+The material serves as a companion to the classes on [making data](../schedule.qmd#tuesday-january-28), [figure types](../schedule.qmd#thursday-january-30), and [figure components](../schedule.qmd#tuesday-february-04).
+
+```{r, message=FALSE, warning=FALSE}
+# Load required package dependencies "quietly"
+suppressPackageStartupMessages(library(ggplot2))
+suppressPackageStartupMessages(library(ggmosaic))
+suppressPackageStartupMessages(library(dplyr))
 ```
 
 ## Nominal data {-}
@@ -15,6 +18,7 @@ library(dplyr)
 Let's focus on nominal or categorical data, specifically the favorite colors of some imaginary set of people.
 
 ```{r}
+# Make an array of color names
 colors <- c("red", "orange", "yellow", "green", "cyan", "blue", "violet", "white", "black", "gray")
 ```
 
@@ -32,6 +36,8 @@ For demonstration purposes, we want to take some number of random samples of the
 Let's pick *n*=200 and sample *with replacement* (`replace=TRUE` in the code below), meaning that we could have any number of colors in our sample of 200 imaginary people.
 
 ```{r}
+# Use `sample()` to pick a random sample of these *with* replacement so that 
+# the numbers/color differ.
 our_color_sample <- sample(colors, size=200, replace=TRUE)
 our_color_sample
 ```
@@ -75,16 +81,29 @@ Single nominal variables don't offer us many options for visualization.
 A bar plot showing the number of observations in each category seems to be it.
 
 ```{r}
+#| label: fig-nominal-barplot-bw
+#| fig-cap: "A black and white barplot of the random favorite color data"
+colors_df |>
+  ggplot() +
+  aes(x = favorite_color) +
+  geom_bar(stat = "count")
+```
+
+We can also add colors to the bars.
+
+```{r}
 #| label: fig-nominal-barplot
-#| fig-cap: "An (ugly) barplot of the random favorite color data"
+#| fig-cap: "A colorful barplot of the random favorite color data"
 colors_df |>
   ggplot() +
   aes(x = favorite_color, fill = favorite_color) +
-  scale_fill_identity() +
-  geom_bar()
+  geom_bar() +
+  scale_discrete_manual(aesthetics = c("color", "fill"),
+                        values = sort(colors))
 ```
 
-We can also flip the axis just for fun.
+We can flip the axis just for fun.
+Which is more readable?
 
 #### Horizontal barplot {-}
 
@@ -97,6 +116,33 @@ colors_df |>
   scale_fill_identity() +
   geom_bar() +
   coord_flip()
+```
+
+#### Lollipop chart {-}
+
+```{r}
+#| label: fig-nominal-lollipop
+#| fig-cap: "A lollipop plot of the random favorite color data"
+
+colors_xtab <- data.frame(table(colors_df))
+names(colors_xtab) <- c("favorite_color", "count")
+
+colors_xtab |>
+  ggplot() +
+  geom_point(aes(
+    x = favorite_color,
+    y = count,
+    color = favorite_color,
+    fill = favorite_color
+  )) +
+  geom_segment(aes(
+    x = favorite_color,
+    xend = favorite_color,
+    y = 0,
+    yend = count,
+    color = favorite_color
+  )) +
+  scale_discrete_manual(aesthetics = c("color", "fill"), values = sort(colors))
 ```
 
 #### Stacked barplot {-}
@@ -120,11 +166,11 @@ colors_school_xtab |>
   geom_bar(stat="identity", position="stack")
 ```
 
-#### Stacked barplot alternative
+#### Stacked barplot alternative {-}
 
 ```{r}
 #| label: fig-nominal-barplot-stacked-alt
-#| fig-cap: "Another stacked barplot of the random favorite color data "
+#| fig-cap: "Another stacked barplot of the random favorite color data."
 colors_school_xtab |>
   ggplot() +
   aes(x = favorite_color, y=count, fill = school) +
