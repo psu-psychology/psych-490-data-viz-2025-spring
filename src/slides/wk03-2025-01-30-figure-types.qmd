@@ -16,6 +16,7 @@ subtitle: "2025-01-30"
 ## Announcements
 
 - [Due]{.orange_due} on Tuesday, February 11: [Exercise-03](exercises/ex03-making-data.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998400)
+- Exercise 01 [feedback](../supplemental/ex01-feedback.qmd)
 
 ## Last time...
 
