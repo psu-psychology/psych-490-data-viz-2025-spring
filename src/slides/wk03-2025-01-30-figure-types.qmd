@@ -21,7 +21,16 @@ subtitle: "2025-01-30"
 
 *Making data*
 
-## Data types
+## Core ideas
+
+- Data are *made*
+  - Map characteristics (of people, things) to quantities/categories
+    - By some measurement procedure
+  - Reflect, but also select and deflect [@Burke1968-ye]
+- Mappings have different scale types [@Stevens1946-sh]
+- Scales determine i) permissible/logical stats & ii) best visualizations
+
+## Data types/scales
 
 - Extending @Stevens1946-sh, see also @Wikipedia-contributors2024-xu
 

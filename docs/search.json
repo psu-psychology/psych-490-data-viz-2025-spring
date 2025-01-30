@@ -221,35 +221,35 @@
     "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types",
     "title": "Figure types",
     "section": "What data type(s)?",
-    "text": "What data type(s)?\n\n\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-1"
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-1"
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-1",
     "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-1",
     "title": "Figure types",
     "section": "What data type(s)?",
-    "text": "What data type(s)?\n\n\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-3"
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-3"
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-2",
     "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-2",
     "title": "Figure types",
     "section": "What data type(s)?",
-    "text": "What data type(s)?\n\n\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-26"
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/psych-sci-figs.html#figure-26"
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-3",
     "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-3",
     "title": "Figure types",
     "section": "What data type(s)?",
-    "text": "What data type(s)?\n\n\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-15"
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-15"
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#what-data-types-4",
     "href": "slides/wk03-2025-01-30-figure-types.html#what-data-types-4",
     "title": "Figure types",
     "section": "What data type(s)?",
-    "text": "What data type(s)?\n\n\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
+    "text": "What data type(s)?\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/other-field-figs.html#figure-21"
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#today",
@@ -291,7 +291,7 @@
     "href": "slides/wk03-2025-01-30-figure-types.html#bar-chart",
     "title": "Figure types",
     "section": "Bar chart",
-    "text": "Bar chart\n\n\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#visualizing\n\n\n\n\n\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#horizontal-barplot\n\n\n\n\n\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#lollipop-chart\n\n\n\n\n\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#dodged-barplot"
+    "text": "Bar chart\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#visualizing"
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#barlollipop-chart-mappings",
@@ -305,21 +305,21 @@
     "href": "slides/wk03-2025-01-30-figure-types.html#pie-charts",
     "title": "Figure types",
     "section": "Pie charts",
-    "text": "Pie charts\n\n\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart"
+    "text": "Pie charts\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart"
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#ring-charts",
     "href": "slides/wk03-2025-01-30-figure-types.html#ring-charts",
     "title": "Figure types",
     "section": "Ring charts",
-    "text": "Ring charts\n\n\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart"
+    "text": "Ring charts\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart"
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#mosaic-chart",
     "href": "slides/wk03-2025-01-30-figure-types.html#mosaic-chart",
     "title": "Figure types",
     "section": "Mosaic chart",
-    "text": "Mosaic chart\n\n\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorial-making-data.html#mosaic-plot"
+    "text": "Mosaic chart\n\nhttps://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorial-making-data.html#mosaic-plot"
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#pie-ring-mosaic-chart-mappings",
@@ -340,7 +340,7 @@
     "href": "slides/wk03-2025-01-30-figure-types.html#references",
     "title": "Figure types",
     "section": "References",
-    "text": "References\n\n\n\n\nChannel, M. O. (2024). Every CHART types explained in 12 minutes. Youtube. Retrieved from https://www.youtube.com/watch?v=cuMwWvtNmJ0\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science (New York, N.Y.), 103, 677–680. https://doi.org/10.1126/science.103.2684.677\n\n\nWikipedia contributors. (2024, November 23). Statistical data type. Retrieved from https://en.wikipedia.org/wiki/Statistical_data_type"
+    "text": "References\n\n\n\n\nBurke, K. (1968). Language as Symbolic Action. University of California Press. Retrieved from https://www.ucpress.edu/books/language-as-symbolic-action/paper\n\n\nChannel, M. O. (2024). Every CHART types explained in 12 minutes. Youtube. Retrieved from https://www.youtube.com/watch?v=cuMwWvtNmJ0\n\n\nStevens, S. S. (1946). On the theory of scales of measurement. Science (New York, N.Y.), 103, 677–680. https://doi.org/10.1126/science.103.2684.677\n\n\nWikipedia contributors. (2024, November 23). Statistical data type. Retrieved from https://en.wikipedia.org/wiki/Statistical_data_type"
   },
   {
     "objectID": "slides/wk02-2025-01-23-art-sports-journ.html#mortality-trends-by-education-level",
@@ -1950,7 +1950,7 @@
     "href": "slides/wk03-2025-01-30-figure-types.html#bar-lollipop-chart-mappings",
     "title": "Figure types",
     "section": "Bar, lollipop chart mappings",
-    "text": "Bar, lollipop chart mappings\n\nWhat data component maps to what figure dimension?\n\n\n\nNumber of observations in category \\(\\rightarrow\\) height/length\nColor-category \\(\\rightarrow\\) fill color\nSchool \\(\\rightarrow\\) position on horizontal axis\n\n\n\n\n\n\n\n\n\nYour turn\n\n\n\n\nWhat aspects of these figures are helpful, informative?\nWhat aspects are unhelpful, potentially confusing?\nWhat are the advantages and disadvantages of having so many choices of figures?"
+    "text": "Bar, lollipop chart mappings\n\nWhat data component maps to what figure dimension?\n\n\n\n\nNumber of observations in category \\(\\rightarrow\\) height/length\nColor-category \\(\\rightarrow\\) fill color\nSchool \\(\\rightarrow\\) position on horizontal axis"
   },
   {
     "objectID": "slides/wk03-2025-01-30-figure-types.html#making-figures",
@@ -1958,5 +1958,19 @@
     "title": "Figure types",
     "section": "Making figures",
     "text": "Making figures\n\nMultiple figure types for each data type\nDifferent data \\(\\rightarrow\\) figure feature mappings\nFigure types vary in clarity\nPerceiving length/height vs. area"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#core-ideas",
+    "href": "slides/wk03-2025-01-30-figure-types.html#core-ideas",
+    "title": "Figure types",
+    "section": "Core ideas",
+    "text": "Core ideas\n\nData are made\n\nMap characteristics (of people, things) to quantities/categories\n\nBy some measurement procedure\n\nReflect, but also select and deflect (Burke, 1968)\n\nMappings have different scale types (Stevens, 1946)\nScales determine i) permissible/logical stats & ii) best visualizations"
+  },
+  {
+    "objectID": "slides/wk03-2025-01-30-figure-types.html#data-typesscales",
+    "href": "slides/wk03-2025-01-30-figure-types.html#data-typesscales",
+    "title": "Figure types",
+    "section": "Data types/scales",
+    "text": "Data types/scales\n\nExtending Stevens (1946), see also Wikipedia contributors (2024)\n\n\n\nNominal\n\nBinary (0,1)\nCategorical\n\nOrdinal\n\ne.g., 1st, 2nd, 3rd, …"
   }
 ]
