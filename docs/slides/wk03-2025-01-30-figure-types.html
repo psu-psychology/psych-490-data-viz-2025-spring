@@ -144,6 +144,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -202,6 +205,31 @@ Rick Gilmore
 <li>Mappings have different scale types <span class="citation" data-cites="Stevens1946-sh">(<a href="#/references" role="doc-biblioref" onclick="">Stevens, 1946</a>)</span></li>
 <li>Scales determine i) permissible/logical stats &amp; ii) best visualizations</li>
 </ul>
+</section>
+<section class="slide level2">
+
+<div class="cell" data-reveal="true" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-measurement-mapping" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-measurement-mapping-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-measurement-mapping">flowchart LR
+  Z[Researcher] -- Measures --&gt; B[Thing/Person]
+  B -- Makes --&gt; C{Data}
+  C --&gt; D[Analyst]
+  D -- Creates --&gt; E(Figure)
+  E -- Informs --&gt; F[Student/Reader]
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-measurement-mapping-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Illustration of mappings from observed entity to data figure
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="data-typesscales" class="slide level2">
 <h2>Data types/scales</h2>
@@ -390,10 +418,12 @@ Rick Gilmore
 <section id="making-figures" class="slide level2">
 <h2>Making figures</h2>
 <ul>
-<li>Multiple figure types for each data type</li>
+<li>Multiple possible figure types for each data/scale type</li>
 <li>Different data <span class="math inline">\(\rightarrow\)</span> figure feature mappings</li>
-<li>Figure types vary in clarity</li>
+<li>Figure types vary in clarity
+<ul>
 <li>Perceiving length/height vs.&nbsp;area</li>
+</ul></li>
 </ul>
 </section></section>
 <section id="next-time" class="title-slide slide level1 center">

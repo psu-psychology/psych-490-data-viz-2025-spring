@@ -31,6 +31,19 @@ subtitle: "2025-01-30"
 - Mappings have different scale types [@Stevens1946-sh]
 - Scales determine i) permissible/logical stats & ii) best visualizations
 
+---
+
+```{mermaid}
+%%| label: fig-measurement-mapping
+%%| fig-cap: "Illustration of mappings from observed entity to data figure"
+flowchart LR
+  Z[Researcher] -- Measures --> B[Thing/Person]
+  B -- Makes --> C{Data}
+  C --> D[Analyst]
+  D -- Creates --> E(Figure)
+  E -- Informs --> F[Student/Reader]
+```
+
 ## Data types/scales
 
 - Extending @Stevens1946-sh, see also @Wikipedia-contributors2024-xu
@@ -163,10 +176,10 @@ subtitle: "2025-01-30"
 
 ## Making figures
 
-- Multiple figure types for each data type
+- Multiple possible figure types for each data/scale type
 - Different data $\rightarrow$ figure feature mappings
 - Figure types vary in clarity
-- Perceiving length/height vs. area
+  - Perceiving length/height vs. area
 
 # Next time
 
