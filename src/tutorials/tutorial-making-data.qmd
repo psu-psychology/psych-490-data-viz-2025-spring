@@ -116,7 +116,7 @@ Which is more readable?
 
 ```{r}
 #| label: fig-nominal-barplot-horiz
-#| fig-cap: "An (ugly) horizontal barplot of the random favorite color data"
+#| fig-cap: "A colorful horizontal barplot of the random favorite color data"
 colors_df |>
   ggplot() +
   aes(x = favorite_color, fill = favorite_color) +
@@ -188,6 +188,8 @@ colors_df |>
 
 #### Lollipop chart {-}
 
+The lollipop chart uses less ink, so the ink/data ratio [@Tufte2001-cb] is higher than with barplots.
+
 ```{r}
 #| label: fig-nominal-lollipop
 #| fig-cap: "A lollipop plot of the random favorite color data"
@@ -217,22 +219,51 @@ colors_xtab |>
 
 #### Stacked barplot {-}
 
-We can also stack them, but this makes more sense with another nominal variable.
+We can also stack them.
 
 ```{r}
-#| label: fig-nominal-barplot-stacked
-#| fig-cap: "A horizontal barplot of the random favorite color data"
+#| label: fig-nominal-barplot-stacked-1
+#| fig-cap: "A stacked barplot of the random favorite color data"
+
+colors_df |>
+  count(favorite_color) |>
+  ggplot() +
+  aes(x = "", y = n, fill = favorite_color) +
+  geom_col(position = "stack") +
+  scale_fill_identity() +
+  xlab("")
+```
+
+This makes more sense with another nominal variable in the mix.
+
+Let's add a 'school' variable.
+
+```{r}
 school <- sample(c("psu", "osu", "mich", "usc"), size=200, replace=TRUE)
 colors_school_df <- colors_df
 colors_school_df$school <- school
+```
+
+Then create the plot.
+
+```{r}
+#| label: fig-nominal-barplot-stacked
+#| fig-cap: "A stacked barplot of the random favorite color data"
 
 colors_school_xtab <- data.frame(table(colors_school_df))
 names(colors_school_xtab) <- c("favorite_color", "school", "count")
+# 
+# colors_school_xtab |>
+#   ggplot() +
+#   aes(x = school, y=count, fill = favorite_color) +
+#   scale_fill_identity() +
+#   geom_bar(stat="identity", position="stack")
 
-colors_school_xtab |>
-  ggplot() +
-  aes(x = school, y=count, fill = favorite_color) +
-  scale_fill_identity() +
+colors_school_df |> 
+  count(school, favorite_color) |> 
+  ggplot() + 
+  aes(school, n, fill = favorite_color) + 
+  scale_fill_identity() + 
   geom_bar(stat="identity", position="stack")
 ```
 
@@ -257,7 +288,6 @@ Using the 'dodge' parameter is another way to show data with two categorical var
 colors_school_xtab |>
   ggplot() +
   aes(x = school, y=count, fill = favorite_color) +
-  # aes(x = favorite_color, y = school, fill = favorite_color) +
   scale_fill_identity() +
   geom_bar(stat="identity", position="dodge")
 ```
