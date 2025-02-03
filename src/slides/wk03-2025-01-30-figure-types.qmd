@@ -155,23 +155,6 @@ flowchart LR
 - What are the advantages and disadvantages of having so many choices of figures?
 :::
 
-## Pie charts
-
-![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart>](../include/fig/fig-nominal-pie-chart-1.png)
-
-## Ring charts
-
-![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart>](../include/fig/fig-nominal-ring-chart-1.png)
-
-## Mosaic chart
-
-![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorial-making-data.html#mosaic-plot>](../include/fig/fig-nominal-mosaic-chart-1.png)
-
-## Pie, ring, mosaic chart mappings
-
-- Heights & widths $\rightarrow$ counts (or proportions)
-- Areas $\rightarrow$ counts (or proportions)
-
 # Main points
 
 ## Making figures

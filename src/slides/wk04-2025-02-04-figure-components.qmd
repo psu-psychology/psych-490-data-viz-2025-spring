@@ -5,13 +5,48 @@ subtitle: "2025-02-04"
 
 # Prelude
 
+---
+
+{{< video https://www.youtube.com/watch?v=UCGNUo-XQJ8 width=100% height=70% >}}
+
+@Rutter2009-sa
+
 # Overview
 
 ## Announcements
 
+- No deadlines this week
+- Please complete your classmates' surveys:
+
+```{r, echo=FALSE}
+plot(qrcode::qr_code("https://docs.google.com/spreadsheets/d/1Z-TJQLOQ-yFBs0UimtCtv4pWIqcfq7jhAUA1QjVX89w/edit?usp=sharing"))
+```
+
 ## Last time...
 
-*Figure types*
+*Making data* & *Figure types*
+
+## Let's peek at your surveys
+
+- [Link](https://docs.google.com/spreadsheets/d/1Z-TJQLOQ-yFBs0UimtCtv4pWIqcfq7jhAUA1QjVX89w/edit?usp=sharing) to survey URLs
+
+## Considerations when making
+
+::: {.incremental}
+- Nominal/discrete
+  - Which categories
+  - Order
+  - Other?
+- Ordinal
+:::
+
+## More considerations
+
+::: {.incremental}
+- Continuous
+  - Continuous or grouped?
+- Free response
+:::
 
 ## Today
 
@@ -22,10 +57,24 @@ subtitle: "2025-02-04"
 
 # More on figure types
 
-## Cover story
+## More nominal types...
 
-- What if we asked people to rank-order their color preferences?
-- e.g., 1st, 2nd, 3rd, 4th choice
+## Pie charts
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart>](../include/fig/fig-nominal-pie-chart-1.png)
+
+## Ring charts
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#ring-chart>](../include/fig/fig-nominal-ring-chart-1.png)
+
+## Mosaic chart
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorial-making-data.html#mosaic-plot>](../include/fig/fig-nominal-mosaic-chart-1.png)
+
+## Pie, ring, mosaic chart mappings
+
+- Heights & widths $\rightarrow$ counts (or proportions)
+- Areas $\rightarrow$ counts (or proportions)
 
 ## Ordinal data
 
@@ -43,23 +92,110 @@ subtitle: "2025-02-04"
 
 ::: {.callout-important}
 ## Your turn
-
-- Would a lollipop graph make sense for plotting the preference scores?
-- How about a pie or ring chart?
-- Why or why not?
+- What elements of the data are mapped to which components of the figure?
+- What are the advantages and disadvantages of having so many choices of figures?
 :::
 
 ## Continuous data
 
+- [Cover story](https://psu-psychology.github.io/psych-490-data-viz-2025-spring/docs/tutorials/tutorial-making-data.html#continuous-data)
+  - People who vary in age and body temperature
+
+## Scatterplot
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#scatterplot>](../include/fig/fig-continuous-scatter-1.png)
+
+## Histogram
+
+:::: {.columns}
+::: {.column width=50%}
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#histograms>](../include/fig/fig-continuous-histogram-age-1.png)
+:::
+::: {.column width=50%}
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#histograms>](../include/fig/fig-continuous-histogram-temp-1.png)
+:::
+::::
+
+## Violin plots
+
+:::: {.columns}
+::: {.column width=50%}
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#violin-plots>](../include/fig/fig-continuous-violin-age-1.png)
+:::
+::: {.column width=50%}
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#scatterplot>](../include/fig/fig-continuous-violin-temp-1.png)
+:::
+::::
+
+---
+
+## Boxplot
+
+:::: {.columns}
+::: {.column width=50%}
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#boxplot>](../include/fig/fig-continuous-boxplot-age-1.png)
+:::
+::: {.column width=50%}
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#boxplot>](../include/fig/fig-continuous-boxplot-temp-1.png)
+:::
+::::
+
+## Boxplot features
+
+- Summary stats only
+- Median, upper/lower quartiles, minimum, maximum 
+
+## Violin + Boxplot
+
+:::: {.columns}
+::: {.column width=50%}
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#violin-boxplot>](../include/fig/fig-continuous-violin-boxplot-age-1.png)
+:::
+::: {.column width=50%}
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#violin-boxplot>](../include/fig/fig-continuous-violin-boxplot-temp-1.png)
+:::
+::::
+
+## Violin + Boxplot + Scatter
+
+:::: {.columns}
+::: {.column width=50%}
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#violin-boxplot-scatter>](../include/fig/fig-continuous-violin-boxplot-scatter-age-1.png)
+:::
+:::  {.column width=50%}
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#violin-boxplot-scatter>](../include/fig/fig-continuous-violin-boxplot-scatter-temp-1.png)
+:::
+::::
+
+## Your turn
+
+::: {.callout-important}
+## Critiquing figures
+- Which of these is most, least informative?
+- What prior knowledge do viewers need to understand the figures?
+:::
+
 # Components of data figures
 
-## Axes
+## Components
 
-## Title
-
-## Legend
+- Axes
+  - Scales (discrete/nominal) vs. continuous
+- Mappings
+  - Counts $\rightarrow$ height, length or area; color; texture
+    - Sort order $\rightarrow$ relative position
+  - Values $\rightarrow$ position
+- Legends
+- Caption & titles
 
 # Main points
+
+---
+
+- Multiple ways to visualize the same data
+  - Raw data
+  - Summaries/statistics
+- What choices make the figures more vs. less readable?
 
 # Next time
 

@@ -252,7 +252,7 @@ Then create the plot.
 
 colors_school_xtab <- data.frame(table(colors_school_df))
 names(colors_school_xtab) <- c("favorite_color", "school", "count")
-# 
+
 # colors_school_xtab |>
 #   ggplot() +
 #   aes(x = school, y=count, fill = favorite_color) +
@@ -285,6 +285,7 @@ Using the 'dodge' parameter is another way to show data with two categorical var
 ```{r}
 #| label: fig-nominal-barplot-dodge
 #| fig-cap: "A horizontal barplot of the random favorite color data"
+
 colors_school_xtab |>
   ggplot() +
   aes(x = school, y=count, fill = favorite_color) +
