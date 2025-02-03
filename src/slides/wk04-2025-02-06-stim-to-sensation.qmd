@@ -1,0 +1,240 @@
+---
+title: "From stimulus to sensation"
+subtitle: "2025-02-06"
+---
+
+# Prelude
+
+# Overview
+
+## Announcements
+
+- [Due]{.orange_due} next [Tuesday, February 11](../schedule.qmd#tuesday-february-11: [Exercise-03](../exercises/ex03-making-data.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998400) |
+ 
+## Last time...
+
+## Today
+
+- Light as information
+- Detecting information in light
+
+## Goals
+
+# Light as information
+
+---
+
+![@Cairo2013-hm Figure 5.12](../include/img/cairo-fig-5.12.png)
+
+## Electromagnetic spectrum
+
+![EM spectrum from Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/EM_Spectrum_Properties_edit.svg/1200px-EM_Spectrum_Properties_edit.svg.png)
+
+## Surfaces reflect/absorb
+
+![Source: https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg](https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg)
+
+## Different surfaces == Different reflection/absorption
+
+- Perceived color differences correspond to different patterns of light reflection.
+
+![@Randeberg2005-xn](https://www.researchgate.net/profile/Lise-Lyngsnes-Randeberg/publication/265397843/figure/fig8/AS:667691706773516@1536201516532/Reflectance-spectra-from-different-skin-types-measured-using-the-Ocean-Optics-SD-2000.png)
+
+## Spatial patterns
+
+- depend on object geometry and orientation
+
+![Source: https://thebrain.mcgill.ca](https://thebrain.mcgill.ca/flash/a/a_02/a_02_p/a_02_p_vis/a_02_p_vis_1p.jpg)
+
+---
+
+![Source: https://thebrain.mcgill.ca](https://thebrain.mcgill.ca/flash/a/a_02/a_02_p/a_02_p_vis/a_02_p_vis_1q.jpg)
+
+
+# Detecting information in light
+
+## What information?
+
+- Position
+- Length
+- Area
+- Color
+- Texture
+- (Motion)
+
+## The eye
+
+![](https://hmslade5.files.wordpress.com/2012/03/anatomy-of-the-eye.jpg){fig-align="center"}
+
+## is like an auto-focus, auto-exposure camera...
+
+![](https://www.optilase.com/wp-content/uploads/2014/12/camera-lens-eye-lens.jpg)
+
+## part of a self-stabilizing system...
+
+{{< video https://www.youtube.com/embed/JGArTWOJtXs?start=7 width="100%" height="70%" class="center_img">}}
+
+@Bucalo2015-qm
+
+## Eye + head + body system
+
+::: {.callout-note}
+- Eye + head + body movements *align and point* the eyes
+- Eye + head + body movements *stabilize* the eyes
+  - When the observer moves
+  - When objects move
+:::
+
+## Image formation
+
+- Eye's optical components
+  - Cornea (fixed refraction)
+  - Iris/pupil (*modifiable* aperture)
+  - Lens (*modifiable* refraction) 
+- Create projection (image) on retina
+
+## The retina...
+
+![](https://www.feinberg.northwestern.edu/gfx/news/retina.jpg){fig-align="center"}
+
+- samples spatial patterns of light intensity & wavelength patterns
+
+## 'Wavelength-tuned' photoreceptors
+
+![Source: Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/1416_Color_Sensitivity.jpg/1200px-1416_Color_Sensitivity.jpg)
+
+---
+
+![Retinal rods (green) & cones (blue)](https://i.pinimg.com/originals/9f/08/85/9f0885d4c209d5275f631ac194eb4f4b.jpg)
+
+---
+
+### ...arranged in mosaics
+
+![Normal color vision vs. protanopic (color blind) vision; Source: https://en.wikipedia.org/wiki/Retinal_mosaic](https://upload.wikimedia.org/wikipedia/commons/a/a6/ConeMosaics.jpg)
+
+---
+
+### with different concentrations in different parts of the retina
+
+![Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Human_photoreceptor_distribution.svg/1200px-Human_photoreceptor_distribution.svg.png)
+
+## Consequences
+
+- Must move eyes to position highest resolution part of retina over target
+- Keep track of sequence of eye movements and positions over time
+
+---
+
+![@Cairo2013-hm Figure 5.6](../include/img/cairo-fig-5.6.png)
+
+## Information processing
+
+- Separate channels for short, medium, long wavelengths (cones): chromatic (color)
+- Black/gray/white or overall illumination (rods): achromatic (dark/light)
+- ~120 M rods + ~ 5 M cones (125 M) vs. professional cameras with 100 M pixels
+
+---
+
+- Point by point, topographic (map-like) 2D image of 3D world
+- Non-uniform resolution (center >> periphery)
+- yields focused image except...
+
+---
+
+### ...when eye misshapen for cornea  +lens
+
+![](https://ecpbuilder.com/wp-content/uploads/sites/530/2015/10/myopia.jpg)
+
+## Acuity 
+
+- Detail/pattern vision
+- Grating acuity
+- Vernier
+- Symbol/letter (optotype) acuity
+
+---
+
+<!-- Measuring visual acuity HOTV and Lea symbols -->
+
+![](https://s3.amazonaws.com/cdn.bernell.com/images/uploads/712_4817_thumb.jpg){fig-align="center"}
+
+## Contrast sensitivity
+
+- Light/dark ratio (contast)
+- vs. spatial frequency (level of detail)
+- Contrast -> edges; edges -> shape/form
+- e.g., driving in fog
+
+---
+
+![Contrast sensitivity function](https://www.psychophysics.uk/wp-content/uploads/2019/04/typical-contrast-sensitivity-function.jpg)
+
+---
+
+![Pelli-Robson Contrast Sensitivity Chart](https://www.researchgate.net/publication/313816987/figure/fig2/AS:614249734864898@1523459957272/Pelli-Robson-contrast-sensitivity-chart-Precision-Vision-LaSalle-IL-11-The_Q640.jpg)
+
+## Color perception
+
+- Perceived color a function of activity in "R", "G", and "B" photoreceptors
+
+![Source: Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/1416_Color_Sensitivity.jpg/1200px-1416_Color_Sensitivity.jpg)
+
+## Color vision anomalies
+
+- Absence or anomalies in photoreceptors
+
+![@Wong2011-ke Figure 1](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnmeth.1618/MediaObjects/41592_2011_Article_BFnmeth1618_Fig1_HTML.jpg?as=webp)
+
+## Types
+
+:::: {.columns}
+::: {.column width=40%}
+- Protanopia (impaired R/long wavelength)
+- Deuteranopia (impaired G/medium wavelength)
+- Tritanopia (impaired B/short wavelength)
+:::
+::: {.column width=60%}
+![https://www.color-blindness.com/protanopia-red-green-color-blindness/](https://www.color-blindness.com/wp-content/images/Protanopia-Color-Spectrum.jpg)
+:::
+::::
+
+## Color palettes
+
+![@Wong2011-ke Figure 2](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnmeth.1618/MediaObjects/41592_2011_Article_BFnmeth1618_Fig2_HTML.jpg?as=webp)
+
+## Some consequences for data figures
+
+- Size of visual elements (symbols, including text)
+- Contrast (light/dark or color)
+- Textures of visual patterns
+- Some colors more visible than others
+  - [Vischeck](https://www.vischeck.com/)
+- How much visual scanning (# of eye movements)?
+
+## Your turn
+
+::: {.callout-important}
+## Evaluating figures
+
+- Visit our sample figures [page](../tutorials/tutorial-making-data.qmd) and evaluate which figures might pose challenges for people with vision impairments.
+- Visit our figures in [psychological science](../supplemental/psych-sci-figs.qmd) and figures in [business, journalism, and the arts](../supplemental/other-field-figs.qmd) pages with the same goal.
+- What specific issues do you foresee?
+
+:::
+
+# Main points
+
+---
+
+- Visual perception a *reconstruction* of reality
+- Continuous pattern of light $\rightarrow$ intensity detected by 4 photoreceptor types
+- Retina has non-uniform sensivity to light, so some information more easily detected
+
+# Next time
+
+*From cognition to understanding*
+
+# Resources
+
+## References

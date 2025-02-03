@@ -80,6 +80,7 @@
 *From stimulus to sensation*
 
 - Read: @Cairo2013-hm, Chapter 5, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892) |
+- [Slides](slides/wk04-2025-02-06-stim-to-sensation.qmd)
 
 ## February 10-14 {- #week-05}
 

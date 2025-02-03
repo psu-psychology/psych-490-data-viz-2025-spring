@@ -1972,5 +1972,194 @@
     "title": "Findings: Data viz outside psych sci",
     "section": "Figures found",
     "text": "Figures found\n\nCode\nthese_figs &lt;- ex02 |&gt;\n  filter(!is.na(url_to_figure))\n\nres &lt;- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))\ncat(unlist(res), sep = \"\\n\")\n\n\nFigure 1\nSource: https://wpdatatables.com/sports-data-visualization/#:~:text=What%20is%20Sports%20Data%20Visualization,drawn%20from%20sports%2Drelated%20data.\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\nReport\nBasketball Fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 2\nSource: https://kinesiology.csp.edu/sports-coaches-and-trainers/infographic-top-paid-athletes-by-gender/?nab=1\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\narticle\nThis image breaksdown a few different types of sport business issues in regard to male vs female salary in sport.\n\n\n\n\n\n\nComments\n\n\n\n\nGraphic\n\n\n\n\n\nFigure 3\nSource: \n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nPoster\nSeen in person\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of physicians by resident year in a hospital department\n\n\n\n\n\nFigure 4\nSource: https://hcup-us.ahrq.gov/reports/statbriefs/sb253-Influenza-Hospitalizations-ED-Visits-2006-2016.jsp\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nReport\nPublic health/medical example\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 5\nSource: https://www.bruinsportsanalytics.com/post/growth-of-nwsl\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nArticle\nNWSL fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 6\nSource: https://www.hockeyviz.com/team/CAR/2425\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nNHL, Canes fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 7\nSource: https://manual.audacityteam.org/\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nVisualization of sound data\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 8\nSource: https://www.nbcnews.com/data-graphics/2023-college-football-season-data-6-maps-charts-rcna102444\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI am very interested in college sports and I found this graphic very interesting and easy to comprehend\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nLocations of student-athlete recruits for the major athletic conferences in the past 10 years\n\n\n\n\n\nFigure 9\nSource: https://news.gallup.com/poll/650318/grocery-restaurant-industry-images-slide.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI thought this was an interesting trend to map, especially because sports appear to be a large part of American entertainment culture\n\n\n\n\n\n\nComments\n\n\n\n\nAmerican’s overall opinions of the sports industry from 2001-2024\n\n\n\n\n\nFigure 10\nSource: https://informationisbeautiful.net/beautifulnews/595-childrens-lives-saved/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nInfographic\nI thought this was very visually appealing yet provided a lot of useful information\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of children’s lives saved in varying regions over the last 25 years\n\n\n\n\n\nFigure 11\nSource: https://petapixel.com/2019/10/01/photos-of-endangered-species-where-every-pixel-represents-one-animal/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nDigital Art\nSea turtles are my favorite animal, but I thought this was a very interesting way to use digital art to bring awareness to endangerment\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nDigital image made of pixels correlating to how the number of animals left in the population\n\n\n\n\n\nFigure 12\nSource: https://news.gallup.com/poll/655220/satisfaction-democracy-edges-record-low.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nEspecially after the election and inauguration day, this trend is interesting to me\n\n\n\n\n\n\nComments\n\n\n\n\nPercentage of Americans satisfied with the way democracy is working\n\n\n\n\n\nFigure 13\nSource: https://osf.io/preprints/osf/3nyrq\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\napl1\n3D Art\nI like 3D Art and I liked how the data was visualized in this example, it shows how varied it can be\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 14\nSource: https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\npp\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 15\nSource: https://fivethirtyeight.com/features/how-mapping-shots-in-the-nba-changed-it-forever/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nThe figure lays out a clear image of field shots paired with percentages\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 16\nSource: https://journals.sagepub.com/doi/full/10.3233/THC-231875\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\njournal\nThe figure shows their methods through images of demonstrations\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 17\nSource: https://www.nature.com/articles/s43247-023-00856-9\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure 3 shows comparisons of negative and positive emotions tied to treatment groups in a simple way\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 18\nSource: https://pmc.ncbi.nlm.nih.gov/articles/PMC8639497/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure shows an easy to read graph showing data of publications per year\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 19\nSource: https://zapier.com/blog/pandemic-business-boom-report/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the importance of the pandemic when it comes to an explanation for the rise of businesses\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 20\nSource: https://www.businessinsider.com/17-charts-that-show-just-how-scary-amazons-275-billion-business-really-is-2016-3#its-also-the-top-seller-for-personal-care-and-beauty-products-in-the-us-5\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the stats on how amazon exceeds other sellers specifically for beauty products and personal care\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 21\nSource: https://impact.economist.com/perspectives/health/addressing-recurrent-cardiovascular-events-asia-pacific\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 22\nSource: https://impact.economist.com/perspectives/technology-innovation/putting-iot-work-business-operations\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 23\nSource: https://ygoprodeck.com/tournament/richmond-wcq-regional-2626\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nI play Yugioh, so that’s why I chose the graph\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nI find the choice to use a Pie chart to represent proportion of decks used to be interesing, as compared to a bar chart for frequency\n\n\n\n\n\nFigure 24\nSource: https://www.census.gov/construction/nrs/current/index.html\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nThe census beuaru collects a lot of data, so i felt they’d be a great source to look ino.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 25\nSource: https://www.iea.org/data-and-statistics/charts/installed-nuclear-power-capacity-by-country-and-age-in-advanced-economies-end-2023\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nI’m really interested in Nuclear power, and did a research project on it, so I wanted to include something on it. And this bar graph shows that the US still leads in Nuclear Power production\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 26\nSource: https://thecuriousprofessor.com/2019/12/14/visualizing-data-through-art-2/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\nwebsite\nThe visual shows a scarf knitted, with each row shows the temperature of the day\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 27\nSource: https://thecuriousprofessor.com/2019/12/14/visualizing-data-through-art-2/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\nwebsite\nThe visual shows the sleep pattern of baby, showsing the wake time and sleep time\n\n\n\n\n\n\nComments\n\n\n\n\nNA"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#announcements",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#announcements",
+    "title": "From stimulus to sensation",
+    "section": "Announcements",
+    "text": "Announcements\n\nDue next [Tuesday, February 11](../schedule.qmd#tuesday-february-11: Exercise-03 | Canvas dropbox |"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#last-time",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#last-time",
+    "title": "From stimulus to sensation",
+    "section": "Last time…",
+    "text": "Last time…"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#today",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#today",
+    "title": "From stimulus to sensation",
+    "section": "Today",
+    "text": "Today\n\nLight as information\nDetecting information in light"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#goals",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#goals",
+    "title": "From stimulus to sensation",
+    "section": "Goals",
+    "text": "Goals"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#electromagnetic-spectrum",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#electromagnetic-spectrum",
+    "title": "From stimulus to sensation",
+    "section": "Electromagnetic spectrum",
+    "text": "Electromagnetic spectrum\n\nEM spectrum from Wikipedia"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#surfaces-reflectabsorb",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#surfaces-reflectabsorb",
+    "title": "From stimulus to sensation",
+    "section": "Surfaces reflect/absorb",
+    "text": "Surfaces reflect/absorb\n\nSource: https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#references",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#references",
+    "title": "From stimulus to sensation",
+    "section": "References",
+    "text": "References\n\n\n\n\nBucalo, P. (2015, October). Falcon belly dance. Youtube. Retrieved from https://www.youtube.com/watch?v=JGArTWOJtXs\n\n\nCairo, A. (2013). The functional art: An introduction to information graphics and visualization. Upper Saddle River, N: New Riders Publishing.\n\n\nRandeberg, L. (2005). Diagnostic applications of diffuse reflectance spectroscopy. Retrieved from https://www.semanticscholar.org/paper/ec9450b79923e2e2152b54ab9241b60bc5374944\n\n\nWong, B. (2011). Color blindness. Nature Methods, 8, 441. https://doi.org/10.1038/nmeth.1618"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#different-surfaces-different-reflectionabsorption",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#different-surfaces-different-reflectionabsorption",
+    "title": "From stimulus to sensation",
+    "section": "Different surfaces == Different reflection/absorption",
+    "text": "Different surfaces == Different reflection/absorption\n\nPerceived color differences correspond to different patterns of light reflection.\n\n\nRandeberg (2005)"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#spatial-patterns",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#spatial-patterns",
+    "title": "From stimulus to sensation",
+    "section": "Spatial patterns",
+    "text": "Spatial patterns\n\ndepend on object geometry and orientation\n\n\nSource: https://thebrain.mcgill.ca"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#the-eye",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#the-eye",
+    "title": "From stimulus to sensation",
+    "section": "The eye",
+    "text": "The eye"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#is-like-an-auto-focus-auto-exposure-camera",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#is-like-an-auto-focus-auto-exposure-camera",
+    "title": "From stimulus to sensation",
+    "section": "is like an auto-focus, auto-exposure camera…",
+    "text": "is like an auto-focus, auto-exposure camera…"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#part-of-a-self-stabilizing-system",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#part-of-a-self-stabilizing-system",
+    "title": "From stimulus to sensation",
+    "section": "part of a self-stabilizing system…",
+    "text": "part of a self-stabilizing system…\n\nBucalo (2015)"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#eye-head-body-system",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#eye-head-body-system",
+    "title": "From stimulus to sensation",
+    "section": "Eye + head + body system",
+    "text": "Eye + head + body system\n\n\n\n\n\n\nNote\n\n\n\nEye + head + body movements align and point the eyes\nEye + head + body movements stabilize the eyes\n\nWhen the observer moves\nWhen objects move"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#image-formation",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#image-formation",
+    "title": "From stimulus to sensation",
+    "section": "Image formation",
+    "text": "Image formation\n\nEye’s optical components\n\nCornea (fixed refraction)\nIris/pupil (modifiable aperture)\nLens (modifiable refraction)\n\nCreate projection (image) on retina"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#the-retina",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#the-retina",
+    "title": "From stimulus to sensation",
+    "section": "The retina…",
+    "text": "The retina…\n\n\nsamples spatial patterns of light intensity & wavelength patterns"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#information-processing",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#information-processing",
+    "title": "From stimulus to sensation",
+    "section": "Information processing",
+    "text": "Information processing\n\nSeparate channels for short, medium, long wavelengths (cones): chromatic (color)\nBlack/gray/white or overall illumination (rods): achromatic (dark/light)\n~120 M rods + ~ 5 M cones (125 M) vs. professional cameras with 100 M pixels"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#what-information",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#what-information",
+    "title": "From stimulus to sensation",
+    "section": "What information?",
+    "text": "What information?\n\nPosition\nLength\nArea\nColor\nTexture\n(Motion)"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#wavelength-tuned-photoreceptors",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#wavelength-tuned-photoreceptors",
+    "title": "From stimulus to sensation",
+    "section": "‘Wavelength-tuned’ photoreceptors",
+    "text": "‘Wavelength-tuned’ photoreceptors\n\nSource: Wikipedia"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#consequences",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#consequences",
+    "title": "From stimulus to sensation",
+    "section": "Consequences",
+    "text": "Consequences\n\nMust move eyes to position highest resolution part of retina over target\nKeep track of sequence of eye movements and positions over time"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#acuity",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#acuity",
+    "title": "From stimulus to sensation",
+    "section": "Acuity",
+    "text": "Acuity\n\nDetail/pattern vision\nGrating acuity\nVernier\nSymbol/letter (optotype) acuity"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#contrast-sensitivity",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#contrast-sensitivity",
+    "title": "From stimulus to sensation",
+    "section": "Contrast sensitivity",
+    "text": "Contrast sensitivity\n\nLight/dark ratio (contast)\nvs. spatial frequency (level of detail)\nContrast -&gt; edges; edges -&gt; shape/form\ne.g., driving in fog"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#some-consequences-for-data-figures",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#some-consequences-for-data-figures",
+    "title": "From stimulus to sensation",
+    "section": "Some consequences for data figures",
+    "text": "Some consequences for data figures\n\nSize of visual elements (symbols, including text)\nContrast (light/dark or color)\nTextures of visual patterns\nSome colors more visible than others\n\nVischeck\n\nHow much visual scanning (# of eye movements)?"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#color-palettes",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#color-palettes",
+    "title": "From stimulus to sensation",
+    "section": "Color palettes",
+    "text": "Color palettes\n\nWong (2011) Figure 2"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#color-perception",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#color-perception",
+    "title": "From stimulus to sensation",
+    "section": "Color perception",
+    "text": "Color perception\n\nPerceived color a function of activity in “R”, “G”, and “B” photoreceptors\n\n\nSource: Wikipedia"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#color-vision-anomalies",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#color-vision-anomalies",
+    "title": "From stimulus to sensation",
+    "section": "Color vision anomalies",
+    "text": "Color vision anomalies\n\nAbsence or anomalies in photoreceptors\n\n\nWong (2011) Figure 1"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#types",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#types",
+    "title": "From stimulus to sensation",
+    "section": "Types",
+    "text": "Types\n\n\n\nProtanopia (impaired R/long wavelength)\nDeuteranopia (impaired G/medium wavelength)\nTritanopia (impaired B/short wavelength)\n\n\n\n\n\nhttps://www.color-blindness.com/protanopia-red-green-color-blindness/"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#your-turn",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#your-turn",
+    "title": "From stimulus to sensation",
+    "section": "Your turn",
+    "text": "Your turn\n\n\n\n\n\n\nEvaluating figures\n\n\n\nVisit our sample figures page and evaluate which figures might pose challenges for people with vision impairments.\nVisit our figures in psychological science and figures in business, journalism, and the arts pages with the same goal.\nWhat specific issues do you foresee?"
   }
 ]
