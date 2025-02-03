@@ -1754,7 +1754,7 @@
     "href": "slides/wk04-2025-02-04-figure-components.html#boxplot-features",
     "title": "Figure components",
     "section": "Boxplot features",
-    "text": "Boxplot features\n\nSummary stats only\nMedian, upper/lower quartiles, minimum, maximum"
+    "text": "Boxplot features\n\nSummary stats only, no raw data\nMedian, upper/lower quartiles, minimum, maximum"
   },
   {
     "objectID": "slides/wk04-2025-02-04-figure-components.html#violin-boxplot",
@@ -1789,7 +1789,7 @@
     "href": "slides/wk04-2025-02-04-figure-components.html#references",
     "title": "Figure components",
     "section": "References",
-    "text": "References\n\n\n\n\nRutter, S. (2009). Figure eight schoolhouse rock. Youtube. Retrieved from https://www.youtube.com/watch?v=UCGNUo-XQJ8"
+    "text": "References\n\n\n\n\nMatejka, J., & Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In Proceedings of the 2017 CHI conference on human factors in computing systems. New York, NY, USA: ACM. https://doi.org/10.1145/3025453.3025912\n\n\nRutter, S. (2009). Figure eight schoolhouse rock. Youtube. Retrieved from https://www.youtube.com/watch?v=UCGNUo-XQJ8\n\n\nThe Datasaurus dozen - same stats, different graphs | Autodesk Research. (n.d.). Retrieved June 2, 2019, from https://www.autodeskresearch.com/publications/samestats"
   },
   {
     "objectID": "exercises/ex02-data-viz-outside-psych.html",
@@ -2161,5 +2161,26 @@
     "title": "From stimulus to sensation",
     "section": "Your turn",
     "text": "Your turn\n\n\n\n\n\n\nEvaluating figures\n\n\n\nVisit our sample figures page and evaluate which figures might pose challenges for people with vision impairments.\nVisit our figures in psychological science and figures in business, journalism, and the arts pages with the same goal.\nWhat specific issues do you foresee?"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-04-figure-components.html#a-cautionary-tale",
+    "href": "slides/wk04-2025-02-04-figure-components.html#a-cautionary-tale",
+    "title": "Figure components",
+    "section": "A cautionary tale",
+    "text": "A cautionary tale\n\n“The Datasaurus dozen - same stats, different graphs | Autodesk Research” (n.d.); Matejka & Fitzmaurice (2017)"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-04-figure-components.html#boxplot-limitations",
+    "href": "slides/wk04-2025-02-04-figure-components.html#boxplot-limitations",
+    "title": "Figure components",
+    "section": "Boxplot limitations",
+    "text": "Boxplot limitations\n\n“The Datasaurus dozen - same stats, different graphs | Autodesk Research” (n.d.); Matejka & Fitzmaurice (2017)"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-04-figure-components.html#next-time",
+    "href": "slides/wk04-2025-02-04-figure-components.html#next-time",
+    "title": "Figure components",
+    "section": "Next time",
+    "text": "Next time\nFrom stimulus to sensation"
   }
 ]

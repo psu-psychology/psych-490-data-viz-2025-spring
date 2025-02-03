@@ -100,6 +100,10 @@ plot(qrcode::qr_code("https://docs.google.com/spreadsheets/d/1Z-TJQLOQ-yFBs0Uimt
 
 - [Cover story](https://psu-psychology.github.io/psych-490-data-viz-2025-spring/docs/tutorials/tutorial-making-data.html#continuous-data)
   - People who vary in age and body temperature
+  
+## A cautionary tale
+
+![@datasaurus2019-us; @Matejka2017-xi](https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif)
 
 ## Scatterplot
 
@@ -116,18 +120,6 @@ plot(qrcode::qr_code("https://docs.google.com/spreadsheets/d/1Z-TJQLOQ-yFBs0Uimt
 :::
 ::::
 
-## Violin plots
-
-:::: {.columns}
-::: {.column width=50%}
-![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#violin-plots>](../include/fig/fig-continuous-violin-age-1.png)
-:::
-::: {.column width=50%}
-![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#scatterplot>](../include/fig/fig-continuous-violin-temp-1.png)
-:::
-::::
-
----
 
 ## Boxplot
 
@@ -142,8 +134,23 @@ plot(qrcode::qr_code("https://docs.google.com/spreadsheets/d/1Z-TJQLOQ-yFBs0Uimt
 
 ## Boxplot features
 
-- Summary stats only
+- Summary stats only, no raw data
 - Median, upper/lower quartiles, minimum, maximum 
+
+## Boxplot limitations
+
+![@datasaurus2019-us; @Matejka2017-xi](https://www.research.autodesk.com/app/uploads/2024/09/BoxViolinSmaller.gif)
+
+## Violin plots
+
+:::: {.columns}
+::: {.column width=50%}
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#violin-plots>](../include/fig/fig-continuous-violin-age-1.png)
+:::
+::: {.column width=50%}
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#scatterplot>](../include/fig/fig-continuous-violin-temp-1.png)
+:::
+::::
 
 ## Violin + Boxplot
 
@@ -197,7 +204,7 @@ plot(qrcode::qr_code("https://docs.google.com/spreadsheets/d/1Z-TJQLOQ-yFBs0Uimt
   - Summaries/statistics
 - What choices make the figures more vs. less readable?
 
-# Next time
+## Next time
 
 *From stimulus to sensation*
 

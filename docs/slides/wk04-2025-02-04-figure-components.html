@@ -299,6 +299,10 @@ Rick Gilmore
 </ul></li>
 </ul>
 </section>
+<section id="a-cautionary-tale" class="slide level2">
+<h2>A cautionary tale</h2>
+
+<img data-src="https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="datasaurus2019-us"><span>“The <span>D</span>atasaurus dozen - same stats, different graphs | <span>A</span>utodesk <span>R</span>esearch”</span> (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span>; <span class="citation" data-cites="Matejka2017-xi">Matejka &amp; Fitzmaurice (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span></p></section>
 <section id="scatterplot" class="slide level2">
 <h2>Scatterplot</h2>
 
@@ -318,25 +322,6 @@ Rick Gilmore
 <figure>
 <p><img data-src="../include/fig/fig-continuous-histogram-temp-1.png"></p>
 <figcaption><a href="https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#histograms" class="uri">https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#histograms</a></figcaption>
-</figure>
-</div>
-</div></div>
-</section>
-<section id="violin-plots" class="slide level2">
-<h2>Violin plots</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../include/fig/fig-continuous-violin-age-1.png"></p>
-<figcaption><a href="https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#violin-plots" class="uri">https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#violin-plots</a></figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../include/fig/fig-continuous-violin-temp-1.png"></p>
-<figcaption><a href="https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#scatterplot" class="uri">https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#scatterplot</a></figcaption>
 </figure>
 </div>
 </div></div>
@@ -363,9 +348,32 @@ Rick Gilmore
 <section id="boxplot-features" class="slide level2">
 <h2>Boxplot features</h2>
 <ul>
-<li>Summary stats only</li>
+<li>Summary stats only, no raw data</li>
 <li>Median, upper/lower quartiles, minimum, maximum</li>
 </ul>
+</section>
+<section id="boxplot-limitations" class="slide level2">
+<h2>Boxplot limitations</h2>
+
+<img data-src="https://www.research.autodesk.com/app/uploads/2024/09/BoxViolinSmaller.gif" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="datasaurus2019-us"><span>“The <span>D</span>atasaurus dozen - same stats, different graphs | <span>A</span>utodesk <span>R</span>esearch”</span> (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span>; <span class="citation" data-cites="Matejka2017-xi">Matejka &amp; Fitzmaurice (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span></p></section>
+<section id="violin-plots" class="slide level2">
+<h2>Violin plots</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../include/fig/fig-continuous-violin-age-1.png"></p>
+<figcaption><a href="https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#violin-plots" class="uri">https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#violin-plots</a></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../include/fig/fig-continuous-violin-temp-1.png"></p>
+<figcaption><a href="https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#scatterplot" class="uri">https://psu-psychology.github.io/psych-490-data-viz-2025-spring/tutorials/tutorial-making-data.html#scatterplot</a></figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="violin-boxplot" class="slide level2">
 <h2>Violin + Boxplot</h2>
@@ -463,12 +471,11 @@ Rick Gilmore
 </ul></li>
 <li>What choices make the figures more vs.&nbsp;less readable?</li>
 </ul>
-</section></section>
-<section id="next-time" class="title-slide slide level1 center">
-<h1>Next time</h1>
-<p><em>From stimulus to sensation</em></p>
 </section>
-
+<section id="next-time" class="slide level2">
+<h2>Next time</h2>
+<p><em>From stimulus to sensation</em></p>
+</section></section>
 <section>
 <section id="resources" class="title-slide slide level1 center">
 <h1>Resources</h1>
@@ -479,8 +486,14 @@ Rick Gilmore
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Matejka2017-xi" class="csl-entry" role="listitem">
+Matejka, J., &amp; Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In <em>Proceedings of the 2017 CHI conference on human factors in computing systems</em>. New York, NY, USA: ACM. <a href="https://doi.org/10.1145/3025453.3025912">https://doi.org/10.1145/3025453.3025912</a>
+</div>
 <div id="ref-Rutter2009-sa" class="csl-entry" role="listitem">
 Rutter, S. (2009). <em>Figure eight schoolhouse rock</em>. Youtube. Retrieved from <a href="https://www.youtube.com/watch?v=UCGNUo-XQJ8">https://www.youtube.com/watch?v=UCGNUo-XQJ8</a>
+</div>
+<div id="ref-datasaurus2019-us" class="csl-entry" role="listitem">
+The <span>D</span>atasaurus dozen - same stats, different graphs | <span>A</span>utodesk <span>R</span>esearch. (n.d.). Retrieved June 2, 2019, from <a href="https://www.autodeskresearch.com/publications/samestats">https://www.autodeskresearch.com/publications/samestats</a>
 </div>
 </div>
 </section></section>
