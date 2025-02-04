@@ -1789,7 +1789,7 @@
     "href": "slides/wk04-2025-02-04-figure-components.html#references",
     "title": "Figure components",
     "section": "References",
-    "text": "References\n\n\n\n\nMatejka, J., & Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In Proceedings of the 2017 CHI conference on human factors in computing systems. New York, NY, USA: ACM. https://doi.org/10.1145/3025453.3025912\n\n\nRutter, S. (2009). Figure eight schoolhouse rock. Youtube. Retrieved from https://www.youtube.com/watch?v=UCGNUo-XQJ8\n\n\nThe Datasaurus dozen - same stats, different graphs | Autodesk Research. (n.d.). Retrieved June 2, 2019, from https://www.autodeskresearch.com/publications/samestats"
+    "text": "References\n\n\n\n\nMatejka, J., & Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In Proceedings of the 2017 CHI conference on human factors in computing systems. New York, NY, USA: ACM. https://doi.org/10.1145/3025453.3025912\n\n\nRutter, S. (2009). Figure eight schoolhouse rock. Youtube. Retrieved from https://www.youtube.com/watch?v=UCGNUo-XQJ8\n\n\nState of the nation project. (n.d.). Retrieved February 4, 2025, from https://stateofnation.org/\n\n\nThe Datasaurus dozen - same stats, different graphs | Autodesk Research. (n.d.). Retrieved June 2, 2019, from https://www.autodeskresearch.com/publications/samestats"
   },
   {
     "objectID": "exercises/ex02-data-viz-outside-psych.html",
@@ -2182,5 +2182,12 @@
     "title": "Figure components",
     "section": "Next time",
     "text": "Next time\nFrom stimulus to sensation"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-04-figure-components.html#in-the-news",
+    "href": "slides/wk04-2025-02-04-figure-components.html#in-the-news",
+    "title": "Figure components",
+    "section": "In the news",
+    "text": "In the news\n\n“State of the nation project” (n.d.)"
   }
 ]
