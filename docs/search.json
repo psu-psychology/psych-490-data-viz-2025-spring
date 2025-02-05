@@ -1985,14 +1985,14 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#last-time",
     "title": "From stimulus to sensation",
     "section": "Last time…",
-    "text": "Last time…"
+    "text": "Last time…\n\nMore figure types"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#today",
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#today",
     "title": "From stimulus to sensation",
     "section": "Today",
-    "text": "Today\n\nLight as information\nDetecting information in light"
+    "text": "Today\n\nWhat is vision for?\nInformation in light\nDetecting information in light"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#goals",
@@ -2020,7 +2020,7 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#references",
     "title": "From stimulus to sensation",
     "section": "References",
-    "text": "References\n\n\n\n\nBucalo, P. (2015, October). Falcon belly dance. Youtube. Retrieved from https://www.youtube.com/watch?v=JGArTWOJtXs\n\n\nCairo, A. (2013). The functional art: An introduction to information graphics and visualization. Upper Saddle River, N: New Riders Publishing.\n\n\nRandeberg, L. (2005). Diagnostic applications of diffuse reflectance spectroscopy. Retrieved from https://www.semanticscholar.org/paper/ec9450b79923e2e2152b54ab9241b60bc5374944\n\n\nWong, B. (2011). Color blindness. Nature Methods, 8, 441. https://doi.org/10.1038/nmeth.1618"
+    "text": "References\n\n\n\n\nBucalo, P. (2015, October). Falcon belly dance. Youtube. Retrieved from https://www.youtube.com/watch?v=JGArTWOJtXs\n\n\nCairo, A. (2013). The functional art: An introduction to information graphics and visualization. Upper Saddle River, N: New Riders Publishing.\n\n\nJimmyCliffVEVO. (2014). Jimmy cliff - I can see clearly now (video version). Youtube. Retrieved from https://www.youtube.com/watch?v=MrHxhQPOO2c\n\n\nRandeberg, L. (2005). Diagnostic applications of diffuse reflectance spectroscopy. Retrieved from https://www.semanticscholar.org/paper/ec9450b79923e2e2152b54ab9241b60bc5374944\n\n\nWebb’s first deep field (NIRCam image). (n.d.). Retrieved January 11, 2024, from https://webbtelescope.org/contents/media/images/2022/035/01G7DCWB7137MYJ05CSH1Q5Z1Z\n\n\nWong, B. (2011). Color blindness. Nature Methods, 8, 441. https://doi.org/10.1038/nmeth.1618"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#different-surfaces-different-reflectionabsorption",
@@ -2104,7 +2104,7 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#consequences",
     "title": "From stimulus to sensation",
     "section": "Consequences",
-    "text": "Consequences\n\nMust move eyes to position highest resolution part of retina over target\nKeep track of sequence of eye movements and positions over time"
+    "text": "Consequences\n\nMust move eyes to position highest resolution part of retina over target\nKeep track of sequence of eye movements and positions over time\nIntegrate sequence of samples over time"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#acuity",
@@ -2146,7 +2146,7 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#color-vision-anomalies",
     "title": "From stimulus to sensation",
     "section": "Color vision anomalies",
-    "text": "Color vision anomalies\n\nAbsence or anomalies in photoreceptors\n\n\nWong (2011) Figure 1"
+    "text": "Color vision anomalies\n\nAbsence of or anomalies in photoreceptors\n\n\nWong (2011) Figure 1"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#types",
@@ -2189,5 +2189,124 @@
     "title": "Figure components",
     "section": "In the news",
     "text": "In the news\n\n“State of the nation project” (n.d.)"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#barcolumn",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#barcolumn",
+    "title": "From stimulus to sensation",
+    "section": "Bar/column",
+    "text": "Bar/column"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#lollipop",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#lollipop",
+    "title": "From stimulus to sensation",
+    "section": "Lollipop",
+    "text": "Lollipop"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#piering",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#piering",
+    "title": "From stimulus to sensation",
+    "section": "Pie/ring",
+    "text": "Pie/ring"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#d-summaries",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#d-summaries",
+    "title": "From stimulus to sensation",
+    "section": "1D summaries",
+    "text": "1D summaries"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#d-scatterplots",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#d-scatterplots",
+    "title": "From stimulus to sensation",
+    "section": "2D scatterplots",
+    "text": "2D scatterplots"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#surfaces-reflectabsorb-or-emit",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#surfaces-reflectabsorb-or-emit",
+    "title": "From stimulus to sensation",
+    "section": "Surfaces reflect/absorb or emit",
+    "text": "Surfaces reflect/absorb or emit\n\nSource: https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#artificial-sources",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#artificial-sources",
+    "title": "From stimulus to sensation",
+    "section": "Artificial sources",
+    "text": "Artificial sources"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#stacked-vs.-lollipop",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#stacked-vs.-lollipop",
+    "title": "From stimulus to sensation",
+    "section": "Stacked vs. Lollipop",
+    "text": "Stacked vs. Lollipop"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#information-at-a-distance",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#information-at-a-distance",
+    "title": "From stimulus to sensation",
+    "section": "Information at a distance",
+    "text": "Information at a distance\n\nJames Webb space telescope deep field “Webb’s first deep field (NIRCam image)” (n.d.)\nLight (+ radiowaves) circumnavigate the Earth in ~133 ms\nEarth ~8.3 light-minutes from the Sun"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#where-is-itam-i",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#where-is-itam-i",
+    "title": "From stimulus to sensation",
+    "section": "Where is it/am I?",
+    "text": "Where is it/am I?\n\n\nAzimuth (left/right)\nElevation (up/down)\nDistance (near/far)\nOrientation"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#what-is-it",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#what-is-it",
+    "title": "From stimulus to sensation",
+    "section": "What is it?",
+    "text": "What is it?\n\n\nSurfaces\nObjects\nEntities"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#regarding-data-figures",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#regarding-data-figures",
+    "title": "From stimulus to sensation",
+    "section": "Regarding data figures…",
+    "text": "Regarding data figures…\n\nWhat are the figure components\n\nData points, text, bars/segments/rings/boxes\n\nWhere are different components relative to one another, axes, etc."
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#wavelengths-are-continuous-but-are-perceived-colors",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#wavelengths-are-continuous-but-are-perceived-colors",
+    "title": "From stimulus to sensation",
+    "section": "Wavelengths are continuous, but are perceived colors?",
+    "text": "Wavelengths are continuous, but are perceived colors?\n\nhttps://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#perceived-colors-ordinal-but",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#perceived-colors-ordinal-but",
+    "title": "From stimulus to sensation",
+    "section": "Perceived colors ordinal, but…",
+    "text": "Perceived colors ordinal, but…\n\n\nColor is a neuropsychological construct\nA reflection, selection, and deflection of objective wavelengths of light"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#spatial-patterns-on-retina",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#spatial-patterns-on-retina",
+    "title": "From stimulus to sensation",
+    "section": "Spatial patterns on retina",
+    "text": "Spatial patterns on retina\n\ndepend on object geometry and orientation\n\n\nSource: https://thebrain.mcgill.ca"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#demo",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#demo",
+    "title": "From stimulus to sensation",
+    "section": "Demo",
+    "text": "Demo\n\nMay I have a volunteer?"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#perceived-colors-seem-ordinal-but",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#perceived-colors-seem-ordinal-but",
+    "title": "From stimulus to sensation",
+    "section": "Perceived colors seem ordinal, but…",
+    "text": "Perceived colors seem ordinal, but…\n\n\nColor is a neuropsychological construct"
   }
 ]

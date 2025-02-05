@@ -5,6 +5,11 @@ subtitle: "2025-02-06"
 
 # Prelude
 
+---
+
+{{< video https://www.youtube.com/watch?v=MrHxhQPOO2c width=100% height=70% >}}
+@JimmyCliffVEVO2014-hs
+
 # Overview
 
 ## Announcements
@@ -13,14 +18,95 @@ subtitle: "2025-02-06"
  
 ## Last time...
 
+- More figure types
+
+## Bar/column
+
+:::: {.columns}
+::: {.column width=50%}
+![](../include/fig/fig-nominal-barplot-horiz-ordered-1.png)
+:::
+::: {.column width=50%}
+![](../include/fig/fig-nominal-barplot-texture-sorted-1.png)
+:::
+::::
+
+## Stacked vs. Lollipop
+
+:::: {.columns}
+::: {.column width=50%}
+![](../include/fig/fig-nominal-lollipop-1.png)
+:::
+::: {.column width=50%}
+![](../include/fig/fig-nominal-barplot-stacked-1-1.png)
+:::
+::::
+
+## Pie/ring
+
+:::: {.columns}
+::: {.column width=50%}
+![](../include/fig/fig-nominal-pie-chart-1.png)
+:::
+::: {.column width=50%}
+![](../include/fig/fig-nominal-ring-chart-1.png)
+:::
+::::
+
+## 1D summaries
+
+:::: {.columns}
+::: {.column width=50%}
+![](../include/fig/fig-continuous-violin-boxplot-scatter-age-1.png)
+:::
+::: {.column width=50%}
+![](../include/fig/fig-continuous-violin-boxplot-scatter-temp-1.png)
+:::
+::::
+
+## 2D scatterplots
+
+![](../include/fig/fig-continuous-scatter-1.png)
+
 ## Today
 
-- Light as information
+- What is vision for?
+- Information in light
 - Detecting information in light
 
-## Goals
+# What is vision for?
 
-# Light as information
+## Information at a distance
+
+![James Webb space telescope deep field @noauthor_undated-vq](https://stsci-opo.org/STScI-01G7DCYVZ899DGSY684E801B2Y.png)
+
+- Light (+ radiowaves) circumnavigate the Earth in ~133 ms
+- Earth ~8.3 light-minutes from the Sun
+
+## Where is it/am I?
+
+::: {.incremental}
+- Azimuth (left/right)
+- Elevation (up/down)
+- Distance (near/far)
+- Orientation
+:::
+
+## What is it?
+
+::: {.incremental}
+- Surfaces
+- Objects
+- Entities
+:::
+
+## Regarding data figures...
+
+- *What* are the figure components
+  - Data points, text, bars/segments/rings/boxes
+- *Where* are different components relative to one another, axes, etc.
+
+# Information in light
 
 ---
 
@@ -30,7 +116,7 @@ subtitle: "2025-02-06"
 
 ![EM spectrum from Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/EM_Spectrum_Properties_edit.svg/1200px-EM_Spectrum_Properties_edit.svg.png)
 
-## Surfaces reflect/absorb
+## Surfaces reflect/absorb or emit
 
 ![Source: https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg](https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg)
 
@@ -40,7 +126,11 @@ subtitle: "2025-02-06"
 
 ![@Randeberg2005-xn](https://www.researchgate.net/profile/Lise-Lyngsnes-Randeberg/publication/265397843/figure/fig8/AS:667691706773516@1536201516532/Reflectance-spectra-from-different-skin-types-measured-using-the-Ocean-Optics-SD-2000.png)
 
-## Spatial patterns
+## Artificial sources
+
+{{< video https://youtu.be/ipIPzRh6DQY?si=oEktE5E3x28ZTUug width=100% height=70% >}}
+
+## Spatial patterns on retina
 
 - depend on object geometry and orientation
 
@@ -49,7 +139,6 @@ subtitle: "2025-02-06"
 ---
 
 ![Source: https://thebrain.mcgill.ca](https://thebrain.mcgill.ca/flash/a/a_02/a_02_p/a_02_p_vis/a_02_p_vis_1q.jpg)
-
 
 # Detecting information in light
 
@@ -84,6 +173,10 @@ subtitle: "2025-02-06"
   - When the observer moves
   - When objects move
 :::
+
+## Demo
+
+- May I have a volunteer?
 
 ## Image formation
 
@@ -123,6 +216,7 @@ subtitle: "2025-02-06"
 
 - Must move eyes to position highest resolution part of retina over target
 - Keep track of sequence of eye movements and positions over time
+- Integrate sequence of samples over time
 
 ---
 
@@ -180,9 +274,19 @@ subtitle: "2025-02-06"
 
 ![Source: Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/1416_Color_Sensitivity.jpg/1200px-1416_Color_Sensitivity.jpg)
 
+## Wavelengths are continuous, but are perceived colors?
+
+![https://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/](https://rmit.pressbooks.pub/app/uploads/sites/42/2022/10/visitble-spectrum-nm.png)
+
+## Perceived colors seem ordinal, but...
+
+![](https://cdn.pixabay.com/photo/2013/07/12/19/20/rainbow-colors-154569_1280.png)
+
+- Color is a neuropsychological construct
+
 ## Color vision anomalies
 
-- Absence or anomalies in photoreceptors
+- Absence of or anomalies in photoreceptors
 
 ![@Wong2011-ke Figure 1](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnmeth.1618/MediaObjects/41592_2011_Article_BFnmeth1618_Fig1_HTML.jpg?as=webp)
 

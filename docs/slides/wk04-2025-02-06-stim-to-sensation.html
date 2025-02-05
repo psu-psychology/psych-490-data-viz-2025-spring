@@ -162,11 +162,16 @@ Rick Gilmore
 </div>
 
 </section>
+<section>
 <section id="prelude" class="title-slide slide level1 center">
 <h1>Prelude</h1>
 
 </section>
+<section class="slide level2">
 
+<iframe data-external="1" src="https://www.youtube.com/embed/MrHxhQPOO2c" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p><span class="citation" data-cites="JimmyCliffVEVO2014-hs">JimmyCliffVEVO (<a href="#/references" role="doc-biblioref" onclick="">2014</a>)</span></p>
+</section></section>
 <section>
 <section id="overview" class="title-slide slide level1 center">
 <h1>Overview</h1>
@@ -180,20 +185,105 @@ Rick Gilmore
 </section>
 <section id="last-time" class="slide level2">
 <h2>Last time…</h2>
+<ul>
+<li>More figure types</li>
+</ul>
 </section>
+<section id="barcolumn" class="slide level2">
+<h2>Bar/column</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../include/fig/fig-nominal-barplot-horiz-ordered-1.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../include/fig/fig-nominal-barplot-texture-sorted-1.png"></p>
+</div></div>
+</section>
+<section id="stacked-vs.-lollipop" class="slide level2">
+<h2>Stacked vs.&nbsp;Lollipop</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../include/fig/fig-nominal-lollipop-1.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../include/fig/fig-nominal-barplot-stacked-1-1.png"></p>
+</div></div>
+</section>
+<section id="piering" class="slide level2">
+<h2>Pie/ring</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../include/fig/fig-nominal-pie-chart-1.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../include/fig/fig-nominal-ring-chart-1.png"></p>
+</div></div>
+</section>
+<section id="d-summaries" class="slide level2">
+<h2>1D summaries</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../include/fig/fig-continuous-violin-boxplot-scatter-age-1.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../include/fig/fig-continuous-violin-boxplot-scatter-temp-1.png"></p>
+</div></div>
+</section>
+<section id="d-scatterplots" class="slide level2">
+<h2>2D scatterplots</h2>
+
+<img data-src="../include/fig/fig-continuous-scatter-1.png" class="r-stretch"></section>
 <section id="today" class="slide level2">
 <h2>Today</h2>
 <ul>
-<li>Light as information</li>
+<li>What is vision for?</li>
+<li>Information in light</li>
 <li>Detecting information in light</li>
 </ul>
-</section>
-<section id="goals" class="slide level2">
-<h2>Goals</h2>
 </section></section>
 <section>
-<section id="light-as-information" class="title-slide slide level1 center">
-<h1>Light as information</h1>
+<section id="what-is-vision-for" class="title-slide slide level1 center">
+<h1>What is vision for?</h1>
+
+</section>
+<section id="information-at-a-distance" class="slide level2">
+<h2>Information at a distance</h2>
+
+<img data-src="https://stsci-opo.org/STScI-01G7DCYVZ899DGSY684E801B2Y.png" class="r-stretch quarto-figure-center"><p class="caption">James Webb space telescope deep field <span class="citation" data-cites="noauthor_undated-vq"><span>“Webb’s first deep field (<span>NIRCam</span> image)”</span> (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span></p><ul>
+<li>Light (+ radiowaves) circumnavigate the Earth in ~133 ms</li>
+<li>Earth ~8.3 light-minutes from the Sun</li>
+</ul>
+</section>
+<section id="where-is-itam-i" class="slide level2">
+<h2>Where is it/am I?</h2>
+<div>
+<ul>
+<li class="fragment">Azimuth (left/right)</li>
+<li class="fragment">Elevation (up/down)</li>
+<li class="fragment">Distance (near/far)</li>
+<li class="fragment">Orientation</li>
+</ul>
+</div>
+</section>
+<section id="what-is-it" class="slide level2">
+<h2>What is it?</h2>
+<div>
+<ul>
+<li class="fragment">Surfaces</li>
+<li class="fragment">Objects</li>
+<li class="fragment">Entities</li>
+</ul>
+</div>
+</section>
+<section id="regarding-data-figures" class="slide level2">
+<h2>Regarding data figures…</h2>
+<ul>
+<li><em>What</em> are the figure components
+<ul>
+<li>Data points, text, bars/segments/rings/boxes</li>
+</ul></li>
+<li><em>Where</em> are different components relative to one another, axes, etc.</li>
+</ul>
+</section></section>
+<section>
+<section id="information-in-light" class="title-slide slide level1 center">
+<h1>Information in light</h1>
 
 </section>
 <section class="slide level2">
@@ -204,8 +294,8 @@ Rick Gilmore
 <h2>Electromagnetic spectrum</h2>
 
 <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/EM_Spectrum_Properties_edit.svg/1200px-EM_Spectrum_Properties_edit.svg.png" class="r-stretch quarto-figure-center"><p class="caption">EM spectrum from Wikipedia</p></section>
-<section id="surfaces-reflectabsorb" class="slide level2">
-<h2>Surfaces reflect/absorb</h2>
+<section id="surfaces-reflectabsorb-or-emit" class="slide level2">
+<h2>Surfaces reflect/absorb or emit</h2>
 
 <img data-src="https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg" class="r-stretch quarto-figure-center"><p class="caption">Source: https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg</p></section>
 <section id="different-surfaces-different-reflectionabsorption" class="slide level2">
@@ -215,8 +305,12 @@ Rick Gilmore
 </ul>
 
 <img data-src="https://www.researchgate.net/profile/Lise-Lyngsnes-Randeberg/publication/265397843/figure/fig8/AS:667691706773516@1536201516532/Reflectance-spectra-from-different-skin-types-measured-using-the-Ocean-Optics-SD-2000.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Randeberg2005-xn">Randeberg (<a href="#/references" role="doc-biblioref" onclick="">2005</a>)</span></p></section>
-<section id="spatial-patterns" class="slide level2">
-<h2>Spatial patterns</h2>
+<section id="artificial-sources" class="slide level2">
+<h2>Artificial sources</h2>
+<iframe data-external="1" src="https://www.youtube.com/embed/ipIPzRh6DQY?si=oEktE5E3x28ZTUug" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</section>
+<section id="spatial-patterns-on-retina" class="slide level2">
+<h2>Spatial patterns on retina</h2>
 <ul>
 <li>depend on object geometry and orientation</li>
 </ul>
@@ -278,6 +372,12 @@ Rick Gilmore
 </div>
 </div>
 </section>
+<section id="demo" class="slide level2">
+<h2>Demo</h2>
+<ul>
+<li>May I have a volunteer?</li>
+</ul>
+</section>
 <section id="image-formation" class="slide level2">
 <h2>Image formation</h2>
 <ul>
@@ -320,6 +420,7 @@ Rick Gilmore
 <ul>
 <li>Must move eyes to position highest resolution part of retina over target</li>
 <li>Keep track of sequence of eye movements and positions over time</li>
+<li>Integrate sequence of samples over time</li>
 </ul>
 </section>
 <section class="slide level2">
@@ -385,10 +486,21 @@ Rick Gilmore
 </ul>
 
 <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/1416_Color_Sensitivity.jpg/1200px-1416_Color_Sensitivity.jpg" class="r-stretch quarto-figure-center"><p class="caption">Source: Wikipedia</p></section>
+<section id="wavelengths-are-continuous-but-are-perceived-colors" class="slide level2">
+<h2>Wavelengths are continuous, but are perceived colors?</h2>
+
+<img data-src="https://rmit.pressbooks.pub/app/uploads/sites/42/2022/10/visitble-spectrum-nm.png" class="r-stretch quarto-figure-center"><p class="caption">https://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/</p></section>
+<section id="perceived-colors-seem-ordinal-but" class="slide level2">
+<h2>Perceived colors seem ordinal, but…</h2>
+
+<img data-src="https://cdn.pixabay.com/photo/2013/07/12/19/20/rainbow-colors-154569_1280.png" class="r-stretch"><ul>
+<li>Color is a neuropsychological construct</li>
+</ul>
+</section>
 <section id="color-vision-anomalies" class="slide level2">
 <h2>Color vision anomalies</h2>
 <ul>
-<li>Absence or anomalies in photoreceptors</li>
+<li>Absence of or anomalies in photoreceptors</li>
 </ul>
 
 <img data-src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnmeth.1618/MediaObjects/41592_2011_Article_BFnmeth1618_Fig1_HTML.jpg?as=webp" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Wong2011-ke">Wong (<a href="#/references" role="doc-biblioref" onclick="">2011</a>)</span> Figure 1</p></section>
@@ -481,8 +593,14 @@ Bucalo, P. (2015, October). Falcon belly dance. Youtube. Retrieved from <a href=
 <div id="ref-Cairo2013-hm" class="csl-entry" role="listitem">
 Cairo, A. (2013). <em>The functional art: An introduction to information graphics and visualization</em>. Upper Saddle River, N: New Riders Publishing.
 </div>
+<div id="ref-JimmyCliffVEVO2014-hs" class="csl-entry" role="listitem">
+JimmyCliffVEVO. (2014). <em>Jimmy cliff - <span>I</span> can see clearly now (video version)</em>. Youtube. Retrieved from <a href="https://www.youtube.com/watch?v=MrHxhQPOO2c">https://www.youtube.com/watch?v=MrHxhQPOO2c</a>
+</div>
 <div id="ref-Randeberg2005-xn" class="csl-entry" role="listitem">
 Randeberg, L. (2005). Diagnostic applications of diffuse reflectance spectroscopy. Retrieved from <a href="https://www.semanticscholar.org/paper/ec9450b79923e2e2152b54ab9241b60bc5374944">https://www.semanticscholar.org/paper/ec9450b79923e2e2152b54ab9241b60bc5374944</a>
+</div>
+<div id="ref-noauthor_undated-vq" class="csl-entry" role="listitem">
+Webb’s first deep field (<span>NIRCam</span> image). (n.d.). Retrieved January 11, 2024, from <a href="https://webbtelescope.org/contents/media/images/2022/035/01G7DCWB7137MYJ05CSH1Q5Z1Z">https://webbtelescope.org/contents/media/images/2022/035/01G7DCWB7137MYJ05CSH1Q5Z1Z</a>
 </div>
 <div id="ref-Wong2011-ke" class="csl-entry" role="listitem">
 Wong, B. (2011). Color blindness. <em>Nature Methods</em>, <em>8</em>, 441. <a href="https://doi.org/10.1038/nmeth.1618">https://doi.org/10.1038/nmeth.1618</a>
