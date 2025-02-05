@@ -1,0 +1,48 @@
+---
+title: "Deep dive on Exercise 03"
+format: html
+---
+
+## About
+
+This page provides links to some of the [Exercise 03](../exercises/ex03-making-data.qmd) surveys and shows some of the data figure types that Google Forms generates by default.
+
+See [this link](https://docs.google.com/spreadsheets/d/1Z-TJQLOQ-yFBs0UimtCtv4pWIqcfq7jhAUA1QjVX89w/edit?usp=sharing) to visit the survey URLs.
+
+## Pie charts
+
+![](../include/img/pie-ice-cream.png)
+
+![](../include/img/pie-ice-cream-2.png)
+
+![](../include/img/pie-not-eat-pizza.png)
+
+![](../include/img/pie-favorite-music.png)
+
+![](../include/img/pie-video-game.png)
+
+![](../include/img/pie-pet.png)
+
+![](../include/img/pie-sleep.png)
+
+![](../include/img/pie-season.png)
+
+![](../include/img/pie-studying.png)
+
+![](../include/img/pie-zodiac.png)
+
+![](../include/img/pie-490.png)
+
+## Bar plots
+
+![](../include/img/bar-bike-friendly.png)
+
+![](../include/img/bar-recommend-psu.png)
+
+![](../include/img/bar-stubbed-toe.png)
+
+![](../include/img/bar-confident-creative.png)
+
+## Other
+
+![](../include/img/other-month-date.png)

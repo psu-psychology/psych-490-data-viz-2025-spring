@@ -1,278 +1,523 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rick Gilmore">
+<meta name="dcterms.date" content="2025-02-05">
+
+<title>From stimulus to sensation – PSYCH 490 • Spr 25</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.40">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-cb6669ef173fa5a3d6a96bd42ebca5e2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
-  <meta name="author" content="Rick Gilmore">
-  <title>PSYCH 490 • Spr 25 – From stimulus to sensation</title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-      vertical-align: middle;
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
     }
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-      margin-bottom: 0em;
-    }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
-  <link rel="stylesheet" href="../include/css/gilmore-revealjs.css">
-  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
-  <style type="text/css">
-    .reveal div.sourceCode {
-      margin: 0;
-      overflow: auto;
-    }
-    .reveal div.hanging-indent {
-      margin-left: 1em;
-      text-indent: -1em;
-    }
-    .reveal .slide:not(.center) {
-      height: 100%;
-    }
-    .reveal .slide.scrollable {
-      overflow-y: auto;
-    }
-    .reveal .footnotes {
-      height: 100%;
-      overflow-y: auto;
-    }
-    .reveal .slide .absolute {
-      position: absolute;
-      display: block;
-    }
-    .reveal .footnotes ol {
-      counter-reset: ol;
-      list-style-type: none; 
-      margin-left: 0;
-    }
-    .reveal .footnotes ol li:before {
-      counter-increment: ol;
-      content: counter(ol) ". "; 
-    }
-    .reveal .footnotes ol li > p:first-child {
-      display: inline-block;
-    }
-    .reveal .slide ul,
-    .reveal .slide ol {
-      margin-bottom: 0.5em;
-    }
-    .reveal .slide ul li,
-    .reveal .slide ol li {
-      margin-top: 0.4em;
-      margin-bottom: 0.2em;
-    }
-    .reveal .slide ul[role="tablist"] li {
-      margin-bottom: 0;
-    }
-    .reveal .slide ul li > *:first-child,
-    .reveal .slide ol li > *:first-child {
-      margin-block-start: 0;
-    }
-    .reveal .slide ul li > *:last-child,
-    .reveal .slide ol li > *:last-child {
-      margin-block-end: 0;
-    }
-    .reveal .slide .columns:nth-child(3) {
-      margin-block-start: 0.8em;
-    }
-    .reveal blockquote {
-      box-shadow: none;
-    }
-    .reveal .tippy-content>* {
-      margin-top: 0.2em;
-      margin-bottom: 0.7em;
-    }
-    .reveal .tippy-content>*:last-child {
-      margin-bottom: 0.2em;
-    }
-    .reveal .slide > img.stretch.quarto-figure-center,
-    .reveal .slide > img.r-stretch.quarto-figure-center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; 
-    }
-    .reveal .slide > img.stretch.quarto-figure-left,
-    .reveal .slide > img.r-stretch.quarto-figure-left  {
-      display: block;
-      margin-left: 0;
-      margin-right: auto; 
-    }
-    .reveal .slide > img.stretch.quarto-figure-right,
-    .reveal .slide > img.r-stretch.quarto-figure-right  {
-      display: block;
-      margin-left: auto;
-      margin-right: 0; 
-    }
-  </style>
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../include/css/styles.css">
 </head>
-<body class="quarto-light">
-  <div class="reveal">
-    <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">From stimulus to sensation</h1>
-  <p class="subtitle">2025-02-06</p>
+<body class="nav-fixed">
 
-<div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-Rick Gilmore 
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">PSYCH 490 • Spr 25</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../evaluation.html"> 
+<span class="menu-text">Evaluation</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../deadlines.html"> 
+<span class="menu-text">Deadlines</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../policies.html"> 
+<span class="menu-text">Policies &amp; Values</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-exercises" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Exercises</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-exercises">    
+        <li>
+    <a class="dropdown-item" href="../exercises/ex01-figs-in-psych-sci.html">
+ <span class="dropdown-text">Exercise 01</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../exercises/ex02-data-viz-outside-psych.html">
+ <span class="dropdown-text">Exercise 02</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../exercises/ex03-making-data.html">
+ <span class="dropdown-text">Exercise 03</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../exercises/ex04-sci-of-data-viz.html">
+ <span class="dropdown-text">Exercise 04</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Tutorials</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
+        <li>
+    <a class="dropdown-item" href="../tutorials/tutorial-making-data.html">
+ <span class="dropdown-text">Making and visualizing data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorials/tutorial-rstudio-on-pc.html">
+ <span class="dropdown-text">Setting up RStudio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorials/tutorial-rstudio-on-psu.html">
+ <span class="dropdown-text">Setting up RStudio @ Penn State</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorials/tutorial-r-ggplot.html">
+ <span class="dropdown-text">Plotting with ggplot2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorials/tutorial-python-matplotlib.html">
+ <span class="dropdown-text">Plotting in Python</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-supplemental" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Supplemental</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-supplemental">    
+        <li>
+    <a class="dropdown-item" href="../supplemental/ex01-feedback.html">
+ <span class="dropdown-text">Feedback on Exercise 01</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../supplemental/psych-sci-figs.html">
+ <span class="dropdown-text">Findings: Data viz in psych sci</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../supplemental/other-field-figs.html">
+ <span class="dropdown-text">Findings: Data viz outside psych sci</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../supplemental/ex-03-deep-dive.qmd">
+ <span class="dropdown-text"></span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../meta.html"> 
+<span class="menu-text">Meta</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
-</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <div id="quarto-announcement" data-announcement-id="0532d2aca8733b451bb5a240989dc1ff" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><strong>No deadlines this week!</strong> | Please complete your classmates’ <a href="https://docs.google.com/spreadsheets/d/1Z-TJQLOQ-yFBs0UimtCtv4pWIqcfq7jhAUA1QjVX89w/edit?usp=sharing">surveys</a>.</p>
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#prelude" id="toc-prelude" class="nav-link active" data-scroll-target="#prelude">Prelude</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#announcements" id="toc-announcements" class="nav-link" data-scroll-target="#announcements">Announcements</a></li>
+  <li><a href="#last-time" id="toc-last-time" class="nav-link" data-scroll-target="#last-time">Last time…</a></li>
+  <li><a href="#barcolumn" id="toc-barcolumn" class="nav-link" data-scroll-target="#barcolumn">Bar/column</a></li>
+  <li><a href="#stacked-vs.-lollipop" id="toc-stacked-vs.-lollipop" class="nav-link" data-scroll-target="#stacked-vs.-lollipop">Stacked vs.&nbsp;Lollipop</a></li>
+  <li><a href="#piering" id="toc-piering" class="nav-link" data-scroll-target="#piering">Pie/ring</a></li>
+  <li><a href="#d-summaries" id="toc-d-summaries" class="nav-link" data-scroll-target="#d-summaries">1D summaries</a></li>
+  <li><a href="#d-scatterplots" id="toc-d-scatterplots" class="nav-link" data-scroll-target="#d-scatterplots">2D scatterplots</a></li>
+  <li><a href="#your-ex-03-surveys" id="toc-your-ex-03-surveys" class="nav-link" data-scroll-target="#your-ex-03-surveys">Your Ex-03 Surveys</a></li>
+  <li><a href="#today" id="toc-today" class="nav-link" data-scroll-target="#today">Today</a></li>
+  </ul></li>
+  <li><a href="#what-is-vision-for" id="toc-what-is-vision-for" class="nav-link" data-scroll-target="#what-is-vision-for">What is vision for?</a>
+  <ul class="collapse">
+  <li><a href="#information-at-a-distance" id="toc-information-at-a-distance" class="nav-link" data-scroll-target="#information-at-a-distance">Information at a distance</a></li>
+  <li><a href="#where-is-itam-i" id="toc-where-is-itam-i" class="nav-link" data-scroll-target="#where-is-itam-i">Where is it/am I?</a></li>
+  <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link" data-scroll-target="#what-is-it">What is it?</a></li>
+  <li><a href="#regarding-data-figures" id="toc-regarding-data-figures" class="nav-link" data-scroll-target="#regarding-data-figures">Regarding data figures…</a></li>
+  </ul></li>
+  <li><a href="#information-in-light" id="toc-information-in-light" class="nav-link" data-scroll-target="#information-in-light">Information in light</a>
+  <ul class="collapse">
+  <li><a href="#electromagnetic-spectrum" id="toc-electromagnetic-spectrum" class="nav-link" data-scroll-target="#electromagnetic-spectrum">Electromagnetic spectrum</a></li>
+  <li><a href="#surfaces-reflectabsorb-or-emit" id="toc-surfaces-reflectabsorb-or-emit" class="nav-link" data-scroll-target="#surfaces-reflectabsorb-or-emit">Surfaces reflect/absorb or emit</a></li>
+  <li><a href="#different-surfaces-different-reflectionabsorption" id="toc-different-surfaces-different-reflectionabsorption" class="nav-link" data-scroll-target="#different-surfaces-different-reflectionabsorption">Different surfaces == Different reflection/absorption</a></li>
+  <li><a href="#artificial-sources" id="toc-artificial-sources" class="nav-link" data-scroll-target="#artificial-sources">Artificial sources</a></li>
+  <li><a href="#spatial-patterns-on-retina" id="toc-spatial-patterns-on-retina" class="nav-link" data-scroll-target="#spatial-patterns-on-retina">Spatial patterns on retina</a></li>
+  </ul></li>
+  <li><a href="#detecting-information-in-light" id="toc-detecting-information-in-light" class="nav-link" data-scroll-target="#detecting-information-in-light">Detecting information in light</a>
+  <ul class="collapse">
+  <li><a href="#what-information" id="toc-what-information" class="nav-link" data-scroll-target="#what-information">What information?</a></li>
+  <li><a href="#the-eye" id="toc-the-eye" class="nav-link" data-scroll-target="#the-eye">The eye</a></li>
+  <li><a href="#is-like-an-auto-focus-auto-exposure-camera" id="toc-is-like-an-auto-focus-auto-exposure-camera" class="nav-link" data-scroll-target="#is-like-an-auto-focus-auto-exposure-camera">is like an auto-focus, auto-exposure camera…</a></li>
+  <li><a href="#part-of-a-self-stabilizing-system" id="toc-part-of-a-self-stabilizing-system" class="nav-link" data-scroll-target="#part-of-a-self-stabilizing-system">part of a self-stabilizing system…</a></li>
+  <li><a href="#eye-head-body-system" id="toc-eye-head-body-system" class="nav-link" data-scroll-target="#eye-head-body-system">Eye + head + body system</a></li>
+  <li><a href="#demo" id="toc-demo" class="nav-link" data-scroll-target="#demo">Demo</a></li>
+  <li><a href="#image-formation" id="toc-image-formation" class="nav-link" data-scroll-target="#image-formation">Image formation</a></li>
+  <li><a href="#the-retina" id="toc-the-retina" class="nav-link" data-scroll-target="#the-retina">The retina…</a></li>
+  <li><a href="#wavelength-tuned-photoreceptors" id="toc-wavelength-tuned-photoreceptors" class="nav-link" data-scroll-target="#wavelength-tuned-photoreceptors">‘Wavelength-tuned’ photoreceptors</a>
+  <ul class="collapse">
+  <li><a href="#arranged-in-mosaics" id="toc-arranged-in-mosaics" class="nav-link" data-scroll-target="#arranged-in-mosaics">…arranged in mosaics</a></li>
+  <li><a href="#with-different-concentrations-in-different-parts-of-the-retina" id="toc-with-different-concentrations-in-different-parts-of-the-retina" class="nav-link" data-scroll-target="#with-different-concentrations-in-different-parts-of-the-retina">with different concentrations in different parts of the retina</a></li>
+  </ul></li>
+  <li><a href="#consequences" id="toc-consequences" class="nav-link" data-scroll-target="#consequences">Consequences</a></li>
+  <li><a href="#information-processing" id="toc-information-processing" class="nav-link" data-scroll-target="#information-processing">Information processing</a>
+  <ul class="collapse">
+  <li><a href="#when-eye-misshapen-for-cornea-lens" id="toc-when-eye-misshapen-for-cornea-lens" class="nav-link" data-scroll-target="#when-eye-misshapen-for-cornea-lens">…when eye misshapen for cornea +lens</a></li>
+  </ul></li>
+  <li><a href="#acuity" id="toc-acuity" class="nav-link" data-scroll-target="#acuity">Acuity</a></li>
+  <li><a href="#contrast-sensitivity" id="toc-contrast-sensitivity" class="nav-link" data-scroll-target="#contrast-sensitivity">Contrast sensitivity</a></li>
+  <li><a href="#color-perception" id="toc-color-perception" class="nav-link" data-scroll-target="#color-perception">Color perception</a></li>
+  <li><a href="#wavelengths-are-continuous-but-are-perceived-colors" id="toc-wavelengths-are-continuous-but-are-perceived-colors" class="nav-link" data-scroll-target="#wavelengths-are-continuous-but-are-perceived-colors">Wavelengths are continuous, but are perceived colors?</a></li>
+  <li><a href="#perceived-colors-seem-ordinal-but" id="toc-perceived-colors-seem-ordinal-but" class="nav-link" data-scroll-target="#perceived-colors-seem-ordinal-but">Perceived colors seem ordinal, but…</a></li>
+  <li><a href="#color-vision-anomalies" id="toc-color-vision-anomalies" class="nav-link" data-scroll-target="#color-vision-anomalies">Color vision anomalies</a></li>
+  <li><a href="#types" id="toc-types" class="nav-link" data-scroll-target="#types">Types</a></li>
+  <li><a href="#color-palettes" id="toc-color-palettes" class="nav-link" data-scroll-target="#color-palettes">Color palettes</a></li>
+  <li><a href="#some-consequences-for-data-figures" id="toc-some-consequences-for-data-figures" class="nav-link" data-scroll-target="#some-consequences-for-data-figures">Some consequences for data figures</a></li>
+  <li><a href="#your-turn" id="toc-your-turn" class="nav-link" data-scroll-target="#your-turn">Your turn</a></li>
+  </ul></li>
+  <li><a href="#main-points" id="toc-main-points" class="nav-link" data-scroll-target="#main-points">Main points</a></li>
+  <li><a href="#next-time" id="toc-next-time" class="nav-link" data-scroll-target="#next-time">Next time</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/edit/main/src/slides/wk04-2025-02-06-stim-to-sensation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="wk04-2025-02-06-stim-to-sensation.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">From stimulus to sensation</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">2025-02-06</p>
 </div>
 
-</section>
-<section>
-<section id="prelude" class="title-slide slide level1 center">
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Rick Gilmore </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 5, 2025</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">February 5, 2025</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="prelude" class="level1">
 <h1>Prelude</h1>
-
+<hr>
+<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/MrHxhQPOO2c" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p><span class="citation" data-cites="JimmyCliffVEVO2014-hs">JimmyCliffVEVO (<a href="#ref-JimmyCliffVEVO2014-hs" role="doc-biblioref">2014</a>)</span></p>
 </section>
-<section class="slide level2">
-
-<iframe data-external="1" src="https://www.youtube.com/embed/MrHxhQPOO2c" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-<p><span class="citation" data-cites="JimmyCliffVEVO2014-hs">JimmyCliffVEVO (<a href="#/references" role="doc-biblioref" onclick="">2014</a>)</span></p>
-</section></section>
-<section>
-<section id="overview" class="title-slide slide level1 center">
+<section id="overview" class="level1">
 <h1>Overview</h1>
-
-</section>
-<section id="announcements" class="slide level2">
-<h2>Announcements</h2>
+<section id="announcements" class="level2">
+<h2 class="anchored" data-anchor-id="announcements">Announcements</h2>
 <ul>
 <li><span class="orange_due">Due</span> next <a href="../schedule.html#tuesday-february-11">Tuesday, February 11</a>: <a href="../exercises/ex03-making-data.html">Exercise-03</a> | <a href="https://psu.instructure.com/courses/2381584/assignments/16998400">Canvas dropbox</a> |</li>
 </ul>
 </section>
-<section id="last-time" class="slide level2">
-<h2>Last time…</h2>
+<section id="last-time" class="level2">
+<h2 class="anchored" data-anchor-id="last-time">Last time…</h2>
 <ul>
 <li>More figure types</li>
 </ul>
 </section>
-<section id="barcolumn" class="slide level2">
-<h2>Bar/column</h2>
+<section id="barcolumn" class="level2">
+<h2 class="anchored" data-anchor-id="barcolumn">Bar/column</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="../include/fig/fig-nominal-barplot-horiz-ordered-1.png"></p>
+<p><a href="../include/fig/fig-nominal-barplot-horiz-ordered-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../include/fig/fig-nominal-barplot-horiz-ordered-1.png" class="img-fluid"></a></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="../include/fig/fig-nominal-barplot-texture-sorted-1.png"></p>
-</div></div>
+<p><a href="../include/fig/fig-nominal-barplot-texture-sorted-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="../include/fig/fig-nominal-barplot-texture-sorted-1.png" class="img-fluid"></a></p>
+</div>
+</div>
 </section>
-<section id="stacked-vs.-lollipop" class="slide level2">
-<h2>Stacked vs.&nbsp;Lollipop</h2>
+<section id="stacked-vs.-lollipop" class="level2">
+<h2 class="anchored" data-anchor-id="stacked-vs.-lollipop">Stacked vs.&nbsp;Lollipop</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="../include/fig/fig-nominal-lollipop-1.png"></p>
+<p><a href="../include/fig/fig-nominal-lollipop-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="../include/fig/fig-nominal-lollipop-1.png" class="img-fluid"></a></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="../include/fig/fig-nominal-barplot-stacked-1-1.png"></p>
-</div></div>
+<p><a href="../include/fig/fig-nominal-barplot-stacked-1-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="../include/fig/fig-nominal-barplot-stacked-1-1.png" class="img-fluid"></a></p>
+</div>
+</div>
 </section>
-<section id="piering" class="slide level2">
-<h2>Pie/ring</h2>
+<section id="piering" class="level2">
+<h2 class="anchored" data-anchor-id="piering">Pie/ring</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="../include/fig/fig-nominal-pie-chart-1.png"></p>
+<p><a href="../include/fig/fig-nominal-pie-chart-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="../include/fig/fig-nominal-pie-chart-1.png" class="img-fluid"></a></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="../include/fig/fig-nominal-ring-chart-1.png"></p>
-</div></div>
+<p><a href="../include/fig/fig-nominal-ring-chart-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="../include/fig/fig-nominal-ring-chart-1.png" class="img-fluid"></a></p>
+</div>
+</div>
 </section>
-<section id="d-summaries" class="slide level2">
-<h2>1D summaries</h2>
+<section id="d-summaries" class="level2">
+<h2 class="anchored" data-anchor-id="d-summaries">1D summaries</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="../include/fig/fig-continuous-violin-boxplot-scatter-age-1.png"></p>
+<p><a href="../include/fig/fig-continuous-violin-boxplot-scatter-age-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="../include/fig/fig-continuous-violin-boxplot-scatter-age-1.png" class="img-fluid"></a></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="../include/fig/fig-continuous-violin-boxplot-scatter-temp-1.png"></p>
-</div></div>
+<p><a href="../include/fig/fig-continuous-violin-boxplot-scatter-temp-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="../include/fig/fig-continuous-violin-boxplot-scatter-temp-1.png" class="img-fluid"></a></p>
+</div>
+</div>
 </section>
-<section id="d-scatterplots" class="slide level2">
-<h2>2D scatterplots</h2>
-
-<img data-src="../include/fig/fig-continuous-scatter-1.png" class="r-stretch"></section>
-<section id="today" class="slide level2">
-<h2>Today</h2>
+<section id="d-scatterplots" class="level2">
+<h2 class="anchored" data-anchor-id="d-scatterplots">2D scatterplots</h2>
+<p><a href="../include/fig/fig-continuous-scatter-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="../include/fig/fig-continuous-scatter-1.png" class="img-fluid"></a></p>
+</section>
+<section id="your-ex-03-surveys" class="level2">
+<h2 class="anchored" data-anchor-id="your-ex-03-surveys">Your Ex-03 Surveys</h2>
+<ul>
+<li><a href="../supplemental/ex03-deep-dive.html">Excerpts</a> from figures generated by Google Forms</li>
+</ul>
+</section>
+<section id="today" class="level2">
+<h2 class="anchored" data-anchor-id="today">Today</h2>
 <ul>
 <li>What is vision for?</li>
 <li>Information in light</li>
 <li>Detecting information in light</li>
 </ul>
-</section></section>
-<section>
-<section id="what-is-vision-for" class="title-slide slide level1 center">
-<h1>What is vision for?</h1>
-
 </section>
-<section id="information-at-a-distance" class="slide level2">
-<h2>Information at a distance</h2>
-
-<img data-src="https://stsci-opo.org/STScI-01G7DCYVZ899DGSY684E801B2Y.png" class="r-stretch quarto-figure-center"><p class="caption">James Webb space telescope deep field <span class="citation" data-cites="noauthor_undated-vq"><span>“Webb’s first deep field (<span>NIRCam</span> image)”</span> (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span></p><ul>
+</section>
+<section id="what-is-vision-for" class="level1">
+<h1>What is vision for?</h1>
+<section id="information-at-a-distance" class="level2">
+<h2 class="anchored" data-anchor-id="information-at-a-distance">Information at a distance</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://stsci-opo.org/STScI-01G7DCYVZ899DGSY684E801B2Y.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="James Webb space telescope deep field @noauthor_undated-vq"><img src="https://stsci-opo.org/STScI-01G7DCYVZ899DGSY684E801B2Y.png" class="img-fluid figure-img" alt="James Webb space telescope deep field “Webb’s first deep field (NIRCam image)” (n.d.)"></a></p>
+<figcaption>James Webb space telescope deep field <span class="citation" data-cites="noauthor_undated-vq"><span>“Webb’s first deep field (<span>NIRCam</span> image)”</span> (<a href="#ref-noauthor_undated-vq" role="doc-biblioref">n.d.</a>)</span></figcaption>
+</figure>
+</div>
+<ul>
 <li>Light (+ radiowaves) circumnavigate the Earth in ~133 ms</li>
 <li>Earth ~8.3 light-minutes from the Sun</li>
 </ul>
 </section>
-<section id="where-is-itam-i" class="slide level2">
-<h2>Where is it/am I?</h2>
-<div>
-<ul>
-<li class="fragment">Azimuth (left/right)</li>
-<li class="fragment">Elevation (up/down)</li>
-<li class="fragment">Distance (near/far)</li>
-<li class="fragment">Orientation</li>
+<section id="where-is-itam-i" class="level2">
+<h2 class="anchored" data-anchor-id="where-is-itam-i">Where is it/am I?</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>Azimuth (left/right)</li>
+<li>Elevation (up/down)</li>
+<li>Distance (near/far)</li>
+<li>Orientation</li>
 </ul>
 </div>
 </section>
-<section id="what-is-it" class="slide level2">
-<h2>What is it?</h2>
-<div>
-<ul>
-<li class="fragment">Surfaces</li>
-<li class="fragment">Objects</li>
-<li class="fragment">Entities</li>
+<section id="what-is-it" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>Surfaces</li>
+<li>Objects</li>
+<li>Entities</li>
 </ul>
 </div>
 </section>
-<section id="regarding-data-figures" class="slide level2">
-<h2>Regarding data figures…</h2>
+<section id="regarding-data-figures" class="level2">
+<h2 class="anchored" data-anchor-id="regarding-data-figures">Regarding data figures…</h2>
 <ul>
 <li><em>What</em> are the figure components
 <ul>
@@ -280,53 +525,75 @@ Rick Gilmore
 </ul></li>
 <li><em>Where</em> are different components relative to one another, axes, etc.</li>
 </ul>
-</section></section>
-<section>
-<section id="information-in-light" class="title-slide slide level1 center">
-<h1>Information in light</h1>
-
 </section>
-<section class="slide level2">
-
-
-<img data-src="../include/img/cairo-fig-5.12.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Cairo2013-hm">Cairo (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span> Figure 5.12</p></section>
-<section id="electromagnetic-spectrum" class="slide level2">
-<h2>Electromagnetic spectrum</h2>
-
-<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/EM_Spectrum_Properties_edit.svg/1200px-EM_Spectrum_Properties_edit.svg.png" class="r-stretch quarto-figure-center"><p class="caption">EM spectrum from Wikipedia</p></section>
-<section id="surfaces-reflectabsorb-or-emit" class="slide level2">
-<h2>Surfaces reflect/absorb or emit</h2>
-
-<img data-src="https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg" class="r-stretch quarto-figure-center"><p class="caption">Source: https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg</p></section>
-<section id="different-surfaces-different-reflectionabsorption" class="slide level2">
-<h2>Different surfaces == Different reflection/absorption</h2>
+</section>
+<section id="information-in-light" class="level1">
+<h1>Information in light</h1>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/cairo-fig-5.12.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="@Cairo2013-hm Figure 5.12"><img src="../include/img/cairo-fig-5.12.png" class="img-fluid figure-img" alt="Cairo (2013) Figure 5.12"></a></p>
+<figcaption><span class="citation" data-cites="Cairo2013-hm">Cairo (<a href="#ref-Cairo2013-hm" role="doc-biblioref">2013</a>)</span> Figure 5.12</figcaption>
+</figure>
+</div>
+<section id="electromagnetic-spectrum" class="level2">
+<h2 class="anchored" data-anchor-id="electromagnetic-spectrum">Electromagnetic spectrum</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/EM_Spectrum_Properties_edit.svg/1200px-EM_Spectrum_Properties_edit.svg.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="EM spectrum from Wikipedia"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/EM_Spectrum_Properties_edit.svg/1200px-EM_Spectrum_Properties_edit.svg.png" class="img-fluid figure-img" alt="EM spectrum from Wikipedia"></a></p>
+<figcaption>EM spectrum from Wikipedia</figcaption>
+</figure>
+</div>
+</section>
+<section id="surfaces-reflectabsorb-or-emit" class="level2">
+<h2 class="anchored" data-anchor-id="surfaces-reflectabsorb-or-emit">Surfaces reflect/absorb or emit</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="Source: https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg"><img src="https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg" class="img-fluid figure-img" alt="Source: https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg"></a></p>
+<figcaption>Source: https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg</figcaption>
+</figure>
+</div>
+</section>
+<section id="different-surfaces-different-reflectionabsorption" class="level2">
+<h2 class="anchored" data-anchor-id="different-surfaces-different-reflectionabsorption">Different surfaces == Different reflection/absorption</h2>
 <ul>
 <li>Perceived color differences correspond to different patterns of light reflection.</li>
 </ul>
-
-<img data-src="https://www.researchgate.net/profile/Lise-Lyngsnes-Randeberg/publication/265397843/figure/fig8/AS:667691706773516@1536201516532/Reflectance-spectra-from-different-skin-types-measured-using-the-Ocean-Optics-SD-2000.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Randeberg2005-xn">Randeberg (<a href="#/references" role="doc-biblioref" onclick="">2005</a>)</span></p></section>
-<section id="artificial-sources" class="slide level2">
-<h2>Artificial sources</h2>
-<iframe data-external="1" src="https://www.youtube.com/embed/ipIPzRh6DQY?si=oEktE5E3x28ZTUug" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.researchgate.net/profile/Lise-Lyngsnes-Randeberg/publication/265397843/figure/fig8/AS:667691706773516@1536201516532/Reflectance-spectra-from-different-skin-types-measured-using-the-Ocean-Optics-SD-2000.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="@Randeberg2005-xn"><img src="https://www.researchgate.net/profile/Lise-Lyngsnes-Randeberg/publication/265397843/figure/fig8/AS:667691706773516@1536201516532/Reflectance-spectra-from-different-skin-types-measured-using-the-Ocean-Optics-SD-2000.png" class="img-fluid figure-img" alt="Randeberg (2005)"></a></p>
+<figcaption><span class="citation" data-cites="Randeberg2005-xn">Randeberg (<a href="#ref-Randeberg2005-xn" role="doc-biblioref">2005</a>)</span></figcaption>
+</figure>
+</div>
 </section>
-<section id="spatial-patterns-on-retina" class="slide level2">
-<h2>Spatial patterns on retina</h2>
+<section id="artificial-sources" class="level2">
+<h2 class="anchored" data-anchor-id="artificial-sources">Artificial sources</h2>
+<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/ipIPzRh6DQY?si=oEktE5E3x28ZTUug" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="spatial-patterns-on-retina" class="level2">
+<h2 class="anchored" data-anchor-id="spatial-patterns-on-retina">Spatial patterns on retina</h2>
 <ul>
 <li>depend on object geometry and orientation</li>
 </ul>
-
-<img data-src="https://thebrain.mcgill.ca/flash/a/a_02/a_02_p/a_02_p_vis/a_02_p_vis_1p.jpg" class="r-stretch quarto-figure-center"><p class="caption">Source: https://thebrain.mcgill.ca</p></section>
-<section class="slide level2">
-
-
-<img data-src="https://thebrain.mcgill.ca/flash/a/a_02/a_02_p/a_02_p_vis/a_02_p_vis_1q.jpg" class="r-stretch quarto-figure-center"><p class="caption">Source: https://thebrain.mcgill.ca</p></section></section>
-<section>
-<section id="detecting-information-in-light" class="title-slide slide level1 center">
-<h1>Detecting information in light</h1>
-
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://thebrain.mcgill.ca/flash/a/a_02/a_02_p/a_02_p_vis/a_02_p_vis_1p.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Source: https://thebrain.mcgill.ca"><img src="https://thebrain.mcgill.ca/flash/a/a_02/a_02_p/a_02_p_vis/a_02_p_vis_1p.jpg" class="img-fluid figure-img" alt="Source: https://thebrain.mcgill.ca"></a></p>
+<figcaption>Source: https://thebrain.mcgill.ca</figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://thebrain.mcgill.ca/flash/a/a_02/a_02_p/a_02_p_vis/a_02_p_vis_1q.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Source: https://thebrain.mcgill.ca"><img src="https://thebrain.mcgill.ca/flash/a/a_02/a_02_p/a_02_p_vis/a_02_p_vis_1q.jpg" class="img-fluid figure-img" alt="Source: https://thebrain.mcgill.ca"></a></p>
+<figcaption>Source: https://thebrain.mcgill.ca</figcaption>
+</figure>
+</div>
 </section>
-<section id="what-information" class="slide level2">
-<h2>What information?</h2>
+</section>
+<section id="detecting-information-in-light" class="level1">
+<h1>Detecting information in light</h1>
+<section id="what-information" class="level2">
+<h2 class="anchored" data-anchor-id="what-information">What information?</h2>
 <ul>
 <li>Position</li>
 <li>Length</li>
@@ -336,30 +603,35 @@ Rick Gilmore
 <li>(Motion)</li>
 </ul>
 </section>
-<section id="the-eye" class="slide level2">
-<h2>The eye</h2>
-
-<img data-src="https://hmslade5.files.wordpress.com/2012/03/anatomy-of-the-eye.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="is-like-an-auto-focus-auto-exposure-camera" class="slide level2">
-<h2>is like an auto-focus, auto-exposure camera…</h2>
-
-<img data-src="https://www.optilase.com/wp-content/uploads/2014/12/camera-lens-eye-lens.jpg" class="r-stretch"></section>
-<section id="part-of-a-self-stabilizing-system" class="slide level2">
-<h2>part of a self-stabilizing system…</h2>
-<iframe data-external="1" src="https://www.youtube.com/embed/JGArTWOJtXs?start=7" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-<p><span class="citation" data-cites="Bucalo2015-qm">Bucalo (<a href="#/references" role="doc-biblioref" onclick="">2015</a>)</span></p>
+<section id="the-eye" class="level2">
+<h2 class="anchored" data-anchor-id="the-eye">The eye</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://hmslade5.files.wordpress.com/2012/03/anatomy-of-the-eye.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="https://hmslade5.files.wordpress.com/2012/03/anatomy-of-the-eye.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
+</figure>
+</div>
 </section>
-<section id="eye-head-body-system" class="slide level2">
-<h2>Eye + head + body system</h2>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+<section id="is-like-an-auto-focus-auto-exposure-camera" class="level2">
+<h2 class="anchored" data-anchor-id="is-like-an-auto-focus-auto-exposure-camera">is like an auto-focus, auto-exposure camera…</h2>
+<p><a href="https://www.optilase.com/wp-content/uploads/2014/12/camera-lens-eye-lens.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-18"><img src="https://www.optilase.com/wp-content/uploads/2014/12/camera-lens-eye-lens.jpg" class="img-fluid"></a></p>
+</section>
+<section id="part-of-a-self-stabilizing-system" class="level2">
+<h2 class="anchored" data-anchor-id="part-of-a-self-stabilizing-system">part of a self-stabilizing system…</h2>
+<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/JGArTWOJtXs?start=7" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p><span class="citation" data-cites="Bucalo2015-qm">Bucalo (<a href="#ref-Bucalo2015-qm" role="doc-biblioref">2015</a>)</span></p>
+</section>
+<section id="eye-head-body-system" class="level2">
+<h2 class="anchored" data-anchor-id="eye-head-body-system">Eye + head + body system</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Note</strong></p>
+<div class="callout-title-container flex-fill">
+Note
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li>Eye + head + body movements <em>align and point</em> the eyes</li>
 <li>Eye + head + body movements <em>stabilize</em> the eyes
@@ -370,16 +642,15 @@ Rick Gilmore
 </ul>
 </div>
 </div>
-</div>
 </section>
-<section id="demo" class="slide level2">
-<h2>Demo</h2>
+<section id="demo" class="level2">
+<h2 class="anchored" data-anchor-id="demo">Demo</h2>
 <ul>
 <li>May I have a volunteer?</li>
 </ul>
 </section>
-<section id="image-formation" class="slide level2">
-<h2>Image formation</h2>
+<section id="image-formation" class="level2">
+<h2 class="anchored" data-anchor-id="image-formation">Image formation</h2>
 <ul>
 <li>Eye’s optical components
 <ul>
@@ -390,122 +661,168 @@ Rick Gilmore
 <li>Create projection (image) on retina</li>
 </ul>
 </section>
-<section id="the-retina" class="slide level2">
-<h2>The retina…</h2>
-
-<img data-src="https://www.feinberg.northwestern.edu/gfx/news/retina.jpg" class="quarto-figure quarto-figure-center r-stretch"><ul>
+<section id="the-retina" class="level2">
+<h2 class="anchored" data-anchor-id="the-retina">The retina…</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.feinberg.northwestern.edu/gfx/news/retina.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-19"><img src="https://www.feinberg.northwestern.edu/gfx/news/retina.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
+</figure>
+</div>
+<ul>
 <li>samples spatial patterns of light intensity &amp; wavelength patterns</li>
 </ul>
 </section>
-<section id="wavelength-tuned-photoreceptors" class="slide level2">
-<h2>‘Wavelength-tuned’ photoreceptors</h2>
-
-<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/1416_Color_Sensitivity.jpg/1200px-1416_Color_Sensitivity.jpg" class="r-stretch quarto-figure-center"><p class="caption">Source: Wikipedia</p></section>
-<section class="slide level2">
-
-
-<img data-src="https://i.pinimg.com/originals/9f/08/85/9f0885d4c209d5275f631ac194eb4f4b.jpg" class="r-stretch quarto-figure-center"><p class="caption">Retinal rods (green) &amp; cones (blue)</p></section>
-<section class="slide level2">
-
-<h3 id="arranged-in-mosaics">…arranged in mosaics</h3>
-
-<img data-src="https://upload.wikimedia.org/wikipedia/commons/a/a6/ConeMosaics.jpg" class="r-stretch quarto-figure-center"><p class="caption">Normal color vision vs.&nbsp;protanopic (color blind) vision; Source: https://en.wikipedia.org/wiki/Retinal_mosaic</p></section>
-<section class="slide level2">
-
-<h3 id="with-different-concentrations-in-different-parts-of-the-retina">with different concentrations in different parts of the retina</h3>
-
-<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Human_photoreceptor_distribution.svg/1200px-Human_photoreceptor_distribution.svg.png" class="r-stretch quarto-figure-center"><p class="caption">Wikipedia</p></section>
-<section id="consequences" class="slide level2">
-<h2>Consequences</h2>
+<section id="wavelength-tuned-photoreceptors" class="level2">
+<h2 class="anchored" data-anchor-id="wavelength-tuned-photoreceptors">‘Wavelength-tuned’ photoreceptors</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/1416_Color_Sensitivity.jpg/1200px-1416_Color_Sensitivity.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-20" title="Source: Wikipedia"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/1416_Color_Sensitivity.jpg/1200px-1416_Color_Sensitivity.jpg" class="img-fluid figure-img" alt="Source: Wikipedia"></a></p>
+<figcaption>Source: Wikipedia</figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://i.pinimg.com/originals/9f/08/85/9f0885d4c209d5275f631ac194eb4f4b.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-21" title="Retinal rods (green) &amp; cones (blue)"><img src="https://i.pinimg.com/originals/9f/08/85/9f0885d4c209d5275f631ac194eb4f4b.jpg" class="img-fluid figure-img" alt="Retinal rods (green) &amp; cones (blue)"></a></p>
+<figcaption>Retinal rods (green) &amp; cones (blue)</figcaption>
+</figure>
+</div>
+<hr>
+<section id="arranged-in-mosaics" class="level3">
+<h3 class="anchored" data-anchor-id="arranged-in-mosaics">…arranged in mosaics</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://upload.wikimedia.org/wikipedia/commons/a/a6/ConeMosaics.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-22" title="Normal color vision vs.&nbsp;protanopic (color blind) vision; Source: https://en.wikipedia.org/wiki/Retinal_mosaic"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/ConeMosaics.jpg" class="img-fluid figure-img" alt="Normal color vision vs.&nbsp;protanopic (color blind) vision; Source: https://en.wikipedia.org/wiki/Retinal_mosaic"></a></p>
+<figcaption>Normal color vision vs.&nbsp;protanopic (color blind) vision; Source: https://en.wikipedia.org/wiki/Retinal_mosaic</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="with-different-concentrations-in-different-parts-of-the-retina" class="level3">
+<h3 class="anchored" data-anchor-id="with-different-concentrations-in-different-parts-of-the-retina">with different concentrations in different parts of the retina</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Human_photoreceptor_distribution.svg/1200px-Human_photoreceptor_distribution.svg.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23" title="Wikipedia"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Human_photoreceptor_distribution.svg/1200px-Human_photoreceptor_distribution.svg.png" class="img-fluid figure-img" alt="Wikipedia"></a></p>
+<figcaption>Wikipedia</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="consequences" class="level2">
+<h2 class="anchored" data-anchor-id="consequences">Consequences</h2>
 <ul>
 <li>Must move eyes to position highest resolution part of retina over target</li>
 <li>Keep track of sequence of eye movements and positions over time</li>
 <li>Integrate sequence of samples over time</li>
 </ul>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/cairo-fig-5.6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24" title="@Cairo2013-hm Figure 5.6"><img src="../include/img/cairo-fig-5.6.png" class="img-fluid figure-img" alt="Cairo (2013) Figure 5.6"></a></p>
+<figcaption><span class="citation" data-cites="Cairo2013-hm">Cairo (<a href="#ref-Cairo2013-hm" role="doc-biblioref">2013</a>)</span> Figure 5.6</figcaption>
+</figure>
+</div>
 </section>
-<section class="slide level2">
-
-
-<img data-src="../include/img/cairo-fig-5.6.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Cairo2013-hm">Cairo (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span> Figure 5.6</p></section>
-<section id="information-processing" class="slide level2">
-<h2>Information processing</h2>
+<section id="information-processing" class="level2">
+<h2 class="anchored" data-anchor-id="information-processing">Information processing</h2>
 <ul>
 <li>Separate channels for short, medium, long wavelengths (cones): chromatic (color)</li>
 <li>Black/gray/white or overall illumination (rods): achromatic (dark/light)</li>
 <li>~120 M rods + ~ 5 M cones (125 M) vs.&nbsp;professional cameras with 100 M pixels</li>
 </ul>
-</section>
-<section class="slide level2">
-
+<hr>
 <ul>
 <li>Point by point, topographic (map-like) 2D image of 3D world</li>
 <li>Non-uniform resolution (center &gt;&gt; periphery)</li>
 <li>yields focused image except…</li>
 </ul>
+<hr>
+<section id="when-eye-misshapen-for-cornea-lens" class="level3">
+<h3 class="anchored" data-anchor-id="when-eye-misshapen-for-cornea-lens">…when eye misshapen for cornea +lens</h3>
+<p><a href="https://ecpbuilder.com/wp-content/uploads/sites/530/2015/10/myopia.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-25"><img src="https://ecpbuilder.com/wp-content/uploads/sites/530/2015/10/myopia.jpg" class="img-fluid"></a></p>
 </section>
-<section class="slide level2">
-
-<h3 id="when-eye-misshapen-for-cornea-lens">…when eye misshapen for cornea +lens</h3>
-
-<img data-src="https://ecpbuilder.com/wp-content/uploads/sites/530/2015/10/myopia.jpg" class="r-stretch"></section>
-<section id="acuity" class="slide level2">
-<h2>Acuity</h2>
+</section>
+<section id="acuity" class="level2">
+<h2 class="anchored" data-anchor-id="acuity">Acuity</h2>
 <ul>
 <li>Detail/pattern vision</li>
 <li>Grating acuity</li>
 <li>Vernier</li>
 <li>Symbol/letter (optotype) acuity</li>
 </ul>
-</section>
-<section class="slide level2">
-
+<hr>
 <!-- Measuring visual acuity HOTV and Lea symbols -->
-
-<img data-src="https://s3.amazonaws.com/cdn.bernell.com/images/uploads/712_4817_thumb.jpg" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="contrast-sensitivity" class="slide level2">
-<h2>Contrast sensitivity</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://s3.amazonaws.com/cdn.bernell.com/images/uploads/712_4817_thumb.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-26"><img src="https://s3.amazonaws.com/cdn.bernell.com/images/uploads/712_4817_thumb.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
+</figure>
+</div>
+</section>
+<section id="contrast-sensitivity" class="level2">
+<h2 class="anchored" data-anchor-id="contrast-sensitivity">Contrast sensitivity</h2>
 <ul>
 <li>Light/dark ratio (contast)</li>
 <li>vs.&nbsp;spatial frequency (level of detail)</li>
 <li>Contrast -&gt; edges; edges -&gt; shape/form</li>
 <li>e.g., driving in fog</li>
 </ul>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.psychophysics.uk/wp-content/uploads/2019/04/typical-contrast-sensitivity-function.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-27" title="Contrast sensitivity function"><img src="https://www.psychophysics.uk/wp-content/uploads/2019/04/typical-contrast-sensitivity-function.jpg" class="img-fluid figure-img" alt="Contrast sensitivity function"></a></p>
+<figcaption>Contrast sensitivity function</figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.researchgate.net/publication/313816987/figure/fig2/AS:614249734864898@1523459957272/Pelli-Robson-contrast-sensitivity-chart-Precision-Vision-LaSalle-IL-11-The_Q640.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-28" title="Pelli-Robson Contrast Sensitivity Chart"><img src="https://www.researchgate.net/publication/313816987/figure/fig2/AS:614249734864898@1523459957272/Pelli-Robson-contrast-sensitivity-chart-Precision-Vision-LaSalle-IL-11-The_Q640.jpg" class="img-fluid figure-img" alt="Pelli-Robson Contrast Sensitivity Chart"></a></p>
+<figcaption>Pelli-Robson Contrast Sensitivity Chart</figcaption>
+</figure>
+</div>
 </section>
-<section class="slide level2">
-
-
-<img data-src="https://www.psychophysics.uk/wp-content/uploads/2019/04/typical-contrast-sensitivity-function.jpg" class="r-stretch quarto-figure-center"><p class="caption">Contrast sensitivity function</p></section>
-<section class="slide level2">
-
-
-<img data-src="https://www.researchgate.net/publication/313816987/figure/fig2/AS:614249734864898@1523459957272/Pelli-Robson-contrast-sensitivity-chart-Precision-Vision-LaSalle-IL-11-The_Q640.jpg" class="r-stretch quarto-figure-center"><p class="caption">Pelli-Robson Contrast Sensitivity Chart</p></section>
-<section id="color-perception" class="slide level2">
-<h2>Color perception</h2>
+<section id="color-perception" class="level2">
+<h2 class="anchored" data-anchor-id="color-perception">Color perception</h2>
 <ul>
 <li>Perceived color a function of activity in “R”, “G”, and “B” photoreceptors</li>
 </ul>
-
-<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/1416_Color_Sensitivity.jpg/1200px-1416_Color_Sensitivity.jpg" class="r-stretch quarto-figure-center"><p class="caption">Source: Wikipedia</p></section>
-<section id="wavelengths-are-continuous-but-are-perceived-colors" class="slide level2">
-<h2>Wavelengths are continuous, but are perceived colors?</h2>
-
-<img data-src="https://rmit.pressbooks.pub/app/uploads/sites/42/2022/10/visitble-spectrum-nm.png" class="r-stretch quarto-figure-center"><p class="caption">https://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/</p></section>
-<section id="perceived-colors-seem-ordinal-but" class="slide level2">
-<h2>Perceived colors seem ordinal, but…</h2>
-
-<img data-src="https://cdn.pixabay.com/photo/2013/07/12/19/20/rainbow-colors-154569_1280.png" class="r-stretch"><ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/1416_Color_Sensitivity.jpg/1200px-1416_Color_Sensitivity.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-29" title="Source: Wikipedia"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/1416_Color_Sensitivity.jpg/1200px-1416_Color_Sensitivity.jpg" class="img-fluid figure-img" alt="Source: Wikipedia"></a></p>
+<figcaption>Source: Wikipedia</figcaption>
+</figure>
+</div>
+</section>
+<section id="wavelengths-are-continuous-but-are-perceived-colors" class="level2">
+<h2 class="anchored" data-anchor-id="wavelengths-are-continuous-but-are-perceived-colors">Wavelengths are continuous, but are perceived colors?</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://rmit.pressbooks.pub/app/uploads/sites/42/2022/10/visitble-spectrum-nm.png" class="lightbox" data-gallery="quarto-lightbox-gallery-30" title="https://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/"><img src="https://rmit.pressbooks.pub/app/uploads/sites/42/2022/10/visitble-spectrum-nm.png" class="img-fluid figure-img" alt="https://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/"></a></p>
+<figcaption>https://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/</figcaption>
+</figure>
+</div>
+</section>
+<section id="perceived-colors-seem-ordinal-but" class="level2">
+<h2 class="anchored" data-anchor-id="perceived-colors-seem-ordinal-but">Perceived colors seem ordinal, but…</h2>
+<p><a href="https://cdn.pixabay.com/photo/2013/07/12/19/20/rainbow-colors-154569_1280.png" class="lightbox" data-gallery="quarto-lightbox-gallery-31"><img src="https://cdn.pixabay.com/photo/2013/07/12/19/20/rainbow-colors-154569_1280.png" class="img-fluid"></a></p>
+<ul>
 <li>Color is a neuropsychological construct</li>
 </ul>
 </section>
-<section id="color-vision-anomalies" class="slide level2">
-<h2>Color vision anomalies</h2>
+<section id="color-vision-anomalies" class="level2">
+<h2 class="anchored" data-anchor-id="color-vision-anomalies">Color vision anomalies</h2>
 <ul>
 <li>Absence of or anomalies in photoreceptors</li>
 </ul>
-
-<img data-src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnmeth.1618/MediaObjects/41592_2011_Article_BFnmeth1618_Fig1_HTML.jpg?as=webp" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Wong2011-ke">Wong (<a href="#/references" role="doc-biblioref" onclick="">2011</a>)</span> Figure 1</p></section>
-<section id="types" class="slide level2">
-<h2>Types</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnmeth.1618/MediaObjects/41592_2011_Article_BFnmeth1618_Fig1_HTML.jpg?as=webp" class="lightbox" data-gallery="quarto-lightbox-gallery-32" title="@Wong2011-ke Figure 1"><img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnmeth.1618/MediaObjects/41592_2011_Article_BFnmeth1618_Fig1_HTML.jpg?as=webp" class="img-fluid figure-img" alt="Wong (2011) Figure 1"></a></p>
+<figcaption><span class="citation" data-cites="Wong2011-ke">Wong (<a href="#ref-Wong2011-ke" role="doc-biblioref">2011</a>)</span> Figure 1</figcaption>
+</figure>
+</div>
+</section>
+<section id="types" class="level2">
+<h2 class="anchored" data-anchor-id="types">Types</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
 <ul>
@@ -515,19 +832,25 @@ Rick Gilmore
 </ul>
 </div><div class="column" style="width:60%;">
 <div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://www.color-blindness.com/wp-content/images/Protanopia-Color-Spectrum.jpg"></p>
+<figure class="figure">
+<p><a href="https://www.color-blindness.com/wp-content/images/Protanopia-Color-Spectrum.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-33" title="https://www.color-blindness.com/protanopia-red-green-color-blindness/"><img src="https://www.color-blindness.com/wp-content/images/Protanopia-Color-Spectrum.jpg" class="img-fluid figure-img" alt="https://www.color-blindness.com/protanopia-red-green-color-blindness/"></a></p>
 <figcaption>https://www.color-blindness.com/protanopia-red-green-color-blindness/</figcaption>
 </figure>
 </div>
-</div></div>
+</div>
+</div>
 </section>
-<section id="color-palettes" class="slide level2">
-<h2>Color palettes</h2>
-
-<img data-src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnmeth.1618/MediaObjects/41592_2011_Article_BFnmeth1618_Fig2_HTML.jpg?as=webp" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Wong2011-ke">Wong (<a href="#/references" role="doc-biblioref" onclick="">2011</a>)</span> Figure 2</p></section>
-<section id="some-consequences-for-data-figures" class="slide level2">
-<h2>Some consequences for data figures</h2>
+<section id="color-palettes" class="level2">
+<h2 class="anchored" data-anchor-id="color-palettes">Color palettes</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnmeth.1618/MediaObjects/41592_2011_Article_BFnmeth1618_Fig2_HTML.jpg?as=webp" class="lightbox" data-gallery="quarto-lightbox-gallery-34" title="@Wong2011-ke Figure 2"><img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnmeth.1618/MediaObjects/41592_2011_Article_BFnmeth1618_Fig2_HTML.jpg?as=webp" class="img-fluid figure-img" alt="Wong (2011) Figure 2"></a></p>
+<figcaption><span class="citation" data-cites="Wong2011-ke">Wong (<a href="#ref-Wong2011-ke" role="doc-biblioref">2011</a>)</span> Figure 2</figcaption>
+</figure>
+</div>
+</section>
+<section id="some-consequences-for-data-figures" class="level2">
+<h2 class="anchored" data-anchor-id="some-consequences-for-data-figures">Some consequences for data figures</h2>
 <ul>
 <li>Size of visual elements (symbols, including text)</li>
 <li>Contrast (light/dark or color)</li>
@@ -539,17 +862,18 @@ Rick Gilmore
 <li>How much visual scanning (# of eye movements)?</li>
 </ul>
 </section>
-<section id="your-turn" class="slide level2">
-<h2>Your turn</h2>
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
+<section id="your-turn" class="level2">
+<h2 class="anchored" data-anchor-id="your-turn">Your turn</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Evaluating figures</strong></p>
+<div class="callout-title-container flex-fill">
+Evaluating figures
 </div>
-<div class="callout-content">
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li>Visit our sample figures <a href="../tutorials/tutorial-making-data.html">page</a> and evaluate which figures might pose challenges for people with vision impairments.</li>
 <li>Visit our figures in <a href="../supplemental/psych-sci-figs.html">psychological science</a> and figures in <a href="../supplemental/other-field-figs.html">business, journalism, and the arts</a> pages with the same goal.</li>
@@ -557,36 +881,34 @@ Rick Gilmore
 </ul>
 </div>
 </div>
-</div>
-</section></section>
-<section>
-<section id="main-points" class="title-slide slide level1 center">
-<h1>Main points</h1>
-
 </section>
-<section class="slide level2">
-
+</section>
+<section id="main-points" class="level1">
+<h1>Main points</h1>
+<hr>
 <ul>
 <li>Visual perception a <em>reconstruction</em> of reality</li>
 <li>Continuous pattern of light <span class="math inline">\(\rightarrow\)</span> intensity detected by 4 photoreceptor types</li>
 <li>Retina has non-uniform sensivity to light, so some information more easily detected</li>
 </ul>
-</section></section>
-<section id="next-time" class="title-slide slide level1 center">
+</section>
+<section id="next-time" class="level1">
 <h1>Next time</h1>
 <p><em>From cognition to understanding</em></p>
 </section>
-
-<section>
-<section id="resources" class="title-slide slide level1 center">
+<section id="resources" class="level1">
 <h1>Resources</h1>
+<section id="references" class="level2">
+
+
+
+<!-- -->
+
 
 </section>
-<section id="references" class="slide level2 smaller scrollable">
-<h2>References</h2>
+</section>
 
-
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-Bucalo2015-qm" class="csl-entry" role="listitem">
 Bucalo, P. (2015, October). Falcon belly dance. Youtube. Retrieved from <a href="https://www.youtube.com/watch?v=JGArTWOJtXs">https://www.youtube.com/watch?v=JGArTWOJtXs</a>
 </div>
@@ -605,411 +927,879 @@ Webb’s first deep field (<span>NIRCam</span> image). (n.d.). Retrieved January
 <div id="ref-Wong2011-ke" class="csl-entry" role="listitem">
 Wong, B. (2011). Color blindness. <em>Nature Methods</em>, <em>8</em>, 441. <a href="https://doi.org/10.1038/nmeth.1618">https://doi.org/10.1038/nmeth.1618</a>
 </div>
-</div>
-</section></section>
-    </div>
-  <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="https://brand.psu.edu/images/backgrounds/penn-state-shield.jpg" class="slide-logo"></p>
-<div class="footer footer-default">
-<p><a href="../index.html">PSYCH 490.001 • Spring 2025</a></p>
-</div>
-</div></div>
-
-  <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../site_libs/revealjs/dist/reveal.js"></script>
-  <!-- reveal.js plugins -->
-  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
-  
-
-  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
-
-  <script>
-
-      // Full list of configuration options available at:
-      // https://revealjs.com/config/
-      Reveal.initialize({
-'controlsAuto': true,
-'previewLinksAuto': false,
-'pdfSeparateFragments': false,
-'autoAnimateEasing': "ease",
-'autoAnimateDuration': 1,
-'autoAnimateUnmatched': true,
-'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
-'smaller': false,
- 
-        // Display controls in the bottom right corner
-        controls: false,
-
-        // Help the user learn the controls by providing hints, for example by
-        // bouncing the down arrow when they first encounter a vertical slide
-        controlsTutorial: false,
-
-        // Determines where controls appear, "edges" or "bottom-right"
-        controlsLayout: 'edges',
-
-        // Visibility rule for backwards navigation arrows; "faded", "hidden"
-        // or "visible"
-        controlsBackArrows: 'faded',
-
-        // Display a presentation progress bar
-        progress: true,
-
-        // Display the page number of the current slide
-        slideNumber: 'c/t',
-
-        // 'all', 'print', or 'speaker'
-        showSlideNumber: 'all',
-
-        // Add the current slide number to the URL hash so that reloading the
-        // page/copying the URL will return you to the same slide
-        hash: true,
-
-        // Start with 1 for the hash rather than 0
-        hashOneBasedIndex: false,
-
-        // Flags if we should monitor the hash and change slides accordingly
-        respondToHashChanges: true,
-
-        // Push each slide change to the browser history
-        history: true,
-
-        // Enable keyboard shortcuts for navigation
-        keyboard: true,
-
-        // Enable the slide overview mode
-        overview: true,
-
-        // Disables the default reveal.js slide layout (scaling and centering)
-        // so that you can use custom CSS layout
-        disableLayout: false,
-
-        // Vertical centering of slides
-        center: false,
-
-        // Enables touch navigation on devices with touch input
-        touch: true,
-
-        // Loop the presentation
-        loop: false,
-
-        // Change the presentation direction to be RTL
-        rtl: false,
-
-        // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'linear',
-
-        // Randomizes the order of slides each time the presentation loads
-        shuffle: false,
-
-        // Turns fragments on and off globally
-        fragments: true,
-
-        // Flags whether to include the current fragment in the URL,
-        // so that reloading brings you to the same fragment position
-        fragmentInURL: false,
-
-        // Flags if the presentation is running in an embedded mode,
-        // i.e. contained within a limited portion of the screen
-        embedded: false,
-
-        // Flags if we should show a help overlay when the questionmark
-        // key is pressed
-        help: true,
-
-        // Flags if it should be possible to pause the presentation (blackout)
-        pause: true,
-
-        // Flags if speaker notes should be visible to all viewers
-        showNotes: false,
-
-        // Global override for autoplaying embedded media (null/true/false)
-        autoPlayMedia: null,
-
-        // Global override for preloading lazy-loaded iframes (null/true/false)
-        preloadIframes: null,
-
-        // Number of milliseconds between automatically proceeding to the
-        // next slide, disabled when set to 0, this value can be overwritten
-        // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
-
-        // Stop auto-sliding after user input
-        autoSlideStoppable: true,
-
-        // Use this method for navigation when auto-sliding
-        autoSlideMethod: null,
-
-        // Specify the average time in seconds that you think you will spend
-        // presenting each slide. This is used to show a pacing timer in the
-        // speaker view
-        defaultTiming: null,
-
-        // Enable slide navigation via mouse wheel
-        mouseWheel: false,
-
-        // The display mode that will be used to show slides
-        display: 'block',
-
-        // Hide cursor if inactive
-        hideInactiveCursor: true,
-
-        // Time before the cursor is hidden (in ms)
-        hideCursorTime: 5000,
-
-        // Opens links in an iframe preview overlay
-        previewLinks: false,
-
-        // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
-
-        // Transition speed (default/fast/slow)
-        transitionSpeed: 'default',
-
-        // Transition style for full page slide backgrounds
-        // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'none',
-
-        // Number of slides away from the current that are visible
-        viewDistance: 3,
-
-        // Number of slides away from the current that are visible on mobile
-        // devices. It is advisable to set this to a lower number than
-        // viewDistance in order to save resources.
-        mobileViewDistance: 2,
-
-        // The "normal" size of the presentation, aspect ratio will be preserved
-        // when the presentation is scaled to fit different resolutions. Can be
-        // specified using percentage units.
-        width: 1050,
-
-        height: 700,
-
-        // Factor of the display size that should remain empty around the content
-        margin: 0.1,
-
-        math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
-        // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
-
-          RevealMath,
-          RevealNotes,
-          RevealSearch,
-          RevealZoom
-        ]
-      });
-    </script>
-    <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
         } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
+          window.location.href = sourceUrl;
         }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
       }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
-          }
-        }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
-          }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-        }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
-            }
-          }
-        }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
-          }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
         } else {
-          return undefined;
+          details.removeAttribute("open");
         }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
-              }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
-          });
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
         }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
       }
     });
-    </script>
-    
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "From stimulus to sensation"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "2025-02-06"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu"># Prelude</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>{{&lt; video https://www.youtube.com/watch?v=MrHxhQPOO2c width=100% height=70% &gt;}}</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>@JimmyCliffVEVO2014-hs</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu"># Overview</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Announcements</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Due</span><span class="co">]</span>{.orange_due} next <span class="co">[</span><span class="ot">Tuesday, February 11</span><span class="co">](../schedule.qmd#tuesday-february-11)</span>: <span class="co">[</span><span class="ot">Exercise-03</span><span class="co">](../exercises/ex03-making-data.qmd)</span> | <span class="co">[</span><span class="ot">Canvas dropbox</span><span class="co">](https://psu.instructure.com/courses/2381584/assignments/16998400)</span> |</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Last time...</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>More figure types</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Bar/column</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>::: {.column width=50%}</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="al">![](../include/fig/fig-nominal-barplot-horiz-ordered-1.png)</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>::: {.column width=50%}</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="al">![](../include/fig/fig-nominal-barplot-texture-sorted-1.png)</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="fu">## Stacked vs. Lollipop</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>::: {.column width=50%}</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="al">![](../include/fig/fig-nominal-lollipop-1.png)</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>::: {.column width=50%}</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="al">![](../include/fig/fig-nominal-barplot-stacked-1-1.png)</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pie/ring</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>::: {.column width=50%}</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="al">![](../include/fig/fig-nominal-pie-chart-1.png)</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>::: {.column width=50%}</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="al">![](../include/fig/fig-nominal-ring-chart-1.png)</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1D summaries</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>::: {.column width=50%}</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="al">![](../include/fig/fig-continuous-violin-boxplot-scatter-age-1.png)</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>::: {.column width=50%}</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="al">![](../include/fig/fig-continuous-violin-boxplot-scatter-temp-1.png)</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2D scatterplots</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="al">![](../include/fig/fig-continuous-scatter-1.png)</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="fu">## Your Ex-03 Surveys</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Excerpts</span><span class="co">](../supplemental/ex03-deep-dive.qmd)</span> from figures generated by Google Forms</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="fu">## Today</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What is vision for?</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Information in light</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Detecting information in light</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="fu"># What is vision for?</span></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="fu">## Information at a distance</span></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="al">![James Webb space telescope deep field @noauthor_undated-vq](https://stsci-opo.org/STScI-01G7DCYVZ899DGSY684E801B2Y.png)</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Light (+ radiowaves) circumnavigate the Earth in ~133 ms</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Earth ~8.3 light-minutes from the Sun</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="fu">## Where is it/am I?</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>::: {.incremental}</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Azimuth (left/right)</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Elevation (up/down)</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Distance (near/far)</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Orientation</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="fu">## What is it?</span></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>::: {.incremental}</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Surfaces</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Objects</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Entities</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="fu">## Regarding data figures...</span></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>*What* are the figure components</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Data points, text, bars/segments/rings/boxes</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>*Where* are different components relative to one another, axes, etc.</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="fu"># Information in light</span></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="al">![@Cairo2013-hm Figure 5.12](../include/img/cairo-fig-5.12.png)</span></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="fu">## Electromagnetic spectrum</span></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="al">![EM spectrum from Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/EM_Spectrum_Properties_edit.svg/1200px-EM_Spectrum_Properties_edit.svg.png)</span></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="fu">## Surfaces reflect/absorb or emit</span></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="al">![Source: https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg](https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg)</span></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="fu">## Different surfaces == Different reflection/absorption</span></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Perceived color differences correspond to different patterns of light reflection.</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="al">![@Randeberg2005-xn](https://www.researchgate.net/profile/Lise-Lyngsnes-Randeberg/publication/265397843/figure/fig8/AS:667691706773516@1536201516532/Reflectance-spectra-from-different-skin-types-measured-using-the-Ocean-Optics-SD-2000.png)</span></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="fu">## Artificial sources</span></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>{{&lt; video https://youtu.be/ipIPzRh6DQY?si=oEktE5E3x28ZTUug width=100% height=70% &gt;}}</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="fu">## Spatial patterns on retina</span></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>depend on object geometry and orientation</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a><span class="al">![Source: https://thebrain.mcgill.ca](https://thebrain.mcgill.ca/flash/a/a_02/a_02_p/a_02_p_vis/a_02_p_vis_1p.jpg)</span></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="al">![Source: https://thebrain.mcgill.ca](https://thebrain.mcgill.ca/flash/a/a_02/a_02_p/a_02_p_vis/a_02_p_vis_1q.jpg)</span></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="fu"># Detecting information in light</span></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="fu">## What information?</span></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Position</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Length</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Area</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Color</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Texture</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>(Motion)</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="fu">## The eye</span></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://hmslade5.files.wordpress.com/2012/03/anatomy-of-the-eye.jpg)</span>{fig-align="center"}</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="fu">## is like an auto-focus, auto-exposure camera...</span></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://www.optilase.com/wp-content/uploads/2014/12/camera-lens-eye-lens.jpg)</span></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="fu">## part of a self-stabilizing system...</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>{{&lt; video https://www.youtube.com/embed/JGArTWOJtXs?start=7 width="100%" height="70%" class="center_img"&gt;}}</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>@Bucalo2015-qm</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a><span class="fu">## Eye + head + body system</span></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Eye + head + body movements *align and point* the eyes</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Eye + head + body movements *stabilize* the eyes</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>When the observer moves</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>When objects move</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="fu">## Demo</span></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>May I have a volunteer?</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="fu">## Image formation</span></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Eye's optical components</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Cornea (fixed refraction)</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Iris/pupil (*modifiable* aperture)</span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Lens (*modifiable* refraction) </span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Create projection (image) on retina</span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="fu">## The retina...</span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://www.feinberg.northwestern.edu/gfx/news/retina.jpg)</span>{fig-align="center"}</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>samples spatial patterns of light intensity &amp; wavelength patterns</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a><span class="fu">## 'Wavelength-tuned' photoreceptors</span></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="al">![Source: Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/1416_Color_Sensitivity.jpg/1200px-1416_Color_Sensitivity.jpg)</span></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a><span class="al">![Retinal rods (green) &amp; cones (blue)](https://i.pinimg.com/originals/9f/08/85/9f0885d4c209d5275f631ac194eb4f4b.jpg)</span></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="fu">### ...arranged in mosaics</span></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="al">![Normal color vision vs. protanopic (color blind) vision; Source: https://en.wikipedia.org/wiki/Retinal_mosaic](https://upload.wikimedia.org/wikipedia/commons/a/a6/ConeMosaics.jpg)</span></span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="fu">### with different concentrations in different parts of the retina</span></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="al">![Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Human_photoreceptor_distribution.svg/1200px-Human_photoreceptor_distribution.svg.png)</span></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="fu">## Consequences</span></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Must move eyes to position highest resolution part of retina over target</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Keep track of sequence of eye movements and positions over time</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Integrate sequence of samples over time</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a><span class="al">![@Cairo2013-hm Figure 5.6](../include/img/cairo-fig-5.6.png)</span></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="fu">## Information processing</span></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Separate channels for short, medium, long wavelengths (cones): chromatic (color)</span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Black/gray/white or overall illumination (rods): achromatic (dark/light)</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>~120 M rods + ~ 5 M cones (125 M) vs. professional cameras with 100 M pixels</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Point by point, topographic (map-like) 2D image of 3D world</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Non-uniform resolution (center &gt;&gt; periphery)</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>yields focused image except...</span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a><span class="fu">### ...when eye misshapen for cornea  +lens</span></span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://ecpbuilder.com/wp-content/uploads/sites/530/2015/10/myopia.jpg)</span></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a><span class="fu">## Acuity </span></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Detail/pattern vision</span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Grating acuity</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Vernier</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Symbol/letter (optotype) acuity</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- Measuring visual acuity HOTV and Lea symbols --&gt;</span></span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://s3.amazonaws.com/cdn.bernell.com/images/uploads/712_4817_thumb.jpg)</span>{fig-align="center"}</span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contrast sensitivity</span></span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Light/dark ratio (contast)</span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>vs. spatial frequency (level of detail)</span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Contrast -&gt; edges; edges -&gt; shape/form</span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>e.g., driving in fog</span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a><span class="al">![Contrast sensitivity function](https://www.psychophysics.uk/wp-content/uploads/2019/04/typical-contrast-sensitivity-function.jpg)</span></span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="al">![Pelli-Robson Contrast Sensitivity Chart](https://www.researchgate.net/publication/313816987/figure/fig2/AS:614249734864898@1523459957272/Pelli-Robson-contrast-sensitivity-chart-Precision-Vision-LaSalle-IL-11-The_Q640.jpg)</span></span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a><span class="fu">## Color perception</span></span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Perceived color a function of activity in "R", "G", and "B" photoreceptors</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a><span class="al">![Source: Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/1416_Color_Sensitivity.jpg/1200px-1416_Color_Sensitivity.jpg)</span></span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a><span class="fu">## Wavelengths are continuous, but are perceived colors?</span></span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a><span class="al">![https://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/](https://rmit.pressbooks.pub/app/uploads/sites/42/2022/10/visitble-spectrum-nm.png)</span></span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a><span class="fu">## Perceived colors seem ordinal, but...</span></span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://cdn.pixabay.com/photo/2013/07/12/19/20/rainbow-colors-154569_1280.png)</span></span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Color is a neuropsychological construct</span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a><span class="fu">## Color vision anomalies</span></span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Absence of or anomalies in photoreceptors</span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a><span class="al">![@Wong2011-ke Figure 1](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnmeth.1618/MediaObjects/41592_2011_Article_BFnmeth1618_Fig1_HTML.jpg?as=webp)</span></span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a><span class="fu">## Types</span></span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>::: {.column width=40%}</span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Protanopia (impaired R/long wavelength)</span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Deuteranopia (impaired G/medium wavelength)</span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tritanopia (impaired B/short wavelength)</span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>::: {.column width=60%}</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a><span class="al">![https://www.color-blindness.com/protanopia-red-green-color-blindness/](https://www.color-blindness.com/wp-content/images/Protanopia-Color-Spectrum.jpg)</span></span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a><span class="fu">## Color palettes</span></span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a><span class="al">![@Wong2011-ke Figure 2](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnmeth.1618/MediaObjects/41592_2011_Article_BFnmeth1618_Fig2_HTML.jpg?as=webp)</span></span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a><span class="fu">## Some consequences for data figures</span></span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Size of visual elements (symbols, including text)</span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Contrast (light/dark or color)</span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Textures of visual patterns</span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Some colors more visible than others</span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Vischeck</span><span class="co">](https://www.vischeck.com/)</span></span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How much visual scanning (# of eye movements)?</span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a><span class="fu">## Your turn</span></span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a><span class="fu">## Evaluating figures</span></span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Visit our sample figures <span class="co">[</span><span class="ot">page</span><span class="co">](../tutorials/tutorial-making-data.qmd)</span> and evaluate which figures might pose challenges for people with vision impairments.</span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Visit our figures in <span class="co">[</span><span class="ot">psychological science</span><span class="co">](../supplemental/psych-sci-figs.qmd)</span> and figures in <span class="co">[</span><span class="ot">business, journalism, and the arts</span><span class="co">](../supplemental/other-field-figs.qmd)</span> pages with the same goal.</span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What specific issues do you foresee?</span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a><span class="fu"># Main points</span></span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Visual perception a *reconstruction* of reality</span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Continuous pattern of light $\rightarrow$ intensity detected by 4 photoreceptor types</span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Retina has non-uniform sensivity to light, so some information more easily detected</span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a><span class="fu"># Next time</span></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a>*From cognition to understanding*</span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a><span class="fu"># Resources</span></span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright © 2025- Rick Gilmore</p>
+</div>   
+    <div class="nav-footer-center">
+<p>Built with <a href="https://quarto.org/">Quarto</a></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/edit/main/src/slides/wk04-2025-02-06-stim-to-sensation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rogilmore">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
 
 </body></html>

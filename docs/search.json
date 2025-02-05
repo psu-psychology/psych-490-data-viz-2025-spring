@@ -2006,7 +2006,7 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#electromagnetic-spectrum",
     "title": "From stimulus to sensation",
     "section": "Electromagnetic spectrum",
-    "text": "Electromagnetic spectrum\n\nEM spectrum from Wikipedia"
+    "text": "Electromagnetic spectrum\n\n\n\nEM spectrum from Wikipedia"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#surfaces-reflectabsorb",
@@ -2027,7 +2027,7 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#different-surfaces-different-reflectionabsorption",
     "title": "From stimulus to sensation",
     "section": "Different surfaces == Different reflection/absorption",
-    "text": "Different surfaces == Different reflection/absorption\n\nPerceived color differences correspond to different patterns of light reflection.\n\n\nRandeberg (2005)"
+    "text": "Different surfaces == Different reflection/absorption\n\nPerceived color differences correspond to different patterns of light reflection.\n\n\n\n\nRandeberg (2005)"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#spatial-patterns",
@@ -2062,7 +2062,7 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#eye-head-body-system",
     "title": "From stimulus to sensation",
     "section": "Eye + head + body system",
-    "text": "Eye + head + body system\n\n\n\n\n\n\nNote\n\n\n\nEye + head + body movements align and point the eyes\nEye + head + body movements stabilize the eyes\n\nWhen the observer moves\nWhen objects move"
+    "text": "Eye + head + body system\n\n\n\n\n\n\nNote\n\n\n\n\nEye + head + body movements align and point the eyes\nEye + head + body movements stabilize the eyes\n\nWhen the observer moves\nWhen objects move"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#image-formation",
@@ -2076,14 +2076,14 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#the-retina",
     "title": "From stimulus to sensation",
     "section": "The retina…",
-    "text": "The retina…\n\n\nsamples spatial patterns of light intensity & wavelength patterns"
+    "text": "The retina…\n\n\n\n\n\n\nsamples spatial patterns of light intensity & wavelength patterns"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#information-processing",
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#information-processing",
     "title": "From stimulus to sensation",
     "section": "Information processing",
-    "text": "Information processing\n\nSeparate channels for short, medium, long wavelengths (cones): chromatic (color)\nBlack/gray/white or overall illumination (rods): achromatic (dark/light)\n~120 M rods + ~ 5 M cones (125 M) vs. professional cameras with 100 M pixels"
+    "text": "Information processing\n\nSeparate channels for short, medium, long wavelengths (cones): chromatic (color)\nBlack/gray/white or overall illumination (rods): achromatic (dark/light)\n~120 M rods + ~ 5 M cones (125 M) vs. professional cameras with 100 M pixels\n\n\n\nPoint by point, topographic (map-like) 2D image of 3D world\nNon-uniform resolution (center &gt;&gt; periphery)\nyields focused image except…\n\n\n\n…when eye misshapen for cornea +lens"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#what-information",
@@ -2097,14 +2097,14 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#wavelength-tuned-photoreceptors",
     "title": "From stimulus to sensation",
     "section": "‘Wavelength-tuned’ photoreceptors",
-    "text": "‘Wavelength-tuned’ photoreceptors\n\nSource: Wikipedia"
+    "text": "‘Wavelength-tuned’ photoreceptors\n\n\n\nSource: Wikipedia\n\n\n\n\n\n\nRetinal rods (green) & cones (blue)\n\n\n\n\n…arranged in mosaics\n\n\n\nNormal color vision vs. protanopic (color blind) vision; Source: https://en.wikipedia.org/wiki/Retinal_mosaic\n\n\n\n\n\nwith different concentrations in different parts of the retina\n\n\n\nWikipedia"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#consequences",
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#consequences",
     "title": "From stimulus to sensation",
     "section": "Consequences",
-    "text": "Consequences\n\nMust move eyes to position highest resolution part of retina over target\nKeep track of sequence of eye movements and positions over time\nIntegrate sequence of samples over time"
+    "text": "Consequences\n\nMust move eyes to position highest resolution part of retina over target\nKeep track of sequence of eye movements and positions over time\nIntegrate sequence of samples over time\n\n\n\n\n\nCairo (2013) Figure 5.6"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#acuity",
@@ -2118,7 +2118,7 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#contrast-sensitivity",
     "title": "From stimulus to sensation",
     "section": "Contrast sensitivity",
-    "text": "Contrast sensitivity\n\nLight/dark ratio (contast)\nvs. spatial frequency (level of detail)\nContrast -&gt; edges; edges -&gt; shape/form\ne.g., driving in fog"
+    "text": "Contrast sensitivity\n\nLight/dark ratio (contast)\nvs. spatial frequency (level of detail)\nContrast -&gt; edges; edges -&gt; shape/form\ne.g., driving in fog\n\n\n\n\n\nContrast sensitivity function\n\n\n\n\n\n\nPelli-Robson Contrast Sensitivity Chart"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#some-consequences-for-data-figures",
@@ -2132,21 +2132,21 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#color-palettes",
     "title": "From stimulus to sensation",
     "section": "Color palettes",
-    "text": "Color palettes\n\nWong (2011) Figure 2"
+    "text": "Color palettes\n\n\n\nWong (2011) Figure 2"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#color-perception",
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#color-perception",
     "title": "From stimulus to sensation",
     "section": "Color perception",
-    "text": "Color perception\n\nPerceived color a function of activity in “R”, “G”, and “B” photoreceptors\n\n\nSource: Wikipedia"
+    "text": "Color perception\n\nPerceived color a function of activity in “R”, “G”, and “B” photoreceptors\n\n\n\n\nSource: Wikipedia"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#color-vision-anomalies",
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#color-vision-anomalies",
     "title": "From stimulus to sensation",
     "section": "Color vision anomalies",
-    "text": "Color vision anomalies\n\nAbsence of or anomalies in photoreceptors\n\n\nWong (2011) Figure 1"
+    "text": "Color vision anomalies\n\nAbsence of or anomalies in photoreceptors\n\n\n\n\nWong (2011) Figure 1"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#types",
@@ -2160,7 +2160,7 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#your-turn",
     "title": "From stimulus to sensation",
     "section": "Your turn",
-    "text": "Your turn\n\n\n\n\n\n\nEvaluating figures\n\n\n\nVisit our sample figures page and evaluate which figures might pose challenges for people with vision impairments.\nVisit our figures in psychological science and figures in business, journalism, and the arts pages with the same goal.\nWhat specific issues do you foresee?"
+    "text": "Your turn\n\n\n\n\n\n\nEvaluating figures\n\n\n\n\nVisit our sample figures page and evaluate which figures might pose challenges for people with vision impairments.\nVisit our figures in psychological science and figures in business, journalism, and the arts pages with the same goal.\nWhat specific issues do you foresee?"
   },
   {
     "objectID": "slides/wk04-2025-02-04-figure-components.html#a-cautionary-tale",
@@ -2230,7 +2230,7 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#surfaces-reflectabsorb-or-emit",
     "title": "From stimulus to sensation",
     "section": "Surfaces reflect/absorb or emit",
-    "text": "Surfaces reflect/absorb or emit\n\nSource: https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg"
+    "text": "Surfaces reflect/absorb or emit\n\n\n\nSource: https://www.cns.nyu.edu/~david/courses/perception/lecturenotes/color/color-slides/Slide14.jpg"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#artificial-sources",
@@ -2251,7 +2251,7 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#information-at-a-distance",
     "title": "From stimulus to sensation",
     "section": "Information at a distance",
-    "text": "Information at a distance\n\nJames Webb space telescope deep field “Webb’s first deep field (NIRCam image)” (n.d.)\nLight (+ radiowaves) circumnavigate the Earth in ~133 ms\nEarth ~8.3 light-minutes from the Sun"
+    "text": "Information at a distance\n\n\n\nJames Webb space telescope deep field “Webb’s first deep field (NIRCam image)” (n.d.)\n\n\n\nLight (+ radiowaves) circumnavigate the Earth in ~133 ms\nEarth ~8.3 light-minutes from the Sun"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#where-is-itam-i",
@@ -2279,7 +2279,7 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#wavelengths-are-continuous-but-are-perceived-colors",
     "title": "From stimulus to sensation",
     "section": "Wavelengths are continuous, but are perceived colors?",
-    "text": "Wavelengths are continuous, but are perceived colors?\n\nhttps://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/"
+    "text": "Wavelengths are continuous, but are perceived colors?\n\n\n\nhttps://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#perceived-colors-ordinal-but",
@@ -2293,7 +2293,7 @@
     "href": "slides/wk04-2025-02-06-stim-to-sensation.html#spatial-patterns-on-retina",
     "title": "From stimulus to sensation",
     "section": "Spatial patterns on retina",
-    "text": "Spatial patterns on retina\n\ndepend on object geometry and orientation\n\n\nSource: https://thebrain.mcgill.ca"
+    "text": "Spatial patterns on retina\n\ndepend on object geometry and orientation\n\n\n\n\nSource: https://thebrain.mcgill.ca\n\n\n\n\n\n\nSource: https://thebrain.mcgill.ca"
   },
   {
     "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#demo",
@@ -2308,5 +2308,89 @@
     "title": "From stimulus to sensation",
     "section": "Perceived colors seem ordinal, but…",
     "text": "Perceived colors seem ordinal, but…\n\n\nColor is a neuropsychological construct"
+  },
+  {
+    "objectID": "supplemental/ex-03-deep-dive.html",
+    "href": "supplemental/ex-03-deep-dive.html",
+    "title": "Deep dive on Exercise 03",
+    "section": "",
+    "text": "This page provides links to some of the Exercise 03 surveys and shows some of the data figure types that Google Forms generates by default.\nSee this link to visit the survey URLs."
+  },
+  {
+    "objectID": "supplemental/ex-03-deep-dive.html#about",
+    "href": "supplemental/ex-03-deep-dive.html#about",
+    "title": "Deep dive on Exercise 03",
+    "section": "",
+    "text": "This page provides links to some of the Exercise 03 surveys and shows some of the data figure types that Google Forms generates by default.\nSee this link to visit the survey URLs."
+  },
+  {
+    "objectID": "supplemental/ex-03-deep-dive.html#pie-charts",
+    "href": "supplemental/ex-03-deep-dive.html#pie-charts",
+    "title": "Deep dive on Exercise 03",
+    "section": "Pie charts",
+    "text": "Pie charts"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html#your-ex-03-surveys",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html#your-ex-03-surveys",
+    "title": "From stimulus to sensation",
+    "section": "Your Ex-03 Surveys",
+    "text": "Your Ex-03 Surveys\n\nExcerpts from figures generated by Google Forms"
+  },
+  {
+    "objectID": "slides/wk04-2025-02-06-stim-to-sensation.html",
+    "href": "slides/wk04-2025-02-06-stim-to-sensation.html",
+    "title": "From stimulus to sensation",
+    "section": "",
+    "text": "JimmyCliffVEVO (2014)"
+  },
+  {
+    "objectID": "supplemental/ex-03-deep-dive.html#bar-plots",
+    "href": "supplemental/ex-03-deep-dive.html#bar-plots",
+    "title": "Deep dive on Exercise 03",
+    "section": "Bar plots",
+    "text": "Bar plots"
+  },
+  {
+    "objectID": "supplemental/ex-03-deep-dive.html#other",
+    "href": "supplemental/ex-03-deep-dive.html#other",
+    "title": "Deep dive on Exercise 03",
+    "section": "Other",
+    "text": "Other"
+  },
+  {
+    "objectID": "supplemental/ex03-deep-dive.html",
+    "href": "supplemental/ex03-deep-dive.html",
+    "title": "Deep dive on Exercise 03",
+    "section": "",
+    "text": "This page provides links to some of the Exercise 03 surveys and shows some of the data figure types that Google Forms generates by default.\nSee this link to visit the survey URLs."
+  },
+  {
+    "objectID": "supplemental/ex03-deep-dive.html#about",
+    "href": "supplemental/ex03-deep-dive.html#about",
+    "title": "Deep dive on Exercise 03",
+    "section": "",
+    "text": "This page provides links to some of the Exercise 03 surveys and shows some of the data figure types that Google Forms generates by default.\nSee this link to visit the survey URLs."
+  },
+  {
+    "objectID": "supplemental/ex03-deep-dive.html#pie-charts",
+    "href": "supplemental/ex03-deep-dive.html#pie-charts",
+    "title": "Deep dive on Exercise 03",
+    "section": "Pie charts",
+    "text": "Pie charts"
+  },
+  {
+    "objectID": "supplemental/ex03-deep-dive.html#bar-plots",
+    "href": "supplemental/ex03-deep-dive.html#bar-plots",
+    "title": "Deep dive on Exercise 03",
+    "section": "Bar plots",
+    "text": "Bar plots"
+  },
+  {
+    "objectID": "supplemental/ex03-deep-dive.html#other",
+    "href": "supplemental/ex03-deep-dive.html#other",
+    "title": "Deep dive on Exercise 03",
+    "section": "Other",
+    "text": "Other"
   }
 ]
