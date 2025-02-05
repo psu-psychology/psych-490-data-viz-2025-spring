@@ -186,6 +186,48 @@ colors_df |>
   geom_bar(aes(y = n), stat = "identity")
 ```
 
+Let's order the other ones while we're at it.
+
+```{r}
+#| label: fig-nominal-barplot-texture-sorted
+#| fig-cap: "A barplot of the random favorite color data using *textures*"
+#| warning: false
+colors_df |>
+  count(favorite_color) |>
+  arrange(desc(n)) |>
+  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |>
+  ggplot() +
+  aes(x = favorite_color, y = n, fill = favorite_color) +
+  geom_bar(stat = "identity") +
+  scale_fill_pattern() # from package 'fillpattern'
+```
+
+```{r}
+#| label: fig-nominal-barplot-texture-sorted-2
+#| fig-cap: "A barplot of the random favorite color data using *textures*"
+#| warning: false
+colors_df |>
+  count(favorite_color) |>
+  arrange(desc(n)) |>
+  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |>
+  ggplot() +
+  aes(x = favorite_color, y = n) +
+  # From package 'ggpattern'
+  # See https://r-graph-gallery.com/368-black-and-white-barchart.html
+  geom_col_pattern(
+    aes(
+      pattern = favorite_color,
+      pattern_angle = favorite_color,
+      pattern_spacing = favorite_color
+    ),
+    fill = 'white',
+    color = 'black',
+    pattern_density = 0.5,
+    pattern_fill = 'black',
+    pattern_color = 'darkgrey'
+  )
+```
+
 #### Lollipop chart {-}
 
 The lollipop chart uses less ink, so the ink/data ratio [@Tufte2001-cb] is higher than with barplots.
@@ -194,16 +236,14 @@ The lollipop chart uses less ink, so the ink/data ratio [@Tufte2001-cb] is highe
 #| label: fig-nominal-lollipop
 #| fig-cap: "A lollipop plot of the random favorite color data"
 
-colors_xtab <- data.frame(table(colors_df))
-names(colors_xtab) <- c("favorite_color", "count")
-
-colors_xtab |>
-  arrange(desc(count)) |>
+colors_df |>
+  count(favorite_color) |>
+  arrange(desc(n)) |>
   mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |>
   ggplot() +
-  geom_point(aes(
+    geom_point(aes(
     x = favorite_color,
-    y = count,
+    y = n,
     color = favorite_color,
     fill = favorite_color
   )) +
@@ -211,10 +251,11 @@ colors_xtab |>
     x = favorite_color,
     xend = favorite_color,
     y = 0,
-    yend = count,
+    yend = n,
     color = favorite_color
   )) +
-  scale_discrete_manual(aesthetics = c("color", "fill"), values = sort(colors))
+  scale_color_identity() +
+  scale_fill_identity()
 ```
 
 #### Stacked barplot {-}
@@ -352,59 +393,6 @@ ggplot(data = colors_school_df) +
   labs(y="Favorite", x="School", title = "Favorite colors by school") +
   scale_fill_identity()
 ```
-
-<!-- ### Analysis {-} -->
-
-<!-- Is one of these colors a particular favorite? -->
-<!-- Maybe. -->
-<!-- The observed data show some differences. -->
-<!-- But how can we know they aren't just due to random chance. -->
-
-<!-- ::: {.callout-warning} -->
-<!-- ## Stop the presses! -->
-
-<!-- These *particular* data are entirely random. -->
-<!-- We made them up! -->
-
-<!-- Keep that in mind while we work through what we would do to answer the question if these were *not* fake, random data. -->
-<!-- ::: -->
-
-<!-- To answer that question, we'd have to compare our results with some other pattern, a pattern where there is **no** favorite. -->
-<!-- In other words, we want a pattern where the counts are all equal. -->
-<!-- So, we're back to summarizing. -->
-
-<!-- Actually, data analysis in the real world usually involves a back-and-forth alternation between summarizing/analyzing and visualizing. -->
-
-<!-- ```{mermaid} -->
-<!-- %%| label: fig-data-dialectic -->
-<!-- %%| fig-cap: "Illustration of the back and forth process between summarizing and visualizing that characterizes real-life data analysis." -->
-<!-- %%| flowchart LR --> -->
-<!-- %%|   A[Summarize] --> B[Visualize] --> -->
-<!-- %%|   B ---> A --> -->
-<!-- ``` -->
-
-<!-- ### Summarizing II {-} -->
-
-<!-- Let's make data that have an identical pattern across all colors. -->
-
-<!-- There are several ways to do this, but here is one that works. -->
-
-<!-- ```{r} -->
-<!-- no_favorite <- rep(colors, length(our_color_sample)/length(colors)) -->
-
-<!-- compare_df <- data.frame(favorite_color = no_favorite) -->
-
-<!-- xtabs(formula = ~favorite_color, data = compare_df) -->
-<!-- ``` -->
-
-<!-- How can we compare the data where there are no differences by category to the data where there *are* differences? -->
-
-<!-- ::: {.callout-warning} -->
-<!-- ## Under construction -->
-
-<!-- This section is under construction. -->
-
-<!-- ::: -->
 
 ## Ordinal data {-}
 
