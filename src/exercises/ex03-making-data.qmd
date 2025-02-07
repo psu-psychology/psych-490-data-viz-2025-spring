@@ -7,7 +7,7 @@ subtitle: "Making data"
 
 In-class work on Tuesday, January 28 and Thursday, January 30.
 
-Submit write-up for credit [due]{.orange_due} by Thursday, Feburary 6.
+Submit write-up for credit [due]{.orange_due} by Tuesday, Feburary 11.
 
 ## Goals {-}
 
