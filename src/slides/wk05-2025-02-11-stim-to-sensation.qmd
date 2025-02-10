@@ -1,6 +1,6 @@
 ---
 title: "From stimulus to sensation"
-subtitle: "2025-02-06"
+subtitle: "2025-02-11"
 ---
 
 # Prelude
@@ -12,9 +12,15 @@ subtitle: "2025-02-06"
 
 # Overview
 
+## In the news...
+
+<iframe src="https://ourworldindata.org/grapher/fossil-fuel-subsidies-per-capita?time=2021&utm_source=OWID+Newsletter&utm_campaign=106bcf6501-biweekly-digest-2025-02-07&utm_medium=email&utm_term=0_-0c7f305164-536976878&tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+@OWID-ko
+
 ## Announcements
 
-- [Due]{.orange_due} next [Tuesday, February 11](../schedule.qmd#tuesday-february-11): [Exercise-03](../exercises/ex03-making-data.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998400) |
+- [Due]{.orange_due} today [Tuesday, February 11](../schedule.qmd#tuesday-february-11): [Exercise-03](../exercises/ex03-making-data.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998400) |
  
 ## Last time...
 
@@ -35,10 +41,10 @@ subtitle: "2025-02-06"
 
 :::: {.columns}
 ::: {.column width=50%}
-![](../include/fig/fig-nominal-lollipop-1.png)
+![](../include/fig/fig-nominal-barplot-stacked-1-1.png)
 :::
 ::: {.column width=50%}
-![](../include/fig/fig-nominal-barplot-stacked-1-1.png)
+![](../include/fig/fig-nominal-lollipop-1.png)
 :::
 ::::
 
@@ -53,7 +59,7 @@ subtitle: "2025-02-06"
 :::
 ::::
 
-## 1D summaries
+## 1D summaries of continuous data
 
 :::: {.columns}
 ::: {.column width=50%}
@@ -109,6 +115,7 @@ subtitle: "2025-02-06"
 - *What* are the figure components
   - Data points, text, bars/segments/rings/boxes
 - *Where* are different components relative to one another, axes, etc.
+- *How* do figure components convey information about data?
 
 # Information in light
 
@@ -328,7 +335,6 @@ subtitle: "2025-02-06"
 - Visit our sample figures [page](../tutorials/tutorial-making-data.qmd) and evaluate which figures might pose challenges for people with vision impairments.
 - Visit our figures in [psychological science](../supplemental/psych-sci-figs.qmd) and figures in [business, journalism, and the arts](../supplemental/other-field-figs.qmd) pages with the same goal.
 - What specific issues do you foresee?
-
 :::
 
 # Main points

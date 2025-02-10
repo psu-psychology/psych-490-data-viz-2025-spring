@@ -75,23 +75,28 @@
 
 ### Thursday, February 06 {-}
 
-<!-- No Sara -->
-
-*From stimulus to sensation*
-
-- Read: @Cairo2013-hm, Chapter 5, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892) |
-- [Slides](slides/wk04-2025-02-06-stim-to-sensation.qmd)
+**Cancelled due to weather**
 
 ## February 10-14 {- #week-05}
 
 ### Tuesday, February 11 {-}
 
-*From sensation to perception*
+*From stimulus to sensation*
 
-- Read: @Cairo2013-hm, Chapter 6, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892) |
+- Read: @Cairo2013-hm, Chapter 5, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892)
+- [Slides](slides/wk05-2025-02-11-stim-to-sensation.qmd)
 - [Due]{.orange_due}: [Exercise-03](exercises/ex03-making-data.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998400) |
 
 ### Thursday, February 13 {-}
+
+*From sensation to perception*
+
+- Read: @Cairo2013-hm, Chapter 6, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892)
+- Read: @Stephen-Few2004-jv, Chapter 5, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=174195660)
+
+## February 17-21 {- #week-06}
+
+### Tuesday, February 18 {-}
 
 *From cognition to understanding*
 
@@ -99,25 +104,23 @@
   - @Franconeri2021-uv, pp. 109-122
   - @Cairo2013-hm, Chapter 7, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892)
 - [Assigned]{.green_assigned}: [Final Project](exercises/final-project.qmd) proposal
- 
-## February 17-21 {- #week-06}
 
-### Tuesday, February 18 {-}
+### Thursday, February 20 {-}
 
 *Designing efficient & understandable visualizations*
 
 - Read: @Franconeri2021-uv, pp. 123-139
 - [Assigned]{.green_assigned}: [Exercise-04](exercises/ex04-sci-of-data-viz.qmd)
 
-### Thursday, February 20 {-}
+## February 24-28 {- #week-07}
+
+### Tuesday, February 25 {-}
 
 *Communicating uncertainty and risk*  
 
 - Read: @Franconeri2021-uv, pp. 139-150 
 
-## February 24-28 {- #week-07}
-
-### Tuesday, February 25 {-}
+### Thursday, February 27 {-}
 
 *Storytelling with data*
 
@@ -125,16 +128,13 @@
 - Read: @Knaflic2015-wq, pp. 33-69, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927897)
 - Skim: @Woodside2008-yv
 
-### Thursday, February 27 {-}
-
-*Critiquing figures*
-
-- Read: @Tufte2001-cb, Chapter 1, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927901)
-
 ## March 3-7 {- #week-08}
 
 ### Tuesday, March 04 {-}
 
+*Critiquing figures*
+
+- Read: @Tufte2001-cb, Chapter 1, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927901)
 - Read: @Tufte2001-cb, Chapter 2, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927901)
 - [Due]{.orange_due}: [Final Project](exercises/final-project.qmd) proposal
 
