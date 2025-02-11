@@ -18,9 +18,15 @@ subtitle: "2025-02-11"
 
 @OWID-ko
 
+---
+
+![https://www.reddit.com/r/dataisugly/comments/1imj4cq/where_to_begin_with_this_one/#lightbox](../include/img/33yu1f4k1eie1.jpeg)
+
 ## Announcements
 
 - [Due]{.orange_due} today [Tuesday, February 11](../schedule.qmd#tuesday-february-11): [Exercise-03](../exercises/ex03-making-data.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998400) |
+- [Assigned]{.green_assigned} next Tuesday, February 18: [Final Project](../exercises/final-project.qmd) proposal
+
  
 ## Last time...
 
@@ -90,7 +96,12 @@ subtitle: "2025-02-11"
 
 ![James Webb space telescope deep field @noauthor_undated-vq](https://stsci-opo.org/STScI-01G7DCYVZ899DGSY684E801B2Y.png)
 
+## Nature's speed demon/speed limit
+
 - Light (+ radiowaves) circumnavigate the Earth in ~133 ms
+
+![https://w3tm.org](https://w3tm.org/posts/2024-07-12-summertime/kc3bhi-w3swl-km4aj.jpeg)
+
 - Earth ~8.3 light-minutes from the Sun
 
 ## Where is it/am I?
@@ -105,9 +116,9 @@ subtitle: "2025-02-11"
 ## What is it?
 
 ::: {.incremental}
-- Surfaces
-- Objects
-- Entities
+- Edges $\rightarrow$
+- Surfaces $\rightarrow$
+- Objects or entities
 :::
 
 ## Regarding data figures...

@@ -137,7 +137,8 @@ colors_df |>
   ggplot() +
   aes(x = favorite_color, fill = favorite_color) +
   geom_bar(aes(y = after_stat(count))) +
-  scale_fill_pattern() # from package 'fillpattern'
+  scale_fill_pattern() + # from package 'fillpattern' 
+  theme(legend.position = "none")
 ```
 
 Or, we want to use some different textures and have control over them.
@@ -199,7 +200,8 @@ colors_df |>
   ggplot() +
   aes(x = favorite_color, y = n, fill = favorite_color) +
   geom_bar(stat = "identity") +
-  scale_fill_pattern() # from package 'fillpattern'
+  scale_fill_pattern() + # from package 'fillpattern'
+  theme(legend.position = "none") 
 ```
 
 ```{r}
@@ -225,7 +227,8 @@ colors_df |>
     pattern_density = 0.5,
     pattern_fill = 'black',
     pattern_color = 'darkgrey'
-  )
+  ) +
+  theme(legend.position = "none")
 ```
 
 #### Lollipop chart {-}

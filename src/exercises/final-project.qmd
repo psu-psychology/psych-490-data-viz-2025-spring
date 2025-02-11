@@ -1,5 +1,5 @@
 ---
-title: "final-project"
+title: "Final Project"
 format: html
 ---
 
@@ -19,7 +19,7 @@ If you work with others, you will need to complete a statement about who did wha
 
 ## Dates {-}
 
-- Proposal [assigned]{.green_assigned} [Thursday, February 13](../schedule.qmd#thursday-february-13)
+- Proposal [assigned]{.green_assigned} [Tuesday, February 18](../schedule.qmd#tuesday-february-18)
 - Final [project survey](https://forms.gle/oyotxgnnqchqnSgTA) [due]{.orange_due} [Tuesday, April 08](../schedule.qmd#tuesday-april-08)
 - Final write-up [due]{.orange_due} [Tuesday, May 05](../schedule.qmd#tuesday-may-05)
 

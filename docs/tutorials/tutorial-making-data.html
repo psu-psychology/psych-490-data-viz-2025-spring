@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-02-04">
+<meta name="dcterms.date" content="2025-02-11">
 
 <title>Making and visualizing data – PSYCH 490 • Spr 25</title>
 <style>
@@ -233,6 +233,10 @@ div.csl-indent {
     <a class="dropdown-item" href="../supplemental/other-field-figs.html">
  <span class="dropdown-text">Findings: Data viz outside psych sci</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../supplemental/ex03-deep-dive.html">
+ <span class="dropdown-text">Deep dive on Exercise 03</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -245,8 +249,8 @@ div.csl-indent {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="0532d2aca8733b451bb5a240989dc1ff" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p><strong>No deadlines this week!</strong> | Please complete your classmates’ <a href="https://docs.google.com/spreadsheets/d/1Z-TJQLOQ-yFBs0UimtCtv4pWIqcfq7jhAUA1QjVX89w/edit?usp=sharing">surveys</a>.</p>
+  <div id="quarto-announcement" data-announcement-id="c4282ef038442cbfdcc5708cf22fe7f7" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><a href="exercises/ex03-making-data.qmd">Exercise 03</a> <strong>due Tuesday, February 11</strong>: Canvas <a href="https://psu.instructure.com/courses/2381584/assignments/16998400">dropbox</a> .</p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
@@ -294,14 +298,14 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 4, 2025</p>
+      <p class="date">February 11, 2025</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">February 4, 2025</p>
+      <p class="date-modified">February 11, 2025</p>
     </div>
   </div>
     
@@ -364,31 +368,31 @@ Your turn
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>our_color_sample</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>  [1] "black"  "yellow" "yellow" "orange" "red"    "cyan"   "red"    "yellow"
-  [9] "cyan"   "blue"   "white"  "green"  "orange" "black"  "gray"   "orange"
- [17] "gray"   "green"  "gray"   "green"  "blue"   "white"  "cyan"   "blue"  
- [25] "black"  "violet" "green"  "yellow" "green"  "yellow" "yellow" "yellow"
- [33] "red"    "cyan"   "yellow" "black"  "violet" "gray"   "green"  "green" 
- [41] "blue"   "violet" "green"  "red"    "orange" "white"  "gray"   "cyan"  
- [49] "red"    "yellow" "white"  "orange" "blue"   "cyan"   "green"  "cyan"  
- [57] "cyan"   "white"  "orange" "orange" "white"  "green"  "gray"   "green" 
- [65] "violet" "violet" "cyan"   "yellow" "black"  "gray"   "red"    "white" 
- [73] "black"  "red"    "gray"   "gray"   "red"    "cyan"   "red"    "white" 
- [81] "white"  "red"    "orange" "orange" "black"  "green"  "red"    "green" 
- [89] "yellow" "violet" "cyan"   "red"    "green"  "violet" "orange" "white" 
- [97] "white"  "orange" "cyan"   "black"  "cyan"   "yellow" "orange" "violet"
-[105] "cyan"   "white"  "red"    "gray"   "gray"   "orange" "cyan"   "orange"
-[113] "violet" "gray"   "violet" "green"  "white"  "gray"   "orange" "red"   
-[121] "orange" "yellow" "white"  "cyan"   "black"  "cyan"   "gray"   "orange"
-[129] "cyan"   "red"    "orange" "blue"   "gray"   "yellow" "green"  "gray"  
-[137] "gray"   "yellow" "yellow" "black"  "blue"   "red"    "green"  "white" 
-[145] "red"    "green"  "green"  "green"  "cyan"   "cyan"   "orange" "gray"  
-[153] "red"    "yellow" "blue"   "cyan"   "orange" "yellow" "gray"   "green" 
-[161] "white"  "green"  "white"  "gray"   "white"  "gray"   "orange" "gray"  
-[169] "violet" "gray"   "yellow" "blue"   "cyan"   "gray"   "blue"   "black" 
-[177] "cyan"   "blue"   "red"    "red"    "green"  "orange" "green"  "blue"  
-[185] "cyan"   "red"    "black"  "white"  "black"  "violet" "yellow" "gray"  
-[193] "blue"   "black"  "orange" "black"  "gray"   "white"  "gray"   "blue"  </code></pre>
+<pre><code>  [1] "black"  "yellow" "blue"   "green"  "gray"   "black"  "yellow" "yellow"
+  [9] "violet" "orange" "blue"   "black"  "red"    "black"  "cyan"   "white" 
+ [17] "cyan"   "green"  "violet" "blue"   "white"  "orange" "green"  "orange"
+ [25] "gray"   "orange" "black"  "red"    "black"  "black"  "yellow" "black" 
+ [33] "blue"   "violet" "yellow" "black"  "black"  "black"  "black"  "red"   
+ [41] "orange" "black"  "violet" "blue"   "cyan"   "black"  "green"  "red"   
+ [49] "blue"   "red"    "white"  "red"    "white"  "cyan"   "green"  "orange"
+ [57] "orange" "blue"   "white"  "blue"   "orange" "green"  "red"    "red"   
+ [65] "orange" "black"  "green"  "yellow" "white"  "gray"   "red"    "red"   
+ [73] "orange" "red"    "green"  "violet" "yellow" "green"  "gray"   "black" 
+ [81] "green"  "cyan"   "violet" "cyan"   "blue"   "cyan"   "cyan"   "violet"
+ [89] "white"  "blue"   "white"  "black"  "orange" "gray"   "green"  "cyan"  
+ [97] "violet" "violet" "blue"   "orange" "yellow" "red"    "blue"   "cyan"  
+[105] "red"    "gray"   "white"  "white"  "white"  "blue"   "white"  "cyan"  
+[113] "blue"   "violet" "black"  "red"    "yellow" "green"  "orange" "yellow"
+[121] "cyan"   "gray"   "blue"   "blue"   "gray"   "cyan"   "cyan"   "orange"
+[129] "gray"   "orange" "gray"   "gray"   "violet" "red"    "orange" "red"   
+[137] "green"  "red"    "green"  "orange" "cyan"   "white"  "gray"   "violet"
+[145] "red"    "green"  "violet" "green"  "blue"   "white"  "violet" "black" 
+[153] "red"    "orange" "white"  "white"  "cyan"   "cyan"   "cyan"   "cyan"  
+[161] "violet" "blue"   "yellow" "gray"   "gray"   "white"  "yellow" "yellow"
+[169] "gray"   "black"  "gray"   "blue"   "black"  "white"  "white"  "black" 
+[177] "yellow" "violet" "white"  "gray"   "green"  "orange" "blue"   "orange"
+[185] "green"  "cyan"   "orange" "cyan"   "cyan"   "red"    "white"  "black" 
+[193] "violet" "violet" "gray"   "gray"   "cyan"   "blue"   "yellow" "orange"</code></pre>
 </div>
 </div>
 <p>On its own, that’s not especially easy to visualize. What if we sorted it?</p>
@@ -399,29 +403,29 @@ Your turn
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>  [1] "black"  "black"  "black"  "black"  "black"  "black"  "black"  "black" 
-  [9] "black"  "black"  "black"  "black"  "black"  "black"  "black"  "blue"  
- [17] "blue"   "blue"   "blue"   "blue"   "blue"   "blue"   "blue"   "blue"  
- [25] "blue"   "blue"   "blue"   "blue"   "blue"   "cyan"   "cyan"   "cyan"  
- [33] "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"  
- [41] "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"  
- [49] "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "gray"   "gray"   "gray"  
- [57] "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"  
- [65] "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"  
+  [9] "black"  "black"  "black"  "black"  "black"  "black"  "black"  "black" 
+ [17] "black"  "black"  "black"  "black"  "black"  "black"  "black"  "blue"  
+ [25] "blue"   "blue"   "blue"   "blue"   "blue"   "blue"   "blue"   "blue"  
+ [33] "blue"   "blue"   "blue"   "blue"   "blue"   "blue"   "blue"   "blue"  
+ [41] "blue"   "blue"   "blue"   "blue"   "cyan"   "cyan"   "cyan"   "cyan"  
+ [49] "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"  
+ [57] "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"  
+ [65] "cyan"   "cyan"   "cyan"   "gray"   "gray"   "gray"   "gray"   "gray"  
  [73] "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"  
- [81] "green"  "green"  "green"  "green"  "green"  "green"  "green"  "green" 
+ [81] "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "green"  "green" 
  [89] "green"  "green"  "green"  "green"  "green"  "green"  "green"  "green" 
  [97] "green"  "green"  "green"  "green"  "green"  "green"  "green"  "green" 
 [105] "orange" "orange" "orange" "orange" "orange" "orange" "orange" "orange"
 [113] "orange" "orange" "orange" "orange" "orange" "orange" "orange" "orange"
-[121] "orange" "orange" "orange" "orange" "orange" "orange" "orange" "red"   
+[121] "orange" "orange" "orange" "orange" "orange" "orange" "red"    "red"   
 [129] "red"    "red"    "red"    "red"    "red"    "red"    "red"    "red"   
 [137] "red"    "red"    "red"    "red"    "red"    "red"    "red"    "red"   
-[145] "red"    "red"    "red"    "red"    "violet" "violet" "violet" "violet"
+[145] "red"    "red"    "violet" "violet" "violet" "violet" "violet" "violet"
 [153] "violet" "violet" "violet" "violet" "violet" "violet" "violet" "violet"
-[161] "white"  "white"  "white"  "white"  "white"  "white"  "white"  "white" 
+[161] "violet" "violet" "violet" "violet" "white"  "white"  "white"  "white" 
 [169] "white"  "white"  "white"  "white"  "white"  "white"  "white"  "white" 
-[177] "white"  "white"  "white"  "white"  "yellow" "yellow" "yellow" "yellow"
-[185] "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow"
+[177] "white"  "white"  "white"  "white"  "white"  "white"  "white"  "white" 
+[185] "white"  "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow"
 [193] "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow"</code></pre>
 </div>
 </div>
@@ -461,7 +465,7 @@ Your turn
 <div class="cell-output cell-output-stdout">
 <pre><code>favorite_color
  black   blue   cyan   gray  green orange    red violet  white yellow 
-    15     14     24     27     24     23     21     12     20     20 </code></pre>
+    23     21     23     19     18     22     20     18     21     15 </code></pre>
 </div>
 </div>
 </section>
@@ -551,7 +555,8 @@ Figure&nbsp;3: A colorful horizontal barplot of the random favorite color data
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> favorite_color, <span class="at">fill =</span> favorite_color) <span class="sc">+</span></span>
 <span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">after_stat</span>(count))) <span class="sc">+</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_pattern</span>() <span class="co"># from package 'fillpattern'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_pattern</span>() <span class="sc">+</span> <span class="co"># from package 'fillpattern' </span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div id="fig-nominal-barplot-texture" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -643,7 +648,8 @@ Figure&nbsp;6: A horizontal barplot of the random favorite color data, sorted
 <span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
 <span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> favorite_color, <span class="at">y =</span> n, <span class="at">fill =</span> favorite_color) <span class="sc">+</span></span>
 <span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
-<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_pattern</span>() <span class="co"># from package 'fillpattern'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_pattern</span>() <span class="sc">+</span> <span class="co"># from package 'fillpattern'</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div id="fig-nominal-barplot-texture-sorted" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -680,7 +686,8 @@ Figure&nbsp;7: A barplot of the random favorite color data using <em>textures</e
 <span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">pattern_density =</span> <span class="fl">0.5</span>,</span>
 <span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">pattern_fill =</span> <span class="st">'black'</span>,</span>
 <span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">pattern_color =</span> <span class="st">'darkgrey'</span></span>
-<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div id="fig-nominal-barplot-texture-sorted-2" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -2049,513 +2056,516 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb53-157"><a href="#cb53-157" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
 <span id="cb53-158"><a href="#cb53-158" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> favorite_color, <span class="at">fill =</span> favorite_color) <span class="sc">+</span></span>
 <span id="cb53-159"><a href="#cb53-159" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">after_stat</span>(count))) <span class="sc">+</span></span>
-<span id="cb53-160"><a href="#cb53-160" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_pattern</span>() <span class="co"># from package 'fillpattern'</span></span>
-<span id="cb53-161"><a href="#cb53-161" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-162"><a href="#cb53-162" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-163"><a href="#cb53-163" aria-hidden="true" tabindex="-1"></a>Or, we want to use some different textures and have control over them.</span>
-<span id="cb53-164"><a href="#cb53-164" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-167"><a href="#cb53-167" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-168"><a href="#cb53-168" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-texture-2</span></span>
-<span id="cb53-169"><a href="#cb53-169" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A barplot of the random favorite color data using *textures*"</span></span>
-<span id="cb53-170"><a href="#cb53-170" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
-<span id="cb53-171"><a href="#cb53-171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-172"><a href="#cb53-172" aria-hidden="true" tabindex="-1"></a>colors_xtab <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">table</span>(colors_df))</span>
-<span id="cb53-173"><a href="#cb53-173" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(colors_xtab) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"favorite_color"</span>, <span class="st">"count"</span>)</span>
-<span id="cb53-174"><a href="#cb53-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-175"><a href="#cb53-175" aria-hidden="true" tabindex="-1"></a>colors_xtab <span class="sc">|&gt;</span></span>
-<span id="cb53-176"><a href="#cb53-176" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-177"><a href="#cb53-177" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> favorite_color, <span class="at">y =</span> count) <span class="sc">+</span></span>
-<span id="cb53-178"><a href="#cb53-178" aria-hidden="true" tabindex="-1"></a>  <span class="co"># From package 'ggpattern'</span></span>
-<span id="cb53-179"><a href="#cb53-179" aria-hidden="true" tabindex="-1"></a>  <span class="co"># See https://r-graph-gallery.com/368-black-and-white-barchart.html</span></span>
-<span id="cb53-180"><a href="#cb53-180" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col_pattern</span>(</span>
-<span id="cb53-181"><a href="#cb53-181" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(</span>
-<span id="cb53-182"><a href="#cb53-182" aria-hidden="true" tabindex="-1"></a>      <span class="at">pattern =</span> favorite_color,</span>
-<span id="cb53-183"><a href="#cb53-183" aria-hidden="true" tabindex="-1"></a>      <span class="at">pattern_angle =</span> favorite_color,</span>
-<span id="cb53-184"><a href="#cb53-184" aria-hidden="true" tabindex="-1"></a>      <span class="at">pattern_spacing =</span> favorite_color</span>
-<span id="cb53-185"><a href="#cb53-185" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb53-186"><a href="#cb53-186" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">'white'</span>,</span>
-<span id="cb53-187"><a href="#cb53-187" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">'black'</span>,</span>
-<span id="cb53-188"><a href="#cb53-188" aria-hidden="true" tabindex="-1"></a>    <span class="at">pattern_density =</span> <span class="fl">0.5</span>,</span>
-<span id="cb53-189"><a href="#cb53-189" aria-hidden="true" tabindex="-1"></a>    <span class="at">pattern_fill =</span> <span class="st">'black'</span>,</span>
-<span id="cb53-190"><a href="#cb53-190" aria-hidden="true" tabindex="-1"></a>    <span class="at">pattern_color =</span> <span class="st">'darkgrey'</span></span>
-<span id="cb53-191"><a href="#cb53-191" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb53-192"><a href="#cb53-192" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-193"><a href="#cb53-193" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-194"><a href="#cb53-194" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Ordered {-}</span></span>
-<span id="cb53-195"><a href="#cb53-195" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-196"><a href="#cb53-196" aria-hidden="true" tabindex="-1"></a>It can be useful to sort the counts of nominal variables to faciliate comparisons among categories.</span>
-<span id="cb53-197"><a href="#cb53-197" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-200"><a href="#cb53-200" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-201"><a href="#cb53-201" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-horiz-ordered</span></span>
-<span id="cb53-202"><a href="#cb53-202" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A horizontal barplot of the random favorite color data, sorted"</span></span>
-<span id="cb53-203"><a href="#cb53-203" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-204"><a href="#cb53-204" aria-hidden="true" tabindex="-1"></a>colors_df <span class="sc">|&gt;</span></span>
-<span id="cb53-205"><a href="#cb53-205" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(favorite_color) <span class="sc">|&gt;</span></span>
-<span id="cb53-206"><a href="#cb53-206" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">|&gt;</span></span>
-<span id="cb53-207"><a href="#cb53-207" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">favorite_color =</span> <span class="fu">factor</span>(favorite_color, <span class="at">levels =</span> favorite_color)) <span class="sc">|&gt;</span></span>
-<span id="cb53-208"><a href="#cb53-208" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-209"><a href="#cb53-209" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> favorite_color) <span class="sc">+</span></span>
-<span id="cb53-210"><a href="#cb53-210" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">y =</span> n), <span class="at">stat =</span> <span class="st">"identity"</span>)</span>
-<span id="cb53-211"><a href="#cb53-211" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-212"><a href="#cb53-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-213"><a href="#cb53-213" aria-hidden="true" tabindex="-1"></a>Let's order the other ones while we're at it.</span>
-<span id="cb53-214"><a href="#cb53-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-217"><a href="#cb53-217" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-218"><a href="#cb53-218" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-texture-sorted</span></span>
-<span id="cb53-219"><a href="#cb53-219" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A barplot of the random favorite color data using *textures*"</span></span>
-<span id="cb53-220"><a href="#cb53-220" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
-<span id="cb53-221"><a href="#cb53-221" aria-hidden="true" tabindex="-1"></a>colors_df <span class="sc">|&gt;</span></span>
-<span id="cb53-222"><a href="#cb53-222" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(favorite_color) <span class="sc">|&gt;</span></span>
-<span id="cb53-223"><a href="#cb53-223" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">|&gt;</span></span>
-<span id="cb53-224"><a href="#cb53-224" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">favorite_color =</span> <span class="fu">factor</span>(favorite_color, <span class="at">levels =</span> favorite_color)) <span class="sc">|&gt;</span></span>
-<span id="cb53-225"><a href="#cb53-225" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-226"><a href="#cb53-226" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> favorite_color, <span class="at">y =</span> n, <span class="at">fill =</span> favorite_color) <span class="sc">+</span></span>
-<span id="cb53-227"><a href="#cb53-227" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
-<span id="cb53-228"><a href="#cb53-228" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_pattern</span>() <span class="co"># from package 'fillpattern'</span></span>
-<span id="cb53-229"><a href="#cb53-229" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-230"><a href="#cb53-230" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-233"><a href="#cb53-233" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-234"><a href="#cb53-234" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-texture-sorted-2</span></span>
-<span id="cb53-235"><a href="#cb53-235" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A barplot of the random favorite color data using *textures*"</span></span>
-<span id="cb53-236"><a href="#cb53-236" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
-<span id="cb53-237"><a href="#cb53-237" aria-hidden="true" tabindex="-1"></a>colors_df <span class="sc">|&gt;</span></span>
-<span id="cb53-238"><a href="#cb53-238" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(favorite_color) <span class="sc">|&gt;</span></span>
-<span id="cb53-239"><a href="#cb53-239" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">|&gt;</span></span>
-<span id="cb53-240"><a href="#cb53-240" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">favorite_color =</span> <span class="fu">factor</span>(favorite_color, <span class="at">levels =</span> favorite_color)) <span class="sc">|&gt;</span></span>
-<span id="cb53-241"><a href="#cb53-241" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-242"><a href="#cb53-242" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> favorite_color, <span class="at">y =</span> n) <span class="sc">+</span></span>
-<span id="cb53-243"><a href="#cb53-243" aria-hidden="true" tabindex="-1"></a>  <span class="co"># From package 'ggpattern'</span></span>
-<span id="cb53-244"><a href="#cb53-244" aria-hidden="true" tabindex="-1"></a>  <span class="co"># See https://r-graph-gallery.com/368-black-and-white-barchart.html</span></span>
-<span id="cb53-245"><a href="#cb53-245" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col_pattern</span>(</span>
-<span id="cb53-246"><a href="#cb53-246" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(</span>
-<span id="cb53-247"><a href="#cb53-247" aria-hidden="true" tabindex="-1"></a>      <span class="at">pattern =</span> favorite_color,</span>
-<span id="cb53-248"><a href="#cb53-248" aria-hidden="true" tabindex="-1"></a>      <span class="at">pattern_angle =</span> favorite_color,</span>
-<span id="cb53-249"><a href="#cb53-249" aria-hidden="true" tabindex="-1"></a>      <span class="at">pattern_spacing =</span> favorite_color</span>
-<span id="cb53-250"><a href="#cb53-250" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb53-251"><a href="#cb53-251" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">'white'</span>,</span>
-<span id="cb53-252"><a href="#cb53-252" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">'black'</span>,</span>
-<span id="cb53-253"><a href="#cb53-253" aria-hidden="true" tabindex="-1"></a>    <span class="at">pattern_density =</span> <span class="fl">0.5</span>,</span>
-<span id="cb53-254"><a href="#cb53-254" aria-hidden="true" tabindex="-1"></a>    <span class="at">pattern_fill =</span> <span class="st">'black'</span>,</span>
-<span id="cb53-255"><a href="#cb53-255" aria-hidden="true" tabindex="-1"></a>    <span class="at">pattern_color =</span> <span class="st">'darkgrey'</span></span>
-<span id="cb53-256"><a href="#cb53-256" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb53-257"><a href="#cb53-257" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-258"><a href="#cb53-258" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-259"><a href="#cb53-259" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Lollipop chart {-}</span></span>
-<span id="cb53-260"><a href="#cb53-260" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-261"><a href="#cb53-261" aria-hidden="true" tabindex="-1"></a>The lollipop chart uses less ink, so the ink/data ratio <span class="co">[</span><span class="ot">@Tufte2001-cb</span><span class="co">]</span> is higher than with barplots.</span>
-<span id="cb53-262"><a href="#cb53-262" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-265"><a href="#cb53-265" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-266"><a href="#cb53-266" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-lollipop</span></span>
-<span id="cb53-267"><a href="#cb53-267" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A lollipop plot of the random favorite color data"</span></span>
-<span id="cb53-268"><a href="#cb53-268" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-269"><a href="#cb53-269" aria-hidden="true" tabindex="-1"></a>colors_df <span class="sc">|&gt;</span></span>
-<span id="cb53-270"><a href="#cb53-270" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(favorite_color) <span class="sc">|&gt;</span></span>
-<span id="cb53-271"><a href="#cb53-271" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">|&gt;</span></span>
-<span id="cb53-272"><a href="#cb53-272" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">favorite_color =</span> <span class="fu">factor</span>(favorite_color, <span class="at">levels =</span> favorite_color)) <span class="sc">|&gt;</span></span>
-<span id="cb53-273"><a href="#cb53-273" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-274"><a href="#cb53-274" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(</span>
-<span id="cb53-275"><a href="#cb53-275" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> favorite_color,</span>
-<span id="cb53-276"><a href="#cb53-276" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> n,</span>
-<span id="cb53-277"><a href="#cb53-277" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> favorite_color,</span>
-<span id="cb53-278"><a href="#cb53-278" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> favorite_color</span>
-<span id="cb53-279"><a href="#cb53-279" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">+</span></span>
-<span id="cb53-280"><a href="#cb53-280" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(</span>
-<span id="cb53-281"><a href="#cb53-281" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> favorite_color,</span>
-<span id="cb53-282"><a href="#cb53-282" aria-hidden="true" tabindex="-1"></a>    <span class="at">xend =</span> favorite_color,</span>
-<span id="cb53-283"><a href="#cb53-283" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="dv">0</span>,</span>
-<span id="cb53-284"><a href="#cb53-284" aria-hidden="true" tabindex="-1"></a>    <span class="at">yend =</span> n,</span>
-<span id="cb53-285"><a href="#cb53-285" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> favorite_color</span>
-<span id="cb53-286"><a href="#cb53-286" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">+</span></span>
-<span id="cb53-287"><a href="#cb53-287" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_identity</span>() <span class="sc">+</span></span>
-<span id="cb53-288"><a href="#cb53-288" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>()</span>
-<span id="cb53-289"><a href="#cb53-289" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-290"><a href="#cb53-290" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-291"><a href="#cb53-291" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Stacked barplot {-}</span></span>
-<span id="cb53-292"><a href="#cb53-292" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-293"><a href="#cb53-293" aria-hidden="true" tabindex="-1"></a>We can also stack them.</span>
-<span id="cb53-294"><a href="#cb53-294" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-297"><a href="#cb53-297" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-298"><a href="#cb53-298" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-stacked-1</span></span>
-<span id="cb53-299"><a href="#cb53-299" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A stacked barplot of the random favorite color data"</span></span>
-<span id="cb53-300"><a href="#cb53-300" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-301"><a href="#cb53-301" aria-hidden="true" tabindex="-1"></a>colors_df <span class="sc">|&gt;</span></span>
-<span id="cb53-302"><a href="#cb53-302" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(favorite_color) <span class="sc">|&gt;</span></span>
-<span id="cb53-303"><a href="#cb53-303" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-304"><a href="#cb53-304" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">y =</span> n, <span class="at">fill =</span> favorite_color) <span class="sc">+</span></span>
-<span id="cb53-305"><a href="#cb53-305" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">position =</span> <span class="st">"stack"</span>) <span class="sc">+</span></span>
-<span id="cb53-306"><a href="#cb53-306" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>() <span class="sc">+</span></span>
-<span id="cb53-307"><a href="#cb53-307" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">""</span>)</span>
-<span id="cb53-308"><a href="#cb53-308" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-309"><a href="#cb53-309" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-310"><a href="#cb53-310" aria-hidden="true" tabindex="-1"></a>This makes more sense with another nominal variable in the mix.</span>
-<span id="cb53-311"><a href="#cb53-311" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-312"><a href="#cb53-312" aria-hidden="true" tabindex="-1"></a>Let's add a 'school' variable.</span>
-<span id="cb53-313"><a href="#cb53-313" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-316"><a href="#cb53-316" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-317"><a href="#cb53-317" aria-hidden="true" tabindex="-1"></a>school <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">"psu"</span>, <span class="st">"osu"</span>, <span class="st">"mich"</span>, <span class="st">"usc"</span>), <span class="at">size=</span><span class="dv">200</span>, <span class="at">replace=</span><span class="cn">TRUE</span>)</span>
-<span id="cb53-318"><a href="#cb53-318" aria-hidden="true" tabindex="-1"></a>colors_school_df <span class="ot">&lt;-</span> colors_df</span>
-<span id="cb53-319"><a href="#cb53-319" aria-hidden="true" tabindex="-1"></a>colors_school_df<span class="sc">$</span>school <span class="ot">&lt;-</span> school</span>
-<span id="cb53-320"><a href="#cb53-320" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-321"><a href="#cb53-321" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-322"><a href="#cb53-322" aria-hidden="true" tabindex="-1"></a>Then create the plot.</span>
-<span id="cb53-323"><a href="#cb53-323" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-326"><a href="#cb53-326" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-327"><a href="#cb53-327" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-stacked</span></span>
-<span id="cb53-328"><a href="#cb53-328" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A stacked barplot of the random favorite color data"</span></span>
-<span id="cb53-329"><a href="#cb53-329" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-330"><a href="#cb53-330" aria-hidden="true" tabindex="-1"></a>colors_school_xtab <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">table</span>(colors_school_df))</span>
-<span id="cb53-331"><a href="#cb53-331" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(colors_school_xtab) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"favorite_color"</span>, <span class="st">"school"</span>, <span class="st">"count"</span>)</span>
+<span id="cb53-160"><a href="#cb53-160" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_pattern</span>() <span class="sc">+</span> <span class="co"># from package 'fillpattern' </span></span>
+<span id="cb53-161"><a href="#cb53-161" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span>
+<span id="cb53-162"><a href="#cb53-162" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-163"><a href="#cb53-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-164"><a href="#cb53-164" aria-hidden="true" tabindex="-1"></a>Or, we want to use some different textures and have control over them.</span>
+<span id="cb53-165"><a href="#cb53-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-168"><a href="#cb53-168" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-169"><a href="#cb53-169" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-texture-2</span></span>
+<span id="cb53-170"><a href="#cb53-170" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A barplot of the random favorite color data using *textures*"</span></span>
+<span id="cb53-171"><a href="#cb53-171" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb53-172"><a href="#cb53-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-173"><a href="#cb53-173" aria-hidden="true" tabindex="-1"></a>colors_xtab <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">table</span>(colors_df))</span>
+<span id="cb53-174"><a href="#cb53-174" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(colors_xtab) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"favorite_color"</span>, <span class="st">"count"</span>)</span>
+<span id="cb53-175"><a href="#cb53-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-176"><a href="#cb53-176" aria-hidden="true" tabindex="-1"></a>colors_xtab <span class="sc">|&gt;</span></span>
+<span id="cb53-177"><a href="#cb53-177" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-178"><a href="#cb53-178" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> favorite_color, <span class="at">y =</span> count) <span class="sc">+</span></span>
+<span id="cb53-179"><a href="#cb53-179" aria-hidden="true" tabindex="-1"></a>  <span class="co"># From package 'ggpattern'</span></span>
+<span id="cb53-180"><a href="#cb53-180" aria-hidden="true" tabindex="-1"></a>  <span class="co"># See https://r-graph-gallery.com/368-black-and-white-barchart.html</span></span>
+<span id="cb53-181"><a href="#cb53-181" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col_pattern</span>(</span>
+<span id="cb53-182"><a href="#cb53-182" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(</span>
+<span id="cb53-183"><a href="#cb53-183" aria-hidden="true" tabindex="-1"></a>      <span class="at">pattern =</span> favorite_color,</span>
+<span id="cb53-184"><a href="#cb53-184" aria-hidden="true" tabindex="-1"></a>      <span class="at">pattern_angle =</span> favorite_color,</span>
+<span id="cb53-185"><a href="#cb53-185" aria-hidden="true" tabindex="-1"></a>      <span class="at">pattern_spacing =</span> favorite_color</span>
+<span id="cb53-186"><a href="#cb53-186" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb53-187"><a href="#cb53-187" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">'white'</span>,</span>
+<span id="cb53-188"><a href="#cb53-188" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">'black'</span>,</span>
+<span id="cb53-189"><a href="#cb53-189" aria-hidden="true" tabindex="-1"></a>    <span class="at">pattern_density =</span> <span class="fl">0.5</span>,</span>
+<span id="cb53-190"><a href="#cb53-190" aria-hidden="true" tabindex="-1"></a>    <span class="at">pattern_fill =</span> <span class="st">'black'</span>,</span>
+<span id="cb53-191"><a href="#cb53-191" aria-hidden="true" tabindex="-1"></a>    <span class="at">pattern_color =</span> <span class="st">'darkgrey'</span></span>
+<span id="cb53-192"><a href="#cb53-192" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb53-193"><a href="#cb53-193" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-194"><a href="#cb53-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-195"><a href="#cb53-195" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Ordered {-}</span></span>
+<span id="cb53-196"><a href="#cb53-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-197"><a href="#cb53-197" aria-hidden="true" tabindex="-1"></a>It can be useful to sort the counts of nominal variables to faciliate comparisons among categories.</span>
+<span id="cb53-198"><a href="#cb53-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-201"><a href="#cb53-201" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-202"><a href="#cb53-202" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-horiz-ordered</span></span>
+<span id="cb53-203"><a href="#cb53-203" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A horizontal barplot of the random favorite color data, sorted"</span></span>
+<span id="cb53-204"><a href="#cb53-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-205"><a href="#cb53-205" aria-hidden="true" tabindex="-1"></a>colors_df <span class="sc">|&gt;</span></span>
+<span id="cb53-206"><a href="#cb53-206" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(favorite_color) <span class="sc">|&gt;</span></span>
+<span id="cb53-207"><a href="#cb53-207" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">|&gt;</span></span>
+<span id="cb53-208"><a href="#cb53-208" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">favorite_color =</span> <span class="fu">factor</span>(favorite_color, <span class="at">levels =</span> favorite_color)) <span class="sc">|&gt;</span></span>
+<span id="cb53-209"><a href="#cb53-209" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-210"><a href="#cb53-210" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> favorite_color) <span class="sc">+</span></span>
+<span id="cb53-211"><a href="#cb53-211" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">y =</span> n), <span class="at">stat =</span> <span class="st">"identity"</span>)</span>
+<span id="cb53-212"><a href="#cb53-212" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-213"><a href="#cb53-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-214"><a href="#cb53-214" aria-hidden="true" tabindex="-1"></a>Let's order the other ones while we're at it.</span>
+<span id="cb53-215"><a href="#cb53-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-218"><a href="#cb53-218" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-219"><a href="#cb53-219" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-texture-sorted</span></span>
+<span id="cb53-220"><a href="#cb53-220" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A barplot of the random favorite color data using *textures*"</span></span>
+<span id="cb53-221"><a href="#cb53-221" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb53-222"><a href="#cb53-222" aria-hidden="true" tabindex="-1"></a>colors_df <span class="sc">|&gt;</span></span>
+<span id="cb53-223"><a href="#cb53-223" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(favorite_color) <span class="sc">|&gt;</span></span>
+<span id="cb53-224"><a href="#cb53-224" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">|&gt;</span></span>
+<span id="cb53-225"><a href="#cb53-225" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">favorite_color =</span> <span class="fu">factor</span>(favorite_color, <span class="at">levels =</span> favorite_color)) <span class="sc">|&gt;</span></span>
+<span id="cb53-226"><a href="#cb53-226" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-227"><a href="#cb53-227" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> favorite_color, <span class="at">y =</span> n, <span class="at">fill =</span> favorite_color) <span class="sc">+</span></span>
+<span id="cb53-228"><a href="#cb53-228" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
+<span id="cb53-229"><a href="#cb53-229" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_pattern</span>() <span class="sc">+</span> <span class="co"># from package 'fillpattern'</span></span>
+<span id="cb53-230"><a href="#cb53-230" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>) </span>
+<span id="cb53-231"><a href="#cb53-231" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-232"><a href="#cb53-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-235"><a href="#cb53-235" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-236"><a href="#cb53-236" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-texture-sorted-2</span></span>
+<span id="cb53-237"><a href="#cb53-237" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A barplot of the random favorite color data using *textures*"</span></span>
+<span id="cb53-238"><a href="#cb53-238" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb53-239"><a href="#cb53-239" aria-hidden="true" tabindex="-1"></a>colors_df <span class="sc">|&gt;</span></span>
+<span id="cb53-240"><a href="#cb53-240" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(favorite_color) <span class="sc">|&gt;</span></span>
+<span id="cb53-241"><a href="#cb53-241" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">|&gt;</span></span>
+<span id="cb53-242"><a href="#cb53-242" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">favorite_color =</span> <span class="fu">factor</span>(favorite_color, <span class="at">levels =</span> favorite_color)) <span class="sc">|&gt;</span></span>
+<span id="cb53-243"><a href="#cb53-243" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-244"><a href="#cb53-244" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> favorite_color, <span class="at">y =</span> n) <span class="sc">+</span></span>
+<span id="cb53-245"><a href="#cb53-245" aria-hidden="true" tabindex="-1"></a>  <span class="co"># From package 'ggpattern'</span></span>
+<span id="cb53-246"><a href="#cb53-246" aria-hidden="true" tabindex="-1"></a>  <span class="co"># See https://r-graph-gallery.com/368-black-and-white-barchart.html</span></span>
+<span id="cb53-247"><a href="#cb53-247" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col_pattern</span>(</span>
+<span id="cb53-248"><a href="#cb53-248" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(</span>
+<span id="cb53-249"><a href="#cb53-249" aria-hidden="true" tabindex="-1"></a>      <span class="at">pattern =</span> favorite_color,</span>
+<span id="cb53-250"><a href="#cb53-250" aria-hidden="true" tabindex="-1"></a>      <span class="at">pattern_angle =</span> favorite_color,</span>
+<span id="cb53-251"><a href="#cb53-251" aria-hidden="true" tabindex="-1"></a>      <span class="at">pattern_spacing =</span> favorite_color</span>
+<span id="cb53-252"><a href="#cb53-252" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb53-253"><a href="#cb53-253" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">'white'</span>,</span>
+<span id="cb53-254"><a href="#cb53-254" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">'black'</span>,</span>
+<span id="cb53-255"><a href="#cb53-255" aria-hidden="true" tabindex="-1"></a>    <span class="at">pattern_density =</span> <span class="fl">0.5</span>,</span>
+<span id="cb53-256"><a href="#cb53-256" aria-hidden="true" tabindex="-1"></a>    <span class="at">pattern_fill =</span> <span class="st">'black'</span>,</span>
+<span id="cb53-257"><a href="#cb53-257" aria-hidden="true" tabindex="-1"></a>    <span class="at">pattern_color =</span> <span class="st">'darkgrey'</span></span>
+<span id="cb53-258"><a href="#cb53-258" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb53-259"><a href="#cb53-259" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span>
+<span id="cb53-260"><a href="#cb53-260" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-261"><a href="#cb53-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-262"><a href="#cb53-262" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Lollipop chart {-}</span></span>
+<span id="cb53-263"><a href="#cb53-263" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-264"><a href="#cb53-264" aria-hidden="true" tabindex="-1"></a>The lollipop chart uses less ink, so the ink/data ratio <span class="co">[</span><span class="ot">@Tufte2001-cb</span><span class="co">]</span> is higher than with barplots.</span>
+<span id="cb53-265"><a href="#cb53-265" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-268"><a href="#cb53-268" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-269"><a href="#cb53-269" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-lollipop</span></span>
+<span id="cb53-270"><a href="#cb53-270" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A lollipop plot of the random favorite color data"</span></span>
+<span id="cb53-271"><a href="#cb53-271" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-272"><a href="#cb53-272" aria-hidden="true" tabindex="-1"></a>colors_df <span class="sc">|&gt;</span></span>
+<span id="cb53-273"><a href="#cb53-273" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(favorite_color) <span class="sc">|&gt;</span></span>
+<span id="cb53-274"><a href="#cb53-274" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">|&gt;</span></span>
+<span id="cb53-275"><a href="#cb53-275" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">favorite_color =</span> <span class="fu">factor</span>(favorite_color, <span class="at">levels =</span> favorite_color)) <span class="sc">|&gt;</span></span>
+<span id="cb53-276"><a href="#cb53-276" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-277"><a href="#cb53-277" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(</span>
+<span id="cb53-278"><a href="#cb53-278" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> favorite_color,</span>
+<span id="cb53-279"><a href="#cb53-279" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> n,</span>
+<span id="cb53-280"><a href="#cb53-280" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> favorite_color,</span>
+<span id="cb53-281"><a href="#cb53-281" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> favorite_color</span>
+<span id="cb53-282"><a href="#cb53-282" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">+</span></span>
+<span id="cb53-283"><a href="#cb53-283" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(<span class="fu">aes</span>(</span>
+<span id="cb53-284"><a href="#cb53-284" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> favorite_color,</span>
+<span id="cb53-285"><a href="#cb53-285" aria-hidden="true" tabindex="-1"></a>    <span class="at">xend =</span> favorite_color,</span>
+<span id="cb53-286"><a href="#cb53-286" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="dv">0</span>,</span>
+<span id="cb53-287"><a href="#cb53-287" aria-hidden="true" tabindex="-1"></a>    <span class="at">yend =</span> n,</span>
+<span id="cb53-288"><a href="#cb53-288" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> favorite_color</span>
+<span id="cb53-289"><a href="#cb53-289" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">+</span></span>
+<span id="cb53-290"><a href="#cb53-290" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_identity</span>() <span class="sc">+</span></span>
+<span id="cb53-291"><a href="#cb53-291" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>()</span>
+<span id="cb53-292"><a href="#cb53-292" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-293"><a href="#cb53-293" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-294"><a href="#cb53-294" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Stacked barplot {-}</span></span>
+<span id="cb53-295"><a href="#cb53-295" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-296"><a href="#cb53-296" aria-hidden="true" tabindex="-1"></a>We can also stack them.</span>
+<span id="cb53-297"><a href="#cb53-297" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-300"><a href="#cb53-300" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-301"><a href="#cb53-301" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-stacked-1</span></span>
+<span id="cb53-302"><a href="#cb53-302" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A stacked barplot of the random favorite color data"</span></span>
+<span id="cb53-303"><a href="#cb53-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-304"><a href="#cb53-304" aria-hidden="true" tabindex="-1"></a>colors_df <span class="sc">|&gt;</span></span>
+<span id="cb53-305"><a href="#cb53-305" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(favorite_color) <span class="sc">|&gt;</span></span>
+<span id="cb53-306"><a href="#cb53-306" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-307"><a href="#cb53-307" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">y =</span> n, <span class="at">fill =</span> favorite_color) <span class="sc">+</span></span>
+<span id="cb53-308"><a href="#cb53-308" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">position =</span> <span class="st">"stack"</span>) <span class="sc">+</span></span>
+<span id="cb53-309"><a href="#cb53-309" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>() <span class="sc">+</span></span>
+<span id="cb53-310"><a href="#cb53-310" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">""</span>)</span>
+<span id="cb53-311"><a href="#cb53-311" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-312"><a href="#cb53-312" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-313"><a href="#cb53-313" aria-hidden="true" tabindex="-1"></a>This makes more sense with another nominal variable in the mix.</span>
+<span id="cb53-314"><a href="#cb53-314" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-315"><a href="#cb53-315" aria-hidden="true" tabindex="-1"></a>Let's add a 'school' variable.</span>
+<span id="cb53-316"><a href="#cb53-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-319"><a href="#cb53-319" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-320"><a href="#cb53-320" aria-hidden="true" tabindex="-1"></a>school <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">"psu"</span>, <span class="st">"osu"</span>, <span class="st">"mich"</span>, <span class="st">"usc"</span>), <span class="at">size=</span><span class="dv">200</span>, <span class="at">replace=</span><span class="cn">TRUE</span>)</span>
+<span id="cb53-321"><a href="#cb53-321" aria-hidden="true" tabindex="-1"></a>colors_school_df <span class="ot">&lt;-</span> colors_df</span>
+<span id="cb53-322"><a href="#cb53-322" aria-hidden="true" tabindex="-1"></a>colors_school_df<span class="sc">$</span>school <span class="ot">&lt;-</span> school</span>
+<span id="cb53-323"><a href="#cb53-323" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-324"><a href="#cb53-324" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-325"><a href="#cb53-325" aria-hidden="true" tabindex="-1"></a>Then create the plot.</span>
+<span id="cb53-326"><a href="#cb53-326" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-329"><a href="#cb53-329" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-330"><a href="#cb53-330" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-stacked</span></span>
+<span id="cb53-331"><a href="#cb53-331" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A stacked barplot of the random favorite color data"</span></span>
 <span id="cb53-332"><a href="#cb53-332" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-333"><a href="#cb53-333" aria-hidden="true" tabindex="-1"></a><span class="co"># colors_school_xtab |&gt;</span></span>
-<span id="cb53-334"><a href="#cb53-334" aria-hidden="true" tabindex="-1"></a><span class="co">#   ggplot() +</span></span>
-<span id="cb53-335"><a href="#cb53-335" aria-hidden="true" tabindex="-1"></a><span class="co">#   aes(x = school, y=count, fill = favorite_color) +</span></span>
-<span id="cb53-336"><a href="#cb53-336" aria-hidden="true" tabindex="-1"></a><span class="co">#   scale_fill_identity() +</span></span>
-<span id="cb53-337"><a href="#cb53-337" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_bar(stat="identity", position="stack")</span></span>
-<span id="cb53-338"><a href="#cb53-338" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-339"><a href="#cb53-339" aria-hidden="true" tabindex="-1"></a>colors_school_df <span class="sc">|&gt;</span> </span>
-<span id="cb53-340"><a href="#cb53-340" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(school, favorite_color) <span class="sc">|&gt;</span> </span>
-<span id="cb53-341"><a href="#cb53-341" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span> </span>
-<span id="cb53-342"><a href="#cb53-342" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(school, n, <span class="at">fill =</span> favorite_color) <span class="sc">+</span> </span>
-<span id="cb53-343"><a href="#cb53-343" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>() <span class="sc">+</span> </span>
-<span id="cb53-344"><a href="#cb53-344" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>, <span class="at">position=</span><span class="st">"stack"</span>)</span>
-<span id="cb53-345"><a href="#cb53-345" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-346"><a href="#cb53-346" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-347"><a href="#cb53-347" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Stacked barplot alternative {-}</span></span>
-<span id="cb53-348"><a href="#cb53-348" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-351"><a href="#cb53-351" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-352"><a href="#cb53-352" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-stacked-alt</span></span>
-<span id="cb53-353"><a href="#cb53-353" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Another stacked barplot of the random favorite color data."</span></span>
-<span id="cb53-354"><a href="#cb53-354" aria-hidden="true" tabindex="-1"></a>colors_school_xtab <span class="sc">|&gt;</span></span>
-<span id="cb53-355"><a href="#cb53-355" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-356"><a href="#cb53-356" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> favorite_color, <span class="at">y=</span>count, <span class="at">fill =</span> school) <span class="sc">+</span></span>
-<span id="cb53-357"><a href="#cb53-357" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>, <span class="at">position=</span><span class="st">"stack"</span>)</span>
-<span id="cb53-358"><a href="#cb53-358" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-359"><a href="#cb53-359" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-360"><a href="#cb53-360" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Dodged barplot {-}</span></span>
-<span id="cb53-361"><a href="#cb53-361" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-362"><a href="#cb53-362" aria-hidden="true" tabindex="-1"></a>Using the 'dodge' parameter is another way to show data with two categorical variables.</span>
-<span id="cb53-363"><a href="#cb53-363" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-366"><a href="#cb53-366" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-367"><a href="#cb53-367" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-dodge</span></span>
-<span id="cb53-368"><a href="#cb53-368" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A horizontal barplot of the random favorite color data"</span></span>
-<span id="cb53-369"><a href="#cb53-369" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-370"><a href="#cb53-370" aria-hidden="true" tabindex="-1"></a>colors_school_xtab <span class="sc">|&gt;</span></span>
-<span id="cb53-371"><a href="#cb53-371" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-372"><a href="#cb53-372" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> school, <span class="at">y=</span>count, <span class="at">fill =</span> favorite_color) <span class="sc">+</span></span>
-<span id="cb53-373"><a href="#cb53-373" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>() <span class="sc">+</span></span>
-<span id="cb53-374"><a href="#cb53-374" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>, <span class="at">position=</span><span class="st">"dodge"</span>)</span>
-<span id="cb53-375"><a href="#cb53-375" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-376"><a href="#cb53-376" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-377"><a href="#cb53-377" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Pie chart {-}</span></span>
-<span id="cb53-378"><a href="#cb53-378" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-381"><a href="#cb53-381" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-382"><a href="#cb53-382" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-pie-chart</span></span>
-<span id="cb53-383"><a href="#cb53-383" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A piechart of the random favorite color data"</span></span>
-<span id="cb53-384"><a href="#cb53-384" aria-hidden="true" tabindex="-1"></a><span class="co">#| </span></span>
-<span id="cb53-385"><a href="#cb53-385" aria-hidden="true" tabindex="-1"></a>colors_xtab <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">table</span>(colors_df))</span>
-<span id="cb53-386"><a href="#cb53-386" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(colors_xtab) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"favorite_color"</span>, <span class="st">"count"</span>)</span>
-<span id="cb53-387"><a href="#cb53-387" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-388"><a href="#cb53-388" aria-hidden="true" tabindex="-1"></a>colors_xtab <span class="sc">|&gt;</span></span>
-<span id="cb53-389"><a href="#cb53-389" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">y =</span> count, <span class="at">fill =</span> favorite_color)) <span class="sc">+</span></span>
-<span id="cb53-390"><a href="#cb53-390" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">width =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb53-391"><a href="#cb53-391" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_polar</span>(<span class="st">"y"</span>, <span class="at">start =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
-<span id="cb53-392"><a href="#cb53-392" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>()</span>
-<span id="cb53-393"><a href="#cb53-393" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-394"><a href="#cb53-394" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-395"><a href="#cb53-395" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Ring chart {-}</span></span>
-<span id="cb53-396"><a href="#cb53-396" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-399"><a href="#cb53-399" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-400"><a href="#cb53-400" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-ring-chart</span></span>
-<span id="cb53-401"><a href="#cb53-401" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A ring/donut chart of the random favorite color data"</span></span>
-<span id="cb53-402"><a href="#cb53-402" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb53-403"><a href="#cb53-403" aria-hidden="true" tabindex="-1"></a><span class="co"># https://r-graph-gallery.com/128-ring-or-donut-plot.html</span></span>
-<span id="cb53-404"><a href="#cb53-404" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-405"><a href="#cb53-405" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute percentages</span></span>
-<span id="cb53-406"><a href="#cb53-406" aria-hidden="true" tabindex="-1"></a>colors_xtab<span class="sc">$</span>fraction <span class="ot">=</span> colors_xtab<span class="sc">$</span>count <span class="sc">/</span> <span class="fu">sum</span>(colors_xtab<span class="sc">$</span>count)</span>
+<span id="cb53-333"><a href="#cb53-333" aria-hidden="true" tabindex="-1"></a>colors_school_xtab <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">table</span>(colors_school_df))</span>
+<span id="cb53-334"><a href="#cb53-334" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(colors_school_xtab) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"favorite_color"</span>, <span class="st">"school"</span>, <span class="st">"count"</span>)</span>
+<span id="cb53-335"><a href="#cb53-335" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-336"><a href="#cb53-336" aria-hidden="true" tabindex="-1"></a><span class="co"># colors_school_xtab |&gt;</span></span>
+<span id="cb53-337"><a href="#cb53-337" aria-hidden="true" tabindex="-1"></a><span class="co">#   ggplot() +</span></span>
+<span id="cb53-338"><a href="#cb53-338" aria-hidden="true" tabindex="-1"></a><span class="co">#   aes(x = school, y=count, fill = favorite_color) +</span></span>
+<span id="cb53-339"><a href="#cb53-339" aria-hidden="true" tabindex="-1"></a><span class="co">#   scale_fill_identity() +</span></span>
+<span id="cb53-340"><a href="#cb53-340" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_bar(stat="identity", position="stack")</span></span>
+<span id="cb53-341"><a href="#cb53-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-342"><a href="#cb53-342" aria-hidden="true" tabindex="-1"></a>colors_school_df <span class="sc">|&gt;</span> </span>
+<span id="cb53-343"><a href="#cb53-343" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(school, favorite_color) <span class="sc">|&gt;</span> </span>
+<span id="cb53-344"><a href="#cb53-344" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span> </span>
+<span id="cb53-345"><a href="#cb53-345" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(school, n, <span class="at">fill =</span> favorite_color) <span class="sc">+</span> </span>
+<span id="cb53-346"><a href="#cb53-346" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>() <span class="sc">+</span> </span>
+<span id="cb53-347"><a href="#cb53-347" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>, <span class="at">position=</span><span class="st">"stack"</span>)</span>
+<span id="cb53-348"><a href="#cb53-348" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-349"><a href="#cb53-349" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-350"><a href="#cb53-350" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Stacked barplot alternative {-}</span></span>
+<span id="cb53-351"><a href="#cb53-351" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-354"><a href="#cb53-354" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-355"><a href="#cb53-355" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-stacked-alt</span></span>
+<span id="cb53-356"><a href="#cb53-356" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Another stacked barplot of the random favorite color data."</span></span>
+<span id="cb53-357"><a href="#cb53-357" aria-hidden="true" tabindex="-1"></a>colors_school_xtab <span class="sc">|&gt;</span></span>
+<span id="cb53-358"><a href="#cb53-358" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-359"><a href="#cb53-359" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> favorite_color, <span class="at">y=</span>count, <span class="at">fill =</span> school) <span class="sc">+</span></span>
+<span id="cb53-360"><a href="#cb53-360" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>, <span class="at">position=</span><span class="st">"stack"</span>)</span>
+<span id="cb53-361"><a href="#cb53-361" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-362"><a href="#cb53-362" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-363"><a href="#cb53-363" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Dodged barplot {-}</span></span>
+<span id="cb53-364"><a href="#cb53-364" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-365"><a href="#cb53-365" aria-hidden="true" tabindex="-1"></a>Using the 'dodge' parameter is another way to show data with two categorical variables.</span>
+<span id="cb53-366"><a href="#cb53-366" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-369"><a href="#cb53-369" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-370"><a href="#cb53-370" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-barplot-dodge</span></span>
+<span id="cb53-371"><a href="#cb53-371" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A horizontal barplot of the random favorite color data"</span></span>
+<span id="cb53-372"><a href="#cb53-372" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-373"><a href="#cb53-373" aria-hidden="true" tabindex="-1"></a>colors_school_xtab <span class="sc">|&gt;</span></span>
+<span id="cb53-374"><a href="#cb53-374" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-375"><a href="#cb53-375" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> school, <span class="at">y=</span>count, <span class="at">fill =</span> favorite_color) <span class="sc">+</span></span>
+<span id="cb53-376"><a href="#cb53-376" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>() <span class="sc">+</span></span>
+<span id="cb53-377"><a href="#cb53-377" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>, <span class="at">position=</span><span class="st">"dodge"</span>)</span>
+<span id="cb53-378"><a href="#cb53-378" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-379"><a href="#cb53-379" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-380"><a href="#cb53-380" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Pie chart {-}</span></span>
+<span id="cb53-381"><a href="#cb53-381" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-384"><a href="#cb53-384" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-385"><a href="#cb53-385" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-pie-chart</span></span>
+<span id="cb53-386"><a href="#cb53-386" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A piechart of the random favorite color data"</span></span>
+<span id="cb53-387"><a href="#cb53-387" aria-hidden="true" tabindex="-1"></a><span class="co">#| </span></span>
+<span id="cb53-388"><a href="#cb53-388" aria-hidden="true" tabindex="-1"></a>colors_xtab <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">table</span>(colors_df))</span>
+<span id="cb53-389"><a href="#cb53-389" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(colors_xtab) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"favorite_color"</span>, <span class="st">"count"</span>)</span>
+<span id="cb53-390"><a href="#cb53-390" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-391"><a href="#cb53-391" aria-hidden="true" tabindex="-1"></a>colors_xtab <span class="sc">|&gt;</span></span>
+<span id="cb53-392"><a href="#cb53-392" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">y =</span> count, <span class="at">fill =</span> favorite_color)) <span class="sc">+</span></span>
+<span id="cb53-393"><a href="#cb53-393" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">width =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb53-394"><a href="#cb53-394" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_polar</span>(<span class="st">"y"</span>, <span class="at">start =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb53-395"><a href="#cb53-395" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>()</span>
+<span id="cb53-396"><a href="#cb53-396" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-397"><a href="#cb53-397" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-398"><a href="#cb53-398" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Ring chart {-}</span></span>
+<span id="cb53-399"><a href="#cb53-399" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-402"><a href="#cb53-402" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-403"><a href="#cb53-403" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-ring-chart</span></span>
+<span id="cb53-404"><a href="#cb53-404" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A ring/donut chart of the random favorite color data"</span></span>
+<span id="cb53-405"><a href="#cb53-405" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb53-406"><a href="#cb53-406" aria-hidden="true" tabindex="-1"></a><span class="co"># https://r-graph-gallery.com/128-ring-or-donut-plot.html</span></span>
 <span id="cb53-407"><a href="#cb53-407" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-408"><a href="#cb53-408" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute the cumulative percentages (top of each rectangle)</span></span>
-<span id="cb53-409"><a href="#cb53-409" aria-hidden="true" tabindex="-1"></a>colors_xtab<span class="sc">$</span>ymax <span class="ot">=</span> <span class="fu">cumsum</span>(colors_xtab<span class="sc">$</span>fraction)</span>
+<span id="cb53-408"><a href="#cb53-408" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute percentages</span></span>
+<span id="cb53-409"><a href="#cb53-409" aria-hidden="true" tabindex="-1"></a>colors_xtab<span class="sc">$</span>fraction <span class="ot">=</span> colors_xtab<span class="sc">$</span>count <span class="sc">/</span> <span class="fu">sum</span>(colors_xtab<span class="sc">$</span>count)</span>
 <span id="cb53-410"><a href="#cb53-410" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-411"><a href="#cb53-411" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute the bottom of each rectangle</span></span>
-<span id="cb53-412"><a href="#cb53-412" aria-hidden="true" tabindex="-1"></a>colors_xtab<span class="sc">$</span>ymin <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fu">head</span>(colors_xtab<span class="sc">$</span>ymax, <span class="at">n =</span> <span class="sc">-</span><span class="dv">1</span>))</span>
+<span id="cb53-411"><a href="#cb53-411" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute the cumulative percentages (top of each rectangle)</span></span>
+<span id="cb53-412"><a href="#cb53-412" aria-hidden="true" tabindex="-1"></a>colors_xtab<span class="sc">$</span>ymax <span class="ot">=</span> <span class="fu">cumsum</span>(colors_xtab<span class="sc">$</span>fraction)</span>
 <span id="cb53-413"><a href="#cb53-413" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-414"><a href="#cb53-414" aria-hidden="true" tabindex="-1"></a><span class="co"># Make the plot</span></span>
-<span id="cb53-415"><a href="#cb53-415" aria-hidden="true" tabindex="-1"></a>colors_xtab <span class="sc">|&gt;</span></span>
-<span id="cb53-416"><a href="#cb53-416" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(</span>
-<span id="cb53-417"><a href="#cb53-417" aria-hidden="true" tabindex="-1"></a>    <span class="at">ymax =</span> ymax,</span>
-<span id="cb53-418"><a href="#cb53-418" aria-hidden="true" tabindex="-1"></a>    <span class="at">ymin =</span> ymin,</span>
-<span id="cb53-419"><a href="#cb53-419" aria-hidden="true" tabindex="-1"></a>    <span class="at">xmax =</span> <span class="dv">4</span>,</span>
-<span id="cb53-420"><a href="#cb53-420" aria-hidden="true" tabindex="-1"></a>    <span class="at">xmin =</span> <span class="dv">3</span>,</span>
-<span id="cb53-421"><a href="#cb53-421" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> favorite_color</span>
-<span id="cb53-422"><a href="#cb53-422" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">+</span></span>
-<span id="cb53-423"><a href="#cb53-423" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_rect</span>() <span class="sc">+</span></span>
-<span id="cb53-424"><a href="#cb53-424" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>) <span class="sc">+</span> <span class="co"># Try to remove that to understand how the chart is built initially</span></span>
-<span id="cb53-425"><a href="#cb53-425" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>)) <span class="sc">+</span> <span class="co"># Try to remove that to see how to make a pie chart</span></span>
-<span id="cb53-426"><a href="#cb53-426" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>()</span>
-<span id="cb53-427"><a href="#cb53-427" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-428"><a href="#cb53-428" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-429"><a href="#cb53-429" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Mosaic plot {-}</span></span>
-<span id="cb53-430"><a href="#cb53-430" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-433"><a href="#cb53-433" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-434"><a href="#cb53-434" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-mosaic-chart</span></span>
-<span id="cb53-435"><a href="#cb53-435" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A mosaic chart of the random favorite color by school data"</span></span>
-<span id="cb53-436"><a href="#cb53-436" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-437"><a href="#cb53-437" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> colors_school_df) <span class="sc">+</span></span>
-<span id="cb53-438"><a href="#cb53-438" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_mosaic</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">product</span>(favorite_color, school), <span class="at">fill =</span> favorite_color)) <span class="sc">+</span>   </span>
-<span id="cb53-439"><a href="#cb53-439" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y=</span><span class="st">"Favorite"</span>, <span class="at">x=</span><span class="st">"School"</span>, <span class="at">title =</span> <span class="st">"Favorite colors by school"</span>) <span class="sc">+</span></span>
-<span id="cb53-440"><a href="#cb53-440" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>()</span>
-<span id="cb53-441"><a href="#cb53-441" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-442"><a href="#cb53-442" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-443"><a href="#cb53-443" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ordinal data {-}</span></span>
-<span id="cb53-444"><a href="#cb53-444" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-445"><a href="#cb53-445" aria-hidden="true" tabindex="-1"></a>We usually consider colors as nominal or categorical variables.</span>
-<span id="cb53-446"><a href="#cb53-446" aria-hidden="true" tabindex="-1"></a>But the physical input to the visual system is *continuous*.</span>
+<span id="cb53-414"><a href="#cb53-414" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute the bottom of each rectangle</span></span>
+<span id="cb53-415"><a href="#cb53-415" aria-hidden="true" tabindex="-1"></a>colors_xtab<span class="sc">$</span>ymin <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fu">head</span>(colors_xtab<span class="sc">$</span>ymax, <span class="at">n =</span> <span class="sc">-</span><span class="dv">1</span>))</span>
+<span id="cb53-416"><a href="#cb53-416" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-417"><a href="#cb53-417" aria-hidden="true" tabindex="-1"></a><span class="co"># Make the plot</span></span>
+<span id="cb53-418"><a href="#cb53-418" aria-hidden="true" tabindex="-1"></a>colors_xtab <span class="sc">|&gt;</span></span>
+<span id="cb53-419"><a href="#cb53-419" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(</span>
+<span id="cb53-420"><a href="#cb53-420" aria-hidden="true" tabindex="-1"></a>    <span class="at">ymax =</span> ymax,</span>
+<span id="cb53-421"><a href="#cb53-421" aria-hidden="true" tabindex="-1"></a>    <span class="at">ymin =</span> ymin,</span>
+<span id="cb53-422"><a href="#cb53-422" aria-hidden="true" tabindex="-1"></a>    <span class="at">xmax =</span> <span class="dv">4</span>,</span>
+<span id="cb53-423"><a href="#cb53-423" aria-hidden="true" tabindex="-1"></a>    <span class="at">xmin =</span> <span class="dv">3</span>,</span>
+<span id="cb53-424"><a href="#cb53-424" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> favorite_color</span>
+<span id="cb53-425"><a href="#cb53-425" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">+</span></span>
+<span id="cb53-426"><a href="#cb53-426" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_rect</span>() <span class="sc">+</span></span>
+<span id="cb53-427"><a href="#cb53-427" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_polar</span>(<span class="at">theta =</span> <span class="st">"y"</span>) <span class="sc">+</span> <span class="co"># Try to remove that to understand how the chart is built initially</span></span>
+<span id="cb53-428"><a href="#cb53-428" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>)) <span class="sc">+</span> <span class="co"># Try to remove that to see how to make a pie chart</span></span>
+<span id="cb53-429"><a href="#cb53-429" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>()</span>
+<span id="cb53-430"><a href="#cb53-430" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-431"><a href="#cb53-431" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-432"><a href="#cb53-432" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Mosaic plot {-}</span></span>
+<span id="cb53-433"><a href="#cb53-433" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-436"><a href="#cb53-436" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-437"><a href="#cb53-437" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-nominal-mosaic-chart</span></span>
+<span id="cb53-438"><a href="#cb53-438" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A mosaic chart of the random favorite color by school data"</span></span>
+<span id="cb53-439"><a href="#cb53-439" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-440"><a href="#cb53-440" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> colors_school_df) <span class="sc">+</span></span>
+<span id="cb53-441"><a href="#cb53-441" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_mosaic</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">product</span>(favorite_color, school), <span class="at">fill =</span> favorite_color)) <span class="sc">+</span>   </span>
+<span id="cb53-442"><a href="#cb53-442" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y=</span><span class="st">"Favorite"</span>, <span class="at">x=</span><span class="st">"School"</span>, <span class="at">title =</span> <span class="st">"Favorite colors by school"</span>) <span class="sc">+</span></span>
+<span id="cb53-443"><a href="#cb53-443" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>()</span>
+<span id="cb53-444"><a href="#cb53-444" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-445"><a href="#cb53-445" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-446"><a href="#cb53-446" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ordinal data {-}</span></span>
 <span id="cb53-447"><a href="#cb53-447" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-448"><a href="#cb53-448" aria-hidden="true" tabindex="-1"></a><span class="al">![&lt;https://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/&gt;](https://rmit.pressbooks.pub/app/uploads/sites/42/2022/10/visitble-spectrum-nm.png)</span></span>
-<span id="cb53-449"><a href="#cb53-449" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-450"><a href="#cb53-450" aria-hidden="true" tabindex="-1"></a>The continuous variable that underlies color is *wavelength*, a property of electromagnetic radiation.</span>
-<span id="cb53-451"><a href="#cb53-451" aria-hidden="true" tabindex="-1"></a>The human visual system maps patterns of *physical* wavelength to the *psychological* dimension of color.</span>
+<span id="cb53-448"><a href="#cb53-448" aria-hidden="true" tabindex="-1"></a>We usually consider colors as nominal or categorical variables.</span>
+<span id="cb53-449"><a href="#cb53-449" aria-hidden="true" tabindex="-1"></a>But the physical input to the visual system is *continuous*.</span>
+<span id="cb53-450"><a href="#cb53-450" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-451"><a href="#cb53-451" aria-hidden="true" tabindex="-1"></a><span class="al">![&lt;https://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/&gt;](https://rmit.pressbooks.pub/app/uploads/sites/42/2022/10/visitble-spectrum-nm.png)</span></span>
 <span id="cb53-452"><a href="#cb53-452" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-453"><a href="#cb53-453" aria-hidden="true" tabindex="-1"></a>Curiously, human color perception shows that this *psychological* mapping wraps in a circular way that *physical* wavelength does not.</span>
-<span id="cb53-454"><a href="#cb53-454" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-455"><a href="#cb53-455" aria-hidden="true" tabindex="-1"></a><span class="al">![https://pixabay.com/vectors/rainbow-colors-circle-color-spectrum-154569/](https://cdn.pixabay.com/photo/2013/07/12/19/20/rainbow-colors-154569_1280.png)</span></span>
-<span id="cb53-456"><a href="#cb53-456" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-457"><a href="#cb53-457" aria-hidden="true" tabindex="-1"></a><span class="fu">### Generating {-}</span></span>
-<span id="cb53-458"><a href="#cb53-458" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-459"><a href="#cb53-459" aria-hidden="true" tabindex="-1"></a>But rather than dive down that particular rat hole now, let's make some ordinal data from the random color dataset.</span>
-<span id="cb53-460"><a href="#cb53-460" aria-hidden="true" tabindex="-1"></a>Imagine that we had *n*=50 participants and each gave a rating to these colors. The ratings had numbers, with 1 assigned to the participant's first choice, and 4 assigned to the fourth choice.</span>
-<span id="cb53-461"><a href="#cb53-461" aria-hidden="true" tabindex="-1"></a>We won't keep track of the specific users at this point.</span>
-<span id="cb53-462"><a href="#cb53-462" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-465"><a href="#cb53-465" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-466"><a href="#cb53-466" aria-hidden="true" tabindex="-1"></a>ratings <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"1st"</span>, <span class="st">"2nd"</span>, <span class="st">"3rd"</span>, <span class="st">"4th"</span>)</span>
-<span id="cb53-467"><a href="#cb53-467" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-468"><a href="#cb53-468" aria-hidden="true" tabindex="-1"></a>our_rating_sample <span class="ot">&lt;-</span> <span class="fu">sample</span>(ratings, <span class="at">size=</span><span class="dv">200</span>, <span class="at">replace=</span><span class="cn">TRUE</span>)</span>
-<span id="cb53-469"><a href="#cb53-469" aria-hidden="true" tabindex="-1"></a>colors_rating_df <span class="ot">&lt;-</span> colors_df</span>
-<span id="cb53-470"><a href="#cb53-470" aria-hidden="true" tabindex="-1"></a>colors_rating_df<span class="sc">$</span>rating <span class="ot">&lt;-</span> our_rating_sample</span>
-<span id="cb53-471"><a href="#cb53-471" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-472"><a href="#cb53-472" aria-hidden="true" tabindex="-1"></a>colors_rating_xtab <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">table</span>(colors_rating_df))</span>
-<span id="cb53-473"><a href="#cb53-473" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(colors_rating_xtab) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"favorite_color"</span>, <span class="st">"rating"</span>, <span class="st">"count"</span>)</span>
-<span id="cb53-474"><a href="#cb53-474" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-475"><a href="#cb53-475" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-476"><a href="#cb53-476" aria-hidden="true" tabindex="-1"></a><span class="fu">### Visualizing {-}</span></span>
-<span id="cb53-477"><a href="#cb53-477" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-478"><a href="#cb53-478" aria-hidden="true" tabindex="-1"></a>Many of the same plot types are available for ordinal data.</span>
-<span id="cb53-479"><a href="#cb53-479" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-480"><a href="#cb53-480" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Bar plot ordinal dodge {-}</span></span>
-<span id="cb53-481"><a href="#cb53-481" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-484"><a href="#cb53-484" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-485"><a href="#cb53-485" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-ordinal-barplot-dodge</span></span>
-<span id="cb53-486"><a href="#cb53-486" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A barplot of the random favorite color data with an ordinal rating"</span></span>
-<span id="cb53-487"><a href="#cb53-487" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-488"><a href="#cb53-488" aria-hidden="true" tabindex="-1"></a>colors_rating_xtab <span class="sc">|&gt;</span></span>
-<span id="cb53-489"><a href="#cb53-489" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-490"><a href="#cb53-490" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x=</span>rating, <span class="at">y=</span>count, <span class="at">fill =</span> favorite_color) <span class="sc">+</span></span>
-<span id="cb53-491"><a href="#cb53-491" aria-hidden="true" tabindex="-1"></a>  <span class="co"># aes(x = favorite_color, y = school, fill = favorite_color) +</span></span>
-<span id="cb53-492"><a href="#cb53-492" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>() <span class="sc">+</span></span>
-<span id="cb53-493"><a href="#cb53-493" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>, <span class="at">position=</span><span class="st">"dodge"</span>)</span>
-<span id="cb53-494"><a href="#cb53-494" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-495"><a href="#cb53-495" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-496"><a href="#cb53-496" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Bar plot ordinal stacked {-}</span></span>
-<span id="cb53-497"><a href="#cb53-497" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-500"><a href="#cb53-500" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-501"><a href="#cb53-501" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-ordinal-barplot-stacked</span></span>
-<span id="cb53-502"><a href="#cb53-502" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A stacked barplot of the random favorite color data with an ordinal rating"</span></span>
-<span id="cb53-503"><a href="#cb53-503" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-504"><a href="#cb53-504" aria-hidden="true" tabindex="-1"></a><span class="co"># colors_rating_xtab |&gt;</span></span>
-<span id="cb53-505"><a href="#cb53-505" aria-hidden="true" tabindex="-1"></a><span class="co">#   ggplot() +</span></span>
-<span id="cb53-506"><a href="#cb53-506" aria-hidden="true" tabindex="-1"></a><span class="co">#   aes(x=favorite_color, y=count, fill = favorite_color) +</span></span>
-<span id="cb53-507"><a href="#cb53-507" aria-hidden="true" tabindex="-1"></a><span class="co">#   scale_fill_identity() +</span></span>
-<span id="cb53-508"><a href="#cb53-508" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_bar(stat="identity", position="dodge")</span></span>
-<span id="cb53-509"><a href="#cb53-509" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-510"><a href="#cb53-510" aria-hidden="true" tabindex="-1"></a>colors_rating_xtab <span class="sc">|&gt;</span></span>
-<span id="cb53-511"><a href="#cb53-511" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-512"><a href="#cb53-512" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> rating, <span class="at">y=</span>count, <span class="at">fill =</span> favorite_color) <span class="sc">+</span></span>
-<span id="cb53-513"><a href="#cb53-513" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>() <span class="sc">+</span></span>
-<span id="cb53-514"><a href="#cb53-514" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>, <span class="at">position=</span><span class="st">"stack"</span>)</span>
-<span id="cb53-515"><a href="#cb53-515" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-516"><a href="#cb53-516" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-517"><a href="#cb53-517" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Bar plot ordinal stacked alternative {-}</span></span>
-<span id="cb53-518"><a href="#cb53-518" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-521"><a href="#cb53-521" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-522"><a href="#cb53-522" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-ordinal-barplot-stacked-alt</span></span>
-<span id="cb53-523"><a href="#cb53-523" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Another stacked barplot of the random favorite color data with an ordinal rating"</span></span>
-<span id="cb53-524"><a href="#cb53-524" aria-hidden="true" tabindex="-1"></a>colors_rating_xtab <span class="sc">|&gt;</span></span>
-<span id="cb53-525"><a href="#cb53-525" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-526"><a href="#cb53-526" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> favorite_color, <span class="at">y=</span>count, <span class="at">fill =</span> rating) <span class="sc">+</span></span>
-<span id="cb53-527"><a href="#cb53-527" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>, <span class="at">position=</span><span class="st">"stack"</span>)</span>
-<span id="cb53-528"><a href="#cb53-528" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-529"><a href="#cb53-529" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-530"><a href="#cb53-530" aria-hidden="true" tabindex="-1"></a><span class="fu">## Continuous data {-}</span></span>
-<span id="cb53-531"><a href="#cb53-531" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-532"><a href="#cb53-532" aria-hidden="true" tabindex="-1"></a><span class="fu">### Generating {-}</span></span>
-<span id="cb53-533"><a href="#cb53-533" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-534"><a href="#cb53-534" aria-hidden="true" tabindex="-1"></a>Let's imagine that we are studying a group of people who vary in age and body temperature.</span>
-<span id="cb53-535"><a href="#cb53-535" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-536"><a href="#cb53-536" aria-hidden="true" tabindex="-1"></a>We'll assume that they are healthy--fever free.</span>
-<span id="cb53-537"><a href="#cb53-537" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-538"><a href="#cb53-538" aria-hidden="true" tabindex="-1"></a>And we assume that we're sampling *uniformly* across children (0-18 years) and adults (18-85).</span>
-<span id="cb53-539"><a href="#cb53-539" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-542"><a href="#cb53-542" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-543"><a href="#cb53-543" aria-hidden="true" tabindex="-1"></a>n_kids <span class="ot">&lt;-</span> <span class="dv">100</span></span>
-<span id="cb53-544"><a href="#cb53-544" aria-hidden="true" tabindex="-1"></a>n_adults <span class="ot">&lt;-</span> <span class="dv">100</span></span>
-<span id="cb53-545"><a href="#cb53-545" aria-hidden="true" tabindex="-1"></a>age_days_kids <span class="ot">&lt;-</span> <span class="fu">runif</span>(n_kids, <span class="dv">0</span>, <span class="dv">18</span><span class="sc">*</span><span class="dv">365</span>)</span>
-<span id="cb53-546"><a href="#cb53-546" aria-hidden="true" tabindex="-1"></a>age_days_adults <span class="ot">&lt;-</span> <span class="fu">runif</span>(n_adults, <span class="dv">18</span><span class="sc">*</span><span class="dv">365</span><span class="sc">+</span><span class="dv">1</span>, <span class="dv">85</span><span class="sc">*</span><span class="dv">365</span>)</span>
-<span id="cb53-547"><a href="#cb53-547" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-548"><a href="#cb53-548" aria-hidden="true" tabindex="-1"></a><span class="co"># https://www.webmd.com/first-aid/normal-body-temperature</span></span>
-<span id="cb53-549"><a href="#cb53-549" aria-hidden="true" tabindex="-1"></a>body_temps_kids <span class="ot">&lt;-</span> <span class="fu">runif</span>(n_kids, <span class="fl">95.9</span>, <span class="fl">99.5</span>)</span>
-<span id="cb53-550"><a href="#cb53-550" aria-hidden="true" tabindex="-1"></a>body_temps_adults <span class="ot">&lt;-</span> <span class="fu">runif</span>(n_adults, <span class="dv">97</span>, <span class="dv">99</span>)</span>
-<span id="cb53-551"><a href="#cb53-551" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-552"><a href="#cb53-552" aria-hidden="true" tabindex="-1"></a>age_days <span class="ot">&lt;-</span> <span class="fu">c</span>(age_days_kids, age_days_adults)</span>
-<span id="cb53-553"><a href="#cb53-553" aria-hidden="true" tabindex="-1"></a>body_temp_F <span class="ot">&lt;-</span> <span class="fu">c</span>(body_temps_kids, body_temps_adults)</span>
+<span id="cb53-453"><a href="#cb53-453" aria-hidden="true" tabindex="-1"></a>The continuous variable that underlies color is *wavelength*, a property of electromagnetic radiation.</span>
+<span id="cb53-454"><a href="#cb53-454" aria-hidden="true" tabindex="-1"></a>The human visual system maps patterns of *physical* wavelength to the *psychological* dimension of color.</span>
+<span id="cb53-455"><a href="#cb53-455" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-456"><a href="#cb53-456" aria-hidden="true" tabindex="-1"></a>Curiously, human color perception shows that this *psychological* mapping wraps in a circular way that *physical* wavelength does not.</span>
+<span id="cb53-457"><a href="#cb53-457" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-458"><a href="#cb53-458" aria-hidden="true" tabindex="-1"></a><span class="al">![https://pixabay.com/vectors/rainbow-colors-circle-color-spectrum-154569/](https://cdn.pixabay.com/photo/2013/07/12/19/20/rainbow-colors-154569_1280.png)</span></span>
+<span id="cb53-459"><a href="#cb53-459" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-460"><a href="#cb53-460" aria-hidden="true" tabindex="-1"></a><span class="fu">### Generating {-}</span></span>
+<span id="cb53-461"><a href="#cb53-461" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-462"><a href="#cb53-462" aria-hidden="true" tabindex="-1"></a>But rather than dive down that particular rat hole now, let's make some ordinal data from the random color dataset.</span>
+<span id="cb53-463"><a href="#cb53-463" aria-hidden="true" tabindex="-1"></a>Imagine that we had *n*=50 participants and each gave a rating to these colors. The ratings had numbers, with 1 assigned to the participant's first choice, and 4 assigned to the fourth choice.</span>
+<span id="cb53-464"><a href="#cb53-464" aria-hidden="true" tabindex="-1"></a>We won't keep track of the specific users at this point.</span>
+<span id="cb53-465"><a href="#cb53-465" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-468"><a href="#cb53-468" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-469"><a href="#cb53-469" aria-hidden="true" tabindex="-1"></a>ratings <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"1st"</span>, <span class="st">"2nd"</span>, <span class="st">"3rd"</span>, <span class="st">"4th"</span>)</span>
+<span id="cb53-470"><a href="#cb53-470" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-471"><a href="#cb53-471" aria-hidden="true" tabindex="-1"></a>our_rating_sample <span class="ot">&lt;-</span> <span class="fu">sample</span>(ratings, <span class="at">size=</span><span class="dv">200</span>, <span class="at">replace=</span><span class="cn">TRUE</span>)</span>
+<span id="cb53-472"><a href="#cb53-472" aria-hidden="true" tabindex="-1"></a>colors_rating_df <span class="ot">&lt;-</span> colors_df</span>
+<span id="cb53-473"><a href="#cb53-473" aria-hidden="true" tabindex="-1"></a>colors_rating_df<span class="sc">$</span>rating <span class="ot">&lt;-</span> our_rating_sample</span>
+<span id="cb53-474"><a href="#cb53-474" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-475"><a href="#cb53-475" aria-hidden="true" tabindex="-1"></a>colors_rating_xtab <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">table</span>(colors_rating_df))</span>
+<span id="cb53-476"><a href="#cb53-476" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(colors_rating_xtab) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"favorite_color"</span>, <span class="st">"rating"</span>, <span class="st">"count"</span>)</span>
+<span id="cb53-477"><a href="#cb53-477" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-478"><a href="#cb53-478" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-479"><a href="#cb53-479" aria-hidden="true" tabindex="-1"></a><span class="fu">### Visualizing {-}</span></span>
+<span id="cb53-480"><a href="#cb53-480" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-481"><a href="#cb53-481" aria-hidden="true" tabindex="-1"></a>Many of the same plot types are available for ordinal data.</span>
+<span id="cb53-482"><a href="#cb53-482" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-483"><a href="#cb53-483" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Bar plot ordinal dodge {-}</span></span>
+<span id="cb53-484"><a href="#cb53-484" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-487"><a href="#cb53-487" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-488"><a href="#cb53-488" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-ordinal-barplot-dodge</span></span>
+<span id="cb53-489"><a href="#cb53-489" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A barplot of the random favorite color data with an ordinal rating"</span></span>
+<span id="cb53-490"><a href="#cb53-490" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-491"><a href="#cb53-491" aria-hidden="true" tabindex="-1"></a>colors_rating_xtab <span class="sc">|&gt;</span></span>
+<span id="cb53-492"><a href="#cb53-492" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-493"><a href="#cb53-493" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x=</span>rating, <span class="at">y=</span>count, <span class="at">fill =</span> favorite_color) <span class="sc">+</span></span>
+<span id="cb53-494"><a href="#cb53-494" aria-hidden="true" tabindex="-1"></a>  <span class="co"># aes(x = favorite_color, y = school, fill = favorite_color) +</span></span>
+<span id="cb53-495"><a href="#cb53-495" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>() <span class="sc">+</span></span>
+<span id="cb53-496"><a href="#cb53-496" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>, <span class="at">position=</span><span class="st">"dodge"</span>)</span>
+<span id="cb53-497"><a href="#cb53-497" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-498"><a href="#cb53-498" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-499"><a href="#cb53-499" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Bar plot ordinal stacked {-}</span></span>
+<span id="cb53-500"><a href="#cb53-500" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-503"><a href="#cb53-503" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-504"><a href="#cb53-504" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-ordinal-barplot-stacked</span></span>
+<span id="cb53-505"><a href="#cb53-505" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A stacked barplot of the random favorite color data with an ordinal rating"</span></span>
+<span id="cb53-506"><a href="#cb53-506" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-507"><a href="#cb53-507" aria-hidden="true" tabindex="-1"></a><span class="co"># colors_rating_xtab |&gt;</span></span>
+<span id="cb53-508"><a href="#cb53-508" aria-hidden="true" tabindex="-1"></a><span class="co">#   ggplot() +</span></span>
+<span id="cb53-509"><a href="#cb53-509" aria-hidden="true" tabindex="-1"></a><span class="co">#   aes(x=favorite_color, y=count, fill = favorite_color) +</span></span>
+<span id="cb53-510"><a href="#cb53-510" aria-hidden="true" tabindex="-1"></a><span class="co">#   scale_fill_identity() +</span></span>
+<span id="cb53-511"><a href="#cb53-511" aria-hidden="true" tabindex="-1"></a><span class="co">#   geom_bar(stat="identity", position="dodge")</span></span>
+<span id="cb53-512"><a href="#cb53-512" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-513"><a href="#cb53-513" aria-hidden="true" tabindex="-1"></a>colors_rating_xtab <span class="sc">|&gt;</span></span>
+<span id="cb53-514"><a href="#cb53-514" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-515"><a href="#cb53-515" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> rating, <span class="at">y=</span>count, <span class="at">fill =</span> favorite_color) <span class="sc">+</span></span>
+<span id="cb53-516"><a href="#cb53-516" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_identity</span>() <span class="sc">+</span></span>
+<span id="cb53-517"><a href="#cb53-517" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>, <span class="at">position=</span><span class="st">"stack"</span>)</span>
+<span id="cb53-518"><a href="#cb53-518" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-519"><a href="#cb53-519" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-520"><a href="#cb53-520" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Bar plot ordinal stacked alternative {-}</span></span>
+<span id="cb53-521"><a href="#cb53-521" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-524"><a href="#cb53-524" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-525"><a href="#cb53-525" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-ordinal-barplot-stacked-alt</span></span>
+<span id="cb53-526"><a href="#cb53-526" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Another stacked barplot of the random favorite color data with an ordinal rating"</span></span>
+<span id="cb53-527"><a href="#cb53-527" aria-hidden="true" tabindex="-1"></a>colors_rating_xtab <span class="sc">|&gt;</span></span>
+<span id="cb53-528"><a href="#cb53-528" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-529"><a href="#cb53-529" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> favorite_color, <span class="at">y=</span>count, <span class="at">fill =</span> rating) <span class="sc">+</span></span>
+<span id="cb53-530"><a href="#cb53-530" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">"identity"</span>, <span class="at">position=</span><span class="st">"stack"</span>)</span>
+<span id="cb53-531"><a href="#cb53-531" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-532"><a href="#cb53-532" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-533"><a href="#cb53-533" aria-hidden="true" tabindex="-1"></a><span class="fu">## Continuous data {-}</span></span>
+<span id="cb53-534"><a href="#cb53-534" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-535"><a href="#cb53-535" aria-hidden="true" tabindex="-1"></a><span class="fu">### Generating {-}</span></span>
+<span id="cb53-536"><a href="#cb53-536" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-537"><a href="#cb53-537" aria-hidden="true" tabindex="-1"></a>Let's imagine that we are studying a group of people who vary in age and body temperature.</span>
+<span id="cb53-538"><a href="#cb53-538" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-539"><a href="#cb53-539" aria-hidden="true" tabindex="-1"></a>We'll assume that they are healthy--fever free.</span>
+<span id="cb53-540"><a href="#cb53-540" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-541"><a href="#cb53-541" aria-hidden="true" tabindex="-1"></a>And we assume that we're sampling *uniformly* across children (0-18 years) and adults (18-85).</span>
+<span id="cb53-542"><a href="#cb53-542" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-545"><a href="#cb53-545" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-546"><a href="#cb53-546" aria-hidden="true" tabindex="-1"></a>n_kids <span class="ot">&lt;-</span> <span class="dv">100</span></span>
+<span id="cb53-547"><a href="#cb53-547" aria-hidden="true" tabindex="-1"></a>n_adults <span class="ot">&lt;-</span> <span class="dv">100</span></span>
+<span id="cb53-548"><a href="#cb53-548" aria-hidden="true" tabindex="-1"></a>age_days_kids <span class="ot">&lt;-</span> <span class="fu">runif</span>(n_kids, <span class="dv">0</span>, <span class="dv">18</span><span class="sc">*</span><span class="dv">365</span>)</span>
+<span id="cb53-549"><a href="#cb53-549" aria-hidden="true" tabindex="-1"></a>age_days_adults <span class="ot">&lt;-</span> <span class="fu">runif</span>(n_adults, <span class="dv">18</span><span class="sc">*</span><span class="dv">365</span><span class="sc">+</span><span class="dv">1</span>, <span class="dv">85</span><span class="sc">*</span><span class="dv">365</span>)</span>
+<span id="cb53-550"><a href="#cb53-550" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-551"><a href="#cb53-551" aria-hidden="true" tabindex="-1"></a><span class="co"># https://www.webmd.com/first-aid/normal-body-temperature</span></span>
+<span id="cb53-552"><a href="#cb53-552" aria-hidden="true" tabindex="-1"></a>body_temps_kids <span class="ot">&lt;-</span> <span class="fu">runif</span>(n_kids, <span class="fl">95.9</span>, <span class="fl">99.5</span>)</span>
+<span id="cb53-553"><a href="#cb53-553" aria-hidden="true" tabindex="-1"></a>body_temps_adults <span class="ot">&lt;-</span> <span class="fu">runif</span>(n_adults, <span class="dv">97</span>, <span class="dv">99</span>)</span>
 <span id="cb53-554"><a href="#cb53-554" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-555"><a href="#cb53-555" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">age_days =</span> age_days, <span class="at">body_temp =</span> body_temp_F)</span>
-<span id="cb53-556"><a href="#cb53-556" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-557"><a href="#cb53-557" aria-hidden="true" tabindex="-1"></a><span class="co"># Mix them up a bit</span></span>
-<span id="cb53-558"><a href="#cb53-558" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="ot">&lt;-</span> age_temp_df[<span class="fu">sample</span>(<span class="fu">nrow</span>(age_temp_df)),]</span>
-<span id="cb53-559"><a href="#cb53-559" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-560"><a href="#cb53-560" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-561"><a href="#cb53-561" aria-hidden="true" tabindex="-1"></a><span class="fu">### Visualizing {-}</span></span>
-<span id="cb53-562"><a href="#cb53-562" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-563"><a href="#cb53-563" aria-hidden="true" tabindex="-1"></a>To visualize continuous data, we have to decide what question(s) we want to answer.</span>
-<span id="cb53-564"><a href="#cb53-564" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-565"><a href="#cb53-565" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Scatterplot {-}</span></span>
-<span id="cb53-566"><a href="#cb53-566" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-567"><a href="#cb53-567" aria-hidden="true" tabindex="-1"></a>The simplest visualization of two continuous variables is a scatterplot.</span>
-<span id="cb53-568"><a href="#cb53-568" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-571"><a href="#cb53-571" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-572"><a href="#cb53-572" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-scatter</span></span>
-<span id="cb53-573"><a href="#cb53-573" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A scatterplot of the age and body temperature data."</span></span>
-<span id="cb53-574"><a href="#cb53-574" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
-<span id="cb53-575"><a href="#cb53-575" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-576"><a href="#cb53-576" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_days, <span class="at">y =</span> body_temp) <span class="sc">+</span></span>
-<span id="cb53-577"><a href="#cb53-577" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span>
-<span id="cb53-578"><a href="#cb53-578" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-579"><a href="#cb53-579" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-580"><a href="#cb53-580" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Histograms {-}</span></span>
-<span id="cb53-581"><a href="#cb53-581" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-584"><a href="#cb53-584" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-585"><a href="#cb53-585" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-histogram-age</span></span>
-<span id="cb53-586"><a href="#cb53-586" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A histogram of the age data."</span></span>
-<span id="cb53-587"><a href="#cb53-587" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
-<span id="cb53-588"><a href="#cb53-588" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-589"><a href="#cb53-589" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_days) <span class="sc">+</span></span>
-<span id="cb53-590"><a href="#cb53-590" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span>
-<span id="cb53-591"><a href="#cb53-591" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-592"><a href="#cb53-592" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-595"><a href="#cb53-595" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-596"><a href="#cb53-596" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-histogram-temp</span></span>
-<span id="cb53-597"><a href="#cb53-597" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A histogram of the body temperature data."</span></span>
-<span id="cb53-598"><a href="#cb53-598" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
-<span id="cb53-599"><a href="#cb53-599" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-600"><a href="#cb53-600" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> body_temp) <span class="sc">+</span></span>
-<span id="cb53-601"><a href="#cb53-601" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span>
-<span id="cb53-602"><a href="#cb53-602" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-603"><a href="#cb53-603" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-604"><a href="#cb53-604" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Violin plots {-}</span></span>
-<span id="cb53-605"><a href="#cb53-605" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-608"><a href="#cb53-608" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-609"><a href="#cb53-609" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-violin-age</span></span>
-<span id="cb53-610"><a href="#cb53-610" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A violin plot of the age data."</span></span>
-<span id="cb53-611"><a href="#cb53-611" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
-<span id="cb53-612"><a href="#cb53-612" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-613"><a href="#cb53-613" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_days, <span class="at">y =</span> <span class="st">""</span>) <span class="sc">+</span></span>
-<span id="cb53-614"><a href="#cb53-614" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>()</span>
-<span id="cb53-615"><a href="#cb53-615" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-616"><a href="#cb53-616" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-619"><a href="#cb53-619" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-620"><a href="#cb53-620" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-violin-temp</span></span>
-<span id="cb53-621"><a href="#cb53-621" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A violin plot of the body temperature data."</span></span>
-<span id="cb53-622"><a href="#cb53-622" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
-<span id="cb53-623"><a href="#cb53-623" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-624"><a href="#cb53-624" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">y =</span> <span class="st">""</span>, <span class="at">x =</span> body_temp) <span class="sc">+</span></span>
-<span id="cb53-625"><a href="#cb53-625" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>()</span>
-<span id="cb53-626"><a href="#cb53-626" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-627"><a href="#cb53-627" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-628"><a href="#cb53-628" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Density {-}</span></span>
-<span id="cb53-629"><a href="#cb53-629" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-632"><a href="#cb53-632" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-633"><a href="#cb53-633" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-density-age</span></span>
-<span id="cb53-634"><a href="#cb53-634" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A density plot of the age data."</span></span>
-<span id="cb53-635"><a href="#cb53-635" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
-<span id="cb53-636"><a href="#cb53-636" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-637"><a href="#cb53-637" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_days) <span class="sc">+</span></span>
-<span id="cb53-638"><a href="#cb53-638" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>()</span>
-<span id="cb53-639"><a href="#cb53-639" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-640"><a href="#cb53-640" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-643"><a href="#cb53-643" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-644"><a href="#cb53-644" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-density-temp</span></span>
-<span id="cb53-645"><a href="#cb53-645" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A density plot of the body temperature data."</span></span>
-<span id="cb53-646"><a href="#cb53-646" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
-<span id="cb53-647"><a href="#cb53-647" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-648"><a href="#cb53-648" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> body_temp) <span class="sc">+</span></span>
-<span id="cb53-649"><a href="#cb53-649" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>()</span>
-<span id="cb53-650"><a href="#cb53-650" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-651"><a href="#cb53-651" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-652"><a href="#cb53-652" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Boxplot {-}</span></span>
-<span id="cb53-653"><a href="#cb53-653" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-656"><a href="#cb53-656" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-657"><a href="#cb53-657" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-boxplot-age</span></span>
-<span id="cb53-658"><a href="#cb53-658" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A boxplot of the age data."</span></span>
-<span id="cb53-659"><a href="#cb53-659" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
-<span id="cb53-660"><a href="#cb53-660" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-661"><a href="#cb53-661" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_days) <span class="sc">+</span></span>
-<span id="cb53-662"><a href="#cb53-662" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span>
-<span id="cb53-663"><a href="#cb53-663" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-664"><a href="#cb53-664" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-667"><a href="#cb53-667" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-668"><a href="#cb53-668" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-boxplot-temp</span></span>
-<span id="cb53-669"><a href="#cb53-669" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A boxplot of the body temperature data."</span></span>
-<span id="cb53-670"><a href="#cb53-670" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
-<span id="cb53-671"><a href="#cb53-671" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-672"><a href="#cb53-672" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> body_temp) <span class="sc">+</span></span>
-<span id="cb53-673"><a href="#cb53-673" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span>
-<span id="cb53-674"><a href="#cb53-674" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-675"><a href="#cb53-675" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-676"><a href="#cb53-676" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Violin + Boxplot {-}</span></span>
-<span id="cb53-677"><a href="#cb53-677" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-680"><a href="#cb53-680" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-681"><a href="#cb53-681" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-violin-boxplot-age</span></span>
-<span id="cb53-682"><a href="#cb53-682" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A combined violin/boxplot of the age data."</span></span>
-<span id="cb53-683"><a href="#cb53-683" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
-<span id="cb53-684"><a href="#cb53-684" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-685"><a href="#cb53-685" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_days, <span class="at">y =</span> <span class="st">""</span>) <span class="sc">+</span></span>
-<span id="cb53-686"><a href="#cb53-686" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
-<span id="cb53-687"><a href="#cb53-687" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span> .<span class="dv">4</span>)</span>
-<span id="cb53-688"><a href="#cb53-688" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-689"><a href="#cb53-689" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-692"><a href="#cb53-692" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-693"><a href="#cb53-693" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-violin-boxplot-temp</span></span>
-<span id="cb53-694"><a href="#cb53-694" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A combined violin/boxplot of the body temperature data."</span></span>
-<span id="cb53-695"><a href="#cb53-695" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
-<span id="cb53-696"><a href="#cb53-696" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-697"><a href="#cb53-697" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> body_temp, <span class="at">y =</span> <span class="st">""</span>) <span class="sc">+</span></span>
-<span id="cb53-698"><a href="#cb53-698" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
-<span id="cb53-699"><a href="#cb53-699" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span> .<span class="dv">4</span>)</span>
-<span id="cb53-700"><a href="#cb53-700" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-701"><a href="#cb53-701" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-702"><a href="#cb53-702" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Violin + Boxplot + Scatter {-}</span></span>
-<span id="cb53-703"><a href="#cb53-703" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-706"><a href="#cb53-706" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-707"><a href="#cb53-707" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-violin-boxplot-scatter-age</span></span>
-<span id="cb53-708"><a href="#cb53-708" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A combined violin/boxplot/scatterplot of the age data."</span></span>
-<span id="cb53-709"><a href="#cb53-709" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
-<span id="cb53-710"><a href="#cb53-710" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-711"><a href="#cb53-711" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_days, <span class="at">y =</span> <span class="st">""</span>) <span class="sc">+</span></span>
-<span id="cb53-712"><a href="#cb53-712" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
-<span id="cb53-713"><a href="#cb53-713" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span> .<span class="dv">4</span>) <span class="sc">+</span></span>
-<span id="cb53-714"><a href="#cb53-714" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> <span class="dv">0</span>, <span class="at">height =</span> .<span class="dv">2</span>)</span>
-<span id="cb53-715"><a href="#cb53-715" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb53-716"><a href="#cb53-716" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-719"><a href="#cb53-719" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb53-720"><a href="#cb53-720" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-violin-boxplot-scatter-temp</span></span>
-<span id="cb53-721"><a href="#cb53-721" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A combined violin/boxplot/scatterplot of the body temperature data."</span></span>
-<span id="cb53-722"><a href="#cb53-722" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
-<span id="cb53-723"><a href="#cb53-723" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb53-724"><a href="#cb53-724" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> body_temp, <span class="at">y =</span> <span class="st">""</span>) <span class="sc">+</span></span>
-<span id="cb53-725"><a href="#cb53-725" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
-<span id="cb53-726"><a href="#cb53-726" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span> .<span class="dv">4</span>) <span class="sc">+</span></span>
-<span id="cb53-727"><a href="#cb53-727" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> <span class="dv">0</span>, <span class="at">height =</span> .<span class="dv">2</span>)</span>
-<span id="cb53-728"><a href="#cb53-728" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-555"><a href="#cb53-555" aria-hidden="true" tabindex="-1"></a>age_days <span class="ot">&lt;-</span> <span class="fu">c</span>(age_days_kids, age_days_adults)</span>
+<span id="cb53-556"><a href="#cb53-556" aria-hidden="true" tabindex="-1"></a>body_temp_F <span class="ot">&lt;-</span> <span class="fu">c</span>(body_temps_kids, body_temps_adults)</span>
+<span id="cb53-557"><a href="#cb53-557" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-558"><a href="#cb53-558" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">age_days =</span> age_days, <span class="at">body_temp =</span> body_temp_F)</span>
+<span id="cb53-559"><a href="#cb53-559" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-560"><a href="#cb53-560" aria-hidden="true" tabindex="-1"></a><span class="co"># Mix them up a bit</span></span>
+<span id="cb53-561"><a href="#cb53-561" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="ot">&lt;-</span> age_temp_df[<span class="fu">sample</span>(<span class="fu">nrow</span>(age_temp_df)),]</span>
+<span id="cb53-562"><a href="#cb53-562" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-563"><a href="#cb53-563" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-564"><a href="#cb53-564" aria-hidden="true" tabindex="-1"></a><span class="fu">### Visualizing {-}</span></span>
+<span id="cb53-565"><a href="#cb53-565" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-566"><a href="#cb53-566" aria-hidden="true" tabindex="-1"></a>To visualize continuous data, we have to decide what question(s) we want to answer.</span>
+<span id="cb53-567"><a href="#cb53-567" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-568"><a href="#cb53-568" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Scatterplot {-}</span></span>
+<span id="cb53-569"><a href="#cb53-569" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-570"><a href="#cb53-570" aria-hidden="true" tabindex="-1"></a>The simplest visualization of two continuous variables is a scatterplot.</span>
+<span id="cb53-571"><a href="#cb53-571" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-574"><a href="#cb53-574" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-575"><a href="#cb53-575" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-scatter</span></span>
+<span id="cb53-576"><a href="#cb53-576" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A scatterplot of the age and body temperature data."</span></span>
+<span id="cb53-577"><a href="#cb53-577" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
+<span id="cb53-578"><a href="#cb53-578" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-579"><a href="#cb53-579" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_days, <span class="at">y =</span> body_temp) <span class="sc">+</span></span>
+<span id="cb53-580"><a href="#cb53-580" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span>
+<span id="cb53-581"><a href="#cb53-581" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-582"><a href="#cb53-582" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-583"><a href="#cb53-583" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Histograms {-}</span></span>
+<span id="cb53-584"><a href="#cb53-584" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-587"><a href="#cb53-587" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-588"><a href="#cb53-588" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-histogram-age</span></span>
+<span id="cb53-589"><a href="#cb53-589" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A histogram of the age data."</span></span>
+<span id="cb53-590"><a href="#cb53-590" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
+<span id="cb53-591"><a href="#cb53-591" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-592"><a href="#cb53-592" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_days) <span class="sc">+</span></span>
+<span id="cb53-593"><a href="#cb53-593" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span>
+<span id="cb53-594"><a href="#cb53-594" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-595"><a href="#cb53-595" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-598"><a href="#cb53-598" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-599"><a href="#cb53-599" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-histogram-temp</span></span>
+<span id="cb53-600"><a href="#cb53-600" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A histogram of the body temperature data."</span></span>
+<span id="cb53-601"><a href="#cb53-601" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
+<span id="cb53-602"><a href="#cb53-602" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-603"><a href="#cb53-603" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> body_temp) <span class="sc">+</span></span>
+<span id="cb53-604"><a href="#cb53-604" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span>
+<span id="cb53-605"><a href="#cb53-605" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-606"><a href="#cb53-606" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-607"><a href="#cb53-607" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Violin plots {-}</span></span>
+<span id="cb53-608"><a href="#cb53-608" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-611"><a href="#cb53-611" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-612"><a href="#cb53-612" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-violin-age</span></span>
+<span id="cb53-613"><a href="#cb53-613" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A violin plot of the age data."</span></span>
+<span id="cb53-614"><a href="#cb53-614" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
+<span id="cb53-615"><a href="#cb53-615" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-616"><a href="#cb53-616" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_days, <span class="at">y =</span> <span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb53-617"><a href="#cb53-617" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>()</span>
+<span id="cb53-618"><a href="#cb53-618" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-619"><a href="#cb53-619" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-622"><a href="#cb53-622" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-623"><a href="#cb53-623" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-violin-temp</span></span>
+<span id="cb53-624"><a href="#cb53-624" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A violin plot of the body temperature data."</span></span>
+<span id="cb53-625"><a href="#cb53-625" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
+<span id="cb53-626"><a href="#cb53-626" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-627"><a href="#cb53-627" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">y =</span> <span class="st">""</span>, <span class="at">x =</span> body_temp) <span class="sc">+</span></span>
+<span id="cb53-628"><a href="#cb53-628" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>()</span>
+<span id="cb53-629"><a href="#cb53-629" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-630"><a href="#cb53-630" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-631"><a href="#cb53-631" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Density {-}</span></span>
+<span id="cb53-632"><a href="#cb53-632" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-635"><a href="#cb53-635" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-636"><a href="#cb53-636" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-density-age</span></span>
+<span id="cb53-637"><a href="#cb53-637" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A density plot of the age data."</span></span>
+<span id="cb53-638"><a href="#cb53-638" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
+<span id="cb53-639"><a href="#cb53-639" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-640"><a href="#cb53-640" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_days) <span class="sc">+</span></span>
+<span id="cb53-641"><a href="#cb53-641" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>()</span>
+<span id="cb53-642"><a href="#cb53-642" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-643"><a href="#cb53-643" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-646"><a href="#cb53-646" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-647"><a href="#cb53-647" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-density-temp</span></span>
+<span id="cb53-648"><a href="#cb53-648" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A density plot of the body temperature data."</span></span>
+<span id="cb53-649"><a href="#cb53-649" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
+<span id="cb53-650"><a href="#cb53-650" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-651"><a href="#cb53-651" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> body_temp) <span class="sc">+</span></span>
+<span id="cb53-652"><a href="#cb53-652" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>()</span>
+<span id="cb53-653"><a href="#cb53-653" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-654"><a href="#cb53-654" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-655"><a href="#cb53-655" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Boxplot {-}</span></span>
+<span id="cb53-656"><a href="#cb53-656" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-659"><a href="#cb53-659" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-660"><a href="#cb53-660" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-boxplot-age</span></span>
+<span id="cb53-661"><a href="#cb53-661" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A boxplot of the age data."</span></span>
+<span id="cb53-662"><a href="#cb53-662" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
+<span id="cb53-663"><a href="#cb53-663" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-664"><a href="#cb53-664" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_days) <span class="sc">+</span></span>
+<span id="cb53-665"><a href="#cb53-665" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span>
+<span id="cb53-666"><a href="#cb53-666" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-667"><a href="#cb53-667" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-670"><a href="#cb53-670" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-671"><a href="#cb53-671" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-boxplot-temp</span></span>
+<span id="cb53-672"><a href="#cb53-672" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A boxplot of the body temperature data."</span></span>
+<span id="cb53-673"><a href="#cb53-673" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
+<span id="cb53-674"><a href="#cb53-674" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-675"><a href="#cb53-675" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> body_temp) <span class="sc">+</span></span>
+<span id="cb53-676"><a href="#cb53-676" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span>
+<span id="cb53-677"><a href="#cb53-677" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-678"><a href="#cb53-678" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-679"><a href="#cb53-679" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Violin + Boxplot {-}</span></span>
+<span id="cb53-680"><a href="#cb53-680" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-683"><a href="#cb53-683" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-684"><a href="#cb53-684" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-violin-boxplot-age</span></span>
+<span id="cb53-685"><a href="#cb53-685" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A combined violin/boxplot of the age data."</span></span>
+<span id="cb53-686"><a href="#cb53-686" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
+<span id="cb53-687"><a href="#cb53-687" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-688"><a href="#cb53-688" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_days, <span class="at">y =</span> <span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb53-689"><a href="#cb53-689" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
+<span id="cb53-690"><a href="#cb53-690" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span> .<span class="dv">4</span>)</span>
+<span id="cb53-691"><a href="#cb53-691" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-692"><a href="#cb53-692" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-695"><a href="#cb53-695" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-696"><a href="#cb53-696" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-violin-boxplot-temp</span></span>
+<span id="cb53-697"><a href="#cb53-697" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A combined violin/boxplot of the body temperature data."</span></span>
+<span id="cb53-698"><a href="#cb53-698" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
+<span id="cb53-699"><a href="#cb53-699" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-700"><a href="#cb53-700" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> body_temp, <span class="at">y =</span> <span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb53-701"><a href="#cb53-701" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
+<span id="cb53-702"><a href="#cb53-702" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span> .<span class="dv">4</span>)</span>
+<span id="cb53-703"><a href="#cb53-703" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-704"><a href="#cb53-704" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-705"><a href="#cb53-705" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Violin + Boxplot + Scatter {-}</span></span>
+<span id="cb53-706"><a href="#cb53-706" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-709"><a href="#cb53-709" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-710"><a href="#cb53-710" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-violin-boxplot-scatter-age</span></span>
+<span id="cb53-711"><a href="#cb53-711" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A combined violin/boxplot/scatterplot of the age data."</span></span>
+<span id="cb53-712"><a href="#cb53-712" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
+<span id="cb53-713"><a href="#cb53-713" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-714"><a href="#cb53-714" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> age_days, <span class="at">y =</span> <span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb53-715"><a href="#cb53-715" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
+<span id="cb53-716"><a href="#cb53-716" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span> .<span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb53-717"><a href="#cb53-717" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> <span class="dv">0</span>, <span class="at">height =</span> .<span class="dv">2</span>)</span>
+<span id="cb53-718"><a href="#cb53-718" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb53-719"><a href="#cb53-719" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-722"><a href="#cb53-722" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb53-723"><a href="#cb53-723" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-continuous-violin-boxplot-scatter-temp</span></span>
+<span id="cb53-724"><a href="#cb53-724" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "A combined violin/boxplot/scatterplot of the body temperature data."</span></span>
+<span id="cb53-725"><a href="#cb53-725" aria-hidden="true" tabindex="-1"></a>age_temp_df <span class="sc">|&gt;</span></span>
+<span id="cb53-726"><a href="#cb53-726" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-727"><a href="#cb53-727" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> body_temp, <span class="at">y =</span> <span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb53-728"><a href="#cb53-728" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
+<span id="cb53-729"><a href="#cb53-729" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span> .<span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb53-730"><a href="#cb53-730" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> <span class="dv">0</span>, <span class="at">height =</span> .<span class="dv">2</span>)</span>
+<span id="cb53-731"><a href="#cb53-731" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
