@@ -1,0 +1,9 @@
+## What's a reddish-green look like?
+
+![](../include/img/reddish-green.jpg){fig-align="center"}
+
+## What's a reddish-green look like?
+
+## Explanation
+
+![](../include/img/RGBOpponent.gif)

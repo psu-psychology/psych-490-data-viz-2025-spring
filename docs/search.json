@@ -851,7 +851,7 @@
     "href": "schedule.html#week-05",
     "title": "Schedule",
     "section": "February 10-14",
-    "text": "February 10-14\n\nTuesday, February 11\nFrom stimulus to sensation\n\nRead: Cairo (2013), Chapter 5, PDF on Canvas\nSlides\nDue: Exercise-03 | Canvas dropbox |\n\n\n\nThursday, February 13\nFrom sensation to perception\n\nRead:\n\nCairo (2013), Chapter 6, PDF on Canvas\nFew (2004), Chapter 5, PDF on Canvas"
+    "text": "February 10-14\n\nTuesday, February 11\nFrom stimulus to sensation\n\nRead: Cairo (2013), Chapter 5, PDF on Canvas\nSlides\nDue: Exercise-03 | Canvas dropbox |\n\n\n\nThursday, February 13\nFrom sensation to perception\n\nRead:\n\nCairo (2013), Chapter 6, PDF on Canvas\nFew (2004), Chapter 5, PDF on Canvas\n\nOptional:\n\nCleveland & McGill (1984)\n\nSlides"
   },
   {
     "objectID": "schedule.html#week-06",
@@ -2693,5 +2693,271 @@
     "title": "From stimulus to sensation",
     "section": "Nature’s speed demon/speed limit",
     "text": "Nature’s speed demon/speed limit\n\nLight (+ radiowaves) circumnavigate the Earth in ~133 ms\n\n\nhttps://w3tm.org\nEarth ~8.3 light-minutes from the Sun"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#announcements",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#announcements",
+    "title": "From sensation to perception",
+    "section": "Announcements",
+    "text": "Announcements\n\nAssigned next Tuesday, February 18: Final Project proposal."
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#last-time",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#last-time",
+    "title": "From sensation to perception",
+    "section": "Last time…",
+    "text": "Last time…\n\nLight informs\n\nSpatial perception: Where, how far, how big?\nObject perception: What is it, what form, color, etc.\n\nEye\n\nHigh resolution info only in center\nSamples different categories of light wavelength\nMoves to stablize retina, scan environment"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#today",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#today",
+    "title": "From sensation to perception",
+    "section": "Today",
+    "text": "Today\n\nWrap-up on sensation\nFrom sensation to perception"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#color-perception",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#color-perception",
+    "title": "From sensation to perception",
+    "section": "Color perception",
+    "text": "Color perception\n\nPerceived color a function of activity in “R”, “G”, and “B” photoreceptors\n\n\nSource: Wikipedia"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#wavelengths-are-continuous-but-are-perceived-colors",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#wavelengths-are-continuous-but-are-perceived-colors",
+    "title": "From sensation to perception",
+    "section": "Wavelengths are continuous, but are perceived colors?",
+    "text": "Wavelengths are continuous, but are perceived colors?\n\nhttps://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#perceived-colors-seem-ordinal-but",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#perceived-colors-seem-ordinal-but",
+    "title": "From sensation to perception",
+    "section": "Perceived colors seem ordinal, but…",
+    "text": "Perceived colors seem ordinal, but…\n\n\nColor is a neuropsychological construct"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#whats-a-reddish-green-look-like",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#whats-a-reddish-green-look-like",
+    "title": "From sensation to perception",
+    "section": "What’s a reddish-green look like?",
+    "text": "What’s a reddish-green look like?"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#whats-a-reddish-green-look-like-1",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#whats-a-reddish-green-look-like-1",
+    "title": "From sensation to perception",
+    "section": "What’s a reddish-green look like?",
+    "text": "What’s a reddish-green look like?"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#explanation",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#explanation",
+    "title": "From sensation to perception",
+    "section": "Explanation",
+    "text": "Explanation"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#color-vision-anomalies",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#color-vision-anomalies",
+    "title": "From sensation to perception",
+    "section": "Color vision anomalies",
+    "text": "Color vision anomalies\n\nAbsence of or anomalies in photoreceptors\n\n\nWong (2011) Figure 1"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#types",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#types",
+    "title": "From sensation to perception",
+    "section": "Types",
+    "text": "Types\n\n\n\nProtanopia (impaired R/long wavelength)\nDeuteranopia (impaired G/medium wavelength)\nTritanopia (impaired B/short wavelength)\n\n\n\n\n\nhttps://www.color-blindness.com/protanopia-red-green-color-blindness/"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#color-palettes",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#color-palettes",
+    "title": "From sensation to perception",
+    "section": "Color palettes",
+    "text": "Color palettes\n\nWong (2011) Figure 2"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#some-consequences-for-data-figures",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#some-consequences-for-data-figures",
+    "title": "From sensation to perception",
+    "section": "Some consequences for data figures",
+    "text": "Some consequences for data figures\n\nSize of visual elements (symbols, including text)\nContrast (light/dark or color)\nTextures of visual patterns\nSome colors more visible than others\n\nVischeck\n\nHow much visual scanning (# of eye movements) required?"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#references",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#references",
+    "title": "From sensation to perception",
+    "section": "References",
+    "text": "References\n\n\n\n\nCairo, A. (2013). The functional art: An introduction to information graphics and visualization. Upper Saddle River, N: New Riders Publishing.\n\n\nCleveland, W. S., & McGill, R. (1984). Graphical perception: Theory, experimentation, and application to the development of graphical methods. Journal of the American Statistical Association, 79, 531–554. https://doi.org/10.1080/01621459.1984.10478080\n\n\nFew, S. (2004). Show me the numbers: Designing tables and graphs to enlighten. Oakland, CA: Analytics Press.\n\n\nKahneman, D. (2013). Thinking, fast and slow (1st edition). Farrar, Straus; Giroux. Retrieved from https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555\n\n\nWade, N. J. (2015). How were eye movements recorded before yarbus? Perception, 44, 851–883. https://doi.org/10.1177/0301006615594947\n\n\nWong, B. (2011). Color blindness. Nature Methods, 8, 441. https://doi.org/10.1038/nmeth.1618"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#visual-brains-love-differences",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#visual-brains-love-differences",
+    "title": "From sensation to perception",
+    "section": "Visual brains love differences",
+    "text": "Visual brains love differences\n\nFigure 6.1 Cairo (2013)"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#gestalt-properties",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#gestalt-properties",
+    "title": "From sensation to perception",
+    "section": "Gestalt properties",
+    "text": "Gestalt properties\n\nProximity\nSimilarity\nConnectedness\nClosure\nContinuity"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#some-features-more-easily-judged-than-others",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#some-features-more-easily-judged-than-others",
+    "title": "From sensation to perception",
+    "section": "Some features more easily judged than others",
+    "text": "Some features more easily judged than others\n\nFigure 1 Cleveland & McGill (1984)"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#gestalt-school",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#gestalt-school",
+    "title": "From sensation to perception",
+    "section": "Gestalt school",
+    "text": "Gestalt school\n\nGestalt: “whole form”\nCan psychological phenomena be understood from their parts?\nOr is the whole greater than the sum of the parts?"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#reification",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#reification",
+    "title": "From sensation to perception",
+    "section": "Reification",
+    "text": "Reification\n\n\n\nPerception is constructive\n\n\n\n\n\nhttps://en.wikipedia.org/wiki/Gestalt_psychology"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#multistability",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#multistability",
+    "title": "From sensation to perception",
+    "section": "Multistability",
+    "text": "Multistability\n\n\n\nPerception is multistable\n\n\n\n\n\nhttps://en.wikipedia.org/wiki/Gestalt_psychology"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#section",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#section",
+    "title": "From sensation to perception",
+    "section": "",
+    "text": "Figure 6.12 Cairo (2013)"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#differences-in",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#differences-in",
+    "title": "From sensation to perception",
+    "section": "Differences in…",
+    "text": "Differences in…\n\nIntensity (light/dark)\n\nContrast\n\nColor\nPosition or size"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#some-features-easier-to-judge",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#some-features-easier-to-judge",
+    "title": "From sensation to perception",
+    "section": "Some features easier to judge",
+    "text": "Some features easier to judge\n\nFigure 1 Cleveland & McGill (1984)"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#invariance",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#invariance",
+    "title": "From sensation to perception",
+    "section": "Invariance",
+    "text": "Invariance\n\n\n\nAnd yet…\nPerception is invariant\n\n\n\n\n\nhttps://en.wikipedia.org/wiki/Gestalt_psychology"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#gestalt-laws-of-perceptual-grouping",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#gestalt-laws-of-perceptual-grouping",
+    "title": "From sensation to perception",
+    "section": "Gestalt “laws” of perceptual grouping",
+    "text": "Gestalt “laws” of perceptual grouping\n\nProximity\nSimilarity\nConnectedness\nClosure\nContinuity\nSymmetry"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#proximity",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#proximity",
+    "title": "From sensation to perception",
+    "section": "Proximity",
+    "text": "Proximity\n\nhttps://en.wikipedia.org/wiki/Gestalt_psychology"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#similarity",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#similarity",
+    "title": "From sensation to perception",
+    "section": "Similarity",
+    "text": "Similarity\n\nhttps://en.wikipedia.org/wiki/Gestalt_psychology"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#closure",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#closure",
+    "title": "From sensation to perception",
+    "section": "Closure",
+    "text": "Closure\n\nhttps://en.wikipedia.org/wiki/Gestalt_psychology"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#symmetry",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#symmetry",
+    "title": "From sensation to perception",
+    "section": "Symmetry",
+    "text": "Symmetry\n\nhttps://en.wikipedia.org/wiki/Gestalt_psychology"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#continuity",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#continuity",
+    "title": "From sensation to perception",
+    "section": "Continuity",
+    "text": "Continuity\n\nhttps://en.wikipedia.org/wiki/Gestalt_psychology"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#data-viz-example",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#data-viz-example",
+    "title": "From sensation to perception",
+    "section": "Data viz example",
+    "text": "Data viz example\n\nFigure 6.3 Cairo (2013)"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#especially",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#especially",
+    "title": "From sensation to perception",
+    "section": "Especially …",
+    "text": "Especially …\n\nIntensity (light/dark)\n\nContrast\n\nColor\nPosition or size\nChanges in…"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#pre-attentive-vision",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#pre-attentive-vision",
+    "title": "From sensation to perception",
+    "section": "Pre-attentive vision",
+    "text": "Pre-attentive vision\n\nDetect quickly, with minimal effort\nUsually in a single glance/fixation\nvs. attentive vision\n\nOvert shifts of attention (eye movements)\nCovert shifts (“mind’s eye” movements)"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#some-features-easierfaster-to-judge",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#some-features-easierfaster-to-judge",
+    "title": "From sensation to perception",
+    "section": "Some features easier/faster to judge",
+    "text": "Some features easier/faster to judge\n\nFigure 1 Cleveland & McGill (1984)"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#connectedness",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#connectedness",
+    "title": "From sensation to perception",
+    "section": "Connectedness",
+    "text": "Connectedness\n\nFigure 6.8 Cairo (2013)"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#your-turn",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#your-turn",
+    "title": "From sensation to perception",
+    "section": "Your turn",
+    "text": "Your turn\n\nFind a compelling illustration of one of the Gestalt phenomena (non-data visualization-related)\nFind an illustration of one of the Gestalt phenomena in a data visualization\nAdd findings (and URLs) here:\n\nhttps://docs.google.com/spreadsheets/d/1G8U_IPMP0x17Sfl-FQfF37DN19bDQFm0GO_UmQQzv7Q/edit?usp=sharing"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#similar-but-not-too-similar",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#similar-but-not-too-similar",
+    "title": "From sensation to perception",
+    "section": "Similar but not too similar",
+    "text": "Similar but not too similar"
+  },
+  {
+    "objectID": "slides/wk05-2025-02-13-sensation-to-perception.html#putting-it-all-together",
+    "href": "slides/wk05-2025-02-13-sensation-to-perception.html#putting-it-all-together",
+    "title": "From sensation to perception",
+    "section": "Putting it all together",
+    "text": "Putting it all together\n\n\n\nFigure 6.20 Cairo (2013)"
   }
 ]

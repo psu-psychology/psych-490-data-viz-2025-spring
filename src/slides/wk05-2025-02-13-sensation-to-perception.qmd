@@ -1,0 +1,255 @@
+---
+title: "From sensation to perception"
+subtitle: "2025-02-13"
+---
+
+# Prelude
+
+# Overview
+
+## Announcements
+
+- [Assigned]{.green_assigned} next Tuesday, February 18: [Final Project](../exercises/final-project.qmd) proposal.
+
+## Last time...
+
+- Light informs
+  - *Spatial* perception: Where, how far, how big?
+  - *Object* perception: What is it, what form, color, etc.
+- Eye
+  - High resolution info only in center
+  - Samples different categories of light wavelength
+  - Moves to stablize retina, scan environment
+  
+---
+
+![](../include/img/cairo-fig-5.4.png)
+
+---
+
+![@Wade2015-rn](../include/img/wade-yarbus-fig1.jpeg)
+
+## Today
+
+- Wrap-up on sensation
+- From sensation to perception
+
+# Wrap-up on sensation
+
+## Color perception
+
+- Perceived color a function of activity in "R", "G", and "B" photoreceptors
+
+![Source: Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/1416_Color_Sensitivity.jpg/1200px-1416_Color_Sensitivity.jpg)
+
+## Wavelengths are continuous, but are perceived colors?
+
+![https://rmit.pressbooks.pub/colourtheory1/part/2-colour-theory-the-visible-spectrum/](https://rmit.pressbooks.pub/app/uploads/sites/42/2022/10/visitble-spectrum-nm.png)
+
+## Perceived colors seem ordinal, but...
+
+![](https://cdn.pixabay.com/photo/2013/07/12/19/20/rainbow-colors-154569_1280.png){fig-align="center"}
+
+- Color is a *neuropsychological* construct
+
+{{< include _reddish-green.Rmd >}}
+
+## Color vision anomalies
+
+- Absence of or anomalies in photoreceptors
+
+![@Wong2011-ke Figure 1](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnmeth.1618/MediaObjects/41592_2011_Article_BFnmeth1618_Fig1_HTML.jpg?as=webp)
+
+## Types
+
+:::: {.columns}
+::: {.column width=40%}
+- Protanopia (impaired R/long wavelength)
+- Deuteranopia (impaired G/medium wavelength)
+- Tritanopia (impaired B/short wavelength)
+:::
+::: {.column width=60%}
+![https://www.color-blindness.com/protanopia-red-green-color-blindness/](https://www.color-blindness.com/wp-content/images/Protanopia-Color-Spectrum.jpg)
+:::
+::::
+
+## Color palettes
+
+![@Wong2011-ke Figure 2](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnmeth.1618/MediaObjects/41592_2011_Article_BFnmeth1618_Fig2_HTML.jpg?as=webp)
+
+## Some consequences for data figures
+
+- Size of visual elements (symbols, including text)
+- Contrast (light/dark or color)
+- Textures of visual patterns
+- Some colors more visible than others
+  - [Vischeck](https://www.vischeck.com/)
+- How much visual scanning (# of eye movements) required?
+
+# From sensation to perception
+
+## Visual brains love *differences*
+
+![Figure 6.1 @Cairo2013-hm](../include/img/cairo-fig-6.1.png)
+
+## Especially ...
+
+- Intensity (light/dark)
+    - Contrast
+- Color
+- Position or size
+- Changes in...
+
+---
+
+![@Kahneman2013-zi](https://i0.wp.com/www.raptisrarebooks.com/images/197526/thinking-fast-and-slow-daniel-kahneman-first-edition-signed-rare-books.jpg?fit=850%2C680&ssl=1)
+
+## Pre-attentive vision
+
+- Detect quickly, with minimal effort
+- Usually in a single glance/fixation
+- vs. *attentive* vision
+    - Overt shifts of attention (eye movements)
+    - Covert shifts ("mind's eye" movements)
+    
+---
+
+![Figure 6.4 @Cairo2013-hm](../include/img/cairo-fig-6.4.png)
+
+## Some features easier/faster to judge
+
+![Figure 1 @Cleveland1984-py](../include/img/cleveland-mcgill-1984-fig01.png)
+
+## {.scrollable}
+
+![Figure 6.12 @Cairo2013-hm](../include/img/cairo-fig-6.12.png){.lightbox}
+
+## Gestalt school
+
+- Gestalt: "whole form"
+- Can psychological phenomena be understood from their parts?
+- Or is the whole greater than the sum of the parts?
+
+## Reification
+
+:::: {.columns}
+::: {.column width=40%}
+- Perception is *constructive*
+:::
+::: {.column width=60%}
+![https://en.wikipedia.org/wiki/Gestalt_psychology](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Reification.svg/1920px-Reification.svg.png)
+:::
+::::
+
+---
+
+![Figure 5.29 Stephen-Few2004-jv](../include/img/few-fig-5.29-illusory-contour.png)
+
+## Multistability
+
+:::: {.columns}
+::: {.column width=40%}
+- Perception is *multistable*
+:::
+::: {.column width=60%}
+![https://en.wikipedia.org/wiki/Gestalt_psychology](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Multistability.svg/2880px-Multistability.svg.png)
+:::
+::::
+
+## Invariance
+
+:::: {.columns}
+::: {.column width=40%}
+- And yet...
+- Perception is *invariant*
+:::
+::: {.column width=60%}
+![https://en.wikipedia.org/wiki/Gestalt_psychology](https://upload.wikimedia.org/wikipedia/commons/9/9d/Invariance.jpg)
+:::
+::::
+
+## Gestalt "laws" of perceptual grouping
+
+- Proximity
+- Similarity
+- Connectedness
+- Closure
+- Continuity
+- Symmetry
+
+## Proximity
+
+![https://en.wikipedia.org/wiki/Gestalt_psychology](https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Gestalt_proximity.svg/2880px-Gestalt_proximity.svg.png)
+
+---
+
+![Figure 6.5 @Cairo2013-hm](../include/img/cairo-fig-6.5.png)
+
+## Similarity
+
+![https://en.wikipedia.org/wiki/Gestalt_psychology](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gestalt_similarity.svg/340px-Gestalt_similarity.svg.png)
+
+---
+
+![Figure 6.3 @Cairo2013-hm](../include/img/cairo.fig-6.3.png)
+
+## Similar but not *too* similar
+
+![](../include/img/few-figure-5.19-similarity.png)
+
+## Closure
+
+![https://en.wikipedia.org/wiki/Gestalt_psychology](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Gestalt_closure.svg/440px-Gestalt_closure.svg.png)
+
+
+## Continuity
+
+![https://en.wikipedia.org/wiki/Gestalt_psychology](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/CrossKeys.png/340px-CrossKeys.png)
+
+---
+
+![Figure 6.9 @Cairo2013-hm](../include/img/cairo-fig-6.9.png)
+
+---
+
+![Figure 5.33 Stephen-Few2004-jv](../include/img/few-fig-5.33.png)
+
+## Connectedness
+
+![Figure 6.8 @Cairo2013-hm](../include/img/cairo-fig-6.8.png)
+
+---
+
+![@Stephen-Few2004-jv](../include/img/few-fig-5.38.png)
+
+## Symmetry
+
+![https://en.wikipedia.org/wiki/Gestalt_psychology](https://upload.wikimedia.org/wikipedia/en/1/1c/Law_of_Symmetry.jpg)
+
+## Your turn
+
+- Find a compelling illustration of one of the Gestalt phenomena (non-data visualization-related)
+- Find an illustration of one of the Gestalt phenomena in a data visualization
+- Add findings (and URLs) here: 
+
+<https://docs.google.com/spreadsheets/d/1G8U_IPMP0x17Sfl-FQfF37DN19bDQFm0GO_UmQQzv7Q/edit?usp=sharing>
+
+## Putting it all together {.scrollable}
+
+![Figure 6.20 @Cairo2013-hm](../include/img/cairo-fig-6.20.png){.lightbox}
+
+# Main points
+
+---
+
+- Vision is *reconstructive*
+- Pre-attentive vs. attentive vision
+- Gestalt principles describe feature grouping
+
+# Next time
+
+*From cognition to understanding*
+
+# Resources
+
+## References
