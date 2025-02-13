@@ -5,6 +5,18 @@ subtitle: "2025-02-13"
 
 # Prelude
 
+---
+
+{{< video https://www.youtube.com/watch?v=o5TmORitlKk width=100% height=70% >}}
+
+@MarvinGayeVEVO2019-ki
+
+---
+
+<iframe src="https://x.com/cleans_letsrun/status/1847937360597578195"></iframe>
+
+<https://x.com/cleans_letsrun/status/1847937360597578195>
+
 # Overview
 
 ## Announcements
