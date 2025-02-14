@@ -153,7 +153,7 @@ subtitle: "2025-02-13"
 
 ---
 
-![Figure 5.29 Stephen-Few2004-jv](../include/img/few-fig-5.29-illusory-contour.png)
+![Figure 5.29 @Stephen-Few2004-jv](../include/img/few-fig-5.29-illusory-contour.png)
 
 ## Multistability
 
@@ -222,7 +222,7 @@ subtitle: "2025-02-13"
 
 ---
 
-![Figure 5.33 Stephen-Few2004-jv](../include/img/few-fig-5.33.png)
+![Figure 5.33 @Stephen-Few2004-jv](../include/img/few-fig-5.33.png)
 
 ## Connectedness
 

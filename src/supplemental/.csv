@@ -1,3 +1,15 @@
-identifier,source_type,url,why_selected,comment
-rog1,web_site,https://www.psychologicalscience.org/observer/teaching-current-directions-in-psychological-science-27#lives,,
-rog1,article,https://journals.sagepub.com/doi/full/10.1177/21677026241301298,,
+identifier,gestalt_principle,url_to_non_data_viz,url_to_data_viz
+HRQ,Closure,https://public-images.interaction-design.org/tags/Three%20Examples.webp,https://towardsdatascience.com/wp-content/uploads/2021/03/1DuSfDnkIqeQDNRgyE8MaDg.png
+TJD,Continuity,https://t4.ftcdn.net/jpg/10/90/13/47/360_F_1090134723_5GzOURNtBN99A9AKivB3M1D7wApsn8oa.jpg,https://www.statista.com/graphic/1/216985/forecast-of-us-gross-domestic-product.jpg
+SS,Closure,https://www.wikiart.org/en/salvador-dali/face-of-mae-west-which-may-be-used-as-an-apartment,
+SES,Closure,https://www.olympics.com/ioc/olympic-rings,https://www.census.gov/library/visualizations/interactive/state-private-nonres-construction-spending.html
+KMM,Closure,https://www.behance.net/gallery/18122387/Gestalt-Principles,https://nastengraph.medium.com/gestalt-principles-in-data-visualization-a4e56e6074b5
+JVM,Proximity ,https://public-images.interaction-design.org/tags/td-illustration-gestalt-5-proximity-example.png,
+BM,,https://www.uxdesigninstitute.com/blog/gestalt-principles-ux-ui-design/,https://towardsdatascience.com/the-psychology-behind-data-visualization-techniques-68ef12865720/
+ABC,Continuity,https://pmc.ncbi.nlm.nih.gov/articles/PMC3728284/,https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=3728284_nihms390001f10.jpg
+KVV,Closure,https://www.billboard.com/wp-content/uploads/2024/07/how-to-watch-HTW-USA-Network-billboard-1548.jpg?w=942&h=623&crop=1,https://miro.medium.com/v2/resize:fit:1400/format:webp/1*JWkfKpOfuW69ef-59QZNeQ.png
+ac,Continuity,https://i.pinimg.com/originals/59/84/ab/5984abcedb356da8967bf8b4ab9b60b6.jpg,https://5cc2b83c.delivery.rocketcdn.me/app/uploads/dataviz-law-continuity-gestalt-example-1024x585-png.avif
+BSW,Closure,,
+rf,closure,https://wbispace.usc.edu/gestalt.html,https://wbispace.usc.edu/_images/occluded_necker.jpg
+NMSL,Continuity, https://pin.it/3fsFg4UHo,
+pp,Reification,https://deliveredsocial.com/wp-content/uploads/2024/08/How-Gestalt-Principles-Work.jpg,
