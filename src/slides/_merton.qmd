@@ -1,0 +1,26 @@
+## Scientific norms [@Merton1973-vf]
+
+:::: {.columns}
+::: {.column width=60%}
+::: {.incremental}
+- Communalism (common ownership)
+- Universalism (independent validity)
+- Disinterestedness (public benefit)
+- Organized skepticism (scrutinize everything)
+:::
+:::
+::: {.column width=40%}
+![](https://upload.wikimedia.org/wikipedia/en/0/08/Robert_K_Merton.jpg)
+:::
+::::
+
+## @Merton1973-vf
+
+:::: {.columns}
+::: {.column width=60%}
+>The mores of science possess a methodologic rationale...They are procedurally efficent...
+:::
+::: {.column width=40%}
+![](https://upload.wikimedia.org/wikipedia/en/0/08/Robert_K_Merton.jpg)
+:::
+::::

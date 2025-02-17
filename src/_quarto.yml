@@ -12,7 +12,7 @@ project:
 website:
   title: "PSYCH 490 • Spr 25"
   announcement: 
-    content: "[Exercise 03](exercises/ex03-making-data.qmd) **due Tuesday, February 11**: Canvas [dropbox](https://psu.instructure.com/courses/2381584/assignments/16998400) ." 
+    content: "[Final project proposal](exercises/final-project.qmd) assigned." 
     position: below-navbar
     icon: info-circle
     dismissable: true

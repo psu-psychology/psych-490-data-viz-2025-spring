@@ -105,15 +105,17 @@
 *From cognition to understanding*
 
  - Read:
-    - @Franconeri2021-uv, pp. 109-122
+    - @Franconeri2021-uv, pp. 109-122, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=174557876)
     - @Cairo2013-hm, Chapter 7, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927892)
+- [Slides](slides/wk06-2025-02-18-cognition-to-understanding.qmd)
 - [Assigned]{.green_assigned}: [Final Project](exercises/final-project.qmd) proposal
 
 ### Thursday, February 20 {-}
 
 *Designing efficient & understandable visualizations*
 
-- Read: @Franconeri2021-uv, pp. 123-139
+- Read: @Franconeri2021-uv, pp. 123-139, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=174557876)
+- [Slides](slides/wk06-2025-02-18-cognitition-to-understanding.qmd)
 - [Assigned]{.green_assigned}: [Exercise-04](exercises/ex04-sci-of-data-viz.qmd)
 
 ## February 24-28 {- #week-07}
@@ -122,7 +124,7 @@
 
 *Communicating uncertainty and risk*  
 
-- Read: @Franconeri2021-uv, pp. 139-150 
+- Read: @Franconeri2021-uv, pp. 139-150, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=174557876) 
 
 ### Thursday, February 27 {-}
 
