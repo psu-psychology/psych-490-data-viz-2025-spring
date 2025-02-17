@@ -32,6 +32,10 @@ subtitle: "2025-02-17"
 
 ![Figure 7.6 from @Cairo2013-hm](../include/img/cairo-fig-7.6.png)
 
+---
+
+![](http://www.methodquarterly.com/wp-content/uploads/2014/09/dalmation1.jpg)
+
 ## How large is the memory bank?
 
 ![Figure 7.8 from @Cairo2013-hm](../include/img/cairo-fig-7.8.png)
@@ -75,11 +79,13 @@ subtitle: "2025-02-17"
 
 ![Figure 3 from @Franconeri2021-uv](https://journals.sagepub.com/cms/10.1177/15291006211051956/asset/images/large/10.1177_15291006211051956-fig3.jpeg)
 
-## *Debate* is the American way
+---
 
 ![<https://www.wcpo.com/news/state/state-ohio/ohio-senate-bans-diversity-initiatives-polices-topics-taught-in-name-of-free-speech-on-college-campuses>](../include/img/oh-sen-01-bill.png)
 
-## *Debate* is the way of science & scholarship
+## *Debate* is the American way
+
+## *Debate* is the scholarly way
 
 - Show me the data!
 - Evidence + *logical* argument
@@ -130,13 +136,21 @@ subtitle: "2025-02-17"
 
 <a href="https://factsonclimate.org/infographics/concentration-warming-relationship" target="_blank">How are CO₂ concentrations related to warming?</a> infographic by <a href="https://factsonclimate.org" target="_blank">Fakta o klimatu</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/deed" target="_blank">CC BY 4.0</a>.
 
-## The U.S. is only 1 country
+## The U.S. is only *one* country
 
 ![@Ferrell2025-il](../include/img/accuweather-coldest-jan-us-since-1988.png)
 
 ## {.scrollable}
 
 ![@Ferrell2025-il](../include/img/accuweather-warmest-elsewhere.png)
+
+## $CO_2$ emissions (per capita) by rich countries
+
+![https://rick-gilmore.com/posts/data-stories-climate-change/](../include/img/fig-co2-emissions-1970-2023-big-economies-1.png)
+
+## $CO_2$ emissions (per GDP) by rich countries
+
+![https://rick-gilmore.com/posts/data-stories-climate-change-II/](../include/img/fig-co2-emissions-gdp-1970-2023-big-economies-1.png)
 
 # Final project check-in
 
