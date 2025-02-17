@@ -3,8 +3,6 @@ title: "From cognition to understanding"
 subtitle: "2025-02-17"
 ---
 
-# Prelude
-
 # Overview
 
 ## Announcements
@@ -131,6 +129,14 @@ subtitle: "2025-02-17"
 ![](https://factsonclimate.org/assets/generated/concentration-warming-relationship_1920.png){fig-align="center"}
 
 <a href="https://factsonclimate.org/infographics/concentration-warming-relationship" target="_blank">How are CO₂ concentrations related to warming?</a> infographic by <a href="https://factsonclimate.org" target="_blank">Fakta o klimatu</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/deed" target="_blank">CC BY 4.0</a>.
+
+## The U.S. is only 1 country
+
+![@Ferrell2025-il](../include/img/accuweather-coldest-jan-us-since-1988.png)
+
+## {.scrollable}
+
+![@Ferrell2025-il](../include/img/accuweather-warmest-elsewhere.png)
 
 # Final project check-in
 
