@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rick Gilmore">
+<meta name="dcterms.date" content="2025-02-19">
+
+<title>From cognition to understanding – PSYCH 490 • Spr 25</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-cb6669ef173fa5a3d6a96bd42ebca5e2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../include/css/styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">PSYCH 490 • Spr 25</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../evaluation.html"> 
+<span class="menu-text">Evaluation</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../deadlines.html"> 
+<span class="menu-text">Deadlines</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../policies.html"> 
+<span class="menu-text">Policies &amp; Values</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-exercises" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Exercises</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-exercises">    
+        <li>
+    <a class="dropdown-item" href="../exercises/ex01-figs-in-psych-sci.html">
+ <span class="dropdown-text">Exercise 01</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../exercises/ex02-data-viz-outside-psych.html">
+ <span class="dropdown-text">Exercise 02</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../exercises/ex03-making-data.html">
+ <span class="dropdown-text">Exercise 03</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../exercises/ex04-sci-of-data-viz.html">
+ <span class="dropdown-text">Exercise 04</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../exercises/final-project.html">
+ <span class="dropdown-text">Final Project</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Tutorials</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
+        <li>
+    <a class="dropdown-item" href="../tutorials/tutorial-making-data.html">
+ <span class="dropdown-text">Making and visualizing data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorials/tutorial-rstudio-on-pc.html">
+ <span class="dropdown-text">Setting up RStudio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorials/tutorial-rstudio-on-psu.html">
+ <span class="dropdown-text">Setting up RStudio @ Penn State</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorials/tutorial-r-ggplot.html">
+ <span class="dropdown-text">Plotting with ggplot2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../tutorials/tutorial-python-matplotlib.html">
+ <span class="dropdown-text">Plotting in Python</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-supplemental" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Supplemental</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-supplemental">    
+        <li>
+    <a class="dropdown-item" href="../supplemental/ex01-feedback.html">
+ <span class="dropdown-text">Feedback on Exercise 01</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../supplemental/psych-sci-figs.html">
+ <span class="dropdown-text">Findings: Data viz in psych sci</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../supplemental/other-field-figs.html">
+ <span class="dropdown-text">Findings: Data viz outside psych sci</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../supplemental/ex03-deep-dive.html">
+ <span class="dropdown-text">Deep dive on Exercise 03</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../supplemental/gestalt-in-the-wild.html">
+ <span class="dropdown-text">Gestalt in the wild</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../meta.html"> 
+<span class="menu-text">Meta</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <div id="quarto-announcement" data-announcement-id="c93e5c1cced36183fa5cf14b28792d52" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><a href="exercises/final-project.qmd">Final project proposal</a> assigned.</p>
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#announcements" id="toc-announcements" class="nav-link" data-scroll-target="#announcements">Announcements</a></li>
+  <li><a href="#last-time" id="toc-last-time" class="nav-link" data-scroll-target="#last-time">Last time…</a></li>
+  <li><a href="#today" id="toc-today" class="nav-link" data-scroll-target="#today">Today</a></li>
+  <li><a href="#from-specific-to-general" id="toc-from-specific-to-general" class="nav-link" data-scroll-target="#from-specific-to-general">From specific to general</a></li>
+  <li><a href="#bottom-up-and-top-down" id="toc-bottom-up-and-top-down" class="nav-link" data-scroll-target="#bottom-up-and-top-down">Bottom-up and top-down</a></li>
+  <li><a href="#how-large-is-the-memory-bank" id="toc-how-large-is-the-memory-bank" class="nav-link" data-scroll-target="#how-large-is-the-memory-bank">How large is the memory bank?</a></li>
+  <li><a href="#when-less-detail-more" id="toc-when-less-detail-more" class="nav-link" data-scroll-target="#when-less-detail-more">When less detail &gt; more</a></li>
+  <li><a href="#abstraction-to-the-rescue" id="toc-abstraction-to-the-rescue" class="nav-link" data-scroll-target="#abstraction-to-the-rescue">Abstraction to the rescue</a></li>
+  <li><a href="#some-parts-others" id="toc-some-parts-others" class="nav-link" data-scroll-target="#some-parts-others">Some parts &gt; others</a></li>
+  <li><a href="#back-to-visualizations" id="toc-back-to-visualizations" class="nav-link" data-scroll-target="#back-to-visualizations">Back to visualizations</a></li>
+  <li><a href="#franconeri2021-uv" id="toc-franconeri2021-uv" class="nav-link" data-scroll-target="#franconeri2021-uv"><span class="citation" data-cites="Franconeri2021-uv">Franconeri et al. (2021)</span></a></li>
+  <li><a href="#hard-to-map-without-distortion" id="toc-hard-to-map-without-distortion" class="nav-link" data-scroll-target="#hard-to-map-without-distortion">Hard to map without distortion</a></li>
+  <li><a href="#debate-is-the-american-way" id="toc-debate-is-the-american-way" class="nav-link" data-scroll-target="#debate-is-the-american-way"><em>Debate</em> is the American way</a></li>
+  <li><a href="#debate-is-the-scholarly-way" id="toc-debate-is-the-scholarly-way" class="nav-link" data-scroll-target="#debate-is-the-scholarly-way"><em>Debate</em> is the scholarly way</a></li>
+  <li><a href="#scientific-norms-merton1973-vf" id="toc-scientific-norms-merton1973-vf" class="nav-link" data-scroll-target="#scientific-norms-merton1973-vf">Scientific norms <span class="citation" data-cites="Merton1973-vf">(Merton, 1973)</span></a></li>
+  <li><a href="#merton1973-vf" id="toc-merton1973-vf" class="nav-link" data-scroll-target="#merton1973-vf"><span class="citation" data-cites="Merton1973-vf">Merton (1973)</span></a>
+  <ul class="collapse">
+  <li><a href="#discover-more-faster" id="toc-discover-more-faster" class="nav-link" data-scroll-target="#discover-more-faster">Discover more, faster…</a></li>
+  </ul></li>
+  <li><a href="#feynman1974-ld" id="toc-feynman1974-ld" class="nav-link" data-scroll-target="#feynman1974-ld"><span class="citation" data-cites="Feynman1974-ld">Feynman (1974)</span></a></li>
+  <li><a href="#the-u.s.-is-only-one-country" id="toc-the-u.s.-is-only-one-country" class="nav-link" data-scroll-target="#the-u.s.-is-only-one-country">The U.S. is only <em>one</em> country</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#co_2-emissions-per-capita-by-rich-countries" id="toc-co_2-emissions-per-capita-by-rich-countries" class="nav-link" data-scroll-target="#co_2-emissions-per-capita-by-rich-countries"><span class="math inline">\(CO_2\)</span> emissions (per capita) by rich countries</a></li>
+  <li><a href="#co_2-emissions-per-gdp-by-rich-countries" id="toc-co_2-emissions-per-gdp-by-rich-countries" class="nav-link" data-scroll-target="#co_2-emissions-per-gdp-by-rich-countries"><span class="math inline">\(CO_2\)</span> emissions (per GDP) by rich countries</a></li>
+  </ul></li>
+  <li><a href="#final-project-check-in" id="toc-final-project-check-in" class="nav-link" data-scroll-target="#final-project-check-in">Final project check-in</a></li>
+  <li><a href="#next-time" id="toc-next-time" class="nav-link" data-scroll-target="#next-time">Next time</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/edit/main/src/slides/CopyOfwk06-2025-02-18-cognition-to-understanding.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="CopyOfwk06-2025-02-18-cognition-to-understanding.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">From cognition to understanding</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">2025-02-17</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Rick Gilmore </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 19, 2025</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">February 19, 2025</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<section id="announcements" class="level2">
+<h2 class="anchored" data-anchor-id="announcements">Announcements</h2>
+<ul>
+<li><span class="green_assigned">Assigned</span> today: <a href="../exercises/final-project.html">Final Project</a> proposal</li>
+</ul>
+</section>
+<section id="last-time" class="level2">
+<h2 class="anchored" data-anchor-id="last-time">Last time…</h2>
+<ul>
+<li>Pre-attentive vs.&nbsp;attentive vision</li>
+<li>Gestalt principles
+<ul>
+<li><a href="../supplemental/gestalt-in-the-wild.html">Your findings</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="today" class="level2">
+<h2 class="anchored" data-anchor-id="today">Today</h2>
+<ul>
+<li>From specifc to general; concrete to abstract</li>
+<li>The comparing brain</li>
+</ul>
+</section>
+<section id="from-specific-to-general" class="level2">
+<h2 class="anchored" data-anchor-id="from-specific-to-general">From specific to general</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/cairo-fig-7.3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure 7.3 from @Cairo2013-hm"><img src="../include/img/cairo-fig-7.3.png" class="img-fluid figure-img" alt="Figure 7.3 from Cairo (2013)"></a></p>
+<figcaption>Figure 7.3 from <span class="citation" data-cites="Cairo2013-hm">Cairo (<a href="#ref-Cairo2013-hm" role="doc-biblioref">2013</a>)</span></figcaption>
+</figure>
+</div>
+</section>
+<section id="bottom-up-and-top-down" class="level2">
+<h2 class="anchored" data-anchor-id="bottom-up-and-top-down">Bottom-up and top-down</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/cairo-fig-7.5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure 7.5 from @Cairo2013-hm"><img src="../include/img/cairo-fig-7.5.png" class="img-fluid figure-img" alt="Figure 7.5 from Cairo (2013)"></a></p>
+<figcaption>Figure 7.5 from <span class="citation" data-cites="Cairo2013-hm">Cairo (<a href="#ref-Cairo2013-hm" role="doc-biblioref">2013</a>)</span></figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/cairo-fig-7.6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure 7.6 from @Cairo2013-hm"><img src="../include/img/cairo-fig-7.6.png" class="img-fluid figure-img" alt="Figure 7.6 from Cairo (2013)"></a></p>
+<figcaption>Figure 7.6 from <span class="citation" data-cites="Cairo2013-hm">Cairo (<a href="#ref-Cairo2013-hm" role="doc-biblioref">2013</a>)</span></figcaption>
+</figure>
+</div>
+<hr>
+<p><a href="http://www.methodquarterly.com/wp-content/uploads/2014/09/dalmation1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="http://www.methodquarterly.com/wp-content/uploads/2014/09/dalmation1.jpg" class="img-fluid"></a></p>
+</section>
+<section id="how-large-is-the-memory-bank" class="level2">
+<h2 class="anchored" data-anchor-id="how-large-is-the-memory-bank">How large is the memory bank?</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/cairo-fig-7.8.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure 7.8 from @Cairo2013-hm"><img src="../include/img/cairo-fig-7.8.png" class="img-fluid figure-img" alt="Figure 7.8 from Cairo (2013)"></a></p>
+<figcaption>Figure 7.8 from <span class="citation" data-cites="Cairo2013-hm">Cairo (<a href="#ref-Cairo2013-hm" role="doc-biblioref">2013</a>)</span></figcaption>
+</figure>
+</div>
+</section>
+<section id="when-less-detail-more" class="level2">
+<h2 class="anchored" data-anchor-id="when-less-detail-more">When less detail &gt; more</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/cairo-fig-7.11.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure 7.11 from @Cairo2013-hm"><img src="../include/img/cairo-fig-7.11.png" class="img-fluid figure-img" alt="Figure 7.11 from Cairo (2013)"></a></p>
+<figcaption>Figure 7.11 from <span class="citation" data-cites="Cairo2013-hm">Cairo (<a href="#ref-Cairo2013-hm" role="doc-biblioref">2013</a>)</span></figcaption>
+</figure>
+</div>
+</section>
+<section id="abstraction-to-the-rescue" class="level2">
+<h2 class="anchored" data-anchor-id="abstraction-to-the-rescue">Abstraction to the rescue</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/cairo-fig-7.7.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure 7.7 from @Cairo2013-hm"><img src="../include/img/cairo-fig-7.7.png" class="img-fluid figure-img" alt="Figure 7.7 from Cairo (2013)"></a></p>
+<figcaption>Figure 7.7 from <span class="citation" data-cites="Cairo2013-hm">Cairo (<a href="#ref-Cairo2013-hm" role="doc-biblioref">2013</a>)</span></figcaption>
+</figure>
+</div>
+</section>
+<section id="some-parts-others" class="level2">
+<h2 class="anchored" data-anchor-id="some-parts-others">Some parts &gt; others</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/cairo-fig-7.9.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figure 7.9 from @Cairo2013-hm"><img src="../include/img/cairo-fig-7.9.png" class="img-fluid figure-img" alt="Figure 7.9 from Cairo (2013)"></a></p>
+<figcaption>Figure 7.9 from <span class="citation" data-cites="Cairo2013-hm">Cairo (<a href="#ref-Cairo2013-hm" role="doc-biblioref">2013</a>)</span></figcaption>
+</figure>
+</div>
+</section>
+<section id="back-to-visualizations" class="level2">
+<h2 class="anchored" data-anchor-id="back-to-visualizations">Back to visualizations</h2>
+<ul>
+<li><span class="citation" data-cites="Franconeri2021-uv">Franconeri, Padilla, Shah, Zacks, &amp; Hullman (<a href="#ref-Franconeri2021-uv" role="doc-biblioref">2021</a>)</span></li>
+<li>“Visualizations let viewers see beyond summary statistics”</li>
+</ul>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="@datasaurus2019-us; @Matejka2017-xi"><img src="https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif" class="img-fluid figure-img" alt="“The Datasaurus dozen - same stats, different graphs | Autodesk Research” (n.d.); Matejka &amp; Fitzmaurice (2017)"></a></p>
+<figcaption><span class="citation" data-cites="datasaurus2019-us"><span>“The <span>D</span>atasaurus dozen - same stats, different graphs | <span>A</span>utodesk <span>R</span>esearch”</span> (<a href="#ref-datasaurus2019-us" role="doc-biblioref">n.d.</a>)</span>; <span class="citation" data-cites="Matejka2017-xi">Matejka &amp; Fitzmaurice (<a href="#ref-Matejka2017-xi" role="doc-biblioref">2017</a>)</span></figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.research.autodesk.com/app/uploads/2024/09/BoxViolinSmaller.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="@datasaurus2019-us; @Matejka2017-xi"><img src="https://www.research.autodesk.com/app/uploads/2024/09/BoxViolinSmaller.gif" class="img-fluid figure-img" alt="“The Datasaurus dozen - same stats, different graphs | Autodesk Research” (n.d.); Matejka &amp; Fitzmaurice (2017)"></a></p>
+<figcaption><span class="citation" data-cites="datasaurus2019-us"><span>“The <span>D</span>atasaurus dozen - same stats, different graphs | <span>A</span>utodesk <span>R</span>esearch”</span> (<a href="#ref-datasaurus2019-us" role="doc-biblioref">n.d.</a>)</span>; <span class="citation" data-cites="Matejka2017-xi">Matejka &amp; Fitzmaurice (<a href="#ref-Matejka2017-xi" role="doc-biblioref">2017</a>)</span></figcaption>
+</figure>
+</div>
+</section>
+<section id="franconeri2021-uv" class="level2">
+<h2 class="anchored" data-anchor-id="franconeri2021-uv"><span class="citation" data-cites="Franconeri2021-uv">Franconeri et al. (<a href="#ref-Franconeri2021-uv" role="doc-biblioref">2021</a>)</span></h2>
+<ul>
+<li>“Visual channels translate numbers into images”</li>
+</ul>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://journals.sagepub.com/cms/10.1177/15291006211051956/asset/images/large/10.1177_15291006211051956-fig2.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Figure 2 from @Franconeri2021-uv"><img src="https://journals.sagepub.com/cms/10.1177/15291006211051956/asset/images/large/10.1177_15291006211051956-fig2.jpeg" class="img-fluid figure-img" alt="Figure 2 from Franconeri et al. (2021)"></a></p>
+<figcaption>Figure 2 from <span class="citation" data-cites="Franconeri2021-uv">Franconeri et al. (<a href="#ref-Franconeri2021-uv" role="doc-biblioref">2021</a>)</span></figcaption>
+</figure>
+</div>
+</section>
+<section id="hard-to-map-without-distortion" class="level2">
+<h2 class="anchored" data-anchor-id="hard-to-map-without-distortion">Hard to map without distortion</h2>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://journals.sagepub.com/cms/10.1177/15291006211051956/asset/images/large/10.1177_15291006211051956-fig3.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Figure 3 from @Franconeri2021-uv"><img src="https://journals.sagepub.com/cms/10.1177/15291006211051956/asset/images/large/10.1177_15291006211051956-fig3.jpeg" class="img-fluid figure-img" alt="Figure 3 from Franconeri et al. (2021)"></a></p>
+<figcaption>Figure 3 from <span class="citation" data-cites="Franconeri2021-uv">Franconeri et al. (<a href="#ref-Franconeri2021-uv" role="doc-biblioref">2021</a>)</span></figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/oh-sen-01-bill.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="https://www.wcpo.com/news/state/state-ohio/ohio-senate-bans-diversity-initiatives-polices-topics-taught-in-name-of-free-speech-on-college-campuses"><img src="../include/img/oh-sen-01-bill.png" class="img-fluid figure-img" alt="https://www.wcpo.com/news/state/state-ohio/ohio-senate-bans-diversity-initiatives-polices-topics-taught-in-name-of-free-speech-on-college-campuses"></a></p>
+<figcaption><a href="https://www.wcpo.com/news/state/state-ohio/ohio-senate-bans-diversity-initiatives-polices-topics-taught-in-name-of-free-speech-on-college-campuses" class="uri">https://www.wcpo.com/news/state/state-ohio/ohio-senate-bans-diversity-initiatives-polices-topics-taught-in-name-of-free-speech-on-college-campuses</a></figcaption>
+</figure>
+</div>
+</section>
+<section id="debate-is-the-american-way" class="level2">
+<h2 class="anchored" data-anchor-id="debate-is-the-american-way"><em>Debate</em> is the American way</h2>
+</section>
+<section id="debate-is-the-scholarly-way" class="level2">
+<h2 class="anchored" data-anchor-id="debate-is-the-scholarly-way"><em>Debate</em> is the scholarly way</h2>
+<ul>
+<li>Show me the data!</li>
+<li>Evidence + <em>logical</em> argument</li>
+<li>Plus rigorous self-criticism</li>
+</ul>
+</section>
+<section id="scientific-norms-merton1973-vf" class="level2">
+<h2 class="anchored" data-anchor-id="scientific-norms-merton1973-vf">Scientific norms <span class="citation" data-cites="Merton1973-vf">(<a href="#ref-Merton1973-vf" role="doc-biblioref">Merton, 1973</a>)</span></h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div class="incremental">
+<ul class="incremental">
+<li>Communalism (common ownership)</li>
+<li>Universalism (independent validity)</li>
+<li>Disinterestedness (public benefit)</li>
+<li>Organized skepticism (scrutinize everything)</li>
+</ul>
+</div>
+</div><div class="column" style="width:40%;">
+<p><a href="https://upload.wikimedia.org/wikipedia/en/0/08/Robert_K_Merton.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="https://upload.wikimedia.org/wikipedia/en/0/08/Robert_K_Merton.jpg" class="img-fluid"></a></p>
+</div>
+</div>
+</section>
+<section id="merton1973-vf" class="level2">
+<h2 class="anchored" data-anchor-id="merton1973-vf"><span class="citation" data-cites="Merton1973-vf">Merton (<a href="#ref-Merton1973-vf" role="doc-biblioref">1973</a>)</span></h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<blockquote class="blockquote">
+<p>The mores of science possess a methodologic rationale…They are procedurally efficent…</p>
+</blockquote>
+</div><div class="column" style="width:40%;">
+<p><a href="https://upload.wikimedia.org/wikipedia/en/0/08/Robert_K_Merton.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="https://upload.wikimedia.org/wikipedia/en/0/08/Robert_K_Merton.jpg" class="img-fluid"></a></p>
+</div>
+</div>
+<hr>
+<p><a href="../include/img/databrary-nav.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="../include/img/databrary-nav.svg" class="img-fluid"></a></p>
+<section id="discover-more-faster" class="level3">
+<h3 class="anchored" data-anchor-id="discover-more-faster">Discover more, faster…</h3>
+<hr>
+</section>
+</section>
+<section id="feynman1974-ld" class="level2">
+<h2 class="anchored" data-anchor-id="feynman1974-ld"><span class="citation" data-cites="Feynman1974-ld">Feynman (<a href="#ref-Feynman1974-ld" role="doc-biblioref">1974</a>)</span></h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<blockquote class="blockquote">
+<p>“The first principle is that <strong>you must not fool yourself—and you are the easiest person to fool</strong>. So you have to be very careful about that…”</p>
+</blockquote>
+</div><div class="column" style="width:40%;">
+<p><a href="../include/img/Richard_Feynman_Nobel.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="../include/img/Richard_Feynman_Nobel.jpg" class="img-fluid"></a></p>
+</div>
+</div>
+<hr>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmtzMDZ2dnlxMG4wMzIwNTZ1d2llNHRhcGZ0dTk1bzA3NWtxb2IxMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JsUC9rI0VfyHi93MBU/giphy.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-18" title="https://giphy.com"><img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmtzMDZ2dnlxMG4wMzIwNTZ1d2llNHRhcGZ0dTk1bzA3NWtxb2IxMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JsUC9rI0VfyHi93MBU/giphy.gif" class="img-fluid figure-img" alt="https://giphy.com"></a></p>
+<figcaption>https://giphy.com</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzBucWk0dGd6OWUwZDZvcXg2MHNtMmNnZW9zeXI0aXIzMjZobDN1ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l46CwsAIlmnXlRC9O/giphy.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-19" title="https://giphy.com"><img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzBucWk0dGd6OWUwZDZvcXg2MHNtMmNnZW9zeXI0aXIzMjZobDN1ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l46CwsAIlmnXlRC9O/giphy.gif" class="img-fluid figure-img" alt="https://giphy.com"></a></p>
+<figcaption>https://giphy.com</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/graph_carbondioxide.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20" title="@Lindsey2024-ob"><img src="../include/img/graph_carbondioxide.png" class="img-fluid figure-img" alt="Lindsey (2024)"></a></p>
+<figcaption><span class="citation" data-cites="Lindsey2024-ob">Lindsey (<a href="#ref-Lindsey2024-ob" role="doc-biblioref">2024</a>)</span></figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/CO2_emissions_vs_concentrations_1751-2022.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21" title="@Lindsey2024-ob"><img src="../include/img/CO2_emissions_vs_concentrations_1751-2022.png" class="img-fluid figure-img" alt="Lindsey (2024)"></a></p>
+<figcaption><span class="citation" data-cites="Lindsey2024-ob">Lindsey (<a href="#ref-Lindsey2024-ob" role="doc-biblioref">2024</a>)</span></figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/ClimateDashboard-atmospheric-carbon-dioxide-image-paleo-20240405-1400px.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22" title="@Lindsey2024-ob"><img src="../include/img/ClimateDashboard-atmospheric-carbon-dioxide-image-paleo-20240405-1400px.png" class="img-fluid figure-img" alt="Lindsey (2024)"></a></p>
+<figcaption><span class="citation" data-cites="Lindsey2024-ob">Lindsey (<a href="#ref-Lindsey2024-ob" role="doc-biblioref">2024</a>)</span></figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/IPCC_AR6_WGI_TS-CO21950-2100.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-23" title="@Lindsey2024-ob"><img src="../include/img/IPCC_AR6_WGI_TS-CO21950-2100.gif" class="img-fluid figure-img" alt="Lindsey (2024)"></a></p>
+<figcaption><span class="citation" data-cites="Lindsey2024-ob">Lindsey (<a href="#ref-Lindsey2024-ob" role="doc-biblioref">2024</a>)</span></figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://factsonclimate.org/assets/generated/concentration-warming-relationship_1920.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img src="https://factsonclimate.org/assets/generated/concentration-warming-relationship_1920.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
+</figure>
+</div>
+<p><a href="https://factsonclimate.org/infographics/concentration-warming-relationship" target="_blank">How are CO₂ concentrations related to warming?</a> infographic by <a href="https://factsonclimate.org" target="_blank">Fakta o klimatu</a>, licensed under <a href="https://creativecommons.org/licenses/by/4.0/deed" target="_blank">CC BY 4.0</a>.</p>
+</section>
+<section id="the-u.s.-is-only-one-country" class="level2">
+<h2 class="anchored" data-anchor-id="the-u.s.-is-only-one-country">The U.S. is only <em>one</em> country</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/accuweather-coldest-jan-us-since-1988.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25" title="@Ferrell2025-il"><img src="../include/img/accuweather-coldest-jan-us-since-1988.png" class="img-fluid figure-img" alt="Ferrell (2025)"></a></p>
+<figcaption><span class="citation" data-cites="Ferrell2025-il">Ferrell (<a href="#ref-Ferrell2025-il" role="doc-biblioref">2025</a>)</span></figcaption>
+</figure>
+</div>
+</section>
+<section id="section" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="section"></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/accuweather-warmest-elsewhere.png" class="lightbox" data-gallery="quarto-lightbox-gallery-26" title="@Ferrell2025-il"><img src="../include/img/accuweather-warmest-elsewhere.png" class="img-fluid figure-img" alt="Ferrell (2025)"></a></p>
+<figcaption><span class="citation" data-cites="Ferrell2025-il">Ferrell (<a href="#ref-Ferrell2025-il" role="doc-biblioref">2025</a>)</span></figcaption>
+</figure>
+</div>
+</section>
+<section id="co_2-emissions-per-capita-by-rich-countries" class="level2">
+<h2 class="anchored" data-anchor-id="co_2-emissions-per-capita-by-rich-countries"><span class="math inline">\(CO_2\)</span> emissions (per capita) by rich countries</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/fig-co2-emissions-1970-2023-big-economies-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-27" title="https://rick-gilmore.com/posts/data-stories-climate-change/"><img src="../include/img/fig-co2-emissions-1970-2023-big-economies-1.png" class="img-fluid figure-img" alt="https://rick-gilmore.com/posts/data-stories-climate-change/"></a></p>
+<figcaption>https://rick-gilmore.com/posts/data-stories-climate-change/</figcaption>
+</figure>
+</div>
+</section>
+<section id="co_2-emissions-per-gdp-by-rich-countries" class="level2">
+<h2 class="anchored" data-anchor-id="co_2-emissions-per-gdp-by-rich-countries"><span class="math inline">\(CO_2\)</span> emissions (per GDP) by rich countries</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../include/img/fig-co2-emissions-gdp-1970-2023-big-economies-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28" title="https://rick-gilmore.com/posts/data-stories-climate-change-II/"><img src="../include/img/fig-co2-emissions-gdp-1970-2023-big-economies-1.png" class="img-fluid figure-img" alt="https://rick-gilmore.com/posts/data-stories-climate-change-II/"></a></p>
+<figcaption>https://rick-gilmore.com/posts/data-stories-climate-change-II/</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="final-project-check-in" class="level1">
+<h1>Final project check-in</h1>
+</section>
+<section id="next-time" class="level1">
+<h1>Next time</h1>
+<p><em>Designing efficient &amp; understandable visualizations</em></p>
+</section>
+<section id="resources" class="level1">
+<h1>Resources</h1>
+<section id="references" class="level2">
+
+
+
+<!-- -->
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Cairo2013-hm" class="csl-entry" role="listitem">
+Cairo, A. (2013). <em>The functional art: An introduction to information graphics and visualization</em>. Upper Saddle River, N: New Riders Publishing.
+</div>
+<div id="ref-Ferrell2025-il" class="csl-entry" role="listitem">
+Ferrell, J. (2025, February 10). January was coldest in <span>U</span>.<span>S</span>. Since 1988 but globe was warmest ever. Retrieved February 17, 2025, from <a href="https://www.accuweather.com/en/climate/january-was-coldest-in-u-s-since-1988-but-globe-was-warmest-ever/1743438">https://www.accuweather.com/en/climate/january-was-coldest-in-u-s-since-1988-but-globe-was-warmest-ever/1743438</a>
+</div>
+<div id="ref-Feynman1974-ld" class="csl-entry" role="listitem">
+Feynman, R. P. (1974). Cargo cult science. Retrieved from <a href="https://calteches.library.caltech.edu/51/2/CargoCult.htm">https://calteches.library.caltech.edu/51/2/CargoCult.htm</a>
+</div>
+<div id="ref-Franconeri2021-uv" class="csl-entry" role="listitem">
+Franconeri, S. L., Padilla, L. M., Shah, P., Zacks, J. M., &amp; Hullman, J. (2021). The science of visual data communication: What works. <em>Psychological Science in the Public Interest: A Journal of the American Psychological Society</em>, <em>22</em>(3), 110–161. <a href="https://doi.org/10.1177/15291006211051956">https://doi.org/10.1177/15291006211051956</a>
+</div>
+<div id="ref-Lindsey2024-ob" class="csl-entry" role="listitem">
+Lindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from <a href="http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide">http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide</a>
+</div>
+<div id="ref-Matejka2017-xi" class="csl-entry" role="listitem">
+Matejka, J., &amp; Fitzmaurice, G. (2017). Same stats, different graphs: Generating datasets with varied appearance and identical statistics through simulated annealing. In <em>Proceedings of the 2017 CHI conference on human factors in computing systems</em>. New York, NY, USA: ACM. <a href="https://doi.org/10.1145/3025453.3025912">https://doi.org/10.1145/3025453.3025912</a>
+</div>
+<div id="ref-Merton1973-vf" class="csl-entry" role="listitem">
+Merton, R. W. (1973). The normative structure of science. In R. K. Merton &amp; N. W. Storer (Eds.), <em>The <span>S</span>ociology of <span>S</span>cience: <span>T</span>heoretical and <span>E</span>mpirical <span>I</span>nvestigations</em> (pp. 267–278). The University of Chicago Press.
+</div>
+<div id="ref-datasaurus2019-us" class="csl-entry" role="listitem">
+The <span>D</span>atasaurus dozen - same stats, different graphs | <span>A</span>utodesk <span>R</span>esearch. (n.d.). Retrieved June 2, 2019, from <a href="https://www.autodeskresearch.com/publications/samestats">https://www.autodeskresearch.com/publications/samestats</a>
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "From cognition to understanding"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "2025-02-17"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu"># Overview</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Announcements</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Assigned</span><span class="co">]</span>{.green_assigned} today: <span class="co">[</span><span class="ot">Final Project</span><span class="co">](../exercises/final-project.qmd)</span> proposal</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">## Last time...</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Pre-attentive vs. attentive vision</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Gestalt principles</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span><span class="co">[</span><span class="ot">Your findings</span><span class="co">](../supplemental/gestalt-in-the-wild.qmd)</span> </span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">## Today</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>From specifc to general; concrete to abstract</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The comparing brain</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## From specific to general</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="al">![Figure 7.3 from @Cairo2013-hm](../include/img/cairo-fig-7.3.png)</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## Bottom-up and top-down</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="al">![Figure 7.5 from @Cairo2013-hm](../include/img/cairo-fig-7.5.png)</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="al">![Figure 7.6 from @Cairo2013-hm](../include/img/cairo-fig-7.6.png)</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="al">![](http://www.methodquarterly.com/wp-content/uploads/2014/09/dalmation1.jpg)</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## How large is the memory bank?</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="al">![Figure 7.8 from @Cairo2013-hm](../include/img/cairo-fig-7.8.png)</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## When less detail &gt; more</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="al">![Figure 7.11 from @Cairo2013-hm](../include/img/cairo-fig-7.11.png)</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="fu">## Abstraction to the rescue</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="al">![Figure 7.7 from @Cairo2013-hm](../include/img/cairo-fig-7.7.png)</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="fu">## Some parts &gt; others</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="al">![Figure 7.9 from @Cairo2013-hm](../include/img/cairo-fig-7.9.png)</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="fu">## Back to visualizations </span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>@Franconeri2021-uv</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"Visualizations let viewers see beyond summary statistics"</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="al">![@datasaurus2019-us; @Matejka2017-xi](https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif)</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="al">![@datasaurus2019-us; @Matejka2017-xi](https://www.research.autodesk.com/app/uploads/2024/09/BoxViolinSmaller.gif)</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="fu">## @Franconeri2021-uv</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>"Visual channels translate numbers into images"</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="al">![Figure 2 from @Franconeri2021-uv](https://journals.sagepub.com/cms/10.1177/15291006211051956/asset/images/large/10.1177_15291006211051956-fig2.jpeg)</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hard to map without distortion</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="al">![Figure 3 from @Franconeri2021-uv](https://journals.sagepub.com/cms/10.1177/15291006211051956/asset/images/large/10.1177_15291006211051956-fig3.jpeg)</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="al">![&lt;https://www.wcpo.com/news/state/state-ohio/ohio-senate-bans-diversity-initiatives-polices-topics-taught-in-name-of-free-speech-on-college-campuses&gt;](../include/img/oh-sen-01-bill.png)</span></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="fu">## *Debate* is the American way</span></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="fu">## *Debate* is the scholarly way</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Show me the data!</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Evidence + *logical* argument</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Plus rigorous self-criticism</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>{{&lt; include _merton.qmd &gt;}}</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="al">![](../include/img/databrary-nav.svg)</span></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="fu">### Discover more, faster...</span></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>{{&lt; include _feynmann.qmd &gt;}}</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>::: {.column width=50%}</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="al">![https://giphy.com](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmtzMDZ2dnlxMG4wMzIwNTZ1d2llNHRhcGZ0dTk1bzA3NWtxb2IxMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JsUC9rI0VfyHi93MBU/giphy.gif)</span></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>::: {.column width=50%}</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="al">![https://giphy.com](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzBucWk0dGd6OWUwZDZvcXg2MHNtMmNnZW9zeXI0aXIzMjZobDN1ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l46CwsAIlmnXlRC9O/giphy.gif)</span></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="al">![@Lindsey2024-ob](../include/img/graph_carbondioxide.png)</span></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="al">![@Lindsey2024-ob](../include/img/CO2_emissions_vs_concentrations_1751-2022.png)</span></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="al">![@Lindsey2024-ob](../include/img/ClimateDashboard-atmospheric-carbon-dioxide-image-paleo-20240405-1400px.png)</span></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="al">![@Lindsey2024-ob](../include/img/IPCC_AR6_WGI_TS-CO21950-2100.gif)</span></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://factsonclimate.org/assets/generated/concentration-warming-relationship_1920.png)</span>{fig-align="center"}</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>&lt;a href="https://factsonclimate.org/infographics/concentration-warming-relationship" target="_blank"&gt;How are CO₂ concentrations related to warming?&lt;/a&gt; infographic by &lt;a href="https://factsonclimate.org" target="_blank"&gt;Fakta o klimatu&lt;/a&gt;, licensed under &lt;a href="https://creativecommons.org/licenses/by/4.0/deed" target="_blank"&gt;CC BY 4.0&lt;/a&gt;.</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="fu">## The U.S. is only *one* country</span></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a><span class="al">![@Ferrell2025-il](../include/img/accuweather-coldest-jan-us-since-1988.png)</span></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="fu">## {.scrollable}</span></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="al">![@Ferrell2025-il](../include/img/accuweather-warmest-elsewhere.png)</span></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="fu">## $CO_2$ emissions (per capita) by rich countries</span></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="al">![https://rick-gilmore.com/posts/data-stories-climate-change/](../include/img/fig-co2-emissions-1970-2023-big-economies-1.png)</span></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="fu">## $CO_2$ emissions (per GDP) by rich countries</span></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="al">![https://rick-gilmore.com/posts/data-stories-climate-change-II/](../include/img/fig-co2-emissions-gdp-1970-2023-big-economies-1.png)</span></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="fu"># Final project check-in</span></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="fu"># Next time</span></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>*Designing efficient &amp; understandable visualizations*</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="fu"># Resources</span></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright © 2025- Rick Gilmore</p>
+</div>   
+    <div class="nav-footer-center">
+<p>Built with <a href="https://quarto.org/">Quarto</a></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/edit/main/src/slides/CopyOfwk06-2025-02-18-cognition-to-understanding.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/psu-psychology/psych-490-data-viz-2025-spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rogilmore">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

@@ -9,7 +9,7 @@ params:
 
 ## About
 
-This page extracts information about illustrations of Gesltalt principles that students found as part of their work on  [2025-02-13](../slides/wk05-2025-02-13-sensation-to-perception.qmd). Data are pulled  from the shared Google Sheet.
+This page extracts information about illustrations of Gestalt principles that students found as part of their work on  [2025-02-13](../slides/wk05-2025-02-13-sensation-to-perception.qmd). Data are pulled  from the shared Google Sheet.
 
 ## Data
 

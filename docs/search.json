@@ -872,7 +872,7 @@
     "href": "schedule.html#week-08",
     "title": "Schedule",
     "section": "March 3-7",
-    "text": "March 3-7\n\nTuesday, March 04\nCritiquing figures\n\nRead:\n\nTufte (2001), Chapter 1, PDF on Canvas\nTufte (2001), Chapter 2, PDF on Canvas\n\nDue: Final Project proposal\n\n\n\nThursday, March 06\n\nExploring data\n\nRead: Tukey (1977), Chapter 1, PDF on Canvas\nDue: Exercise-04\nAssigned: Exercise-05"
+    "text": "March 3-7\n\nTuesday, March 04\nCritiquing figures\n\nRead:\n\nTufte (2001), Chapter 1, PDF on Canvas\nTufte (2001), Chapter 2, PDF on Canvas\n\n\n\n\nThursday, March 06\n\nExploring data\n\nRead: Tukey (1977), Chapter 1, PDF on Canvas\nDue: Exercise-04\nAssigned: Exercise-05\nDue: Final Project proposal"
   },
   {
     "objectID": "schedule.html#spring-break",
@@ -1831,35 +1831,35 @@
     "href": "exercises/ex04-sci-of-data-viz.html",
     "title": "Exercise 04",
     "section": "",
-    "text": "Work in progress\n\n\n\nThis page is under construction."
+    "text": "In-class work on Thursday, February 20 and Tuesday, February 25.\nSubmit write-up for credit due by Thursday, March 6."
   },
   {
     "objectID": "exercises/ex04-sci-of-data-viz.html#dates",
     "href": "exercises/ex04-sci-of-data-viz.html#dates",
     "title": "Exercise 04",
-    "section": "Dates",
-    "text": "Dates"
+    "section": "",
+    "text": "In-class work on Thursday, February 20 and Tuesday, February 25.\nSubmit write-up for credit due by Thursday, March 6."
   },
   {
     "objectID": "exercises/ex04-sci-of-data-viz.html#goals",
     "href": "exercises/ex04-sci-of-data-viz.html#goals",
     "title": "Exercise 04",
     "section": "Goals",
-    "text": "Goals"
+    "text": "Goals\n\nRead a scientific study about data visualization.\nEvaluate the study’s findings and its implications for the design of data visualizations."
   },
   {
     "objectID": "exercises/ex04-sci-of-data-viz.html#assignment",
     "href": "exercises/ex04-sci-of-data-viz.html#assignment",
     "title": "Exercise 04",
     "section": "Assignment",
-    "text": "Assignment"
+    "text": "Assignment\n\nChoose a primary source reference that is an empirical study about data visualization. For example, Cleveland & McGill (1984) or a more recent paper that cites it, one of the papers cited by Franconeri, Padilla, Shah, Zacks, & Hullman (2021), or a paper you find on your own.\nDescribe the paper’s principal goals, methods, and findings. What are the study’s weaknesses? Does the study contain data visualizations? How well do the visualizations follow best practices in data visualization design? What practical impact do the study findings have for researchers making data visualizations?"
   },
   {
     "objectID": "exercises/ex04-sci-of-data-viz.html#submit",
     "href": "exercises/ex04-sci-of-data-viz.html#submit",
     "title": "Exercise 04",
     "section": "Submit",
-    "text": "Submit"
+    "text": "Submit\n\nA 2-3 page write-up in APA format.\n\nMake sure to write a complete essay. See the feedback for Exercise 01 for other hints about how to improve your submission.\n\n\n\n\n\n\nAPA template\n\n\n\nThis template document may be helpful."
   },
   {
     "objectID": "exercises/ex06-figs-w-r.html",
@@ -1873,21 +1873,21 @@
     "href": "exercises/final-project.html",
     "title": "Final Project",
     "section": "",
-    "text": "Work in progress\n\n\n\nThis page is under construction."
+    "text": "Your final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.\nYou may work alone or with up to two other students in the class. If you work with others, you will need to complete a statement about who did what, and all of the members of your team will get the same grade."
   },
   {
     "objectID": "exercises/final-project.html#background",
     "href": "exercises/final-project.html#background",
     "title": "Final Project",
-    "section": "Background",
-    "text": "Background\nYour final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.\nYou may work alone or with up to two other students in the class. If you work with others, you will need to complete a statement about who did what, and all of the members of your team will get the same grade."
+    "section": "",
+    "text": "Your final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.\nYou may work alone or with up to two other students in the class. If you work with others, you will need to complete a statement about who did what, and all of the members of your team will get the same grade."
   },
   {
     "objectID": "exercises/final-project.html#dates",
     "href": "exercises/final-project.html#dates",
     "title": "Final Project",
     "section": "Dates",
-    "text": "Dates\n\nProposal assigned Tuesday, February 18\nFinal project survey due Tuesday, April 08\nFinal write-up due Tuesday, May 05"
+    "text": "Dates\n\nProposal assigned Tuesday, February 18\nProposal due Thursday, March 6, 2026\nFinal project survey due Tuesday, April 08\nFinal write-up due Tuesday, May 05"
   },
   {
     "objectID": "exercises/final-project.html#topics",
@@ -1901,14 +1901,14 @@
     "href": "exercises/final-project.html#formats",
     "title": "Final Project",
     "section": "Formats",
-    "text": "Formats\nThere are multiple formats for your final project.\n\nShort (5-10 min) in-class talk\nPoster\nLesson plan/exercise\nTutorial\nResearch project (& write-up)\nOpinion piece"
+    "text": "Formats\nThere are multiple formats for your final project. Choose one of them.\n\nShort (5-10 min) in-class talk\nPoster\nLesson plan/exercise\nTutorial\nResearch project (& write-up)\nOpinion piece"
   },
   {
     "objectID": "exercises/final-project.html#components",
     "href": "exercises/final-project.html#components",
     "title": "Final Project",
     "section": "Components",
-    "text": "Components\n\nProject proposal\n\nEvery student or team must submit a one-page single-spaced project proposal. Your proposal should state the aim or objective of your project, the format, and a include a brief description of how you intend to go about achieving your objectives.\n\n\n\nProject presentation\n\nEvery student or team may make an optional presentation to the class about their project. Please indicate whether you are willing to make a presentation when you complete the survey.\nNote: Giving a presentation is worth 5 extra credit points.\nThe presentations will occur during class on December 6, 9, and 11.\nIf you wish to have your presentation made available publicly on the course website, please let me know. This is also completely optional.\n\n\n\nProject write-up\n\nEvery student or team must submit a write-up, due during finals week on Tuesday, May 05.\nDepending on the format of the project (talk, poster, paper), different written materials may be submitted (slides, poster, etc.).\nFor an in-class talk, submit a separate document with your talk text or notes and your slides. You may also submit slides that include presenter notes embedded within them.\nFor a poster, submit a PowerPoint or PDF of your poster along with any talking points.\n\nRubic: An example of potential grading template we may use: https://commons.erau.edu/db-srs/poster-scoring-rubric.pdf\nArticle: How to make a good scientific poster https://www.nature.com/articles/nj7614-115a\nTutorial video: how to make a poster https://www.youtube.com/watch?v=EL5YwkiqBho&ab_channel=SamHertig\nOther basics: https://guides.libraries.psu.edu/posters\n\nFor research paper, please submit an APA-formatted manuscript 1,500-2,000 words in length.\nFor an opinion piece, please submit a document up to 1,500 words in length.\nFor an interactive website or presentation, please submit a complete set of files needed to evaluate your website or presentation.\nFor a lesson plan, please submit a document up up to 1,500 words in length."
+    "text": "Components\n\nProject proposal\n\nEvery student or team must submit a one-page single-spaced project proposal. Your proposal should state the aim or objective of your project, the format, and a include a brief description of how you intend to go about achieving your objectives.\n\nThe proposal is due on Thursday, March 6.\n\n\nProject presentation\n\nEvery student or team may make an optional presentation to the class about their project. Please indicate whether you are willing to make a presentation when you complete the survey.\nNote: Giving a presentation is worth 5 extra credit points.\nThe presentations will occur during class on December 6, 9, and 11.\nIf you wish to have your presentation made available publicly on the course website, please let me know. This is also completely optional.\n\n\n\nProject write-up\n\nEvery student or team must submit a write-up, due during finals week on Tuesday, May 05.\nDepending on the format of the project (talk, poster, paper), different written materials may be submitted (slides, poster, etc.).\nFor an in-class talk, submit a separate document with your talk text or notes and your slides. You may also submit slides that include presenter notes embedded within them.\nFor a poster, submit a PowerPoint or PDF of your poster along with any talking points.\n\nRubic: An example of potential grading template we may use: https://commons.erau.edu/db-srs/poster-scoring-rubric.pdf\nArticle: How to make a good scientific poster https://www.nature.com/articles/nj7614-115a\nTutorial video: how to make a poster https://www.youtube.com/watch?v=EL5YwkiqBho&ab_channel=SamHertig\nOther basics: https://guides.libraries.psu.edu/posters\n\nFor research paper, please submit an APA-formatted manuscript 1,500-2,000 words in length.\nFor an opinion piece, please submit a document up to 1,500 words in length.\nFor an interactive website or presentation, please submit a complete set of files needed to evaluate your website or presentation.\nFor a lesson plan, please submit a document up up to 1,500 words in length."
   },
   {
     "objectID": "exercises/final-project.html#survey",
@@ -2965,14 +2965,14 @@
     "href": "supplemental/gestalt-in-the-wild.html",
     "title": "Gestalt in the wild",
     "section": "",
-    "text": "This page extracts information about illustrations of Gesltalt principles that students found as part of their work on 2025-02-13. Data are pulled from the shared Google Sheet."
+    "text": "This page extracts information about illustrations of Gestalt principles that students found as part of their work on 2025-02-13. Data are pulled from the shared Google Sheet."
   },
   {
     "objectID": "supplemental/gestalt-in-the-wild.html#about",
     "href": "supplemental/gestalt-in-the-wild.html#about",
     "title": "Gestalt in the wild",
     "section": "",
-    "text": "This page extracts information about illustrations of Gesltalt principles that students found as part of their work on 2025-02-13. Data are pulled from the shared Google Sheet."
+    "text": "This page extracts information about illustrations of Gestalt principles that students found as part of their work on 2025-02-13. Data are pulled from the shared Google Sheet."
   },
   {
     "objectID": "supplemental/gestalt-in-the-wild.html#data",
@@ -3351,5 +3351,257 @@
     "title": "From cognition to understanding",
     "section": "The U.S. is only one country",
     "text": "The U.S. is only one country\n\nFerrell (2025)"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "Assigned today: Final Project proposal\n\n\n\n\n\nPre-attentive vs. attentive vision\nGestalt principles\n\nYour findings\n\n\n\n\n\n\nFrom specifc to general; concrete to abstract\nThe comparing brain\n\n\n\n\n\n\n\nFigure 7.3 from Cairo (2013)\n\n\n\n\n\n\n\n\nFigure 7.5 from Cairo (2013)\n\n\n\n\n\n\nFigure 7.6 from Cairo (2013)\n\n\n\n\n\n\n\n\n\n\nFigure 7.8 from Cairo (2013)\n\n\n\n\n\n\n\n\nFigure 7.11 from Cairo (2013)\n\n\n\n\n\n\n\n\nFigure 7.7 from Cairo (2013)\n\n\n\n\n\n\n\n\nFigure 7.9 from Cairo (2013)\n\n\n\n\n\n\nFranconeri, Padilla, Shah, Zacks, & Hullman (2021)\n“Visualizations let viewers see beyond summary statistics”\n\n\n\n\n\n“The Datasaurus dozen - same stats, different graphs | Autodesk Research” (n.d.); Matejka & Fitzmaurice (2017)\n\n\n\n\n\n\n“The Datasaurus dozen - same stats, different graphs | Autodesk Research” (n.d.); Matejka & Fitzmaurice (2017)\n\n\n\n\n\n\n“Visual channels translate numbers into images”\n\n\n\n\n\nFigure 2 from Franconeri et al. (2021)\n\n\n\n\n\n\n\n\n\nFigure 3 from Franconeri et al. (2021)\n\n\n\n\n\n\nhttps://www.wcpo.com/news/state/state-ohio/ohio-senate-bans-diversity-initiatives-polices-topics-taught-in-name-of-free-speech-on-college-campuses\n\n\n\n\n\n\n\n\n\nShow me the data!\nEvidence + logical argument\nPlus rigorous self-criticism\n\n\n\n\n\n\n\n\nCommunalism (common ownership)\nUniversalism (independent validity)\nDisinterestedness (public benefit)\nOrganized skepticism (scrutinize everything)\n\n\n\n\n\n\n\n\n\n\n\n\nThe mores of science possess a methodologic rationale…They are procedurally efficent…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n“The first principle is that you must not fool yourself—and you are the easiest person to fool. So you have to be very careful about that…”\n\n\n\n\n\n\n\n\n\n\n\nhttps://giphy.com\n\n\n\n\n\n\nhttps://giphy.com\n\n\n\n\n\n\n\n\nLindsey (2024)\n\n\n\n\n\n\nLindsey (2024)\n\n\n\n\n\n\nLindsey (2024)\n\n\n\n\n\n\nLindsey (2024)\n\n\n\n\n\n\n\n\nHow are CO₂ concentrations related to warming? infographic by Fakta o klimatu, licensed under CC BY 4.0.\n\n\n\n\n\n\nFerrell (2025)\n\n\n\n\n\n\n\n\nFerrell (2025)\n\n\n\n\n\n\n\n\nhttps://rick-gilmore.com/posts/data-stories-climate-change/\n\n\n\n\n\n\n\n\nhttps://rick-gilmore.com/posts/data-stories-climate-change-II/"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#announcements",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#announcements",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "Assigned today: Final Project proposal"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#last-time",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#last-time",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "Pre-attentive vs. attentive vision\nGestalt principles\n\nYour findings"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#today",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#today",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "From specifc to general; concrete to abstract\nThe comparing brain"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#from-specific-to-general",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#from-specific-to-general",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "Figure 7.3 from Cairo (2013)"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#bottom-up-and-top-down",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#bottom-up-and-top-down",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "Figure 7.5 from Cairo (2013)\n\n\n\n\n\n\nFigure 7.6 from Cairo (2013)"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#how-large-is-the-memory-bank",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#how-large-is-the-memory-bank",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "Figure 7.8 from Cairo (2013)"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#when-less-detail-more",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#when-less-detail-more",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "Figure 7.11 from Cairo (2013)"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#abstraction-to-the-rescue",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#abstraction-to-the-rescue",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "Figure 7.7 from Cairo (2013)"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#some-parts-others",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#some-parts-others",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "Figure 7.9 from Cairo (2013)"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#back-to-visualizations",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#back-to-visualizations",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "Franconeri, Padilla, Shah, Zacks, & Hullman (2021)\n“Visualizations let viewers see beyond summary statistics”\n\n\n\n\n\n“The Datasaurus dozen - same stats, different graphs | Autodesk Research” (n.d.); Matejka & Fitzmaurice (2017)\n\n\n\n\n\n\n“The Datasaurus dozen - same stats, different graphs | Autodesk Research” (n.d.); Matejka & Fitzmaurice (2017)"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#franconeri2021-uv",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#franconeri2021-uv",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "“Visual channels translate numbers into images”\n\n\n\n\n\nFigure 2 from Franconeri et al. (2021)"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#hard-to-map-without-distortion",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#hard-to-map-without-distortion",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "Figure 3 from Franconeri et al. (2021)\n\n\n\n\n\n\nhttps://www.wcpo.com/news/state/state-ohio/ohio-senate-bans-diversity-initiatives-polices-topics-taught-in-name-of-free-speech-on-college-campuses"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#debate-is-the-scholarly-way",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#debate-is-the-scholarly-way",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "Show me the data!\nEvidence + logical argument\nPlus rigorous self-criticism"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#scientific-norms-merton1973-vf",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#scientific-norms-merton1973-vf",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "Communalism (common ownership)\nUniversalism (independent validity)\nDisinterestedness (public benefit)\nOrganized skepticism (scrutinize everything)"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#merton1973-vf",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#merton1973-vf",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "The mores of science possess a methodologic rationale…They are procedurally efficent…"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#feynman1974-ld",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#feynman1974-ld",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "“The first principle is that you must not fool yourself—and you are the easiest person to fool. So you have to be very careful about that…”\n\n\n\n\n\n\n\n\n\n\n\nhttps://giphy.com\n\n\n\n\n\n\nhttps://giphy.com\n\n\n\n\n\n\n\n\nLindsey (2024)\n\n\n\n\n\n\nLindsey (2024)\n\n\n\n\n\n\nLindsey (2024)\n\n\n\n\n\n\nLindsey (2024)\n\n\n\n\n\n\n\n\nHow are CO₂ concentrations related to warming? infographic by Fakta o klimatu, licensed under CC BY 4.0."
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#the-u.s.-is-only-one-country",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#the-u.s.-is-only-one-country",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "Ferrell (2025)"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#section",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#section",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "Ferrell (2025)"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#co_2-emissions-per-capita-by-rich-countries",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#co_2-emissions-per-capita-by-rich-countries",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "https://rick-gilmore.com/posts/data-stories-climate-change/"
+  },
+  {
+    "objectID": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#co_2-emissions-per-gdp-by-rich-countries",
+    "href": "slides/CopyOfwk06-2025-02-18-cognition-to-understanding.html#co_2-emissions-per-gdp-by-rich-countries",
+    "title": "From cognition to understanding",
+    "section": "",
+    "text": "https://rick-gilmore.com/posts/data-stories-climate-change-II/"
+  },
+  {
+    "objectID": "slides/wk06-2025-02-20-designing-viz.html#announcements",
+    "href": "slides/wk06-2025-02-20-designing-viz.html#announcements",
+    "title": "Designing efficient & understandable visualizations",
+    "section": "Announcements",
+    "text": "Announcements\n\nAssigned: Final Project proposal"
+  },
+  {
+    "objectID": "slides/wk06-2025-02-20-designing-viz.html#in-the-news",
+    "href": "slides/wk06-2025-02-20-designing-viz.html#in-the-news",
+    "title": "Designing efficient & understandable visualizations",
+    "section": "In the news…",
+    "text": "In the news…"
+  },
+  {
+    "objectID": "slides/wk06-2025-02-20-designing-viz.html#possible-final-project-topic",
+    "href": "slides/wk06-2025-02-20-designing-viz.html#possible-final-project-topic",
+    "title": "Designing efficient & understandable visualizations",
+    "section": "Possible final project topic",
+    "text": "Possible final project topic\n\nMany more findings & nuances than discussed here\nData are shared, see Isenberg & Brauer (2023)"
+  },
+  {
+    "objectID": "slides/wk06-2025-02-20-designing-viz.html#last-time",
+    "href": "slides/wk06-2025-02-20-designing-viz.html#last-time",
+    "title": "Designing efficient & understandable visualizations",
+    "section": "Last time…",
+    "text": "Last time…"
+  },
+  {
+    "objectID": "slides/wk06-2025-02-20-designing-viz.html#top-down-processing",
+    "href": "slides/wk06-2025-02-20-designing-viz.html#top-down-processing",
+    "title": "Designing efficient & understandable visualizations",
+    "section": "Top-down processing",
+    "text": "Top-down processing"
+  },
+  {
+    "objectID": "slides/wk06-2025-02-20-designing-viz.html#today",
+    "href": "slides/wk06-2025-02-20-designing-viz.html#today",
+    "title": "Designing efficient & understandable visualizations",
+    "section": "Today",
+    "text": "Today\n\nDesigning efficient & understandable visualizations\nFinal project check-ins"
+  },
+  {
+    "objectID": "slides/wk06-2025-02-20-designing-viz.html#section",
+    "href": "slides/wk06-2025-02-20-designing-viz.html#section",
+    "title": "Designing efficient & understandable visualizations",
+    "section": "",
+    "text": "Franconeri et al. (2021). Fig. 3. Deceptive axis manipulations across a line graph (top left) and a bar graph (top right). So, should data always be plotted relative to zero? The graph on the bottom left depicts climate change by plotting temperature data from a baseline of 0 °F, yet most would agree that graph is less informative than the version to its right, which allows the differences in temperatures to be seen. At the bottom right of the figure, a cover of The Economist from September 2019 maps the same restricted range of data to the full range of a blue-to-red color scale. The graphs at top left are inspired by Huff (1954); those at bottom left are inspired by Correll et al. (2020). The magazine cover at bottom right is reprinted, with permission, from The Economist (September 19, 2019)."
+  },
+  {
+    "objectID": "slides/wk06-2025-02-20-designing-viz.html#section-1",
+    "href": "slides/wk06-2025-02-20-designing-viz.html#section-1",
+    "title": "Designing efficient & understandable visualizations",
+    "section": "",
+    "text": "Franconeri et al. (2021). Fig. 4. A set of common visual confusions, illusions, and distortions. At upper left, the two human icons represent vastly different ratios depending on whether the data are represented by their one-dimensional heights, their two-dimensional areas, or their three-dimensional volumes. The donut graph to their right shows that three-dimensional depictions can artificially inflate data values in the two-dimensional plane. At bottom left, the same fMRI data are plotted with two color mappings. The brain image on the left produces less of a spurious categorical boundary effect, whereas the image on the right shows a common red-to-green color map that makes continuous variation appear exaggerated when it maps onto transitions from one color category to another. At center, an illusion prohibits the accurate recovery of differences between values in a line graph. At right, correlation is easier to detect from the scatterplot, but individual histograms for each dimension are easier to see when plotted separately."
+  },
+  {
+    "objectID": "slides/wk06-2025-02-20-designing-viz.html#section-2",
+    "href": "slides/wk06-2025-02-20-designing-viz.html#section-2",
+    "title": "Designing efficient & understandable visualizations",
+    "section": "",
+    "text": "Franconeri et al. (2021). Fig. 5. Three ways to encode data for two groups in a scatterplot, as seen by observers with typical color perception and those with protanopia, a form of color blindness. Protanopia was simulated in Photoshop."
+  },
+  {
+    "objectID": "slides/wk06-2025-02-20-designing-viz.html#section-3",
+    "href": "slides/wk06-2025-02-20-designing-viz.html#section-3",
+    "title": "Designing efficient & understandable visualizations",
+    "section": "",
+    "text": "Franconeri et al. (2021). Fig. 6. The standard shape set for Microsoft Excel (left) compared with a perceptually spaced set (right; inspired by Huang, 2020). Try to pick out the four instances of each shape in each display—you should find that task easier on the right side."
+  },
+  {
+    "objectID": "slides/wk06-2025-02-20-designing-viz.html#section-4",
+    "href": "slides/wk06-2025-02-20-designing-viz.html#section-4",
+    "title": "Designing efficient & understandable visualizations",
+    "section": "",
+    "text": "Franconeri et al. (2021). Fig. 7. Visual comparison as a serial process. In the bar graph on the left, which student has a second bar that is lower than the first? To find the answer, the viewer needs to process each set of bars individually, rather than all at once. On the right, viewers tasked with processing the blue set of marks failed to notice the dinosaur shape created by the green set of marks. The image on the right is reprinted from Boger et al. (2021)."
+  },
+  {
+    "objectID": "slides/wk06-2025-02-20-designing-viz.html#section-5",
+    "href": "slides/wk06-2025-02-20-designing-viz.html#section-5",
+    "title": "Designing efficient & understandable visualizations",
+    "section": "",
+    "text": "Franconeri et al. (2021). Fig. 8. Several grouping cues that can control how data values are compared. Connecting lines are particularly powerful cues, followed by proximity, color, and shape (Brooks, 2015)."
+  },
+  {
+    "objectID": "slides/wk06-2025-02-20-designing-viz.html#section-6",
+    "href": "slides/wk06-2025-02-20-designing-viz.html#section-6",
+    "title": "Designing efficient & understandable visualizations",
+    "section": "",
+    "text": "Franconeri et al. (2021). Fig. 9. How visual grouping cues can control visual comparison. At top, a combination of color and proximity grouping lead the viewer to different visual comparisons across the two bar graphs. At the bottom, comparisons in a word cloud are weakly controlled by color grouping, and more strongly controlled with proximity grouping."
+  },
+  {
+    "objectID": "slides/wk06-2025-02-20-designing-viz.html#section-7",
+    "href": "slides/wk06-2025-02-20-designing-viz.html#section-7",
+    "title": "Designing efficient & understandable visualizations",
+    "section": "",
+    "text": "Franconeri et al. (2021). Fig. 10. Color highlighting and direct annotation to help viewers make the right comparison first and know what conclusion is supported by that pattern in the data. The graphic at the top illustrates a color-highlighting technique suggested in business-oriented practitioner guides (e.g., Knaflic, 2015). The graphs at the bottom (inspired by Bostock et al., 2012) are an adaptation of a graph by data journalists using grouping, highlighting, and verbal annotation."
+  },
+  {
+    "objectID": "slides/wk06-2025-02-20-designing-viz.html#references",
+    "href": "slides/wk06-2025-02-20-designing-viz.html#references",
+    "title": "Designing efficient & understandable visualizations",
+    "section": "References",
+    "text": "References\n\n\n\n\nDid aristotle say \"the more you know...\". (n.d.). Retrieved February 19, 2025, from https://philosophy.stackexchange.com/questions/46282/did-aristotle-say-the-more-you-know\n\n\nFranconeri, S. L., Padilla, L. M., Shah, P., Zacks, J. M., & Hullman, J. (2021). The science of visual data communication: What works. Psychological Science in the Public Interest: A Journal of the American Psychological Society, 22(3), 110–161. https://doi.org/10.1177/15291006211051956\n\n\nHirschman, D. (2010, September 4). Adventures in fact-checking: Einstein quote edition. Retrieved February 19, 2025, from https://asociologist.com/2010/09/04/adventures-in-fact-checking-einstein-quote-edition/\n\n\nIsenberg, N., & Brauer, M. (2023). Pluralistic ignorance about DEI. Retrieved from https://osf.io/ncd29/?view_only=fa3b86146da6440c85a2ca1f39dac247\n\n\nIsenberg, N., & Brauer, M. (2024). Diversity and inclusion have greater support than most americans think. Scientific Reports, 14, 28616. https://doi.org/10.1038/s41598-024-76761-8"
   }
 ]

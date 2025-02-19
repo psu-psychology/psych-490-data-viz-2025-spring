@@ -12,7 +12,7 @@ project:
 website:
   title: "PSYCH 490 • Spr 25"
   announcement: 
-    content: "[Final project proposal](exercises/final-project.qmd) assigned." 
+    content: "[Final project proposal](exercises/final-project.qmd) assigned. | [Exercise 04](exercises/ex04-sci-of-data-viz.qmd) assigned." 
     position: below-navbar
     icon: info-circle
     dismissable: true
@@ -34,6 +34,7 @@ website:
         - exercises/ex02-data-viz-outside-psych.qmd
         - exercises/ex03-making-data.qmd
         - exercises/ex04-sci-of-data-viz.qmd
+        - exercises/final-project.qmd
       - text: Tutorials
         menu:
         - tutorials/tutorial-making-data.qmd
@@ -47,6 +48,7 @@ website:
         - href: supplemental/psych-sci-figs.qmd
         - href: supplemental/other-field-figs.qmd
         - href: supplemental/ex03-deep-dive.qmd
+        - href: supplemental/gestalt-in-the-wild.qmd
       - href: meta.qmd
   repo-url: https://github.com/psu-psychology/psych-490-data-viz-2025-spring
   repo-actions: [edit, issue]

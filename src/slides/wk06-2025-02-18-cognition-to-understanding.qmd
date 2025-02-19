@@ -1,6 +1,6 @@
 ---
 title: "From cognition to understanding"
-subtitle: "2025-02-17"
+subtitle: "2025-02-18"
 ---
 
 # Overview

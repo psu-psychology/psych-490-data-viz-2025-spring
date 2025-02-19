@@ -3,13 +3,6 @@ title: "Final Project"
 format: html
 ---
 
-::: {.callout-warning}
-# Work in progress
-
-This page is under construction.
-
-:::
-
 ## Background {-}
 
 Your final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.
@@ -20,6 +13,7 @@ If you work with others, you will need to complete a statement about who did wha
 ## Dates {-}
 
 - Proposal [assigned]{.green_assigned} [Tuesday, February 18](../schedule.qmd#tuesday-february-18)
+- Proposal [due]{.orange-due} [Thursday, March 6, 2026](../schedule.qmd#thursday-march-06)
 - Final [project survey](https://forms.gle/oyotxgnnqchqnSgTA) [due]{.orange_due} [Tuesday, April 08](../schedule.qmd#tuesday-april-08)
 - Final write-up [due]{.orange_due} [Tuesday, May 05](../schedule.qmd#tuesday-may-05)
 
@@ -33,7 +27,7 @@ You may choose any of a wide range of topics for your final project:
 
 ## Formats {-}
 
-There are multiple formats for your final project.
+There are multiple formats for your final project. Choose one of them.
 
 - Short (5-10 min) in-class talk
 - Poster
@@ -47,6 +41,8 @@ There are multiple formats for your final project.
 ### Project proposal
 
 - Every student or team must submit a one-page *single-spaced* project proposal. Your proposal should state the aim or objective of your project, the format, and a include a brief description of how you intend to go about achieving your objectives.
+
+The proposal is due on [Thursday, March 6]{.orange_due}.
 
 ### Project presentation
 

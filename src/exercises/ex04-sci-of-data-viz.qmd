@@ -3,17 +3,30 @@ title: "Exercise 04"
 subtitle: "The science of data visualization"
 ---
 
-::: {.callout-warning}
-# Work in progress
-
-This page is under construction.
-
-:::
-
 ## Dates {-}
+
+In-class work on Thursday, February 20 and Tuesday, February 25.
+
+Submit write-up for credit [due]{.orange_due} by Thursday, March 6.
 
 ## Goals {-}
 
+1. Read a scientific study about data visualization.
+2. Evaluate the study's findings and its implications for the design of data visualizations.
+
 ## Assignment {-}
 
+1. Choose a primary source reference that is an *empirical* study about data visualization. For example, @Cleveland1984-py or a more recent paper that cites it, one of the papers cited by @Franconeri2021-uv, or a paper you find on your own.
+2. Describe the paper's principal goals, methods, and findings. What are the study's weaknesses? Does the study contain data visualizations? How well do the visualizations follow best practices in data visualization design? What practical impact do the study findings have for researchers making data visualizations?
+
 ## Submit {-}
+
+- A 2-3 page write-up in APA format.
+
+Make sure to write a complete essay. See the [feedback for Exercise 01](../supplemental/ex01-feedback.qmd) for other hints about how to improve your submission.
+
+::: {.callout-important}
+## APA template
+
+This [template](https://docs.google.com/document/d/1gkQKBTc7yW03VAndEtX6loWjm7BAmmhO/edit) document  may be helpful.
+:::
