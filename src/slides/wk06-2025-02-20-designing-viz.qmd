@@ -3,6 +3,24 @@ title: "Designing efficient & understandable visualizations"
 subtitle: "2025-02-20"
 ---
 
+# Prelude
+
+---
+
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+{{< video https://www.youtube.com/watch?v=dI1keSSwdcI >}}
+:::
+::: {.column width=50%}
+>Galileo's head was on the block. His crime was looking up for truth...
+
+@IndigoGirlsVEVO2009-gf
+:::
+::::
+
 # Overview
 
 ## Announcements
