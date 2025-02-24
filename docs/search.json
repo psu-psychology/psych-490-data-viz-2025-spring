@@ -1383,14 +1383,14 @@
     "href": "schedule.html#week-07",
     "title": "Schedule",
     "section": "February 24-28",
-    "text": "February 24-28\n\nTuesday, February 25\nCommunicating uncertainty and risk\n\nRead: Franconeri et al. (2021), pp. 139-150, PDF on Canvas\n\n\n\nThursday, February 27\nStorytelling with data\n\nRead:\n\nKnaflic (2015), pp. ix-33, PDF on Canvas\nKnaflic (2015), pp. 33-69, PDF on Canvas\n\nSkim: Woodside, Sood, & Miller (2008)"
+    "text": "February 24-28\n\nTuesday, February 25\nIntroduction to R\n\nSlides\nSign up for DataCamp.\nBegin work on Introduction to R.\n\n\n\nThursday, February 27\nCommunicating uncertainty and risk\n\nRead: Franconeri et al. (2021), pp. 139-150, PDF on Canvas\nIn-class work on Exercise 04, Final Project proposal, or DataCamp"
   },
   {
     "objectID": "schedule.html#week-08",
     "href": "schedule.html#week-08",
     "title": "Schedule",
     "section": "March 3-7",
-    "text": "March 3-7\n\nTuesday, March 04\nCritiquing figures\n\nRead:\n\nTufte (2001), Chapter 1, PDF on Canvas\nTufte (2001), Chapter 2, PDF on Canvas\n\n\n\n\nThursday, March 06\n\nExploring data\n\nRead: Tukey (1977), Chapter 1, PDF on Canvas\nDue: Exercise-04\nAssigned: Exercise-05\nDue: Final Project proposal"
+    "text": "March 3-7\n\nTuesday, March 04\nMore Slow-R\n\nRead:\n\nGilmore 2019 “Slow R”\n\nIn-class work on Exercise 04, Final Project proposal, or DataCamp\n\n\n\nThursday, March 06\n\n\n\nCritiquing figures\n\nRead:\n\nTufte (2001), Chapter 1, PDF on Canvas\nTufte (2001), Chapter 2, PDF on Canvas\n\nDue: Exercise-04\nAssigned: Exercise-05\nDue: Final Project proposal"
   },
   {
     "objectID": "schedule.html#spring-break",
@@ -1598,35 +1598,35 @@
   {
     "objectID": "meta.html",
     "href": "meta.html",
-    "title": "",
+    "title": "Under the hood",
     "section": "",
-    "text": "Code"
+    "text": "This page describes how the site is created and rendered."
   },
   {
     "objectID": "meta.html#about",
     "href": "meta.html#about",
-    "title": "",
-    "section": "About",
-    "text": "About\nThis page describes how the site is created and rendered."
+    "title": "Under the hood",
+    "section": "",
+    "text": "This page describes how the site is created and rendered."
   },
   {
     "objectID": "meta.html#workflow",
     "href": "meta.html#workflow",
-    "title": "",
+    "title": "Under the hood",
     "section": "Workflow",
     "text": "Workflow\nThe site is written in Quarto.\nThe project root uses a src/ directory to store the source code.\nA site-wide YAML file (_quarto.yml) controls the rendering process.\nSeparate directories contain lecture slides (slides/), exercises (exercises/), class-specific R functions (R/), surveys (surveys/), and tutorials (tutorials/). Quarto files with underscores (e.g., _index.qmd, _about.qmd, _evaluation.qmd, _schedule.qmd, and values.qmd) are the main targets for editing and updating. Parent files (e.g., index.qmd, evaluation.qmd, policies.qmd, and schedule.qmd) call upon these child files in the rendering process.\nA separate Quarto file (psych-490.003-2025-spring-syllabus.qmd) generates a PDF version of a syllabus."
   },
   {
     "objectID": "meta.html#rendering",
     "href": "meta.html#rendering",
-    "title": "",
+    "title": "Under the hood",
     "section": "Rendering",
     "text": "Rendering\nTo render the full site, quarto render src is executed from the command line. The fully rendered website is written to docs/."
   },
   {
     "objectID": "meta.html#software",
     "href": "meta.html#software",
-    "title": "",
+    "title": "Under the hood",
     "section": "Software",
     "text": "Software\nThe site uses the renv package to try to make all computation reproducible.\nIn addition, the site uses softbib to generate a full reference list of the package dependencies. This is saved in src/include/bib."
   },
@@ -2720,14 +2720,14 @@
     "href": "exercises/ex04-sci-of-data-viz.html#goals",
     "title": "Exercise 04",
     "section": "Goals",
-    "text": "Goals\n\nRead a scientific study about data visualization.\nEvaluate the study’s findings and its implications for the design of data visualizations."
+    "text": "Goals\n\nRead a scientific study about data visualization.\nEvaluate the study’s findings and its implications for the design of data visualizations.\n\nOR\n\nRead a scientific study on a topic you find of interest.\nEvaluate the study’s findings and report on how well the key findings are depicted in one or more data visualizations."
   },
   {
     "objectID": "exercises/ex04-sci-of-data-viz.html#assignment",
     "href": "exercises/ex04-sci-of-data-viz.html#assignment",
     "title": "Exercise 04",
     "section": "Assignment",
-    "text": "Assignment\n\nChoose a primary source reference that is an empirical study about data visualization. For example, Cleveland & McGill (1984) or a more recent paper that cites it, one of the papers cited by Franconeri, Padilla, Shah, Zacks, & Hullman (2021), or a paper you find on your own.\nDescribe the paper’s principal goals, methods, and findings. What are the study’s weaknesses? Does the study contain data visualizations? How well do the visualizations follow best practices in data visualization design? What practical impact do the study findings have for researchers making data visualizations?"
+    "text": "Assignment\n\nChoose a primary source reference that is an empirical study about data visualization. For example, Cleveland & McGill (1984) or a more recent paper that cites it, one of the papers cited by Franconeri, Padilla, Shah, Zacks, & Hullman (2021), or a paper you find on your own.\nDescribe the paper’s principal goals, methods, and findings. What are the study’s weaknesses? Does the study contain data visualizations? How well do the visualizations follow best practices in data visualization design? What practical impact do the study findings have for researchers making data visualizations?\n\nOR\n\nChoose a primary reference that is an empirical study about a topic in psychological science that interests you.\nBriefly describe the paper’s principal goals, methods, and especially the key findings. Does the study contain data visualizations? How well do the visualizations convey the key? What features of the visualizations help communicate the findings? What features make the findings harder to see or understand? How well do the visualizations follow best practices in data visualization design?"
   },
   {
     "objectID": "exercises/ex04-sci-of-data-viz.html#submit",
@@ -2882,5 +2882,306 @@
     "title": "Findings: Data viz outside psych sci",
     "section": "Figures found",
     "text": "Figures found\n\nCode\nthese_figs &lt;- ex02 |&gt;\n  filter(!is.na(url_to_figure))\n\nres &lt;- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))\ncat(unlist(res), sep = \"\\n\")\n\n\nFigure 1\nSource: https://wpdatatables.com/sports-data-visualization/#:~:text=What%20is%20Sports%20Data%20Visualization,drawn%20from%20sports%2Drelated%20data.\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\nReport\nBasketball Fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 2\nSource: https://kinesiology.csp.edu/sports-coaches-and-trainers/infographic-top-paid-athletes-by-gender/?nab=1\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\narticle\nThis image breaksdown a few different types of sport business issues in regard to male vs female salary in sport.\n\n\n\n\n\n\nComments\n\n\n\n\nGraphic\n\n\n\n\n\nFigure 3\nSource: \n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nPoster\nSeen in person\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of physicians by resident year in a hospital department\n\n\n\n\n\nFigure 4\nSource: https://hcup-us.ahrq.gov/reports/statbriefs/sb253-Influenza-Hospitalizations-ED-Visits-2006-2016.jsp\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nReport\nPublic health/medical example\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 5\nSource: https://www.bruinsportsanalytics.com/post/growth-of-nwsl\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nArticle\nNWSL fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 6\nSource: https://www.hockeyviz.com/team/CAR/2425\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nNHL, Canes fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 7\nSource: https://manual.audacityteam.org/\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nVisualization of sound data\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 8\nSource: https://www.nbcnews.com/data-graphics/2023-college-football-season-data-6-maps-charts-rcna102444\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI am very interested in college sports and I found this graphic very interesting and easy to comprehend\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nLocations of student-athlete recruits for the major athletic conferences in the past 10 years\n\n\n\n\n\nFigure 9\nSource: https://news.gallup.com/poll/650318/grocery-restaurant-industry-images-slide.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI thought this was an interesting trend to map, especially because sports appear to be a large part of American entertainment culture\n\n\n\n\n\n\nComments\n\n\n\n\nAmerican’s overall opinions of the sports industry from 2001-2024\n\n\n\n\n\nFigure 10\nSource: https://informationisbeautiful.net/beautifulnews/595-childrens-lives-saved/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nInfographic\nI thought this was very visually appealing yet provided a lot of useful information\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of children’s lives saved in varying regions over the last 25 years\n\n\n\n\n\nFigure 11\nSource: https://petapixel.com/2019/10/01/photos-of-endangered-species-where-every-pixel-represents-one-animal/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nDigital Art\nSea turtles are my favorite animal, but I thought this was a very interesting way to use digital art to bring awareness to endangerment\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nDigital image made of pixels correlating to how the number of animals left in the population\n\n\n\n\n\nFigure 12\nSource: https://news.gallup.com/poll/655220/satisfaction-democracy-edges-record-low.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nEspecially after the election and inauguration day, this trend is interesting to me\n\n\n\n\n\n\nComments\n\n\n\n\nPercentage of Americans satisfied with the way democracy is working\n\n\n\n\n\nFigure 13\nSource: https://osf.io/preprints/osf/3nyrq\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\napl1\n3D Art\nI like 3D Art and I liked how the data was visualized in this example, it shows how varied it can be\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 14\nSource: https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\npp\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 15\nSource: https://fivethirtyeight.com/features/how-mapping-shots-in-the-nba-changed-it-forever/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nThe figure lays out a clear image of field shots paired with percentages\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 16\nSource: https://journals.sagepub.com/doi/full/10.3233/THC-231875\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\njournal\nThe figure shows their methods through images of demonstrations\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 17\nSource: https://www.nature.com/articles/s43247-023-00856-9\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure 3 shows comparisons of negative and positive emotions tied to treatment groups in a simple way\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 18\nSource: https://pmc.ncbi.nlm.nih.gov/articles/PMC8639497/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure shows an easy to read graph showing data of publications per year\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 19\nSource: https://zapier.com/blog/pandemic-business-boom-report/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the importance of the pandemic when it comes to an explanation for the rise of businesses\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 20\nSource: https://www.businessinsider.com/17-charts-that-show-just-how-scary-amazons-275-billion-business-really-is-2016-3#its-also-the-top-seller-for-personal-care-and-beauty-products-in-the-us-5\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the stats on how amazon exceeds other sellers specifically for beauty products and personal care\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 21\nSource: https://impact.economist.com/perspectives/health/addressing-recurrent-cardiovascular-events-asia-pacific\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 22\nSource: https://impact.economist.com/perspectives/technology-innovation/putting-iot-work-business-operations\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 23\nSource: https://ygoprodeck.com/tournament/richmond-wcq-regional-2626\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nI play Yugioh, so that’s why I chose the graph\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nI find the choice to use a Pie chart to represent proportion of decks used to be interesing, as compared to a bar chart for frequency\n\n\n\n\n\nFigure 24\nSource: https://www.census.gov/construction/nrs/current/index.html\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nThe census beuaru collects a lot of data, so i felt they’d be a great source to look ino.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 25\nSource: https://www.iea.org/data-and-statistics/charts/installed-nuclear-power-capacity-by-country-and-age-in-advanced-economies-end-2023\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nI’m really interested in Nuclear power, and did a research project on it, so I wanted to include something on it. And this bar graph shows that the US still leads in Nuclear Power production\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 26\nSource: https://thecuriousprofessor.com/2019/12/14/visualizing-data-through-art-2/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\nwebsite\nThe visual shows a scarf knitted, with each row shows the temperature of the day\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 27\nSource: https://thecuriousprofessor.com/2019/12/14/visualizing-data-through-art-2/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\nwebsite\nThe visual shows the sleep pattern of baby, showsing the wake time and sleep time\n\n\n\n\n\n\nComments\n\n\n\n\nNA"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#announcements",
+    "href": "slides/wk07-2025-02-25.html#announcements",
+    "title": "Why R we doing this?",
+    "section": "Announcements",
+    "text": "Announcements\n\nAssigned: Final Project proposal"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#in-the-news",
+    "href": "slides/wk07-2025-02-25.html#in-the-news",
+    "title": "Why R we doing this?",
+    "section": "In the news…",
+    "text": "In the news…"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#last-time",
+    "href": "slides/wk07-2025-02-25.html#last-time",
+    "title": "Why R we doing this?",
+    "section": "Last time…",
+    "text": "Last time…"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#today",
+    "href": "slides/wk07-2025-02-25.html#today",
+    "title": "Why R we doing this?",
+    "section": "Today",
+    "text": "Today\n\nWhy R we doing this?"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#why-learn-r",
+    "href": "slides/wk07-2025-02-25.html#why-learn-r",
+    "title": "Why R we doing this?",
+    "section": "Why Learn R?",
+    "text": "Why Learn R?\n\nIt’s fun.\nIt’s free.\nAmaze your friends; dazzle your rivals.\nPowerful, especially for manipulating, plotting, and analyzing data.\nIt will make you a more productive researcher."
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#rstudio",
+    "href": "slides/wk07-2025-02-25.html#rstudio",
+    "title": "Why R we doing this?",
+    "section": "RStudio",
+    "text": "RStudio\n\nAvailable in PSU computer labs\nFree download from https://posit.co/download/rstudio-desktop/\n\nDownload and install R first\nInstall RStudio second\n\nComing soon: Run in the cloud"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#console",
+    "href": "slides/wk07-2025-02-25.html#console",
+    "title": "Why R we doing this?",
+    "section": "Console",
+    "text": "Console\n\nTalk to R\nGet a reply"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#references",
+    "href": "slides/wk07-2025-02-25.html#references",
+    "title": "Why R we doing this?",
+    "section": "References",
+    "text": "References"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#parts-of-console",
+    "href": "slides/wk07-2025-02-25.html#parts-of-console",
+    "title": "Why R we doing this?",
+    "section": "Parts of console",
+    "text": "Parts of console\n\nPrompt (&gt;); cursor (|)\nHistory of conversation via up/down arrows\nEnter a command, then hit enter or return to say it to R"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#functions",
+    "href": "slides/wk07-2025-02-25.html#functions",
+    "title": "Why R we doing this?",
+    "section": "Functions",
+    "text": "Functions\n\nTell the computer to do something\nFUNCTION_NAME: what to do\nARGUMENTS: what to do it to/on and how\nsum: function name\n(1, 4, 7): arguments/inputs\n\nParentheses are like open hands giving the function something it wants"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#getting-help",
+    "href": "slides/wk07-2025-02-25.html#getting-help",
+    "title": "Why R we doing this?",
+    "section": "Getting help",
+    "text": "Getting help"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#sort-again",
+    "href": "slides/wk07-2025-02-25.html#sort-again",
+    "title": "Why R we doing this?",
+    "section": "sort() again",
+    "text": "sort() again\n\n\nCode\nsort(c(4, 1, 7))\n\n\n[1] 1 4 7"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#assignments",
+    "href": "slides/wk07-2025-02-25.html#assignments",
+    "title": "Why R we doing this?",
+    "section": "Assignments",
+    "text": "Assignments\n\n\nCode\nmy_age &lt;- 61 # My age. Beats the alternative, I guess.\n\n# Text that is preceded by the # character is called a comment.\n# These are 'notes' you can keep about your code so you remember why you\n# did something. Here, R ignores the part after the #: ' Rick's age'"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#assignments-cont",
+    "href": "slides/wk07-2025-02-25.html#assignments-cont",
+    "title": "Why R we doing this?",
+    "section": "Assignments (cont)",
+    "text": "Assignments (cont)\n\nGive number (61) a useful/informative name (my_age)\nLeftward arrow &lt;- (option/alt + minus): assignment command"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#the-c-commandfunction",
+    "href": "slides/wk07-2025-02-25.html#the-c-commandfunction",
+    "title": "Why R we doing this?",
+    "section": "The c() command/function",
+    "text": "The c() command/function\n\nConcatenates or Combines items into a single thing\n\n\n\nCode\nc(4, 1, 7)\n\n\n[1] 4 1 7\n\n\nCode\nc(1:15)\n\n\n [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#assignments-continued",
+    "href": "slides/wk07-2025-02-25.html#assignments-continued",
+    "title": "Why R we doing this?",
+    "section": "Assignments (continued)",
+    "text": "Assignments (continued)\n\nGive (assign) number (61) a useful/informative name (my_age)\nLeftward arrow (&lt;-) (option/alt + minus): assignment command"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#asking-questions",
+    "href": "slides/wk07-2025-02-25.html#asking-questions",
+    "title": "Why R we doing this?",
+    "section": "Asking questions",
+    "text": "Asking questions\n\ncomparison operators (==, !=, &gt;, &lt;, etc.).\n\n\n\nCode\n1 == 0\n\n\n[1] FALSE\n\n\nCode\nsqrt(9) &lt; 4\n\n\n[1] TRUE"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#what-can-we-talk-to-r-about",
+    "href": "slides/wk07-2025-02-25.html#what-can-we-talk-to-r-about",
+    "title": "Why R we doing this?",
+    "section": "What can we talk to R about?",
+    "text": "What can we talk to R about?\n\nStrings (sequences of letters, numbers, characters)\n\n\n\nCode\nc('w', 'x', 'y', 'z')\n\n\n[1] \"w\" \"x\" \"y\" \"z\"\n\n\nCode\nmiddle_letters &lt;- c('m', 'n', 'o')"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#what-can-we-talk-to-r-about-1",
+    "href": "slides/wk07-2025-02-25.html#what-can-we-talk-to-r-about-1",
+    "title": "Why R we doing this?",
+    "section": "What can we talk to R about?",
+    "text": "What can we talk to R about?\n\nnumbers\n\n3.14159\n4^2\n1e3"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#what-can-we-talk-to-r-about-2",
+    "href": "slides/wk07-2025-02-25.html#what-can-we-talk-to-r-about-2",
+    "title": "Why R we doing this?",
+    "section": "What can we talk to R about?",
+    "text": "What can we talk to R about?\n\ndata sets\nplots\nanalyses"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25.html#rules-for-naming-things",
+    "href": "slides/wk07-2025-02-25.html#rules-for-naming-things",
+    "title": "Why R we doing this?",
+    "section": "Rules for naming things",
+    "text": "Rules for naming things\n\nReplace spaces (and hyphens/minus characters -) with underscores (_), and\nStart names with letters, not numbers.\n\n\nacceptable names for things: bigly, good_name, a_longer_good_name, Good_name1, and even thisIsCamelCaseNoUnderscores\nunacceptable names: !good, bad name (has a space) or 1_very_bad_name (starts with a number)."
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#announcements",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#announcements",
+    "title": "Introduction to R",
+    "section": "Announcements",
+    "text": "Announcements\n\nAssigned: Final Project proposal"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#in-the-news",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#in-the-news",
+    "title": "Introduction to R",
+    "section": "In the news…",
+    "text": "In the news…"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#last-time",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#last-time",
+    "title": "Introduction to R",
+    "section": "Last time…",
+    "text": "Last time…"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#today",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#today",
+    "title": "Introduction to R",
+    "section": "Today",
+    "text": "Today\n\nWhy R we doing this?\nGetting started with DataCamp"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#why-learn-r",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#why-learn-r",
+    "title": "Introduction to R",
+    "section": "Why Learn R?",
+    "text": "Why Learn R?\n\n\nIt’s fun.\nIt’s free.\nAmaze your friends; dazzle your rivals.\nPowerful, especially for manipulating, plotting, and analyzing data.\nIt will make you a more productive researcher.\nPractical job-related skill"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#rstudio",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#rstudio",
+    "title": "Introduction to R",
+    "section": "RStudio",
+    "text": "RStudio\n\nAvailable in PSU computer labs\nFree download from https://posit.co/download/rstudio-desktop/\n\nDownload and install R first\nInstall RStudio second\n\nComing soon: Run in the cloud"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#console",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#console",
+    "title": "Introduction to R",
+    "section": "Console",
+    "text": "Console\n\nTalk to R\nGet a reply"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#parts-of-console",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#parts-of-console",
+    "title": "Introduction to R",
+    "section": "Parts of console",
+    "text": "Parts of console\n\nPrompt (&gt;); cursor (|)\nHistory of conversation via up/down arrows\nEnter a command, then hit enter or return to say it to R"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#functions",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#functions",
+    "title": "Introduction to R",
+    "section": "Functions",
+    "text": "Functions\n\nTell the computer to do something\nFUNCTION_NAME: what to do\nARGUMENTS: what to do it to/on and how\nsum: function name\n(1, 4, 7): arguments/inputs\n\nParentheses are like open hands giving the function something it wants"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#getting-help",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#getting-help",
+    "title": "Introduction to R",
+    "section": "Getting help",
+    "text": "Getting help"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#sort-again",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#sort-again",
+    "title": "Introduction to R",
+    "section": "sort() again",
+    "text": "sort() again\n\nsort(c(4, 1, 7))\n\n[1] 1 4 7"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#the-c-commandfunction",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#the-c-commandfunction",
+    "title": "Introduction to R",
+    "section": "The c() command/function",
+    "text": "The c() command/function\n\nConcatenates or Combines items into a single thing\n\n\nc(4, 1, 7)\n\n[1] 4 1 7\n\nc(1:15)\n\n [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#assignments",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#assignments",
+    "title": "Introduction to R",
+    "section": "Assignments",
+    "text": "Assignments\n\nmy_age &lt;- 61 # My age. Beats the alternative, I guess.\n\n# Text that is preceded by the # character is called a comment.\n# These are 'notes' you can keep about your code so you remember why you\n# did something. Here, R ignores the part after the #: ' Rick's age'"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#assignments-continued",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#assignments-continued",
+    "title": "Introduction to R",
+    "section": "Assignments (continued)",
+    "text": "Assignments (continued)\n\nGive (assign) number (61) a useful/informative name (my_age)\nLeftward arrow (&lt;-) (option/alt + minus): assignment command"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#asking-questions",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#asking-questions",
+    "title": "Introduction to R",
+    "section": "Asking questions",
+    "text": "Asking questions\n\ncomparison operators (==, !=, &gt;, &lt;, etc.).\n\n\n1 == 0\n\n[1] FALSE\n\nsqrt(9) &lt; 4\n\n[1] TRUE"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#what-can-we-talk-to-r-about",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#what-can-we-talk-to-r-about",
+    "title": "Introduction to R",
+    "section": "What can we talk to R about?",
+    "text": "What can we talk to R about?\n\nStrings (sequences of letters, numbers, characters)\n\n\nc('w', 'x', 'y', 'z')\n\n[1] \"w\" \"x\" \"y\" \"z\"\n\nmiddle_letters &lt;- c('m', 'n', 'o')"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#what-can-we-talk-to-r-about-1",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#what-can-we-talk-to-r-about-1",
+    "title": "Introduction to R",
+    "section": "What can we talk to R about?",
+    "text": "What can we talk to R about?\n\nnumbers\n\n3.14159\n4^2\n1e3"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#what-can-we-talk-to-r-about-2",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#what-can-we-talk-to-r-about-2",
+    "title": "Introduction to R",
+    "section": "What can we talk to R about?",
+    "text": "What can we talk to R about?\n\ndata sets\nplots\nanalyses"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#rules-for-naming-things",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#rules-for-naming-things",
+    "title": "Introduction to R",
+    "section": "Rules for naming things",
+    "text": "Rules for naming things\n\nReplace spaces (and hyphens/minus characters -) with underscores (_), and\nStart names with letters, not numbers.\n\n\nacceptable names for things: bigly, good_name, a_longer_good_name, Good_name1, and even thisIsCamelCaseNoUnderscores\nunacceptable names: !good, bad name (has a space) or 1_very_bad_name (starts with a number)."
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#sign-in",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#sign-in",
+    "title": "Introduction to R",
+    "section": "Sign in",
+    "text": "Sign in\n\nhttps://www.datacamp.com/groups/shared_links/a4e4322254cc9e99082294b2f5eb9b0af748f1d42907df9f716475be78a0520c"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#references",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#references",
+    "title": "Introduction to R",
+    "section": "References",
+    "text": "References"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#what-im-saying",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#what-im-saying",
+    "title": "Introduction to R",
+    "section": "What I’m saying",
+    "text": "What I’m saying\n\nCan’t & shouldn’t hide from controversy\nDon’t all have to agree\nShould all agree to continue to debate & discuss"
   }
 ]

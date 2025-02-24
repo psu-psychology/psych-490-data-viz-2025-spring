@@ -14,10 +14,20 @@ Submit write-up for credit [due]{.orange_due} by Thursday, March 6.
 1. Read a scientific study about data visualization.
 2. Evaluate the study's findings and its implications for the design of data visualizations.
 
+OR
+
+1. Read a scientific study on a topic you find of interest.
+2. Evaluate the study's findings and report on how well the key findings are depicted in one or more data visualizations.
+
 ## Assignment {-}
 
 1. Choose a primary source reference that is an *empirical* study about data visualization. For example, @Cleveland1984-py or a more recent paper that cites it, one of the papers cited by @Franconeri2021-uv, or a paper you find on your own.
 2. Describe the paper's principal goals, methods, and findings. What are the study's weaknesses? Does the study contain data visualizations? How well do the visualizations follow best practices in data visualization design? What practical impact do the study findings have for researchers making data visualizations?
+
+OR
+
+1. Choose a primary  reference that is an *empirical* study about a topic in psychological science that interests you.
+2. Briefly describe the paper's principal goals, methods, and especially the key findings. Does the study contain data visualizations?  How well do the visualizations convey the key? What features of the visualizations help communicate the findings? What features make the findings harder to see or understand? How well do the visualizations follow best practices in data visualization design? 
 
 ## Submit {-}
 

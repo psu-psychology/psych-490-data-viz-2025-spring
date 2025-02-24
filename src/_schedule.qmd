@@ -122,36 +122,47 @@
 
 ### Tuesday, February 25 {-}
 
-*Communicating uncertainty and risk*  
+*Introduction to R*
 
-- Read: @Franconeri2021-uv, pp. 139-150, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=174557876) 
+- [Slides](slides/wk07-2025-02-25-intro-to-r.qmd)
+- [Sign up](https://www.datacamp.com/groups/shared_links/a4e4322254cc9e99082294b2f5eb9b0af748f1d42907df9f716475be78a0520c) for DataCamp.
+- Begin work on Introduction to R.
 
 ### Thursday, February 27 {-}
 
-*Storytelling with data*
+*Communicating uncertainty and risk*  
 
-- Read: 
-    - @Knaflic2015-wq, pp. ix-33, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927897)
-    - @Knaflic2015-wq, pp. 33-69, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927897)
-- Skim: @Woodside2008-yv
+- Read: @Franconeri2021-uv, pp. 139-150, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=174557876)
+- In-class work on [Exercise 04](exercises/ex04-sci-of-data-viz.qmd), [Final Project proposal](exercises/final-project.qmd), or DataCamp
+
+<!-- *Storytelling with data* -->
+
+<!-- - Read:  -->
+<!--     - @Knaflic2015-wq, pp. ix-33, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927897) -->
+<!--     - @Knaflic2015-wq, pp. 33-69, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927897) -->
+<!-- - Skim: @Woodside2008-yv -->
 
 ## March 3-7 {- #week-08}
 
 ### Tuesday, March 04 {-}
+
+*More Slow-R*
+
+- Read: 
+    - Gilmore 2019 ["Slow R"](https://psu-psychology.github.io/r-bootcamp-2019/talks/slow-r.html)
+- In-class work on [Exercise 04](exercises/ex04-sci-of-data-viz.qmd), [Final Project proposal](exercises/final-project.qmd), or DataCamp
+
+### Thursday, March 06 {-}
+
+<!-- No Sara -->
+<!-- *Exploring data* -->
+<!-- - Read: @Tukey1977-ro, Chapter 1, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927904) -->
 
 *Critiquing figures*
 
 - Read: 
     - @Tufte2001-cb, Chapter 1, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927901)
     - @Tufte2001-cb, Chapter 2, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927901)
-
-### Thursday, March 06 {-}
-
-<!-- No Sara -->
-
-*Exploring data*
-
-- Read: @Tukey1977-ro, Chapter 1, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927904)
 - [Due]{.orange_due}: [Exercise-04](exercises/ex04-sci-of-data-viz.qmd)
 - [Assigned]{.green_assigned}: [Exercise-05](exercises/ex05-figure-prep-guidelines.qmd)
 - [Due]{.orange_due}: [Final Project](exercises/final-project.qmd) proposal

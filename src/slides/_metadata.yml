@@ -8,7 +8,6 @@ format:
     bibliography: [../include/bib/packages.bib, ../include/bib/data-viz.bib]
     csl: ../include/bib/apa.csl
     css: ../include/css/gilmore-revealjs.css
-    code-fold: true
     chalkboard: true
 knitr:
   opts_chunk:
