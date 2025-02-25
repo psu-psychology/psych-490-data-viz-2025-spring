@@ -3189,7 +3189,7 @@
     "href": "slides/wk07-2025-02-25-intro-to-r.html#why-should-psychologists-learn-r",
     "title": "Introduction to R",
     "section": "Why should psychologists learn R?",
-    "text": "Why should psychologists learn R?\n\n\nLanguage designed for data manipulation, analysis, & visualization\nScript (program) many stages of your workflow\nProgramming reinforces analytical problem solving skills\n\nDo this 1st\nDo this 2nd…\n\nReproducible == robust, easy to share with others"
+    "text": "Why should psychologists learn R?\n\n\nR designed for data manipulation, analysis, & visualization\nScript (program) many stages of your workflow\nProgramming reinforces analytical problem solving skills (algorithmic thinking)\n\nDo this 1st\nDo this 2nd…\n\nReproducible == robust, easy to share with others"
   },
   {
     "objectID": "slides/wk07-2025-02-25-intro-to-r.html#section",

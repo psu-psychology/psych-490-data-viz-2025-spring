@@ -74,9 +74,9 @@ code_fold: false
 ## Why should psychologists learn R?
 
 ::: {.incremental}
-- Language designed for data manipulation, analysis, & visualization
+- R designed for data manipulation, analysis, & visualization
 - Script (program) many stages of your workflow
-- Programming reinforces analytical problem solving skills
+- Programming reinforces analytical problem solving skills (algorithmic thinking)
   - Do this 1st
   - Do this 2nd...
 - Reproducible == robust, easy to share with others
