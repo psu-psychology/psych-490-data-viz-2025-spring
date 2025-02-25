@@ -7,9 +7,6 @@ subtitle: "2025-02-20"
 
 ---
 
-
----
-
 :::: {.columns}
 ::: {.column width=50%}
 {{< video https://www.youtube.com/watch?v=dI1keSSwdcI >}}

@@ -6,11 +6,33 @@ code_fold: false
 
 # Prelude
 
+---
+
+:::: {.columns}
+::: {.column width=50%}
+{{< video https://www.youtube.com/watch?v=dI1keSSwdcI >}}
+:::
+::: {.column width=50%}
+>Galileo's head was on the block. His crime was looking up for truth...
+
+@IndigoGirlsVEVO2009-gf
+:::
+::::
+
 # Overview
+
+## In the news
+
+![](../include/img/trump-bars-climate-scientists.png)
+
+## {.scrollable}
+
+![@Ferrell2025-il](../include/img/accuweather-warmest-elsewhere.png)
 
 ## Announcements
 
-- [Assigned]{.green_assigned}: [Final Project](../exercises/final-project.qmd) proposal
+- [Pending]{.green_assigned}: [Final Project](../exercises/final-project.qmd) proposal
+- [Pending]{.green_assigned}: [Exercise 04](../exercises/ex04-sci-of-data-viz.qmd)
 
 ---
 
@@ -22,10 +44,14 @@ code_fold: false
 
 ## What I'm saying
 
+::: {.incremental}
 - Can't & shouldn't hide from controversy
+  - Seek light and truth
 - Don't all have to agree
 - Should (I hope) agree to continue to debate & discuss
-- Seek out, but not require agreement
+- Seek out, but not *require* agreement
+- Be courageous, not cowardly
+:::
 
 ## Today
 
@@ -34,15 +60,26 @@ code_fold: false
 
 # Why R we doing this?
 
-## Why Learn R?
+## Why learn R?
 
 ::: {.incremental}
-- It's fun.
-- It's free.
-- Amaze your friends; dazzle your rivals.
-- Powerful, especially for manipulating, plotting, and analyzing data.
-- **It will make you a more productive researcher.**
+- It's fun
+- It's free
+- Amaze your friends; dazzle your rivals
+- Powerful, especially for manipulating, plotting, and analyzing data
+- **It will make you a more productive researcher**
 - Practical job-related skill
+:::
+
+## Why should psychologists learn R?
+
+::: {.incremental}
+- Language designed for data manipulation, analysis, & visualization
+- Script (program) many stages of your workflow
+- Programming reinforces analytical problem solving skills
+  - Do this 1st
+  - Do this 2nd...
+- Reproducible == robust, easy to share with others
 :::
 
 ---

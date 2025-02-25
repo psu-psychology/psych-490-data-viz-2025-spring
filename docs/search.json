@@ -3035,14 +3035,14 @@
     "href": "slides/wk07-2025-02-25-intro-to-r.html#announcements",
     "title": "Introduction to R",
     "section": "Announcements",
-    "text": "Announcements\n\nAssigned: Final Project proposal"
+    "text": "Announcements\n\nPending: Final Project proposal\nPending: Exercise 04"
   },
   {
     "objectID": "slides/wk07-2025-02-25-intro-to-r.html#in-the-news",
     "href": "slides/wk07-2025-02-25-intro-to-r.html#in-the-news",
     "title": "Introduction to R",
-    "section": "In the news…",
-    "text": "In the news…"
+    "section": "In the news",
+    "text": "In the news"
   },
   {
     "objectID": "slides/wk07-2025-02-25-intro-to-r.html#last-time",
@@ -3062,8 +3062,8 @@
     "objectID": "slides/wk07-2025-02-25-intro-to-r.html#why-learn-r",
     "href": "slides/wk07-2025-02-25-intro-to-r.html#why-learn-r",
     "title": "Introduction to R",
-    "section": "Why Learn R?",
-    "text": "Why Learn R?\n\n\nIt’s fun.\nIt’s free.\nAmaze your friends; dazzle your rivals.\nPowerful, especially for manipulating, plotting, and analyzing data.\nIt will make you a more productive researcher.\nPractical job-related skill"
+    "section": "Why learn R?",
+    "text": "Why learn R?\n\n\nIt’s fun\nIt’s free\nAmaze your friends; dazzle your rivals\nPowerful, especially for manipulating, plotting, and analyzing data\nIt will make you a more productive researcher\nPractical job-related skill"
   },
   {
     "objectID": "slides/wk07-2025-02-25-intro-to-r.html#rstudio",
@@ -3175,13 +3175,27 @@
     "href": "slides/wk07-2025-02-25-intro-to-r.html#references",
     "title": "Introduction to R",
     "section": "References",
-    "text": "References"
+    "text": "References\n\n\n\n\nFerrell, J. (2025, February 10). January was coldest in U.S. Since 1988 but globe was warmest ever. Retrieved February 17, 2025, from https://www.accuweather.com/en/climate/january-was-coldest-in-u-s-since-1988-but-globe-was-warmest-ever/1743438\n\n\nIndigoGirlsVEVO. (2009). Indigo girls - galileo (official video). Youtube. Retrieved from https://www.youtube.com/watch?v=dI1keSSwdcI"
   },
   {
     "objectID": "slides/wk07-2025-02-25-intro-to-r.html#what-im-saying",
     "href": "slides/wk07-2025-02-25-intro-to-r.html#what-im-saying",
     "title": "Introduction to R",
     "section": "What I’m saying",
-    "text": "What I’m saying\n\nCan’t & shouldn’t hide from controversy\nDon’t all have to agree\nShould all agree to continue to debate & discuss"
+    "text": "What I’m saying\n\n\nCan’t & shouldn’t hide from controversy\n\nSeek light and truth\n\nDon’t all have to agree\nShould (I hope) agree to continue to debate & discuss\nSeek out, but not require agreement\nBe courageous, not cowardly"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#why-should-psychologists-learn-r",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#why-should-psychologists-learn-r",
+    "title": "Introduction to R",
+    "section": "Why should psychologists learn R?",
+    "text": "Why should psychologists learn R?\n\n\nLanguage designed for data manipulation, analysis, & visualization\nScript (program) many stages of your workflow\nProgramming reinforces analytical problem solving skills\n\nDo this 1st\nDo this 2nd…\n\nReproducible == robust, easy to share with others"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-25-intro-to-r.html#section",
+    "href": "slides/wk07-2025-02-25-intro-to-r.html#section",
+    "title": "Introduction to R",
+    "section": "",
+    "text": "Ferrell (2025)"
   }
 ]

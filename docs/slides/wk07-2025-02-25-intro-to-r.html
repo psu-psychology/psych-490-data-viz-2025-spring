@@ -93,7 +93,27 @@
     code span.va { color: #111111; } /* Variable */
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
   <link rel="stylesheet" href="../include/css/gilmore-revealjs.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -207,20 +227,41 @@ Rick Gilmore
 </div>
 
 </section>
+<section>
 <section id="prelude" class="title-slide slide level1 center">
 <h1>Prelude</h1>
 
 </section>
+<section class="slide level2">
 
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe data-external="1" src="https://www.youtube.com/embed/dI1keSSwdcI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div><div class="column" style="width:50%;">
+<blockquote>
+<p>Galileo’s head was on the block. His crime was looking up for truth…</p>
+</blockquote>
+<p><span class="citation" data-cites="IndigoGirlsVEVO2009-gf">IndigoGirlsVEVO (<a href="#/references" role="doc-biblioref" onclick="">2009</a>)</span></p>
+</div></div>
+</section></section>
 <section>
 <section id="overview" class="title-slide slide level1 center">
 <h1>Overview</h1>
 
 </section>
+<section id="in-the-news" class="slide level2">
+<h2>In the news</h2>
+
+<img data-src="../include/img/trump-bars-climate-scientists.png" class="r-stretch"></section>
+<section id="section" class="slide level2 scrollable">
+<h2></h2>
+
+<img data-src="../include/img/accuweather-warmest-elsewhere.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Ferrell2025-il">Ferrell (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></p></section>
 <section id="announcements" class="slide level2">
 <h2>Announcements</h2>
 <ul>
-<li><span class="green_assigned">Assigned</span>: <a href="../exercises/final-project.html">Final Project</a> proposal</li>
+<li><span class="green_assigned">Pending</span>: <a href="../exercises/final-project.html">Final Project</a> proposal</li>
+<li><span class="green_assigned">Pending</span>: <a href="../exercises/ex04-sci-of-data-viz.html">Exercise 04</a></li>
 </ul>
 </section>
 <section class="slide level2">
@@ -233,11 +274,18 @@ Rick Gilmore
 <img data-src="../include/img/isenberg-brauer-2024.png" class="r-stretch"></section>
 <section id="what-im-saying" class="slide level2">
 <h2>What I’m saying</h2>
+<div>
 <ul>
-<li>Can’t &amp; shouldn’t hide from controversy</li>
-<li>Don’t all have to agree</li>
-<li>Should all agree to continue to debate &amp; discuss</li>
+<li class="fragment">Can’t &amp; shouldn’t hide from controversy
+<ul>
+<li class="fragment">Seek light and truth</li>
+</ul></li>
+<li class="fragment">Don’t all have to agree</li>
+<li class="fragment">Should (I hope) agree to continue to debate &amp; discuss</li>
+<li class="fragment">Seek out, but not <em>require</em> agreement</li>
+<li class="fragment">Be courageous, not cowardly</li>
 </ul>
+</div>
 </section>
 <section id="today" class="slide level2">
 <h2>Today</h2>
@@ -252,15 +300,30 @@ Rick Gilmore
 
 </section>
 <section id="why-learn-r" class="slide level2">
-<h2>Why Learn R?</h2>
+<h2>Why learn R?</h2>
 <div>
 <ul>
-<li class="fragment">It’s fun.</li>
-<li class="fragment">It’s free.</li>
-<li class="fragment">Amaze your friends; dazzle your rivals.</li>
-<li class="fragment">Powerful, especially for manipulating, plotting, and analyzing data.</li>
-<li class="fragment"><strong>It will make you a more productive researcher.</strong></li>
+<li class="fragment">It’s fun</li>
+<li class="fragment">It’s free</li>
+<li class="fragment">Amaze your friends; dazzle your rivals</li>
+<li class="fragment">Powerful, especially for manipulating, plotting, and analyzing data</li>
+<li class="fragment"><strong>It will make you a more productive researcher</strong></li>
 <li class="fragment">Practical job-related skill</li>
+</ul>
+</div>
+</section>
+<section id="why-should-psychologists-learn-r" class="slide level2">
+<h2>Why should psychologists learn R?</h2>
+<div>
+<ul>
+<li class="fragment">Language designed for data manipulation, analysis, &amp; visualization</li>
+<li class="fragment">Script (program) many stages of your workflow</li>
+<li class="fragment">Programming reinforces analytical problem solving skills
+<ul>
+<li class="fragment">Do this 1st</li>
+<li class="fragment">Do this 2nd…</li>
+</ul></li>
+<li class="fragment">Reproducible == robust, easy to share with others</li>
 </ul>
 </div>
 </section>
@@ -391,7 +454,7 @@ Version 3 of the license can be displayed by RShowDoc("LGPL-3").
 </div>
 </div>
 </section>
-<section id="section" class="slide level2">
+<section id="section-1" class="slide level2">
 <h2></h2>
 </section>
 <section class="slide level2">
@@ -585,7 +648,7 @@ Version 3 of the license can be displayed by RShowDoc("LGPL-3").
 </section></section>
 <section id="next-time" class="title-slide slide level1 center">
 <h1>Next time</h1>
-
+<p><em>Communicating uncertainty and risk</em></p>
 </section>
 
 <section>
@@ -593,10 +656,18 @@ Version 3 of the license can be displayed by RShowDoc("LGPL-3").
 <h1>Resources</h1>
 
 </section>
-<section id="references" class="slide level2">
+<section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Ferrell2025-il" class="csl-entry" role="listitem">
+Ferrell, J. (2025, February 10). January was coldest in <span>U</span>.<span>S</span>. Since 1988 but globe was warmest ever. Retrieved February 17, 2025, from <a href="https://www.accuweather.com/en/climate/january-was-coldest-in-u-s-since-1988-but-globe-was-warmest-ever/1743438">https://www.accuweather.com/en/climate/january-was-coldest-in-u-s-since-1988-but-globe-was-warmest-ever/1743438</a>
+</div>
+<div id="ref-IndigoGirlsVEVO2009-gf" class="csl-entry" role="listitem">
+IndigoGirlsVEVO. (2009). <em>Indigo girls - galileo (official video)</em>. Youtube. Retrieved from <a href="https://www.youtube.com/watch?v=dI1keSSwdcI">https://www.youtube.com/watch?v=dI1keSSwdcI</a>
+</div>
+</div>
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
