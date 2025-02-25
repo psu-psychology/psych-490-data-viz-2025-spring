@@ -133,7 +133,7 @@
 *Communicating uncertainty and risk*  
 
 - Read: @Franconeri2021-uv, pp. 139-150, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=174557876)
-- In-class work on [Exercise 04](exercises/ex04-sci-of-data-viz.qmd), [Final Project proposal](exercises/final-project.qmd), or DataCamp
+- In-class work on [Exercise 04](exercises/ex04-sci-of-data-viz.qmd), [Final Project proposal](exercises/final-project.qmd), or [DataCamp](https://datacamp.com)
 
 <!-- *Storytelling with data* -->
 
@@ -150,7 +150,7 @@
 
 - Read: 
     - Gilmore 2019 ["Slow R"](https://psu-psychology.github.io/r-bootcamp-2019/talks/slow-r.html)
-- In-class work on [Exercise 04](exercises/ex04-sci-of-data-viz.qmd), [Final Project proposal](exercises/final-project.qmd), or DataCamp
+- In-class work on [Exercise 04](exercises/ex04-sci-of-data-viz.qmd), [Final Project proposal](exercises/final-project.qmd), or [DataCamp](https://datacamp.com)
 
 ### Thursday, March 06 {-}
 

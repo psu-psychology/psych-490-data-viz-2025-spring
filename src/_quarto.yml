@@ -12,7 +12,7 @@ project:
 website:
   title: "PSYCH 490 • Spr 25"
   announcement: 
-    content: "[Final project proposal](exercises/final-project.qmd) assigned. | [Exercise 04](exercises/ex04-sci-of-data-viz.qmd) assigned." 
+    content: "[DataCamp](https://datacamp.com) courses assigned." 
     position: below-navbar
     icon: info-circle
     dismissable: true
