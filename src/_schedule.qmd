@@ -133,6 +133,7 @@
 *Communicating uncertainty and risk*  
 
 - Read: @Franconeri2021-uv, pp. 139-150, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=174557876)
+- [Slides](slides/wk07-2025-02-27-viz-uncertainty-risk.qmd)
 - In-class work on [Exercise 04](exercises/ex04-sci-of-data-viz.qmd), [Final Project proposal](exercises/final-project.qmd), or [DataCamp](https://datacamp.com)
 
 <!-- *Storytelling with data* -->

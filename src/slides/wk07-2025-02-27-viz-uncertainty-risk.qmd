@@ -7,7 +7,7 @@ subtitle: "2025-02-27"
 
 # Overview
 
-## In the news
+## In the news {.scrollable}
 
 ![Figure 1 from @Dwyer-Lindgren2024-fb](../include/img/dwyer-lindgren-2024-fig-01.jpg){.lightbox}
 
@@ -133,8 +133,6 @@ two_sets |>
 
 ## Points + error bars
 
-:::: {.columns}
-::: {.column width=50%}
 ```{r}
 #| fig-cap: "Mean + 1 standard deviation"
 #| label: fig-ggplot-mean-sd 
@@ -146,10 +144,11 @@ two_sets |>
   ggplot() +
   aes(x = sample_name, y = mean_val) +
   geom_point() +
-  geom_errorbar(aes(ymin=mean_val - sdev, ymax=mean_val + sdev, width = .1)) 
+  geom_errorbar(aes(ymin=mean_val - sdev, ymax=mean_val + sdev, width = .1)) +
+  ylim(-3, 3)
 ```
-:::
-::: {.column width=50%}
+---
+
 ```{r}
 #| fig-cap: "Mean + 1 standard error of the mean" 
 #| label: fig-ggplot-mean-sem
@@ -158,15 +157,13 @@ two_sets |>
   dplyr::summarise(mean_val = mean(value), sdev = sd(value), n = n(), sem = sdev/sqrt(n)) |>
   ggplot() +
   aes(x = sample_name, y = mean_val) +
-  geom_point() 
+  geom_point() +
+  geom_errorbar(aes(ymin=mean_val - sem, ymax=mean_val + sem, width = .1)) +
+  ylim(-3, 3)
 ```
-:::
-::::
 
 ---
 
-:::: {.columns}
-::: {.column width=50%}
 ```{r}
 #| fig-cap: "Mean + 1 standard deviation + jittered points"
 #| label: fig-ggplot-mean-sd-pts
@@ -179,10 +176,12 @@ two_sets |>
   aes(x = sample_name, y = mean_val) +
   geom_point() +
   geom_errorbar(aes(ymin=mean_val - sdev, ymax=mean_val + sdev, width = .1)) +
-  geom_jitter(aes(y = value), width = .2, height = 0)
+  geom_jitter(aes(y = value), width = .2, height = 0) +
+  ylim(-3, 3)
 ```
-:::
-::: {.column width=50%}
+
+---
+
 ```{r}
 #| fig-cap: "Mean + 1 standard error of the mean + jittered points" 
 #| label: fig-ggplot-mean-sem-pts
@@ -194,12 +193,118 @@ two_sets |>
   aes(x = sample_name, y = mean_val) +
   geom_point() +
   geom_errorbar(aes(ymin=mean_val - sem, ymax=mean_val + sem, width = .1)) +
-  geom_jitter(aes(y = value), width = .2, height = 0)
+  geom_jitter(aes(y = value), width = .2, height = 0) +
+  ylim(-3, 3)
 ```
+
+## Visualizing linear relationships
+
+```{r}
+#| echo: true
+x <- runif(n = 100, min = 0, max = 1) # Uniform distribution with min 0 and max 1
+y1 <- x + rnorm(n = 100, mean = 0, sd = .5)
+y2 <- x + rnorm(n = 100, mean = 0, sd = .75)
+y3 <- x + rnorm(n = 100, mean = 0, sd = 1)
+y4 <- x + rnorm(n = 100, mean = 0, sd = 1.5)
+
+linear_df <- data.frame(x = x, y1 = y1, y2 = y2, y3 = y3, y4 = y4)
+```
+
+---
+
+```{r}
+#| fig-cap: "Linear fit with sd=.5"
+linear_df |>
+  ggplot() +
+  aes(x = x, y = y1) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  ggtitle("Correlation ", cor(x, y1)) +
+  ylim(-6, 6)
+```
+
+---
+
+```{r}
+#| fig-cap: "Linear fit with sd=.75"
+linear_df |>
+  ggplot() +
+  aes(x = x, y = y2) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  ggtitle("Correlation ", cor(x, y2)) +
+  ylim(-6, 6)
+```
+
+---
+
+```{r}
+#| fig-cap: "Linear fit with sd=1"
+linear_df |>
+  ggplot() +
+  aes(x = x, y = y3) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  ggtitle("Correlation ", cor(x, y3)) +
+  ylim(-6, 6)
+```
+
+---
+
+```{r}
+#| fig-cap: "Linear fit with sd=1.5"
+linear_df |>
+  ggplot() +
+  aes(x = x, y = y4) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  ggtitle("Correlation ", cor(x, y4)) +
+  ylim(-6, 6)
+```
+
+## Interim summary
+
+- Even when we *know* there are patterns/effects, conveying them accurately and effectively can be challenging
+
+---
+
+![Figure 22 from @Franconeri2021-uv](../include/img/franconeri-fig-22.png){.lightbox}
+
+## {.scrollable}
+
+![Figure 24 from @Franconeri2021-uv](../include/img/franconeri-fig-24.png){.lightbox}
+
+## {.scrollable}
+
+![Figure 25 from @Franconeri2021-uv](../include/img/franconeri-fig-25.png){.lightbox}
+
+## {.scrollable}
+
+![Figure 26 from @Franconeri2021-uv](../include/img/franconeri-fig-26.png){.lightbox}
+
+## {.scrollable}
+
+![Figure 27 from @Franconeri2021-uv; @Zikmund-Fisher2014-lg](../include/img/franconeri-fig-27.png){.lightbox}
+---
+
+>Risk recall was significantly higher with more anthropomorphic icons (restroom icons, head outlines, and photos) than with other icon types, and participants rated restroom icons as most preferred. However, while restroom icons resulted in the highest correlations between perceived and actual risk among more numerate/graphically literate participants, they performed no better than other icon types among less numerate/graphically literate participants.
+
+@Zikmund-Fisher2014-lg
+
+## Who understands what?
+
+:::: {.columns}
+::: {.column width=50%}
+![@Lindsey2024-ob](../include/img/ClimateDashboard-atmospheric-carbon-dioxide-image-paleo-20240405-1400px.png)
+:::
+::: {.column width=50%}
+![@UnknownUnknown-ss](https://factsonclimate.org/assets/generated/concentration-warming-relationship_1920.png){fig-align="center"}
 :::
 ::::
 
 # Next time
+
+*More Slow-R*
 
 # Resources
 
