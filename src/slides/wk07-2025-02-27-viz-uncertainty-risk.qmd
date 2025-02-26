@@ -3,13 +3,11 @@ title: "Communicating uncertainty and risk"
 subtitle: "2025-02-27"
 ---
 
-# Prelude
-
 # Overview
 
-## In the news {.scrollable}
+## In the news
 
-![Figure 1 from @Dwyer-Lindgren2024-fb](../include/img/dwyer-lindgren-2024-fig-01.jpg){.lightbox}
+![Figure 1 from @Dwyer-Lindgren2024-fb](../include/img/dwyer-lindgren-2024-fig-01.jpg)
 
 ## {.scrollable}
 
@@ -25,6 +23,8 @@ subtitle: "2025-02-27"
 ![Available through March 2](../include/img/mseeq.png)
 
 ## Last time...
+
+- Introduction to R
 
 ## Today
 
@@ -47,6 +47,7 @@ x1 <- rnorm(n = 100, mean = 1, sd = 1) # Normal distribution with mean 1 and sta
 ## Plot the data
 
 ```{r}
+#| echo: true
 #| label: fig-base-r-scatterplot
 plot(x0, x1)
 ```
@@ -73,6 +74,9 @@ hist(x1)
 ::::
 
 ## Let's 'tidy'-up
+
+- "Tidy" data $\rightarrow$ rectangular data; columns are variables; rows are observations.
+- A data frame (`data.frame()`) is a useful way to store tidy data
 
 ```{r}
 #| echo: true
@@ -197,15 +201,24 @@ two_sets |>
   ylim(-3, 3)
 ```
 
-## Visualizing linear relationships
+## Visualizing relationships between variables
+
+- $y=F(x) + error$
+- e.g., shoe_size = F(height)
+- Make data that are related to one another
+- Can we see the relationship?
+
+---
 
 ```{r}
 #| echo: true
 x <- runif(n = 100, min = 0, max = 1) # Uniform distribution with min 0 and max 1
-y1 <- x + rnorm(n = 100, mean = 0, sd = .5)
-y2 <- x + rnorm(n = 100, mean = 0, sd = .75)
-y3 <- x + rnorm(n = 100, mean = 0, sd = 1)
-y4 <- x + rnorm(n = 100, mean = 0, sd = 1.5)
+e <- rnorm(n = 100, mean = 0, sd = 1)
+y1 <- x + 0.5*e
+y2 <- x + 0.75*e
+y3 <- x + e
+y4 <- x + 1.5*e
+y5 <- e
 
 linear_df <- data.frame(x = x, y1 = y1, y2 = y2, y3 = y3, y4 = y4)
 ```
@@ -219,8 +232,7 @@ linear_df |>
   aes(x = x, y = y1) +
   geom_point() +
   geom_smooth(method = "lm") +
-  ggtitle("Correlation ", cor(x, y1)) +
-  ylim(-6, 6)
+  ggtitle("Correlation ", cor(x, y1))
 ```
 
 ---
@@ -232,8 +244,7 @@ linear_df |>
   aes(x = x, y = y2) +
   geom_point() +
   geom_smooth(method = "lm") +
-  ggtitle("Correlation ", cor(x, y2)) +
-  ylim(-6, 6)
+  ggtitle("Correlation ", cor(x, y2)) 
 ```
 
 ---
@@ -245,8 +256,7 @@ linear_df |>
   aes(x = x, y = y3) +
   geom_point() +
   geom_smooth(method = "lm") +
-  ggtitle("Correlation ", cor(x, y3)) +
-  ylim(-6, 6)
+  ggtitle("Correlation ", cor(x, y3))
 ```
 
 ---
@@ -258,13 +268,33 @@ linear_df |>
   aes(x = x, y = y4) +
   geom_point() +
   geom_smooth(method = "lm") +
-  ggtitle("Correlation ", cor(x, y4)) +
-  ylim(-6, 6)
+  ggtitle("Correlation ", cor(x, y4))
 ```
+
+---
+
+```{r}
+#| fig-cap: "Linear fit with *independent* unrelated variables"
+linear_df |>
+  ggplot() +
+  aes(x = x, y = y5) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  ggtitle("Correlation ", cor(x, y5))
+```
+
 
 ## Interim summary
 
 - Even when we *know* there are patterns/effects, conveying them accurately and effectively can be challenging
+
+## @Franconeri2021-uv
+
+- Reasoning about statistical properties is *hard*
+- Describing relative changes or relative risk is *hard*
+- Describing central tendencies of random processes is *hard*
+- More vs. less informative ways of conveying same data
+- Graphic experience/literacy varies [@Zikmund-Fisher2014-lg]]
 
 ---
 
@@ -301,6 +331,17 @@ linear_df |>
 ![@UnknownUnknown-ss](https://factsonclimate.org/assets/generated/concentration-warming-relationship_1920.png){fig-align="center"}
 :::
 ::::
+
+# Work session
+
+## DataCamp
+
+![DataCamp status as of 2025-02-26-1534](../include/img/datacamp-2025-02-26-1530.png)
+
+## Check-ins
+
+- Final Project proposal
+- Exercise 04
 
 # Next time
 

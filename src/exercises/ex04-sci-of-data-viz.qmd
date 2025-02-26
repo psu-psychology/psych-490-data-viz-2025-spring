@@ -27,13 +27,13 @@ OR
 OR
 
 1. Choose a primary  reference that is an *empirical* study about a topic in psychological science that interests you.
-2. Briefly describe the paper's principal goals, methods, and especially the key findings. Does the study contain data visualizations?  How well do the visualizations convey the key? What features of the visualizations help communicate the findings? What features make the findings harder to see or understand? How well do the visualizations follow best practices in data visualization design? 
+2. Briefly describe the paper's principal goals, methods, and especially the key findings. Does the study contain data visualizations? How well do the visualizations convey the key findings? What features of the visualizations help communicate the findings? What features make the findings harder to see or understand? How well do the visualizations follow best practices in data visualization design? 
 
 ## Submit {-}
 
-- A 2-3 page write-up in APA format.
+- A 2-4 page write-up in APA format.
 
-Make sure to write a complete essay. See the [feedback for Exercise 01](../supplemental/ex01-feedback.qmd) for other hints about how to improve your submission.
+Make sure to write a complete essay, with an introduction, body, and conclusion. See the [feedback for Exercise 01](../supplemental/ex01-feedback.qmd) for other hints about how to improve your submission.
 
 ::: {.callout-important}
 ## APA template

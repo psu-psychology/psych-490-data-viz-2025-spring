@@ -230,30 +230,20 @@ Rick Gilmore
 </div>
 
 </section>
-<section id="prelude" class="title-slide slide level1 center">
-<h1>Prelude</h1>
-
-</section>
-
 <section>
 <section id="overview" class="title-slide slide level1 center">
 <h1>Overview</h1>
 
 </section>
-<section id="in-the-news" class="slide level2 scrollable">
+<section id="in-the-news" class="slide level2">
 <h2>In the news</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="../include/img/dwyer-lindgren-2024-fig-01.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure 1 from @Dwyer-Lindgren2024-fb"><img data-src="../include/img/dwyer-lindgren-2024-fig-01.jpg" alt="Figure 1 from Dwyer-Lindgren et al. (2024)"></a></p>
-<figcaption>Figure 1 from <span class="citation" data-cites="Dwyer-Lindgren2024-fb">Dwyer-Lindgren et al. (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span></figcaption>
-</figure>
-</div>
-</section>
+
+<img data-src="../include/img/dwyer-lindgren-2024-fig-01.jpg" class="r-stretch quarto-figure-center"><p class="caption">Figure 1 from <span class="citation" data-cites="Dwyer-Lindgren2024-fb">Dwyer-Lindgren et al. (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span></p></section>
 <section id="section" class="slide level2 scrollable">
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../include/img/dwyer-lindgren-2024-fig-04.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure 4 from @Dwyer-Lindgren2024-fb"><img data-src="../include/img/dwyer-lindgren-2024-fig-04.jpg" alt="Figure 4 from Dwyer-Lindgren et al. (2024)"></a></p>
+<p><a href="../include/img/dwyer-lindgren-2024-fig-04.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure 4 from @Dwyer-Lindgren2024-fb"><img data-src="../include/img/dwyer-lindgren-2024-fig-04.jpg" alt="Figure 4 from Dwyer-Lindgren et al. (2024)"></a></p>
 <figcaption>Figure 4 from <span class="citation" data-cites="Dwyer-Lindgren2024-fb">Dwyer-Lindgren et al. (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span></figcaption>
 </figure>
 </div>
@@ -271,6 +261,9 @@ Rick Gilmore
 <img data-src="../include/img/mseeq.png" class="r-stretch quarto-figure-center"><p class="caption">Available through March 2</p></section>
 <section id="last-time" class="slide level2">
 <h2>Last time…</h2>
+<ul>
+<li>Introduction to R</li>
+</ul>
 </section>
 <section id="today" class="slide level2">
 <h2>Today</h2>
@@ -292,13 +285,22 @@ Rick Gilmore
 <section id="lets-make-some-data" class="slide level2">
 <h2>Let’s make some data</h2>
 <div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>x0 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>) <span class="co"># Normal distribution with mean 0 and standard deviation 1</span></span>
 <span id="cb1-2"><a></a>x1 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">1</span>, <span class="at">sd =</span> <span class="dv">1</span>) <span class="co"># Normal distribution with mean 1 and standard deviation 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 </section>
 <section id="plot-the-data" class="slide level2">
 <h2>Plot the data</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">plot</span>(x0, x1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 
+</div>
 <img data-src="../include/fig/fig-base-r-scatterplot-1.png" id="fig-base-r-scatterplot" width="960" class="r-stretch quarto-figure-center"><p class="caption">
 Figure&nbsp;1
 </p></section>
@@ -307,7 +309,10 @@ Figure&nbsp;1
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">hist</span>(x0)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">hist</span>(x0)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output-display">
 <div id="fig-base-r-histogram-x0" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-fig">
@@ -323,7 +328,10 @@ Figure&nbsp;2: Histogram of X0 with mean 0
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">hist</span>(x1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">hist</span>(x1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output-display">
 <div id="fig-base-r-histogram-x1" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-fig">
@@ -341,12 +349,19 @@ Figure&nbsp;3: Histogram of X1 with mean 1
 </section>
 <section id="lets-tidy-up" class="slide level2">
 <h2>Let’s ‘tidy’-up</h2>
+<ul>
+<li>“Tidy” data <span class="math inline">\(\rightarrow\)</span> rectangular data; columns are variables; rows are observations.</li>
+<li>A data frame (<code>data.frame()</code>) is a useful way to store tidy data</li>
+</ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>two_sets <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">sample_name =</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">"x0"</span>, <span class="dv">100</span>), </span>
-<span id="cb4-2"><a></a>                                       <span class="fu">rep</span>(<span class="st">"x1"</span>, <span class="dv">100</span>)), </span>
-<span id="cb4-3"><a></a>                                       <span class="at">value =</span> <span class="fu">c</span>(x0, x1))</span>
-<span id="cb4-4"><a></a></span>
-<span id="cb4-5"><a></a><span class="fu">dim</span>(two_sets) <span class="co"># What is the dimension (size) of two_sets?</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>two_sets <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">sample_name =</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">"x0"</span>, <span class="dv">100</span>), </span>
+<span id="cb5-2"><a></a>                                       <span class="fu">rep</span>(<span class="st">"x1"</span>, <span class="dv">100</span>)), </span>
+<span id="cb5-3"><a></a>                                       <span class="at">value =</span> <span class="fu">c</span>(x0, x1))</span>
+<span id="cb5-4"><a></a></span>
+<span id="cb5-5"><a></a><span class="fu">dim</span>(two_sets) <span class="co"># What is the dimension (size) of two_sets?</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 200   2</code></pre>
 </div>
@@ -355,25 +370,31 @@ Figure&nbsp;3: Histogram of X1 with mean 1
 <section class="slide level2">
 
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">head</span>(two_sets) <span class="co"># first several rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">head</span>(two_sets) <span class="co"># first several rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>  sample_name      value
-1          x0  0.5720736
-2          x0  0.3934869
-3          x0  1.7496495
-4          x0  0.2283183
-5          x0 -0.4138545
-6          x0 -0.9801763</code></pre>
+1          x0 0.01705128
+2          x0 0.17571039
+3          x0 0.40088150
+4          x0 0.04248072
+5          x0 1.85945576
+6          x0 0.37604674</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">tail</span>(two_sets) <span class="co"># last several rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">tail</span>(two_sets) <span class="co"># last several rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>    sample_name     value
-195          x1 1.1432059
-196          x1 0.1602353
-197          x1 2.0620011
-198          x1 1.5856822
-199          x1 0.5255363
-200          x1 0.6092289</code></pre>
+195          x1 0.7503526
+196          x1 1.6947969
+197          x1 0.8300028
+198          x1 0.7388597
+199          x1 2.3226630
+200          x1 2.7112737</code></pre>
 </div>
 </div>
 </section>
@@ -404,12 +425,15 @@ Figure&nbsp;3: Histogram of X1 with mean 1
 <section id="boxplot-violin-raw" class="slide level2">
 <h2>Boxplot + violin + raw</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>two_sets <span class="sc">|&gt;</span></span>
-<span id="cb10-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb10-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> sample_name, <span class="at">y =</span> value) <span class="sc">+</span></span>
-<span id="cb10-4"><a></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
-<span id="cb10-5"><a></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span> .<span class="dv">4</span>) <span class="sc">+</span></span>
-<span id="cb10-6"><a></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> .<span class="dv">2</span>, <span class="at">height =</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>two_sets <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb11-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> sample_name, <span class="at">y =</span> value) <span class="sc">+</span></span>
+<span id="cb11-4"><a></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
+<span id="cb11-5"><a></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span> .<span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb11-6"><a></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> .<span class="dv">2</span>, <span class="at">height =</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 
 </div>
 <img data-src="../include/fig/fig-violinp-box-scatter-1.png" id="fig-violinp-box-scatter" width="960" class="r-stretch quarto-figure-center"><p class="caption">
@@ -439,16 +463,30 @@ Figure&nbsp;7: Mean + 1 standard deviation + jittered points
 <img data-src="../include/fig/fig-ggplot-mean-sem-pts-1.png" width="960" class="r-stretch quarto-figure-center" id="fig-ggplot-mean-sem-pts"><p class="caption">
 Figure&nbsp;8: Mean + 1 standard error of the mean + jittered points
 </p></section>
-<section id="visualizing-linear-relationships" class="slide level2">
-<h2>Visualizing linear relationships</h2>
+<section id="visualizing-relationships-between-variables" class="slide level2">
+<h2>Visualizing relationships between variables</h2>
+<ul>
+<li><span class="math inline">\(y=F(x) + error\)</span></li>
+<li>e.g., shoe_size = F(height)</li>
+<li>Make data that are related to one another</li>
+<li>Can we see the relationship?</li>
+</ul>
+</section>
+<section class="slide level2">
+
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">1</span>) <span class="co"># Uniform distribution with min 0 and max 1</span></span>
-<span id="cb11-2"><a></a>y1 <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> .<span class="dv">5</span>)</span>
-<span id="cb11-3"><a></a>y2 <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> .<span class="dv">75</span>)</span>
-<span id="cb11-4"><a></a>y3 <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span>
-<span id="cb11-5"><a></a>y4 <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="fl">1.5</span>)</span>
-<span id="cb11-6"><a></a></span>
-<span id="cb11-7"><a></a>linear_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">x =</span> x, <span class="at">y1 =</span> y1, <span class="at">y2 =</span> y2, <span class="at">y3 =</span> y3, <span class="at">y4 =</span> y4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">1</span>) <span class="co"># Uniform distribution with min 0 and max 1</span></span>
+<span id="cb12-2"><a></a>e <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span>
+<span id="cb12-3"><a></a>y1 <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span>e</span>
+<span id="cb12-4"><a></a>y2 <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="fl">0.75</span><span class="sc">*</span>e</span>
+<span id="cb12-5"><a></a>y3 <span class="ot">&lt;-</span> x <span class="sc">+</span> e</span>
+<span id="cb12-6"><a></a>y4 <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="fl">1.5</span><span class="sc">*</span>e</span>
+<span id="cb12-7"><a></a>y5 <span class="ot">&lt;-</span> e</span>
+<span id="cb12-8"><a></a></span>
+<span id="cb12-9"><a></a>linear_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">x =</span> x, <span class="at">y1 =</span> y1, <span class="at">y2 =</span> y2, <span class="at">y3 =</span> y3, <span class="at">y4 =</span> y4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 </section>
 <section class="slide level2">
@@ -467,17 +505,31 @@ Figure&nbsp;8: Mean + 1 standard error of the mean + jittered points
 
 
 <img data-src="../include/fig/unnamed-chunk-17-1.png" width="960" class="r-stretch quarto-figure-center"><p class="caption">Linear fit with sd=1.5</p></section>
+<section class="slide level2">
+
+
+<img data-src="../include/fig/unnamed-chunk-18-1.png" width="960" class="r-stretch quarto-figure-center"><p class="caption">Linear fit with <em>independent</em> unrelated variables</p></section>
 <section id="interim-summary" class="slide level2">
 <h2>Interim summary</h2>
 <ul>
 <li>Even when we <em>know</em> there are patterns/effects, conveying them accurately and effectively can be challenging</li>
 </ul>
 </section>
+<section id="franconeri2021-uv" class="slide level2">
+<h2><span class="citation" data-cites="Franconeri2021-uv">Franconeri, Padilla, Shah, Zacks, &amp; Hullman (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span></h2>
+<ul>
+<li>Reasoning about statistical properties is <em>hard</em></li>
+<li>Describing relative changes or relative risk is <em>hard</em></li>
+<li>Describing central tendencies of random processes is <em>hard</em></li>
+<li>More vs.&nbsp;less informative ways of conveying same data</li>
+<li>Graphic experience/literacy varies <span class="citation" data-cites="Zikmund-Fisher2014-lg">(<a href="#/references" role="doc-biblioref" onclick="">Zikmund-Fisher et al., 2014</a>)</span>]</li>
+</ul>
+</section>
 <section class="slide level2">
 
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../include/img/franconeri-fig-22.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure 22 from @Franconeri2021-uv"><img data-src="../include/img/franconeri-fig-22.png" alt="Figure 22 from Franconeri, Padilla, Shah, Zacks, &amp; Hullman (2021)"></a></p>
+<p><a href="../include/img/franconeri-fig-22.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure 22 from @Franconeri2021-uv"><img data-src="../include/img/franconeri-fig-22.png" alt="Figure 22 from Franconeri et al. (2021)"></a></p>
 <figcaption>Figure 22 from <span class="citation" data-cites="Franconeri2021-uv">Franconeri et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span></figcaption>
 </figure>
 </div>
@@ -486,7 +538,7 @@ Figure&nbsp;8: Mean + 1 standard error of the mean + jittered points
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../include/img/franconeri-fig-24.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure 24 from @Franconeri2021-uv"><img data-src="../include/img/franconeri-fig-24.png" alt="Figure 24 from Franconeri et al. (2021)"></a></p>
+<p><a href="../include/img/franconeri-fig-24.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure 24 from @Franconeri2021-uv"><img data-src="../include/img/franconeri-fig-24.png" alt="Figure 24 from Franconeri et al. (2021)"></a></p>
 <figcaption>Figure 24 from <span class="citation" data-cites="Franconeri2021-uv">Franconeri et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span></figcaption>
 </figure>
 </div>
@@ -495,7 +547,7 @@ Figure&nbsp;8: Mean + 1 standard error of the mean + jittered points
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../include/img/franconeri-fig-25.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure 25 from @Franconeri2021-uv"><img data-src="../include/img/franconeri-fig-25.png" alt="Figure 25 from Franconeri et al. (2021)"></a></p>
+<p><a href="../include/img/franconeri-fig-25.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure 25 from @Franconeri2021-uv"><img data-src="../include/img/franconeri-fig-25.png" alt="Figure 25 from Franconeri et al. (2021)"></a></p>
 <figcaption>Figure 25 from <span class="citation" data-cites="Franconeri2021-uv">Franconeri et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span></figcaption>
 </figure>
 </div>
@@ -504,7 +556,7 @@ Figure&nbsp;8: Mean + 1 standard error of the mean + jittered points
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../include/img/franconeri-fig-26.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure 26 from @Franconeri2021-uv"><img data-src="../include/img/franconeri-fig-26.png" alt="Figure 26 from Franconeri et al. (2021)"></a></p>
+<p><a href="../include/img/franconeri-fig-26.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure 26 from @Franconeri2021-uv"><img data-src="../include/img/franconeri-fig-26.png" alt="Figure 26 from Franconeri et al. (2021)"></a></p>
 <figcaption>Figure 26 from <span class="citation" data-cites="Franconeri2021-uv">Franconeri et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span></figcaption>
 </figure>
 </div>
@@ -513,7 +565,7 @@ Figure&nbsp;8: Mean + 1 standard error of the mean + jittered points
 <h2></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="../include/img/franconeri-fig-27.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure 27 from @Franconeri2021-uv; @Zikmund-Fisher2014-lg"><img data-src="../include/img/franconeri-fig-27.png" alt="Figure 27 from Franconeri et al. (2021); Zikmund-Fisher et al. (2014)"></a></p>
+<p><a href="../include/img/franconeri-fig-27.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure 27 from @Franconeri2021-uv; @Zikmund-Fisher2014-lg"><img data-src="../include/img/franconeri-fig-27.png" alt="Figure 27 from Franconeri et al. (2021); Zikmund-Fisher et al. (2014)"></a></p>
 <figcaption>Figure 27 from <span class="citation" data-cites="Franconeri2021-uv">Franconeri et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="Zikmund-Fisher2014-lg">Zikmund-Fisher et al. (<a href="#/references" role="doc-biblioref" onclick="">2014</a>)</span></figcaption>
 </figure>
 </div>
@@ -543,6 +595,22 @@ Figure&nbsp;8: Mean + 1 standard error of the mean + jittered points
 </figure>
 </div>
 </div></div>
+</section></section>
+<section>
+<section id="work-session" class="title-slide slide level1 center">
+<h1>Work session</h1>
+
+</section>
+<section id="datacamp" class="slide level2">
+<h2>DataCamp</h2>
+
+<img data-src="../include/img/datacamp-2025-02-26-1530.png" class="r-stretch quarto-figure-center"><p class="caption">DataCamp status as of 2025-02-26-1534</p></section>
+<section id="check-ins" class="slide level2">
+<h2>Check-ins</h2>
+<ul>
+<li>Final Project proposal</li>
+<li>Exercise 04</li>
+</ul>
 </section></section>
 <section id="next-time" class="title-slide slide level1 center">
 <h1>Next time</h1>

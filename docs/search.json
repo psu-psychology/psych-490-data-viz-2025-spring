@@ -2727,14 +2727,14 @@
     "href": "exercises/ex04-sci-of-data-viz.html#assignment",
     "title": "Exercise 04",
     "section": "Assignment",
-    "text": "Assignment\n\nChoose a primary source reference that is an empirical study about data visualization. For example, Cleveland & McGill (1984) or a more recent paper that cites it, one of the papers cited by Franconeri, Padilla, Shah, Zacks, & Hullman (2021), or a paper you find on your own.\nDescribe the paper’s principal goals, methods, and findings. What are the study’s weaknesses? Does the study contain data visualizations? How well do the visualizations follow best practices in data visualization design? What practical impact do the study findings have for researchers making data visualizations?\n\nOR\n\nChoose a primary reference that is an empirical study about a topic in psychological science that interests you.\nBriefly describe the paper’s principal goals, methods, and especially the key findings. Does the study contain data visualizations? How well do the visualizations convey the key? What features of the visualizations help communicate the findings? What features make the findings harder to see or understand? How well do the visualizations follow best practices in data visualization design?"
+    "text": "Assignment\n\nChoose a primary source reference that is an empirical study about data visualization. For example, Cleveland & McGill (1984) or a more recent paper that cites it, one of the papers cited by Franconeri, Padilla, Shah, Zacks, & Hullman (2021), or a paper you find on your own.\nDescribe the paper’s principal goals, methods, and findings. What are the study’s weaknesses? Does the study contain data visualizations? How well do the visualizations follow best practices in data visualization design? What practical impact do the study findings have for researchers making data visualizations?\n\nOR\n\nChoose a primary reference that is an empirical study about a topic in psychological science that interests you.\nBriefly describe the paper’s principal goals, methods, and especially the key findings. Does the study contain data visualizations? How well do the visualizations convey the key findings? What features of the visualizations help communicate the findings? What features make the findings harder to see or understand? How well do the visualizations follow best practices in data visualization design?"
   },
   {
     "objectID": "exercises/ex04-sci-of-data-viz.html#submit",
     "href": "exercises/ex04-sci-of-data-viz.html#submit",
     "title": "Exercise 04",
     "section": "Submit",
-    "text": "Submit\n\nA 2-3 page write-up in APA format.\n\nMake sure to write a complete essay. See the feedback for Exercise 01 for other hints about how to improve your submission.\n\n\n\n\n\n\nAPA template\n\n\n\nThis template document may be helpful."
+    "text": "Submit\n\nA 2-4 page write-up in APA format.\n\nMake sure to write a complete essay, with an introduction, body, and conclusion. See the feedback for Exercise 01 for other hints about how to improve your submission.\n\n\n\n\n\n\nAPA template\n\n\n\nThis template document may be helpful."
   },
   {
     "objectID": "exercises/ex06-figs-w-r.html",
@@ -3203,7 +3203,7 @@
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#in-the-news",
     "title": "Communicating uncertainty and risk",
     "section": "In the news",
-    "text": "In the news\n\n\n\nFigure 1 from Dwyer-Lindgren et al. (2024)"
+    "text": "In the news\n\nFigure 1 from Dwyer-Lindgren et al. (2024)"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#section",
@@ -3224,7 +3224,7 @@
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#last-time",
     "title": "Communicating uncertainty and risk",
     "section": "Last time…",
-    "text": "Last time…"
+    "text": "Last time…\n\nIntroduction to R"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#today",
@@ -3245,28 +3245,28 @@
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#lets-make-some-data",
     "title": "Communicating uncertainty and risk",
     "section": "Let’s make some data",
-    "text": "Let’s make some data\n\nx0 &lt;- rnorm(n = 100, mean = 0, sd = 1) # Normal distribution with mean 0 and standard deviation 1\nx1 &lt;- rnorm(n = 100, mean = 1, sd = 1) # Normal distribution with mean 1 and standard deviation 1"
+    "text": "Let’s make some data\n\n\nCode\nx0 &lt;- rnorm(n = 100, mean = 0, sd = 1) # Normal distribution with mean 0 and standard deviation 1\nx1 &lt;- rnorm(n = 100, mean = 1, sd = 1) # Normal distribution with mean 1 and standard deviation 1"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#plot-the-data",
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#plot-the-data",
     "title": "Communicating uncertainty and risk",
     "section": "Plot the data",
-    "text": "Plot the data\n\n\nFigure 1"
+    "text": "Plot the data\n\n\nCode\nplot(x0, x1)\n\n\n\n\nFigure 1"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#histograms",
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#histograms",
     "title": "Communicating uncertainty and risk",
     "section": "Histograms",
-    "text": "Histograms\n\n\n\nhist(x0)\n\n\n\n\n\n\n\nFigure 2: Histogram of X0 with mean 0\n\n\n\n\n\n\n\nhist(x1)\n\n\n\n\n\n\n\nFigure 3: Histogram of X1 with mean 1"
+    "text": "Histograms\n\n\n\n\nCode\nhist(x0)\n\n\n\n\n\n\n\n\nFigure 2: Histogram of X0 with mean 0\n\n\n\n\n\n\n\n\nCode\nhist(x1)\n\n\n\n\n\n\n\n\nFigure 3: Histogram of X1 with mean 1"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#lets-tidy-up",
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#lets-tidy-up",
     "title": "Communicating uncertainty and risk",
     "section": "Let’s ‘tidy’-up",
-    "text": "Let’s ‘tidy’-up\n\ntwo_sets &lt;- data.frame(sample_name = c(rep(\"x0\", 100), \n                                       rep(\"x1\", 100)), \n                                       value = c(x0, x1))\n\ndim(two_sets) # What is the dimension (size) of two_sets?\n\n[1] 200   2"
+    "text": "Let’s ‘tidy’-up\n\n“Tidy” data \\(\\rightarrow\\) rectangular data; columns are variables; rows are observations.\nA data frame (data.frame()) is a useful way to store tidy data\n\n\n\nCode\ntwo_sets &lt;- data.frame(sample_name = c(rep(\"x0\", 100), \n                                       rep(\"x1\", 100)), \n                                       value = c(x0, x1))\n\ndim(two_sets) # What is the dimension (size) of two_sets?\n\n\n[1] 200   2"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#another-way-to-plot",
@@ -3280,7 +3280,7 @@
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#boxplot-violin-raw",
     "title": "Communicating uncertainty and risk",
     "section": "Boxplot + violin + raw",
-    "text": "Boxplot + violin + raw\n\ntwo_sets |&gt;\n  ggplot() +\n  aes(x = sample_name, y = value) +\n  geom_violin() +\n  geom_boxplot(alpha = .4) +\n  geom_jitter(width = .2, height = 0)\n\n\n\nFigure 4"
+    "text": "Boxplot + violin + raw\n\n\nCode\ntwo_sets |&gt;\n  ggplot() +\n  aes(x = sample_name, y = value) +\n  geom_violin() +\n  geom_boxplot(alpha = .4) +\n  geom_jitter(width = .2, height = 0)\n\n\n\n\nFigure 4"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#bars-error-bars",
@@ -3301,7 +3301,7 @@
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#visualizing-linear-relationships",
     "title": "Communicating uncertainty and risk",
     "section": "Visualizing linear relationships",
-    "text": "Visualizing linear relationships\n\nx &lt;- runif(n = 100, min = 0, max = 1) # Uniform distribution with min 0 and max 1\ny1 &lt;- x + rnorm(n = 100, mean = 0, sd = .5)\ny2 &lt;- x + rnorm(n = 100, mean = 0, sd = .75)\ny3 &lt;- x + rnorm(n = 100, mean = 0, sd = 1)\ny4 &lt;- x + rnorm(n = 100, mean = 0, sd = 1.5)\n\nlinear_df &lt;- data.frame(x = x, y1 = y1, y2 = y2, y3 = y3, y4 = y4)"
+    "text": "Visualizing linear relationships\n\n\nCode\nx &lt;- runif(n = 100, min = 0, max = 1) # Uniform distribution with min 0 and max 1\ny1 &lt;- x + rnorm(n = 100, mean = 0, sd = .5)\ny2 &lt;- x + rnorm(n = 100, mean = 0, sd = .75)\ny3 &lt;- x + rnorm(n = 100, mean = 0, sd = 1)\ny4 &lt;- x + rnorm(n = 100, mean = 0, sd = 1.5)\n\nlinear_df &lt;- data.frame(x = x, y1 = y1, y2 = y2, y3 = y3, y4 = y4)"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#interim-summary",
@@ -3358,5 +3358,33 @@
     "title": "Communicating uncertainty and risk",
     "section": "Who understands what?",
     "text": "Who understands what?\n\n\n\n\n\nLindsey (2024)\n\n\n\n\n\n\n“How are CO₂ concentrations related to warming?” (n.d.)"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#datacamp",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#datacamp",
+    "title": "Communicating uncertainty and risk",
+    "section": "DataCamp",
+    "text": "DataCamp\n\nDataCamp status as of 2025-02-26-1534"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#check-ins",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#check-ins",
+    "title": "Communicating uncertainty and risk",
+    "section": "Check-ins",
+    "text": "Check-ins\n\nFinal Project proposal\nExercise 04"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#visualizing-relationships-between-variables",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#visualizing-relationships-between-variables",
+    "title": "Communicating uncertainty and risk",
+    "section": "Visualizing relationships between variables",
+    "text": "Visualizing relationships between variables\n\n\\(y=F(x) + error\\)\ne.g., shoe_size = F(height)\nMake data that are related to one another\nCan we see the relationship?"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#franconeri2021-uv",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#franconeri2021-uv",
+    "title": "Communicating uncertainty and risk",
+    "section": "Franconeri, Padilla, Shah, Zacks, & Hullman (2021)",
+    "text": "Franconeri, Padilla, Shah, Zacks, & Hullman (2021)\n\nReasoning about statistical properties is hard\nDescribing relative changes or relative risk is hard\nDescribing central tendencies of random processes is hard\nMore vs. less informative ways of conveying same data\nGraphic experience/literacy varies (Zikmund-Fisher et al., 2014)]"
   }
 ]
