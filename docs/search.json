@@ -3197,5 +3197,103 @@
     "title": "Introduction to R",
     "section": "",
     "text": "Ferrell (2025)"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#in-the-news",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#in-the-news",
+    "title": "Communicating uncertainty and risk",
+    "section": "In the news",
+    "text": "In the news\n\n\n\nFigure 1 from Dwyer-Lindgren et al. (2024)"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#section",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#section",
+    "title": "Communicating uncertainty and risk",
+    "section": "",
+    "text": "Figure 4 from Dwyer-Lindgren et al. (2024)"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#announcements",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#announcements",
+    "title": "Communicating uncertainty and risk",
+    "section": "Announcements",
+    "text": "Announcements\n\nPending: Final Project proposal\nPending: Exercise 04"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#last-time",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#last-time",
+    "title": "Communicating uncertainty and risk",
+    "section": "Last time…",
+    "text": "Last time…"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#today",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#today",
+    "title": "Communicating uncertainty and risk",
+    "section": "Today",
+    "text": "Today\n\nCommunicating uncertainty and risk\nWork session\n\nR (DataCamp)\nExercise 04\nFinal project proposal"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#references",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#references",
+    "title": "Communicating uncertainty and risk",
+    "section": "References",
+    "text": "References\n\n\n\n\nDwyer-Lindgren, L., Baumann, M. M., Li, Z., Kelly, Y. O., Schmidt, C., Searchinger, C., … Murray, C. J. (2024). Ten americas: A systematic analysis of life expectancy disparities in the USA. Lancet, 404, 2299–2313. https://doi.org/10.1016/S0140-6736(24)01495-8"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#lets-make-some-data",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#lets-make-some-data",
+    "title": "Communicating uncertainty and risk",
+    "section": "Let’s make some data",
+    "text": "Let’s make some data\n\nx0 &lt;- rnorm(n = 100, mean = 0, sd = 1) # Normal distribution with mean 0 and standard deviation 1\nx1 &lt;- rnorm(n = 100, mean = 1, sd = 1) # Normal distribution with mean 1 and standard deviation 1"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#plot-the-data",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#plot-the-data",
+    "title": "Communicating uncertainty and risk",
+    "section": "Plot the data",
+    "text": "Plot the data\n\n\nFigure 1"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#histograms",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#histograms",
+    "title": "Communicating uncertainty and risk",
+    "section": "Histograms",
+    "text": "Histograms\n\n\n\nhist(x0)\n\n\n\n\n\n\n\nFigure 2: Histogram of X0 with mean 0\n\n\n\n\n\n\n\nhist(x1)\n\n\n\n\n\n\n\nFigure 3: Histogram of X1 with mean 1"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#lets-tidy-up",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#lets-tidy-up",
+    "title": "Communicating uncertainty and risk",
+    "section": "Let’s ‘tidy’-up",
+    "text": "Let’s ‘tidy’-up\n\ntwo_sets &lt;- data.frame(sample_name = c(rep(\"x0\", 100), \n                                       rep(\"x1\", 100)), \n                                       value = c(x0, x1))\n\ndim(two_sets) # What is the dimension (size) of two_sets?\n\n[1] 200   2"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#another-way-to-plot",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#another-way-to-plot",
+    "title": "Communicating uncertainty and risk",
+    "section": "Another way to plot",
+    "text": "Another way to plot"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#boxplot-violin-raw",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#boxplot-violin-raw",
+    "title": "Communicating uncertainty and risk",
+    "section": "Boxplot + violin + raw",
+    "text": "Boxplot + violin + raw\n\ntwo_sets |&gt;\n  ggplot() +\n  aes(x = sample_name, y = value) +\n  geom_violin() +\n  geom_boxplot(alpha = .4) +\n  geom_jitter(width = .2, height = 0)\n\n\n\nFigure 4"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#bars-error-bars",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#bars-error-bars",
+    "title": "Communicating uncertainty and risk",
+    "section": "Bars + error bars",
+    "text": "Bars + error bars"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#points-error-bars",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#points-error-bars",
+    "title": "Communicating uncertainty and risk",
+    "section": "Points + error bars",
+    "text": "Points + error bars\n\n\n\n\n\n\n\n\n\n\nFigure 5: Mean + 1 standard deviation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 6: Mean + 1 standard error of the mean"
   }
 ]

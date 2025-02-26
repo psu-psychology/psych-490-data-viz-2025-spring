@@ -1,0 +1,206 @@
+---
+title: "Communicating uncertainty and risk"
+subtitle: "2025-02-27"
+---
+
+# Prelude
+
+# Overview
+
+## In the news
+
+![Figure 1 from @Dwyer-Lindgren2024-fb](../include/img/dwyer-lindgren-2024-fig-01.jpg){.lightbox}
+
+## {.scrollable}
+
+![Figure 4 from @Dwyer-Lindgren2024-fb](../include/img/dwyer-lindgren-2024-fig-04.jpg){.lightbox}
+
+## Announcements
+
+- [Pending]{.green_assigned}: [Final Project](../exercises/final-project.qmd) proposal
+- [Pending]{.green_assigned}: [Exercise 04](../exercises/ex04-sci-of-data-viz.qmd)
+
+---
+
+![Available through March 2](../include/img/mseeq.png)
+
+## Last time...
+
+## Today
+
+- Communicating uncertainty and risk
+- Work session
+  - R (DataCamp)
+  - Exercise 04
+  - Final project proposal
+  
+# Communicating uncertainty and risk
+
+## Let's make some data
+
+```{r}
+#| echo: true
+x0 <- rnorm(n = 100, mean = 0, sd = 1) # Normal distribution with mean 0 and standard deviation 1
+x1 <- rnorm(n = 100, mean = 1, sd = 1) # Normal distribution with mean 1 and standard deviation 1
+```
+
+## Plot the data
+
+```{r}
+#| label: fig-base-r-scatterplot
+plot(x0, x1)
+```
+
+## Histograms
+
+:::: {.columns}
+::: {.column width=50%}
+```{r}
+#| echo: true
+#| fig-cap: "Histogram of X0 with mean 0"
+#| label: fig-base-r-histogram-x0
+hist(x0)
+```
+:::
+::: {.column width=50%}
+```{r}
+#| echo: true
+#| fig-cap: "Histogram of X1 with mean 1"
+#| label: fig-base-r-histogram-x1
+hist(x1)
+```
+:::
+::::
+
+## Let's 'tidy'-up
+
+```{r}
+#| echo: true
+two_sets <- data.frame(sample_name = c(rep("x0", 100), 
+                                       rep("x1", 100)), 
+                                       value = c(x0, x1))
+
+dim(two_sets) # What is the dimension (size) of two_sets?
+```
+
+---
+
+```{r}
+#| echo: true
+head(two_sets) # first several rows
+tail(two_sets) # last several rows
+```
+
+---
+
+::: {.callout-note}
+`data.frame()`: makes a rectangular table of data with labeled columns.
+
+`rep()`: replicates or repeats its arguments. So `rep('x0', 100)` makes a vector/array with 100 copies of 'x0'.
+
+We use `value = c(x0, x1)` to combine x0 and x1 into one long set of values.
+
+**Wait!**: You said don't use the equal sign (`=`), but use it here. What gives? Long-story shortened: The equal sign (`=`) only works when we're defining parameters inside a function; the left arrow (`<-`) does not. So, use left arrows for assigning names outside a function and equal signs inside functions.
+
+Syntax is kind of a pain. Remember when you had to learn English grammar?
+:::
+
+## Another way to plot
+
+```{r}
+library(ggplot2)
+#| label: fig-ggplot-side-by-side
+two_sets |>
+  ggplot() +
+  aes(x = value) +
+  geom_histogram() +
+  facet_grid(cols = vars(sample_name))
+```
+
+## Boxplot + violin + raw
+
+```{r}
+#| echo: true
+#| label: fig-violinp-box-scatter
+
+two_sets |>
+  ggplot() +
+  aes(x = sample_name, y = value) +
+  geom_violin() +
+  geom_boxplot(alpha = .4) +
+  geom_jitter(width = .2, height = 0)
+```
+
+## Points + error bars
+
+:::: {.columns}
+::: {.column width=50%}
+```{r}
+#| fig-cap: "Mean + 1 standard deviation"
+#| label: fig-ggplot-mean-sd 
+library(dplyr)
+two_sets |>
+  dplyr::group_by(sample_name) |>
+  dplyr::mutate(mean_val = mean(value), sdev = sd(value)) |>
+  dplyr::ungroup() |>
+  ggplot() +
+  aes(x = sample_name, y = mean_val) +
+  geom_point() +
+  geom_errorbar(aes(ymin=mean_val - sdev, ymax=mean_val + sdev, width = .1)) 
+```
+:::
+::: {.column width=50%}
+```{r}
+#| fig-cap: "Mean + 1 standard error of the mean" 
+#| label: fig-ggplot-mean-sem
+two_sets |>
+  dplyr::group_by(sample_name) |>
+  dplyr::summarise(mean_val = mean(value), sdev = sd(value), n = n(), sem = sdev/sqrt(n)) |>
+  ggplot() +
+  aes(x = sample_name, y = mean_val) +
+  geom_point() 
+```
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+```{r}
+#| fig-cap: "Mean + 1 standard deviation + jittered points"
+#| label: fig-ggplot-mean-sd-pts
+library(dplyr)
+two_sets |>
+  dplyr::group_by(sample_name) |>
+  dplyr::mutate(mean_val = mean(value), sdev = sd(value)) |>
+  dplyr::ungroup() |>
+  ggplot() +
+  aes(x = sample_name, y = mean_val) +
+  geom_point() +
+  geom_errorbar(aes(ymin=mean_val - sdev, ymax=mean_val + sdev, width = .1)) +
+  geom_jitter(aes(y = value), width = .2, height = 0)
+```
+:::
+::: {.column width=50%}
+```{r}
+#| fig-cap: "Mean + 1 standard error of the mean + jittered points" 
+#| label: fig-ggplot-mean-sem-pts
+two_sets |>
+  dplyr::group_by(sample_name) |>
+  dplyr::mutate(mean_val = mean(value), sdev = sd(value), n = n(), sem = sdev/sqrt(n)) |>
+  dplyr::ungroup() |>
+  ggplot() +
+  aes(x = sample_name, y = mean_val) +
+  geom_point() +
+  geom_errorbar(aes(ymin=mean_val - sem, ymax=mean_val + sem, width = .1)) +
+  geom_jitter(aes(y = value), width = .2, height = 0)
+```
+:::
+::::
+
+# Next time
+
+# Resources
+
+## References
