@@ -3210,7 +3210,7 @@
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#section",
     "title": "Communicating uncertainty and risk",
     "section": "",
-    "text": "Figure 4 from Dwyer-Lindgren et al. (2024)"
+    "text": "Figure 1 from Dwyer-Lindgren et al. (2024)"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#announcements",
@@ -3224,7 +3224,7 @@
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#last-time",
     "title": "Communicating uncertainty and risk",
     "section": "Last time…",
-    "text": "Last time…\n\nIntroduction to R"
+    "text": "Last time…\n\nIntroduction to R\n\nIntroducing DataCamp"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#today",
@@ -3238,7 +3238,7 @@
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#references",
     "title": "Communicating uncertainty and risk",
     "section": "References",
-    "text": "References\n\n\n\n\nDwyer-Lindgren, L., Baumann, M. M., Li, Z., Kelly, Y. O., Schmidt, C., Searchinger, C., … Murray, C. J. (2024). Ten americas: A systematic analysis of life expectancy disparities in the USA. Lancet, 404, 2299–2313. https://doi.org/10.1016/S0140-6736(24)01495-8\n\n\nFranconeri, S. L., Padilla, L. M., Shah, P., Zacks, J. M., & Hullman, J. (2021). The science of visual data communication: What works. Psychological Science in the Public Interest: A Journal of the American Psychological Society, 22(3), 110–161. https://doi.org/10.1177/15291006211051956\n\n\nHow are CO₂ concentrations related to warming? (n.d.). Retrieved February 17, 2025, from https://factsonclimate.org/infographics/concentration-warming-relationship\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nZikmund-Fisher, B. J., Witteman, H. O., Dickson, M., Fuhrel-Forbis, A., Kahn, V. C., Exe, N. L., … Fagerlin, A. (2014). Blocks, ovals, or people? Icon type affects risk perceptions and recall of pictographs. Medical Decision Making: An International Journal of the Society for Medical Decision Making, 34, 443–453. https://doi.org/10.1177/0272989X13511706"
+    "text": "References\n\n\n\n\nDwyer-Lindgren, L., Baumann, M. M., Li, Z., Kelly, Y. O., Schmidt, C., Searchinger, C., … Murray, C. J. (2024). Ten americas: A systematic analysis of life expectancy disparities in the USA. Lancet, 404, 2299–2313. https://doi.org/10.1016/S0140-6736(24)01495-8\n\n\nFranconeri, S. L., Padilla, L. M., Shah, P., Zacks, J. M., & Hullman, J. (2021). The science of visual data communication: What works. Psychological Science in the Public Interest: A Journal of the American Psychological Society, 22(3), 110–161. https://doi.org/10.1177/15291006211051956\n\n\nHow are CO₂ concentrations related to warming? (n.d.). Retrieved February 17, 2025, from https://factsonclimate.org/infographics/concentration-warming-relationship\n\n\nLindsey, R. (2024, April 9). Climate change: Atmospheric carbon dioxide. Retrieved November 8, 2024, from http://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide\n\n\nRate of measles cases and deaths in the united states, 1919 to 2024. (n.d.). Retrieved February 27, 2025, from https://ourworldindata.org/grapher/measles-cases-and-death-rate\n\n\nZikmund-Fisher, B. J., Witteman, H. O., Dickson, M., Fuhrel-Forbis, A., Kahn, V. C., Exe, N. L., … Fagerlin, A. (2014). Blocks, ovals, or people? Icon type affects risk perceptions and recall of pictographs. Medical Decision Making: An International Journal of the Society for Medical Decision Making, 34, 443–453. https://doi.org/10.1177/0272989X13511706"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#lets-make-some-data",
@@ -3329,28 +3329,28 @@
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#section-1",
     "title": "Communicating uncertainty and risk",
     "section": "",
-    "text": "Figure 24 from Franconeri et al. (2021)"
+    "text": "Figure 4 from Dwyer-Lindgren et al. (2024)"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#section-2",
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#section-2",
     "title": "Communicating uncertainty and risk",
     "section": "",
-    "text": "Figure 25 from Franconeri et al. (2021)"
+    "text": "Figure 24 from Franconeri et al. (2021)"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#section-3",
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#section-3",
     "title": "Communicating uncertainty and risk",
     "section": "",
-    "text": "Figure 26 from Franconeri et al. (2021)"
+    "text": "Figure 25 from Franconeri et al. (2021)"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#section-4",
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#section-4",
     "title": "Communicating uncertainty and risk",
     "section": "",
-    "text": "Figure 27 from Franconeri et al. (2021); Zikmund-Fisher et al. (2014)"
+    "text": "Figure 26 from Franconeri et al. (2021)"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#who-understands-what",
@@ -3386,5 +3386,26 @@
     "title": "Communicating uncertainty and risk",
     "section": "Franconeri, Padilla, Shah, Zacks, & Hullman (2021)",
     "text": "Franconeri, Padilla, Shah, Zacks, & Hullman (2021)\n\nReasoning about statistical properties is hard\nDescribing relative changes or relative risk is hard\nDescribing central tendencies of random processes is hard\nMore vs. less informative ways of conveying same data\nGraphic experience/literacy varies (Zikmund-Fisher et al., 2014)]"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#in-the-news-1",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#in-the-news-1",
+    "title": "Communicating uncertainty and risk",
+    "section": "In the news",
+    "text": "In the news\n\nFigure 1 from Dwyer-Lindgren et al. (2024)"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#section-5",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#section-5",
+    "title": "Communicating uncertainty and risk",
+    "section": "",
+    "text": "Figure 27 from Franconeri et al. (2021); Zikmund-Fisher et al. (2014)"
+  },
+  {
+    "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#or-this",
+    "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#or-this",
+    "title": "Communicating uncertainty and risk",
+    "section": "Or this?",
+    "text": "Or this?\n\n\n“Rate of measles cases and deaths in the united states, 1919 to 2024” (n.d.)"
   }
 ]

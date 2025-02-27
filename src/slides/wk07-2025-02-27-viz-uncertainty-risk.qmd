@@ -11,6 +11,10 @@ subtitle: "2025-02-27"
 
 ## {.scrollable}
 
+![Figure 1 from @Dwyer-Lindgren2024-fb](../include/img/dwyer-lindgren-2024-fig-01.jpg)
+
+## {.scrollable}
+
 ![Figure 4 from @Dwyer-Lindgren2024-fb](../include/img/dwyer-lindgren-2024-fig-04.jpg){.lightbox}
 
 ## Announcements
@@ -25,6 +29,7 @@ subtitle: "2025-02-27"
 ## Last time...
 
 - Introduction to R
+  - Introducing DataCamp
 
 ## Today
 
@@ -331,6 +336,12 @@ linear_df |>
 ![@UnknownUnknown-ss](https://factsonclimate.org/assets/generated/concentration-warming-relationship_1920.png){fig-align="center"}
 :::
 ::::
+
+## Or this?
+
+<iframe src="https://ourworldindata.org/grapher/measles-cases-and-death-rate?time=earliest..2024&tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+
+@UnknownUnknown-ew
 
 # Work session
 
