@@ -10,7 +10,7 @@ The rendered website can be found at:
 
 ## Contents
 
-- `src/`: contains the source files.
+- `src/`: contains the source files, mostly in the Quarto (.qmd) format.
 - `docs/`: contains the rendered site.
 - `renv/`: files related to the site dependencies that are managed using `{renv}`.
 
