@@ -19,3 +19,4 @@ The rendered website can be found at:
 - Clone the repository. If you are using [RStudio](https://posit.co/products/open-source/rstudio/), I recommend creating a new project.
 - View the website by opening `docs/index.html` in a browser.
 - To re-render, run `quarto render src` from the project root directory.
+
