@@ -151,6 +151,8 @@
 
 - Read: 
     - Gilmore 2019 ["Slow R"](https://psu-psychology.github.io/r-bootcamp-2019/talks/slow-r.html)
+- [Slides](slides/wk08-2025-03-04-more-slow-r.qmd)
+- Work on: Datacamp Introduction to R. 
 - In-class work on [Exercise 04](exercises/ex04-sci-of-data-viz.qmd), [Final Project proposal](exercises/final-project.qmd), or [DataCamp](https://datacamp.com)
 
 ### Thursday, March 06 {-}
@@ -171,8 +173,6 @@
 ## March 10-14 *Spring Break* {- #spring-break}
 
 ## March 17-21 {- #week-09}
-
-*Introduction to R*
 
 ### Tuesday, March 18 {-}
 

@@ -90,6 +90,7 @@ two_sets <- data.frame(sample_name = c(rep("x0", 100),
                                        value = c(x0, x1))
 
 dim(two_sets) # What is the dimension (size) of two_sets?
+readr::write_csv(two_sets, "../include/csv/two_sets_1_sd.csv")
 ```
 
 ---
@@ -130,7 +131,7 @@ two_sets |>
 
 ```{r}
 #| echo: true
-#| label: fig-violinp-box-scatter
+#| label: fig-violin-box-scatter
 
 two_sets |>
   ggplot() +

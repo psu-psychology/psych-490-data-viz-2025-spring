@@ -372,6 +372,10 @@ Figure&nbsp;3: Histogram of X1 with mean 1
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 200   2</code></pre>
 </div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>readr<span class="sc">::</span><span class="fu">write_csv</span>(two_sets, <span class="st">"../include/csv/two_sets_1_sd.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 </section>
 <section class="slide level2">
@@ -379,29 +383,29 @@ Figure&nbsp;3: Histogram of X1 with mean 1
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">head</span>(two_sets) <span class="co"># first several rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">head</span>(two_sets) <span class="co"># first several rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>  sample_name      value
-1          x0 -0.2202380
-2          x0 -1.9555151
-3          x0 -0.7942164
-4          x0  0.9853950
-5          x0 -0.4593200
-6          x0 -0.1878460</code></pre>
+1          x0 -1.2317602
+2          x0  0.8088791
+3          x0  1.2893173
+4          x0  0.9737628
+5          x0 -0.7344870
+6          x0 -2.0581570</code></pre>
 </div>
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">tail</span>(two_sets) <span class="co"># last several rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">tail</span>(two_sets) <span class="co"># last several rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>    sample_name     value
-195          x1 3.1013844
-196          x1 2.7050672
-197          x1 0.4207869
-198          x1 0.9643969
-199          x1 0.8645468
-200          x1 4.1475226</code></pre>
+<pre><code>    sample_name      value
+195          x1  0.7422794
+196          x1  0.1955526
+197          x1 -0.5308353
+198          x1  1.3421319
+199          x1  0.2475398
+200          x1  1.1172204</code></pre>
 </div>
 </div>
 </section>
@@ -434,16 +438,16 @@ Figure&nbsp;3: Histogram of X1 with mean 1
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>two_sets <span class="sc">|&gt;</span></span>
-<span id="cb11-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb11-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> sample_name, <span class="at">y =</span> value) <span class="sc">+</span></span>
-<span id="cb11-4"><a></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
-<span id="cb11-5"><a></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span> .<span class="dv">4</span>) <span class="sc">+</span></span>
-<span id="cb11-6"><a></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> .<span class="dv">2</span>, <span class="at">height =</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>two_sets <span class="sc">|&gt;</span></span>
+<span id="cb12-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb12-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> sample_name, <span class="at">y =</span> value) <span class="sc">+</span></span>
+<span id="cb12-4"><a></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
+<span id="cb12-5"><a></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span> .<span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb12-6"><a></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> .<span class="dv">2</span>, <span class="at">height =</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 
 </div>
-<img data-src="../include/fig/fig-violinp-box-scatter-1.png" id="fig-violinp-box-scatter" width="960" class="r-stretch quarto-figure-center"><p class="caption">
+<img data-src="../include/fig/fig-violin-box-scatter-1.png" id="fig-violin-box-scatter" width="960" class="r-stretch quarto-figure-center"><p class="caption">
 Figure&nbsp;4
 </p></section>
 <section id="points-error-bars" class="slide level2">
@@ -484,15 +488,15 @@ Figure&nbsp;8: Mean + 1 standard error of the mean + jittered points
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">1</span>) <span class="co"># Uniform distribution with min 0 and max 1</span></span>
-<span id="cb12-2"><a></a>e <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span>
-<span id="cb12-3"><a></a>y1 <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span>e</span>
-<span id="cb12-4"><a></a>y2 <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="fl">0.75</span><span class="sc">*</span>e</span>
-<span id="cb12-5"><a></a>y3 <span class="ot">&lt;-</span> x <span class="sc">+</span> e</span>
-<span id="cb12-6"><a></a>y4 <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="fl">1.5</span><span class="sc">*</span>e</span>
-<span id="cb12-7"><a></a>y5 <span class="ot">&lt;-</span> e</span>
-<span id="cb12-8"><a></a></span>
-<span id="cb12-9"><a></a>linear_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">x =</span> x, <span class="at">y1 =</span> y1, <span class="at">y2 =</span> y2, <span class="at">y3 =</span> y3, <span class="at">y4 =</span> y4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">1</span>) <span class="co"># Uniform distribution with min 0 and max 1</span></span>
+<span id="cb13-2"><a></a>e <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span>
+<span id="cb13-3"><a></a>y1 <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span>e</span>
+<span id="cb13-4"><a></a>y2 <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="fl">0.75</span><span class="sc">*</span>e</span>
+<span id="cb13-5"><a></a>y3 <span class="ot">&lt;-</span> x <span class="sc">+</span> e</span>
+<span id="cb13-6"><a></a>y4 <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="fl">1.5</span><span class="sc">*</span>e</span>
+<span id="cb13-7"><a></a>y5 <span class="ot">&lt;-</span> e</span>
+<span id="cb13-8"><a></a></span>
+<span id="cb13-9"><a></a>linear_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">x =</span> x, <span class="at">y1 =</span> y1, <span class="at">y2 =</span> y2, <span class="at">y3 =</span> y3, <span class="at">y4 =</span> y4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>

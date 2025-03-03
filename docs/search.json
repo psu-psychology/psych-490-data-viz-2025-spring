@@ -1390,7 +1390,7 @@
     "href": "schedule.html#week-08",
     "title": "Schedule",
     "section": "March 3-7",
-    "text": "March 3-7\n\nTuesday, March 04\nMore Slow-R\n\nRead:\n\nGilmore 2019 “Slow R”\n\nIn-class work on Exercise 04, Final Project proposal, or DataCamp\n\n\n\nThursday, March 06\n\n\n\nCritiquing figures\n\nRead:\n\nTufte (2001), Chapter 1, PDF on Canvas\nTufte (2001), Chapter 2, PDF on Canvas\n\nDue: Exercise-04\nAssigned: Exercise-05\nDue: Final Project proposal"
+    "text": "March 3-7\n\nTuesday, March 04\nMore Slow-R\n\nRead:\n\nGilmore 2019 “Slow R”\n\nSlides\nWork on: Datacamp Introduction to R.\nIn-class work on Exercise 04, Final Project proposal, or DataCamp\n\n\n\nThursday, March 06\n\n\n\nCritiquing figures\n\nRead:\n\nTufte (2001), Chapter 1, PDF on Canvas\nTufte (2001), Chapter 2, PDF on Canvas\n\nDue: Exercise-04\nAssigned: Exercise-05\nDue: Final Project proposal"
   },
   {
     "objectID": "schedule.html#spring-break",
@@ -1404,7 +1404,7 @@
     "href": "schedule.html#week-09",
     "title": "Schedule",
     "section": "March 17-21",
-    "text": "March 17-21\nIntroduction to R\n\nTuesday, March 18\nWhy R we doing this?\n\n\nThursday, March 20\nNO CLASS\n\nDue: Exercise-05"
+    "text": "March 17-21\n\nTuesday, March 18\nWhy R we doing this?\n\n\nThursday, March 20\nNO CLASS\n\nDue: Exercise-05"
   },
   {
     "objectID": "schedule.html#week-10",
@@ -3266,7 +3266,7 @@
     "href": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#lets-tidy-up",
     "title": "Communicating uncertainty and risk",
     "section": "Let’s ‘tidy’-up",
-    "text": "Let’s ‘tidy’-up\n\n“Tidy” data \\(\\rightarrow\\) rectangular data; columns are variables; rows are observations.\nA data frame (data.frame()) is a useful way to store tidy data\n\n\n\nCode\ntwo_sets &lt;- data.frame(sample_name = c(rep(\"x0\", 100), \n                                       rep(\"x1\", 100)), \n                                       value = c(x0, x1))\n\ndim(two_sets) # What is the dimension (size) of two_sets?\n\n\n[1] 200   2"
+    "text": "Let’s ‘tidy’-up\n\n“Tidy” data \\(\\rightarrow\\) rectangular data; columns are variables; rows are observations.\nA data frame (data.frame()) is a useful way to store tidy data\n\n\n\nCode\ntwo_sets &lt;- data.frame(sample_name = c(rep(\"x0\", 100), \n                                       rep(\"x1\", 100)), \n                                       value = c(x0, x1))\n\ndim(two_sets) # What is the dimension (size) of two_sets?\n\n\n[1] 200   2\n\n\nCode\nreadr::write_csv(two_sets, \"../include/csv/two_sets_1_sd.csv\")"
   },
   {
     "objectID": "slides/wk07-2025-02-27-viz-uncertainty-risk.html#another-way-to-plot",
@@ -3407,5 +3407,257 @@
     "title": "Communicating uncertainty and risk",
     "section": "Or this?",
     "text": "Or this?\n\n\n“Rate of measles cases and deaths in the united states, 1919 to 2024” (n.d.)"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#in-the-news",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#in-the-news",
+    "title": "More slow R",
+    "section": "In the news",
+    "text": "In the news"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#announcements",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#announcements",
+    "title": "More slow R",
+    "section": "Announcements",
+    "text": "Announcements\n\nPending: Final Project proposal\nPending: Exercise 04"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#last-time",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#last-time",
+    "title": "More slow R",
+    "section": "Last time…",
+    "text": "Last time…\n\nCommunicating uncertainty and risk"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#challenges",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#challenges",
+    "title": "More slow R",
+    "section": "Challenges",
+    "text": "Challenges\n\nCommunicating variability\nCommunicating statistical info/summaries\nWhat are our goals?"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#are-the-means-different",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#are-the-means-different",
+    "title": "More slow R",
+    "section": "Are the means different?",
+    "text": "Are the means different?\n\n\nCode\ntwo_sets &lt;- readr::read_csv(\"../include/csv/two_sets_1_sd.csv\", show_col_types = FALSE)\n t.test(value ~ sample_name, data = two_sets, var.equal = TRUE)\n\n\n\n    Two Sample t-test\n\ndata:  value by sample_name\nt = -4.5862, df = 198, p-value = 7.995e-06\nalternative hypothesis: true difference in means between group x0 and group x1 is not equal to 0\n95 percent confidence interval:\n -0.8951844 -0.3568270\nsample estimates:\nmean in group x0 mean in group x1 \n       0.2199844        0.8459901"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#your-thoughts",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#your-thoughts",
+    "title": "More slow R",
+    "section": "Your thoughts?",
+    "text": "Your thoughts?\n\nGroup means differ; estimated difference in [.36, .90]\nReject null hypothesis of no difference, t(198)=4.57, p&lt;.0001.\nWhich figure best meets our goals?"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#today",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#today",
+    "title": "More slow R",
+    "section": "Today",
+    "text": "Today\n\nMore Slow R"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#data-workflow",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#data-workflow",
+    "title": "More slow R",
+    "section": "Data workflow",
+    "text": "Data workflow\n\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#data-workflow-we-can-script",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#data-workflow-we-can-script",
+    "title": "More slow R",
+    "section": "Data workflow we can script",
+    "text": "Data workflow we can script\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#references",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#references",
+    "title": "More slow R",
+    "section": "References",
+    "text": "References"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#next-time",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#next-time",
+    "title": "More slow R",
+    "section": "Next time",
+    "text": "Next time\nCritiquing figures"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#data-workflow-we-can-script-1",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#data-workflow-we-can-script-1",
+    "title": "More slow R",
+    "section": "Data workflow we can script",
+    "text": "Data workflow we can script\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#gather-data",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#gather-data",
+    "title": "More slow R",
+    "section": "Gather data",
+    "text": "Gather data\n\nHow to acquire/download\n\nDownload manually\nDownload programmatically (via code)\n\nHow to save\n\nText formats, e.g., comma-separated values (csv), best"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#manual-download",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#manual-download",
+    "title": "More slow R",
+    "section": "Manual download",
+    "text": "Manual download\n\nVisit forms.google.com"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#manual-download-1",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#manual-download-1",
+    "title": "More slow R",
+    "section": "Manual download",
+    "text": "Manual download\n\nPick a form"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#manual-download-2",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#manual-download-2",
+    "title": "More slow R",
+    "section": "Manual download",
+    "text": "Manual download\n\nClick on more options (…) menu"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#manual-download-3",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#manual-download-3",
+    "title": "More slow R",
+    "section": "Manual download",
+    "text": "Manual download"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#manual-download-4",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#manual-download-4",
+    "title": "More slow R",
+    "section": "Manual download",
+    "text": "Manual download\n\nGo to default download location (varies by computer)\nDownloads as a zip (compressed) file"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#manual-download-5",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#manual-download-5",
+    "title": "More slow R",
+    "section": "Manual download",
+    "text": "Manual download\n\nOpen compressed file"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#manual-download-6",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#manual-download-6",
+    "title": "More slow R",
+    "section": "Manual download",
+    "text": "Manual download\n\nMove file to target location"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#download-manually",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#download-manually",
+    "title": "More slow R",
+    "section": "Download manually",
+    "text": "Download manually\n\nVisit forms.google.com"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#download-manually-1",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#download-manually-1",
+    "title": "More slow R",
+    "section": "Download manually",
+    "text": "Download manually\n\nPick a form"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#download-manually-2",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#download-manually-2",
+    "title": "More slow R",
+    "section": "Download manually",
+    "text": "Download manually\n\nClick on more options (…) menu"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#download-manually-3",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#download-manually-3",
+    "title": "More slow R",
+    "section": "Download manually",
+    "text": "Download manually"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#download-manually-4",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#download-manually-4",
+    "title": "More slow R",
+    "section": "Download manually",
+    "text": "Download manually\n\nGo to default download location (varies by computer)\nDownloads as a zip (compressed) file"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#download-manually-5",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#download-manually-5",
+    "title": "More slow R",
+    "section": "Download manually",
+    "text": "Download manually\n\nOpen compressed file"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#download-manually-6",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#download-manually-6",
+    "title": "More slow R",
+    "section": "Download manually",
+    "text": "Download manually\n\nMove file to target location"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#download-automatically",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#download-automatically",
+    "title": "More slow R",
+    "section": "Download automatically",
+    "text": "Download automatically\n\nTwo manual steps\n\nCreate Google Sheets file: Click on “Link to Sheets”"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#download-automatically-1",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#download-automatically-1",
+    "title": "More slow R",
+    "section": "Download automatically",
+    "text": "Download automatically"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#download-automatically-2",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#download-automatically-2",
+    "title": "More slow R",
+    "section": "Download automatically",
+    "text": "Download automatically\n\nLogin to Google\nDownload specific URL\nSave where I decide (include/csv) and with the name I choose (PSYCH-490.003-Exercise-3.csv)"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#download-automatically-3",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#download-automatically-3",
+    "title": "More slow R",
+    "section": "Download automatically",
+    "text": "Download automatically\n\n\n[1] \"assignments.csv\"              \"PSYCH 490.003 Exercise 3.csv\"\n[3] \"PSYCH-490.003-Exercise-3.csv\" \"two_sets_1_sd.csv\""
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#import-csv",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#import-csv",
+    "title": "More slow R",
+    "section": "Import CSV",
+    "text": "Import CSV\n\n\n[1] 25  9\n\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\""
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#import-csv-1",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#import-csv-1",
+    "title": "More slow R",
+    "section": "Import CSV",
+    "text": "Import CSV\n\n\n[1] 25  9\n\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\""
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#clean-then-visualize-or-vice-versa",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#clean-then-visualize-or-vice-versa",
+    "title": "More slow R",
+    "section": "Clean then visualize or vice versa?",
+    "text": "Clean then visualize or vice versa?\n\n\nFavorite Icecream Flavor\n          Chocolate Mint Chocolate Chip          Strawberry             Vanilla \n                  5                   9                   4                   7"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#another-cross-tabulation",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#another-cross-tabulation",
+    "title": "More slow R",
+    "section": "Another cross-tabulation",
+    "text": "Another cross-tabulation\n\n\n                        Best Pet Type\nFavorite Icecream Flavor Cat Dog\n     Chocolate             2   3\n     Mint Chocolate Chip   3   6\n     Strawberry            2   2\n     Vanilla               2   5"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#clean-then-visualize",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#clean-then-visualize",
+    "title": "More slow R",
+    "section": "Clean then visualize",
+    "text": "Clean then visualize\n\nRename variable names: Shorter, remove spaces\nBut capture the actual questions for later"
   }
 ]

@@ -42,7 +42,7 @@
         "\n",
         "We start by importing the `numpy` and `pyplot` libraries and giving them convenient short names for future reference.\n"
       ],
-      "id": "9487d05d"
+      "id": "213a23cb"
     },
     {
       "cell_type": "code",
@@ -51,7 +51,7 @@
         "import numpy as np\n",
         "import matplotlib.pyplot as plt"
       ],
-      "id": "d0f7c1ba",
+      "id": "49a691cb",
       "execution_count": null,
       "outputs": []
     },
@@ -69,7 +69,7 @@
         "\n",
         "Load components from `matplotlib`.\n"
       ],
-      "id": "cdde3aa3"
+      "id": "cd26b17b"
     },
     {
       "cell_type": "code",
@@ -81,7 +81,7 @@
         "# Create a random number generator with a fixed seed for reproducibility\n",
         "rng = np.random.default_rng(19680801)"
       ],
-      "id": "fa70f16c",
+      "id": "14ad3458",
       "execution_count": null,
       "outputs": []
     },
@@ -91,7 +91,7 @@
       "source": [
         "Generate data and render it.\n"
       ],
-      "id": "a68a6705"
+      "id": "518b0c1a"
     },
     {
       "cell_type": "code",
@@ -131,7 +131,7 @@
         "\n",
         "<https://matplotlib.org/stable/gallery/statistics/violinplot.html>\n"
       ],
-      "id": "726aa08b"
+      "id": "863a1e4a"
     },
     {
       "cell_type": "code",
@@ -234,7 +234,7 @@
         "\n",
         "From <https://matplotlib.org/stable/plot_types/stats/boxplot_plot.html#sphx-glr-plot-types-stats-boxplot-plot-py>.\n"
       ],
-      "id": "84fff6ef"
+      "id": "96dc0390"
     },
     {
       "cell_type": "code",
@@ -278,7 +278,7 @@
         "\n",
         "Source: <https://matplotlib.org/stable/plot_types/basic/bar.html#sphx-glr-plot-types-basic-bar-py>\n"
       ],
-      "id": "6adb1c0e"
+      "id": "e6881ee9"
     },
     {
       "cell_type": "code",
@@ -323,7 +323,7 @@
         "\n",
         "For a demonstration of a line plot on a polar axis, see @fig-polar.\n"
       ],
-      "id": "9ef1756e"
+      "id": "fec7c963"
     },
     {
       "cell_type": "code",
