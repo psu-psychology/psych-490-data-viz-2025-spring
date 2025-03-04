@@ -53,6 +53,37 @@ two_sets <- readr::read_csv("../include/csv/two_sets_1_sd.csv", show_col_types =
 
 # More Slow-R
 
+## Storing things {.scrollable}
+
+- Long-term (between work sessions) in files.
+- Short-term (during your work session) in volatile memory.
+  - e.g., object names
+  
+```{r}
+list.files()
+```
+
+## Storing things {.scrollable}
+
+- Directory/folder hierarchy
+- Like a tree with branches
+
+```{r}
+getwd()
+```
+
+## Sequences and repetitions
+
+```{r}
+seq(from = -6, to = 15) # forward
+seq(from = 10, to = 1, by = -1) # backward
+seq(from = 2, to = 32, by = 2) # bigger hops
+```
+
+```{r}
+rep(c("I love R"), 4)
+```
+
 ## Data workflow
 
 ::: {.incremental}
@@ -220,6 +251,12 @@ xtabs(formula = ~ `Favorite Icecream Flavor` + `Best Pet Type`,
 
 - Rename variable names: Shorter, remove spaces
 - But capture the actual questions for later
+
+## Why script?
+
+- **Much** more reproducible and robust
+- Especially for complex sequences of tasks
+- Be kind to your future (forgetful) self
 
 # Work session
 

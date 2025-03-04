@@ -3659,5 +3659,33 @@
     "title": "More slow R",
     "section": "Clean then visualize",
     "text": "Clean then visualize\n\nRename variable names: Shorter, remove spaces\nBut capture the actual questions for later"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#storing-things",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#storing-things",
+    "title": "More slow R",
+    "section": "Storing things",
+    "text": "Storing things\n\nLong-term (between work sessions) in files.\nShort-term (during your work session) in volatile memory.\n\ne.g., object names\n\n\n\n\n [1] \"_feynmann.qmd\"                                 \n [2] \"_gilmore-photo-bio.qmd\"                        \n [3] \"_merton.qmd\"                                   \n [4] \"_metadata.yml\"                                 \n [5] \"_reddish-green.Rmd\"                            \n [6] \"img_gilmore_bio\"                               \n [7] \"wk01-2025-01-14-course-intro.qmd\"              \n [8] \"wk01-2025-01-16-semiotics-data-viz.qmd\"        \n [9] \"wk02-2025-01-21-govt-biz.qmd\"                  \n[10] \"wk02-2025-01-23-art-sports-journ.qmd\"          \n[11] \"wk03-2025-01-28-making-data.qmd\"               \n[12] \"wk03-2025-01-30-figure-types.qmd\"              \n[13] \"wk04-2025-02-04-figure-components.qmd\"         \n[14] \"wk05-2025-02-11-stim-to-sensation.qmd\"         \n[15] \"wk05-2025-02-13-sensation-to-perception.qmd\"   \n[16] \"wk06-2025-02-18-cognition-to-understanding.qmd\"\n[17] \"wk06-2025-02-20-designing-viz.qmd\"             \n[18] \"wk07-2025-02-25-intro-to-r.qmd\"                \n[19] \"wk07-2025-02-27-viz-uncertainty-risk.qmd\"      \n[20] \"wk08-2025-03-04-more-slow-r.qmd\"               \n[21] \"wk08-2025-03-04-more-slow-r.rmarkdown\""
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#storing-things-1",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#storing-things-1",
+    "title": "More slow R",
+    "section": "Storing things",
+    "text": "Storing things\n\nDirectory/folder hierarchy\nLike a tree with branches\n\n\n\n[1] \"/Users/rog1/rrr/psych-490-data-viz-2025-spring/src/slides\""
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#sequences-and-repetitions",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#sequences-and-repetitions",
+    "title": "More slow R",
+    "section": "Sequences and repetitions",
+    "text": "Sequences and repetitions\n\n\n [1] -6 -5 -4 -3 -2 -1  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15\n\n\n [1] 10  9  8  7  6  5  4  3  2  1\n\n\n [1]  2  4  6  8 10 12 14 16 18 20 22 24 26 28 30 32\n\n\n\n\n[1] \"I love R\" \"I love R\" \"I love R\" \"I love R\""
+  },
+  {
+    "objectID": "slides/wk08-2025-03-04-more-slow-r.html#why-script",
+    "href": "slides/wk08-2025-03-04-more-slow-r.html#why-script",
+    "title": "More slow R",
+    "section": "Why script?",
+    "text": "Why script?\n\nMuch more reproducible and robust\nEspecially for complex sequences of tasks\nBe kind to your future (forgetful) self"
   }
 ]
