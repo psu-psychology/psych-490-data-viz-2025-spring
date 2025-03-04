@@ -260,6 +260,14 @@ xtabs(formula = ~ `Favorite Icecream Flavor` + `Best Pet Type`,
 
 # Work session
 
+## DataCamp status
+
+![](../include/img/datacamp-2025-03-04.png)
+
+---
+
+![DataCamp leaderboard](../include/img/datacamp-leaderboard-2025-03-04.png)
+
 ## Next time
 
 *Critiquing figures*
