@@ -20,3 +20,4 @@ The rendered website can be found at:
 - View the website by opening `docs/index.html` in a browser.
 - To re-render, run `quarto render src` from the project root directory.
 
+
