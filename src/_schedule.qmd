@@ -166,9 +166,9 @@
 - Read: 
     - @Tufte2001-cb, Chapter 1, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927901)
     - @Tufte2001-cb, Chapter 2, [PDF on Canvas](https://psu.instructure.com/courses/2381584/files?preview=172927901)
-- [Due]{.orange_due}: [Exercise-04](exercises/ex04-sci-of-data-viz.qmd)
+- [Due]{.orange_due}: [Exercise-04](exercises/ex04-sci-of-data-viz.qmd) | [Canvas Dropbox](https://psu.instructure.com/courses/2381584/assignments/16998405)
 - [Assigned]{.green_assigned}: [Exercise-05](exercises/ex05-figure-prep-guidelines.qmd)
-- [Due]{.orange_due}: [Final Project](exercises/final-project.qmd) proposal
+- [Due]{.orange_due}: [Final Project](exercises/final-project.qmd) proposal | [Canvas Dropbox](https://psu.instructure.com/courses/2381584/assignments/16998415)
 
 ## March 10-14 *Spring Break* {- #spring-break}
 
