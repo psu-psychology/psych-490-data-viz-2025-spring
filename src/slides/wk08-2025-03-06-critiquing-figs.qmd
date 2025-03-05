@@ -1,0 +1,84 @@
+---
+title: "Critiquing figures"
+subtitle: "2025-03-06"
+code_fold: false
+---
+
+# Prelude
+
+## In the news
+
+![@Zhang2025-ag](../include/img/nytimes-2025-03-04-trump-tariffs.png)
+
+## Announcements
+
+- [Due]{.orange_due}: [Final Project](../exercises/final-project.qmd) proposal
+- [Due]{.orange_due}: [Exercise 04](../exercises/ex04-sci-of-data-viz.qmd)
+- [Assigned]{.green_assigned}: [Exercise 05](../exercises/ex05-figure-prep-guidelines.qmd)
+
+## Today's topics
+
+- Critiquing figures
+- Work session
+
+# Critiquing figures
+
+## Figures can enlighten
+
+![@Tufte2001-cb](../include/img/tufte-scatter-p14.png)
+
+---
+
+![@Tufte2001-cb](../include/img/tufte-john-snow-cholera-p24.png)
+
+## Figures can delight
+
+![@Tufte2001-cb](../include/img/tufte-french-rail-p31.png)
+
+## Figures can mislead
+
+![@Tufte2001-cb](../include/img/tufte-illusory-corr-p15.png)
+
+## Spurious correlations
+
+![https://www.tylervigen.com/spurious-correlations](https://www.tylervigen.com/spurious/correlation/image/5918_associates-degrees-awarded-in-emergency-medical-tech_correlates-with_miss-americas-age.svg)
+
+- Correlation $\neq$ causation, but
+- Zero correlation $\rightarrow$ no causal relationship
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+![@Tufte2001-cb](../include/img/tufte-fuel-std-p57.png)
+:::
+::: {.column width=50%}
+![@Tufte2001-cb](../include/img/tufte-fuel-std-p58.png)
+:::
+::::
+
+---
+
+![@Tufte2001-cb](../include/img/tufte-p60.png)
+
+---
+
+![@Tufte2001-cb](../include/img/tufte-p75.png)
+
+## Exercise 05 overview
+
+- Link to [assignment](../exercises/ex05-figure-prep-guidelines.qmd)
+
+# Work session
+
+## DataCamp status
+
+![](../include/img/datacamp-2025-03-04.png)
+
+---
+
+![DataCamp leaderboard](../include/img/datacamp-leaderboard-2025-03-04.png)
+
+# Resources
+
+## References

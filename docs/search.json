@@ -1390,7 +1390,7 @@
     "href": "schedule.html#week-08",
     "title": "Schedule",
     "section": "March 3-7",
-    "text": "March 3-7\n\nTuesday, March 04\nMore Slow-R\n\nRead:\n\nGilmore 2019 “Slow R”\n\nSlides\nWork on: Datacamp Introduction to R.\nIn-class work on Exercise 04, Final Project proposal, or DataCamp\n\n\n\nThursday, March 06\n\n\n\nCritiquing figures\n\nRead:\n\nTufte (2001), Chapter 1, PDF on Canvas\nTufte (2001), Chapter 2, PDF on Canvas\n\nDue: Exercise-04 | Canvas Dropbox\nAssigned: Exercise-05\nDue: Final Project proposal | Canvas Dropbox"
+    "text": "March 3-7\n\nTuesday, March 04\nMore Slow-R\n\nRead:\n\nGilmore 2019 “Slow R”\n\nSlides\nWork on: Datacamp Introduction to R.\nIn-class work on Exercise 04, Final Project proposal, or DataCamp\n\n\n\nThursday, March 06\n\n\n\nCritiquing figures\n\nRead:\n\nTufte (2001), Chapter 1, PDF on Canvas\nTufte (2001), Chapter 2, PDF on Canvas\n\nSlides\nDue: Exercise-04 | Canvas Dropbox\nAssigned: Exercise-05\nDue: Final Project proposal | Canvas Dropbox"
   },
   {
     "objectID": "schedule.html#spring-break",
@@ -1404,7 +1404,7 @@
     "href": "schedule.html#week-09",
     "title": "Schedule",
     "section": "March 17-21",
-    "text": "March 17-21\n\nTuesday, March 18\nWhy R we doing this?\n\n\nThursday, March 20\nNO CLASS\n\nDue: Exercise-05"
+    "text": "March 17-21\n\nTuesday, March 18\nWhy R we doing this?\n\nComplete:\n\nDataCamp, Introduction to R\n\n\n\n\nThursday, March 20\nNO CLASS\n\nDue: Exercise-05"
   },
   {
     "objectID": "schedule.html#week-10",
@@ -3694,5 +3694,89 @@
     "title": "More slow R",
     "section": "DataCamp status",
     "text": "DataCamp status"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-06-critiquing-figs.html#in-the-news",
+    "href": "slides/wk08-2025-03-06-critiquing-figs.html#in-the-news",
+    "title": "Critiquing figures",
+    "section": "In the news",
+    "text": "In the news\n\nZhang & Igielnik (2025)"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-06-critiquing-figs.html#announcements",
+    "href": "slides/wk08-2025-03-06-critiquing-figs.html#announcements",
+    "title": "Critiquing figures",
+    "section": "Announcements",
+    "text": "Announcements\n\nDue: Final Project proposal\nDue: Exercise 04\nAssigned: Exercise 05"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-06-critiquing-figs.html#todays-topics",
+    "href": "slides/wk08-2025-03-06-critiquing-figs.html#todays-topics",
+    "title": "Critiquing figures",
+    "section": "Today’s topics",
+    "text": "Today’s topics\n\nCritiquing figures\nWork session"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-06-critiquing-figs.html#exercise-05",
+    "href": "slides/wk08-2025-03-06-critiquing-figs.html#exercise-05",
+    "title": "Critiquing figures",
+    "section": "Exercise 05",
+    "text": "Exercise 05"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-06-critiquing-figs.html#datacamp-status",
+    "href": "slides/wk08-2025-03-06-critiquing-figs.html#datacamp-status",
+    "title": "Critiquing figures",
+    "section": "DataCamp status",
+    "text": "DataCamp status"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-06-critiquing-figs.html#next-time",
+    "href": "slides/wk08-2025-03-06-critiquing-figs.html#next-time",
+    "title": "Critiquing figures",
+    "section": "Next time",
+    "text": "Next time\nCritiquing figures"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-06-critiquing-figs.html#references",
+    "href": "slides/wk08-2025-03-06-critiquing-figs.html#references",
+    "title": "Critiquing figures",
+    "section": "References",
+    "text": "References\n\n\n\n\nTufte, E. R. (2001). The Visual Display of Quantitative Information. Graphics Pr.\n\n\nZhang, C., & Igielnik, R. (2025, March 4). How americans feel about trump’s tariffs. The New York Times. The New York Times. Retrieved from https://www.nytimes.com/interactive/2025/03/04/polls/tariffs-trump-poll.html"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-06-critiquing-figs.html#figures-can-enlighten",
+    "href": "slides/wk08-2025-03-06-critiquing-figs.html#figures-can-enlighten",
+    "title": "Critiquing figures",
+    "section": "Figures can enlighten",
+    "text": "Figures can enlighten\n\nTufte (2001)"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-06-critiquing-figs.html#figures-can-delight",
+    "href": "slides/wk08-2025-03-06-critiquing-figs.html#figures-can-delight",
+    "title": "Critiquing figures",
+    "section": "Figures can delight",
+    "text": "Figures can delight\n\nTufte (2001)"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-06-critiquing-figs.html#figures-can-mislead",
+    "href": "slides/wk08-2025-03-06-critiquing-figs.html#figures-can-mislead",
+    "title": "Critiquing figures",
+    "section": "Figures can mislead",
+    "text": "Figures can mislead\n\nTufte (2001)"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-06-critiquing-figs.html#spurious-correlations",
+    "href": "slides/wk08-2025-03-06-critiquing-figs.html#spurious-correlations",
+    "title": "Critiquing figures",
+    "section": "Spurious correlations",
+    "text": "Spurious correlations\n\nhttps://www.tylervigen.com/spurious-correlations\nCorrelation \\(\\neq\\) causation, but\nZero correlation \\(\\rightarrow\\) no causal relationship"
+  },
+  {
+    "objectID": "slides/wk08-2025-03-06-critiquing-figs.html#exercise-05-overview",
+    "href": "slides/wk08-2025-03-06-critiquing-figs.html#exercise-05-overview",
+    "title": "Critiquing figures",
+    "section": "Exercise 05 overview",
+    "text": "Exercise 05 overview\n\nLink to assignment"
   }
 ]
