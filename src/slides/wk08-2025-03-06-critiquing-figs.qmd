@@ -56,7 +56,7 @@ code_fold: false
 ::: {.column width=50%}
 - Professor Emeritus, Yale University
 - Statistics, Political Science, Computer Science
-- Leading authority in data visualiztion and information design
+- Leading authority in data visualization and information design
 :::
 ::::
 
