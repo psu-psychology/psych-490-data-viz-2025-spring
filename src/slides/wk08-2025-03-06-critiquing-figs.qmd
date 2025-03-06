@@ -10,6 +10,30 @@ code_fold: false
 
 ![@Zhang2025-ag](../include/img/nytimes-2025-03-04-trump-tariffs.png)
 
+## In the news
+
+![@Geiger2025-wk](https://www.pewresearch.org/wp-content/uploads/sites/20/2025/03/SR_25.03.05_gun-deaths_1.png)
+
+---
+
+![@Geiger2025-wk](https://www.pewresearch.org/wp-content/uploads/sites/20/2025/03/SR_25.03.05_gun-deaths_2.png)
+
+---
+
+![@Geiger2025-wk](https://www.pewresearch.org/wp-content/uploads/sites/20/2025/03/SR_25.03.05_gun-deaths_3.png)
+
+---
+
+![@Geiger2025-wk](https://www.pewresearch.org/wp-content/uploads/sites/20/2025/03/SR_25.03.05_gun-deaths_4.png)
+
+---
+
+![@UnknownUnknown-tz](../include/img/gun-violence-all-countries.png)
+
+---
+
+![@UnknownUnknown-tz](../include/img/gun-violence-rich-countries.png)
+
 ## Announcements
 
 - [Due]{.orange_due}: [Final Project](../exercises/final-project.qmd) proposal
@@ -22,6 +46,23 @@ code_fold: false
 - Work session
 
 # Critiquing figures
+
+## Edward Tufte
+
+:::: {.columns}
+::: {.column width=50%}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Edward_Tufte_-_cropped.jpg/440px-Edward_Tufte_-_cropped.jpg){height=50%}
+:::
+::: {.column width=50%}
+- Professor Emeritus, Yale University
+- Statistics, Political Science, Computer Science
+- Leading authority in data visualiztion and information design
+:::
+::::
+
+---
+
+![https://www.edwardtufte.com/online-course/](../include/img/tufte-online-course.png)
 
 ## Figures can enlighten
 
@@ -73,11 +114,11 @@ code_fold: false
 
 ## DataCamp status
 
-![](../include/img/datacamp-2025-03-04.png)
+![](../include/img/datacamp-2025-03-06.png)
 
 ---
 
-![DataCamp leaderboard](../include/img/datacamp-leaderboard-2025-03-04.png)
+![DataCamp leaderboard](../include/img/datacamp-2025-03-06-leaderboard.png)
 
 # Resources
 
