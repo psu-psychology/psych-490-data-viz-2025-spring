@@ -181,6 +181,7 @@
 
 - Complete:
   - DataCamp, Introduction to R
+- [Slides](sliwk09-2025-03-18-why-r.qmd)
 
 ### Thursday, March 20 {-}
 
@@ -242,7 +243,11 @@
 
 ### Tuesday, April 22 {-}
 
+- In-class work on projects.
+
 ### Thursday, April 24 {-}
+
+- In-class work on projects.
 
 ## April 28 - May 2 {- #week-15}
 

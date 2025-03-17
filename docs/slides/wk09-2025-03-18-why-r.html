@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.6.40">
 
   <meta name="author" content="Rick Gilmore">
-  <title>PSYCH 490 • Spr 25 – More slow R</title>
+  <title>PSYCH 490 • Spr 25 – Why R We Doing This?</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,71 +28,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
   <link rel="stylesheet" href="../include/css/gilmore-revealjs.css">
@@ -195,8 +130,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">More slow R</h1>
-  <p class="subtitle">2025-03-04</p>
+  <h1 class="title">Why R We Doing This?</h1>
+  <p class="subtitle">2025-03-18</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -212,389 +147,43 @@ Rick Gilmore
 <h1>Prelude</h1>
 
 </section>
+<section id="in-the-news" class="slide level2">
+<h2>In the news</h2>
+</section>
 <section id="announcements" class="slide level2">
 <h2>Announcements</h2>
 <ul>
-<li><span class="green_assigned">Pending</span>: <a href="../exercises/final-project.html">Final Project</a> proposal</li>
-<li><span class="green_assigned">Pending</span>: <a href="../exercises/ex04-sci-of-data-viz.html">Exercise 04</a></li>
+<li><strong>No class this Thursday</strong></li>
+<li><span class="green_assigned">Due</span> Thursday: <a href="../exercises/ex05-figure-prep-guidelines.html">Exercise 05</a></li>
 </ul>
 </section>
-<section id="last-time" class="slide level2">
-<h2>Last time…</h2>
+<section id="todays-topics" class="slide level2">
+<h2>Today’s topics</h2>
 <ul>
-<li>Communicating uncertainty and risk</li>
-</ul>
-</section>
-<section id="challenges" class="slide level2">
-<h2>Challenges</h2>
-<ul>
-<li>Communicating variability</li>
-<li>Communicating statistical info/summaries</li>
-<li>What are our goals?</li>
-</ul>
-</section>
-<section class="slide level2">
-
-
-<img data-src="../include/fig/fig-violin-box-scatter-1.png" class="r-stretch"></section>
-<section class="slide level2">
-
-
-<img data-src="../include/fig/fig-ggplot-mean-sd-pts-1.png" class="r-stretch"></section>
-<section class="slide level2">
-
-
-<img data-src="../include/fig/fig-ggplot-mean-sem-pts-1.png" class="r-stretch"></section>
-<section id="are-the-means-different" class="slide level2">
-<h2>Are the means different?</h2>
-<div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>two_sets <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="st">"../include/csv/two_sets_1_sd.csv"</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb1-2"><a></a> <span class="fu">t.test</span>(value <span class="sc">~</span> sample_name, <span class="at">data =</span> two_sets, <span class="at">var.equal =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-    Two Sample t-test
-
-data:  value by sample_name
-t = -7.0523, df = 198, p-value = 2.875e-11
-alternative hypothesis: true difference in means between group x0 and group x1 is not equal to 0
-95 percent confidence interval:
- -1.2834331 -0.7225133
-sample estimates:
-mean in group x0 mean in group x1 
-     -0.04513639       0.95783678 </code></pre>
-</div>
-</div>
-</section>
-<section id="your-thoughts" class="slide level2">
-<h2>Your thoughts?</h2>
-<ul>
-<li>Group means differ; estimated difference in [.36, .90]</li>
-<li>Reject null hypothesis of no difference, <em>t</em>(198)=4.57, <em>p</em>&lt;.0001.</li>
-<li>Which figure best meets our goals?</li>
-</ul>
-</section>
-<section id="today" class="slide level2">
-<h2>Today</h2>
-<ul>
-<li>More Slow R</li>
+<li>Preview of the 2nd half</li>
+<li>DataCamp status</li>
+<li>Work session</li>
 </ul>
 </section></section>
 <section>
-<section id="more-slow-r" class="title-slide slide level1 center">
-<h1>More Slow-R</h1>
+<section id="datacamp-status" class="title-slide slide level1 center">
+<h1>DataCamp status</h1>
 
 </section>
-<section id="storing-things" class="slide level2 scrollable">
-<h2>Storing things</h2>
-<ul>
-<li>Long-term (between work sessions) in files.</li>
-<li>Short-term (during your work session) in volatile memory.
-<ul>
-<li>e.g., object names</li>
-</ul></li>
-</ul>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code> [1] "_feynmann.qmd"                                  
- [2] "_gilmore-photo-bio.qmd"                         
- [3] "_merton.qmd"                                    
- [4] "_metadata.yml"                                  
- [5] "_reddish-green.Rmd"                             
- [6] "img_gilmore_bio"                                
- [7] "wk01-2025-01-14-course-intro.html"              
- [8] "wk01-2025-01-14-course-intro.qmd"               
- [9] "wk01-2025-01-16-semiotics-data-viz.html"        
-[10] "wk01-2025-01-16-semiotics-data-viz.qmd"         
-[11] "wk02-2025-01-21-govt-biz.html"                  
-[12] "wk02-2025-01-21-govt-biz.qmd"                   
-[13] "wk02-2025-01-23-art-sports-journ.html"          
-[14] "wk02-2025-01-23-art-sports-journ.qmd"           
-[15] "wk03-2025-01-28-making-data.html"               
-[16] "wk03-2025-01-28-making-data.qmd"                
-[17] "wk03-2025-01-30-figure-types.html"              
-[18] "wk03-2025-01-30-figure-types.qmd"               
-[19] "wk04-2025-02-04-figure-components.html"         
-[20] "wk04-2025-02-04-figure-components.qmd"          
-[21] "wk05-2025-02-11-stim-to-sensation.html"         
-[22] "wk05-2025-02-11-stim-to-sensation.qmd"          
-[23] "wk05-2025-02-13-sensation-to-perception.html"   
-[24] "wk05-2025-02-13-sensation-to-perception.qmd"    
-[25] "wk06-2025-02-18-cognition-to-understanding.html"
-[26] "wk06-2025-02-18-cognition-to-understanding.qmd" 
-[27] "wk06-2025-02-20-designing-viz.html"             
-[28] "wk06-2025-02-20-designing-viz.qmd"              
-[29] "wk07-2025-02-25-intro-to-r.html"                
-[30] "wk07-2025-02-25-intro-to-r.qmd"                 
-[31] "wk07-2025-02-27-viz-uncertainty-risk.html"      
-[32] "wk07-2025-02-27-viz-uncertainty-risk.qmd"       
-[33] "wk08-2025-03-04-more-slow-r.qmd"                
-[34] "wk08-2025-03-04-more-slow-r.rmarkdown"          
-[35] "wk08-2025-03-06-critiquing-figs.qmd"            
-[36] "wk09-2025-03-18-why-r.qmd"                      </code></pre>
-</div>
-</div>
-</section>
-<section id="storing-things-1" class="slide level2 scrollable">
-<h2>Storing things</h2>
-<ul>
-<li>Directory/folder hierarchy</li>
-<li>Like a tree with branches</li>
-</ul>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "/Users/rog1/rrr/psych-490-data-viz-2025-spring/src/slides"</code></pre>
-</div>
-</div>
-</section>
-<section id="sequences-and-repetitions" class="slide level2">
-<h2>Sequences and repetitions</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code> [1] -6 -5 -4 -3 -2 -1  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code> [1] 10  9  8  7  6  5  4  3  2  1</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code> [1]  2  4  6  8 10 12 14 16 18 20 22 24 26 28 30 32</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "I love R" "I love R" "I love R" "I love R"</code></pre>
-</div>
-</div>
-</section>
-<section id="data-workflow" class="slide level2">
-<h2>Data workflow</h2>
-<div>
-<ul>
-<li class="fragment">Collect</li>
-<li class="fragment">Gather</li>
-<li class="fragment">Clean</li>
-<li class="fragment">Visualize/plot</li>
-<li class="fragment">Analyze</li>
-</ul>
-</div>
-</section>
-<section id="data-workflow-we-can-script" class="slide level2">
-<h2>Data workflow <em>we can script</em></h2>
-<ul>
-<li><del>Collect</del></li>
-<li>Gather</li>
-<li>Clean</li>
-<li>Visualize/plot</li>
-<li>Analyze</li>
-</ul>
-</section>
-<section id="data-workflow-we-can-script-1" class="slide level2">
-<h2>Data workflow <em>we can script</em></h2>
-<ul>
-<li><del>Collect</del></li>
-<li><span class="green_assigned"><strong>Gather</strong></span></li>
-<li><span class="green_assigned"><strong>Clean</strong></span></li>
-<li>Visualize/plot</li>
-<li>Analyze</li>
-</ul>
-</section>
-<section id="gather-data" class="slide level2">
-<h2>Gather data</h2>
-<ul>
-<li>How to acquire/download
-<ul>
-<li>Download manually</li>
-<li>Download programmatically (via code)</li>
-</ul></li>
-<li>How to save
-<ul>
-<li>Text formats, e.g., comma-separated values (csv), best</li>
-</ul></li>
-</ul>
-</section>
-<section id="download-manually" class="slide level2">
-<h2>Download manually</h2>
-<ul>
-<li>Visit forms.google.com</li>
-</ul>
-
-<img data-src="../include/img/google-forms-list.png" class="r-stretch"></section>
-<section id="download-manually-1" class="slide level2">
-<h2>Download manually</h2>
-<ul>
-<li>Pick a form</li>
-</ul>
-
-<img data-src="../include/img/google-forms-pick-a-form.png" class="r-stretch"></section>
-<section id="download-manually-2" class="slide level2">
-<h2>Download manually</h2>
-<ul>
-<li>Click on more options (…) menu</li>
-</ul>
-
-<img data-src="../include/img/google-forms-more-options.png" class="r-stretch"></section>
-<section id="download-manually-3" class="slide level2">
-<h2>Download manually</h2>
-
-<img data-src="../include/img/google-forms-download-csv.png" class="r-stretch"></section>
-<section id="download-manually-4" class="slide level2">
-<h2>Download manually</h2>
-<ul>
-<li>Go to default download location (varies by computer)</li>
-<li>Downloads as a zip (compressed) file</li>
-</ul>
-
-<img data-src="../include/img/google-forms-download-csv-zip.png" class="r-stretch"></section>
-<section id="download-manually-5" class="slide level2">
-<h2>Download manually</h2>
-<ul>
-<li>Open compressed file</li>
-</ul>
-
-<img data-src="../include/img/google-forms-view-unzipped-csv.png" class="r-stretch"></section>
-<section id="download-manually-6" class="slide level2">
-<h2>Download manually</h2>
-<ul>
-<li>Move file to target location</li>
-</ul>
-
-<img data-src="../include/img/google-forms-move-csv.png" class="r-stretch"></section>
 <section class="slide level2">
 
 
-<img data-src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExODZhYng2N3JlaWVwYWVrN2R1czNrczV3NmN0NXhjM3EydngzcGk1dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26FxsQwgJyU4me9ig/giphy.gif" class="r-stretch quarto-figure-center"><p class="caption">Giphy.com</p></section>
-<section id="download-automatically" class="slide level2">
-<h2>Download automatically</h2>
-<ul>
-<li>Two manual steps
-<ul>
-<li>Create Google Sheets file: Click on “Link to Sheets”</li>
-</ul></li>
-</ul>
-
-<img data-src="../include/img/google-forms-more-options.png" class="r-stretch"></section>
+<img data-src="../include/img/datacamp-2025-03-17.png" class="r-stretch"></section>
 <section class="slide level2">
 
 
-<img data-src="../include/img/google-forms-create-new-sheet.png" class="r-stretch"></section>
-<section id="download-automatically-1" class="slide level2">
-<h2>Download automatically</h2>
-
-<img data-src="../include/img/google-forms-copy-sheet-name.png" class="r-stretch"></section>
-<section id="download-automatically-2" class="slide level2">
-<h2>Download automatically</h2>
+<img data-src="../include/datacamp-2025-03-17-completions.png" class="r-stretch"></section>
+<section id="posit.cloud" class="slide level2">
+<h2>Posit.cloud</h2>
 <ul>
-<li>Login to Google</li>
-<li>Download specific URL</li>
-<li>Save where I decide (<code>include/csv</code>) and with the name I choose (<code>PSYCH-490.003-Exercise-3.csv</code>)</li>
-</ul>
-</section>
-<section id="download-automatically-3" class="slide level2">
-<h2>Download automatically</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "assignments.csv"              "PSYCH 490.003 Exercise 3.csv"
-[3] "PSYCH-490.003-Exercise-3.csv" "two_sets_1_sd.csv"           </code></pre>
-</div>
-</div>
-</section>
-<section id="import-csv" class="slide level2">
-<h2>Import CSV</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 25  9</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Timestamp"                                                                                
-[2] "Favorite Icecream Flavor"                                                                 
-[3] "Best Pet Type"                                                                            
-[4] "How confident are you with your math skills? [How confident are you in your math skills?]"
-[5] "How confident are you with your math skills? [How creative are you?]"                     
-[6] "How many concerts have you gone to?"                                                      
-[7] "How many credits are you taking this semester?"                                           
-[8] "What is the date of your favorite holiday?"                                               
-[9] "Comments"                                                                                 </code></pre>
-</div>
-</div>
-</section>
-<section id="import-csv-1" class="slide level2">
-<h2>Import CSV</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 25  9</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "Timestamp"                                                                                
-[2] "Favorite Icecream Flavor"                                                                 
-[3] "Best Pet Type"                                                                            
-[4] "How confident are you with your math skills? [How confident are you in your math skills?]"
-[5] "How confident are you with your math skills? [How creative are you?]"                     
-[6] "How many concerts have you gone to?"                                                      
-[7] "How many credits are you taking this semester?"                                           
-[8] "What is the date of your favorite holiday?"                                               
-[9] "Comments"                                                                                 </code></pre>
-</div>
-</div>
-</section>
-<section id="clean-then-visualize-or-vice-versa" class="slide level2">
-<h2>Clean then visualize or vice versa?</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>Favorite Icecream Flavor
-          Chocolate Mint Chocolate Chip          Strawberry             Vanilla 
-                  5                   9                   4                   7 </code></pre>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Under the hood</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li>R prefers that variable names <em>not</em> have spaces</li>
-<li>When names have spaces, we have to communicate that to R</li>
-<li>So, we wrap <code>Favorite Icecream Flavor</code> in backticks (“`”).</li>
-<li>the <code>xtabs()</code> function does cross-tabulations</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="another-cross-tabulation" class="slide level2">
-<h2>Another cross-tabulation</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>                        Best Pet Type
-Favorite Icecream Flavor Cat Dog
-     Chocolate             2   3
-     Mint Chocolate Chip   3   6
-     Strawberry            2   2
-     Vanilla               2   5</code></pre>
-</div>
-</div>
-</section>
-<section id="clean-then-visualize" class="slide level2">
-<h2>Clean then visualize</h2>
-<ul>
-<li>Rename variable names: Shorter, remove spaces</li>
-<li>But capture the actual questions for later</li>
-</ul>
-</section>
-<section id="why-script" class="slide level2">
-<h2>Why script?</h2>
-<ul>
-<li><strong>Much</strong> more reproducible and robust</li>
-<li>Especially for complex sequences of tasks</li>
-<li>Be kind to your future (forgetful) self</li>
+<li>Web-based service to run RStudio in the browser</li>
+<li>Add students as they finish DataCamp “Introduction to R”</li>
+<li>Check-out “Learning-Quarto”</li>
 </ul>
 </section></section>
 <section>
@@ -602,17 +191,13 @@ Favorite Icecream Flavor Cat Dog
 <h1>Work session</h1>
 
 </section>
-<section id="datacamp-status" class="slide level2">
-<h2>DataCamp status</h2>
-
-<img data-src="../include/img/datacamp-2025-03-04.png" class="r-stretch"></section>
-<section class="slide level2">
-
-
-<img data-src="../include/img/datacamp-leaderboard-2025-03-04.png" class="r-stretch quarto-figure-center"><p class="caption">DataCamp leaderboard</p></section>
-<section id="next-time" class="slide level2">
-<h2>Next time</h2>
-<p><em>Critiquing figures</em></p>
+<section id="agenda" class="slide level2">
+<h2>Agenda</h2>
+<ul>
+<li>DataCamp</li>
+<li><a href="../exercises/ex05-figure-prep-guidelines.html">Exercise 05</a></li>
+<li>Final project</li>
+</ul>
 </section></section>
 <section>
 <section id="resources" class="title-slide slide level1 center">
@@ -842,44 +427,6 @@ Favorite Icecream Flavor Cat Dog
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

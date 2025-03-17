@@ -1,0 +1,48 @@
+---
+title: "Why R We Doing This?"
+subtitle: "2025-03-18"
+code_fold: false
+---
+
+# Prelude
+
+## In the news
+
+## Announcements
+
+- **No class this Thursday**
+- [Due]{.green_assigned} Thursday: [Exercise 05](../exercises/ex05-figure-prep-guidelines.qmd)
+
+## Today's topics
+
+- Preview of the 2nd half
+- DataCamp status
+- Work session
+
+# DataCamp status
+
+---
+
+![](../include/img/datacamp-2025-03-17.png)
+
+---
+
+![](../include/datacamp-2025-03-17-completions.png)
+
+## Posit.cloud
+
+- Web-based service to run RStudio in the browser
+- Add students as they finish DataCamp "Introduction to R"
+- Check-out "Learning-Quarto"
+
+# Work session
+
+## Agenda
+
+- DataCamp
+- [Exercise 05](../exercises/ex05-figure-prep-guidelines.qmd)
+- Final project
+
+# Resources
+
+## References
