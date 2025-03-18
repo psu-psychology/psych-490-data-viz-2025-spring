@@ -181,7 +181,7 @@
 
 - Complete:
   - DataCamp, Introduction to R
-- [Slides](sliwk09-2025-03-18-why-r.qmd)
+- [Slides](slides/wk09-2025-03-18-why-r.qmd)
 
 ### Thursday, March 20 {-}
 
