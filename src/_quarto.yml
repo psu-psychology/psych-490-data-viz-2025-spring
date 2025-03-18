@@ -12,7 +12,7 @@ project:
 website:
   title: "PSYCH 490 • Spr 25"
   announcement: 
-    content: "[Exercise 04](exercises/ex04-sci-of-data-viz.qmd) due Thursday; Final project [proposal](exercises/final-project.qmd) due Thursday" 
+    content: "No class Thursday, March 19" 
     position: below-navbar
     icon: info-circle
     dismissable: true
