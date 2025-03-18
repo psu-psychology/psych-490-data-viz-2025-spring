@@ -8,6 +8,9 @@ code_fold: false
 
 ## In the news
 
+- [Databrary.org is live!](https://databrary.org)
+- [User guide](https://databrary.github.io/guide)
+
 ## Announcements
 
 - **No class this Thursday**
