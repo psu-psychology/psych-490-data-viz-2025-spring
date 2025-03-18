@@ -3,14 +3,9 @@ title: "Exercise 05"
 subtitle: "Making better figures"
 ---
 
-::: {.callout-warning}
-# Work in progress
-
-This page is under construction.
-
-:::
-
 ## Dates {-}
+
+[Due]{.orange_due} by Thursday, March 19, 2025.
 
 ## Goals {-}
 

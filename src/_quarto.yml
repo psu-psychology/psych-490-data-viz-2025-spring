@@ -34,6 +34,7 @@ website:
         - exercises/ex02-data-viz-outside-psych.qmd
         - exercises/ex03-making-data.qmd
         - exercises/ex04-sci-of-data-viz.qmd
+        - exercises/ex05-figure-prep-guidelines.qmd
         - exercises/final-project.qmd
       - text: Tutorials
         menu:
