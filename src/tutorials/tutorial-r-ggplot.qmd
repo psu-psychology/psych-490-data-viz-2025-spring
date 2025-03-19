@@ -182,29 +182,32 @@ data_random_discrete |>
   geom_col()
 ```
 
-We'll make one more tweak before moving on.
-What if we want to follow best practice and sort the bars in numeric order?
+Note that the category variables print in *alphabetical* order.
+Sometimes that might be what we want.
+But, what if we want to follow best practice and sort the bars in numeric order?
 
-There are several ways to to this, but the way shown below uses the `forcats` package to 'mutate' or change the 'category' variable into one that is reordered by the 'value' variable.
+There are several ways to to this (see <https://r-graph-gallery.com/267-reorder-a-variable-in-ggplot2.html>), but the way shown below uses the `forcats` package to 'mutate' or change the 'category' variable into one that is reordered by the 'value' variable.
+Note that the default is to sort in *ascending* order.
 
 ```{r}
+library(forcats)
+library(dplyr)
 data_random_discrete |>
-  dplyr::mutate(category = forcats::fct_reorder(category, value)) |>
+  mutate(category = fct_reorder(category, value)) |>
   ggplot() +
   aes(x = category, y = value, fill = category) +
-  geom_col(stat = "identity")
+  geom_col()
 ```
 
-To reverse the order from ascending to descending, the default, we do the following:
+To reverse the order from ascending to descending, the default, we use the `desc()` function to sort value from highest to lowest value, as in the following:
 
 
 ```{r}
-library(desc)
 data_random_discrete |>
-  dplyr::mutate(category = fct_reorder(category, desc(value))) |>
+  mutate(category = fct_reorder(category, desc(value))) |>
   ggplot() +
   aes(x = category, y = value, fill = category) +
-  geom_col(stat = "identity")
+  geom_col()
 ```
 
 ::: {.callout-note}
