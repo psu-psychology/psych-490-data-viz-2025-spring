@@ -71,10 +71,19 @@ If the 'Chip' field says you have some version of an Intel chip, pick the other 
 
 4. Once the software has downloaded, open it by double-clicking.
 
-5. 
-
 ## Installing RStudio {-}
+
+::: {.callout-warning}
+## Under construction
+
+This section is a work-in-progress
+:::
 
 ## Configuring RStudio {-}
 
+::: {.callout-warning}
+## Under construction
+
+This section is a work-in-progress
+:::
 

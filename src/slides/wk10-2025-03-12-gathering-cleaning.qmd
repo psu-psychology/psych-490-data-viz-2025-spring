@@ -1,0 +1,202 @@
+---
+title: "Gathering and cleaning data"
+subtitle: "2025-03-25"
+code_fold: false
+---
+
+# Prelude
+
+## In the news
+
+## Announcements
+
+- [Penn State Open Scholarship Initiative](https://penn-state-open-science.github.io)
+
+## Today's topics
+
+- Data processing workflows
+- Gathering data
+- Cleaning data
+
+## Data workflow
+
+::: {.incremental}
+- Collect
+- Gather
+- Clean
+- Visualize/plot
+- Analyze
+:::
+
+## Data workflow *we can script*
+
+- ~~Collect~~
+- Gather
+- Clean
+- Visualize/plot
+- Analyze
+
+## Data workflow *we can script*
+
+- ~~Collect~~
+- [**Gather**]{.green_assigned}
+- [**Clean**]{.green_assigned}
+- Visualize/plot
+- Analyze
+
+## Workflow in practice
+
+- [Workshop Thursday, March 27](https://penn-state-open-science.github.io/data-mgmt-2025)
+
+## Gather data
+
+- How to acquire/download
+  - Download manually
+  - Download programmatically (via code)
+- How to save
+  - Text formats, e.g., comma-separated values (csv), best
+  
+## Download manually
+
+- Visit forms.google.com
+
+![](../include/img/google-forms-list.png)
+
+## Download manually
+
+- Pick a form
+
+![](../include/img/google-forms-pick-a-form.png)
+
+## Download manually
+
+- Click on more options (...) menu
+
+![](../include/img/google-forms-more-options.png)
+
+## Download manually
+
+![](../include/img/google-forms-download-csv.png)
+
+## Download manually
+
+- Go to default download location (varies by computer)
+- Downloads as a zip (compressed) file
+
+![](../include/img/google-forms-download-csv-zip.png)
+
+## Download manually
+
+- Open compressed file
+
+![](../include/img/google-forms-view-unzipped-csv.png)
+
+## Download manually
+
+- Move file to target location
+
+![](../include/img/google-forms-move-csv.png)
+
+---
+
+![Giphy.com](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExODZhYng2N3JlaWVwYWVrN2R1czNrczV3NmN0NXhjM3EydngzcGk1dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26FxsQwgJyU4me9ig/giphy.gif)
+
+## Download automatically
+
+- Two manual steps
+  - Create Google Sheets file: Click on "Link to Sheets"
+  
+![](../include/img/google-forms-more-options.png)
+
+---
+
+![](../include/img/google-forms-create-new-sheet.png)
+
+## Download automatically
+
+![](../include/img/google-forms-copy-sheet-name.png)
+
+## Download automatically
+
+- Log in to Google
+- Download specific URL
+- Save where I decide (`include/csv`) and with the name I choose (`PSYCH-490.003-Exercise-3.csv`)
+
+```{r}
+# Authenticate using Google credentials stored
+# Or, easier if you're not going to share publicly:
+# options(gargle_oauth_email = "my_gmail_address@gmail.com")
+options(gargle_oauth_email = Sys.getenv("GMAIL_SURVEY"))
+googledrive::drive_auth()
+
+googledrive::drive_download(
+  "PSYCH 490.003 Exercise 3 (Responses)",
+  path = file.path("../include/csv", "PSYCH-490.003-Exercise-3.csv"),
+  type = "csv",
+  overwrite = TRUE
+)
+message("Data downloaded")
+```
+
+## Download automatically
+
+```{r}
+list.files("../include/csv")
+```
+
+## Import CSV
+
+```{r}
+survey_manual <- readr::read_csv("../include/csv/PSYCH 490.003 Exercise 3.csv", show_col_types = FALSE)
+dim(survey_manual)
+names(survey_manual)
+```
+## Import CSV
+
+```{r}
+survey_auto <- readr::read_csv("../include/csv/PSYCH-490.003-Exercise-3.csv",
+                               show_col_types = FALSE)
+dim(survey_auto)
+names(survey_auto)
+```
+## Clean then visualize or vice versa?
+
+```{r}
+xtabs(formula = ~ `Favorite Icecream Flavor`, 
+      data = survey_auto)
+```
+
+---
+
+::: {.callout-important}
+## Under the hood
+
+- R prefers that variable names *not* have spaces
+- When names have spaces, we have to communicate that to R
+- So, we wrap `Favorite Icecream Flavor` in backticks ("`").
+- the `xtabs()` function does cross-tabulations
+
+:::
+
+## Another cross-tabulation
+
+
+```{r}
+xtabs(formula = ~ `Favorite Icecream Flavor` + `Best Pet Type`, 
+      data = survey_auto)
+```
+
+## Clean then visualize
+
+- Rename variable names: Shorter, remove spaces
+- But capture the actual questions for later
+
+## Why script?
+
+- **Much** more reproducible and robust
+- Especially for complex sequences of tasks
+- Be kind to your future (forgetful) self
+
+# Resources
+
+## References

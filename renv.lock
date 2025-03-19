@@ -308,6 +308,19 @@
       ],
       "Hash": "38bbf05fc2503143db4c734a7e5cab66"
     },
+    "desc": {
+      "Package": "desc",
+      "Version": "1.4.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R6",
+        "cli",
+        "utils"
+      ],
+      "Hash": "99b79fcbd6c4d1ce087f5c5c758b384f"
+    },
     "digest": {
       "Package": "digest",
       "Version": "0.6.37",
@@ -420,6 +433,22 @@
         "rlang"
       ],
       "Hash": "bd1297f9b5b1fc1372d19e2c4cd82215"
+    },
+    "forcats": {
+      "Package": "forcats",
+      "Version": "1.0.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "cli",
+        "glue",
+        "lifecycle",
+        "magrittr",
+        "rlang",
+        "tibble"
+      ],
+      "Hash": "1a0a9a3d5083d0d573c4214576f1e690"
     },
     "fs": {
       "Package": "fs",

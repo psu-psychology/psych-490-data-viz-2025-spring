@@ -30,7 +30,7 @@ code_fold: false
 
 ---
 
-![](../include/datacamp-2025-03-17-completions.png)
+![](../include/img/datacamp-2025-03-17-completions.png)
 
 ## Posit.cloud
 

@@ -14,7 +14,7 @@ R is a programming language specialized for data analysis and visualization.
 ## Background {-}
 
 'ggplot2' is a package^[A collection of special commands for doing specific things.] for making 2D plots in R.
-It implements a special "language" for making plots based on the grammar of graphics suggested by Cleveland CITE.
+It implements a special "language" for making plots based on the grammar of graphics suggested by @Wilkinson2005-do.
 That's where the 'gg' in the name comes from.
 
 In ggplot, we create a base plot, then add layers to it using a plus sign `+` operator. 
@@ -35,6 +35,8 @@ if (!require(ggplot2)) {
 ### Discrete/nominal {-}
 
 First, we make some data.
+We store two variables, `category` and `value` using the `data.frame()` command.
+A data frame is a convenient, spreadsheet-like structure for storing data.
 
 ```{r}
 data_random_discrete <- data.frame(category = c('ab', 'xy', 'mn', 
@@ -45,10 +47,26 @@ data_random_discrete <- data.frame(category = c('ab', 'xy', 'mn',
                                            2.6, 3.0))
 ```
 
+Here we create a data frame and give it the name `data_random_discrete`.
+You can choose any name you want, subject to R's restrictions on naming things.
+I try to use descriptive names.
+
+The data frame name suggests that we have a random, continuous variable (`value`) and a discrete or categorical variable (`category`).
+The data frame command stores the variable names along with the data.
+We can see this by using R's `names()` command:
+
+Sometimes it's useful to look at the _structure_ of something using the `str()` command.
+
+```{r}
+str(data_random_discrete)
+```
+
+Now that we have some data, let's plot it.
+
 #### Barplot {-}
 
-If the variable we want to plot contains the *values* we care about plotting, then we use `geom_col`.
-A column plot is just a type of barplot.
+The following code makes a barplot.
+I'll explain what's going on after we look at the plot.
 
 ```{r}
 #| label: fig-barplot-ggplot2
@@ -59,7 +77,135 @@ data_random_discrete |>
   geom_col()
 ```
 
+This code sends the data frame (`data_random_discrete`) to the `ggplot()` function using R's pipe (`|>`) command.
+
+::: {.callout-note}
+## Many ways to say the same thing
+
+Like most (all?) programming languages, or really all languages, there are many ways to say the same thing.
+
+I like using the pipe `|>` command because it makes the code a little easier for *people* to read.
+
+:::
+
+The `ggplot()` function needs to know what data to plot, so this code 
+
+```
+data_random_discrete |>
+  ggplot()
+```
+
+tells `ggplot()`, "Hey, ggplot, create a plot with data from `data_random_discrete`."
+An equivalent way to say the same thing is to assign `data_random_discrete` to ggplot's `data` parameter, like this:
+
+```
+ggplot(data = data_random_discrete)
+```
+
+In fact, R turns the code above that uses the pipe into this format.
+
+Now, running `ggplot()` alone like this doesn't actually create a plot we can see.
+We have to tell `ggplot()` what variables to plot and what kind of plot to create.
+In the graphics grammar `ggplot()` understands we add information to the plot using the plus `+` character.
+
+We tell `ggplot()` which variables to use by using the aesthetics `aes()` command.
+
+```
+ggplot() +
+# Assign the data called `category` to the x axis, and the data called `value`
+# to the y axis
+aes(x = category, y = value)
+```
+
+Then, we add a graphic object or 'geom' to the plot.
+
+```
+aes(x = category, y = value) +
+geom_col()
+```
+
+There are different types of geoms for different types of plots.
+You can think of each geom as a way to map data to graphic elements.
+
+If the variable we want to plot contains the *values* we care about plotting, then we use `geom_col`.
+A column plot is just a type of barplot.
+
 Here, we have a *categorical* variable imaginatively named `category` and a *continuous* variable named `value`.
+
+See how the plot maps our category variable to the X axis and the value variable to the Y axis?
+
+That's the essence of making plots using `ggplot()`.
+We give `ggplot()` a data frame.
+Tell it which variables to assign to which aesthetics (properties of the plot).
+Add one or more geoms to make something we can see.
+
+
+
+To break this down even further, the following code shows a way to make a plot step-by-step.
+This can be useful when you're trying to figure out how you want to plot something.
+
+```{r}
+p <- ggplot(data = data_random_discrete) # create a bare bones "skeleton" of a plot
+p
+```
+
+Notice that the plot is blank.
+
+```{r}
+# Add aesthics
+p_aes <- p + aes(x = category, y = value)
+p_aes
+```
+
+Now the plot has axes, but no data points.
+We need to add a geom.
+
+```{r}
+p_col <- p_aes + geom_col()
+p_col
+```
+
+Let's add some color to the bars.
+We do this by mapping the `category` variable to the `fill` property.
+
+```{r}
+p_colors <- p_col + aes(fill = category)
+p_colors
+```
+
+We can wrap this up in a nice little sequence of code as follows:
+
+```{r}
+data_random_discrete |>
+  ggplot() +
+  aes(x = category, y = value, fill = category) +
+  geom_col()
+```
+
+We'll make one more tweak before moving on.
+What if we want to follow best practice and sort the bars in numeric order?
+
+There are several ways to to this, but the way shown below uses the `forcats` package to 'mutate' or change the 'category' variable into one that is reordered by the 'value' variable.
+
+```{r}
+data_random_discrete |>
+  dplyr::mutate(category = forcats::fct_reorder(category, value)) |>
+  ggplot() +
+  aes(x = category, y = value, fill = category) +
+  geom_col(stat = "identity")
+```
+
+To reverse the order from ascending to descending, the default, we do the following:
+
+
+```{r}
+library(desc)
+data_random_discrete |>
+  dplyr::mutate(category = fct_reorder(category, desc(value))) |>
+  ggplot() +
+  aes(x = category, y = value, fill = category) +
+  geom_col(stat = "identity")
+```
 
 ::: {.callout-note}
 ## Your turn

@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.6.40">
 
   <meta name="author" content="Rick Gilmore">
-  <title>PSYCH 490 • Spr 25 – Why R We Doing This?</title>
+  <title>PSYCH 490 • Spr 25 – Gathering and cleaning data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -130,8 +130,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Why R We Doing This?</h1>
-  <p class="subtitle">2025-03-18</p>
+  <h1 class="title">Gathering and cleaning data</h1>
+  <p class="subtitle">2025-03-25</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -149,58 +149,249 @@ Rick Gilmore
 </section>
 <section id="in-the-news" class="slide level2">
 <h2>In the news</h2>
-<ul>
-<li><a href="https://databrary.org">Databrary.org is live!</a></li>
-<li><a href="https://databrary.github.io/guide">User guide</a></li>
-</ul>
 </section>
 <section id="announcements" class="slide level2">
 <h2>Announcements</h2>
 <ul>
-<li><strong>No class this Thursday</strong></li>
-<li><span class="green_assigned">Due</span> Thursday: <a href="../exercises/ex05-figure-prep-guidelines.html">Exercise 05</a></li>
+<li><a href="https://penn-state-open-science.github.io">Penn State Open Scholarship Initiative</a></li>
+<li><a href="https://penn-state-open-science.github.io/data-mgmt-2025">Workshop Thursday, March 27</a></li>
 </ul>
 </section>
 <section id="todays-topics" class="slide level2">
 <h2>Today’s topics</h2>
 <ul>
-<li>Preview of the 2nd half</li>
-<li>DataCamp status</li>
-<li>Work session</li>
+<li>Data processing workflows</li>
+<li>Gathering data</li>
+<li>Cleaning data</li>
 </ul>
-</section></section>
-<section>
-<section id="datacamp-status" class="title-slide slide level1 center">
-<h1>DataCamp status</h1>
-
 </section>
+<section id="data-workflow" class="slide level2">
+<h2>Data workflow</h2>
+<div>
+<ul>
+<li class="fragment">Collect</li>
+<li class="fragment">Gather</li>
+<li class="fragment">Clean</li>
+<li class="fragment">Visualize/plot</li>
+<li class="fragment">Analyze</li>
+</ul>
+</div>
+</section>
+<section id="data-workflow-we-can-script" class="slide level2">
+<h2>Data workflow <em>we can script</em></h2>
+<ul>
+<li><del>Collect</del></li>
+<li>Gather</li>
+<li>Clean</li>
+<li>Visualize/plot</li>
+<li>Analyze</li>
+</ul>
+</section>
+<section id="data-workflow-we-can-script-1" class="slide level2">
+<h2>Data workflow <em>we can script</em></h2>
+<ul>
+<li><del>Collect</del></li>
+<li><span class="green_assigned"><strong>Gather</strong></span></li>
+<li><span class="green_assigned"><strong>Clean</strong></span></li>
+<li>Visualize/plot</li>
+<li>Analyze</li>
+</ul>
+</section>
+<section id="gather-data" class="slide level2">
+<h2>Gather data</h2>
+<ul>
+<li>How to acquire/download
+<ul>
+<li>Download manually</li>
+<li>Download programmatically (via code)</li>
+</ul></li>
+<li>How to save
+<ul>
+<li>Text formats, e.g., comma-separated values (csv), best</li>
+</ul></li>
+</ul>
+</section>
+<section id="download-manually" class="slide level2">
+<h2>Download manually</h2>
+<ul>
+<li>Visit forms.google.com</li>
+</ul>
+
+<img data-src="../include/img/google-forms-list.png" class="r-stretch"></section>
+<section id="download-manually-1" class="slide level2">
+<h2>Download manually</h2>
+<ul>
+<li>Pick a form</li>
+</ul>
+
+<img data-src="../include/img/google-forms-pick-a-form.png" class="r-stretch"></section>
+<section id="download-manually-2" class="slide level2">
+<h2>Download manually</h2>
+<ul>
+<li>Click on more options (…) menu</li>
+</ul>
+
+<img data-src="../include/img/google-forms-more-options.png" class="r-stretch"></section>
+<section id="download-manually-3" class="slide level2">
+<h2>Download manually</h2>
+
+<img data-src="../include/img/google-forms-download-csv.png" class="r-stretch"></section>
+<section id="download-manually-4" class="slide level2">
+<h2>Download manually</h2>
+<ul>
+<li>Go to default download location (varies by computer)</li>
+<li>Downloads as a zip (compressed) file</li>
+</ul>
+
+<img data-src="../include/img/google-forms-download-csv-zip.png" class="r-stretch"></section>
+<section id="download-manually-5" class="slide level2">
+<h2>Download manually</h2>
+<ul>
+<li>Open compressed file</li>
+</ul>
+
+<img data-src="../include/img/google-forms-view-unzipped-csv.png" class="r-stretch"></section>
+<section id="download-manually-6" class="slide level2">
+<h2>Download manually</h2>
+<ul>
+<li>Move file to target location</li>
+</ul>
+
+<img data-src="../include/img/google-forms-move-csv.png" class="r-stretch"></section>
 <section class="slide level2">
 
 
-<img data-src="../include/img/datacamp-2025-03-17.png" class="r-stretch"></section>
+<img data-src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExODZhYng2N3JlaWVwYWVrN2R1czNrczV3NmN0NXhjM3EydngzcGk1dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26FxsQwgJyU4me9ig/giphy.gif" class="r-stretch quarto-figure-center"><p class="caption">Giphy.com</p></section>
+<section id="download-automatically" class="slide level2">
+<h2>Download automatically</h2>
+<ul>
+<li>Two manual steps
+<ul>
+<li>Create Google Sheets file: Click on “Link to Sheets”</li>
+</ul></li>
+</ul>
+
+<img data-src="../include/img/google-forms-more-options.png" class="r-stretch"></section>
 <section class="slide level2">
 
 
-<img data-src="../include/img/datacamp-2025-03-17-completions.png" class="r-stretch"></section>
-<section id="posit.cloud" class="slide level2">
-<h2>Posit.cloud</h2>
-<ul>
-<li>Web-based service to run RStudio in the browser</li>
-<li>Add students as they finish DataCamp “Introduction to R”</li>
-<li>Check-out “Learning-Quarto”</li>
-</ul>
-</section></section>
-<section>
-<section id="work-session" class="title-slide slide level1 center">
-<h1>Work session</h1>
+<img data-src="../include/img/google-forms-create-new-sheet.png" class="r-stretch"></section>
+<section id="download-automatically-1" class="slide level2">
+<h2>Download automatically</h2>
 
-</section>
-<section id="agenda" class="slide level2">
-<h2>Agenda</h2>
+<img data-src="../include/img/google-forms-copy-sheet-name.png" class="r-stretch"></section>
+<section id="download-automatically-2" class="slide level2">
+<h2>Download automatically</h2>
 <ul>
-<li>DataCamp</li>
-<li><a href="../exercises/ex05-figure-prep-guidelines.html">Exercise 05</a></li>
-<li>Final project</li>
+<li>Log in to Google</li>
+<li>Download specific URL</li>
+<li>Save where I decide (<code>include/csv</code>) and with the name I choose (<code>PSYCH-490.003-Exercise-3.csv</code>)</li>
+</ul>
+</section>
+<section id="download-automatically-3" class="slide level2">
+<h2>Download automatically</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "assignments.csv"              "PSYCH 490.003 Exercise 3.csv"
+[3] "PSYCH-490.003-Exercise-3.csv" "two_sets_1_sd.csv"           </code></pre>
+</div>
+</div>
+</section>
+<section id="import-csv" class="slide level2">
+<h2>Import CSV</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 25  9</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Timestamp"                                                                                
+[2] "Favorite Icecream Flavor"                                                                 
+[3] "Best Pet Type"                                                                            
+[4] "How confident are you with your math skills? [How confident are you in your math skills?]"
+[5] "How confident are you with your math skills? [How creative are you?]"                     
+[6] "How many concerts have you gone to?"                                                      
+[7] "How many credits are you taking this semester?"                                           
+[8] "What is the date of your favorite holiday?"                                               
+[9] "Comments"                                                                                 </code></pre>
+</div>
+</div>
+</section>
+<section id="import-csv-1" class="slide level2">
+<h2>Import CSV</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 25  9</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Timestamp"                                                                                
+[2] "Favorite Icecream Flavor"                                                                 
+[3] "Best Pet Type"                                                                            
+[4] "How confident are you with your math skills? [How confident are you in your math skills?]"
+[5] "How confident are you with your math skills? [How creative are you?]"                     
+[6] "How many concerts have you gone to?"                                                      
+[7] "How many credits are you taking this semester?"                                           
+[8] "What is the date of your favorite holiday?"                                               
+[9] "Comments"                                                                                 </code></pre>
+</div>
+</div>
+</section>
+<section id="clean-then-visualize-or-vice-versa" class="slide level2">
+<h2>Clean then visualize or vice versa?</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Favorite Icecream Flavor
+          Chocolate Mint Chocolate Chip          Strawberry             Vanilla 
+                  5                   9                   4                   7 </code></pre>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Under the hood</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>R prefers that variable names <em>not</em> have spaces</li>
+<li>When names have spaces, we have to communicate that to R</li>
+<li>So, we wrap <code>Favorite Icecream Flavor</code> in backticks (“`”).</li>
+<li>the <code>xtabs()</code> function does cross-tabulations</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="another-cross-tabulation" class="slide level2">
+<h2>Another cross-tabulation</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>                        Best Pet Type
+Favorite Icecream Flavor Cat Dog
+     Chocolate             2   3
+     Mint Chocolate Chip   3   6
+     Strawberry            2   2
+     Vanilla               2   5</code></pre>
+</div>
+</div>
+</section>
+<section id="clean-then-visualize" class="slide level2">
+<h2>Clean then visualize</h2>
+<ul>
+<li>Rename variable names: Shorter, remove spaces</li>
+<li>But capture the actual questions for later</li>
+</ul>
+</section>
+<section id="why-script" class="slide level2">
+<h2>Why script?</h2>
+<ul>
+<li><strong>Much</strong> more reproducible and robust</li>
+<li>Especially for complex sequences of tasks</li>
+<li>Be kind to your future (forgetful) self</li>
 </ul>
 </section></section>
 <section>
@@ -431,6 +622,44 @@ Rick Gilmore
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
