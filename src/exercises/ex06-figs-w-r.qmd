@@ -3,9 +3,172 @@ title: "Exercise 06"
 subtitle: "Making figures with ggplot2"
 ---
 
+## Dates {-}
+
+We'll work on this exercise in-class on March 27, 2025.
+
+The write-up is [due]{.orange_due} on Thursday, April 3, 2025.
+
+## Goals {-}
+
+1. Create some simple figures in R using the `ggplot2` package.
+2. Gain an appreciation of the costs and benefits of scripting the generation of figures.
+
+## Assignment {-}
+
+### Background
+
+You may complete this assignment in two ways:
+
+1. Use RStudio on your personal computer or a Penn State lab computer to write your R code and generate your figures. Then create a document with your code and generated figures.
+
+2. Use Quarto on Posit.cloud.
+
+You may find some of the explanation and code contained in [this tutorial](../tutorials/tutorial-r-ggplot.qmd) helpful.
+
+### Steps to complete
+
+We'll be analyzing the survey data one of your classmates collected.
+
+#### For students *not* using Posit.cloud
+
+1. Download the data.
+
+Visit the cleaned CSV file on GitHub:
+
+<https://github.com/psu-psychology/psych-490-data-viz-2025-spring/blob/main/src/exercises/csv/ex06-data.csv>
+
+![Screenshot of GitHub data file.](../include/img/github-ex06-data.png){#fig-github-ex06-data}
+
+Press on the download button to download the data to your computer.
+
+2. Move the downloaded file.
+
+You'll want to copy and paste or move the file to the working directory where RStudio loads.
+To find this on your computer, open RStudio and run `getwd()` in the console.
+Here is what the results of that look like on Gilmore's computer:
+
+![Results of running `getwd()` in the RStudio console.](../include/img/getwd.png){#fig-getwd}
+
+Yours will differ from this.
+Copy your file to this directory/folder.
+
+3. Load the data into a data frame.
+
+Run the following code in your console to load the CSV file as a data frame.
+
+```r
+survey <- read.csv("ex06-data.csv")
+```
+
+4. Confirm that the file loaded by running the following:
+
+```r
+str(survey)
+```
+
+You should see something like this:
+
+![Results of running the `str()` command on the `survey` data frame.](../include/img/str-survey.png){#fig-str-survey}
+
 ::: {.callout-warning}
-# Work in progress
+## If you get stuck
 
-This page is under construction.
+If you are struggling at this step, then it is usually because your CSV file is not in a location where RStudio can find it.
 
+It will be *much* easier for us to help you if we can see you in-person (in class or in a separate meeting) or via Zoom with screen-sharing.
+
+By all means, try to fix the problem yourself, but don't spend hours doing so.
 :::
+
+If you successfully downloaded the CSV and loaded it as a data frame, you're nearly ready for the fun part(s).
+
+5. Load R packages needed to make your code simpler.
+
+Before we load the packages, we need to install them:
+Run the following code:
+
+```r
+install.packages("tidyverse")
+```
+
+Then, to load the packages into your computer's active memory, run the following code:
+
+```r
+library(dplyr)      # <1>
+library(ggplot2)    # <2>
+library(forcats)    # <3>
+```
+1. Loads the `dplyr` library.
+2. Loads the `ggplot2` library.
+3. Loads the `forcats` library.
+
+5. Make a plot of the favorite flavor (`fav_flavor`) data.
+
+```r
+survey |>
+  count(fav_flavor) |>
+  ggplot() +
+  aes(x = fav_flavor, y = n) +
+  geom_col()
+```
+
+6. Add colors to the bars
+
+To do this, you'll need to add a `fill` aesthetic to the `aes()` command.
+You can have `ggplot` assign colors automatically based on the values in some variable like `fav_flavor` by adding `fill = fav_flavor` to the list of aesthetics in the previous code.
+The code below is *almost* correct.
+Fix it and make a more colorful plot.
+
+```r
+survey |>
+  count(fav_flavor) |>
+  ggplot() +
+  aes(x = fav_flavor, y = n, fill = ) + # <1>
+  geom_col()
+```
+1. This line is incomplete. Fix it and make the plot.
+
+If you want *all* the bars to be the same color, add a `fill` aesthetic to `geom_col()`.
+
+```r
+survey |>
+  count(fav_flavor) |>
+  ggplot() +
+  aes(x = fav_flavor, y = n) +
+  geom_col(fill = "lightblue")  # <1>
+```
+1. Makes all of the bars a light blue. Try a different color like "orange", or "violet".
+
+7. Go further.
+
+Try making a colorful plot of another variable like `best_pet` or `n_concerts`.
+
+8. Add order to a plot.
+
+As a final exercise, try to make a plot that shows the bars in order based on the number of responses.
+Here's a section of code that does this for the `fav_flavor` data.
+
+```r
+survey |>
+  count(fav_flavor) |>
+  mutate(fav_flavor_sorted = fct_reorder(fav_flavor, n)) |> # <1>
+  ggplot() +
+  aes(x = fav_flavor_sorted, y = n, fill = fav_flavor_sorted) + # <2>
+  geom_col()  
+```
+1. Uses the `fct_reorder()` function from the `forcats` package to create an ordered factor based on `fav_flavor` and the count stored in `n`. 
+2. Use the new sorted variable as the aesthetics in our plot.
+
+::: {.callout-note}
+Here we use the `mutate()` function to create a new variable in our data frame.
+:::
+
+## Submit {-}
+
+1. The code you wrote in following the steps above.
+
+2. The results of running your code.
+
+3. Comments about what you observed.
+

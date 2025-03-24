@@ -25,7 +25,7 @@
     "href": "supplemental/psych-sci-figs.html#preparation",
     "title": "Findings: Data viz in psych sci",
     "section": "Preparation",
-    "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using.\n\n\n\n\n\n\nImportant\n\n\n\nThe code uses the quietly() function from the purrr package to suppress most of the feedback.\n\n\n\n\nCode\nlibrary('ggplot2')\nlibrary('dplyr')\n\nr_functions &lt;- list.files(file.path(here::here(), \"src\", \"R\"), \"\\\\.R$\", full.names = TRUE)\n\npurrr::map(r_functions, source) |&gt;\n  purrr::quietly()\n\n\nfunction (...) \ncapture_output(.f(...))\n&lt;bytecode: 0x1293ca550&gt;\n&lt;environment: 0x1293ca828&gt;"
+    "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using.\n\n\n\n\n\n\nImportant\n\n\n\nThe code uses the quietly() function from the purrr package to suppress most of the feedback.\n\n\n\n\nCode\nlibrary('ggplot2')\nlibrary('dplyr')\n\nr_functions &lt;- list.files(file.path(here::here(), \"src\", \"R\"), \"\\\\.R$\", full.names = TRUE)\n\npurrr::map(r_functions, source) |&gt;\n  purrr::quietly()\n\n\nfunction (...) \ncapture_output(.f(...))\n&lt;bytecode: 0x114a11388&gt;\n&lt;environment: 0x114a11660&gt;"
   },
   {
     "objectID": "supplemental/psych-sci-figs.html#gathering",
@@ -147,116 +147,368 @@
     "text": "Observations\n\nThe best submissions wrote a complete essay. The submissions included an introductory paragraph, several body paragraphs, usually one per figure, a conclusion, and a reference section.\nThe best submissions also mentioned the purpose of the exercise: To evaluate how some sample figures from various sources in psychological science communicated information about some topic.\nThe best submissions read the papers or websites where the figures were drawn from and provided helpful information about what the figures were depicting.\nThe best submissions adhered to the APA paper format. Here is a sample template.\nWhile it wasn’t required for the exercise, papers that provided excerpts of the figures under discussion were easier to evaluate. We did not penalize submissions that did not provide figure excerpts because the assignment did not require it. To capture images for future exercises, see the tutorial."
   },
   {
-    "objectID": "exercises/ex07-figs-w-python.html",
-    "href": "exercises/ex07-figs-w-python.html",
-    "title": "Exercise 07",
+    "objectID": "exercises/final-project.html",
+    "href": "exercises/final-project.html",
+    "title": "Final Project",
     "section": "",
-    "text": "Work in progress\n\n\n\nThis page is under construction."
+    "text": "Your final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.\nYou may work alone or with up to two other students in the class. If you work with others, you will need to complete a statement about who did what, and all of the members of your team will get the same grade."
   },
   {
-    "objectID": "exercises/ex05-figure-prep-guidelines.html",
-    "href": "exercises/ex05-figure-prep-guidelines.html",
-    "title": "Exercise 05",
+    "objectID": "exercises/final-project.html#background",
+    "href": "exercises/final-project.html#background",
+    "title": "Final Project",
     "section": "",
-    "text": "Due by Thursday, March 19, 2025."
+    "text": "Your final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.\nYou may work alone or with up to two other students in the class. If you work with others, you will need to complete a statement about who did what, and all of the members of your team will get the same grade."
   },
   {
-    "objectID": "exercises/ex05-figure-prep-guidelines.html#dates",
-    "href": "exercises/ex05-figure-prep-guidelines.html#dates",
-    "title": "Exercise 05",
-    "section": "",
-    "text": "Due by Thursday, March 19, 2025."
+    "objectID": "exercises/final-project.html#dates",
+    "href": "exercises/final-project.html#dates",
+    "title": "Final Project",
+    "section": "Dates",
+    "text": "Dates\n\nProposal assigned Tuesday, February 18\nProposal due Thursday, March 6, 2026\nFinal project survey due Tuesday, April 08\nFinal write-up due Tuesday, May 05"
   },
   {
-    "objectID": "exercises/ex05-figure-prep-guidelines.html#goals",
-    "href": "exercises/ex05-figure-prep-guidelines.html#goals",
-    "title": "Exercise 05",
+    "objectID": "exercises/final-project.html#topics",
+    "href": "exercises/final-project.html#topics",
+    "title": "Final Project",
+    "section": "Topics",
+    "text": "Topics\nYou may choose any of a wide range of topics for your final project:\n\nA tutorial on a tool or resource for data visualization you find especially useful.\nA discussion of a specific data visualization or type of visualization and how it does or does not accurately and persuasively convey some specific finding.\nA showcase of one or more data visualizations that you have made."
+  },
+  {
+    "objectID": "exercises/final-project.html#formats",
+    "href": "exercises/final-project.html#formats",
+    "title": "Final Project",
+    "section": "Formats",
+    "text": "Formats\nThere are multiple formats for your final project. Choose one of them.\n\nShort (5-10 min) in-class talk\nPoster\nLesson plan/exercise\nTutorial\nResearch project (& write-up)\nOpinion piece"
+  },
+  {
+    "objectID": "exercises/final-project.html#components",
+    "href": "exercises/final-project.html#components",
+    "title": "Final Project",
+    "section": "Components",
+    "text": "Components\n\nProject proposal\n\nEvery student or team must submit a one-page single-spaced project proposal. Your proposal should state the aim or objective of your project, the format, and a include a brief description of how you intend to go about achieving your objectives.\n\nThe proposal is due on Thursday, March 6.\n\n\nProject presentation\n\nEvery student or team may make an optional presentation to the class about their project. Please indicate whether you are willing to make a presentation when you complete the survey.\nNote: Giving a presentation is worth 5 extra credit points.\nThe presentations will occur during class on December 6, 9, and 11.\nIf you wish to have your presentation made available publicly on the course website, please let me know. This is also completely optional.\n\n\n\nProject write-up\n\nEvery student or team must submit a write-up, due during finals week on Tuesday, May 05.\nDepending on the format of the project (talk, poster, paper), different written materials may be submitted (slides, poster, etc.).\nFor an in-class talk, submit a separate document with your talk text or notes and your slides. You may also submit slides that include presenter notes embedded within them.\nFor a poster, submit a PowerPoint or PDF of your poster along with any talking points.\n\nRubic: An example of potential grading template we may use: https://commons.erau.edu/db-srs/poster-scoring-rubric.pdf\nArticle: How to make a good scientific poster https://www.nature.com/articles/nj7614-115a\nTutorial video: how to make a poster https://www.youtube.com/watch?v=EL5YwkiqBho&ab_channel=SamHertig\nOther basics: https://guides.libraries.psu.edu/posters\n\nFor research paper, please submit an APA-formatted manuscript 1,500-2,000 words in length.\nFor an opinion piece, please submit a document up to 1,500 words in length.\nFor an interactive website or presentation, please submit a complete set of files needed to evaluate your website or presentation.\nFor a lesson plan, please submit a document up up to 1,500 words in length."
+  },
+  {
+    "objectID": "exercises/final-project.html#survey",
+    "href": "exercises/final-project.html#survey",
+    "title": "Final Project",
+    "section": "Survey",
+    "text": "Survey\n\nPlease provide information about your project via this Google Form: https://forms.gle/oyotxgnnqchqnSgTA"
+  },
+  {
+    "objectID": "exercises/ex06-figs-w-r.html",
+    "href": "exercises/ex06-figs-w-r.html",
+    "title": "Exercise 06",
+    "section": "",
+    "text": "We’ll work on this exercise in-class on March 27, 2025.\nThe write-up is due on Thursday, April 3, 2025."
+  },
+  {
+    "objectID": "exercises/ex06-figs-w-r.html#dates",
+    "href": "exercises/ex06-figs-w-r.html#dates",
+    "title": "Exercise 06",
+    "section": "",
+    "text": "We’ll work on this exercise in-class on March 27, 2025.\nThe write-up is due on Thursday, April 3, 2025."
+  },
+  {
+    "objectID": "exercises/ex06-figs-w-r.html#goals",
+    "href": "exercises/ex06-figs-w-r.html#goals",
+    "title": "Exercise 06",
     "section": "Goals",
-    "text": "Goals\n\nRead and understand published figure preparation guidelines for prospective authors of scientific manuscripts.\nEvaluate the guidelines relative to the best practices we’ve discussed this semester in class."
+    "text": "Goals\n\nCreate some simple figures in R using the ggplot2 package.\nGain an appreciation of the costs and benefits of scripting the generation of figures."
   },
   {
-    "objectID": "exercises/ex05-figure-prep-guidelines.html#assignment",
-    "href": "exercises/ex05-figure-prep-guidelines.html#assignment",
-    "title": "Exercise 05",
+    "objectID": "exercises/ex06-figs-w-r.html#assignment",
+    "href": "exercises/ex06-figs-w-r.html#assignment",
+    "title": "Exercise 06",
     "section": "Assignment",
-    "text": "Assignment\n\nBackground\nSome scientific journals provide advice to prospective authors about how to prepare figures for manuscripts submitted to the journals. Here are two examples:\n\nNature\nAmerican Psychological Association (APA)\n\n\n\nTasks\n\nFind and read critically the guidelines for publishing figures in a journal of your choosing.\nCompare the guidelines to the best practices that we have discussed this semester in class (@ Franconeri, Padilla, Shah, Zacks, & Hullman, 2021; Knaflic, 2015; Tufte, 2001).\nDo the guidelines reflect current knowledge about data visualization practices. If not how could the guidelines be amended to provide better guidance to authors in these journals?"
+    "text": "Assignment\n\nBackground\nYou may complete this assignment in two ways:\n\nUse RStudio on your personal computer or a Penn State lab computer to write your R code and generate your figures. Then create a document with your code and generated figures.\nUse Quarto on Posit.cloud.\n\nYou may find some of the explanation and code contained in this tutorial helpful.\n\n\nSteps to complete\nWe’ll be analyzing the survey data one of your classmates collected.\n\nFor students not using Posit.cloud\n\nDownload the data.\n\nVisit the cleaned CSV file on GitHub:\nhttps://github.com/psu-psychology/psych-490-data-viz-2025-spring/blob/main/src/exercises/csv/ex06-data.csv\n\n\n\n\n\n\nFigure 1: Screenshot of GitHub data file.\n\n\n\nPress on the download button to download the data to your computer.\n\nMove the downloaded file.\n\nYou’ll want to copy and paste or move the file to the working directory where RStudio loads. To find this on your computer, open RStudio and run getwd() in the console. Here is what the results of that look like on Gilmore’s computer:\n\n\n\n\n\n\nFigure 2: Results of running getwd() in the RStudio console.\n\n\n\nYours will differ from this. Copy your file to this directory/folder.\n\nLoad the data into a data frame.\n\nRun the following code in your console to load the CSV file as a data frame.\nsurvey &lt;- read.csv(\"ex06-data.csv\")\n\nConfirm that the file loaded by running the following:\n\nstr(survey)\nYou should see something like this:\n\n\n\n\n\n\nFigure 3: Results of running the str() command on the survey data frame.\n\n\n\n\n\n\n\n\n\nIf you get stuck\n\n\n\nIf you are struggling at this step, then it is usually because your CSV file is not in a location where RStudio can find it.\nIt will be much easier for us to help you if we can see you in-person (in class or in a separate meeting) or via Zoom with screen-sharing.\nBy all means, try to fix the problem yourself, but don’t spend hours doing so.\n\n\nIf you successfully downloaded the CSV and loaded it as a data frame, you’re nearly ready for the fun part(s).\n\nLoad R packages needed to make your code simpler.\n\nBefore we load the packages, we need to install them: Run the following code:\ninstall.packages(\"tidyverse\")\nThen, to load the packages into your computer’s active memory, run the following code:\n1library(dplyr)\n2library(ggplot2)\n3library(forcats)\n\n1\n\nLoads the dplyr library.\n\n2\n\nLoads the ggplot2 library.\n\n3\n\nLoads the forcats library.\n\n\nsurvey |&gt;\n  count(fav_flavor) |&gt;\n  ggplot() +\n  aes(x = fav_flavor, y = n) +\n  geom_col()\n\nAdd colors to the bars\n\nTo do this, you’ll need to add a fill aesthetic to the aes() command. You can have ggplot assign colors automatically based on the values in some variable like fav_flavor by adding fill = fav_flavor to the list of aesthetics in the previous code. The code below is almost correct. Fix it and make a more colorful plot.\nsurvey |&gt;\n  count(fav_flavor) |&gt;\n  ggplot() +\n1  aes(x = fav_flavor, y = n, fill = ) +\n  geom_col()\n\n1\n\nThis line is incomplete. Fix it and make the plot.\n\n\nIf you want all the bars to be the same color, add a fill aesthetic to geom_col().\nsurvey |&gt;\n  count(fav_flavor) |&gt;\n  ggplot() +\n  aes(x = fav_flavor, y = n) +\n1  geom_col(fill = \"lightblue\")\n\n1\n\nMakes all of the bars a light blue. Try a different color like “orange”, or “violet”.\n\n\nTry making a colorful plot of another variable like best_pet or n_concerts.\n\nAdd order to a plot.\n\nAs a final exercise, try to make a plot that shows the bars in order based on the number of responses. Here’s a section of code that does this for the fav_flavor data.\nsurvey |&gt;\n  count(fav_flavor) |&gt;\n1  mutate(fav_flavor_sorted = fct_reorder(fav_flavor, n)) |&gt;\n  ggplot() +\n2  aes(x = fav_flavor_sorted, y = n, fill = fav_flavor_sorted) +\n  geom_col()  \n\n1\n\nUses the fct_reorder() function from the forcats package to create an ordered factor based on fav_flavor and the count stored in n.\n\n2\n\nUse the new sorted variable as the aesthetics in our plot.\n\n\n\n\n\n\n\n\nNote\n\n\n\nHere we use the mutate() function to create a new variable in our data frame."
   },
   {
-    "objectID": "exercises/ex05-figure-prep-guidelines.html#submit",
-    "href": "exercises/ex05-figure-prep-guidelines.html#submit",
-    "title": "Exercise 05",
+    "objectID": "exercises/ex06-figs-w-r.html#submit",
+    "href": "exercises/ex06-figs-w-r.html#submit",
+    "title": "Exercise 06",
     "section": "Submit",
-    "text": "Submit\nA 3-5 pp (750-1,300 word) write-up of your findings."
+    "text": "Submit\n\nThe code you wrote in following the steps above.\nThe results of running your code.\nComments about what you observed."
   },
   {
-    "objectID": "exercises/ex03-making-data.html",
-    "href": "exercises/ex03-making-data.html",
-    "title": "Exercise 03",
+    "objectID": "exercises/ex04-sci-of-data-viz.html",
+    "href": "exercises/ex04-sci-of-data-viz.html",
+    "title": "Exercise 04",
     "section": "",
-    "text": "In-class work on Tuesday, January 28 and Thursday, January 30.\nSubmit write-up for credit due by Tuesday, Feburary 11."
+    "text": "In-class work on Thursday, February 20 and Tuesday, February 25.\nSubmit write-up for credit due by Thursday, March 6."
   },
   {
-    "objectID": "exercises/ex03-making-data.html#dates",
-    "href": "exercises/ex03-making-data.html#dates",
-    "title": "Exercise 03",
+    "objectID": "exercises/ex04-sci-of-data-viz.html#dates",
+    "href": "exercises/ex04-sci-of-data-viz.html#dates",
+    "title": "Exercise 04",
     "section": "",
-    "text": "In-class work on Tuesday, January 28 and Thursday, January 30.\nSubmit write-up for credit due by Tuesday, Feburary 11."
+    "text": "In-class work on Thursday, February 20 and Tuesday, February 25.\nSubmit write-up for credit due by Thursday, March 6."
   },
   {
-    "objectID": "exercises/ex03-making-data.html#goals",
-    "href": "exercises/ex03-making-data.html#goals",
-    "title": "Exercise 03",
+    "objectID": "exercises/ex04-sci-of-data-viz.html#goals",
+    "href": "exercises/ex04-sci-of-data-viz.html#goals",
+    "title": "Exercise 04",
     "section": "Goals",
-    "text": "Goals\nIn this exercise, you will work alone or with a team of classmates to create a survey using the Google Forms tool. The survey you create will be used later in the course for data visualizations that you will also create."
+    "text": "Goals\n\nRead a scientific study about data visualization.\nEvaluate the study’s findings and its implications for the design of data visualizations.\n\nOR\n\nRead a scientific study on a topic you find of interest.\nEvaluate the study’s findings and report on how well the key findings are depicted in one or more data visualizations."
   },
   {
-    "objectID": "exercises/ex03-making-data.html#assignment",
-    "href": "exercises/ex03-making-data.html#assignment",
-    "title": "Exercise 03",
+    "objectID": "exercises/ex04-sci-of-data-viz.html#assignment",
+    "href": "exercises/ex04-sci-of-data-viz.html#assignment",
+    "title": "Exercise 04",
     "section": "Assignment",
-    "text": "Assignment\n\nSign-in to the Google drive account associated with your Penn State Access ID. This will make it somewhat easier for us to share forms.\nOpen Google Forms by visiting https://forms.google.com.\nCreate a new form by clicking on the ‘Blank Form’ button.\n\n{fig-google-form-blank-form} 3. Give your form a useful title, for example, ‘PSYCH-490.003-2025-spring-team-A’ or ‘PSYCH-490.003-2025-spring-rog1’.\n\n\n\n\n\n\nImportant\n\n\n\nYou can be assigned a team name/letter if you choose.\nIf you\n\n\n\nCustomize the theme if you wish by clicking on the palette icon.\nCreate a survey with 8 questions. Your questions should be ones that your classmates can answer without embarrassment or loss of privacy and which meet the following criteria:\n\n\nGenerate two questions with nominal (un-ordered) answers (e.g., favorite color).\nGenerate two questions with ordinal (e.g., 1-5) answers analogous to a Likert scale.\nGenerate two questions with continuous answers (e.g., age and shoe size). It doesn’t matter if these are interval or ratio scaled.\nGenerate one question with a date or time as an answer (e.g., a favorite relative’s birthday).\nInclude one field for comments.\n\n\nWhen you are happy with a draft of your survey, conduct a quality assurance (QA) review of it by having your team or someone else take the survey. The easiest way to do this is to use the ‘Send’ button to send your survey to you collaborator(s).\n\n\n\n\nGoogle Forms ‘Send’\n\n\nMake sure to have your QA testers answer the Comments question with the same response, e.g., ‘test-response’. This will make it easier later to filter-out the test responses.\n\nMake sure that all of your collaborators have edit privileges on the form. Click on the ‘more’ button with three dots and add collaborators.\n\n\n\n\nAdd collaborators"
+    "text": "Assignment\n\nChoose a primary source reference that is an empirical study about data visualization. For example, Cleveland & McGill (1984) or a more recent paper that cites it, one of the papers cited by Franconeri, Padilla, Shah, Zacks, & Hullman (2021), or a paper you find on your own.\nDescribe the paper’s principal goals, methods, and findings. What are the study’s weaknesses? Does the study contain data visualizations? How well do the visualizations follow best practices in data visualization design? What practical impact do the study findings have for researchers making data visualizations?\n\nOR\n\nChoose a primary reference that is an empirical study about a topic in psychological science that interests you.\nBriefly describe the paper’s principal goals, methods, and especially the key findings. Does the study contain data visualizations? How well do the visualizations convey the key findings? What features of the visualizations help communicate the findings? What features make the findings harder to see or understand? How well do the visualizations follow best practices in data visualization design?"
   },
   {
-    "objectID": "exercises/ex03-making-data.html#submit",
-    "href": "exercises/ex03-making-data.html#submit",
-    "title": "Exercise 03",
+    "objectID": "exercises/ex04-sci-of-data-viz.html#submit",
+    "href": "exercises/ex04-sci-of-data-viz.html#submit",
+    "title": "Exercise 04",
     "section": "Submit",
-    "text": "Submit\nWhether or not you are submitting a write-up for Exercise 03, please add Dr. Gilmore (rog1@psu.edu) and Sara He (cfh5558@psu.edu) as collaborators on the survey so that we can all benefit from your good work.\nPlease also add the URL to your survey to this Google Sheet:\nhttps://docs.google.com/spreadsheets/d/1Z-TJQLOQ-yFBs0UimtCtv4pWIqcfq7jhAUA1QjVX89w/edit?usp=sharing\nIf you are submitting a short 2-4 page write-up via Canvas, please provide answers to the following questions:\n\nWhat is a defining feature of data items that are nominal?\n\nWhat assumptions might analysts make about ordinal data when it comes time to visualize or analyze the results?\n\nWhat assumptions must a researcher make when conducting survey research of this sort?\n\nFocusing on those available within Google Forms, what user interface(s) work best for different types of data?\n\nIf you’ve used Qualtics previously to generate surveys, briefly compare Qualtrics with Google Forms."
+    "text": "Submit\n\nA 2-4 page write-up in APA format.\n\nMake sure to write a complete essay, with an introduction, body, and conclusion. See the feedback for Exercise 01 for other hints about how to improve your submission.\n\n\n\n\n\n\nAPA template\n\n\n\nThis template document may be helpful."
   },
   {
-    "objectID": "exercises/ex01-figs-in-psych-sci.html",
-    "href": "exercises/ex01-figs-in-psych-sci.html",
-    "title": "Exercise 01",
+    "objectID": "exercises/ex02-data-viz-outside-psych.html",
+    "href": "exercises/ex02-data-viz-outside-psych.html",
+    "title": "Exercise 02",
     "section": "",
-    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nWrite-up for credit due on Thursday, January 23.\nCanvas dropbox.\n\n\n\n\n\n\nPost-submission feedback\n\n\n\nWe have prepared a page with general feedback that should be helpful for future assignments. The feedback can be found here."
+    "text": "In-class work on Tuesday, January 21-23.\nDue on Thursday, January 30.\nCanvas dropbox."
   },
   {
-    "objectID": "exercises/ex01-figs-in-psych-sci.html#dates",
-    "href": "exercises/ex01-figs-in-psych-sci.html#dates",
-    "title": "Exercise 01",
+    "objectID": "exercises/ex02-data-viz-outside-psych.html#dates",
+    "href": "exercises/ex02-data-viz-outside-psych.html#dates",
+    "title": "Exercise 02",
     "section": "",
-    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nWrite-up for credit due on Thursday, January 23.\nCanvas dropbox.\n\n\n\n\n\n\nPost-submission feedback\n\n\n\nWe have prepared a page with general feedback that should be helpful for future assignments. The feedback can be found here."
+    "text": "In-class work on Tuesday, January 21-23.\nDue on Thursday, January 30.\nCanvas dropbox."
   },
   {
-    "objectID": "exercises/ex01-figs-in-psych-sci.html#goals",
-    "href": "exercises/ex01-figs-in-psych-sci.html#goals",
-    "title": "Exercise 01",
+    "objectID": "exercises/ex02-data-viz-outside-psych.html#goals",
+    "href": "exercises/ex02-data-viz-outside-psych.html#goals",
+    "title": "Exercise 02",
     "section": "Goals",
-    "text": "Goals\nIn this exercise, you may choose to work alone or with a team of classmates to find data visualizations from the societies of three (3) professional associations and three (3) journals. You will add links to the visualizations to a common database that we will use for discussion about the types of visualizations and types of data that are commonly used in psychological science."
+    "text": "Goals\nIn this exercise, you will work alone or a with a team of no more than two other classmates to find and describe data visualizations from business (for profit or not-for-profit), government, the arts, sports, or journalism. You will add links to the visualizations to a common database that we will use for discussion about the types of visualizations and types of data that are commonly used fields outside of psychological science."
   },
   {
-    "objectID": "exercises/ex01-figs-in-psych-sci.html#assignment",
-    "href": "exercises/ex01-figs-in-psych-sci.html#assignment",
-    "title": "Exercise 01",
+    "objectID": "exercises/ex02-data-viz-outside-psych.html#assignment",
+    "href": "exercises/ex02-data-viz-outside-psych.html#assignment",
+    "title": "Exercise 02",
     "section": "Assignment",
-    "text": "Assignment\n\nVisit the websites of at least three (3) professional associations.\n\nThe following are examples. Feel free to choose a different professional society.\n\nAmerican Psychological Association (APA)\nAssociation for Psychological Science (APS)\nVision Sciences Society\nSociety for Personality and Social Psychology\nSociety for Research in Child Development\nSociety for Research on Adolescence\nCognitive Neuroscience Society\nSociety for Neuroscience\nPsychonomics Society\nSociety for Industrial and Organizational Psychology\n\n\nFor each society website, find at least two visualizations of data.\n\nTry to pick visualizations that are interesting to you in some way.\n\nAdd information about the visualizations to a Google Sheet that all of us will share:\n\nhttps://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6tRzpfdgXBYyPooCPo/edit?usp=sharing\nSpecifically, enter your team identifier in the identifier field, the source in source_type, and the URL in the url field. Please say briefly why you chose this particular visualization. If you have any comments to add, put those in the comments field.\nDuring class on 2025-01-16, Gilmore added a url_to_figure field. If you want to add that, right click on the image and see if an option to ‘open image in new tab’ or ‘copy image address’ is available.\n\n\n\n\n\n\nImportant\n\n\n\nYou do not have to use your PSU ID as your identifier.\nGilmore did so just to provide some sample data.\n\n\n\nNext, visit the websites of at least three (3) journals and do the same thing–pick at least two (2) visualizations from each of the journals.\n\nNote that some societies publish one or more journals, so you might find a journal that interests you from the society website.\nHere are some additional journal resources that you might find interesting to explore:\n\nScience Magazine\nNature\nNature Human Behavior\nTrends in Cognitive Sciences\nAnnual Reviews\n\nFigures with “psychology” as search term\nFigures with “neuroscience” as search term\nKnowable Magazine has a graphics library\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThe goal here is to gather via ‘crowd-sourcing’ a diverse set of visualizations. So, feel free to mix it up."
+    "text": "Assignment\n\nChoose at least three categories (business, government, the arts, sports, or journalism) to focus on.\nFor each category, find at least one or two visualizations of data.\n\nTry to pick visualizations that are interesting to you in some way.\n\nAdd information about the visualizations to a Google Sheet that all of us will share:\n\nhttps://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0\nSpecifically, enter your team identifier in the identifier field, the source in source_type, and the URL in the url field. Please say briefly why you chose this particular visualization. If you have any comments to add, put those in the comments field.\n\nIf you want to submit a write-up for evaluation, please select three (3) visualizations and evaluate them based on the following questions:\n\n\nWhat data are presented?\nWhat graphic elements of the visualization map to which aspects of the data?\nWhat prior knowledge does someone viewing these data need to have in order to understand the visualizations clearly?\nWhy is the source presenting these data?\nWhat story or message is the source trying to communicate and to what audience?\nHow effective is the message?\nAre the figures statistical visualizations or information visualizations (Infovis) as described by Gelman & Unwin (2013)?\n\n\n\n\n\n\n\nNote\n\n\n\nThe visualizations you choose to write about may be the ones you found yourself or those that others found and shared."
   },
   {
-    "objectID": "exercises/ex01-figs-in-psych-sci.html#submit",
-    "href": "exercises/ex01-figs-in-psych-sci.html#submit",
-    "title": "Exercise 01",
+    "objectID": "exercises/ex02-data-viz-outside-psych.html#submit",
+    "href": "exercises/ex02-data-viz-outside-psych.html#submit",
+    "title": "Exercise 02",
     "section": "Submit",
-    "text": "Submit\n\nEveryone\n\nYour data to the shared Google Spreadsheet.\n\nStudents who want this submission to count for one of their four (4) required exercises\n\nA 2-3 page write-up in APA format where you describe three (3) figures your group found, focusing on these questions:\n\nWhat graphic elements of the visualization map to which aspects of the data?\nWhat prior knowledge does someone viewing these data need to have in order to understand the visualizations clearly?\nWhy is the source presenting these data?\nWhat story or message is the source trying to communicate and to what audience?\nHow effective is the message?\n\nStudents who work in teams should submit one (1) write-up with all of the authors’ names. One grade will be assigned.\nNote: Your references section need only include the citation to the source paper or website. You should identify in your text which figure you have chosen to analyze.\n\n\n\n\n\n\n\n\nAPA template\n\n\n\nThis template document may be helpful."
+    "text": "Submit\n\nEveryone\n\nYour data to the shared Google Spreadsheet.\n\n\n\nStudents submitting write-ups\nStudents who want this submission to count for one of their four (4) required exercises should submit the following:\n\nA 2-3 page write-up in APA format where you describe three (3) figures your group found, answering the questions in 4. above.\n\nMake sure to write a complete essay. See the feedback for Exercise 01 for other hints about how to improve your submission. While we will not require it because the deadline is soon, if you are able to include images of the figures you discuss, please do so. Here is a tutorial to help.\n\n\n\n\n\n\nAPA template\n\n\n\nThis template document may be helpful."
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#announcements",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#announcements",
+    "title": "Gathering & cleaning data",
+    "section": "Announcements",
+    "text": "Announcements\n\nPenn State Open Scholarship Initiative"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#todays-topics",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#todays-topics",
+    "title": "Gathering & cleaning data",
+    "section": "Today’s topics",
+    "text": "Today’s topics\n\nData processing workflows\nGathering data\nCleaning data"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow",
+    "title": "Gathering & cleaning data",
+    "section": "Data workflow",
+    "text": "Data workflow\n\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow-we-can-script",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow-we-can-script",
+    "title": "Gathering & cleaning data",
+    "section": "Data workflow we can script",
+    "text": "Data workflow we can script\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow-we-can-script-1",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow-we-can-script-1",
+    "title": "Gathering & cleaning data",
+    "section": "Data workflow we can script",
+    "text": "Data workflow we can script\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#workflow-in-practice",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#workflow-in-practice",
+    "title": "Gathering & cleaning data",
+    "section": "Workflow in practice",
+    "text": "Workflow in practice\n\nWorkshop Thursday, March 27"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#gather-data",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#gather-data",
+    "title": "Gathering & cleaning data",
+    "section": "Gather data",
+    "text": "Gather data\n\nHow to acquire/download\n\nDownload manually\nDownload programmatically (via code)\n\nHow to save\n\nText formats, e.g., comma-separated values (csv), best"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually",
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nVisit forms.google.com"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-1",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-1",
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nPick a form"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-2",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-2",
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nClick on more options (…) menu"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-3",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-3",
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-4",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-4",
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nGo to default download location (varies by computer)\nDownloads as a zip (compressed) file"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-5",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-5",
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nOpen compressed file"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-6",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-6",
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nMove file to target location"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically",
+    "title": "Gathering & cleaning data",
+    "section": "Download automatically",
+    "text": "Download automatically\n\nTwo manual steps\n\nCreate Google Sheets file: Click on “Link to Sheets”"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-1",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-1",
+    "title": "Gathering & cleaning data",
+    "section": "Download automatically",
+    "text": "Download automatically"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-2",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-2",
+    "title": "Gathering & cleaning data",
+    "section": "Download automatically",
+    "text": "Download automatically\n\nLog in to Google\nDownload specific URL\nSave where I decide (include/csv) and with the name I choose (PSYCH-490.003-Exercise-3.csv)"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-3",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-3",
+    "title": "Gathering & cleaning data",
+    "section": "Download automatically",
+    "text": "Download automatically\n\nlist.files(path = \"../include/csv\")\n\n[1] \"assignments.csv\"              \"PSYCH 490.003 Exercise 3.csv\"\n[3] \"PSYCH-490.003-Exercise-3.csv\" \"two_sets_1_sd.csv\"           \n\n\n\nThe list.files() function lists files in a specific directory"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#import-csv",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#import-csv",
+    "title": "Gathering & cleaning data",
+    "section": "Import CSV",
+    "text": "Import CSV\n\nsurvey_manual &lt;- readr::read_csv(\"../include/csv/PSYCH 490.003 Exercise 3.csv\", show_col_types = FALSE)\ndim(survey_manual)\n\n[1] 25  9\n\n\n\nThe dim() function describes the dimensions of an R object.\nA data frame has two dimensions, rows and columns."
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#extract-column-names",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#extract-column-names",
+    "title": "Gathering & cleaning data",
+    "section": "Extract column names",
+    "text": "Extract column names\n\nnames(survey_manual)\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\"                                                                                 \n\n\n\nThe names() function returns the names of the columns in our data frame."
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#import-automatically-downloaded-csv",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#import-automatically-downloaded-csv",
+    "title": "Gathering & cleaning data",
+    "section": "Import (automatically-downloaded) CSV",
+    "text": "Import (automatically-downloaded) CSV\nHere we put all of this into the same block of code:\n\nsurvey_auto &lt;- readr::read_csv(\"../include/csv/PSYCH-490.003-Exercise-3.csv\",\n                               show_col_types = FALSE)\ndim(survey_auto)\n\n[1] 25  9\n\nnames(survey_auto)\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\""
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#clean-then-visualize-or-vice-versa",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#clean-then-visualize-or-vice-versa",
+    "title": "Gathering & cleaning data",
+    "section": "Clean then visualize or vice versa?",
+    "text": "Clean then visualize or vice versa?\n\nxtabs(formula = ~ `Favorite Icecream Flavor`, \n      data = survey_auto)\n\nFavorite Icecream Flavor\n          Chocolate Mint Chocolate Chip          Strawberry             Vanilla \n                  5                   9                   4                   7"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#another-cross-tabulation",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#another-cross-tabulation",
+    "title": "Gathering & cleaning data",
+    "section": "Another cross-tabulation",
+    "text": "Another cross-tabulation\n\nxtabs(formula = ~ `Favorite Icecream Flavor` + `Best Pet Type`, \n      data = survey_auto)\n\n                        Best Pet Type\nFavorite Icecream Flavor Cat Dog\n     Chocolate             2   3\n     Mint Chocolate Chip   3   6\n     Strawberry            2   2\n     Vanilla               2   5"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#clean-then-visualize",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#clean-then-visualize",
+    "title": "Gathering & cleaning data",
+    "section": "Clean then visualize",
+    "text": "Clean then visualize\n\nRename variable names: Shorter, remove spaces\nBut capture the actual questions for later\n\nCreate a data dictionary"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#renaming-column-names",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#renaming-column-names",
+    "title": "Gathering & cleaning data",
+    "section": "Renaming column names",
+    "text": "Renaming column names\n\nlibrary(dplyr)\nlibrary(ggplot2)\nsurvey_auto &lt;- survey_auto |&gt;\n  rename(fav_flavor = \"Favorite Icecream Flavor\",\n                best_pet = \"Best Pet Type\")"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#plotting-one-variable",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#plotting-one-variable",
+    "title": "Gathering & cleaning data",
+    "section": "Plotting one variable",
+    "text": "Plotting one variable\n\nsurvey_auto |&gt;\n  count(fav_flavor) |&gt;\n  ggplot() +\n  aes(x = fav_flavor, y = n, fill = fav_flavor) +\n  geom_col()\n\n\n\nFigure 1: Favorite ice cream flavor among PSYCH 490.003 students"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#plotting-another-variable",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#plotting-another-variable",
+    "title": "Gathering & cleaning data",
+    "section": "Plotting another variable",
+    "text": "Plotting another variable\n\n\nFigure 2: Best pet for PSYCH 490.003 students"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#why-script",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#why-script",
+    "title": "Gathering & cleaning data",
+    "section": "Why script?",
+    "text": "Why script?\n\nMuch more reproducible (by others)\n\nEspecially for complex sequences of tasks\n\nMuch more robust\nBe kind to your future (forgetful) self"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#how-script",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#how-script",
+    "title": "Gathering & cleaning data",
+    "section": "How script?",
+    "text": "How script?\n\nSave commands in a file (*.R)\nSave commands and comments in a Quarto file (*.qmd)\n\nSee the ‘Learning-Quarto’ assignment on posit.cloud"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#references",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#references",
+    "title": "Gathering & cleaning data",
+    "section": "References",
+    "text": "References\n\n\n\n\nWikipedia contributors. (2025, March 10). Hillel the elder. Retrieved from https://en.wikipedia.org/wiki/Hillel_the_Elder"
   },
   {
     "objectID": "slides/wk08-2025-03-06-critiquing-figs.html#in-the-news",
@@ -1481,14 +1733,14 @@
     "href": "tutorials/tutorial-rstudio-on-pc.html#installing-rstudio",
     "title": "Setting up RStudio",
     "section": "Installing RStudio",
-    "text": "Installing RStudio"
+    "text": "Installing RStudio\n\n\n\n\n\n\nUnder construction\n\n\n\nThis section is a work-in-progress"
   },
   {
     "objectID": "tutorials/tutorial-rstudio-on-pc.html#configuring-rstudio",
     "href": "tutorials/tutorial-rstudio-on-pc.html#configuring-rstudio",
     "title": "Setting up RStudio",
     "section": "Configuring RStudio",
-    "text": "Configuring RStudio"
+    "text": "Configuring RStudio\n\n\n\n\n\n\nUnder construction\n\n\n\nThis section is a work-in-progress"
   },
   {
     "objectID": "tutorials/tutorial-python-matplotlib.html",
@@ -1803,7 +2055,7 @@
     "href": "schedule.html#week-10",
     "title": "Schedule",
     "section": "March 24-28",
-    "text": "March 24-28\nExploring data with R\n\nTuesday, March 25\nGathering & cleaning data\n\nSlides\n\n\n\nThursday, March 27\nMaking plots with ggplot2\n\nAssigned: Exercise-06"
+    "text": "March 24-28\nExploring data with R\n\nTuesday, March 25\nGathering & cleaning data\n\nSlides\n\n\n\nThursday, March 27\nMaking plots with ggplot2\n\nRead:\n\nPlotting with ggplot2, especially the “Plotting one variable” section.\n\nRecommended:\n\nIntroduction to Data Visualization with ggplot2 on DataCamp\n\nAssigned: Exercise-06"
   },
   {
     "objectID": "schedule.html#week-11",
@@ -1873,7 +2125,7 @@
     "href": "tutorials/tutorial-making-data.html#nominal-data",
     "title": "Making and visualizing data",
     "section": "Nominal data",
-    "text": "Nominal data\nLet’s focus on nominal or categorical data, specifically the favorite colors of some imaginary set of people.\n\n\nCode\n# Make an array of color names\ncolors &lt;- c(\"red\", \"orange\", \"yellow\", \"green\", \"cyan\", \"blue\", \"violet\", \"white\", \"black\", \"gray\")\n\n\nThere are n=10 colors in this set.\n\n\n\n\n\n\nYour turn\n\n\n\nWhy are these data nominal or nominally scaled? Or rather, why aren’t they ordinal, interval, or ratio?\n\n\n\nGenerating\nFor demonstration purposes, we want to take some number of random samples of these colors. Let’s pick n=200 and sample with replacement (replace=TRUE in the code below), meaning that we could have any number of colors in our sample of 200 imaginary people.\n\n\nCode\n# Use `sample()` to pick a random sample of these *with* replacement so that \n# the numbers/color differ.\nour_color_sample &lt;- sample(colors, size=200, replace=TRUE)\nour_color_sample\n\n\n  [1] \"orange\" \"orange\" \"violet\" \"green\"  \"black\"  \"violet\" \"white\"  \"gray\"  \n  [9] \"cyan\"   \"yellow\" \"violet\" \"white\"  \"violet\" \"yellow\" \"orange\" \"orange\"\n [17] \"gray\"   \"white\"  \"white\"  \"violet\" \"black\"  \"green\"  \"violet\" \"green\" \n [25] \"yellow\" \"orange\" \"gray\"   \"green\"  \"white\"  \"yellow\" \"blue\"   \"cyan\"  \n [33] \"yellow\" \"violet\" \"orange\" \"green\"  \"violet\" \"gray\"   \"red\"    \"black\" \n [41] \"violet\" \"blue\"   \"blue\"   \"green\"  \"cyan\"   \"orange\" \"red\"    \"orange\"\n [49] \"green\"  \"white\"  \"white\"  \"cyan\"   \"green\"  \"green\"  \"gray\"   \"white\" \n [57] \"cyan\"   \"blue\"   \"cyan\"   \"yellow\" \"green\"  \"red\"    \"white\"  \"yellow\"\n [65] \"gray\"   \"white\"  \"cyan\"   \"gray\"   \"violet\" \"red\"    \"red\"    \"orange\"\n [73] \"gray\"   \"violet\" \"green\"  \"orange\" \"cyan\"   \"red\"    \"orange\" \"white\" \n [81] \"black\"  \"cyan\"   \"blue\"   \"violet\" \"cyan\"   \"violet\" \"yellow\" \"red\"   \n [89] \"blue\"   \"cyan\"   \"gray\"   \"violet\" \"red\"    \"red\"    \"white\"  \"yellow\"\n [97] \"gray\"   \"blue\"   \"blue\"   \"green\"  \"red\"    \"green\"  \"orange\" \"violet\"\n[105] \"green\"  \"black\"  \"green\"  \"violet\" \"black\"  \"white\"  \"gray\"   \"violet\"\n[113] \"gray\"   \"green\"  \"violet\" \"white\"  \"violet\" \"yellow\" \"white\"  \"red\"   \n[121] \"gray\"   \"gray\"   \"white\"  \"green\"  \"orange\" \"cyan\"   \"red\"    \"yellow\"\n[129] \"yellow\" \"green\"  \"green\"  \"gray\"   \"white\"  \"orange\" \"green\"  \"green\" \n[137] \"green\"  \"gray\"   \"red\"    \"red\"    \"green\"  \"white\"  \"violet\" \"blue\"  \n[145] \"cyan\"   \"cyan\"   \"blue\"   \"yellow\" \"black\"  \"orange\" \"green\"  \"white\" \n[153] \"blue\"   \"blue\"   \"red\"    \"black\"  \"gray\"   \"white\"  \"cyan\"   \"yellow\"\n[161] \"white\"  \"cyan\"   \"green\"  \"red\"    \"white\"  \"black\"  \"yellow\" \"red\"   \n[169] \"green\"  \"cyan\"   \"gray\"   \"cyan\"   \"yellow\" \"white\"  \"gray\"   \"black\" \n[177] \"red\"    \"red\"    \"black\"  \"yellow\" \"blue\"   \"blue\"   \"violet\" \"cyan\"  \n[185] \"gray\"   \"green\"  \"green\"  \"red\"    \"white\"  \"cyan\"   \"blue\"   \"black\" \n[193] \"violet\" \"black\"  \"gray\"   \"cyan\"   \"yellow\" \"black\"  \"gray\"   \"white\" \n\n\nOn its own, that’s not especially easy to visualize. What if we sorted it?\n\n\nCode\nsort(our_color_sample)\n\n\n  [1] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n  [9] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"blue\"   \"blue\"  \n [17] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [25] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [33] \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [41] \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [49] \"cyan\"   \"cyan\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [57] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [65] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [73] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [81] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [89] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [97] \"green\"  \"green\"  \"green\"  \"green\"  \"orange\" \"orange\" \"orange\" \"orange\"\n[105] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[113] \"orange\" \"orange\" \"orange\" \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[121] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[129] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"violet\"\n[137] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[145] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[153] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"white\"  \"white\"  \"white\" \n[161] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[169] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[177] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"yellow\" \"yellow\"\n[185] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n[193] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n\n\nStill not all that helpful.\n\n\nSummarizing\nWhat can we say to summarize categorical data?\nWe can report the number of total responses.\n\n\nCode\nlength(our_color_sample)\n\n\n[1] 200\n\n\nWe can report the number of unique categories.\n\n\nCode\nlength(unique(our_color_sample))\n\n\n[1] 10\n\n\nWe can report the number of responses per category.\n\n\nCode\ncolors_df &lt;- data.frame(favorite_color = our_color_sample)\n\nxtabs(formula = ~favorite_color, data = colors_df)\n\n\nfavorite_color\n black   blue   cyan   gray  green orange    red violet  white yellow \n    14     15     21     22     28     15     20     22     25     18 \n\n\n\n\nVisualizing\nSingle nominal variables don’t offer us many options for visualization. A bar plot showing the number of observations in each category seems to be it.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color) +\n  geom_bar(stat = \"count\")\n\n\n\n\n\n\n\n\nFigure 1: A black and white barplot of the random favorite color data\n\n\n\n\n\nWe can also add colors to the bars.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  geom_bar() +\n  scale_discrete_manual(aesthetics = c(\"color\", \"fill\"),\n                        values = sort(colors))\n\n\n\n\n\n\n\n\nFigure 2: A colorful barplot of the random favorite color data\n\n\n\n\n\nWe can think of this as mapping the name of the color category in our data to the way that category is represented in our figure.\nWe can flip the axis just for fun. Which is more readable?\n\nHorizontal barplot\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar() +\n  coord_flip()\n\n\n\n\n\n\n\n\nFigure 3: A colorful horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nBar/column with textures\nSometimes we don’t want to use color to distinguish nominal categories.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  geom_bar(aes(y = after_stat(count))) +\n  scale_fill_pattern() + # from package 'fillpattern' \n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\nFigure 4: A barplot of the random favorite color data using textures\n\n\n\n\n\nOr, we want to use some different textures and have control over them.\n\n\nCode\ncolors_xtab &lt;- data.frame(table(colors_df))\nnames(colors_xtab) &lt;- c(\"favorite_color\", \"count\")\n\ncolors_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y = count) +\n  # From package 'ggpattern'\n  # See https://r-graph-gallery.com/368-black-and-white-barchart.html\n  geom_col_pattern(\n    aes(\n      pattern = favorite_color,\n      pattern_angle = favorite_color,\n      pattern_spacing = favorite_color\n    ),\n    fill = 'white',\n    color = 'black',\n    pattern_density = 0.5,\n    pattern_fill = 'black',\n    pattern_color = 'darkgrey'\n  )\n\n\n\n\n\n\n\n\nFigure 5: A barplot of the random favorite color data using textures\n\n\n\n\n\n\n\nOrdered\nIt can be useful to sort the counts of nominal variables to faciliate comparisons among categories.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n  aes(x = favorite_color) +\n  geom_bar(aes(y = n), stat = \"identity\")\n\n\n\n\n\n\n\n\nFigure 6: A horizontal barplot of the random favorite color data, sorted\n\n\n\n\n\nLet’s order the other ones while we’re at it.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n  aes(x = favorite_color, y = n, fill = favorite_color) +\n  geom_bar(stat = \"identity\") +\n  scale_fill_pattern() + # from package 'fillpattern'\n  theme(legend.position = \"none\") \n\n\n\n\n\n\n\n\nFigure 7: A barplot of the random favorite color data using textures\n\n\n\n\n\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n  aes(x = favorite_color, y = n) +\n  # From package 'ggpattern'\n  # See https://r-graph-gallery.com/368-black-and-white-barchart.html\n  geom_col_pattern(\n    aes(\n      pattern = favorite_color,\n      pattern_angle = favorite_color,\n      pattern_spacing = favorite_color\n    ),\n    fill = 'white',\n    color = 'black',\n    pattern_density = 0.5,\n    pattern_fill = 'black',\n    pattern_color = 'darkgrey'\n  ) +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\nFigure 8: A barplot of the random favorite color data using textures\n\n\n\n\n\n\n\nLollipop chart\nThe lollipop chart uses less ink, so the ink/data ratio (Tufte, 2001) is higher than with barplots.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n    geom_point(aes(\n    x = favorite_color,\n    y = n,\n    color = favorite_color,\n    fill = favorite_color\n  )) +\n  geom_segment(aes(\n    x = favorite_color,\n    xend = favorite_color,\n    y = 0,\n    yend = n,\n    color = favorite_color\n  )) +\n  scale_color_identity() +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 9: A lollipop plot of the random favorite color data\n\n\n\n\n\n\n\nStacked barplot\nWe can also stack them.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  ggplot() +\n  aes(x = \"\", y = n, fill = favorite_color) +\n  geom_col(position = \"stack\") +\n  scale_fill_identity() +\n  xlab(\"\")\n\n\n\n\n\n\n\n\nFigure 10: A stacked barplot of the random favorite color data\n\n\n\n\n\nThis makes more sense with another nominal variable in the mix.\nLet’s add a ‘school’ variable.\n\n\nCode\nschool &lt;- sample(c(\"psu\", \"osu\", \"mich\", \"usc\"), size=200, replace=TRUE)\ncolors_school_df &lt;- colors_df\ncolors_school_df$school &lt;- school\n\n\nThen create the plot.\n\n\nCode\ncolors_school_xtab &lt;- data.frame(table(colors_school_df))\nnames(colors_school_xtab) &lt;- c(\"favorite_color\", \"school\", \"count\")\n\n# colors_school_xtab |&gt;\n#   ggplot() +\n#   aes(x = school, y=count, fill = favorite_color) +\n#   scale_fill_identity() +\n#   geom_bar(stat=\"identity\", position=\"stack\")\n\ncolors_school_df |&gt; \n  count(school, favorite_color) |&gt; \n  ggplot() + \n  aes(school, n, fill = favorite_color) + \n  scale_fill_identity() + \n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 11: A stacked barplot of the random favorite color data\n\n\n\n\n\n\n\nStacked barplot alternative\n\n\nCode\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y=count, fill = school) +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 12: Another stacked barplot of the random favorite color data.\n\n\n\n\n\n\n\nDodged barplot\nUsing the ‘dodge’ parameter is another way to show data with two categorical variables.\n\n\nCode\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = school, y=count, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"dodge\")\n\n\n\n\n\n\n\n\nFigure 13: A horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nPie chart\n\n\nCode\ncolors_xtab &lt;- data.frame(table(colors_df))\nnames(colors_xtab) &lt;- c(\"favorite_color\", \"count\")\n\ncolors_xtab |&gt;\n  ggplot(aes(x = \"\", y = count, fill = favorite_color)) +\n  geom_bar(stat = \"identity\", width = 1) +\n  coord_polar(\"y\", start = 0) +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 14: A piechart of the random favorite color data\n\n\n\n\n\n\n\nRing chart\n\n\nCode\n# https://r-graph-gallery.com/128-ring-or-donut-plot.html\n\n# Compute percentages\ncolors_xtab$fraction = colors_xtab$count / sum(colors_xtab$count)\n\n# Compute the cumulative percentages (top of each rectangle)\ncolors_xtab$ymax = cumsum(colors_xtab$fraction)\n\n# Compute the bottom of each rectangle\ncolors_xtab$ymin = c(0, head(colors_xtab$ymax, n = -1))\n\n# Make the plot\ncolors_xtab |&gt;\n  ggplot(aes(\n    ymax = ymax,\n    ymin = ymin,\n    xmax = 4,\n    xmin = 3,\n    fill = favorite_color\n  )) +\n  geom_rect() +\n  coord_polar(theta = \"y\") + # Try to remove that to understand how the chart is built initially\n  xlim(c(2, 4)) + # Try to remove that to see how to make a pie chart\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 15: A ring/donut chart of the random favorite color data\n\n\n\n\n\n\n\nMosaic plot\n\n\nCode\nggplot(data = colors_school_df) +\n  geom_mosaic(aes(x = product(favorite_color, school), fill = favorite_color)) +   \n  labs(y=\"Favorite\", x=\"School\", title = \"Favorite colors by school\") +\n  scale_fill_identity()\n\n\nWarning: The `scale_name` argument of `continuous_scale()` is deprecated as of ggplot2\n3.5.0.\n\n\nWarning: The `trans` argument of `continuous_scale()` is deprecated as of ggplot2 3.5.0.\nℹ Please use the `transform` argument instead.\n\n\nWarning: `unite_()` was deprecated in tidyr 1.2.0.\nℹ Please use `unite()` instead.\nℹ The deprecated feature was likely used in the ggmosaic package.\n  Please report the issue at &lt;https://github.com/haleyjeppson/ggmosaic&gt;.\n\n\n\n\n\n\n\n\nFigure 16: A mosaic chart of the random favorite color by school data"
+    "text": "Nominal data\nLet’s focus on nominal or categorical data, specifically the favorite colors of some imaginary set of people.\n\n\nCode\n# Make an array of color names\ncolors &lt;- c(\"red\", \"orange\", \"yellow\", \"green\", \"cyan\", \"blue\", \"violet\", \"white\", \"black\", \"gray\")\n\n\nThere are n=10 colors in this set.\n\n\n\n\n\n\nYour turn\n\n\n\nWhy are these data nominal or nominally scaled? Or rather, why aren’t they ordinal, interval, or ratio?\n\n\n\nGenerating\nFor demonstration purposes, we want to take some number of random samples of these colors. Let’s pick n=200 and sample with replacement (replace=TRUE in the code below), meaning that we could have any number of colors in our sample of 200 imaginary people.\n\n\nCode\n# Use `sample()` to pick a random sample of these *with* replacement so that \n# the numbers/color differ.\nour_color_sample &lt;- sample(colors, size=200, replace=TRUE)\nour_color_sample\n\n\n  [1] \"orange\" \"violet\" \"black\"  \"violet\" \"cyan\"   \"gray\"   \"blue\"   \"yellow\"\n  [9] \"white\"  \"red\"    \"cyan\"   \"blue\"   \"orange\" \"white\"  \"red\"    \"cyan\"  \n [17] \"gray\"   \"black\"  \"violet\" \"white\"  \"gray\"   \"red\"    \"red\"    \"gray\"  \n [25] \"blue\"   \"red\"    \"red\"    \"orange\" \"orange\" \"orange\" \"blue\"   \"orange\"\n [33] \"yellow\" \"yellow\" \"green\"  \"green\"  \"cyan\"   \"black\"  \"violet\" \"gray\"  \n [41] \"white\"  \"white\"  \"yellow\" \"yellow\" \"white\"  \"gray\"   \"green\"  \"green\" \n [49] \"blue\"   \"white\"  \"violet\" \"cyan\"   \"yellow\" \"red\"    \"violet\" \"yellow\"\n [57] \"black\"  \"violet\" \"orange\" \"black\"  \"black\"  \"red\"    \"cyan\"   \"gray\"  \n [65] \"gray\"   \"red\"    \"black\"  \"yellow\" \"white\"  \"green\"  \"green\"  \"violet\"\n [73] \"yellow\" \"blue\"   \"red\"    \"green\"  \"green\"  \"orange\" \"blue\"   \"orange\"\n [81] \"red\"    \"orange\" \"white\"  \"violet\" \"green\"  \"orange\" \"red\"    \"yellow\"\n [89] \"orange\" \"red\"    \"blue\"   \"green\"  \"yellow\" \"blue\"   \"yellow\" \"cyan\"  \n [97] \"red\"    \"red\"    \"yellow\" \"red\"    \"cyan\"   \"white\"  \"green\"  \"blue\"  \n[105] \"white\"  \"cyan\"   \"green\"  \"green\"  \"violet\" \"green\"  \"orange\" \"white\" \n[113] \"violet\" \"black\"  \"orange\" \"white\"  \"black\"  \"orange\" \"red\"    \"green\" \n[121] \"orange\" \"cyan\"   \"black\"  \"cyan\"   \"blue\"   \"red\"    \"black\"  \"green\" \n[129] \"red\"    \"gray\"   \"yellow\" \"green\"  \"green\"  \"cyan\"   \"yellow\" \"yellow\"\n[137] \"cyan\"   \"yellow\" \"gray\"   \"orange\" \"white\"  \"black\"  \"white\"  \"green\" \n[145] \"orange\" \"yellow\" \"yellow\" \"black\"  \"white\"  \"gray\"   \"violet\" \"gray\"  \n[153] \"black\"  \"violet\" \"green\"  \"blue\"   \"orange\" \"blue\"   \"red\"    \"cyan\"  \n[161] \"red\"    \"orange\" \"white\"  \"violet\" \"white\"  \"blue\"   \"red\"    \"violet\"\n[169] \"gray\"   \"gray\"   \"gray\"   \"yellow\" \"violet\" \"black\"  \"red\"    \"green\" \n[177] \"cyan\"   \"white\"  \"white\"  \"yellow\" \"violet\" \"blue\"   \"gray\"   \"cyan\"  \n[185] \"cyan\"   \"green\"  \"white\"  \"black\"  \"white\"  \"black\"  \"green\"  \"gray\"  \n[193] \"orange\" \"green\"  \"gray\"   \"cyan\"   \"cyan\"   \"orange\" \"white\"  \"red\"   \n\n\nOn its own, that’s not especially easy to visualize. What if we sorted it?\n\n\nCode\nsort(our_color_sample)\n\n\n  [1] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n  [9] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n [17] \"black\"  \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [25] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [33] \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [41] \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [49] \"cyan\"   \"cyan\"   \"cyan\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [57] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [65] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"green\"  \"green\"  \"green\" \n [73] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [81] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [89] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"orange\" \"orange\" \"orange\"\n [97] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[105] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[113] \"orange\" \"orange\" \"orange\" \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[121] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[129] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[137] \"red\"    \"red\"    \"red\"    \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[145] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[153] \"violet\" \"violet\" \"violet\" \"violet\" \"white\"  \"white\"  \"white\"  \"white\" \n[161] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[169] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[177] \"white\"  \"white\"  \"white\"  \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n[185] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n[193] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n\n\nStill not all that helpful.\n\n\nSummarizing\nWhat can we say to summarize categorical data?\nWe can report the number of total responses.\n\n\nCode\nlength(our_color_sample)\n\n\n[1] 200\n\n\nWe can report the number of unique categories.\n\n\nCode\nlength(unique(our_color_sample))\n\n\n[1] 10\n\n\nWe can report the number of responses per category.\n\n\nCode\ncolors_df &lt;- data.frame(favorite_color = our_color_sample)\n\nxtabs(formula = ~favorite_color, data = colors_df)\n\n\nfavorite_color\n black   blue   cyan   gray  green orange    red violet  white yellow \n    17     15     19     18     24     22     24     17     23     21 \n\n\n\n\nVisualizing\nSingle nominal variables don’t offer us many options for visualization. A bar plot showing the number of observations in each category seems to be it.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color) +\n  geom_bar(stat = \"count\")\n\n\n\n\n\n\n\n\nFigure 1: A black and white barplot of the random favorite color data\n\n\n\n\n\nWe can also add colors to the bars.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  geom_bar() +\n  scale_discrete_manual(aesthetics = c(\"color\", \"fill\"),\n                        values = sort(colors))\n\n\n\n\n\n\n\n\nFigure 2: A colorful barplot of the random favorite color data\n\n\n\n\n\nWe can think of this as mapping the name of the color category in our data to the way that category is represented in our figure.\nWe can flip the axis just for fun. Which is more readable?\n\nHorizontal barplot\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar() +\n  coord_flip()\n\n\n\n\n\n\n\n\nFigure 3: A colorful horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nBar/column with textures\nSometimes we don’t want to use color to distinguish nominal categories.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  geom_bar(aes(y = after_stat(count))) +\n  scale_fill_pattern() + # from package 'fillpattern' \n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\nFigure 4: A barplot of the random favorite color data using textures\n\n\n\n\n\nOr, we want to use some different textures and have control over them.\n\n\nCode\ncolors_xtab &lt;- data.frame(table(colors_df))\nnames(colors_xtab) &lt;- c(\"favorite_color\", \"count\")\n\ncolors_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y = count) +\n  # From package 'ggpattern'\n  # See https://r-graph-gallery.com/368-black-and-white-barchart.html\n  geom_col_pattern(\n    aes(\n      pattern = favorite_color,\n      pattern_angle = favorite_color,\n      pattern_spacing = favorite_color\n    ),\n    fill = 'white',\n    color = 'black',\n    pattern_density = 0.5,\n    pattern_fill = 'black',\n    pattern_color = 'darkgrey'\n  )\n\n\n\n\n\n\n\n\nFigure 5: A barplot of the random favorite color data using textures\n\n\n\n\n\n\n\nOrdered\nIt can be useful to sort the counts of nominal variables to faciliate comparisons among categories.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n  aes(x = favorite_color) +\n  geom_bar(aes(y = n), stat = \"identity\")\n\n\n\n\n\n\n\n\nFigure 6: A horizontal barplot of the random favorite color data, sorted\n\n\n\n\n\nLet’s order the other ones while we’re at it.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n  aes(x = favorite_color, y = n, fill = favorite_color) +\n  geom_bar(stat = \"identity\") +\n  scale_fill_pattern() + # from package 'fillpattern'\n  theme(legend.position = \"none\") \n\n\n\n\n\n\n\n\nFigure 7: A barplot of the random favorite color data using textures\n\n\n\n\n\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n  aes(x = favorite_color, y = n) +\n  # From package 'ggpattern'\n  # See https://r-graph-gallery.com/368-black-and-white-barchart.html\n  geom_col_pattern(\n    aes(\n      pattern = favorite_color,\n      pattern_angle = favorite_color,\n      pattern_spacing = favorite_color\n    ),\n    fill = 'white',\n    color = 'black',\n    pattern_density = 0.5,\n    pattern_fill = 'black',\n    pattern_color = 'darkgrey'\n  ) +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\nFigure 8: A barplot of the random favorite color data using textures\n\n\n\n\n\n\n\nLollipop chart\nThe lollipop chart uses less ink, so the ink/data ratio (Tufte, 2001) is higher than with barplots.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n    geom_point(aes(\n    x = favorite_color,\n    y = n,\n    color = favorite_color,\n    fill = favorite_color\n  )) +\n  geom_segment(aes(\n    x = favorite_color,\n    xend = favorite_color,\n    y = 0,\n    yend = n,\n    color = favorite_color\n  )) +\n  scale_color_identity() +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 9: A lollipop plot of the random favorite color data\n\n\n\n\n\n\n\nStacked barplot\nWe can also stack them.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  ggplot() +\n  aes(x = \"\", y = n, fill = favorite_color) +\n  geom_col(position = \"stack\") +\n  scale_fill_identity() +\n  xlab(\"\")\n\n\n\n\n\n\n\n\nFigure 10: A stacked barplot of the random favorite color data\n\n\n\n\n\nThis makes more sense with another nominal variable in the mix.\nLet’s add a ‘school’ variable.\n\n\nCode\nschool &lt;- sample(c(\"psu\", \"osu\", \"mich\", \"usc\"), size=200, replace=TRUE)\ncolors_school_df &lt;- colors_df\ncolors_school_df$school &lt;- school\n\n\nThen create the plot.\n\n\nCode\ncolors_school_xtab &lt;- data.frame(table(colors_school_df))\nnames(colors_school_xtab) &lt;- c(\"favorite_color\", \"school\", \"count\")\n\n# colors_school_xtab |&gt;\n#   ggplot() +\n#   aes(x = school, y=count, fill = favorite_color) +\n#   scale_fill_identity() +\n#   geom_bar(stat=\"identity\", position=\"stack\")\n\ncolors_school_df |&gt; \n  count(school, favorite_color) |&gt; \n  ggplot() + \n  aes(school, n, fill = favorite_color) + \n  scale_fill_identity() + \n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 11: A stacked barplot of the random favorite color data\n\n\n\n\n\n\n\nStacked barplot alternative\n\n\nCode\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y=count, fill = school) +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 12: Another stacked barplot of the random favorite color data.\n\n\n\n\n\n\n\nDodged barplot\nUsing the ‘dodge’ parameter is another way to show data with two categorical variables.\n\n\nCode\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = school, y=count, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"dodge\")\n\n\n\n\n\n\n\n\nFigure 13: A horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nPie chart\n\n\nCode\ncolors_xtab &lt;- data.frame(table(colors_df))\nnames(colors_xtab) &lt;- c(\"favorite_color\", \"count\")\n\ncolors_xtab |&gt;\n  ggplot(aes(x = \"\", y = count, fill = favorite_color)) +\n  geom_bar(stat = \"identity\", width = 1) +\n  coord_polar(\"y\", start = 0) +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 14: A piechart of the random favorite color data\n\n\n\n\n\n\n\nRing chart\n\n\nCode\n# https://r-graph-gallery.com/128-ring-or-donut-plot.html\n\n# Compute percentages\ncolors_xtab$fraction = colors_xtab$count / sum(colors_xtab$count)\n\n# Compute the cumulative percentages (top of each rectangle)\ncolors_xtab$ymax = cumsum(colors_xtab$fraction)\n\n# Compute the bottom of each rectangle\ncolors_xtab$ymin = c(0, head(colors_xtab$ymax, n = -1))\n\n# Make the plot\ncolors_xtab |&gt;\n  ggplot(aes(\n    ymax = ymax,\n    ymin = ymin,\n    xmax = 4,\n    xmin = 3,\n    fill = favorite_color\n  )) +\n  geom_rect() +\n  coord_polar(theta = \"y\") + # Try to remove that to understand how the chart is built initially\n  xlim(c(2, 4)) + # Try to remove that to see how to make a pie chart\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 15: A ring/donut chart of the random favorite color data\n\n\n\n\n\n\n\nMosaic plot\n\n\nCode\nggplot(data = colors_school_df) +\n  geom_mosaic(aes(x = product(favorite_color, school), fill = favorite_color)) +   \n  labs(y=\"Favorite\", x=\"School\", title = \"Favorite colors by school\") +\n  scale_fill_identity()\n\n\nWarning: The `scale_name` argument of `continuous_scale()` is deprecated as of ggplot2\n3.5.0.\n\n\nWarning: The `trans` argument of `continuous_scale()` is deprecated as of ggplot2 3.5.0.\nℹ Please use the `transform` argument instead.\n\n\nWarning: `unite_()` was deprecated in tidyr 1.2.0.\nℹ Please use `unite()` instead.\nℹ The deprecated feature was likely used in the ggmosaic package.\n  Please report the issue at &lt;https://github.com/haleyjeppson/ggmosaic&gt;.\n\n\n\n\n\n\n\n\nFigure 16: A mosaic chart of the random favorite color by school data"
   },
   {
     "objectID": "tutorials/tutorial-making-data.html#ordinal-data",
@@ -3119,7 +3371,7 @@
     "href": "slides/wk08-2025-03-04-more-slow-r.html#are-the-means-different",
     "title": "More slow R",
     "section": "Are the means different?",
-    "text": "Are the means different?\n\n\nCode\ntwo_sets &lt;- readr::read_csv(\"../include/csv/two_sets_1_sd.csv\", show_col_types = FALSE)\n t.test(value ~ sample_name, data = two_sets, var.equal = TRUE)\n\n\n\n    Two Sample t-test\n\ndata:  value by sample_name\nt = -8.7472, df = 198, p-value = 9.486e-16\nalternative hypothesis: true difference in means between group x0 and group x1 is not equal to 0\n95 percent confidence interval:\n -1.610797 -1.018119\nsample estimates:\nmean in group x0 mean in group x1 \n      -0.2298305        1.0846273"
+    "text": "Are the means different?\n\n\nCode\ntwo_sets &lt;- readr::read_csv(\"../include/csv/two_sets_1_sd.csv\", show_col_types = FALSE)\n t.test(value ~ sample_name, data = two_sets, var.equal = TRUE)\n\n\n\n    Two Sample t-test\n\ndata:  value by sample_name\nt = -7.5802, df = 198, p-value = 1.302e-12\nalternative hypothesis: true difference in means between group x0 and group x1 is not equal to 0\n95 percent confidence interval:\n -1.3142172 -0.7715897\nsample estimates:\nmean in group x0 mean in group x1 \n     -0.04467872       0.99822474"
   },
   {
     "objectID": "slides/wk08-2025-03-04-more-slow-r.html#your-thoughts",
@@ -3140,7 +3392,7 @@
     "href": "slides/wk08-2025-03-04-more-slow-r.html#storing-things",
     "title": "More slow R",
     "section": "Storing things",
-    "text": "Storing things\n\nLong-term (between work sessions) in files.\nShort-term (during your work session) in volatile memory.\n\ne.g., object names\n\n\n\n\n [1] \"_feynmann.qmd\"                                  \n [2] \"_gilmore-photo-bio.qmd\"                         \n [3] \"_merton.qmd\"                                    \n [4] \"_metadata.yml\"                                  \n [5] \"_reddish-green.Rmd\"                             \n [6] \"img_gilmore_bio\"                                \n [7] \"wk01-2025-01-14-course-intro.html\"              \n [8] \"wk01-2025-01-14-course-intro.qmd\"               \n [9] \"wk01-2025-01-16-semiotics-data-viz.html\"        \n[10] \"wk01-2025-01-16-semiotics-data-viz.qmd\"         \n[11] \"wk02-2025-01-21-govt-biz.html\"                  \n[12] \"wk02-2025-01-21-govt-biz.qmd\"                   \n[13] \"wk02-2025-01-23-art-sports-journ.html\"          \n[14] \"wk02-2025-01-23-art-sports-journ.qmd\"           \n[15] \"wk03-2025-01-28-making-data.html\"               \n[16] \"wk03-2025-01-28-making-data.qmd\"                \n[17] \"wk03-2025-01-30-figure-types.html\"              \n[18] \"wk03-2025-01-30-figure-types.qmd\"               \n[19] \"wk04-2025-02-04-figure-components.html\"         \n[20] \"wk04-2025-02-04-figure-components.qmd\"          \n[21] \"wk05-2025-02-11-stim-to-sensation.html\"         \n[22] \"wk05-2025-02-11-stim-to-sensation.qmd\"          \n[23] \"wk05-2025-02-13-sensation-to-perception.html\"   \n[24] \"wk05-2025-02-13-sensation-to-perception.qmd\"    \n[25] \"wk06-2025-02-18-cognition-to-understanding.html\"\n[26] \"wk06-2025-02-18-cognition-to-understanding.qmd\" \n[27] \"wk06-2025-02-20-designing-viz.html\"             \n[28] \"wk06-2025-02-20-designing-viz.qmd\"              \n[29] \"wk07-2025-02-25-intro-to-r.html\"                \n[30] \"wk07-2025-02-25-intro-to-r.qmd\"                 \n[31] \"wk07-2025-02-27-viz-uncertainty-risk.html\"      \n[32] \"wk07-2025-02-27-viz-uncertainty-risk.qmd\"       \n[33] \"wk08-2025-03-04-more-slow-r.qmd\"                \n[34] \"wk08-2025-03-04-more-slow-r.rmarkdown\"          \n[35] \"wk08-2025-03-06-critiquing-figs.qmd\"            \n[36] \"wk09-2025-03-18-why-r.qmd\""
+    "text": "Storing things\n\nLong-term (between work sessions) in files.\nShort-term (during your work session) in volatile memory.\n\ne.g., object names\n\n\n\n\n [1] \"_feynmann.qmd\"                                  \n [2] \"_gilmore-photo-bio.qmd\"                         \n [3] \"_merton.qmd\"                                    \n [4] \"_metadata.yml\"                                  \n [5] \"_reddish-green.Rmd\"                             \n [6] \"img_gilmore_bio\"                                \n [7] \"wk01-2025-01-14-course-intro.html\"              \n [8] \"wk01-2025-01-14-course-intro.qmd\"               \n [9] \"wk01-2025-01-16-semiotics-data-viz.html\"        \n[10] \"wk01-2025-01-16-semiotics-data-viz.qmd\"         \n[11] \"wk02-2025-01-21-govt-biz.html\"                  \n[12] \"wk02-2025-01-21-govt-biz.qmd\"                   \n[13] \"wk02-2025-01-23-art-sports-journ.html\"          \n[14] \"wk02-2025-01-23-art-sports-journ.qmd\"           \n[15] \"wk03-2025-01-28-making-data.html\"               \n[16] \"wk03-2025-01-28-making-data.qmd\"                \n[17] \"wk03-2025-01-30-figure-types.html\"              \n[18] \"wk03-2025-01-30-figure-types.qmd\"               \n[19] \"wk04-2025-02-04-figure-components.html\"         \n[20] \"wk04-2025-02-04-figure-components.qmd\"          \n[21] \"wk05-2025-02-11-stim-to-sensation.html\"         \n[22] \"wk05-2025-02-11-stim-to-sensation.qmd\"          \n[23] \"wk05-2025-02-13-sensation-to-perception.html\"   \n[24] \"wk05-2025-02-13-sensation-to-perception.qmd\"    \n[25] \"wk06-2025-02-18-cognition-to-understanding.html\"\n[26] \"wk06-2025-02-18-cognition-to-understanding.qmd\" \n[27] \"wk06-2025-02-20-designing-viz.html\"             \n[28] \"wk06-2025-02-20-designing-viz.qmd\"              \n[29] \"wk07-2025-02-25-intro-to-r.html\"                \n[30] \"wk07-2025-02-25-intro-to-r.qmd\"                 \n[31] \"wk07-2025-02-27-viz-uncertainty-risk.html\"      \n[32] \"wk07-2025-02-27-viz-uncertainty-risk.qmd\"       \n[33] \"wk08-2025-03-04-more-slow-r.qmd\"                \n[34] \"wk08-2025-03-04-more-slow-r.rmarkdown\"          \n[35] \"wk08-2025-03-06-critiquing-figs.qmd\"            \n[36] \"wk09-2025-03-18-why-r.qmd\"                      \n[37] \"wk10-2025-03-25-gathering-cleaning.qmd\""
   },
   {
     "objectID": "slides/wk08-2025-03-04-more-slow-r.html#storing-things-1",
@@ -3367,130 +3619,158 @@
     "text": "References"
   },
   {
-    "objectID": "exercises/ex02-data-viz-outside-psych.html",
-    "href": "exercises/ex02-data-viz-outside-psych.html",
-    "title": "Exercise 02",
+    "objectID": "exercises/ex01-figs-in-psych-sci.html",
+    "href": "exercises/ex01-figs-in-psych-sci.html",
+    "title": "Exercise 01",
     "section": "",
-    "text": "In-class work on Tuesday, January 21-23.\nDue on Thursday, January 30.\nCanvas dropbox."
+    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nWrite-up for credit due on Thursday, January 23.\nCanvas dropbox.\n\n\n\n\n\n\nPost-submission feedback\n\n\n\nWe have prepared a page with general feedback that should be helpful for future assignments. The feedback can be found here."
   },
   {
-    "objectID": "exercises/ex02-data-viz-outside-psych.html#dates",
-    "href": "exercises/ex02-data-viz-outside-psych.html#dates",
-    "title": "Exercise 02",
+    "objectID": "exercises/ex01-figs-in-psych-sci.html#dates",
+    "href": "exercises/ex01-figs-in-psych-sci.html#dates",
+    "title": "Exercise 01",
     "section": "",
-    "text": "In-class work on Tuesday, January 21-23.\nDue on Thursday, January 30.\nCanvas dropbox."
+    "text": "In-class work on Tuesday, January 14 and Thursday, January 16.\nWrite-up for credit due on Thursday, January 23.\nCanvas dropbox.\n\n\n\n\n\n\nPost-submission feedback\n\n\n\nWe have prepared a page with general feedback that should be helpful for future assignments. The feedback can be found here."
   },
   {
-    "objectID": "exercises/ex02-data-viz-outside-psych.html#goals",
-    "href": "exercises/ex02-data-viz-outside-psych.html#goals",
-    "title": "Exercise 02",
+    "objectID": "exercises/ex01-figs-in-psych-sci.html#goals",
+    "href": "exercises/ex01-figs-in-psych-sci.html#goals",
+    "title": "Exercise 01",
     "section": "Goals",
-    "text": "Goals\nIn this exercise, you will work alone or a with a team of no more than two other classmates to find and describe data visualizations from business (for profit or not-for-profit), government, the arts, sports, or journalism. You will add links to the visualizations to a common database that we will use for discussion about the types of visualizations and types of data that are commonly used fields outside of psychological science."
+    "text": "Goals\nIn this exercise, you may choose to work alone or with a team of classmates to find data visualizations from the societies of three (3) professional associations and three (3) journals. You will add links to the visualizations to a common database that we will use for discussion about the types of visualizations and types of data that are commonly used in psychological science."
   },
   {
-    "objectID": "exercises/ex02-data-viz-outside-psych.html#assignment",
-    "href": "exercises/ex02-data-viz-outside-psych.html#assignment",
-    "title": "Exercise 02",
+    "objectID": "exercises/ex01-figs-in-psych-sci.html#assignment",
+    "href": "exercises/ex01-figs-in-psych-sci.html#assignment",
+    "title": "Exercise 01",
     "section": "Assignment",
-    "text": "Assignment\n\nChoose at least three categories (business, government, the arts, sports, or journalism) to focus on.\nFor each category, find at least one or two visualizations of data.\n\nTry to pick visualizations that are interesting to you in some way.\n\nAdd information about the visualizations to a Google Sheet that all of us will share:\n\nhttps://docs.google.com/spreadsheets/d/1rLiLBRbDQfInauOUBPNwGYq-0VOjskGNY7Wq2QRTTbc/edit?gid=0#gid=0\nSpecifically, enter your team identifier in the identifier field, the source in source_type, and the URL in the url field. Please say briefly why you chose this particular visualization. If you have any comments to add, put those in the comments field.\n\nIf you want to submit a write-up for evaluation, please select three (3) visualizations and evaluate them based on the following questions:\n\n\nWhat data are presented?\nWhat graphic elements of the visualization map to which aspects of the data?\nWhat prior knowledge does someone viewing these data need to have in order to understand the visualizations clearly?\nWhy is the source presenting these data?\nWhat story or message is the source trying to communicate and to what audience?\nHow effective is the message?\nAre the figures statistical visualizations or information visualizations (Infovis) as described by Gelman & Unwin (2013)?\n\n\n\n\n\n\n\nNote\n\n\n\nThe visualizations you choose to write about may be the ones you found yourself or those that others found and shared."
+    "text": "Assignment\n\nVisit the websites of at least three (3) professional associations.\n\nThe following are examples. Feel free to choose a different professional society.\n\nAmerican Psychological Association (APA)\nAssociation for Psychological Science (APS)\nVision Sciences Society\nSociety for Personality and Social Psychology\nSociety for Research in Child Development\nSociety for Research on Adolescence\nCognitive Neuroscience Society\nSociety for Neuroscience\nPsychonomics Society\nSociety for Industrial and Organizational Psychology\n\n\nFor each society website, find at least two visualizations of data.\n\nTry to pick visualizations that are interesting to you in some way.\n\nAdd information about the visualizations to a Google Sheet that all of us will share:\n\nhttps://docs.google.com/spreadsheets/d/1X-3kWpGAACdkAJ8-AeqYiu5TS6tRzpfdgXBYyPooCPo/edit?usp=sharing\nSpecifically, enter your team identifier in the identifier field, the source in source_type, and the URL in the url field. Please say briefly why you chose this particular visualization. If you have any comments to add, put those in the comments field.\nDuring class on 2025-01-16, Gilmore added a url_to_figure field. If you want to add that, right click on the image and see if an option to ‘open image in new tab’ or ‘copy image address’ is available.\n\n\n\n\n\n\nImportant\n\n\n\nYou do not have to use your PSU ID as your identifier.\nGilmore did so just to provide some sample data.\n\n\n\nNext, visit the websites of at least three (3) journals and do the same thing–pick at least two (2) visualizations from each of the journals.\n\nNote that some societies publish one or more journals, so you might find a journal that interests you from the society website.\nHere are some additional journal resources that you might find interesting to explore:\n\nScience Magazine\nNature\nNature Human Behavior\nTrends in Cognitive Sciences\nAnnual Reviews\n\nFigures with “psychology” as search term\nFigures with “neuroscience” as search term\nKnowable Magazine has a graphics library\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThe goal here is to gather via ‘crowd-sourcing’ a diverse set of visualizations. So, feel free to mix it up."
   },
   {
-    "objectID": "exercises/ex02-data-viz-outside-psych.html#submit",
-    "href": "exercises/ex02-data-viz-outside-psych.html#submit",
-    "title": "Exercise 02",
+    "objectID": "exercises/ex01-figs-in-psych-sci.html#submit",
+    "href": "exercises/ex01-figs-in-psych-sci.html#submit",
+    "title": "Exercise 01",
     "section": "Submit",
-    "text": "Submit\n\nEveryone\n\nYour data to the shared Google Spreadsheet.\n\n\n\nStudents submitting write-ups\nStudents who want this submission to count for one of their four (4) required exercises should submit the following:\n\nA 2-3 page write-up in APA format where you describe three (3) figures your group found, answering the questions in 4. above.\n\nMake sure to write a complete essay. See the feedback for Exercise 01 for other hints about how to improve your submission. While we will not require it because the deadline is soon, if you are able to include images of the figures you discuss, please do so. Here is a tutorial to help.\n\n\n\n\n\n\nAPA template\n\n\n\nThis template document may be helpful."
+    "text": "Submit\n\nEveryone\n\nYour data to the shared Google Spreadsheet.\n\nStudents who want this submission to count for one of their four (4) required exercises\n\nA 2-3 page write-up in APA format where you describe three (3) figures your group found, focusing on these questions:\n\nWhat graphic elements of the visualization map to which aspects of the data?\nWhat prior knowledge does someone viewing these data need to have in order to understand the visualizations clearly?\nWhy is the source presenting these data?\nWhat story or message is the source trying to communicate and to what audience?\nHow effective is the message?\n\nStudents who work in teams should submit one (1) write-up with all of the authors’ names. One grade will be assigned.\nNote: Your references section need only include the citation to the source paper or website. You should identify in your text which figure you have chosen to analyze.\n\n\n\n\n\n\n\n\nAPA template\n\n\n\nThis template document may be helpful."
   },
   {
-    "objectID": "exercises/ex04-sci-of-data-viz.html",
-    "href": "exercises/ex04-sci-of-data-viz.html",
-    "title": "Exercise 04",
+    "objectID": "exercises/ex03-making-data.html",
+    "href": "exercises/ex03-making-data.html",
+    "title": "Exercise 03",
     "section": "",
-    "text": "In-class work on Thursday, February 20 and Tuesday, February 25.\nSubmit write-up for credit due by Thursday, March 6."
+    "text": "In-class work on Tuesday, January 28 and Thursday, January 30.\nSubmit write-up for credit due by Tuesday, Feburary 11."
   },
   {
-    "objectID": "exercises/ex04-sci-of-data-viz.html#dates",
-    "href": "exercises/ex04-sci-of-data-viz.html#dates",
-    "title": "Exercise 04",
+    "objectID": "exercises/ex03-making-data.html#dates",
+    "href": "exercises/ex03-making-data.html#dates",
+    "title": "Exercise 03",
     "section": "",
-    "text": "In-class work on Thursday, February 20 and Tuesday, February 25.\nSubmit write-up for credit due by Thursday, March 6."
+    "text": "In-class work on Tuesday, January 28 and Thursday, January 30.\nSubmit write-up for credit due by Tuesday, Feburary 11."
   },
   {
-    "objectID": "exercises/ex04-sci-of-data-viz.html#goals",
-    "href": "exercises/ex04-sci-of-data-viz.html#goals",
-    "title": "Exercise 04",
+    "objectID": "exercises/ex03-making-data.html#goals",
+    "href": "exercises/ex03-making-data.html#goals",
+    "title": "Exercise 03",
     "section": "Goals",
-    "text": "Goals\n\nRead a scientific study about data visualization.\nEvaluate the study’s findings and its implications for the design of data visualizations.\n\nOR\n\nRead a scientific study on a topic you find of interest.\nEvaluate the study’s findings and report on how well the key findings are depicted in one or more data visualizations."
+    "text": "Goals\nIn this exercise, you will work alone or with a team of classmates to create a survey using the Google Forms tool. The survey you create will be used later in the course for data visualizations that you will also create."
   },
   {
-    "objectID": "exercises/ex04-sci-of-data-viz.html#assignment",
-    "href": "exercises/ex04-sci-of-data-viz.html#assignment",
-    "title": "Exercise 04",
+    "objectID": "exercises/ex03-making-data.html#assignment",
+    "href": "exercises/ex03-making-data.html#assignment",
+    "title": "Exercise 03",
     "section": "Assignment",
-    "text": "Assignment\n\nChoose a primary source reference that is an empirical study about data visualization. For example, Cleveland & McGill (1984) or a more recent paper that cites it, one of the papers cited by Franconeri, Padilla, Shah, Zacks, & Hullman (2021), or a paper you find on your own.\nDescribe the paper’s principal goals, methods, and findings. What are the study’s weaknesses? Does the study contain data visualizations? How well do the visualizations follow best practices in data visualization design? What practical impact do the study findings have for researchers making data visualizations?\n\nOR\n\nChoose a primary reference that is an empirical study about a topic in psychological science that interests you.\nBriefly describe the paper’s principal goals, methods, and especially the key findings. Does the study contain data visualizations? How well do the visualizations convey the key findings? What features of the visualizations help communicate the findings? What features make the findings harder to see or understand? How well do the visualizations follow best practices in data visualization design?"
+    "text": "Assignment\n\nSign-in to the Google drive account associated with your Penn State Access ID. This will make it somewhat easier for us to share forms.\nOpen Google Forms by visiting https://forms.google.com.\nCreate a new form by clicking on the ‘Blank Form’ button.\n\n{fig-google-form-blank-form} 3. Give your form a useful title, for example, ‘PSYCH-490.003-2025-spring-team-A’ or ‘PSYCH-490.003-2025-spring-rog1’.\n\n\n\n\n\n\nImportant\n\n\n\nYou can be assigned a team name/letter if you choose.\nIf you\n\n\n\nCustomize the theme if you wish by clicking on the palette icon.\nCreate a survey with 8 questions. Your questions should be ones that your classmates can answer without embarrassment or loss of privacy and which meet the following criteria:\n\n\nGenerate two questions with nominal (un-ordered) answers (e.g., favorite color).\nGenerate two questions with ordinal (e.g., 1-5) answers analogous to a Likert scale.\nGenerate two questions with continuous answers (e.g., age and shoe size). It doesn’t matter if these are interval or ratio scaled.\nGenerate one question with a date or time as an answer (e.g., a favorite relative’s birthday).\nInclude one field for comments.\n\n\nWhen you are happy with a draft of your survey, conduct a quality assurance (QA) review of it by having your team or someone else take the survey. The easiest way to do this is to use the ‘Send’ button to send your survey to you collaborator(s).\n\n\n\n\nGoogle Forms ‘Send’\n\n\nMake sure to have your QA testers answer the Comments question with the same response, e.g., ‘test-response’. This will make it easier later to filter-out the test responses.\n\nMake sure that all of your collaborators have edit privileges on the form. Click on the ‘more’ button with three dots and add collaborators.\n\n\n\n\nAdd collaborators"
   },
   {
-    "objectID": "exercises/ex04-sci-of-data-viz.html#submit",
-    "href": "exercises/ex04-sci-of-data-viz.html#submit",
-    "title": "Exercise 04",
+    "objectID": "exercises/ex03-making-data.html#submit",
+    "href": "exercises/ex03-making-data.html#submit",
+    "title": "Exercise 03",
     "section": "Submit",
-    "text": "Submit\n\nA 2-4 page write-up in APA format.\n\nMake sure to write a complete essay, with an introduction, body, and conclusion. See the feedback for Exercise 01 for other hints about how to improve your submission.\n\n\n\n\n\n\nAPA template\n\n\n\nThis template document may be helpful."
+    "text": "Submit\nWhether or not you are submitting a write-up for Exercise 03, please add Dr. Gilmore (rog1@psu.edu) and Sara He (cfh5558@psu.edu) as collaborators on the survey so that we can all benefit from your good work.\nPlease also add the URL to your survey to this Google Sheet:\nhttps://docs.google.com/spreadsheets/d/1Z-TJQLOQ-yFBs0UimtCtv4pWIqcfq7jhAUA1QjVX89w/edit?usp=sharing\nIf you are submitting a short 2-4 page write-up via Canvas, please provide answers to the following questions:\n\nWhat is a defining feature of data items that are nominal?\n\nWhat assumptions might analysts make about ordinal data when it comes time to visualize or analyze the results?\n\nWhat assumptions must a researcher make when conducting survey research of this sort?\n\nFocusing on those available within Google Forms, what user interface(s) work best for different types of data?\n\nIf you’ve used Qualtics previously to generate surveys, briefly compare Qualtrics with Google Forms."
   },
   {
-    "objectID": "exercises/ex06-figs-w-r.html",
-    "href": "exercises/ex06-figs-w-r.html",
-    "title": "Exercise 06",
+    "objectID": "exercises/ex05-figure-prep-guidelines.html",
+    "href": "exercises/ex05-figure-prep-guidelines.html",
+    "title": "Exercise 05",
+    "section": "",
+    "text": "Due by Thursday, March 19, 2025."
+  },
+  {
+    "objectID": "exercises/ex05-figure-prep-guidelines.html#dates",
+    "href": "exercises/ex05-figure-prep-guidelines.html#dates",
+    "title": "Exercise 05",
+    "section": "",
+    "text": "Due by Thursday, March 19, 2025."
+  },
+  {
+    "objectID": "exercises/ex05-figure-prep-guidelines.html#goals",
+    "href": "exercises/ex05-figure-prep-guidelines.html#goals",
+    "title": "Exercise 05",
+    "section": "Goals",
+    "text": "Goals\n\nRead and understand published figure preparation guidelines for prospective authors of scientific manuscripts.\nEvaluate the guidelines relative to the best practices we’ve discussed this semester in class."
+  },
+  {
+    "objectID": "exercises/ex05-figure-prep-guidelines.html#assignment",
+    "href": "exercises/ex05-figure-prep-guidelines.html#assignment",
+    "title": "Exercise 05",
+    "section": "Assignment",
+    "text": "Assignment\n\nBackground\nSome scientific journals provide advice to prospective authors about how to prepare figures for manuscripts submitted to the journals. Here are two examples:\n\nNature\nAmerican Psychological Association (APA)\n\n\n\nTasks\n\nFind and read critically the guidelines for publishing figures in a journal of your choosing.\nCompare the guidelines to the best practices that we have discussed this semester in class (@ Franconeri, Padilla, Shah, Zacks, & Hullman, 2021; Knaflic, 2015; Tufte, 2001).\nDo the guidelines reflect current knowledge about data visualization practices. If not how could the guidelines be amended to provide better guidance to authors in these journals?"
+  },
+  {
+    "objectID": "exercises/ex05-figure-prep-guidelines.html#submit",
+    "href": "exercises/ex05-figure-prep-guidelines.html#submit",
+    "title": "Exercise 05",
+    "section": "Submit",
+    "text": "Submit\nA 3-5 pp (750-1,300 word) write-up of your findings."
+  },
+  {
+    "objectID": "exercises/ex07-figs-w-python.html",
+    "href": "exercises/ex07-figs-w-python.html",
+    "title": "Exercise 07",
     "section": "",
     "text": "Work in progress\n\n\n\nThis page is under construction."
   },
   {
-    "objectID": "exercises/final-project.html",
-    "href": "exercises/final-project.html",
-    "title": "Final Project",
+    "objectID": "supplemental/cleaning-survey-csv-for-ex06.html",
+    "href": "supplemental/cleaning-survey-csv-for-ex06.html",
+    "title": "Cleaning survey data for Ex06",
     "section": "",
-    "text": "Your final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.\nYou may work alone or with up to two other students in the class. If you work with others, you will need to complete a statement about who did what, and all of the members of your team will get the same grade."
+    "text": "This page documents the data cleaning undertaken so that students could use data collected earlier in the semester as part of Exercise 03 for Exercise 06.\nSimilar steps were described in the slides used on March 25, 2025"
   },
   {
-    "objectID": "exercises/final-project.html#background",
-    "href": "exercises/final-project.html#background",
-    "title": "Final Project",
+    "objectID": "supplemental/cleaning-survey-csv-for-ex06.html#about",
+    "href": "supplemental/cleaning-survey-csv-for-ex06.html#about",
+    "title": "Cleaning survey data for Ex06",
     "section": "",
-    "text": "Your final project is an opportunity for you to produce a product that shows-off some of what you have learned in the course.\nYou may work alone or with up to two other students in the class. If you work with others, you will need to complete a statement about who did what, and all of the members of your team will get the same grade."
+    "text": "This page documents the data cleaning undertaken so that students could use data collected earlier in the semester as part of Exercise 03 for Exercise 06.\nSimilar steps were described in the slides used on March 25, 2025"
   },
   {
-    "objectID": "exercises/final-project.html#dates",
-    "href": "exercises/final-project.html#dates",
-    "title": "Final Project",
-    "section": "Dates",
-    "text": "Dates\n\nProposal assigned Tuesday, February 18\nProposal due Thursday, March 6, 2026\nFinal project survey due Tuesday, April 08\nFinal write-up due Tuesday, May 05"
+    "objectID": "supplemental/cleaning-survey-csv-for-ex06.html#setup",
+    "href": "supplemental/cleaning-survey-csv-for-ex06.html#setup",
+    "title": "Cleaning survey data for Ex06",
+    "section": "Setup",
+    "text": "Setup\n\n\nCode\nlibrary(dplyr)\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union"
   },
   {
-    "objectID": "exercises/final-project.html#topics",
-    "href": "exercises/final-project.html#topics",
-    "title": "Final Project",
-    "section": "Topics",
-    "text": "Topics\nYou may choose any of a wide range of topics for your final project:\n\nA tutorial on a tool or resource for data visualization you find especially useful.\nA discussion of a specific data visualization or type of visualization and how it does or does not accurately and persuasively convey some specific finding.\nA showcase of one or more data visualizations that you have made."
+    "objectID": "supplemental/cleaning-survey-csv-for-ex06.html#gathering",
+    "href": "supplemental/cleaning-survey-csv-for-ex06.html#gathering",
+    "title": "Cleaning survey data for Ex06",
+    "section": "Gathering",
+    "text": "Gathering\n\n\nCode\nsurvey_auto &lt;- readr::read_csv(\"../include/csv/PSYCH-490.003-Exercise-3.csv\",\n                               show_col_types = FALSE)\ndim(survey_auto)\n\n\n[1] 25  9\n\n\nCode\nnames(survey_auto)\n\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\""
   },
   {
-    "objectID": "exercises/final-project.html#formats",
-    "href": "exercises/final-project.html#formats",
-    "title": "Final Project",
-    "section": "Formats",
-    "text": "Formats\nThere are multiple formats for your final project. Choose one of them.\n\nShort (5-10 min) in-class talk\nPoster\nLesson plan/exercise\nTutorial\nResearch project (& write-up)\nOpinion piece"
+    "objectID": "supplemental/cleaning-survey-csv-for-ex06.html#cleaning",
+    "href": "supplemental/cleaning-survey-csv-for-ex06.html#cleaning",
+    "title": "Cleaning survey data for Ex06",
+    "section": "Cleaning",
+    "text": "Cleaning\n\n\n\n\n\n\nCaution\n\n\n\nWe drop the “Timestamp”, “What is the date of your favorite holiday?” and “Comments” variables to eliminate any possibility that respondents can be identified.\n\n\n\n\nCode\nsurvey_cleaned &lt;- survey_auto |&gt;\n  select(-c(\"Timestamp\", \"What is the date of your favorite holiday?\", \n            \"Comments\"))\n\n\nNext, we create a data frame for the data dictionary.\n\n\nCode\nlong_qs &lt;- names(survey_cleaned)\n\nsurvey_dd &lt;- data.frame(question = long_qs)\n\n\nWe rename the long variable names to shorter, more useful ones.\n\n\nCode\nsurvey_cleaned &lt;- survey_cleaned |&gt;\n  rename(fav_flavor = \"Favorite Icecream Flavor\",\n                best_pet = \"Best Pet Type\",\n         math_confidence = \"How confident are you with your math skills? [How confident are you in your math skills?]\",\n         creativity = \"How confident are you with your math skills? [How creative are you?]\",\n         n_concerts = \"How many concerts have you gone to?\",\n         credits_this_semester = \"How many credits are you taking this semester?\")\n\n\nWe add the shortened names to the data dictionary.\n\n\nCode\nsurvey_dd$variable &lt;- names(survey_cleaned)\nsurvey_dd$unique_values[1] &lt;- unique(survey_cleaned[,1])\nsurvey_dd$unique_values[2] &lt;- unique(survey_cleaned[,2])\nsurvey_dd$unique_values[3] &lt;- unique(survey_cleaned[,3])\nsurvey_dd$unique_values[4] &lt;- unique(survey_cleaned[,4])\nsurvey_dd$unique_values[5] &lt;- unique(survey_cleaned[,5])\nsurvey_dd$unique_values[6] &lt;- unique(survey_cleaned[,6])"
   },
   {
-    "objectID": "exercises/final-project.html#components",
-    "href": "exercises/final-project.html#components",
-    "title": "Final Project",
-    "section": "Components",
-    "text": "Components\n\nProject proposal\n\nEvery student or team must submit a one-page single-spaced project proposal. Your proposal should state the aim or objective of your project, the format, and a include a brief description of how you intend to go about achieving your objectives.\n\nThe proposal is due on Thursday, March 6.\n\n\nProject presentation\n\nEvery student or team may make an optional presentation to the class about their project. Please indicate whether you are willing to make a presentation when you complete the survey.\nNote: Giving a presentation is worth 5 extra credit points.\nThe presentations will occur during class on December 6, 9, and 11.\nIf you wish to have your presentation made available publicly on the course website, please let me know. This is also completely optional.\n\n\n\nProject write-up\n\nEvery student or team must submit a write-up, due during finals week on Tuesday, May 05.\nDepending on the format of the project (talk, poster, paper), different written materials may be submitted (slides, poster, etc.).\nFor an in-class talk, submit a separate document with your talk text or notes and your slides. You may also submit slides that include presenter notes embedded within them.\nFor a poster, submit a PowerPoint or PDF of your poster along with any talking points.\n\nRubic: An example of potential grading template we may use: https://commons.erau.edu/db-srs/poster-scoring-rubric.pdf\nArticle: How to make a good scientific poster https://www.nature.com/articles/nj7614-115a\nTutorial video: how to make a poster https://www.youtube.com/watch?v=EL5YwkiqBho&ab_channel=SamHertig\nOther basics: https://guides.libraries.psu.edu/posters\n\nFor research paper, please submit an APA-formatted manuscript 1,500-2,000 words in length.\nFor an opinion piece, please submit a document up to 1,500 words in length.\nFor an interactive website or presentation, please submit a complete set of files needed to evaluate your website or presentation.\nFor a lesson plan, please submit a document up up to 1,500 words in length."
-  },
-  {
-    "objectID": "exercises/final-project.html#survey",
-    "href": "exercises/final-project.html#survey",
-    "title": "Final Project",
-    "section": "Survey",
-    "text": "Survey\n\nPlease provide information about your project via this Google Form: https://forms.gle/oyotxgnnqchqnSgTA"
+    "objectID": "supplemental/cleaning-survey-csv-for-ex06.html#save",
+    "href": "supplemental/cleaning-survey-csv-for-ex06.html#save",
+    "title": "Cleaning survey data for Ex06",
+    "section": "Save",
+    "text": "Save\nWe save CSVs of the cleaned data and the data dictionary.\n\n\nCode\nreadr::write_csv(survey_dd, \"../exercises/csv/ex06-data-dictionary.csv\")\nreadr::write_csv(survey_cleaned, \"../exercises/csv/ex06-data.csv\")"
   },
   {
     "objectID": "supplemental/ex03-deep-dive.html",
@@ -3553,7 +3833,7 @@
     "href": "supplemental/other-field-figs.html#preparation",
     "title": "Findings: Data viz outside psych sci",
     "section": "Preparation",
-    "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using.\n\n\n\n\n\n\nImportant\n\n\n\nThe code uses the quietly() function from the purrr package to suppress most of the feedback.\n\n\n\n\nCode\nlibrary('ggplot2')\nlibrary('dplyr')\n\nr_functions &lt;- list.files(file.path(here::here(), \"src\", \"R\"), \"\\\\.R$\", full.names = TRUE)\n\npurrr::map(r_functions, source) |&gt;\n  purrr::quietly()\n\n\nfunction (...) \ncapture_output(.f(...))\n&lt;bytecode: 0x13bc8a0f0&gt;\n&lt;environment: 0x13bc8a3c8&gt;"
+    "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using.\n\n\n\n\n\n\nImportant\n\n\n\nThe code uses the quietly() function from the purrr package to suppress most of the feedback.\n\n\n\n\nCode\nlibrary('ggplot2')\nlibrary('dplyr')\n\nr_functions &lt;- list.files(file.path(here::here(), \"src\", \"R\"), \"\\\\.R$\", full.names = TRUE)\n\npurrr::map(r_functions, source) |&gt;\n  purrr::quietly()\n\n\nfunction (...) \ncapture_output(.f(...))\n&lt;bytecode: 0x10663aa20&gt;\n&lt;environment: 0x10663acf8&gt;"
   },
   {
     "objectID": "supplemental/other-field-figs.html#gathering",
@@ -3582,460 +3862,5 @@
     "title": "Findings: Data viz outside psych sci",
     "section": "Figures found",
     "text": "Figures found\n\nCode\nthese_figs &lt;- ex02 |&gt;\n  filter(!is.na(url_to_figure))\n\nres &lt;- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))\ncat(unlist(res), sep = \"\\n\")\n\n\nFigure 1\nSource: https://wpdatatables.com/sports-data-visualization/#:~:text=What%20is%20Sports%20Data%20Visualization,drawn%20from%20sports%2Drelated%20data.\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\nReport\nBasketball Fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 2\nSource: https://kinesiology.csp.edu/sports-coaches-and-trainers/infographic-top-paid-athletes-by-gender/?nab=1\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\narticle\nThis image breaksdown a few different types of sport business issues in regard to male vs female salary in sport.\n\n\n\n\n\n\nComments\n\n\n\n\nGraphic\n\n\n\n\n\nFigure 3\nSource: \n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nPoster\nSeen in person\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of physicians by resident year in a hospital department\n\n\n\n\n\nFigure 4\nSource: https://hcup-us.ahrq.gov/reports/statbriefs/sb253-Influenza-Hospitalizations-ED-Visits-2006-2016.jsp\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nReport\nPublic health/medical example\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 5\nSource: https://www.bruinsportsanalytics.com/post/growth-of-nwsl\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nArticle\nNWSL fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 6\nSource: https://www.hockeyviz.com/team/CAR/2425\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nNHL, Canes fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 7\nSource: https://manual.audacityteam.org/\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nVisualization of sound data\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 8\nSource: https://www.nbcnews.com/data-graphics/2023-college-football-season-data-6-maps-charts-rcna102444\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI am very interested in college sports and I found this graphic very interesting and easy to comprehend\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nLocations of student-athlete recruits for the major athletic conferences in the past 10 years\n\n\n\n\n\nFigure 9\nSource: https://news.gallup.com/poll/650318/grocery-restaurant-industry-images-slide.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI thought this was an interesting trend to map, especially because sports appear to be a large part of American entertainment culture\n\n\n\n\n\n\nComments\n\n\n\n\nAmerican’s overall opinions of the sports industry from 2001-2024\n\n\n\n\n\nFigure 10\nSource: https://informationisbeautiful.net/beautifulnews/595-childrens-lives-saved/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nInfographic\nI thought this was very visually appealing yet provided a lot of useful information\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of children’s lives saved in varying regions over the last 25 years\n\n\n\n\n\nFigure 11\nSource: https://petapixel.com/2019/10/01/photos-of-endangered-species-where-every-pixel-represents-one-animal/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nDigital Art\nSea turtles are my favorite animal, but I thought this was a very interesting way to use digital art to bring awareness to endangerment\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nDigital image made of pixels correlating to how the number of animals left in the population\n\n\n\n\n\nFigure 12\nSource: https://news.gallup.com/poll/655220/satisfaction-democracy-edges-record-low.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nEspecially after the election and inauguration day, this trend is interesting to me\n\n\n\n\n\n\nComments\n\n\n\n\nPercentage of Americans satisfied with the way democracy is working\n\n\n\n\n\nFigure 13\nSource: https://osf.io/preprints/osf/3nyrq\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\napl1\n3D Art\nI like 3D Art and I liked how the data was visualized in this example, it shows how varied it can be\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 14\nSource: https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\npp\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 15\nSource: https://fivethirtyeight.com/features/how-mapping-shots-in-the-nba-changed-it-forever/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nThe figure lays out a clear image of field shots paired with percentages\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 16\nSource: https://journals.sagepub.com/doi/full/10.3233/THC-231875\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\njournal\nThe figure shows their methods through images of demonstrations\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 17\nSource: https://www.nature.com/articles/s43247-023-00856-9\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure 3 shows comparisons of negative and positive emotions tied to treatment groups in a simple way\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 18\nSource: https://pmc.ncbi.nlm.nih.gov/articles/PMC8639497/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure shows an easy to read graph showing data of publications per year\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 19\nSource: https://zapier.com/blog/pandemic-business-boom-report/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the importance of the pandemic when it comes to an explanation for the rise of businesses\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 20\nSource: https://www.businessinsider.com/17-charts-that-show-just-how-scary-amazons-275-billion-business-really-is-2016-3#its-also-the-top-seller-for-personal-care-and-beauty-products-in-the-us-5\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the stats on how amazon exceeds other sellers specifically for beauty products and personal care\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 21\nSource: https://impact.economist.com/perspectives/health/addressing-recurrent-cardiovascular-events-asia-pacific\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 22\nSource: https://impact.economist.com/perspectives/technology-innovation/putting-iot-work-business-operations\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 23\nSource: https://ygoprodeck.com/tournament/richmond-wcq-regional-2626\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nI play Yugioh, so that’s why I chose the graph\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nI find the choice to use a Pie chart to represent proportion of decks used to be interesing, as compared to a bar chart for frequency\n\n\n\n\n\nFigure 24\nSource: https://www.census.gov/construction/nrs/current/index.html\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nThe census beuaru collects a lot of data, so i felt they’d be a great source to look ino.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 25\nSource: https://www.iea.org/data-and-statistics/charts/installed-nuclear-power-capacity-by-country-and-age-in-advanced-economies-end-2023\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nI’m really interested in Nuclear power, and did a research project on it, so I wanted to include something on it. And this bar graph shows that the US still leads in Nuclear Power production\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 26\nSource: https://thecuriousprofessor.com/2019/12/14/visualizing-data-through-art-2/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\nwebsite\nThe visual shows a scarf knitted, with each row shows the temperature of the day\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 27\nSource: https://thecuriousprofessor.com/2019/12/14/visualizing-data-through-art-2/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\nwebsite\nThe visual shows the sleep pattern of baby, showsing the wake time and sleep time\n\n\n\n\n\n\nComments\n\n\n\n\nNA"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#in-the-news",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#in-the-news",
-    "title": "Gathering and cleaning data",
-    "section": "In the news",
-    "text": "In the news"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#announcements",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#announcements",
-    "title": "Gathering & cleaning data",
-    "section": "Announcements",
-    "text": "Announcements\n\nPenn State Open Scholarship Initiative"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#todays-topics",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#todays-topics",
-    "title": "Gathering & cleaning data",
-    "section": "Today’s topics",
-    "text": "Today’s topics\n\nData processing workflows\nGathering data\nCleaning data"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#data-workflow",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#data-workflow",
-    "title": "Gathering & cleaning data",
-    "section": "Data workflow",
-    "text": "Data workflow\n\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#data-workflow-we-can-script",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#data-workflow-we-can-script",
-    "title": "Gathering & cleaning data",
-    "section": "Data workflow we can script",
-    "text": "Data workflow we can script\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#data-workflow-we-can-script-1",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#data-workflow-we-can-script-1",
-    "title": "Gathering & cleaning data",
-    "section": "Data workflow we can script",
-    "text": "Data workflow we can script\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#gather-data",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#gather-data",
-    "title": "Gathering & cleaning data",
-    "section": "Gather data",
-    "text": "Gather data\n\nHow to acquire/download\n\nDownload manually\nDownload programmatically (via code)\n\nHow to save\n\nText formats, e.g., comma-separated values (csv), best"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually",
-    "title": "Gathering & cleaning data",
-    "section": "Download manually",
-    "text": "Download manually\n\nVisit forms.google.com"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-1",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-1",
-    "title": "Gathering & cleaning data",
-    "section": "Download manually",
-    "text": "Download manually\n\nPick a form"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-2",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-2",
-    "title": "Gathering & cleaning data",
-    "section": "Download manually",
-    "text": "Download manually\n\nClick on more options (…) menu"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-3",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-3",
-    "title": "Gathering & cleaning data",
-    "section": "Download manually",
-    "text": "Download manually"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-4",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-4",
-    "title": "Gathering & cleaning data",
-    "section": "Download manually",
-    "text": "Download manually\n\nGo to default download location (varies by computer)\nDownloads as a zip (compressed) file"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-5",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-5",
-    "title": "Gathering & cleaning data",
-    "section": "Download manually",
-    "text": "Download manually\n\nOpen compressed file"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-6",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-6",
-    "title": "Gathering & cleaning data",
-    "section": "Download manually",
-    "text": "Download manually\n\nMove file to target location"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically",
-    "title": "Gathering & cleaning data",
-    "section": "Download automatically",
-    "text": "Download automatically\n\nTwo manual steps\n\nCreate Google Sheets file: Click on “Link to Sheets”"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically-1",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically-1",
-    "title": "Gathering & cleaning data",
-    "section": "Download automatically",
-    "text": "Download automatically"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically-2",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically-2",
-    "title": "Gathering & cleaning data",
-    "section": "Download automatically",
-    "text": "Download automatically\n\nLog in to Google\nDownload specific URL\nSave where I decide (include/csv) and with the name I choose (PSYCH-490.003-Exercise-3.csv)"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically-3",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically-3",
-    "title": "Gathering & cleaning data",
-    "section": "Download automatically",
-    "text": "Download automatically\n\nlist.files(path = \"../include/csv\")\n\n[1] \"assignments.csv\"              \"PSYCH 490.003 Exercise 3.csv\"\n[3] \"PSYCH-490.003-Exercise-3.csv\" \"two_sets_1_sd.csv\"           \n\n\n\nThe ’list.files()` function lists files in a specific directory"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#import-csv",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#import-csv",
-    "title": "Gathering & cleaning data",
-    "section": "Import CSV",
-    "text": "Import CSV\n\nsurvey_manual &lt;- readr::read_csv(\"../include/csv/PSYCH 490.003 Exercise 3.csv\", show_col_types = FALSE)\ndim(survey_manual)\n\n[1] 25  9\n\n\n\nThe dim() function describes the dimensions of an R object.\nA data frame has two dimensions, rows and columns."
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#import-csv-1",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#import-csv-1",
-    "title": "Gathering & cleaning data",
-    "section": "Import CSV",
-    "text": "Import CSV\n\n\n[1] 25  9\n\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\""
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#clean-then-visualize-or-vice-versa",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#clean-then-visualize-or-vice-versa",
-    "title": "Gathering & cleaning data",
-    "section": "Clean then visualize or vice versa?",
-    "text": "Clean then visualize or vice versa?\n\n\nFavorite Icecream Flavor\n          Chocolate Mint Chocolate Chip          Strawberry             Vanilla \n                  5                   9                   4                   7"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#another-cross-tabulation",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#another-cross-tabulation",
-    "title": "Gathering & cleaning data",
-    "section": "Another cross-tabulation",
-    "text": "Another cross-tabulation\n\n\n                        Best Pet Type\nFavorite Icecream Flavor Cat Dog\n     Chocolate             2   3\n     Mint Chocolate Chip   3   6\n     Strawberry            2   2\n     Vanilla               2   5"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#clean-then-visualize",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#clean-then-visualize",
-    "title": "Gathering & cleaning data",
-    "section": "Clean then visualize",
-    "text": "Clean then visualize\n\nRename variable names: Shorter, remove spaces\nBut capture the actual questions for later\n\nCreate a data dictionary"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#why-script",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#why-script",
-    "title": "Gathering & cleaning data",
-    "section": "Why script?",
-    "text": "Why script?\n\nMuch more reproducible (by others) and robust\n\nEspecially for complex sequences of tasks\n\nBe kind to your future (forgetful) self"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#references",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#references",
-    "title": "Gathering & cleaning data",
-    "section": "References",
-    "text": "References\n\n\n\n\nWikipedia contributors. (2025, March 10). Hillel the elder. Retrieved from https://en.wikipedia.org/wiki/Hillel_the_Elder"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Penn State Open Scholarship Initiative\n\n\n\n\n\nData processing workflows\nGathering data\nCleaning data\n\n\n\n\n\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze\n\n\n\n\n\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze\n\n\n\n\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze\n\n\n\n\n\nWorkshop Thursday, March 27\n\n\n\n\n\nHow to acquire/download\n\nDownload manually\nDownload programmatically (via code)\n\nHow to save\n\nText formats, e.g., comma-separated values (csv), best\n\n\n\n\n\n\nVisit forms.google.com\n\n\n\n\n\n\nPick a form\n\n\n\n\n\n\nClick on more options (…) menu\n\n\n\n\n\n\n\n\n\n\nGo to default download location (varies by computer)\nDownloads as a zip (compressed) file\n\n\n\n\n\n\nOpen compressed file\n\n\n\n\n\n\nMove file to target location\n\n\n\n\n\n\nGiphy.com\n\n\n\n\n\n\nTwo manual steps\n\nCreate Google Sheets file: Click on “Link to Sheets”\n\n\n\n\n\n\n\n\n\n\n\n\n\nLog in to Google\nDownload specific URL\nSave where I decide (include/csv) and with the name I choose (PSYCH-490.003-Exercise-3.csv)\n\n\n\nCode\n# Authenticate using Google credentials stored\n# Or, easier if you're not going to share publicly:\n# options(gargle_oauth_email = \"my_gmail_address@gmail.com\")\noptions(gargle_oauth_email = Sys.getenv(\"GMAIL_SURVEY\"))\ngoogledrive::drive_auth()\n\ngoogledrive::drive_download(\n  \"PSYCH 490.003 Exercise 3 (Responses)\",\n  path = file.path(\"../include/csv\", \"PSYCH-490.003-Exercise-3.csv\"),\n  type = \"csv\",\n  overwrite = TRUE\n)\n\n\nFile downloaded:\n\n\n• 'PSYCH 490.003 Exercise 3 (Responses)'\n  &lt;id: 1uzxCev4qc6JmIaEt90mr1iIHVsC8r93PR6sVg6-0wz4&gt;\n\n\nSaved locally as:\n\n\n• '../include/csv/PSYCH-490.003-Exercise-3.csv'\n\n\nCode\nmessage(\"Data downloaded\")\n\n\nData downloaded\n\n\n\n\n\n\n\nCode\nlist.files(\"../include/csv\")\n\n\n[1] \"assignments.csv\"              \"PSYCH 490.003 Exercise 3.csv\"\n[3] \"PSYCH-490.003-Exercise-3.csv\" \"two_sets_1_sd.csv\"           \n\n\n\n\n\n\n\nCode\nsurvey_manual &lt;- readr::read_csv(\"../include/csv/PSYCH 490.003 Exercise 3.csv\", show_col_types = FALSE)\ndim(survey_manual)\n\n\n[1] 25  9\n\n\nCode\nnames(survey_manual)\n\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\"                                                                                 \n\n\n\n\n\n\n\nCode\nsurvey_auto &lt;- readr::read_csv(\"../include/csv/PSYCH-490.003-Exercise-3.csv\",\n                               show_col_types = FALSE)\ndim(survey_auto)\n\n\n[1] 25  9\n\n\nCode\nnames(survey_auto)\n\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\"                                                                                 \n\n\n\n\n\n\n\nCode\nxtabs(formula = ~ `Favorite Icecream Flavor`, \n      data = survey_auto)\n\n\nFavorite Icecream Flavor\n          Chocolate Mint Chocolate Chip          Strawberry             Vanilla \n                  5                   9                   4                   7 \n\n\n\n\n\n\n\n\n\nUnder the hood\n\n\n\n\nR prefers that variable names not have spaces\nWhen names have spaces, we have to communicate that to R\nSo, we wrap Favorite Icecream Flavor in backticks (“`”).\nthe xtabs() function does cross-tabulations\n\n\n\n\n\n\n\n\nCode\nxtabs(formula = ~ `Favorite Icecream Flavor` + `Best Pet Type`, \n      data = survey_auto)\n\n\n                        Best Pet Type\nFavorite Icecream Flavor Cat Dog\n     Chocolate             2   3\n     Mint Chocolate Chip   3   6\n     Strawberry            2   2\n     Vanilla               2   5\n\n\n\n\n\n\nRename variable names: Shorter, remove spaces\nBut capture the actual questions for later\n\n\n\n\n\nMuch more reproducible and robust\nEspecially for complex sequences of tasks\nBe kind to your future (forgetful) self"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#workflow-in-practice",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#workflow-in-practice",
-    "title": "Gathering & cleaning data",
-    "section": "Workflow in practice",
-    "text": "Workflow in practice\n\nWorkshop Thursday, March 27"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#extract-column-names",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#extract-column-names",
-    "title": "Gathering & cleaning data",
-    "section": "Extract column names",
-    "text": "Extract column names\n\nnames(survey_manual)\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\"                                                                                 \n\n\n\nThe names() function returns the names of the columns in our data frame."
-  },
-  {
-    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#import-automatically-downloaded-csv",
-    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#import-automatically-downloaded-csv",
-    "title": "Gathering & cleaning data",
-    "section": "Import (automatically-downloaded) CSV",
-    "text": "Import (automatically-downloaded) CSV\nHere we put all of this into the same block of code:\n\nsurvey_auto &lt;- readr::read_csv(\"../include/csv/PSYCH-490.003-Exercise-3.csv\",\n                               show_col_types = FALSE)\ndim(survey_auto)\n\n[1] 25  9\n\nnames(survey_auto)\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\""
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#announcements",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#announcements",
-    "title": "Gathering & cleaning data",
-    "section": "Announcements",
-    "text": "Announcements\n\nPenn State Open Scholarship Initiative"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#todays-topics",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#todays-topics",
-    "title": "Gathering & cleaning data",
-    "section": "Today’s topics",
-    "text": "Today’s topics\n\nData processing workflows\nGathering data\nCleaning data"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow",
-    "title": "Gathering & cleaning data",
-    "section": "Data workflow",
-    "text": "Data workflow\n\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow-we-can-script",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow-we-can-script",
-    "title": "Gathering & cleaning data",
-    "section": "Data workflow we can script",
-    "text": "Data workflow we can script\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow-we-can-script-1",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow-we-can-script-1",
-    "title": "Gathering & cleaning data",
-    "section": "Data workflow we can script",
-    "text": "Data workflow we can script\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#workflow-in-practice",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#workflow-in-practice",
-    "title": "Gathering & cleaning data",
-    "section": "Workflow in practice",
-    "text": "Workflow in practice\n\nWorkshop Thursday, March 27"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#gather-data",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#gather-data",
-    "title": "Gathering & cleaning data",
-    "section": "Gather data",
-    "text": "Gather data\n\nHow to acquire/download\n\nDownload manually\nDownload programmatically (via code)\n\nHow to save\n\nText formats, e.g., comma-separated values (csv), best"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually",
-    "title": "Gathering & cleaning data",
-    "section": "Download manually",
-    "text": "Download manually\n\nVisit forms.google.com"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-1",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-1",
-    "title": "Gathering & cleaning data",
-    "section": "Download manually",
-    "text": "Download manually\n\nPick a form"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-2",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-2",
-    "title": "Gathering & cleaning data",
-    "section": "Download manually",
-    "text": "Download manually\n\nClick on more options (…) menu"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-3",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-3",
-    "title": "Gathering & cleaning data",
-    "section": "Download manually",
-    "text": "Download manually"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-4",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-4",
-    "title": "Gathering & cleaning data",
-    "section": "Download manually",
-    "text": "Download manually\n\nGo to default download location (varies by computer)\nDownloads as a zip (compressed) file"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-5",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-5",
-    "title": "Gathering & cleaning data",
-    "section": "Download manually",
-    "text": "Download manually\n\nOpen compressed file"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-6",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-6",
-    "title": "Gathering & cleaning data",
-    "section": "Download manually",
-    "text": "Download manually\n\nMove file to target location"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically",
-    "title": "Gathering & cleaning data",
-    "section": "Download automatically",
-    "text": "Download automatically\n\nTwo manual steps\n\nCreate Google Sheets file: Click on “Link to Sheets”"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-1",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-1",
-    "title": "Gathering & cleaning data",
-    "section": "Download automatically",
-    "text": "Download automatically"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-2",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-2",
-    "title": "Gathering & cleaning data",
-    "section": "Download automatically",
-    "text": "Download automatically\n\nLog in to Google\nDownload specific URL\nSave where I decide (include/csv) and with the name I choose (PSYCH-490.003-Exercise-3.csv)"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-3",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-3",
-    "title": "Gathering & cleaning data",
-    "section": "Download automatically",
-    "text": "Download automatically\n\nlist.files(path = \"../include/csv\")\n\n[1] \"assignments.csv\"              \"PSYCH 490.003 Exercise 3.csv\"\n[3] \"PSYCH-490.003-Exercise-3.csv\" \"two_sets_1_sd.csv\"           \n\n\n\nThe list.files() function lists files in a specific directory"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#import-csv",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#import-csv",
-    "title": "Gathering & cleaning data",
-    "section": "Import CSV",
-    "text": "Import CSV\n\nsurvey_manual &lt;- readr::read_csv(\"../include/csv/PSYCH 490.003 Exercise 3.csv\", show_col_types = FALSE)\ndim(survey_manual)\n\n[1] 25  9\n\n\n\nThe dim() function describes the dimensions of an R object.\nA data frame has two dimensions, rows and columns."
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#extract-column-names",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#extract-column-names",
-    "title": "Gathering & cleaning data",
-    "section": "Extract column names",
-    "text": "Extract column names\n\nnames(survey_manual)\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\"                                                                                 \n\n\n\nThe names() function returns the names of the columns in our data frame."
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#import-automatically-downloaded-csv",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#import-automatically-downloaded-csv",
-    "title": "Gathering & cleaning data",
-    "section": "Import (automatically-downloaded) CSV",
-    "text": "Import (automatically-downloaded) CSV\nHere we put all of this into the same block of code:\n\nsurvey_auto &lt;- readr::read_csv(\"../include/csv/PSYCH-490.003-Exercise-3.csv\",\n                               show_col_types = FALSE)\ndim(survey_auto)\n\n[1] 25  9\n\nnames(survey_auto)\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\""
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#clean-then-visualize-or-vice-versa",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#clean-then-visualize-or-vice-versa",
-    "title": "Gathering & cleaning data",
-    "section": "Clean then visualize or vice versa?",
-    "text": "Clean then visualize or vice versa?\n\nxtabs(formula = ~ `Favorite Icecream Flavor`, \n      data = survey_auto)\n\nFavorite Icecream Flavor\n          Chocolate Mint Chocolate Chip          Strawberry             Vanilla \n                  5                   9                   4                   7"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#another-cross-tabulation",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#another-cross-tabulation",
-    "title": "Gathering & cleaning data",
-    "section": "Another cross-tabulation",
-    "text": "Another cross-tabulation\n\nxtabs(formula = ~ `Favorite Icecream Flavor` + `Best Pet Type`, \n      data = survey_auto)\n\n                        Best Pet Type\nFavorite Icecream Flavor Cat Dog\n     Chocolate             2   3\n     Mint Chocolate Chip   3   6\n     Strawberry            2   2\n     Vanilla               2   5"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#clean-then-visualize",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#clean-then-visualize",
-    "title": "Gathering & cleaning data",
-    "section": "Clean then visualize",
-    "text": "Clean then visualize\n\nRename variable names: Shorter, remove spaces\nBut capture the actual questions for later\n\nCreate a data dictionary"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#renaming-column-names",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#renaming-column-names",
-    "title": "Gathering & cleaning data",
-    "section": "Renaming column names",
-    "text": "Renaming column names\n\nlibrary(dplyr)\nlibrary(ggplot2)\nsurvey_auto &lt;- survey_auto |&gt;\n  rename(fav_flavor = \"Favorite Icecream Flavor\",\n                best_pet = \"Best Pet Type\")"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#plotting-one-variable",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#plotting-one-variable",
-    "title": "Gathering & cleaning data",
-    "section": "Plotting one variable",
-    "text": "Plotting one variable\n\nsurvey_auto |&gt;\n  count(fav_flavor) |&gt;\n  ggplot() +\n  aes(x = fav_flavor, y = n, fill = fav_flavor) +\n  geom_col()\n\n\n\nFigure 1: Favorite ice cream flavor among PSYCH 490.003 students"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#plotting-another-variable",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#plotting-another-variable",
-    "title": "Gathering & cleaning data",
-    "section": "Plotting another variable",
-    "text": "Plotting another variable\n\n\nFigure 2: Best pet for PSYCH 490.003 students"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#why-script",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#why-script",
-    "title": "Gathering & cleaning data",
-    "section": "Why script?",
-    "text": "Why script?\n\nMuch more reproducible (by others)\n\nEspecially for complex sequences of tasks\n\nMuch more robust\nBe kind to your future (forgetful) self"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#how-script",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#how-script",
-    "title": "Gathering & cleaning data",
-    "section": "How script?",
-    "text": "How script?\n\nSave commands in a file (*.R)\nSave commands and comments in a Quarto file (*.qmd)\n\nSee the ‘Learning-Quarto’ assignment on posit.cloud"
-  },
-  {
-    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#references",
-    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#references",
-    "title": "Gathering & cleaning data",
-    "section": "References",
-    "text": "References\n\n\n\n\nWikipedia contributors. (2025, March 10). Hillel the elder. Retrieved from https://en.wikipedia.org/wiki/Hillel_the_Elder"
-  },
-  {
-    "objectID": "supplemental/cleaning-survey-csv-for-ex06.html",
-    "href": "supplemental/cleaning-survey-csv-for-ex06.html",
-    "title": "Cleaning survey data for Ex06",
-    "section": "",
-    "text": "This page documents the data cleaning undertaken so that students could use data collected earlier in the semester as part of Exercise 03 for Exercise 06.\nSimilar steps were described in the slides used on March 25, 2025"
-  },
-  {
-    "objectID": "supplemental/cleaning-survey-csv-for-ex06.html#about",
-    "href": "supplemental/cleaning-survey-csv-for-ex06.html#about",
-    "title": "Cleaning survey data for Ex06",
-    "section": "",
-    "text": "This page documents the data cleaning undertaken so that students could use data collected earlier in the semester as part of Exercise 03 for Exercise 06.\nSimilar steps were described in the slides used on March 25, 2025"
-  },
-  {
-    "objectID": "supplemental/cleaning-survey-csv-for-ex06.html#gathering",
-    "href": "supplemental/cleaning-survey-csv-for-ex06.html#gathering",
-    "title": "Cleaning survey data for Ex06",
-    "section": "Gathering",
-    "text": "Gathering\n\n\nCode\nsurvey_auto &lt;- readr::read_csv(\"../include/csv/PSYCH-490.003-Exercise-3.csv\",\n                               show_col_types = FALSE)\ndim(survey_auto)\n\n\n[1] 25  9\n\n\nCode\nnames(survey_auto)\n\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\""
-  },
-  {
-    "objectID": "supplemental/cleaning-survey-csv-for-ex06.html#setup",
-    "href": "supplemental/cleaning-survey-csv-for-ex06.html#setup",
-    "title": "Cleaning survey data for Ex06",
-    "section": "Setup",
-    "text": "Setup\n\n\nCode\nlibrary(dplyr)\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union"
-  },
-  {
-    "objectID": "supplemental/cleaning-survey-csv-for-ex06.html#cleaning",
-    "href": "supplemental/cleaning-survey-csv-for-ex06.html#cleaning",
-    "title": "Cleaning survey data for Ex06",
-    "section": "Cleaning",
-    "text": "Cleaning\n\n\n\n\n\n\nCaution\n\n\n\nWe drop the “Timestamp”, “What is the date of your favorite holiday?” and “Comments” variables to eliminate any possibility that respondents can be identified.\n\n\n\n\nCode\nsurvey_cleaned &lt;- survey_auto |&gt;\n  select(-c(\"Timestamp\", \"What is the date of your favorite holiday?\", \n            \"Comments\"))\n\n\nNext, we create a data frame for the data dictionary.\n\n\nCode\nlong_qs &lt;- names(survey_cleaned)\n\nsurvey_dd &lt;- data.frame(question = long_qs)\n\n\nWe rename the long variable names to shorter, more useful ones.\n\n\nCode\nsurvey_cleaned &lt;- survey_cleaned |&gt;\n  rename(fav_flavor = \"Favorite Icecream Flavor\",\n                best_pet = \"Best Pet Type\",\n         math_confidence = \"How confident are you with your math skills? [How confident are you in your math skills?]\",\n         creativity = \"How confident are you with your math skills? [How creative are you?]\",\n         n_concerts = \"How many concerts have you gone to?\",\n         credits_this_semester = \"How many credits are you taking this semester?\")\n\n\nWe add the shortened names to the data dictionary.\n\n\nCode\nsurvey_dd$variable &lt;- names(survey_cleaned)\nsurvey_dd$unique_values[1] &lt;- unique(survey_cleaned[,1])\nsurvey_dd$unique_values[2] &lt;- unique(survey_cleaned[,2])\nsurvey_dd$unique_values[3] &lt;- unique(survey_cleaned[,3])\nsurvey_dd$unique_values[4] &lt;- unique(survey_cleaned[,4])\nsurvey_dd$unique_values[5] &lt;- unique(survey_cleaned[,5])\nsurvey_dd$unique_values[6] &lt;- unique(survey_cleaned[,6])"
-  },
-  {
-    "objectID": "supplemental/cleaning-survey-csv-for-ex06.html#save",
-    "href": "supplemental/cleaning-survey-csv-for-ex06.html#save",
-    "title": "Cleaning survey data for Ex06",
-    "section": "Save",
-    "text": "Save\nWe save CSVs of the cleaned data and the data dictionary.\n\n\nCode\nreadr::write_csv(survey_dd, \"../exercises/csv/ex06-data-dictionary.csv\")\nreadr::write_csv(survey_cleaned, \"../exercises/csv/ex06-data.csv\")"
   }
 ]
