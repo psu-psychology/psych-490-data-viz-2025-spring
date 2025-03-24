@@ -1,0 +1,80 @@
+---
+title: "Cleaning survey data for Ex06"
+format: html
+---
+
+## About
+
+This page documents the data cleaning undertaken so that students could use data collected earlier in the semester as part of [Exercise 03](../exercises/ex03-making-data.qmd) for [Exercise 06](../exercises/ex06-figs-w-r.qmd).
+
+Similar steps were described in the slides used on [March 25, 2025](../schedule.qmd#tuesday-march-25)
+
+## Setup
+
+```{r}
+library(dplyr)
+```
+
+
+## Gathering
+
+```{r}
+survey_auto <- readr::read_csv("../include/csv/PSYCH-490.003-Exercise-3.csv",
+                               show_col_types = FALSE)
+dim(survey_auto)
+names(survey_auto)
+```
+
+## Cleaning
+
+::: {.callout-caution}
+We drop the "Timestamp", "What is the date of your favorite holiday?" and "Comments" variables to eliminate any possibility that respondents can be identified.
+:::
+
+```{r}
+survey_cleaned <- survey_auto |>
+  select(-c("Timestamp", "What is the date of your favorite holiday?", 
+            "Comments"))
+```
+
+Next, we create a data frame for the data dictionary.
+
+```{r}
+long_qs <- names(survey_cleaned)
+
+survey_dd <- data.frame(question = long_qs)
+```
+
+We rename the long variable names to shorter, more useful ones.
+
+```{r}
+survey_cleaned <- survey_cleaned |>
+  rename(fav_flavor = "Favorite Icecream Flavor",
+                best_pet = "Best Pet Type",
+         math_confidence = "How confident are you with your math skills? [How confident are you in your math skills?]",
+         creativity = "How confident are you with your math skills? [How creative are you?]",
+         n_concerts = "How many concerts have you gone to?",
+         credits_this_semester = "How many credits are you taking this semester?")
+```
+
+We add the shortened names to the data dictionary.
+
+```{r}
+survey_dd$variable <- names(survey_cleaned)
+survey_dd$unique_values[1] <- unique(survey_cleaned[,1])
+survey_dd$unique_values[2] <- unique(survey_cleaned[,2])
+survey_dd$unique_values[3] <- unique(survey_cleaned[,3])
+survey_dd$unique_values[4] <- unique(survey_cleaned[,4])
+survey_dd$unique_values[5] <- unique(survey_cleaned[,5])
+survey_dd$unique_values[6] <- unique(survey_cleaned[,6])
+```
+
+## Save
+
+We save CSVs of the cleaned data and the data dictionary.
+
+```{r}
+readr::write_csv(survey_dd, "../exercises/csv/ex06-data-dictionary.csv")
+readr::write_csv(survey_cleaned, "../exercises/csv/ex06-data.csv")
+```
+

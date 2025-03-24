@@ -1,0 +1,7 @@
+question,variable,unique_values
+Favorite Icecream Flavor,fav_flavor,
+Best Pet Type,best_pet,
+How confident are you with your math skills? [How confident are you in your math skills?],math_confidence,
+How confident are you with your math skills? [How creative are you?],creativity,
+How many concerts have you gone to?,n_concerts,
+How many credits are you taking this semester?,credits_this_semester,

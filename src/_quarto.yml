@@ -12,7 +12,7 @@ project:
 website:
   title: "PSYCH 490 • Spr 25"
   announcement: 
-    content: "No class Thursday, March 19" 
+    content: "Keep working on DataCamp; Try posit.cloud." 
     position: below-navbar
     icon: info-circle
     dismissable: true
@@ -27,7 +27,7 @@ website:
       - href: deadlines.qmd
         text: Deadlines
       - href: policies.qmd
-        text: "Policies & Values"
+        text: Policies
       - text: Exercises
         menu: 
         - exercises/ex01-figs-in-psych-sci.qmd
@@ -50,7 +50,8 @@ website:
         - href: supplemental/other-field-figs.qmd
         - href: supplemental/ex03-deep-dive.qmd
         - href: supplemental/gestalt-in-the-wild.qmd
-      - href: meta.qmd
+      - text: Meta
+        href: meta.qmd
   repo-url: https://github.com/psu-psychology/psych-490-data-viz-2025-spring
   repo-actions: [edit, issue]
   repo-subdir: src

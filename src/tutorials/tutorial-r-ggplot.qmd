@@ -5,7 +5,7 @@ format: html
 
 ## About {-}
 
-This section describes some ways to generate plots using the R package `ggplot2`.
+This section describes some ways to generate plots using the R package [`ggplot2`](https://ggplot2.tidyverse.org).
 
 ## Why R {-}
 
@@ -13,15 +13,15 @@ R is a programming language specialized for data analysis and visualization.
 
 ## Background {-}
 
-'ggplot2' is a package^[A collection of special commands for doing specific things.] for making 2D plots in R.
+`ggplot2` is a package^[A collection of special commands for doing specific things.] for making 2D plots in R.
 It implements a special "language" for making plots based on the grammar of graphics suggested by @Wilkinson2005-do.
 That's where the 'gg' in the name comes from.
 
-In ggplot, we create a base plot, then add layers to it using a plus sign `+` operator. 
+In `ggplot`, we create a base plot, then add layers to it using a plus sign `+` operator. 
 
 ## Set-up {-}
 
-To check whether {ggplot2} is already installed, run the following chunk:
+To check whether `ggplot2` is already installed, run the following chunk:
 
 ```{r}
 # The require() function returns TRUE if ggplot2 is installed and FALSE if it is not. The exclamation point symbol ('!') turns FALSE into TRUE and TRUE into FALSE. So, `!require(ggplot2)` will be TRUE if require(ggplot2) is FALSE. When this occurs, the `install.packages(ggplot)` commands runs and installs ggplot2.
@@ -143,12 +143,7 @@ Add one or more geoms to make something we can see.
 To break this down even further, the following code shows a way to make a plot step-by-step.
 This can be useful when you're trying to figure out how you want to plot something.
 
-```{r}
-#| label: fig-blank-ggplot
-#| fig-cap: "A 'bare bones' plot with data, but no aesthetics or graphics." 
-p <- ggplot(data = data_random_discrete)
-p
-```
+We'll explain the code first then run it.
 
 ```r
 p <- ggplot(data = data_random_discrete)  # <1>
@@ -157,8 +152,27 @@ p                                         # <2>
 1. Make a ggplot with `data_random_discrete` as the data.frame; give it the name `p`.
 2. Show `p`.
 
+```{r}
+#| label: fig-blank-ggplot
+#| fig-cap: "A 'bare bones' plot with data, but no aesthetics or graphics." 
+p <- ggplot(data = data_random_discrete)
+p
+```
+
 
 Notice that the plot is blank.
+
+The blank plot isn't very useful, so we have to add information to it about what variables we want to map to which *aesthetic* properties of the plot.
+The following code shows how this is done.
+
+```r
+p_aes <- p + aes(x = category, y = value)   # <1>
+p_aes                                       # <2>
+```
+1. "Add" aesthetics to `p` that assign the values in `category` to the x axis and values in `value` to the y axis. Give the combination the name `p_aes`.
+2. Show `p_aes`.
+
+The following results when we run the code:
 
 ```{r}
 #| label: fig-ggplot-w-aes
@@ -169,17 +183,8 @@ p_aes <- p + aes(x = category, y = value)
 p_aes
 ```
 
-Here's the code that made @fig-ggplot-w-aes, but with line by line annotations:
-
-```r
-p_aes <- p + aes(x = category, y = value)   # <1>
-p_aes                                       # <2>
-```
-1. "Add" aesthetics to `p` that assign the values in `category` to the x axis and values in `value` to the y axis. Give the combination the name `p_aes`.
-2. Show `p_aes`.
-
 Now the plot has axes, but no data points.
-We need to add a geom.
+We need to add a *geom*.
 Geoms are mappings between data and visual graphic elements.
 
 Let's explain how to do that, then show the result.
@@ -210,7 +215,7 @@ p_colors <- p_col + aes(fill = category)
 p_colors
 ```
 
-We can wrap this up in a nice little sequence of code as follows:
+We can wrap all of this up in a nice little sequence of code as follows:
 
 ```{r}
 #| label: fig-complete-ggplot-figure
@@ -221,7 +226,7 @@ data_random_discrete |>
   geom_col()
 ```
 
-Note that the category variables print in *alphabetical* order.
+Note that the category variables on the horizontal axis print in *alphabetical* order.
 Sometimes that might be what we want.
 But, what if we want to follow best practice and sort the bars in numeric order?
 
@@ -243,7 +248,6 @@ data_random_discrete |>
 
 To reverse the order from ascending to descending, the default, we use the `desc()` function to sort value from highest to lowest value, as in the following:
 
-
 ```{r}
 #| label: fig-ggplot-sort-descending
 #| fig-cap: "The same plot but with the columns ordered by 'value' in descending order."
@@ -260,7 +264,6 @@ data_random_discrete |>
 1. What would we need to do to make the `category` variable *ordinal*? 
 2. Why do we think that `value` is *continuous*?
 :::
-
 
 ### Continuous {-}
 
