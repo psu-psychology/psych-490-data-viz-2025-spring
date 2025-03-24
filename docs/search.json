@@ -1803,7 +1803,7 @@
     "href": "schedule.html#week-10",
     "title": "Schedule",
     "section": "March 24-28",
-    "text": "March 24-28\nExploring data with R\n\nTuesday, March 25\nGathering & cleaning data\n\n\nThursday, March 27\nMaking plots with ggplot2\n\nAssigned: Exercise-06"
+    "text": "March 24-28\nExploring data with R\n\nTuesday, March 25\nGathering & cleaning data\n\nSlides\n\n\n\nThursday, March 27\nMaking plots with ggplot2\n\nAssigned: Exercise-06"
   },
   {
     "objectID": "schedule.html#week-11",
@@ -1929,14 +1929,14 @@
     "href": "tutorials/tutorial-r-ggplot.html#plotting-one-variable",
     "title": "Plotting with ggplot2",
     "section": "Plotting one variable",
-    "text": "Plotting one variable\n\nDiscrete/nominal\nFirst, we make some data. We store two variables, category and value using the data.frame() command. A data frame is a convenient, spreadsheet-like structure for storing data.\n\n\nCode\ndata_random_discrete &lt;- data.frame(category = c('ab', 'xy', 'mn', \n                                                'qp', 'ea', 'f2',\n                                                'gg', 'h*'),\n                                   value = c(4.8, 5.5, 3.5, \n                                           4.6, 6.5, 6.6, \n                                           2.6, 3.0))\n\n\nHere we create a data frame and give it the name data_random_discrete. You can choose any name you want, subject to R’s restrictions on naming things. I try to use descriptive names.\nThe data frame name suggests that we have a random, continuous variable (value) and a discrete or categorical variable (category). The data frame command stores the variable names along with the data. We can see this by using R’s names() command:\nSometimes it’s useful to look at the structure of something using the str() command.\n\n\nCode\nstr(data_random_discrete)\n\n\n'data.frame':   8 obs. of  2 variables:\n $ category: chr  \"ab\" \"xy\" \"mn\" \"qp\" ...\n $ value   : num  4.8 5.5 3.5 4.6 6.5 6.6 2.6 3\n\n\nNow that we have some data, let’s plot it.\n\nBarplot\nThe following code makes a barplot. I’ll explain what’s going on after we look at the plot.\n\n\nCode\ndata_random_discrete |&gt;\n  ggplot() +\n  aes(x = category, y = value) +\n  geom_col()\n\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\nThis code sends the data frame (data_random_discrete) to the ggplot() function using R’s pipe (|&gt;) command.\n\n\n\n\n\n\nMany ways to say the same thing\n\n\n\nLike most (all?) programming languages, or really all languages, there are many ways to say the same thing.\nI like using the pipe |&gt; command because it makes the code a little easier for people to read.\n\n\nThe ggplot() function needs to know what data to plot, so this code\ndata_random_discrete |&gt;\n  ggplot()\ntells ggplot(), “Hey, ggplot, create a plot with data from data_random_discrete.” An equivalent way to say the same thing is to assign data_random_discrete to ggplot’s data parameter, like this:\nggplot(data = data_random_discrete)\nIn fact, R turns the code above that uses the pipe into this format.\nNow, running ggplot() alone like this doesn’t actually create a plot we can see. We have to tell ggplot() what variables to plot and what kind of plot to create. In the graphics grammar ggplot() understands we add information to the plot using the plus + character.\nWe tell ggplot() which variables to use by using the aesthetics aes() command.\nggplot() +\n# Assign the data called `category` to the x axis, and the data called `value`\n# to the y axis\naes(x = category, y = value)\nThen, we add a graphic object or ‘geom’ to the plot.\naes(x = category, y = value) +\ngeom_col()\nThere are different types of geoms for different types of plots. You can think of each geom as a way to map data to graphic elements.\nIf the variable we want to plot contains the values we care about plotting, then we use geom_col. A column plot is just a type of barplot.\nHere, we have a categorical variable imaginatively named category and a continuous variable named value.\nSee how the plot maps our category variable to the X axis and the value variable to the Y axis?\nThat’s the essence of making plots using ggplot(). We give ggplot() a data frame. Tell it which variables to assign to which aesthetics (properties of the plot). Add one or more geoms to make something we can see.\nTo break this down even further, the following code shows a way to make a plot step-by-step. This can be useful when you’re trying to figure out how you want to plot something.\n\n\nCode\np &lt;- ggplot(data = data_random_discrete) # create a bare bones \"skeleton\" of a plot\np\n\n\n\n\n\n\n\n\n\nNotice that the plot is blank.\n\n\nCode\n# Add aesthics\np_aes &lt;- p + aes(x = category, y = value)\np_aes\n\n\n\n\n\n\n\n\n\nNow the plot has axes, but no data points. We need to add a geom.\n\n\nCode\np_col &lt;- p_aes + geom_col()\np_col\n\n\n\n\n\n\n\n\n\nLet’s add some color to the bars. We do this by mapping the category variable to the fill property.\n\n\nCode\np_colors &lt;- p_col + aes(fill = category)\np_colors\n\n\n\n\n\n\n\n\n\nWe can wrap this up in a nice little sequence of code as follows:\n\n\nCode\ndata_random_discrete |&gt;\n  ggplot() +\n  aes(x = category, y = value, fill = category) +\n  geom_col()\n\n\n\n\n\n\n\n\n\nNote that the category variables print in alphabetical order. Sometimes that might be what we want. But, what if we want to follow best practice and sort the bars in numeric order?\nThere are several ways to to this (see https://r-graph-gallery.com/267-reorder-a-variable-in-ggplot2.html), but the way shown below uses the forcats package to ‘mutate’ or change the ‘category’ variable into one that is reordered by the ‘value’ variable. Note that the default is to sort in ascending order.\n\n\nCode\nlibrary(forcats)\nlibrary(dplyr)\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\n\nCode\ndata_random_discrete |&gt;\n  mutate(category = fct_reorder(category, value)) |&gt;\n  ggplot() +\n  aes(x = category, y = value, fill = category) +\n  geom_col()\n\n\n\n\n\n\n\n\n\nTo reverse the order from ascending to descending, the default, we use the desc() function to sort value from highest to lowest value, as in the following:\n\n\nCode\ndata_random_discrete |&gt;\n  mutate(category = fct_reorder(category, desc(value))) |&gt;\n  ggplot() +\n  aes(x = category, y = value, fill = category) +\n  geom_col()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYour turn\n\n\n\n\nWhat would we need to do to make the category variable ordinal?\nWhy do we think that value is continuous?\n\n\n\n\n\n\nContinuous\nFirst, let’s generate some random data.\n\n\nCode\n# Set a seed for our 'random' number generator\nset.seed(19680801)\nn_values &lt;- 100000\n\ndata_random_norm &lt;- data.frame(val = rnorm(n = n_values, mean = 0, sd = 1))\n\n\n\nHistogram\n\n\nCode\nhist_1 &lt;- data_random_norm |&gt;\n  ggplot() +\n  aes(x = val) +\n  geom_histogram()\n\n\nWhat the code is saying is this: Send data_random_norm to ggplot; make the plot and its various layers; then give the plot a name (hist_1) so we can use it later. Like now, for instance:\n\n\nCode\nhist_1\n\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 2: A simple histogram\n\n\n\n\n\nTo replicate the side-by-side histograms in ?@fig-dual-histograms-matplotlib, we do the following:\nMake two random data sets that differ slightly.\n\n\nCode\nx1 &lt;- rnorm(n = n_values, mean = 0, sd = 1)\ndata_random_norm_2 &lt;- data.frame(side = c(rep('l', n_values), rep('r', n_values)),\n                            val = c(x1,\n                                    0.4 * x1 + 5))\n\n\nThen plot the data.\n\n\nCode\nhist_2 &lt;- data_random_norm_2 |&gt;\n  ggplot() +\n  aes(x = val) +\n  geom_histogram() +\n  facet_wrap(vars(side), ncol = 2)\n\nhist_2\n\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 3: Side-by-side histograms of two random (normal) sets of data.\n\n\n\n\n\n\n\nViolin\n\n\nCode\nviolin_2 &lt;- data_random_norm_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_violin()\n\nviolin_2\n\n\n\n\n\n\n\n\nFigure 4: Side-by-side violin plots of two random (normal) sets of data.\n\n\n\n\n\n\n\nBoxplot\n\n\nCode\nboxplot_2 &lt;- data_random_norm_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_boxplot()\n\nboxplot_2\n\n\n\n\n\n\n\n\nFigure 5: Side-by-side violin plots of two random (normal) sets of data."
+    "text": "Plotting one variable\n\nDiscrete/nominal\nFirst, we make some data. We store two variables, category and value using the data.frame() command. A data frame is a convenient, spreadsheet-like structure for storing data.\n\n\nCode\ndata_random_discrete &lt;- data.frame(category = c('ab', 'xy', 'mn', \n                                                'qp', 'ea', 'f2',\n                                                'gg', 'h*'),\n                                   value = c(4.8, 5.5, 3.5, \n                                           4.6, 6.5, 6.6, \n                                           2.6, 3.0))\n\n\nHere we create a data frame and give it the name data_random_discrete. You can choose any name you want, subject to R’s restrictions on naming things. I try to use descriptive names.\nThe data frame name suggests that we have a random, continuous variable (value) and a discrete or categorical variable (category). The data frame command stores the variable names along with the data. We can see this by using R’s names() command:\nSometimes it’s useful to look at the structure of something using the str() command.\n\n\nCode\nstr(data_random_discrete)\n\n\n'data.frame':   8 obs. of  2 variables:\n $ category: chr  \"ab\" \"xy\" \"mn\" \"qp\" ...\n $ value   : num  4.8 5.5 3.5 4.6 6.5 6.6 2.6 3\n\n\nNow that we have some data, let’s plot it.\n\nBarplot\nThe following code makes a barplot. I’ll explain what’s going on after we look at the plot.\n\n\nCode\ndata_random_discrete |&gt;\n  ggplot() +\n  aes(x = category, y = value) +\n  geom_col()\n\n\n\n\n\n\n\n\nFigure 1: A bar plot of our random data.\n\n\n\n\n\nThis code sends the data frame (data_random_discrete) to the ggplot() function using R’s pipe (|&gt;) command.\n\n\n\n\n\n\nMany ways to say the same thing\n\n\n\nLike most (all?) programming languages, or really all languages, there are many ways to say the same thing.\nI like using the pipe |&gt; command because it makes the code a little easier for people to read.\n\n\nThe ggplot() function needs to know what data to plot, so this code\ndata_random_discrete |&gt;\n  ggplot()\ntells ggplot(), “Hey, ggplot, create a plot with data from data_random_discrete.” An equivalent way to say the same thing is to assign data_random_discrete to ggplot’s data parameter, like this:\nggplot(data = data_random_discrete)\nIn fact, R turns the code above that uses the pipe into this format.\nNow, running ggplot() alone like this doesn’t actually create a plot we can see. We have to tell ggplot() what variables to plot and what kind of plot to create. In the graphics grammar ggplot() understands we add information to the plot using the plus + character.\nWe tell ggplot() which variables to use by using the aesthetics aes() command.\nggplot() +\naes(x = category, y = value)\nThen, we add a graphic object or ‘geom’ to the plot.\naes(x = category, y = value) +\ngeom_col()\nThere are different types of geoms for different types of plots. You can think of each geom as a way to map data to graphic elements.\nIf the variable we want to plot contains the values we care about plotting, then we use geom_col. A column plot is just a type of barplot.\nHere, we have a categorical variable imaginatively named category and a continuous variable named value.\nSee how the plot maps our category variable to the X axis and the value variable to the Y axis?\nThat’s the essence of making plots using ggplot(). We give ggplot() a data frame. Tell it which variables to assign to which aesthetics (properties of the plot). Add one or more geoms to make something we can see.\nTo break this down even further, the following code shows a way to make a plot step-by-step. This can be useful when you’re trying to figure out how you want to plot something.\n\n\nCode\np &lt;- ggplot(data = data_random_discrete)\np\n\n\n\n\n\n\n\n\nFigure 2: A ‘bare bones’ plot with data, but no aesthetics or graphics.\n\n\n\n\n\n1p &lt;- ggplot(data = data_random_discrete)\n2p\n\n1\n\nMake a ggplot with data_random_discrete as the data.frame; give it the name p.\n\n2\n\nShow p.\n\n\nNotice that the plot is blank.\n\n\nCode\n# Add aesthetics\np_aes &lt;- p + aes(x = category, y = value)\np_aes\n\n\n\n\n\n\n\n\nFigure 3: A plot with aesthetics mapped to the X and Y axes but no other graphic elements.\n\n\n\n\n\nHere’s the code that made Figure 3, but with line by line annotations:\n1p_aes &lt;- p + aes(x = category, y = value)\n2p_aes\n\n1\n\n“Add” aesthetics to p that assign the values in category to the x axis and values in value to the y axis. Give the combination the name p_aes.\n\n2\n\nShow p_aes.\n\n\nNow the plot has axes, but no data points. We need to add a geom. Geoms are mappings between data and visual graphic elements.\nLet’s explain how to do that, then show the result.\n1p_col &lt;- p_aes + geom_col()\n2p_col\n\n1\n\nAdd to p_aes a geom called geom_col(), a column or bar plot. Assign the combination to a new variable called p_col.\n\n2\n\nShow p_col.\n\n\n\n\nCode\np_col &lt;- p_aes + geom_col()\np_col\n\n\n\n\n\n\n\n\nFigure 4: A complete plot with data, aesthetics, and a geom\n\n\n\n\n\nThat looks good.\nLet’s add some color to the bars. We do this by mapping the category variable to the fill property.\n\n\nCode\np_colors &lt;- p_col + aes(fill = category)\np_colors\n\n\n\n\n\n\n\n\nFigure 5: Adding an aesthetic based on ‘category’ to fill the bars with color.\n\n\n\n\n\nWe can wrap this up in a nice little sequence of code as follows:\n\n\nCode\ndata_random_discrete |&gt;\n  ggplot() +\n  aes(x = category, y = value, fill = category) +\n  geom_col()\n\n\n\n\n\n\n\n\nFigure 6: The same figure generated from a short sequence of commands.\n\n\n\n\n\nNote that the category variables print in alphabetical order. Sometimes that might be what we want. But, what if we want to follow best practice and sort the bars in numeric order?\nThere are several ways to to this (see https://r-graph-gallery.com/267-reorder-a-variable-in-ggplot2.html), but the way shown below uses the forcats package to ‘mutate’ or change the ‘category’ variable into one that is reordered by the ‘value’ variable. Note that the default is to sort in ascending order.\n\n\nCode\nlibrary(forcats)\nlibrary(dplyr)\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\n\nCode\ndata_random_discrete |&gt;\n  mutate(category = fct_reorder(category, value)) |&gt;\n  ggplot() +\n  aes(x = category, y = value, fill = category) +\n  geom_col()\n\n\n\n\n\n\n\n\nFigure 7: The same plot but with the columns ordered by ‘value’.\n\n\n\n\n\nTo reverse the order from ascending to descending, the default, we use the desc() function to sort value from highest to lowest value, as in the following:\n\n\nCode\ndata_random_discrete |&gt;\n  mutate(category = fct_reorder(category, desc(value))) |&gt;\n  ggplot() +\n  aes(x = category, y = value, fill = category) +\n  geom_col()\n\n\n\n\n\n\n\n\nFigure 8: The same plot but with the columns ordered by ‘value’ in descending order.\n\n\n\n\n\n\n\n\n\n\n\nYour turn\n\n\n\n\nWhat would we need to do to make the category variable ordinal?\nWhy do we think that value is continuous?\n\n\n\n\n\n\nContinuous\nFirst, let’s generate some random data.\n\n\nCode\n# Set a seed for our 'random' number generator\nset.seed(19680801)\nn_values &lt;- 100000\n\ndata_random_norm &lt;- data.frame(val = rnorm(n = n_values, mean = 0, sd = 1))\n\n\n\nHistogram\n\n\nCode\nhist_1 &lt;- data_random_norm |&gt;\n  ggplot() +\n  aes(x = val) +\n  geom_histogram()\n\n\nWhat the code is saying is this: Send data_random_norm to ggplot; make the plot and its various layers; then give the plot a name (hist_1) so we can use it later. Like now, for instance:\n\n\nCode\nhist_1\n\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 9: A simple histogram\n\n\n\n\n\nTo replicate the side-by-side histograms in ?@fig-dual-histograms-matplotlib, we do the following:\nMake two random data sets that differ slightly.\n\n\nCode\nx1 &lt;- rnorm(n = n_values, mean = 0, sd = 1)\ndata_random_norm_2 &lt;- data.frame(side = c(rep('l', n_values), rep('r', n_values)),\n                            val = c(x1,\n                                    0.4 * x1 + 5))\n\n\nThen plot the data.\n\n\nCode\nhist_2 &lt;- data_random_norm_2 |&gt;\n  ggplot() +\n  aes(x = val) +\n  geom_histogram() +\n  facet_wrap(vars(side), ncol = 2)\n\nhist_2\n\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 10: Side-by-side histograms of two random (normal) sets of data.\n\n\n\n\n\n\n\nViolin\n\n\nCode\nviolin_2 &lt;- data_random_norm_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_violin()\n\nviolin_2\n\n\n\n\n\n\n\n\nFigure 11: Side-by-side violin plots of two random (normal) sets of data.\n\n\n\n\n\n\n\nBoxplot\n\n\nCode\nboxplot_2 &lt;- data_random_norm_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_boxplot()\n\nboxplot_2\n\n\n\n\n\n\n\n\nFigure 12: Side-by-side violin plots of two random (normal) sets of data."
   },
   {
     "objectID": "tutorials/tutorial-r-ggplot.html#comparing-distributions",
     "href": "tutorials/tutorial-r-ggplot.html#comparing-distributions",
     "title": "Plotting with ggplot2",
     "section": "Comparing distributions",
-    "text": "Comparing distributions\nLet’s see how these plots can help us see when the distributions differ by more than just magnitude or standard deviation.\n\n\nCode\n# Normal \"bell\"-shaped like before\nx_norm &lt;- rnorm(n = n_values, mean = 0, sd = 1)\n\n# Uniform-shaped\nx_unif &lt;- runif(n = n_values, min = -2.75, max = 2.75)\n\ndata_random_2 &lt;- data.frame(side = c(rep('norm', n_values), rep('unif', n_values)),\n                            val = c(x_norm, x_unif))\n\n\n\n\nCode\nhist_2_diff &lt;- data_random_2 |&gt;\n  ggplot() +\n  aes(x = val) +\n  geom_histogram() +\n  facet_wrap(vars(side), ncol = 2)\n\nhist_2_diff\n\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 6: Side-by-side histograms of two random sets of data with different distributions.\n\n\n\n\n\n\n\nCode\nviolin_2_diff &lt;- data_random_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_violin()\n\nviolin_2_diff\n\n\n\n\n\n\n\n\nFigure 7: Side-by-side violin plots of two random sets of data with different distributions.\n\n\n\n\n\n\n\nCode\nboxplot_2_diff &lt;- data_random_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_boxplot()\n\nboxplot_2_diff\n\n\n\n\n\n\n\n\nFigure 8: Side-by-side box plots of two random sets of data with different distributions."
+    "text": "Comparing distributions\nLet’s see how these plots can help us see when the distributions differ by more than just magnitude or standard deviation.\n\n\nCode\n# Normal \"bell\"-shaped like before\nx_norm &lt;- rnorm(n = n_values, mean = 0, sd = 1)\n\n# Uniform-shaped\nx_unif &lt;- runif(n = n_values, min = -2.75, max = 2.75)\n\ndata_random_2 &lt;- data.frame(side = c(rep('norm', n_values), rep('unif', n_values)),\n                            val = c(x_norm, x_unif))\n\n\n\n\nCode\nhist_2_diff &lt;- data_random_2 |&gt;\n  ggplot() +\n  aes(x = val) +\n  geom_histogram() +\n  facet_wrap(vars(side), ncol = 2)\n\nhist_2_diff\n\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 13: Side-by-side histograms of two random sets of data with different distributions.\n\n\n\n\n\n\n\nCode\nviolin_2_diff &lt;- data_random_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_violin()\n\nviolin_2_diff\n\n\n\n\n\n\n\n\nFigure 14: Side-by-side violin plots of two random sets of data with different distributions.\n\n\n\n\n\n\n\nCode\nboxplot_2_diff &lt;- data_random_2 |&gt;\n  ggplot() +\n  aes(x = side, y = val) +\n  geom_boxplot()\n\nboxplot_2_diff\n\n\n\n\n\n\n\n\nFigure 15: Side-by-side box plots of two random sets of data with different distributions."
   },
   {
     "objectID": "tutorials/tutorial-r-ggplot.html#plotting-two-variables",
@@ -3593,170 +3593,170 @@
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#announcements",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#announcements",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Penn State Open Scholarship Initiative"
+    "title": "Gathering & cleaning data",
+    "section": "Announcements",
+    "text": "Announcements\n\nPenn State Open Scholarship Initiative"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#todays-topics",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#todays-topics",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Data processing workflows\nGathering data\nCleaning data"
+    "title": "Gathering & cleaning data",
+    "section": "Today’s topics",
+    "text": "Today’s topics\n\nData processing workflows\nGathering data\nCleaning data"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#data-workflow",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#data-workflow",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Collect\nGather\nClean\nVisualize/plot\nAnalyze"
+    "title": "Gathering & cleaning data",
+    "section": "Data workflow",
+    "text": "Data workflow\n\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#data-workflow-we-can-script",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#data-workflow-we-can-script",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Collect\nGather\nClean\nVisualize/plot\nAnalyze"
+    "title": "Gathering & cleaning data",
+    "section": "Data workflow we can script",
+    "text": "Data workflow we can script\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#data-workflow-we-can-script-1",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#data-workflow-we-can-script-1",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Collect\nGather\nClean\nVisualize/plot\nAnalyze"
+    "title": "Gathering & cleaning data",
+    "section": "Data workflow we can script",
+    "text": "Data workflow we can script\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#gather-data",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#gather-data",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "How to acquire/download\n\nDownload manually\nDownload programmatically (via code)\n\nHow to save\n\nText formats, e.g., comma-separated values (csv), best"
+    "title": "Gathering & cleaning data",
+    "section": "Gather data",
+    "text": "Gather data\n\nHow to acquire/download\n\nDownload manually\nDownload programmatically (via code)\n\nHow to save\n\nText formats, e.g., comma-separated values (csv), best"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Visit forms.google.com"
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nVisit forms.google.com"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-1",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-1",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Pick a form"
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nPick a form"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-2",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-2",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Click on more options (…) menu"
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nClick on more options (…) menu"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-3",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-3",
-    "title": "Gathering and cleaning data",
+    "title": "Gathering & cleaning data",
     "section": "Download manually",
     "text": "Download manually"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-4",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-4",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Go to default download location (varies by computer)\nDownloads as a zip (compressed) file"
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nGo to default download location (varies by computer)\nDownloads as a zip (compressed) file"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-5",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-5",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Open compressed file"
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nOpen compressed file"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-6",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-manually-6",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Move file to target location\n\n\n\n\n\n\nGiphy.com"
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nMove file to target location"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Two manual steps\n\nCreate Google Sheets file: Click on “Link to Sheets”"
+    "title": "Gathering & cleaning data",
+    "section": "Download automatically",
+    "text": "Download automatically\n\nTwo manual steps\n\nCreate Google Sheets file: Click on “Link to Sheets”"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically-1",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically-1",
-    "title": "Gathering and cleaning data",
+    "title": "Gathering & cleaning data",
     "section": "Download automatically",
     "text": "Download automatically"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically-2",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically-2",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Log in to Google\nDownload specific URL\nSave where I decide (include/csv) and with the name I choose (PSYCH-490.003-Exercise-3.csv)\n\n\n\nCode\n# Authenticate using Google credentials stored\n# Or, easier if you're not going to share publicly:\n# options(gargle_oauth_email = \"my_gmail_address@gmail.com\")\noptions(gargle_oauth_email = Sys.getenv(\"GMAIL_SURVEY\"))\ngoogledrive::drive_auth()\n\ngoogledrive::drive_download(\n  \"PSYCH 490.003 Exercise 3 (Responses)\",\n  path = file.path(\"../include/csv\", \"PSYCH-490.003-Exercise-3.csv\"),\n  type = \"csv\",\n  overwrite = TRUE\n)\n\n\nFile downloaded:\n\n\n• 'PSYCH 490.003 Exercise 3 (Responses)'\n  &lt;id: 1uzxCev4qc6JmIaEt90mr1iIHVsC8r93PR6sVg6-0wz4&gt;\n\n\nSaved locally as:\n\n\n• '../include/csv/PSYCH-490.003-Exercise-3.csv'\n\n\nCode\nmessage(\"Data downloaded\")\n\n\nData downloaded"
+    "title": "Gathering & cleaning data",
+    "section": "Download automatically",
+    "text": "Download automatically\n\nLog in to Google\nDownload specific URL\nSave where I decide (include/csv) and with the name I choose (PSYCH-490.003-Exercise-3.csv)"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically-3",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#download-automatically-3",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Code\nlist.files(\"../include/csv\")\n\n\n[1] \"assignments.csv\"              \"PSYCH 490.003 Exercise 3.csv\"\n[3] \"PSYCH-490.003-Exercise-3.csv\" \"two_sets_1_sd.csv\""
+    "title": "Gathering & cleaning data",
+    "section": "Download automatically",
+    "text": "Download automatically\n\nlist.files(path = \"../include/csv\")\n\n[1] \"assignments.csv\"              \"PSYCH 490.003 Exercise 3.csv\"\n[3] \"PSYCH-490.003-Exercise-3.csv\" \"two_sets_1_sd.csv\"           \n\n\n\nThe ’list.files()` function lists files in a specific directory"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#import-csv",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#import-csv",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Code\nsurvey_manual &lt;- readr::read_csv(\"../include/csv/PSYCH 490.003 Exercise 3.csv\", show_col_types = FALSE)\ndim(survey_manual)\n\n\n[1] 25  9\n\n\nCode\nnames(survey_manual)\n\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\""
+    "title": "Gathering & cleaning data",
+    "section": "Import CSV",
+    "text": "Import CSV\n\nsurvey_manual &lt;- readr::read_csv(\"../include/csv/PSYCH 490.003 Exercise 3.csv\", show_col_types = FALSE)\ndim(survey_manual)\n\n[1] 25  9\n\n\n\nThe dim() function describes the dimensions of an R object.\nA data frame has two dimensions, rows and columns."
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#import-csv-1",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#import-csv-1",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Code\nsurvey_auto &lt;- readr::read_csv(\"../include/csv/PSYCH-490.003-Exercise-3.csv\",\n                               show_col_types = FALSE)\ndim(survey_auto)\n\n\n[1] 25  9\n\n\nCode\nnames(survey_auto)\n\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\""
+    "title": "Gathering & cleaning data",
+    "section": "Import CSV",
+    "text": "Import CSV\n\n\n[1] 25  9\n\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\""
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#clean-then-visualize-or-vice-versa",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#clean-then-visualize-or-vice-versa",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Code\nxtabs(formula = ~ `Favorite Icecream Flavor`, \n      data = survey_auto)\n\n\nFavorite Icecream Flavor\n          Chocolate Mint Chocolate Chip          Strawberry             Vanilla \n                  5                   9                   4                   7 \n\n\n\n\n\n\n\n\n\nUnder the hood\n\n\n\n\nR prefers that variable names not have spaces\nWhen names have spaces, we have to communicate that to R\nSo, we wrap Favorite Icecream Flavor in backticks (“`”).\nthe xtabs() function does cross-tabulations"
+    "title": "Gathering & cleaning data",
+    "section": "Clean then visualize or vice versa?",
+    "text": "Clean then visualize or vice versa?\n\n\nFavorite Icecream Flavor\n          Chocolate Mint Chocolate Chip          Strawberry             Vanilla \n                  5                   9                   4                   7"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#another-cross-tabulation",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#another-cross-tabulation",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Code\nxtabs(formula = ~ `Favorite Icecream Flavor` + `Best Pet Type`, \n      data = survey_auto)\n\n\n                        Best Pet Type\nFavorite Icecream Flavor Cat Dog\n     Chocolate             2   3\n     Mint Chocolate Chip   3   6\n     Strawberry            2   2\n     Vanilla               2   5"
+    "title": "Gathering & cleaning data",
+    "section": "Another cross-tabulation",
+    "text": "Another cross-tabulation\n\n\n                        Best Pet Type\nFavorite Icecream Flavor Cat Dog\n     Chocolate             2   3\n     Mint Chocolate Chip   3   6\n     Strawberry            2   2\n     Vanilla               2   5"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#clean-then-visualize",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#clean-then-visualize",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Rename variable names: Shorter, remove spaces\nBut capture the actual questions for later"
+    "title": "Gathering & cleaning data",
+    "section": "Clean then visualize",
+    "text": "Clean then visualize\n\nRename variable names: Shorter, remove spaces\nBut capture the actual questions for later\n\nCreate a data dictionary"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#why-script",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#why-script",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Much more reproducible and robust\nEspecially for complex sequences of tasks\nBe kind to your future (forgetful) self"
+    "title": "Gathering & cleaning data",
+    "section": "Why script?",
+    "text": "Why script?\n\nMuch more reproducible (by others) and robust\n\nEspecially for complex sequences of tasks\n\nBe kind to your future (forgetful) self"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#references",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#references",
-    "title": "Gathering and cleaning data",
+    "title": "Gathering & cleaning data",
     "section": "References",
-    "text": "References"
+    "text": "References\n\n\n\n\nWikipedia contributors. (2025, March 10). Hillel the elder. Retrieved from https://en.wikipedia.org/wiki/Hillel_the_Elder"
   },
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html",
@@ -3768,8 +3768,232 @@
   {
     "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#workflow-in-practice",
     "href": "slides/wk10-2025-03-12-gathering-cleaning.html#workflow-in-practice",
-    "title": "Gathering and cleaning data",
-    "section": "",
-    "text": "Workshop Thursday, March 27"
+    "title": "Gathering & cleaning data",
+    "section": "Workflow in practice",
+    "text": "Workflow in practice\n\nWorkshop Thursday, March 27"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#extract-column-names",
+    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#extract-column-names",
+    "title": "Gathering & cleaning data",
+    "section": "Extract column names",
+    "text": "Extract column names\n\nnames(survey_manual)\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\"                                                                                 \n\n\n\nThe names() function returns the names of the columns in our data frame."
+  },
+  {
+    "objectID": "slides/wk10-2025-03-12-gathering-cleaning.html#import-automatically-downloaded-csv",
+    "href": "slides/wk10-2025-03-12-gathering-cleaning.html#import-automatically-downloaded-csv",
+    "title": "Gathering & cleaning data",
+    "section": "Import (automatically-downloaded) CSV",
+    "text": "Import (automatically-downloaded) CSV\nHere we put all of this into the same block of code:\n\nsurvey_auto &lt;- readr::read_csv(\"../include/csv/PSYCH-490.003-Exercise-3.csv\",\n                               show_col_types = FALSE)\ndim(survey_auto)\n\n[1] 25  9\n\nnames(survey_auto)\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\""
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#announcements",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#announcements",
+    "title": "Gathering & cleaning data",
+    "section": "Announcements",
+    "text": "Announcements\n\nPenn State Open Scholarship Initiative"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#todays-topics",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#todays-topics",
+    "title": "Gathering & cleaning data",
+    "section": "Today’s topics",
+    "text": "Today’s topics\n\nData processing workflows\nGathering data\nCleaning data"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow",
+    "title": "Gathering & cleaning data",
+    "section": "Data workflow",
+    "text": "Data workflow\n\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow-we-can-script",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow-we-can-script",
+    "title": "Gathering & cleaning data",
+    "section": "Data workflow we can script",
+    "text": "Data workflow we can script\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow-we-can-script-1",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#data-workflow-we-can-script-1",
+    "title": "Gathering & cleaning data",
+    "section": "Data workflow we can script",
+    "text": "Data workflow we can script\n\nCollect\nGather\nClean\nVisualize/plot\nAnalyze"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#workflow-in-practice",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#workflow-in-practice",
+    "title": "Gathering & cleaning data",
+    "section": "Workflow in practice",
+    "text": "Workflow in practice\n\nWorkshop Thursday, March 27"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#gather-data",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#gather-data",
+    "title": "Gathering & cleaning data",
+    "section": "Gather data",
+    "text": "Gather data\n\nHow to acquire/download\n\nDownload manually\nDownload programmatically (via code)\n\nHow to save\n\nText formats, e.g., comma-separated values (csv), best"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually",
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nVisit forms.google.com"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-1",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-1",
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nPick a form"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-2",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-2",
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nClick on more options (…) menu"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-3",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-3",
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-4",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-4",
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nGo to default download location (varies by computer)\nDownloads as a zip (compressed) file"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-5",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-5",
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nOpen compressed file"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-6",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-manually-6",
+    "title": "Gathering & cleaning data",
+    "section": "Download manually",
+    "text": "Download manually\n\nMove file to target location"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically",
+    "title": "Gathering & cleaning data",
+    "section": "Download automatically",
+    "text": "Download automatically\n\nTwo manual steps\n\nCreate Google Sheets file: Click on “Link to Sheets”"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-1",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-1",
+    "title": "Gathering & cleaning data",
+    "section": "Download automatically",
+    "text": "Download automatically"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-2",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-2",
+    "title": "Gathering & cleaning data",
+    "section": "Download automatically",
+    "text": "Download automatically\n\nLog in to Google\nDownload specific URL\nSave where I decide (include/csv) and with the name I choose (PSYCH-490.003-Exercise-3.csv)"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-3",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#download-automatically-3",
+    "title": "Gathering & cleaning data",
+    "section": "Download automatically",
+    "text": "Download automatically\n\nlist.files(path = \"../include/csv\")\n\n[1] \"assignments.csv\"              \"PSYCH 490.003 Exercise 3.csv\"\n[3] \"PSYCH-490.003-Exercise-3.csv\" \"two_sets_1_sd.csv\"           \n\n\n\nThe list.files() function lists files in a specific directory"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#import-csv",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#import-csv",
+    "title": "Gathering & cleaning data",
+    "section": "Import CSV",
+    "text": "Import CSV\n\nsurvey_manual &lt;- readr::read_csv(\"../include/csv/PSYCH 490.003 Exercise 3.csv\", show_col_types = FALSE)\ndim(survey_manual)\n\n[1] 25  9\n\n\n\nThe dim() function describes the dimensions of an R object.\nA data frame has two dimensions, rows and columns."
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#extract-column-names",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#extract-column-names",
+    "title": "Gathering & cleaning data",
+    "section": "Extract column names",
+    "text": "Extract column names\n\nnames(survey_manual)\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\"                                                                                 \n\n\n\nThe names() function returns the names of the columns in our data frame."
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#import-automatically-downloaded-csv",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#import-automatically-downloaded-csv",
+    "title": "Gathering & cleaning data",
+    "section": "Import (automatically-downloaded) CSV",
+    "text": "Import (automatically-downloaded) CSV\nHere we put all of this into the same block of code:\n\nsurvey_auto &lt;- readr::read_csv(\"../include/csv/PSYCH-490.003-Exercise-3.csv\",\n                               show_col_types = FALSE)\ndim(survey_auto)\n\n[1] 25  9\n\nnames(survey_auto)\n\n[1] \"Timestamp\"                                                                                \n[2] \"Favorite Icecream Flavor\"                                                                 \n[3] \"Best Pet Type\"                                                                            \n[4] \"How confident are you with your math skills? [How confident are you in your math skills?]\"\n[5] \"How confident are you with your math skills? [How creative are you?]\"                     \n[6] \"How many concerts have you gone to?\"                                                      \n[7] \"How many credits are you taking this semester?\"                                           \n[8] \"What is the date of your favorite holiday?\"                                               \n[9] \"Comments\""
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#clean-then-visualize-or-vice-versa",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#clean-then-visualize-or-vice-versa",
+    "title": "Gathering & cleaning data",
+    "section": "Clean then visualize or vice versa?",
+    "text": "Clean then visualize or vice versa?\n\nxtabs(formula = ~ `Favorite Icecream Flavor`, \n      data = survey_auto)\n\nFavorite Icecream Flavor\n          Chocolate Mint Chocolate Chip          Strawberry             Vanilla \n                  5                   9                   4                   7"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#another-cross-tabulation",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#another-cross-tabulation",
+    "title": "Gathering & cleaning data",
+    "section": "Another cross-tabulation",
+    "text": "Another cross-tabulation\n\nxtabs(formula = ~ `Favorite Icecream Flavor` + `Best Pet Type`, \n      data = survey_auto)\n\n                        Best Pet Type\nFavorite Icecream Flavor Cat Dog\n     Chocolate             2   3\n     Mint Chocolate Chip   3   6\n     Strawberry            2   2\n     Vanilla               2   5"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#clean-then-visualize",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#clean-then-visualize",
+    "title": "Gathering & cleaning data",
+    "section": "Clean then visualize",
+    "text": "Clean then visualize\n\nRename variable names: Shorter, remove spaces\nBut capture the actual questions for later\n\nCreate a data dictionary"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#renaming-column-names",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#renaming-column-names",
+    "title": "Gathering & cleaning data",
+    "section": "Renaming column names",
+    "text": "Renaming column names\n\nlibrary(dplyr)\nlibrary(ggplot2)\nsurvey_auto &lt;- survey_auto |&gt;\n  rename(fav_flavor = \"Favorite Icecream Flavor\",\n                best_pet = \"Best Pet Type\")"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#plotting-one-variable",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#plotting-one-variable",
+    "title": "Gathering & cleaning data",
+    "section": "Plotting one variable",
+    "text": "Plotting one variable\n\nsurvey_auto |&gt;\n  count(fav_flavor) |&gt;\n  ggplot() +\n  aes(x = fav_flavor, y = n, fill = fav_flavor) +\n  geom_col()\n\n\n\nFigure 1: Favorite ice cream flavor among PSYCH 490.003 students"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#plotting-another-variable",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#plotting-another-variable",
+    "title": "Gathering & cleaning data",
+    "section": "Plotting another variable",
+    "text": "Plotting another variable\n\n\nFigure 2: Best pet for PSYCH 490.003 students"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#why-script",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#why-script",
+    "title": "Gathering & cleaning data",
+    "section": "Why script?",
+    "text": "Why script?\n\nMuch more reproducible (by others)\n\nEspecially for complex sequences of tasks\n\nMuch more robust\nBe kind to your future (forgetful) self"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#how-script",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#how-script",
+    "title": "Gathering & cleaning data",
+    "section": "How script?",
+    "text": "How script?\n\nSave commands in a file (*.R)\nSave commands and comments in a Quarto file (*.qmd)\n\nSee the ‘Learning-Quarto’ assignment on posit.cloud"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-25-gathering-cleaning.html#references",
+    "href": "slides/wk10-2025-03-25-gathering-cleaning.html#references",
+    "title": "Gathering & cleaning data",
+    "section": "References",
+    "text": "References\n\n\n\n\nWikipedia contributors. (2025, March 10). Hillel the elder. Retrieved from https://en.wikipedia.org/wiki/Hillel_the_Elder"
   }
 ]

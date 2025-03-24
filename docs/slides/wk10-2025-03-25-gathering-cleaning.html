@@ -403,7 +403,7 @@ Rick Gilmore
 </div>
 </div>
 <ul>
-<li>The ’list.files()` function lists files in a specific directory</li>
+<li>The <code>list.files()</code> function lists files in a specific directory</li>
 </ul>
 </section>
 <section id="import-csv" class="slide level2">
@@ -467,6 +467,8 @@ Rick Gilmore
 <section id="clean-then-visualize-or-vice-versa" class="slide level2">
 <h2>Clean then visualize or vice versa?</h2>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">xtabs</span>(<span class="at">formula =</span> <span class="sc">~</span> <span class="st">`</span><span class="at">Favorite Icecream Flavor</span><span class="st">`</span>, </span>
+<span id="cb12-2"><a></a>      <span class="at">data =</span> survey_auto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Favorite Icecream Flavor
           Chocolate Mint Chocolate Chip          Strawberry             Vanilla 
@@ -498,6 +500,8 @@ Rick Gilmore
 <section id="another-cross-tabulation" class="slide level2">
 <h2>Another cross-tabulation</h2>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">xtabs</span>(<span class="at">formula =</span> <span class="sc">~</span> <span class="st">`</span><span class="at">Favorite Icecream Flavor</span><span class="st">`</span> <span class="sc">+</span> <span class="st">`</span><span class="at">Best Pet Type</span><span class="st">`</span>, </span>
+<span id="cb14-2"><a></a>      <span class="at">data =</span> survey_auto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                        Best Pet Type
 Favorite Icecream Flavor Cat Dog
@@ -518,17 +522,31 @@ Favorite Icecream Flavor Cat Dog
 </ul></li>
 </ul>
 </section>
-<section class="slide level2">
-
+<section id="renaming-column-names" class="slide level2">
+<h2>Renaming column names</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb16-2"><a></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb16-3"><a></a>survey_auto <span class="ot">&lt;-</span> survey_auto <span class="sc">|&gt;</span></span>
+<span id="cb16-4"><a></a>  <span class="fu">rename</span>(<span class="at">fav_flavor =</span> <span class="st">"Favorite Icecream Flavor"</span>,</span>
+<span id="cb16-5"><a></a>                <span class="at">best_pet =</span> <span class="st">"Best Pet Type"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section class="slide level2">
+<section id="plotting-one-variable" class="slide level2">
+<h2>Plotting one variable</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>survey_auto <span class="sc">|&gt;</span></span>
+<span id="cb17-2"><a></a>  <span class="fu">count</span>(fav_flavor) <span class="sc">|&gt;</span></span>
+<span id="cb17-3"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb17-4"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> fav_flavor, <span class="at">y =</span> n, <span class="at">fill =</span> fav_flavor) <span class="sc">+</span></span>
+<span id="cb17-5"><a></a>  <span class="fu">geom_col</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-
+</div>
 <img data-src="../include/fig/fig-favorite-icecream-flavor-1.png" width="960" class="r-stretch quarto-figure-center" id="fig-favorite-icecream-flavor"><p class="caption">
 Figure&nbsp;1: Favorite ice cream flavor among PSYCH 490.003 students
 </p></section>
-<section class="slide level2">
-
+<section id="plotting-another-variable" class="slide level2">
+<h2>Plotting another variable</h2>
 
 <img data-src="../include/fig/fig-best-pet-1.png" width="960" class="r-stretch quarto-figure-center" id="fig-best-pet"><p class="caption">
 Figure&nbsp;2: Best pet for PSYCH 490.003 students
@@ -536,10 +554,11 @@ Figure&nbsp;2: Best pet for PSYCH 490.003 students
 <section id="why-script" class="slide level2">
 <h2>Why script?</h2>
 <ul>
-<li><strong>Much</strong> more reproducible (by others) and robust
+<li><strong>Much</strong> more reproducible (by others)
 <ul>
 <li>Especially for complex sequences of tasks</li>
 </ul></li>
+<li><strong>Much</strong> more robust</li>
 <li>Be kind to your future (forgetful) self</li>
 </ul>
 </section>
@@ -565,6 +584,16 @@ Figure&nbsp;2: Best pet for PSYCH 490.003 students
 </blockquote>
 <p><span class="citation" data-cites="Wikipedia-contributors2025-rr">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></p>
 </div></div>
+</section>
+<section id="how-script" class="slide level2">
+<h2>How script?</h2>
+<ul>
+<li>Save commands in a file (<code>*.R</code>)</li>
+<li>Save commands and comments in a Quarto file (<code>*.qmd</code>)
+<ul>
+<li>See the ‘Learning-Quarto’ assignment on posit.cloud</li>
+</ul></li>
+</ul>
 </section></section>
 <section>
 <section id="resources" class="title-slide slide level1 center">

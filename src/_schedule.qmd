@@ -197,6 +197,9 @@
 
 *Gathering & cleaning data*
 
+- [Slides](slides/wk10-2025-03-25-gathering-cleaning.qmd)
+
+
 ### Thursday, March 27 {-}
 
 *Making plots with `ggplot2`*

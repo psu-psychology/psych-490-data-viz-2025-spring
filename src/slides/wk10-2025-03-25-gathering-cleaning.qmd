@@ -1,12 +1,10 @@
 ---
-title: "Gathering and cleaning data"
+title: "Gathering & cleaning data"
 subtitle: "2025-03-25"
-code_fold: false
+code-fold: false
 ---
 
 # Prelude
-
-## In the news
 
 ## Announcements
 
@@ -122,7 +120,11 @@ code_fold: false
 - Download specific URL
 - Save where I decide (`include/csv`) and with the name I choose (`PSYCH-490.003-Exercise-3.csv`)
 
+---
+
 ```{r}
+#| echo: true
+#| 
 # Authenticate using Google credentials stored
 # Or, easier if you're not going to share publicly:
 # options(gargle_oauth_email = "my_gmail_address@gmail.com")
@@ -141,27 +143,49 @@ message("Data downloaded")
 ## Download automatically
 
 ```{r}
-list.files("../include/csv")
+#| echo: true
+list.files(path = "../include/csv")
 ```
+
+- The `list.files()` function lists files in a specific directory
 
 ## Import CSV
 
 ```{r}
+#| echo: true
+#| 
 survey_manual <- readr::read_csv("../include/csv/PSYCH 490.003 Exercise 3.csv", show_col_types = FALSE)
 dim(survey_manual)
-names(survey_manual)
 ```
-## Import CSV
+
+- The `dim()` function describes the *dim*ensions of an R object.
+- A data frame has two dimensions, rows and columns.
+
+## Extract column names
 
 ```{r}
+#| echo: true
+names(survey_manual)
+```
+
+- The `names()` function returns the names of the columns in our data frame.
+
+## Import (automatically-downloaded) CSV
+
+Here we put all of this into the same block of code:
+
+```{r}
+#| echo: true
 survey_auto <- readr::read_csv("../include/csv/PSYCH-490.003-Exercise-3.csv",
                                show_col_types = FALSE)
 dim(survey_auto)
 names(survey_auto)
 ```
+
 ## Clean then visualize or vice versa?
 
 ```{r}
+#| echo: true
 xtabs(formula = ~ `Favorite Icecream Flavor`, 
       data = survey_auto)
 ```
@@ -175,13 +199,12 @@ xtabs(formula = ~ `Favorite Icecream Flavor`,
 - When names have spaces, we have to communicate that to R
 - So, we wrap `Favorite Icecream Flavor` in backticks ("`").
 - the `xtabs()` function does cross-tabulations
-
 :::
 
 ## Another cross-tabulation
 
-
 ```{r}
+#| echo: true
 xtabs(formula = ~ `Favorite Icecream Flavor` + `Best Pet Type`, 
       data = survey_auto)
 ```
@@ -190,12 +213,73 @@ xtabs(formula = ~ `Favorite Icecream Flavor` + `Best Pet Type`,
 
 - Rename variable names: Shorter, remove spaces
 - But capture the actual questions for later
+  - Create a data dictionary
+
+## Renaming column names
+
+```{r}
+#| echo: true
+library(dplyr)
+library(ggplot2)
+survey_auto <- survey_auto |>
+  rename(fav_flavor = "Favorite Icecream Flavor",
+                best_pet = "Best Pet Type")
+```
+
+## Plotting one variable
+
+```{r}
+#| label: fig-favorite-icecream-flavor
+#| fig-cap: "Favorite ice cream flavor among PSYCH 490.003 students"
+#| echo: true
+survey_auto |>
+  count(fav_flavor) |>
+  ggplot() +
+  aes(x = fav_flavor, y = n, fill = fav_flavor) +
+  geom_col()
+```
+
+## Plotting another variable
+
+```{r}
+#| label: fig-best-pet
+#| fig-cap: "Best pet for PSYCH 490.003 students"
+survey_auto |>
+  count(best_pet) |>
+  ggplot() +
+  aes(x = best_pet, y = n, fill = best_pet) +
+  geom_col()
+```
 
 ## Why script?
 
-- **Much** more reproducible and robust
-- Especially for complex sequences of tasks
+- **Much** more reproducible (by others)
+  - Especially for complex sequences of tasks
+- **Much** more robust
 - Be kind to your future (forgetful) self
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+![Hillel the Elder](https://upload.wikimedia.org/wikipedia/commons/c/c6/Hillel22.jpg){fig-width="10%"}
+:::
+::: {.column width=50%}
+>If I am not for myself, who will be for me?
+
+>And being for myself, what am I?
+
+>And if not now, when?
+
+@Wikipedia-contributors2025-rr
+:::
+::::
+
+## How script?
+
+- Save commands in a file (`*.R`)
+- Save commands and comments in a Quarto file (`*.qmd`)
+  - See the 'Learning-Quarto' assignment on posit.cloud
 
 # Resources
 

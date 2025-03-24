@@ -70,6 +70,7 @@ I'll explain what's going on after we look at the plot.
 
 ```{r}
 #| label: fig-barplot-ggplot2
+#| fig-cap: "A bar plot of our random data."
 
 data_random_discrete |>
   ggplot() +
@@ -90,7 +91,7 @@ I like using the pipe `|>` command because it makes the code a little easier for
 
 The `ggplot()` function needs to know what data to plot, so this code 
 
-```
+```r
 data_random_discrete |>
   ggplot()
 ```
@@ -98,7 +99,7 @@ data_random_discrete |>
 tells `ggplot()`, "Hey, ggplot, create a plot with data from `data_random_discrete`."
 An equivalent way to say the same thing is to assign `data_random_discrete` to ggplot's `data` parameter, like this:
 
-```
+```r
 ggplot(data = data_random_discrete)
 ```
 
@@ -110,10 +111,8 @@ In the graphics grammar `ggplot()` understands we add information to the plot us
 
 We tell `ggplot()` which variables to use by using the aesthetics `aes()` command.
 
-```
+```r
 ggplot() +
-# Assign the data called `category` to the x axis, and the data called `value`
-# to the y axis
 aes(x = category, y = value)
 ```
 
@@ -145,30 +144,68 @@ To break this down even further, the following code shows a way to make a plot s
 This can be useful when you're trying to figure out how you want to plot something.
 
 ```{r}
-p <- ggplot(data = data_random_discrete) # create a bare bones "skeleton" of a plot
+#| label: fig-blank-ggplot
+#| fig-cap: "A 'bare bones' plot with data, but no aesthetics or graphics." 
+p <- ggplot(data = data_random_discrete)
 p
 ```
+
+```r
+p <- ggplot(data = data_random_discrete)  # <1>
+p                                         # <2>
+```
+1. Make a ggplot with `data_random_discrete` as the data.frame; give it the name `p`.
+2. Show `p`.
+
 
 Notice that the plot is blank.
 
 ```{r}
-# Add aesthics
+#| label: fig-ggplot-w-aes
+#| fig-cap: "A plot with aesthetics mapped to the X and Y axes but no other graphic elements."
+
+# Add aesthetics
 p_aes <- p + aes(x = category, y = value)
 p_aes
 ```
 
+Here's the code that made @fig-ggplot-w-aes, but with line by line annotations:
+
+```r
+p_aes <- p + aes(x = category, y = value)   # <1>
+p_aes                                       # <2>
+```
+1. "Add" aesthetics to `p` that assign the values in `category` to the x axis and values in `value` to the y axis. Give the combination the name `p_aes`.
+2. Show `p_aes`.
+
 Now the plot has axes, but no data points.
 We need to add a geom.
+Geoms are mappings between data and visual graphic elements.
+
+Let's explain how to do that, then show the result.
+
+```r
+p_col <- p_aes + geom_col() # <1>
+p_col                       # <2>
+```
+1. Add to `p_aes` a geom called `geom_col()`, a column or bar plot. Assign the combination to a new variable called `p_col`.
+2. Show `p_col`.
 
 ```{r}
+#| label: fig-ggplot-data-aes-geom
+#| fig-cap: "A complete plot with data, aesthetics, and a geom"
 p_col <- p_aes + geom_col()
 p_col
 ```
+
+That looks good.
 
 Let's add some color to the bars.
 We do this by mapping the `category` variable to the `fill` property.
 
 ```{r}
+#| label: fig-ggplot-ggplot-data-aes-geom-fill
+#| fig-cap: "Adding an aesthetic based on 'category' to fill the bars with color."
 p_colors <- p_col + aes(fill = category)
 p_colors
 ```
@@ -176,6 +213,8 @@ p_colors
 We can wrap this up in a nice little sequence of code as follows:
 
 ```{r}
+#| label: fig-complete-ggplot-figure
+#| fig-cap: "The same figure generated from a short sequence of commands."
 data_random_discrete |>
   ggplot() +
   aes(x = category, y = value, fill = category) +
@@ -190,6 +229,9 @@ There are several ways to to this (see <https://r-graph-gallery.com/267-reorder-
 Note that the default is to sort in *ascending* order.
 
 ```{r}
+#| label: fig-ggplot-sort-ascending
+#| fig-cap: "The same plot but with the columns ordered by 'value'."
+#| 
 library(forcats)
 library(dplyr)
 data_random_discrete |>
@@ -203,6 +245,9 @@ To reverse the order from ascending to descending, the default, we use the `desc
 
 
 ```{r}
+#| label: fig-ggplot-sort-descending
+#| fig-cap: "The same plot but with the columns ordered by 'value' in descending order."
+#| 
 data_random_discrete |>
   mutate(category = fct_reorder(category, desc(value))) |>
   ggplot() +
