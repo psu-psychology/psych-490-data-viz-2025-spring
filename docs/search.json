@@ -221,7 +221,7 @@
     "href": "exercises/ex06-figs-w-r.html#assignment",
     "title": "Exercise 06",
     "section": "Assignment",
-    "text": "Assignment\n\nBackground\nYou may complete this assignment in two ways:\n\nUse RStudio on your personal computer or a Penn State lab computer to write your R code and generate your figures. Then create a document with your code and generated figures.\nUse Quarto on Posit.cloud.\n\nYou may find some of the explanation and code contained in this tutorial helpful.\n\n\nSteps to complete\nWe’ll be analyzing the survey data one of your classmates collected.\n\nFor students not using Posit.cloud\n\nDownload the data.\n\nVisit the cleaned CSV file on GitHub:\nhttps://github.com/psu-psychology/psych-490-data-viz-2025-spring/blob/main/src/exercises/csv/ex06-data.csv\n\n\n\n\n\n\nFigure 1: Screenshot of GitHub data file.\n\n\n\nPress on the download button to download the data to your computer.\n\nMove the downloaded file.\n\nYou’ll want to copy and paste or move the file to the working directory where RStudio loads. To find this on your computer, open RStudio and run getwd() in the console. Here is what the results of that look like on Gilmore’s computer:\n\n\n\n\n\n\nFigure 2: Results of running getwd() in the RStudio console.\n\n\n\nYours will differ from this. Copy your file to this directory/folder.\n\nLoad the data into a data frame.\n\nRun the following code in your console to load the CSV file as a data frame.\nsurvey &lt;- read.csv(\"ex06-data.csv\")\n\nConfirm that the file loaded by running the following:\n\nstr(survey)\nYou should see something like this:\n\n\n\n\n\n\nFigure 3: Results of running the str() command on the survey data frame.\n\n\n\n\n\n\n\n\n\nIf you get stuck\n\n\n\nIf you are struggling at this step, then it is usually because your CSV file is not in a location where RStudio can find it.\nIt will be much easier for us to help you if we can see you in-person (in class or in a separate meeting) or via Zoom with screen-sharing.\nBy all means, try to fix the problem yourself, but don’t spend hours doing so.\n\n\nIf you successfully downloaded the CSV and loaded it as a data frame, you’re nearly ready for the fun part(s).\n\nLoad R packages needed to make your code simpler.\n\nBefore we load the packages, we need to install them: Run the following code:\ninstall.packages(\"tidyverse\")\nThen, to load the packages into your computer’s active memory, run the following code:\n1library(dplyr)\n2library(ggplot2)\n3library(forcats)\n\n1\n\nLoads the dplyr library.\n\n2\n\nLoads the ggplot2 library.\n\n3\n\nLoads the forcats library.\n\n\nsurvey |&gt;\n  count(fav_flavor) |&gt;\n  ggplot() +\n  aes(x = fav_flavor, y = n) +\n  geom_col()\n\nAdd colors to the bars\n\nTo do this, you’ll need to add a fill aesthetic to the aes() command. You can have ggplot assign colors automatically based on the values in some variable like fav_flavor by adding fill = fav_flavor to the list of aesthetics in the previous code. The code below is almost correct. Fix it and make a more colorful plot.\nsurvey |&gt;\n  count(fav_flavor) |&gt;\n  ggplot() +\n1  aes(x = fav_flavor, y = n, fill = ) +\n  geom_col()\n\n1\n\nThis line is incomplete. Fix it and make the plot.\n\n\nIf you want all the bars to be the same color, add a fill aesthetic to geom_col().\nsurvey |&gt;\n  count(fav_flavor) |&gt;\n  ggplot() +\n  aes(x = fav_flavor, y = n) +\n1  geom_col(fill = \"lightblue\")\n\n1\n\nMakes all of the bars a light blue. Try a different color like “orange”, or “violet”.\n\n\nTry making a colorful plot of another variable like best_pet or n_concerts.\n\nAdd order to a plot.\n\nAs a final exercise, try to make a plot that shows the bars in order based on the number of responses. Here’s a section of code that does this for the fav_flavor data.\nsurvey |&gt;\n  count(fav_flavor) |&gt;\n1  mutate(fav_flavor_sorted = fct_reorder(fav_flavor, n)) |&gt;\n  ggplot() +\n2  aes(x = fav_flavor_sorted, y = n, fill = fav_flavor_sorted) +\n  geom_col()  \n\n1\n\nUses the fct_reorder() function from the forcats package to create an ordered factor based on fav_flavor and the count stored in n.\n\n2\n\nUse the new sorted variable as the aesthetics in our plot.\n\n\n\n\n\n\n\n\nNote\n\n\n\nHere we use the mutate() function to create a new variable in our data frame."
+    "text": "Assignment\n\nBackground\nYou may complete this assignment in two ways:\n\nUse RStudio on your personal computer or a Penn State lab computer to write your R code and generate your figures. Then create a document with your code and generated figures.\nUse Quarto on Posit.cloud.\n\nYou may find some of the explanation and code contained in this tutorial helpful.\nWe’ll be analyzing the survey data one of your classmates collected.\n\n\nFor students using Posit.cloud\n\nLog in to Posit.cloud.\nOpen the ex06 assignment.\nOpen the exercise-06.qmd Quarto document.\n\nRead and follow the directions in the document. You may edit the document and save your changes. Press the ‘render’ button (magenta highlighting) to convert the Quarto source document into an MS Word output document. Make sure to change Dr. Gilmore’s name to yours (cyan highlighting).\n\n\n\n\n\n\nFigure 1: Screenshot from exercise-06.qmd file in the ex06 Posit.cloud assignment.\n\n\n\n\nFor students not using Posit.cloud\n\nDownload the data.\n\nVisit the cleaned CSV file on GitHub:\nhttps://github.com/psu-psychology/psych-490-data-viz-2025-spring/blob/main/src/exercises/csv/ex06-data.csv\n\n\n\n\n\n\nFigure 2: Screenshot of GitHub data file.\n\n\n\nPress on the download button to download the data to your computer.\n\nMove the downloaded file.\n\nYou’ll want to copy and paste or move the file to the working directory where RStudio loads. To find this on your computer, open RStudio and run getwd() in the console. Here is what the results of that look like on Gilmore’s computer:\n\n\n\n\n\n\nFigure 3: Results of running getwd() in the RStudio console.\n\n\n\nYours will differ from this. Copy your file to this directory/folder.\n\nLoad the data into a data frame.\n\nRun the following code in your console to load the CSV file as a data frame.\nsurvey &lt;- read.csv(\"ex06-data.csv\")\n\nConfirm that the file loaded by running the following:\n\nstr(survey)\nYou should see something like this:\n\n\n\n\n\n\nFigure 4: Results of running the str() command on the survey data frame.\n\n\n\n\n\n\n\n\n\nIf you get stuck\n\n\n\nIf you are struggling at this step, then it is usually because your CSV file is not in a location where RStudio can find it.\nIt will be much easier for us to help you if we can see you in-person (in class or in a separate meeting) or via Zoom with screen-sharing.\nBy all means, try to fix the problem yourself, but don’t spend hours doing so.\n\n\nIf you successfully downloaded the CSV and loaded it as a data frame, you’re nearly ready for the fun part(s).\n\nLoad R packages needed to make your code simpler.\n\nBefore we load the packages, we need to install them: Run the following code:\ninstall.packages(\"tidyverse\")\nThen, to load the packages into your computer’s active memory, run the following code:\n1library(dplyr)\n2library(ggplot2)\n3library(forcats)\n\n1\n\nLoads the dplyr library.\n\n2\n\nLoads the ggplot2 library.\n\n3\n\nLoads the forcats library.\n\n\nsurvey |&gt;\n  count(fav_flavor) |&gt;\n  ggplot() +\n  aes(x = fav_flavor, y = n) +\n  geom_col()\n\nAdd colors to the bars\n\nTo do this, you’ll need to add a fill aesthetic to the aes() command. You can have ggplot assign colors automatically based on the values in some variable like fav_flavor by adding fill = fav_flavor to the list of aesthetics in the previous code. The code below is almost correct. Fix it and make a more colorful plot.\nsurvey |&gt;\n  count(fav_flavor) |&gt;\n  ggplot() +\n1  aes(x = fav_flavor, y = n, fill = ) +\n  geom_col()\n\n1\n\nThis line is incomplete. Fix it and make the plot.\n\n\nIf you want all the bars to be the same color, add a fill aesthetic to geom_col().\nsurvey |&gt;\n  count(fav_flavor) |&gt;\n  ggplot() +\n  aes(x = fav_flavor, y = n) +\n1  geom_col(fill = \"lightblue\")\n\n1\n\nMakes all of the bars a light blue. Try a different color like “orange”, or “violet”.\n\n\nTry making a colorful plot of another variable like best_pet or n_concerts.\n\nAdd order to a plot.\n\nAs a final exercise, try to make a plot that shows the bars in order based on the number of responses. Here’s a section of code that does this for the fav_flavor data.\nsurvey |&gt;\n  count(fav_flavor) |&gt;\n1  mutate(fav_flavor_sorted = fct_reorder(fav_flavor, n)) |&gt;\n  ggplot() +\n2  aes(x = fav_flavor_sorted, y = n, fill = fav_flavor_sorted) +\n  geom_col()  \n\n1\n\nUses the fct_reorder() function from the forcats package to create an ordered factor based on fav_flavor and the count stored in n.\n\n2\n\nUse the new sorted variable as the aesthetics in our plot.\n\n\n\n\n\n\n\n\nNote\n\n\n\nHere we use the mutate() function to create a new variable in our data frame."
   },
   {
     "objectID": "exercises/ex06-figs-w-r.html#submit",
@@ -2055,7 +2055,7 @@
     "href": "schedule.html#week-10",
     "title": "Schedule",
     "section": "March 24-28",
-    "text": "March 24-28\nExploring data with R\n\nTuesday, March 25\nGathering & cleaning data\n\nSlides\n\n\n\nThursday, March 27\nMaking plots with ggplot2\n\nRead:\n\nPlotting with ggplot2, especially the “Plotting one variable” section.\n\nRecommended:\n\nIntroduction to Data Visualization with ggplot2 on DataCamp\n\nAssigned: Exercise-06"
+    "text": "March 24-28\nExploring data with R\n\nTuesday, March 25\nGathering & cleaning data\n\nSlides\n\n\n\nThursday, March 27\nMaking plots with ggplot2\n\nRead:\n\nPlotting with ggplot2, especially the “Plotting one variable” section.\n\nRecommended:\n\nIntroduction to Data Visualization with ggplot2 on DataCamp\n\nSlides\nAssigned: Exercise-06"
   },
   {
     "objectID": "schedule.html#week-11",
@@ -3876,5 +3876,145 @@
     "title": "Gathering & cleaning data",
     "section": "Monitoring the Future",
     "text": "Monitoring the Future\n\n“Monitoring the Future” (n.d.)"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#in-the-news",
+    "href": "slides/wk10-2025-03-27-making-plots.html#in-the-news",
+    "title": "Making plots with ggplot2",
+    "section": "In the news…",
+    "text": "In the news…"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#announcements",
+    "href": "slides/wk10-2025-03-27-making-plots.html#announcements",
+    "title": "Making plots with ggplot2",
+    "section": "Announcements",
+    "text": "Announcements"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#todays-topics",
+    "href": "slides/wk10-2025-03-27-making-plots.html#todays-topics",
+    "title": "Making plots with ggplot2",
+    "section": "Today’s topics",
+    "text": "Today’s topics\n\nData processing workflows\nIntro to ggplot2\nIntroducing posit.cloud\nWork session"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#data-workflow",
+    "href": "slides/wk10-2025-03-27-making-plots.html#data-workflow",
+    "title": "Making plots with ggplot2",
+    "section": "Data workflow",
+    "text": "Data workflow\n\n\nCollect\nGather\nClean\nVisualize\nAnalyze"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#data-workflow-more-realistic",
+    "href": "slides/wk10-2025-03-27-making-plots.html#data-workflow-more-realistic",
+    "title": "Making plots with ggplot2",
+    "section": "Data workflow (more realistic)",
+    "text": "Data workflow (more realistic)\n\n\n\n\n\nflowchart TD\n  A[Collect] --&gt; B[Gather]\n  B --&gt; C[Clean]\n  C --&gt; B\n  C --&gt; D[Visualize]\n  D --&gt; C\n  D --&gt; E[Analyze]\n  E --&gt; C"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#how-script",
+    "href": "slides/wk10-2025-03-27-making-plots.html#how-script",
+    "title": "Making plots with ggplot2",
+    "section": "How script?",
+    "text": "How script?\n\nSave commands in a file (*.R)\nSave commands and comments in a Quarto file (*.qmd)\n\nSee the ‘Learning-Quarto’ assignment on posit.cloud"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#references",
+    "href": "slides/wk10-2025-03-27-making-plots.html#references",
+    "title": "Making plots with ggplot2",
+    "section": "References",
+    "text": "References\n\n\n\n\nHadley Wickham. (2014). Tidy data | wickham | journal of statistical software. https://doi.org/10.18637/jss.v059.i10\n\n\nWickham, H., Navarro, D., & Pedersen, T. L. (n.d.). ggplot2: Elegant graphics for data analysis (3e). Retrieved January 12, 2025, from https://ggplot2-book.org/\n\n\nWilkinson, L., Wills, D., Rope, D., Norton, A., & Dubbs, R. (2005). The grammar of graphics (statistics and computing) (2nd edition). Springer. Retrieved from https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#targets",
+    "href": "slides/wk10-2025-03-27-making-plots.html#targets",
+    "title": "Making plots with ggplot2",
+    "section": "Targets",
+    "text": "Targets\n\nA data frame\n\nRectangular\nTidy (rows are observations, columns are variables); Hadley Wickham (2014)\nShort, evocative variable names"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#about-ggplot2",
+    "href": "slides/wk10-2025-03-27-making-plots.html#about-ggplot2",
+    "title": "Making plots with ggplot2",
+    "section": "About ggplot2",
+    "text": "About ggplot2\n\nR package, Wickham, Navarro, & Pedersen (n.d.)\nImplements Wilkinson, Wills, Rope, Norton, & Dubbs (2005) “grammar of graphics”\nAdd layers to plot\nInstall in your RStudio environment via install.packages(\"ggplot2\")"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#set-up",
+    "href": "slides/wk10-2025-03-27-making-plots.html#set-up",
+    "title": "Making plots with ggplot2",
+    "section": "Set-up",
+    "text": "Set-up\n\nLoad package(s)\n\n\nlibrary(ggplot2)"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#acquire-data",
+    "href": "slides/wk10-2025-03-27-making-plots.html#acquire-data",
+    "title": "Making plots with ggplot2",
+    "section": "Acquire data",
+    "text": "Acquire data\n\ndata_random_discrete &lt;- data.frame(category = c('ab', 'xy', 'mn', \n                                                'qp', 'ea', 'f2',\n                                                'gg', 'h*'),\n                                   value = c(4.8, 5.5, 3.5, \n                                           4.6, 6.5, 6.6, \n                                           2.6, 3.0))"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#examine-data",
+    "href": "slides/wk10-2025-03-27-making-plots.html#examine-data",
+    "title": "Making plots with ggplot2",
+    "section": "Examine data",
+    "text": "Examine data\n\nstr(data_random_discrete)\n\n'data.frame':   8 obs. of  2 variables:\n $ category: chr  \"ab\" \"xy\" \"mn\" \"qp\" ...\n $ value   : num  4.8 5.5 3.5 4.6 6.5 6.6 2.6 3"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#step-by-step",
+    "href": "slides/wk10-2025-03-27-making-plots.html#step-by-step",
+    "title": "Making plots with ggplot2",
+    "section": "Step by step",
+    "text": "Step by step\n\np &lt;- ggplot(data = data_random_discrete)\np\n\n\n\nFigure 1: A ‘bare bones’ plot with data, but no aesthetics or graphics."
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#adding-aesthetics",
+    "href": "slides/wk10-2025-03-27-making-plots.html#adding-aesthetics",
+    "title": "Making plots with ggplot2",
+    "section": "Adding aesthetics",
+    "text": "Adding aesthetics\n\n# Add aesthetics\np_aes &lt;- p + aes(x = category, y = value)\np_aes\n\n\n\nFigure 2: A plot with aesthetics mapped to the X and Y axes but no other graphic elements."
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#adding-a-geom",
+    "href": "slides/wk10-2025-03-27-making-plots.html#adding-a-geom",
+    "title": "Making plots with ggplot2",
+    "section": "Adding a ‘geom’",
+    "text": "Adding a ‘geom’\n\np_col &lt;- p_aes + geom_col()\np_col\n\n\n\nFigure 3: A complete plot with data, aesthetics, and a geom"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#adding-a-fill-color",
+    "href": "slides/wk10-2025-03-27-making-plots.html#adding-a-fill-color",
+    "title": "Making plots with ggplot2",
+    "section": "Adding a fill color",
+    "text": "Adding a fill color\n\np_colors &lt;- p_col + aes(fill = category)\np_colors\n\n\n\nFigure 4: Adding an aesthetic based on ‘category’ to fill the bars with color."
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#all-at-once",
+    "href": "slides/wk10-2025-03-27-making-plots.html#all-at-once",
+    "title": "Making plots with ggplot2",
+    "section": "All at once",
+    "text": "All at once\n\ndata_random_discrete |&gt;\n  ggplot() +\n  aes(x = category, y = value, fill = category) +\n  geom_col()\n\n\n\nFigure 5: The same figure generated from a short sequence of commands."
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#why-sequential",
+    "href": "slides/wk10-2025-03-27-making-plots.html#why-sequential",
+    "title": "Making plots with ggplot2",
+    "section": "Why sequential?",
+    "text": "Why sequential?\n\np_colors_flip &lt;- p_colors + coord_flip()\np_colors_flip\n\n\nColored column with flipped axes"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#style-recommendation",
+    "href": "slides/wk10-2025-03-27-making-plots.html#style-recommendation",
+    "title": "Making plots with ggplot2",
+    "section": "Style recommendation",
+    "text": "Style recommendation\ndata_frame |&gt;\n  # Manipulations to the data\n  ggplot() +\n  aes(x = , y = , fill = ) + # label aesthetic mappings\n  geom_* +\n  # Format legends, axes, add title, etc.\n  ggtitle(\"My awesome figure\")"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#introducing-posit.cloud",
+    "href": "slides/wk10-2025-03-27-making-plots.html#introducing-posit.cloud",
+    "title": "Making plots with ggplot2",
+    "section": "Introducing posit.cloud",
+    "text": "Introducing posit.cloud"
   }
 ]

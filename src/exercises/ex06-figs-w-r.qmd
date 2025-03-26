@@ -26,9 +26,22 @@ You may complete this assignment in two ways:
 
 You may find some of the explanation and code contained in [this tutorial](../tutorials/tutorial-r-ggplot.qmd) helpful.
 
-### Steps to complete
-
 We'll be analyzing the survey data one of your classmates collected.
+
+### For students using Posit.cloud
+
+1. Log in to Posit.cloud.
+
+2. Open the `ex06` assignment.
+
+3. Open the `exercise-06.qmd` Quarto document.
+
+Read and follow the directions in the document. 
+You may edit the document and save your changes. 
+Press the 'render' button (magenta highlighting) to convert the Quarto source document into an MS Word output document.
+Make sure to change Dr. Gilmore's name to yours (cyan highlighting).
+
+![Screenshot from exercise-06.qmd file in the ex06 Posit.cloud assignment.](../include/img/posit-cloud-ex-06.png){#fig-posit-cloud-ex-06}
 
 #### For students *not* using Posit.cloud
 
@@ -164,7 +177,7 @@ survey |>
 Here we use the `mutate()` function to create a new variable in our data frame.
 :::
 
-## Submit {-}
+### Submit {-}
 
 1. The code you wrote in following the steps above.
 

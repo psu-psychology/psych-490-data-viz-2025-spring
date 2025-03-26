@@ -35,6 +35,7 @@ website:
         - exercises/ex03-making-data.qmd
         - exercises/ex04-sci-of-data-viz.qmd
         - exercises/ex05-figure-prep-guidelines.qmd
+        - exercises/ex06-figs-w-r.qmd
         - exercises/final-project.qmd
       - text: Tutorials
         menu:

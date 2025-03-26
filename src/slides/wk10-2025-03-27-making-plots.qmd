@@ -1,0 +1,186 @@
+---
+title: "Making plots with `ggplot2`"
+subtitle: "2025-03-27"
+code-fold: false
+---
+
+# Prelude
+
+## In the news...
+
+## Announcements
+
+## Today's topics
+
+- Data processing workflows
+- Intro to `ggplot2`
+- Introducing posit.cloud
+- Work session
+
+## Data workflow
+
+::: {.incremental}
+- Collect
+- Gather
+- Clean
+- Visualize
+- Analyze
+:::
+
+## Data workflow (more realistic)
+
+```{mermaid}
+flowchart TD
+  A[Collect] --> B[Gather]
+  B --> C[Clean]
+  C --> B
+  C --> D[Visualize]
+  D --> C
+  D --> E[Analyze]
+  E --> C
+```
+
+## Targets
+
+- A data frame
+  - Rectangular
+  - Tidy (rows are observations, columns are variables); @Hadley_Wickham2014-qj
+  - Short, evocative variable names
+
+## How script?
+
+- Save commands in a file (`*.R`)
+- Save commands and comments in a Quarto file (`*.qmd`)
+  - See the 'Learning-Quarto' assignment on posit.cloud
+
+## About `ggplot2`
+
+- R package, @WickhamUnknown-kj
+- Implements @Wilkinson2005-do "grammar of graphics"
+- Add layers to plot
+- Install in your RStudio environment via `install.packages("ggplot2")`
+
+## Set-up
+
+- Load package(s)
+
+```{r}
+#| echo: true
+library(ggplot2)
+```
+
+## Acquire data
+
+```{r}
+#| echo: true
+data_random_discrete <- data.frame(category = c('ab', 'xy', 'mn', 
+                                                'qp', 'ea', 'f2',
+                                                'gg', 'h*'),
+                                   value = c(4.8, 5.5, 3.5, 
+                                           4.6, 6.5, 6.6, 
+                                           2.6, 3.0))
+```
+
+## Examine data
+
+```{r}
+#| echo: true
+str(data_random_discrete)
+```
+
+## Step by step
+
+```{r}
+#| label: fig-blank-ggplot
+#| fig-cap: "A 'bare bones' plot with data, but no aesthetics or graphics."
+#| echo: true
+p <- ggplot(data = data_random_discrete)
+p
+```
+
+## Adding aesthetics
+
+```{r}
+#| label: fig-ggplot-w-aes
+#| fig-cap: "A plot with aesthetics mapped to the X and Y axes but no other graphic elements."
+#| echo: true
+
+# Add aesthetics
+p_aes <- p + aes(x = category, y = value)
+p_aes
+```
+
+## Adding a 'geom'
+
+```{r}
+#| label: fig-ggplot-data-aes-geom
+#| fig-cap: "A complete plot with data, aesthetics, and a geom"
+#| echo: true
+p_col <- p_aes + geom_col()
+p_col
+```
+
+## Adding a fill color
+
+```{r}
+#| label: fig-ggplot-ggplot-data-aes-geom-fill
+#| fig-cap: "Adding an aesthetic based on 'category' to fill the bars with color."
+#| echo: true
+p_colors <- p_col + aes(fill = category)
+p_colors
+```
+
+## All at once
+
+```{r}
+#| label: fig-complete-ggplot-figure
+#| fig-cap: "The same figure generated from a short sequence of commands."
+#| echo: true
+data_random_discrete |>
+  ggplot() +
+  aes(x = category, y = value, fill = category) +
+  geom_col()
+```
+
+## Why sequential?
+
+```{r}
+#| label: ggplot-ggplot-data-aes-geom-fill-flipped
+#| fig-cap: "Colored column with flipped axes"
+#| echo: true
+p_colors_flip <- p_colors + coord_flip()
+p_colors_flip
+```
+
+---
+
+```{r}
+#| label: fig-complete-ggplot-figure-flipped
+#| fig-cap: "Colored column with flipped axes"
+#| echo: true
+data_random_discrete |>
+  ggplot() +
+  aes(x = category, y = value, fill = category) +
+  geom_col() +
+  coord_flip()
+```
+
+## Style recommendation
+
+```r
+data_frame |>
+  # Manipulations to the data
+  ggplot() +
+  aes(x = , y = , fill = ) + # label aesthetic mappings
+  geom_* +
+  # Format legends, axes, add title, etc.
+  ggtitle("My awesome figure")
+```
+
+## Introducing posit.cloud
+
+![](../include/img/posit.cloud-screenshot.png)
+
+# Resources
+
+## References

@@ -207,6 +207,7 @@
   - [*Plotting with `ggplot2`*](tutorials/tutorial-r-ggplot.qmd), especially the ["Plotting one variable" ](tutorials/tutorial-r-ggplot.qmd#plotting-one-variable) section.
 - Recommended: 
   - [Introduction to Data Visualization with ggplot2](https://app.datacamp.com/groups/psych-490-the-psychology-of-data-visualization/assignments/325606) on DataCamp
+- [Slides](slides/wk10-2025-03-27-making-plots.qmd)
 - [Assigned]{.green_assigned}: [Exercise-06](exercises/ex06-figs-w-r.qmd)
 
 ## March 31 - April 4 {- #week-11}
