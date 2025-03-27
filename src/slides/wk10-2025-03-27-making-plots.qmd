@@ -8,7 +8,24 @@ code-fold: false
 
 ## In the news...
 
+![https://reddit.com/r/spaceporn](https://i.redd.it/69j9cmqvkzqe1.jpeg)
+
+---
+
+![https://reddit.com/r/dataisbeautiful](https://i.redd.it/46eflg15c2re1.png)
+
+---
+
+![https://reddit.com/r/dataisbeautiful](https://i.redd.it/nhx3yt31rhqe1.png)
+
 ## Announcements
+
+- [Exercise 06](../exercises/ex06-figs-w-r.qmd) available
+- On AI and academic work
+  
+---
+
+{{< include _feynmann.qmd >}}
 
 ## Today's topics
 
@@ -73,6 +90,7 @@ library(ggplot2)
 
 ```{r}
 #| echo: true
+#| output-location: fragment
 data_random_discrete <- data.frame(category = c('ab', 'xy', 'mn', 
                                                 'qp', 'ea', 'f2',
                                                 'gg', 'h*'),
@@ -85,6 +103,7 @@ data_random_discrete <- data.frame(category = c('ab', 'xy', 'mn',
 
 ```{r}
 #| echo: true
+#| output-location: fragment
 str(data_random_discrete)
 ```
 
@@ -94,6 +113,7 @@ str(data_random_discrete)
 #| label: fig-blank-ggplot
 #| fig-cap: "A 'bare bones' plot with data, but no aesthetics or graphics."
 #| echo: true
+#| output-location: fragment
 p <- ggplot(data = data_random_discrete)
 p
 ```
@@ -104,9 +124,11 @@ p
 #| label: fig-ggplot-w-aes
 #| fig-cap: "A plot with aesthetics mapped to the X and Y axes but no other graphic elements."
 #| echo: true
+#| output-location: fragment
 
 # Add aesthetics
-p_aes <- p + aes(x = category, y = value)
+p_aes <- p + 
+  aes(x = category, y = value)
 p_aes
 ```
 
@@ -116,7 +138,9 @@ p_aes
 #| label: fig-ggplot-data-aes-geom
 #| fig-cap: "A complete plot with data, aesthetics, and a geom"
 #| echo: true
-p_col <- p_aes + geom_col()
+#| output-location: fragment
+p_col <- p_aes + 
+  geom_col()
 p_col
 ```
 
@@ -126,7 +150,9 @@ p_col
 #| label: fig-ggplot-ggplot-data-aes-geom-fill
 #| fig-cap: "Adding an aesthetic based on 'category' to fill the bars with color."
 #| echo: true
-p_colors <- p_col + aes(fill = category)
+#| output-location: slide
+p_colors <- p_col + 
+  aes(fill = category)
 p_colors
 ```
 
@@ -136,6 +162,8 @@ p_colors
 #| label: fig-complete-ggplot-figure
 #| fig-cap: "The same figure generated from a short sequence of commands."
 #| echo: true
+#| output-location: slide
+
 data_random_discrete |>
   ggplot() +
   aes(x = category, y = value, fill = category) +
@@ -145,19 +173,22 @@ data_random_discrete |>
 ## Why sequential?
 
 ```{r}
-#| label: ggplot-ggplot-data-aes-geom-fill-flipped
+#| label: fig-ggplot-data-aes-geom-fill-flipped
 #| fig-cap: "Colored column with flipped axes"
 #| echo: true
-p_colors_flip <- p_colors + coord_flip()
+#| output-location: slide
+p_colors_flip <- p_colors + 
+  coord_flip()
 p_colors_flip
 ```
 
----
+## versus...
 
 ```{r}
 #| label: fig-complete-ggplot-figure-flipped
 #| fig-cap: "Colored column with flipped axes"
 #| echo: true
+#| output-location: slide
 data_random_discrete |>
   ggplot() +
   aes(x = category, y = value, fill = category) +
@@ -165,17 +196,44 @@ data_random_discrete |>
   coord_flip()
 ```
 
+## Change geom
+
+```{r}
+#| label: fig-ggplot-data-aes-geom-point
+#| fig-cap: "Colored column with flipped axes"
+#| echo: true
+#| output-location: slide
+p_point <- p_aes + 
+  geom_point()
+p_point
+```
+
 ## Style recommendation
 
-```r
+```{.r code-line-numbers="1|2|3-4|5-6|7-8"}
 data_frame |>
   # Manipulations to the data
   ggplot() +
   aes(x = , y = , fill = ) + # label aesthetic mappings
+  # Add geom(s)
   geom_* +
   # Format legends, axes, add title, etc.
   ggtitle("My awesome figure")
 ```
+
+## A personal story
+
+![@Qian2022-yp](../include/img/qian-berenbaum-gilmore.png)
+
+---
+
+![Figure 1 from @Qian2022-yp](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-022-22269-y/MediaObjects/41598_2022_22269_Fig1_HTML.png?as=webp)
+
+## Script everything...
+
+- You possibly can
+- Re-use and recycle
+- <https://github.com/gilmore-lab/sex-differences-project>
 
 ## Introducing posit.cloud
 

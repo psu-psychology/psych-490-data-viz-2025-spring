@@ -3882,14 +3882,14 @@
     "href": "slides/wk10-2025-03-27-making-plots.html#in-the-news",
     "title": "Making plots with ggplot2",
     "section": "In the news…",
-    "text": "In the news…"
+    "text": "In the news…\n\nhttps://reddit.com/r/spaceporn"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#announcements",
     "href": "slides/wk10-2025-03-27-making-plots.html#announcements",
     "title": "Making plots with ggplot2",
     "section": "Announcements",
-    "text": "Announcements"
+    "text": "Announcements\n\nExercise 06 available\nOn AI and academic work"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#todays-topics",
@@ -3924,7 +3924,7 @@
     "href": "slides/wk10-2025-03-27-making-plots.html#references",
     "title": "Making plots with ggplot2",
     "section": "References",
-    "text": "References\n\n\n\n\nHadley Wickham. (2014). Tidy data | wickham | journal of statistical software. https://doi.org/10.18637/jss.v059.i10\n\n\nWickham, H., Navarro, D., & Pedersen, T. L. (n.d.). ggplot2: Elegant graphics for data analysis (3e). Retrieved January 12, 2025, from https://ggplot2-book.org/\n\n\nWilkinson, L., Wills, D., Rope, D., Norton, A., & Dubbs, R. (2005). The grammar of graphics (statistics and computing) (2nd edition). Springer. Retrieved from https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448"
+    "text": "References\n\n\n\n\nFeynman, R. P. (1974). Cargo cult science. Retrieved from https://calteches.library.caltech.edu/51/2/CargoCult.htm\n\n\nHadley Wickham. (2014). Tidy data | wickham | journal of statistical software. https://doi.org/10.18637/jss.v059.i10\n\n\nQian, Y., Berenbaum, S. A., & Gilmore, R. O. (2022). Vision contributes to sex differences in spatial cognition and activity interests. Scientific Reports, 12, 17623. https://doi.org/10.1038/s41598-022-22269-y\n\n\nWickham, H., Navarro, D., & Pedersen, T. L. (n.d.). ggplot2: Elegant graphics for data analysis (3e). Retrieved January 12, 2025, from https://ggplot2-book.org/\n\n\nWilkinson, L., Wills, D., Rope, D., Norton, A., & Dubbs, R. (2005). The grammar of graphics (statistics and computing) (2nd edition). Springer. Retrieved from https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#targets",
@@ -3959,56 +3959,56 @@
     "href": "slides/wk10-2025-03-27-making-plots.html#examine-data",
     "title": "Making plots with ggplot2",
     "section": "Examine data",
-    "text": "Examine data\n\nstr(data_random_discrete)\n\n'data.frame':   8 obs. of  2 variables:\n $ category: chr  \"ab\" \"xy\" \"mn\" \"qp\" ...\n $ value   : num  4.8 5.5 3.5 4.6 6.5 6.6 2.6 3"
+    "text": "Examine data\n\nstr(data_random_discrete)\n\n\n\n'data.frame':   8 obs. of  2 variables:\n $ category: chr  \"ab\" \"xy\" \"mn\" \"qp\" ...\n $ value   : num  4.8 5.5 3.5 4.6 6.5 6.6 2.6 3"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#step-by-step",
     "href": "slides/wk10-2025-03-27-making-plots.html#step-by-step",
     "title": "Making plots with ggplot2",
     "section": "Step by step",
-    "text": "Step by step\n\np &lt;- ggplot(data = data_random_discrete)\np\n\n\n\nFigure 1: A ‘bare bones’ plot with data, but no aesthetics or graphics."
+    "text": "Step by step\n\np &lt;- ggplot(data = data_random_discrete)\np\n\n\n\n\n\n\n\n\n\nFigure 1: A ‘bare bones’ plot with data, but no aesthetics or graphics."
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#adding-aesthetics",
     "href": "slides/wk10-2025-03-27-making-plots.html#adding-aesthetics",
     "title": "Making plots with ggplot2",
     "section": "Adding aesthetics",
-    "text": "Adding aesthetics\n\n# Add aesthetics\np_aes &lt;- p + aes(x = category, y = value)\np_aes\n\n\n\nFigure 2: A plot with aesthetics mapped to the X and Y axes but no other graphic elements."
+    "text": "Adding aesthetics\n\n# Add aesthetics\np_aes &lt;- p + \n  aes(x = category, y = value)\np_aes\n\n\n\n\n\n\n\n\n\nFigure 2: A plot with aesthetics mapped to the X and Y axes but no other graphic elements."
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#adding-a-geom",
     "href": "slides/wk10-2025-03-27-making-plots.html#adding-a-geom",
     "title": "Making plots with ggplot2",
     "section": "Adding a ‘geom’",
-    "text": "Adding a ‘geom’\n\np_col &lt;- p_aes + geom_col()\np_col\n\n\n\nFigure 3: A complete plot with data, aesthetics, and a geom"
+    "text": "Adding a ‘geom’\n\np_col &lt;- p_aes + \n  geom_col()\np_col\n\n\n\n\n\n\n\n\n\nFigure 3: A complete plot with data, aesthetics, and a geom"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#adding-a-fill-color",
     "href": "slides/wk10-2025-03-27-making-plots.html#adding-a-fill-color",
     "title": "Making plots with ggplot2",
     "section": "Adding a fill color",
-    "text": "Adding a fill color\n\np_colors &lt;- p_col + aes(fill = category)\np_colors\n\n\n\nFigure 4: Adding an aesthetic based on ‘category’ to fill the bars with color."
+    "text": "Adding a fill color\n\np_colors &lt;- p_col + \n  aes(fill = category)\np_colors"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#all-at-once",
     "href": "slides/wk10-2025-03-27-making-plots.html#all-at-once",
     "title": "Making plots with ggplot2",
     "section": "All at once",
-    "text": "All at once\n\ndata_random_discrete |&gt;\n  ggplot() +\n  aes(x = category, y = value, fill = category) +\n  geom_col()\n\n\n\nFigure 5: The same figure generated from a short sequence of commands."
+    "text": "All at once\n\ndata_random_discrete |&gt;\n  ggplot() +\n  aes(x = category, y = value, fill = category) +\n  geom_col()"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#why-sequential",
     "href": "slides/wk10-2025-03-27-making-plots.html#why-sequential",
     "title": "Making plots with ggplot2",
     "section": "Why sequential?",
-    "text": "Why sequential?\n\np_colors_flip &lt;- p_colors + coord_flip()\np_colors_flip\n\n\nColored column with flipped axes"
+    "text": "Why sequential?\n\np_colors_flip &lt;- p_colors + \n  coord_flip()\np_colors_flip"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#style-recommendation",
     "href": "slides/wk10-2025-03-27-making-plots.html#style-recommendation",
     "title": "Making plots with ggplot2",
     "section": "Style recommendation",
-    "text": "Style recommendation\ndata_frame |&gt;\n  # Manipulations to the data\n  ggplot() +\n  aes(x = , y = , fill = ) + # label aesthetic mappings\n  geom_* +\n  # Format legends, axes, add title, etc.\n  ggtitle(\"My awesome figure\")"
+    "text": "Style recommendation\ndata_frame |&gt;\n  # Manipulations to the data\n  ggplot() +\n  aes(x = , y = , fill = ) + # label aesthetic mappings\n  # Add geom(s)\n  geom_* +\n  # Format legends, axes, add title, etc.\n  ggtitle(\"My awesome figure\")"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#introducing-posit.cloud",
@@ -4016,5 +4016,75 @@
     "title": "Making plots with ggplot2",
     "section": "Introducing posit.cloud",
     "text": "Introducing posit.cloud"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#adding-a-fill-color-output",
+    "href": "slides/wk10-2025-03-27-making-plots.html#adding-a-fill-color-output",
+    "title": "Making plots with ggplot2",
+    "section": "Adding a fill color",
+    "text": "Adding a fill color\n\n\n\n\n\n\n\nFigure 4: Adding an aesthetic based on ‘category’ to fill the bars with color."
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#all-at-once-output",
+    "href": "slides/wk10-2025-03-27-making-plots.html#all-at-once-output",
+    "title": "Making plots with ggplot2",
+    "section": "All at once",
+    "text": "All at once\n\n\n\n\n\n\n\nFigure 5: The same figure generated from a short sequence of commands."
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#why-sequential-output",
+    "href": "slides/wk10-2025-03-27-making-plots.html#why-sequential-output",
+    "title": "Making plots with ggplot2",
+    "section": "Why sequential?",
+    "text": "Why sequential?\n\n\n\n\n\n\n\nFigure 6: Colored column with flipped axes"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#versus",
+    "href": "slides/wk10-2025-03-27-making-plots.html#versus",
+    "title": "Making plots with ggplot2",
+    "section": "versus…",
+    "text": "versus…\n\ndata_random_discrete |&gt;\n  ggplot() +\n  aes(x = category, y = value, fill = category) +\n  geom_col() +\n  coord_flip()"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#versus-output",
+    "href": "slides/wk10-2025-03-27-making-plots.html#versus-output",
+    "title": "Making plots with ggplot2",
+    "section": "versus…",
+    "text": "versus…\n\n\n\n\n\n\n\nFigure 7: Colored column with flipped axes"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#change-geom",
+    "href": "slides/wk10-2025-03-27-making-plots.html#change-geom",
+    "title": "Making plots with ggplot2",
+    "section": "Change geom",
+    "text": "Change geom\n\np_point &lt;- p_aes + \n  geom_point()\np_point"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#change-geom-output",
+    "href": "slides/wk10-2025-03-27-making-plots.html#change-geom-output",
+    "title": "Making plots with ggplot2",
+    "section": "Change geom",
+    "text": "Change geom\n\n\n\n\n\n\n\nFigure 8: Colored column with flipped axes"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#a-personal-story",
+    "href": "slides/wk10-2025-03-27-making-plots.html#a-personal-story",
+    "title": "Making plots with ggplot2",
+    "section": "A personal story",
+    "text": "A personal story\n\nQian, Berenbaum, & Gilmore (2022)"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#script-everything",
+    "href": "slides/wk10-2025-03-27-making-plots.html#script-everything",
+    "title": "Making plots with ggplot2",
+    "section": "Script everything…",
+    "text": "Script everything…\n\nYou possibly can\nRe-use and recycle\nhttps://github.com/gilmore-lab/sex-differences-project"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#feynman1974-ld",
+    "href": "slides/wk10-2025-03-27-making-plots.html#feynman1974-ld",
+    "title": "Making plots with ggplot2",
+    "section": "Feynman (1974)",
+    "text": "Feynman (1974)\n\n\n\n“The first principle is that you must not fool yourself—and you are the easiest person to fool. So you have to be very careful about that…”"
   }
 ]
