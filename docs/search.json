@@ -3924,7 +3924,7 @@
     "href": "slides/wk10-2025-03-27-making-plots.html#references",
     "title": "Making plots with ggplot2",
     "section": "References",
-    "text": "References\n\n\n\n\nFeynman, R. P. (1974). Cargo cult science. Retrieved from https://calteches.library.caltech.edu/51/2/CargoCult.htm\n\n\nHadley Wickham. (2014). Tidy data | wickham | journal of statistical software. https://doi.org/10.18637/jss.v059.i10\n\n\nQian, Y., Berenbaum, S. A., & Gilmore, R. O. (2022). Vision contributes to sex differences in spatial cognition and activity interests. Scientific Reports, 12, 17623. https://doi.org/10.1038/s41598-022-22269-y\n\n\nWickham, H., Navarro, D., & Pedersen, T. L. (n.d.). ggplot2: Elegant graphics for data analysis (3e). Retrieved January 12, 2025, from https://ggplot2-book.org/\n\n\nWilkinson, L., Wills, D., Rope, D., Norton, A., & Dubbs, R. (2005). The grammar of graphics (statistics and computing) (2nd edition). Springer. Retrieved from https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448"
+    "text": "References\n\n\n\n\nFeynman, R. P. (1974). Cargo cult science. Retrieved from https://calteches.library.caltech.edu/51/2/CargoCult.htm\n\n\nHadley Wickham. (2014). Tidy data | wickham | journal of statistical software. https://doi.org/10.18637/jss.v059.i10\n\n\nQian, Y., Berenbaum, S. A., & Gilmore, R. O. (2022). Vision contributes to sex differences in spatial cognition and activity interests. Scientific Reports, 12, 17623. https://doi.org/10.1038/s41598-022-22269-y\n\n\nWickham, H., Navarro, D., & Pedersen, T. L. (n.d.). ggplot2: Elegant graphics for data analysis (3e). Retrieved January 12, 2025, from https://ggplot2-book.org/\n\n\nWikipedia contributors. (2024, December 10). Standing on the shoulders of giants. Retrieved from https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants\n\n\nWilkinson, L., Wills, D., Rope, D., Norton, A., & Dubbs, R. (2005). The grammar of graphics (statistics and computing) (2nd edition). Springer. Retrieved from https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#targets",
@@ -3952,7 +3952,7 @@
     "href": "slides/wk10-2025-03-27-making-plots.html#acquire-data",
     "title": "Making plots with ggplot2",
     "section": "Acquire data",
-    "text": "Acquire data\n\ndata_random_discrete &lt;- data.frame(category = c('ab', 'xy', 'mn', \n                                                'qp', 'ea', 'f2',\n                                                'gg', 'h*'),\n                                   value = c(4.8, 5.5, 3.5, \n                                           4.6, 6.5, 6.6, \n                                           2.6, 3.0))"
+    "text": "Acquire data\n\ndata_random_discrete &lt;- data.frame(category = c('ab', 'xy', 'mn', \n                                                'qp', 'ea', 'f2',\n                                                'gg', 'h*'),\n                                   value = c(4.8, 5.5, 3.5, \n                                           4.6, 6.5, 6.6, \n                                           2.6, 3.0))\n\ndata_random_discrete\n\n\n\n  category value\n1       ab   4.8\n2       xy   5.5\n3       mn   3.5\n4       qp   4.6\n5       ea   6.5\n6       f2   6.6\n7       gg   2.6\n8       h*   3.0"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#examine-data",
@@ -3987,21 +3987,21 @@
     "href": "slides/wk10-2025-03-27-making-plots.html#adding-a-fill-color",
     "title": "Making plots with ggplot2",
     "section": "Adding a fill color",
-    "text": "Adding a fill color\n\np_colors &lt;- p_col + \n  aes(fill = category)\np_colors"
+    "text": "Adding a fill color\np_colors &lt;- p_col + \n  aes(fill = category)\n\np_colors"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#all-at-once",
     "href": "slides/wk10-2025-03-27-making-plots.html#all-at-once",
     "title": "Making plots with ggplot2",
     "section": "All at once",
-    "text": "All at once\n\ndata_random_discrete |&gt;\n  ggplot() +\n  aes(x = category, y = value, fill = category) +\n  geom_col()"
+    "text": "All at once\ndata_random_discrete |&gt;\n  ggplot() +\n  aes(x = category, y = value, fill = category) +\n  geom_col()"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#why-sequential",
     "href": "slides/wk10-2025-03-27-making-plots.html#why-sequential",
     "title": "Making plots with ggplot2",
     "section": "Why sequential?",
-    "text": "Why sequential?\n\np_colors_flip &lt;- p_colors + \n  coord_flip()\np_colors_flip"
+    "text": "Why sequential?\np_colors_flip &lt;- p_colors + \n  coord_flip()\n\np_colors_flip"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#style-recommendation",
@@ -4043,7 +4043,7 @@
     "href": "slides/wk10-2025-03-27-making-plots.html#versus",
     "title": "Making plots with ggplot2",
     "section": "versus…",
-    "text": "versus…\n\ndata_random_discrete |&gt;\n  ggplot() +\n  aes(x = category, y = value, fill = category) +\n  geom_col() +\n  coord_flip()"
+    "text": "versus…\ndata_random_discrete |&gt;\n  ggplot() +\n  aes(x = category, y = value, fill = category) +\n  geom_col() +\n  coord_flip()"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#versus-output",
@@ -4057,7 +4057,7 @@
     "href": "slides/wk10-2025-03-27-making-plots.html#change-geom",
     "title": "Making plots with ggplot2",
     "section": "Change geom",
-    "text": "Change geom\n\np_point &lt;- p_aes + \n  geom_point()\np_point"
+    "text": "Change geom\np_point &lt;- p_aes + \n  geom_point()\n\np_point"
   },
   {
     "objectID": "slides/wk10-2025-03-27-making-plots.html#change-geom-output",
@@ -4086,5 +4086,12 @@
     "title": "Making plots with ggplot2",
     "section": "Feynman (1974)",
     "text": "Feynman (1974)\n\n\n\n“The first principle is that you must not fool yourself—and you are the easiest person to fool. So you have to be very careful about that…”"
+  },
+  {
+    "objectID": "slides/wk10-2025-03-27-making-plots.html#stand-on-the-shoulders-of-giants",
+    "href": "slides/wk10-2025-03-27-making-plots.html#stand-on-the-shoulders-of-giants",
+    "title": "Making plots with ggplot2",
+    "section": "“Stand on the shoulders of giants”",
+    "text": "“Stand on the shoulders of giants”\n\nWikipedia contributors (2024)\n\n\ngiphy.com"
   }
 ]

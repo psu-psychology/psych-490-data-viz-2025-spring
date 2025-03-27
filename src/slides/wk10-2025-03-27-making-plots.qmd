@@ -97,6 +97,8 @@ data_random_discrete <- data.frame(category = c('ab', 'xy', 'mn',
                                    value = c(4.8, 5.5, 3.5, 
                                            4.6, 6.5, 6.6, 
                                            2.6, 3.0))
+
+data_random_discrete
 ```
 
 ## Examine data
@@ -146,10 +148,18 @@ p_col
 
 ## Adding a fill color
 
+```{.r code-line-numbers="1|2|4"}
+p_colors <- p_col + 
+  aes(fill = category)
+
+p_colors
+```
+
+---
+
 ```{r}
 #| label: fig-ggplot-ggplot-data-aes-geom-fill
 #| fig-cap: "Adding an aesthetic based on 'category' to fill the bars with color."
-#| echo: true
 #| output-location: slide
 p_colors <- p_col + 
   aes(fill = category)
@@ -158,10 +168,18 @@ p_colors
 
 ## All at once
 
+```{.r code-line-numbers="|1|2|3|4"}
+data_random_discrete |>
+  ggplot() +
+  aes(x = category, y = value, fill = category) +
+  geom_col()
+```
+
+---
+
 ```{r}
 #| label: fig-complete-ggplot-figure
 #| fig-cap: "The same figure generated from a short sequence of commands."
-#| echo: true
 #| output-location: slide
 
 data_random_discrete |>
@@ -172,22 +190,40 @@ data_random_discrete |>
 
 ## Why sequential?
 
+```{.r code-line-numbers="|1|2|4"}
+p_colors_flip <- p_colors + 
+  coord_flip()
+
+p_colors_flip
+```
+
+---
+
 ```{r}
 #| label: fig-ggplot-data-aes-geom-fill-flipped
 #| fig-cap: "Colored column with flipped axes"
-#| echo: true
 #| output-location: slide
 p_colors_flip <- p_colors + 
   coord_flip()
+
 p_colors_flip
 ```
 
 ## versus...
 
+```{.r code-line-numbers="|1|2|3|4|5"}
+data_random_discrete |>
+  ggplot() +
+  aes(x = category, y = value, fill = category) +
+  geom_col() +
+  coord_flip()
+```
+
+---
+
 ```{r}
 #| label: fig-complete-ggplot-figure-flipped
 #| fig-cap: "Colored column with flipped axes"
-#| echo: true
 #| output-location: slide
 data_random_discrete |>
   ggplot() +
@@ -198,13 +234,22 @@ data_random_discrete |>
 
 ## Change geom
 
+```{.r code-line-numbers="|1|2|4"}
+p_point <- p_aes + 
+  geom_point()
+
+p_point
+```
+
+---
+
 ```{r}
 #| label: fig-ggplot-data-aes-geom-point
 #| fig-cap: "Colored column with flipped axes"
-#| echo: true
 #| output-location: slide
 p_point <- p_aes + 
   geom_point()
+
 p_point
 ```
 
@@ -234,6 +279,12 @@ data_frame |>
 - You possibly can
 - Re-use and recycle
 - <https://github.com/gilmore-lab/sex-differences-project>
+
+## "Stand on the shoulders of giants"
+
+- @Wikipedia-contributors2024-qw
+
+![giphy.com](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmI2MTdlMzk2cjgwNWZyNzVoMGl4MDFmaXVjenBhb3Y2aHpmcjhkbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zuSibv0Ce6nW3tLTAG/giphy.gif)
 
 ## Introducing posit.cloud
 

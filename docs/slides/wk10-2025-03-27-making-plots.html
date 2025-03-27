@@ -355,16 +355,28 @@ Rick Gilmore
 <span id="cb2-3"><a></a>                                                <span class="st">'gg'</span>, <span class="st">'h*'</span>),</span>
 <span id="cb2-4"><a></a>                                   <span class="at">value =</span> <span class="fu">c</span>(<span class="fl">4.8</span>, <span class="fl">5.5</span>, <span class="fl">3.5</span>, </span>
 <span id="cb2-5"><a></a>                                           <span class="fl">4.6</span>, <span class="fl">6.5</span>, <span class="fl">6.6</span>, </span>
-<span id="cb2-6"><a></a>                                           <span class="fl">2.6</span>, <span class="fl">3.0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-6"><a></a>                                           <span class="fl">2.6</span>, <span class="fl">3.0</span>))</span>
+<span id="cb2-7"><a></a></span>
+<span id="cb2-8"><a></a>data_random_discrete</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment">
-
+<div class="cell-output cell-output-stdout">
+<pre><code>  category value
+1       ab   4.8
+2       xy   5.5
+3       mn   3.5
+4       qp   4.6
+5       ea   6.5
+6       f2   6.6
+7       gg   2.6
+8       h*   3.0</code></pre>
+</div>
 </div>
 </section>
 <section id="examine-data" class="slide level2">
 <h2>Examine data</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">str</span>(data_random_discrete)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">str</span>(data_random_discrete)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment">
 <div class="cell-output cell-output-stdout">
@@ -377,8 +389,8 @@ Rick Gilmore
 <section id="step-by-step" class="slide level2">
 <h2>Step by step</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> data_random_discrete)</span>
-<span id="cb5-2"><a></a>p</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> data_random_discrete)</span>
+<span id="cb6-2"><a></a>p</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment">
 <div class="cell-output-display">
@@ -398,10 +410,10 @@ Figure&nbsp;1: A ‘bare bones’ plot with data, but no aesthetics or graphics.
 <section id="adding-aesthetics" class="slide level2">
 <h2>Adding aesthetics</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="co"># Add aesthetics</span></span>
-<span id="cb6-2"><a></a>p_aes <span class="ot">&lt;-</span> p <span class="sc">+</span> </span>
-<span id="cb6-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> category, <span class="at">y =</span> value)</span>
-<span id="cb6-4"><a></a>p_aes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="co"># Add aesthetics</span></span>
+<span id="cb7-2"><a></a>p_aes <span class="ot">&lt;-</span> p <span class="sc">+</span> </span>
+<span id="cb7-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> category, <span class="at">y =</span> value)</span>
+<span id="cb7-4"><a></a>p_aes</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment">
 <div class="cell-output-display">
@@ -421,9 +433,9 @@ Figure&nbsp;2: A plot with aesthetics mapped to the X and Y axes but no other gr
 <section id="adding-a-geom" class="slide level2">
 <h2>Adding a ‘geom’</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>p_col <span class="ot">&lt;-</span> p_aes <span class="sc">+</span> </span>
-<span id="cb7-2"><a></a>  <span class="fu">geom_col</span>()</span>
-<span id="cb7-3"><a></a>p_col</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>p_col <span class="ot">&lt;-</span> p_aes <span class="sc">+</span> </span>
+<span id="cb8-2"><a></a>  <span class="fu">geom_col</span>()</span>
+<span id="cb8-3"><a></a>p_col</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment">
 <div class="cell-output-display">
@@ -442,127 +454,80 @@ Figure&nbsp;3: A complete plot with data, aesthetics, and a geom
 </section>
 <section id="adding-a-fill-color" class="slide level2">
 <h2>Adding a fill color</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>p_colors <span class="ot">&lt;-</span> p_col <span class="sc">+</span> </span>
-<span id="cb8-2"><a></a>  <span class="fu">aes</span>(<span class="at">fill =</span> category)</span>
-<span id="cb8-3"><a></a>p_colors</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-
+<div class="sourceCode" id="cb9" data-code-line-numbers="1|2|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>p_colors <span class="ot">&lt;-</span> p_col <span class="sc">+</span> </span>
+<span id="cb9-2"><a></a>  <span class="fu">aes</span>(<span class="at">fill =</span> category)</span>
+<span id="cb9-3"><a></a></span>
+<span id="cb9-4"><a></a>p_colors</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="adding-a-fill-color-output" class="slide level2 output-location-slide"><h2>Adding a fill color</h2><div class="cell output-location-slide">
-<div class="cell-output-display">
-<div id="fig-ggplot-ggplot-data-aes-geom-fill" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-ggplot-ggplot-data-aes-geom-fill-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="../include/fig/fig-ggplot-ggplot-data-aes-geom-fill-1.png" width="960">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ggplot-ggplot-data-aes-geom-fill-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<section class="slide level2">
+
+
+<img data-src="../include/fig/fig-ggplot-ggplot-data-aes-geom-fill-1.png" width="960" class="r-stretch quarto-figure-center" id="fig-ggplot-ggplot-data-aes-geom-fill"><p class="caption">
 Figure&nbsp;4: Adding an aesthetic based on ‘category’ to fill the bars with color.
-</figcaption>
-</figure>
-</div>
-</div>
-</div></section><section id="all-at-once" class="slide level2">
+</p></section>
+<section id="all-at-once" class="slide level2">
 <h2>All at once</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>data_random_discrete <span class="sc">|&gt;</span></span>
-<span id="cb9-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb9-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> category, <span class="at">y =</span> value, <span class="at">fill =</span> category) <span class="sc">+</span></span>
-<span id="cb9-4"><a></a>  <span class="fu">geom_col</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-
+<div class="sourceCode" id="cb10" data-code-line-numbers="|1|2|3|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>data_random_discrete <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb10-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> category, <span class="at">y =</span> value, <span class="at">fill =</span> category) <span class="sc">+</span></span>
+<span id="cb10-4"><a></a>  <span class="fu">geom_col</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="all-at-once-output" class="slide level2 output-location-slide"><h2>All at once</h2><div class="cell output-location-slide">
-<div class="cell-output-display">
-<div id="fig-complete-ggplot-figure" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-complete-ggplot-figure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="../include/fig/fig-complete-ggplot-figure-1.png" width="960">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-complete-ggplot-figure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<section class="slide level2">
+
+
+<img data-src="../include/fig/fig-complete-ggplot-figure-1.png" width="960" class="r-stretch quarto-figure-center" id="fig-complete-ggplot-figure"><p class="caption">
 Figure&nbsp;5: The same figure generated from a short sequence of commands.
-</figcaption>
-</figure>
-</div>
-</div>
-</div></section><section id="why-sequential" class="slide level2">
+</p></section>
+<section id="why-sequential" class="slide level2">
 <h2>Why sequential?</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>p_colors_flip <span class="ot">&lt;-</span> p_colors <span class="sc">+</span> </span>
-<span id="cb10-2"><a></a>  <span class="fu">coord_flip</span>()</span>
-<span id="cb10-3"><a></a>p_colors_flip</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-
+<div class="sourceCode" id="cb11" data-code-line-numbers="|1|2|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>p_colors_flip <span class="ot">&lt;-</span> p_colors <span class="sc">+</span> </span>
+<span id="cb11-2"><a></a>  <span class="fu">coord_flip</span>()</span>
+<span id="cb11-3"><a></a></span>
+<span id="cb11-4"><a></a>p_colors_flip</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="why-sequential-output" class="slide level2 output-location-slide"><h2>Why sequential?</h2><div class="cell output-location-slide">
-<div class="cell-output-display">
-<div id="fig-ggplot-data-aes-geom-fill-flipped" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-ggplot-data-aes-geom-fill-flipped-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="../include/fig/fig-ggplot-data-aes-geom-fill-flipped-1.png" width="960">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ggplot-data-aes-geom-fill-flipped-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<section class="slide level2">
+
+
+<img data-src="../include/fig/fig-ggplot-data-aes-geom-fill-flipped-1.png" width="960" class="r-stretch quarto-figure-center" id="fig-ggplot-data-aes-geom-fill-flipped"><p class="caption">
 Figure&nbsp;6: Colored column with flipped axes
-</figcaption>
-</figure>
-</div>
-</div>
-</div></section><section id="versus" class="slide level2">
+</p></section>
+<section id="versus" class="slide level2">
 <h2>versus…</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>data_random_discrete <span class="sc">|&gt;</span></span>
-<span id="cb11-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb11-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> category, <span class="at">y =</span> value, <span class="at">fill =</span> category) <span class="sc">+</span></span>
-<span id="cb11-4"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb11-5"><a></a>  <span class="fu">coord_flip</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-
+<div class="sourceCode" id="cb12" data-code-line-numbers="|1|2|3|4|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>data_random_discrete <span class="sc">|&gt;</span></span>
+<span id="cb12-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb12-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> category, <span class="at">y =</span> value, <span class="at">fill =</span> category) <span class="sc">+</span></span>
+<span id="cb12-4"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb12-5"><a></a>  <span class="fu">coord_flip</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="versus-output" class="slide level2 output-location-slide"><h2>versus…</h2><div class="cell output-location-slide">
-<div class="cell-output-display">
-<div id="fig-complete-ggplot-figure-flipped" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-complete-ggplot-figure-flipped-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="../include/fig/fig-complete-ggplot-figure-flipped-1.png" width="960">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-complete-ggplot-figure-flipped-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<section class="slide level2">
+
+
+<img data-src="../include/fig/fig-complete-ggplot-figure-flipped-1.png" width="960" class="r-stretch quarto-figure-center" id="fig-complete-ggplot-figure-flipped"><p class="caption">
 Figure&nbsp;7: Colored column with flipped axes
-</figcaption>
-</figure>
-</div>
-</div>
-</div></section><section id="change-geom" class="slide level2">
+</p></section>
+<section id="change-geom" class="slide level2">
 <h2>Change geom</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>p_point <span class="ot">&lt;-</span> p_aes <span class="sc">+</span> </span>
-<span id="cb12-2"><a></a>  <span class="fu">geom_point</span>()</span>
-<span id="cb12-3"><a></a>p_point</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-
+<div class="sourceCode" id="cb13" data-code-line-numbers="|1|2|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>p_point <span class="ot">&lt;-</span> p_aes <span class="sc">+</span> </span>
+<span id="cb13-2"><a></a>  <span class="fu">geom_point</span>()</span>
+<span id="cb13-3"><a></a></span>
+<span id="cb13-4"><a></a>p_point</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="change-geom-output" class="slide level2 output-location-slide"><h2>Change geom</h2><div class="cell output-location-slide">
-<div class="cell-output-display">
-<div id="fig-ggplot-data-aes-geom-point" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-ggplot-data-aes-geom-point-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="../include/fig/fig-ggplot-data-aes-geom-point-1.png" width="960">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ggplot-data-aes-geom-point-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<section class="slide level2">
+
+
+<img data-src="../include/fig/fig-ggplot-data-aes-geom-point-1.png" width="960" class="r-stretch quarto-figure-center" id="fig-ggplot-data-aes-geom-point"><p class="caption">
 Figure&nbsp;8: Colored column with flipped axes
-</figcaption>
-</figure>
-</div>
-</div>
-</div></section><section id="style-recommendation" class="slide level2">
+</p></section>
+<section id="style-recommendation" class="slide level2">
 <h2>Style recommendation</h2>
-<div class="sourceCode" id="cb13" data-code-line-numbers="1|2|3-4|5-6|7-8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>data_frame <span class="sc">|&gt;</span></span>
-<span id="cb13-2"><a></a>  <span class="co"># Manipulations to the data</span></span>
-<span id="cb13-3"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb13-4"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> , <span class="at">y =</span> , <span class="at">fill =</span> ) <span class="sc">+</span> <span class="co"># label aesthetic mappings</span></span>
-<span id="cb13-5"><a></a>  <span class="co"># Add geom(s)</span></span>
-<span id="cb13-6"><a></a>  geom_<span class="sc">*</span> <span class="sc">+</span></span>
-<span id="cb13-7"><a></a>  <span class="co"># Format legends, axes, add title, etc.</span></span>
-<span id="cb13-8"><a></a>  <span class="fu">ggtitle</span>(<span class="st">"My awesome figure"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14" data-code-line-numbers="1|2|3-4|5-6|7-8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>data_frame <span class="sc">|&gt;</span></span>
+<span id="cb14-2"><a></a>  <span class="co"># Manipulations to the data</span></span>
+<span id="cb14-3"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb14-4"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> , <span class="at">y =</span> , <span class="at">fill =</span> ) <span class="sc">+</span> <span class="co"># label aesthetic mappings</span></span>
+<span id="cb14-5"><a></a>  <span class="co"># Add geom(s)</span></span>
+<span id="cb14-6"><a></a>  geom_<span class="sc">*</span> <span class="sc">+</span></span>
+<span id="cb14-7"><a></a>  <span class="co"># Format legends, axes, add title, etc.</span></span>
+<span id="cb14-8"><a></a>  <span class="fu">ggtitle</span>(<span class="st">"My awesome figure"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="a-personal-story" class="slide level2">
 <h2>A personal story</h2>
@@ -580,6 +545,13 @@ Figure&nbsp;8: Colored column with flipped axes
 <li><a href="https://github.com/gilmore-lab/sex-differences-project" class="uri">https://github.com/gilmore-lab/sex-differences-project</a></li>
 </ul>
 </section>
+<section id="stand-on-the-shoulders-of-giants" class="slide level2">
+<h2>“Stand on the shoulders of giants”</h2>
+<ul>
+<li><span class="citation" data-cites="Wikipedia-contributors2024-qw">Wikipedia contributors (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span></li>
+</ul>
+
+<img data-src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmI2MTdlMzk2cjgwNWZyNzVoMGl4MDFmaXVjenBhb3Y2aHpmcjhkbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zuSibv0Ce6nW3tLTAG/giphy.gif" class="r-stretch quarto-figure-center"><p class="caption">giphy.com</p></section>
 <section id="introducing-posit.cloud" class="slide level2">
 <h2>Introducing posit.cloud</h2>
 
@@ -605,6 +577,9 @@ Qian, Y., Berenbaum, S. A., &amp; Gilmore, R. O. (2022). Vision contributes to s
 </div>
 <div id="ref-WickhamUnknown-kj" class="csl-entry" role="listitem">
 Wickham, H., Navarro, D., &amp; Pedersen, T. L. (n.d.). <span class="nocase">ggplot2</span>: Elegant graphics for data analysis (<span>3e</span>). Retrieved January 12, 2025, from <a href="https://ggplot2-book.org/">https://ggplot2-book.org/</a>
+</div>
+<div id="ref-Wikipedia-contributors2024-qw" class="csl-entry" role="listitem">
+Wikipedia contributors. (2024, December 10). Standing on the shoulders of giants. Retrieved from <a href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants</a>
 </div>
 <div id="ref-Wilkinson2005-do" class="csl-entry" role="listitem">
 Wilkinson, L., Wills, D., Rope, D., Norton, A., &amp; Dubbs, R. (2005). <em>The grammar of graphics (statistics and computing)</em> (2nd edition). Springer. Retrieved from <a href="https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448">https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448</a>
