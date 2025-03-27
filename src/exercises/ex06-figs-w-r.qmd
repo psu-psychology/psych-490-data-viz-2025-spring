@@ -24,7 +24,13 @@ You may complete this assignment in two ways:
 
 2. Use Quarto on Posit.cloud.
 
+
+::: {.callout-note}
+## Resources
 You may find some of the explanation and code contained in [this tutorial](../tutorials/tutorial-r-ggplot.qmd) helpful.
+
+The [tutorial](../tutorials/tutorial-making-data.qmd) on making and visualizing data may also be useful.
+:::
 
 We'll be analyzing the survey data one of your classmates collected.
 
