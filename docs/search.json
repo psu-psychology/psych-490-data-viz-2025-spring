@@ -4387,5 +4387,495 @@
     "title": "More on ggplot",
     "section": "Recommended design principles",
     "text": "Recommended design principles\n\nWork iteratively (in small steps)\nKeep prior versions\n\nStore figure code in *.R or *.qmd files\n\nNo ‘secret sauce’\nThe process is the product"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#announcements",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#announcements",
+    "title": "More on ggplot",
+    "section": "Announcements",
+    "text": "Announcements\n\nExercise 06 due Thursday, April 3."
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#last-time",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#last-time",
+    "title": "More on ggplot",
+    "section": "Last time",
+    "text": "Last time\ndata_frame |&gt;\n  # Manipulations to the data\n  ggplot() +\n  aes(x = , y = , fill = ) + # label aesthetic mappings\n  # Add geom(s)\n  geom_* +\n  # Format legends, axes, add title, etc.\n  ggtitle(\"My awesome figure\")"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#todays-topics",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#todays-topics",
+    "title": "More on ggplot",
+    "section": "Today’s topics",
+    "text": "Today’s topics\n\nA future of data science\nOptimism and data visualization\nMore ggplot2\nWork session"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#your-turn",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#your-turn",
+    "title": "More on ggplot",
+    "section": "Your turn",
+    "text": "Your turn\n\nIs Downey right?"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#gilmores-view",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#gilmores-view",
+    "title": "More on ggplot",
+    "section": "Gilmore’s view",
+    "text": "Gilmore’s view\n\n\nThings are much better than they seem\nEspecially if we look at the data\nWe need more data, more widely & publicly available\nPlus skilled interpreters\nKnowledge and skepticism are antidotes pessimism"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#gathering-data",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#gathering-data",
+    "title": "More on ggplot",
+    "section": "Gathering data",
+    "text": "Gathering data\n\nVisit https://www.cdc.gov/nchs/nsfg/nsfg-2022-2023-puf.htm\nDownload data (https://ftp.cdc.gov/pub/Health_Statistics/NCHS/NSFG/NSFG-2022-2023-FemPregPUFData.zip), unzip\nCopy to computer\n\nData: src/include/csv\nCodebook: src/include/pdf"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#importing-data",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#importing-data",
+    "title": "More on ggplot",
+    "section": "Importing data",
+    "text": "Importing data\nlibrary(readr)\nlibrary(here)\n\npath2data &lt;- file.path(here::here(), \"src\", \"include\", \"csv\")\n\nnsfg_22_23 &lt;- read_csv(\n  file.path(path2data, \"NSFG_2022_2023_FemPregPUFData.csv\"),\n  show_col_types = FALSE,\n  guess_max = Inf\n)"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#examining-data",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#examining-data",
+    "title": "More on ggplot",
+    "section": "Examining data",
+    "text": "Examining data\n\nstr(nsfg_22_23)\n\nspc_tbl_ [8,247 × 111] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ CaseID      : num [1:8247] 96071 96072 96072 96072 96072 ...\n $ PREGORDR    : num [1:8247] 1 4 3 2 1 2 1 1 2 1 ...\n $ FTFMODE     : num [1:8247] 2 2 2 2 2 2 2 2 2 2 ...\n $ BORNALIV    : num [1:8247] 1 1 1 1 1 1 NA 1 1 1 ...\n $ RECNT5YRPRG : num [1:8247] 1 5 5 5 5 1 1 5 5 5 ...\n $ BABYSEX     : num [1:8247] 1 2 2 1 1 1 NA 2 2 1 ...\n $ BIRTHWGT    : num [1:8247] 1 1 1 1 1 1 NA 2 1 1 ...\n $ PAYBIRTH1   : num [1:8247] 1 NA NA NA NA 1 NA NA NA NA ...\n $ PAYBIRTH2   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ PAYBIRTH3   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ AGEFATHER   : num [1:8247] 5 3 2 2 1 2 2 5 5 3 ...\n $ KNEWPREG    : num [1:8247] 1 NA NA NA NA 1 1 NA NA NA ...\n $ PRIORSMK    : num [1:8247] 0 NA NA NA NA 4 4 NA NA NA ...\n $ POSTSMKS    : num [1:8247] 5 NA NA NA NA 1 5 NA NA NA ...\n $ GETPRENA    : num [1:8247] 1 NA NA NA NA 1 5 NA NA NA ...\n $ BGNPRENA    : num [1:8247] 1 NA NA NA NA 1 NA NA NA NA ...\n $ KIDAGE      : num [1:8247] 2 8 8 8 8 2 NA 6 6 8 ...\n $ FRSTEATD    : num [1:8247] 0 NA NA NA NA NA NA NA NA NA ...\n $ RECPREG5YR  : num [1:8247] 1 5 5 5 5 1 1 5 5 5 ...\n $ RECPREG3YR  : num [1:8247] 1 5 5 5 5 1 1 5 5 5 ...\n $ EVUSEINT    : num [1:8247] NA 1 1 1 5 NA NA 1 1 1 ...\n $ STOPDUSE    : num [1:8247] NA 1 1 1 NA NA NA 1 1 1 ...\n $ WHYSTOPD    : num [1:8247] NA 5 5 5 NA NA NA 5 1 1 ...\n $ WHATMETH1   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHATMETH2   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHATMETH3   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHATMETH4   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ RESNOUSE    : num [1:8247] 1 NA NA NA 5 1 1 NA NA NA ...\n $ WANTBOLD    : num [1:8247] NA 5 5 5 5 NA NA 1 NA NA ...\n $ PROBBABE    : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ TIMINGOK    : num [1:8247] 3 NA NA NA NA 2 2 2 2 2 ...\n $ TOOSOON_N   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ TOOSOON_P   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ LATERNUM    : num [1:8247] 2 NA NA NA NA NA NA NA NA NA ...\n $ LATERMY     : num [1:8247] 2 NA NA NA NA NA NA NA NA NA ...\n $ WTHPART1    : num [1:8247] 1 NA NA NA NA 1 NA NA NA NA ...\n $ WTHPART2    : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ FEELINPG    : num [1:8247] 10 NA NA NA NA 7 6 NA NA NA ...\n $ HPWNOLD     : num [1:8247] 1 5 5 5 5 1 1 6 1 1 ...\n $ TIMOKHP     : num [1:8247] 3 NA NA NA NA 2 2 NA 2 2 ...\n $ COHPBEG     : num [1:8247] NA 1 1 1 3 2 2 3 1 1 ...\n $ COHPEND     : num [1:8247] NA 1 1 1 3 2 2 3 1 1 ...\n $ TELLFATH    : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHENTELL    : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ TRYSCALE    : num [1:8247] 10 NA NA NA NA 10 5 NA NA NA ...\n $ WANTSCAL    : num [1:8247] 10 NA NA NA NA 10 5 NA NA NA ...\n $ WHYPRG1     : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHYPRG2     : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHYNOUSE1   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHYNOUSE2   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHYNOUSE3   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHYNOUSE4   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ MAINOUSE    : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ OUTCOME     : num [1:8247] 1 1 1 1 1 1 4 1 1 1 ...\n $ BIRTHORD    : num [1:8247] 1 4 3 2 1 1 NA 1 2 1 ...\n $ DATEND      : num [1:8247] 2021 1999 1993 1991 1989 ...\n $ agepreg     : num [1:8247] 38 25 20 18 16 23 22 29 34 21 ...\n $ GEST_LB     : num [1:8247] 3 3 3 3 3 3 NA 3 3 3 ...\n $ GEST_OTHR   : num [1:8247] NA NA NA NA NA NA 1 NA NA NA ...\n $ GestImp     : num [1:8247] 2 2 2 2 2 2 2 2 2 2 ...\n $ DATECON     : num [1:8247] 2020 1998 1993 1991 1989 ...\n $ agecon      : num [1:8247] 37 25 19 17 15 22 22 28 33 20 ...\n $ pmarpreg    : num [1:8247] 2 2 2 2 1 1 1 1 2 2 ...\n $ BFEEDWKS    : num [1:8247] 3 NA NA NA NA 0 NA NA NA NA ...\n $ RMAROUT3    : num [1:8247] 1 1 1 1 3 2 2 3 1 1 ...\n $ RMARCON3    : num [1:8247] 1 1 1 1 3 2 2 3 1 1 ...\n $ NEWWANTR    : num [1:8247] 1 6 6 6 6 2 2 2 2 2 ...\n $ wantresp    : num [1:8247] 1 5 5 5 5 2 2 2 2 2 ...\n $ WANTPART    : num [1:8247] 1 5 5 5 5 2 2 6 2 2 ...\n $ AGER        : num [1:8247] 40 49 49 49 49 25 25 37 44 44 ...\n $ AGESCRN     : num [1:8247] 40 49 49 49 49 25 25 37 44 44 ...\n $ FMARITAL    : num [1:8247] 1 3 3 3 3 5 5 5 3 3 ...\n $ RMARITAL    : num [1:8247] 1 4 4 4 4 2 2 6 4 4 ...\n $ HIEDUC      : num [1:8247] 10 9 9 9 9 5 5 6 8 8 ...\n $ HISPANIC    : num [1:8247] 2 2 2 2 2 2 2 2 2 2 ...\n $ HISPRACE2   : num [1:8247] 2 3 3 3 3 4 4 2 2 2 ...\n $ BRNOUT      : num [1:8247] 5 5 5 5 5 1 1 5 5 5 ...\n $ PREGNUM     : num [1:8247] 1 4 4 4 4 2 2 1 2 2 ...\n $ PARITY      : num [1:8247] 1 4 4 4 4 1 1 1 2 2 ...\n $ CURR_INS    : num [1:8247] 1 4 4 4 4 3 3 2 1 1 ...\n $ POVERTY     : num [1:8247] 417 444 444 444 444 97 97 140 444 444 ...\n $ LABORFOR    : num [1:8247] 1 6 6 6 6 6 6 4 1 1 ...\n $ RELIGION    : num [1:8247] 1 1 1 1 1 1 1 3 3 3 ...\n $ METRO       : num [1:8247] 2 1 1 1 1 3 3 3 1 1 ...\n $ OUTCOME_I   : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ DATEND_I    : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ PRGLNGTH_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ DATECON_I   : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ BFEEDWKS_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ RMAROUT3_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ RMARCON3_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ NEWWANTR_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ WANTPART_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ HIEDUC_I    : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ HISPANIC_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ HISPRACE2_I : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ PREGNUM_I   : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ CURR_INS_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ POVERTY_I   : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n  [list output truncated]\n - attr(*, \"spec\")=\n  .. cols(\n  ..   CaseID = col_double(),\n  ..   PREGORDR = col_double(),\n  ..   FTFMODE = col_double(),\n  ..   BORNALIV = col_double(),\n  ..   RECNT5YRPRG = col_double(),\n  ..   BABYSEX = col_double(),\n  ..   BIRTHWGT = col_double(),\n  ..   PAYBIRTH1 = col_double(),\n  ..   PAYBIRTH2 = col_double(),\n  ..   PAYBIRTH3 = col_double(),\n  ..   AGEFATHER = col_double(),\n  ..   KNEWPREG = col_double(),\n  ..   PRIORSMK = col_double(),\n  ..   POSTSMKS = col_double(),\n  ..   GETPRENA = col_double(),\n  ..   BGNPRENA = col_double(),\n  ..   KIDAGE = col_double(),\n  ..   FRSTEATD = col_double(),\n  ..   RECPREG5YR = col_double(),\n  ..   RECPREG3YR = col_double(),\n  ..   EVUSEINT = col_double(),\n  ..   STOPDUSE = col_double(),\n  ..   WHYSTOPD = col_double(),\n  ..   WHATMETH1 = col_double(),\n  ..   WHATMETH2 = col_double(),\n  ..   WHATMETH3 = col_double(),\n  ..   WHATMETH4 = col_double(),\n  ..   RESNOUSE = col_double(),\n  ..   WANTBOLD = col_double(),\n  ..   PROBBABE = col_double(),\n  ..   TIMINGOK = col_double(),\n  ..   TOOSOON_N = col_double(),\n  ..   TOOSOON_P = col_double(),\n  ..   LATERNUM = col_double(),\n  ..   LATERMY = col_double(),\n  ..   WTHPART1 = col_double(),\n  ..   WTHPART2 = col_double(),\n  ..   FEELINPG = col_double(),\n  ..   HPWNOLD = col_double(),\n  ..   TIMOKHP = col_double(),\n  ..   COHPBEG = col_double(),\n  ..   COHPEND = col_double(),\n  ..   TELLFATH = col_double(),\n  ..   WHENTELL = col_double(),\n  ..   TRYSCALE = col_double(),\n  ..   WANTSCAL = col_double(),\n  ..   WHYPRG1 = col_double(),\n  ..   WHYPRG2 = col_double(),\n  ..   WHYNOUSE1 = col_double(),\n  ..   WHYNOUSE2 = col_double(),\n  ..   WHYNOUSE3 = col_double(),\n  ..   WHYNOUSE4 = col_double(),\n  ..   MAINOUSE = col_double(),\n  ..   OUTCOME = col_double(),\n  ..   BIRTHORD = col_double(),\n  ..   DATEND = col_double(),\n  ..   agepreg = col_double(),\n  ..   GEST_LB = col_double(),\n  ..   GEST_OTHR = col_double(),\n  ..   GestImp = col_double(),\n  ..   DATECON = col_double(),\n  ..   agecon = col_double(),\n  ..   pmarpreg = col_double(),\n  ..   BFEEDWKS = col_double(),\n  ..   RMAROUT3 = col_double(),\n  ..   RMARCON3 = col_double(),\n  ..   NEWWANTR = col_double(),\n  ..   wantresp = col_double(),\n  ..   WANTPART = col_double(),\n  ..   AGER = col_double(),\n  ..   AGESCRN = col_double(),\n  ..   FMARITAL = col_double(),\n  ..   RMARITAL = col_double(),\n  ..   HIEDUC = col_double(),\n  ..   HISPANIC = col_double(),\n  ..   HISPRACE2 = col_double(),\n  ..   BRNOUT = col_double(),\n  ..   PREGNUM = col_double(),\n  ..   PARITY = col_double(),\n  ..   CURR_INS = col_double(),\n  ..   POVERTY = col_double(),\n  ..   LABORFOR = col_double(),\n  ..   RELIGION = col_double(),\n  ..   METRO = col_double(),\n  ..   OUTCOME_I = col_double(),\n  ..   DATEND_I = col_double(),\n  ..   PRGLNGTH_I = col_double(),\n  ..   DATECON_I = col_double(),\n  ..   BFEEDWKS_I = col_double(),\n  ..   RMAROUT3_I = col_double(),\n  ..   RMARCON3_I = col_double(),\n  ..   NEWWANTR_I = col_double(),\n  ..   WANTPART_I = col_double(),\n  ..   HIEDUC_I = col_double(),\n  ..   HISPANIC_I = col_double(),\n  ..   HISPRACE2_I = col_double(),\n  ..   PREGNUM_I = col_double(),\n  ..   CURR_INS_I = col_double(),\n  ..   POVERTY_I = col_double(),\n  ..   LABORFOR_I = col_double(),\n  ..   RELIGION_I = col_double(),\n  ..   WGT2022_2023 = col_double(),\n  ..   VEST = col_double(),\n  ..   VECL = col_double(),\n  ..   CMINTVW = col_double(),\n  ..   CMLSTYR = col_double(),\n  ..   CMJAN3YR = col_double(),\n  ..   CMJAN4YR = col_double(),\n  ..   CMJAN5YR = col_double(),\n  ..   YEAR = col_double(),\n  ..   QUARTER = col_double()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt;"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#help-from-the-codebook",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#help-from-the-codebook",
+    "title": "More on ggplot",
+    "section": "Help from the codebook",
+    "text": "Help from the codebook\ninclude/pdf/2022-2023-NSFG-FemRespPUFCodebook.pdf"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER)",
+    "text": "Respondent age (AGER)\nlibrary(ggplot2)\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = AGER) +\n  geom_histogram()"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-1",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-1",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER)",
+    "text": "Respondent age (AGER)\n\nlibrary(ggplot2)\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = AGER) +\n  geom_histogram()"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-1-output",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-1-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER)",
+    "text": "Respondent age (AGER)\n\n\n\n\n\n\n\nFigure 1: Histogram of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-v2",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-v2",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): v2",
+    "text": "Respondent age (AGER): v2\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-v2-1",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-v2-1",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): v2",
+    "text": "Respondent age (AGER): v2\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-v2-1-output",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-v2-1-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): v2",
+    "text": "Respondent age (AGER): v2\n\n\n\n\n\n\n\nFigure 2: Violin plot of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-v3",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-v3",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): v3",
+    "text": "Respondent age (AGER): v3\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot()"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-v3-1",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-v3-1",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): v3",
+    "text": "Respondent age (AGER): v3\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot()"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-v3-1-output",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-v3-1-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): v3",
+    "text": "Respondent age (AGER): v3\n\n\n\n\n\n\n\nFigure 3: Boxplot of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#need-help",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#need-help",
+    "title": "More on ggplot",
+    "section": "Need help?",
+    "text": "Need help?\n\nOverall: https://ggplot2.tidyverse.org\nOn geoms? https://ggplot2.tidyverse.org/reference/index.html#geoms"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\np_violin &lt;- nsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()\n  \np_violin"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-1",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-1",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\np_violin &lt;- nsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()\n\np_violin"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-1-output",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-1-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 4: Distribution of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-2",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-2",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\np_violin_box &lt;- p_violin +\n  geom_boxplot()\n  \np_violin_box"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-3",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-3",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\np_violin_box &lt;- p_violin +\n  geom_boxplot()\n  \np_violin_box"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-3-output",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-3-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 5: Distribution of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-4",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-4",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\np_violin_box_points &lt;- p_violin_box +\n  geom_jitter(width = .1, height = 0)\n  \np_violin_box_points"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-5",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-5",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\np_violin_box_points &lt;- p_violin_box +\n  geom_jitter(width = .15, height = 0, alpha=.1)\n  \np_violin_box_points"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-5-output",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-5-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 6: Distribution of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-6",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-6",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1)"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-7",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-7",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1)"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-7-output",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#respondent-age-ager-composite-7-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 7: Distribution of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#iterative-enhancement",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#iterative-enhancement",
+    "title": "More on ggplot",
+    "section": "Iterative enhancement",
+    "text": "Iterative enhancement\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\")\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\")"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#iterative-enhancement-output",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#iterative-enhancement-output",
+    "title": "More on ggplot",
+    "section": "Iterative enhancement",
+    "text": "Iterative enhancement\n\n\n\n\n\n\n\nFigure 8: Distribution of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#recommended-design-principles",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#recommended-design-principles",
+    "title": "More on ggplot",
+    "section": "Recommended design principles",
+    "text": "Recommended design principles\n\nWork iteratively (in small steps)\nKeep prior versions\n\nStore figure code in *.R or *.qmd files\n\nNo ‘secret sauce’\nThe process is the product"
+  },
+  {
+    "objectID": "slides/wk11-2025-03-31-more-ggplot.html#references",
+    "href": "slides/wk11-2025-03-31-more-ggplot.html#references",
+    "title": "More on ggplot",
+    "section": "References",
+    "text": "References\n\n\n\n\nDowney, A. (2024). A future of data science. Retrieved March 31, 2025, from https://www.youtube.com/watch?v=YKMZIzYBgTk&list=PL9HYL-VRX0oSFkdF4fJeY63eGDvgofcbn\n\n\nNational Survey of Family Growth. (2024, December 10). Retrieved March 31, 2025, from https://www.cdc.gov/nchs/nsfg/index.htm\n\n\nRosling, H. (n.d.). Hans rosling’s 200 countries, 200 years, 4 minutes - the joy of stats - BBC. Retrieved from https://www.youtube.com/watch?v=jbkSRLYSojo&t=80s"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#announcements",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#announcements",
+    "title": "More on ggplot",
+    "section": "Announcements",
+    "text": "Announcements\n\nExercise 06 due Thursday, April 3."
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#last-time",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#last-time",
+    "title": "More on ggplot",
+    "section": "Last time",
+    "text": "Last time\ndata_frame |&gt;\n  # Manipulations to the data\n  ggplot() +\n  aes(x = , y = , fill = ) + # label aesthetic mappings\n  # Add geom(s)\n  geom_* +\n  # Format legends, axes, add title, etc.\n  ggtitle(\"My awesome figure\")"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#todays-topics",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#todays-topics",
+    "title": "More on ggplot",
+    "section": "Today’s topics",
+    "text": "Today’s topics\n\nA future of data science\nOptimism and data visualization\nMore ggplot2\nWork session"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#your-turn",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#your-turn",
+    "title": "More on ggplot",
+    "section": "Your turn",
+    "text": "Your turn\n\nIs Downey right?"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#gilmores-view",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#gilmores-view",
+    "title": "More on ggplot",
+    "section": "Gilmore’s view",
+    "text": "Gilmore’s view\n\n\nThings are much better than they seem\nEspecially if we look at the data\nWe need more data, more widely & publicly available\nPlus skilled interpreters\nKnowledge and skepticism are antidotes pessimism"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#gathering-data",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#gathering-data",
+    "title": "More on ggplot",
+    "section": "Gathering data",
+    "text": "Gathering data\n\nVisit https://www.cdc.gov/nchs/nsfg/nsfg-2022-2023-puf.htm\nDownload data (https://ftp.cdc.gov/pub/Health_Statistics/NCHS/NSFG/NSFG-2022-2023-FemPregPUFData.zip), unzip\nCopy to computer\n\nData: src/include/csv\nCodebook: src/include/pdf"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#importing-data",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#importing-data",
+    "title": "More on ggplot",
+    "section": "Importing data",
+    "text": "Importing data\nlibrary(readr)\nlibrary(here)\n\npath2data &lt;- file.path(here::here(), \"src\", \"include\", \"csv\")\n\nnsfg_22_23 &lt;- read_csv(\n  file.path(path2data, \"NSFG_2022_2023_FemPregPUFData.csv\"),\n  show_col_types = FALSE,\n  guess_max = Inf\n)"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#examining-data",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#examining-data",
+    "title": "More on ggplot",
+    "section": "Examining data",
+    "text": "Examining data\n\nstr(nsfg_22_23)\n\nspc_tbl_ [8,247 × 111] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ CaseID      : num [1:8247] 96071 96072 96072 96072 96072 ...\n $ PREGORDR    : num [1:8247] 1 4 3 2 1 2 1 1 2 1 ...\n $ FTFMODE     : num [1:8247] 2 2 2 2 2 2 2 2 2 2 ...\n $ BORNALIV    : num [1:8247] 1 1 1 1 1 1 NA 1 1 1 ...\n $ RECNT5YRPRG : num [1:8247] 1 5 5 5 5 1 1 5 5 5 ...\n $ BABYSEX     : num [1:8247] 1 2 2 1 1 1 NA 2 2 1 ...\n $ BIRTHWGT    : num [1:8247] 1 1 1 1 1 1 NA 2 1 1 ...\n $ PAYBIRTH1   : num [1:8247] 1 NA NA NA NA 1 NA NA NA NA ...\n $ PAYBIRTH2   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ PAYBIRTH3   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ AGEFATHER   : num [1:8247] 5 3 2 2 1 2 2 5 5 3 ...\n $ KNEWPREG    : num [1:8247] 1 NA NA NA NA 1 1 NA NA NA ...\n $ PRIORSMK    : num [1:8247] 0 NA NA NA NA 4 4 NA NA NA ...\n $ POSTSMKS    : num [1:8247] 5 NA NA NA NA 1 5 NA NA NA ...\n $ GETPRENA    : num [1:8247] 1 NA NA NA NA 1 5 NA NA NA ...\n $ BGNPRENA    : num [1:8247] 1 NA NA NA NA 1 NA NA NA NA ...\n $ KIDAGE      : num [1:8247] 2 8 8 8 8 2 NA 6 6 8 ...\n $ FRSTEATD    : num [1:8247] 0 NA NA NA NA NA NA NA NA NA ...\n $ RECPREG5YR  : num [1:8247] 1 5 5 5 5 1 1 5 5 5 ...\n $ RECPREG3YR  : num [1:8247] 1 5 5 5 5 1 1 5 5 5 ...\n $ EVUSEINT    : num [1:8247] NA 1 1 1 5 NA NA 1 1 1 ...\n $ STOPDUSE    : num [1:8247] NA 1 1 1 NA NA NA 1 1 1 ...\n $ WHYSTOPD    : num [1:8247] NA 5 5 5 NA NA NA 5 1 1 ...\n $ WHATMETH1   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHATMETH2   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHATMETH3   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHATMETH4   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ RESNOUSE    : num [1:8247] 1 NA NA NA 5 1 1 NA NA NA ...\n $ WANTBOLD    : num [1:8247] NA 5 5 5 5 NA NA 1 NA NA ...\n $ PROBBABE    : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ TIMINGOK    : num [1:8247] 3 NA NA NA NA 2 2 2 2 2 ...\n $ TOOSOON_N   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ TOOSOON_P   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ LATERNUM    : num [1:8247] 2 NA NA NA NA NA NA NA NA NA ...\n $ LATERMY     : num [1:8247] 2 NA NA NA NA NA NA NA NA NA ...\n $ WTHPART1    : num [1:8247] 1 NA NA NA NA 1 NA NA NA NA ...\n $ WTHPART2    : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ FEELINPG    : num [1:8247] 10 NA NA NA NA 7 6 NA NA NA ...\n $ HPWNOLD     : num [1:8247] 1 5 5 5 5 1 1 6 1 1 ...\n $ TIMOKHP     : num [1:8247] 3 NA NA NA NA 2 2 NA 2 2 ...\n $ COHPBEG     : num [1:8247] NA 1 1 1 3 2 2 3 1 1 ...\n $ COHPEND     : num [1:8247] NA 1 1 1 3 2 2 3 1 1 ...\n $ TELLFATH    : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHENTELL    : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ TRYSCALE    : num [1:8247] 10 NA NA NA NA 10 5 NA NA NA ...\n $ WANTSCAL    : num [1:8247] 10 NA NA NA NA 10 5 NA NA NA ...\n $ WHYPRG1     : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHYPRG2     : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHYNOUSE1   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHYNOUSE2   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHYNOUSE3   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ WHYNOUSE4   : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ MAINOUSE    : num [1:8247] NA NA NA NA NA NA NA NA NA NA ...\n $ OUTCOME     : num [1:8247] 1 1 1 1 1 1 4 1 1 1 ...\n $ BIRTHORD    : num [1:8247] 1 4 3 2 1 1 NA 1 2 1 ...\n $ DATEND      : num [1:8247] 2021 1999 1993 1991 1989 ...\n $ agepreg     : num [1:8247] 38 25 20 18 16 23 22 29 34 21 ...\n $ GEST_LB     : num [1:8247] 3 3 3 3 3 3 NA 3 3 3 ...\n $ GEST_OTHR   : num [1:8247] NA NA NA NA NA NA 1 NA NA NA ...\n $ GestImp     : num [1:8247] 2 2 2 2 2 2 2 2 2 2 ...\n $ DATECON     : num [1:8247] 2020 1998 1993 1991 1989 ...\n $ agecon      : num [1:8247] 37 25 19 17 15 22 22 28 33 20 ...\n $ pmarpreg    : num [1:8247] 2 2 2 2 1 1 1 1 2 2 ...\n $ BFEEDWKS    : num [1:8247] 3 NA NA NA NA 0 NA NA NA NA ...\n $ RMAROUT3    : num [1:8247] 1 1 1 1 3 2 2 3 1 1 ...\n $ RMARCON3    : num [1:8247] 1 1 1 1 3 2 2 3 1 1 ...\n $ NEWWANTR    : num [1:8247] 1 6 6 6 6 2 2 2 2 2 ...\n $ wantresp    : num [1:8247] 1 5 5 5 5 2 2 2 2 2 ...\n $ WANTPART    : num [1:8247] 1 5 5 5 5 2 2 6 2 2 ...\n $ AGER        : num [1:8247] 40 49 49 49 49 25 25 37 44 44 ...\n $ AGESCRN     : num [1:8247] 40 49 49 49 49 25 25 37 44 44 ...\n $ FMARITAL    : num [1:8247] 1 3 3 3 3 5 5 5 3 3 ...\n $ RMARITAL    : num [1:8247] 1 4 4 4 4 2 2 6 4 4 ...\n $ HIEDUC      : num [1:8247] 10 9 9 9 9 5 5 6 8 8 ...\n $ HISPANIC    : num [1:8247] 2 2 2 2 2 2 2 2 2 2 ...\n $ HISPRACE2   : num [1:8247] 2 3 3 3 3 4 4 2 2 2 ...\n $ BRNOUT      : num [1:8247] 5 5 5 5 5 1 1 5 5 5 ...\n $ PREGNUM     : num [1:8247] 1 4 4 4 4 2 2 1 2 2 ...\n $ PARITY      : num [1:8247] 1 4 4 4 4 1 1 1 2 2 ...\n $ CURR_INS    : num [1:8247] 1 4 4 4 4 3 3 2 1 1 ...\n $ POVERTY     : num [1:8247] 417 444 444 444 444 97 97 140 444 444 ...\n $ LABORFOR    : num [1:8247] 1 6 6 6 6 6 6 4 1 1 ...\n $ RELIGION    : num [1:8247] 1 1 1 1 1 1 1 3 3 3 ...\n $ METRO       : num [1:8247] 2 1 1 1 1 3 3 3 1 1 ...\n $ OUTCOME_I   : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ DATEND_I    : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ PRGLNGTH_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ DATECON_I   : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ BFEEDWKS_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ RMAROUT3_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ RMARCON3_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ NEWWANTR_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ WANTPART_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ HIEDUC_I    : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ HISPANIC_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ HISPRACE2_I : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ PREGNUM_I   : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ CURR_INS_I  : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n $ POVERTY_I   : num [1:8247] 0 0 0 0 0 0 0 0 0 0 ...\n  [list output truncated]\n - attr(*, \"spec\")=\n  .. cols(\n  ..   CaseID = col_double(),\n  ..   PREGORDR = col_double(),\n  ..   FTFMODE = col_double(),\n  ..   BORNALIV = col_double(),\n  ..   RECNT5YRPRG = col_double(),\n  ..   BABYSEX = col_double(),\n  ..   BIRTHWGT = col_double(),\n  ..   PAYBIRTH1 = col_double(),\n  ..   PAYBIRTH2 = col_double(),\n  ..   PAYBIRTH3 = col_double(),\n  ..   AGEFATHER = col_double(),\n  ..   KNEWPREG = col_double(),\n  ..   PRIORSMK = col_double(),\n  ..   POSTSMKS = col_double(),\n  ..   GETPRENA = col_double(),\n  ..   BGNPRENA = col_double(),\n  ..   KIDAGE = col_double(),\n  ..   FRSTEATD = col_double(),\n  ..   RECPREG5YR = col_double(),\n  ..   RECPREG3YR = col_double(),\n  ..   EVUSEINT = col_double(),\n  ..   STOPDUSE = col_double(),\n  ..   WHYSTOPD = col_double(),\n  ..   WHATMETH1 = col_double(),\n  ..   WHATMETH2 = col_double(),\n  ..   WHATMETH3 = col_double(),\n  ..   WHATMETH4 = col_double(),\n  ..   RESNOUSE = col_double(),\n  ..   WANTBOLD = col_double(),\n  ..   PROBBABE = col_double(),\n  ..   TIMINGOK = col_double(),\n  ..   TOOSOON_N = col_double(),\n  ..   TOOSOON_P = col_double(),\n  ..   LATERNUM = col_double(),\n  ..   LATERMY = col_double(),\n  ..   WTHPART1 = col_double(),\n  ..   WTHPART2 = col_double(),\n  ..   FEELINPG = col_double(),\n  ..   HPWNOLD = col_double(),\n  ..   TIMOKHP = col_double(),\n  ..   COHPBEG = col_double(),\n  ..   COHPEND = col_double(),\n  ..   TELLFATH = col_double(),\n  ..   WHENTELL = col_double(),\n  ..   TRYSCALE = col_double(),\n  ..   WANTSCAL = col_double(),\n  ..   WHYPRG1 = col_double(),\n  ..   WHYPRG2 = col_double(),\n  ..   WHYNOUSE1 = col_double(),\n  ..   WHYNOUSE2 = col_double(),\n  ..   WHYNOUSE3 = col_double(),\n  ..   WHYNOUSE4 = col_double(),\n  ..   MAINOUSE = col_double(),\n  ..   OUTCOME = col_double(),\n  ..   BIRTHORD = col_double(),\n  ..   DATEND = col_double(),\n  ..   agepreg = col_double(),\n  ..   GEST_LB = col_double(),\n  ..   GEST_OTHR = col_double(),\n  ..   GestImp = col_double(),\n  ..   DATECON = col_double(),\n  ..   agecon = col_double(),\n  ..   pmarpreg = col_double(),\n  ..   BFEEDWKS = col_double(),\n  ..   RMAROUT3 = col_double(),\n  ..   RMARCON3 = col_double(),\n  ..   NEWWANTR = col_double(),\n  ..   wantresp = col_double(),\n  ..   WANTPART = col_double(),\n  ..   AGER = col_double(),\n  ..   AGESCRN = col_double(),\n  ..   FMARITAL = col_double(),\n  ..   RMARITAL = col_double(),\n  ..   HIEDUC = col_double(),\n  ..   HISPANIC = col_double(),\n  ..   HISPRACE2 = col_double(),\n  ..   BRNOUT = col_double(),\n  ..   PREGNUM = col_double(),\n  ..   PARITY = col_double(),\n  ..   CURR_INS = col_double(),\n  ..   POVERTY = col_double(),\n  ..   LABORFOR = col_double(),\n  ..   RELIGION = col_double(),\n  ..   METRO = col_double(),\n  ..   OUTCOME_I = col_double(),\n  ..   DATEND_I = col_double(),\n  ..   PRGLNGTH_I = col_double(),\n  ..   DATECON_I = col_double(),\n  ..   BFEEDWKS_I = col_double(),\n  ..   RMAROUT3_I = col_double(),\n  ..   RMARCON3_I = col_double(),\n  ..   NEWWANTR_I = col_double(),\n  ..   WANTPART_I = col_double(),\n  ..   HIEDUC_I = col_double(),\n  ..   HISPANIC_I = col_double(),\n  ..   HISPRACE2_I = col_double(),\n  ..   PREGNUM_I = col_double(),\n  ..   CURR_INS_I = col_double(),\n  ..   POVERTY_I = col_double(),\n  ..   LABORFOR_I = col_double(),\n  ..   RELIGION_I = col_double(),\n  ..   WGT2022_2023 = col_double(),\n  ..   VEST = col_double(),\n  ..   VECL = col_double(),\n  ..   CMINTVW = col_double(),\n  ..   CMLSTYR = col_double(),\n  ..   CMJAN3YR = col_double(),\n  ..   CMJAN4YR = col_double(),\n  ..   CMJAN5YR = col_double(),\n  ..   YEAR = col_double(),\n  ..   QUARTER = col_double()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt;"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#help-from-the-codebook",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#help-from-the-codebook",
+    "title": "More on ggplot",
+    "section": "Help from the codebook",
+    "text": "Help from the codebook\ninclude/pdf/2022-2023-NSFG-FemRespPUFCodebook.pdf"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER)",
+    "text": "Respondent age (AGER)\nlibrary(ggplot2)\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = AGER) +\n  geom_histogram()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-1",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-1",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER)",
+    "text": "Respondent age (AGER)\n\nlibrary(ggplot2)\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = AGER) +\n  geom_histogram()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-1-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-1-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER)",
+    "text": "Respondent age (AGER)\n\n\n\n\n\n\n\nFigure 1: Histogram of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v2",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v2",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): v2",
+    "text": "Respondent age (AGER): v2\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v2-1",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v2-1",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): v2",
+    "text": "Respondent age (AGER): v2\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v2-1-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v2-1-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): v2",
+    "text": "Respondent age (AGER): v2\n\n\n\n\n\n\n\nFigure 2: Violin plot of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v3",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v3",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): v3",
+    "text": "Respondent age (AGER): v3\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v3-1",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v3-1",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): v3",
+    "text": "Respondent age (AGER): v3\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v3-1-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v3-1-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): v3",
+    "text": "Respondent age (AGER): v3\n\n\n\n\n\n\n\nFigure 3: Boxplot of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#need-help",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#need-help",
+    "title": "More on ggplot",
+    "section": "Need help?",
+    "text": "Need help?\n\nOverall: https://ggplot2.tidyverse.org\nOn geoms? https://ggplot2.tidyverse.org/reference/index.html#geoms"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\np_violin &lt;- nsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()\n  \np_violin"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-1",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-1",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\np_violin &lt;- nsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()\n\np_violin"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-1-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-1-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 4: Distribution of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-2",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-2",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\np_violin_box &lt;- p_violin +\n  geom_boxplot()\n  \np_violin_box"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-3",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-3",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\np_violin_box &lt;- p_violin +\n  geom_boxplot()\n  \np_violin_box"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-3-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-3-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 5: Distribution of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-4",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-4",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\np_violin_box_points &lt;- p_violin_box +\n  geom_jitter(width = .1, height = 0)\n  \np_violin_box_points"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-5",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-5",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\np_violin_box_points &lt;- p_violin_box +\n  geom_jitter(width = .15, height = 0, alpha=.1)\n  \np_violin_box_points"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-5-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-5-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 6: Distribution of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-6",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-6",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1)"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-7",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-7",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1)"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-7-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-7-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 7: Distribution of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement",
+    "title": "More on ggplot",
+    "section": "Iterative enhancement",
+    "text": "Iterative enhancement\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\")\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\")"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement-output",
+    "title": "More on ggplot",
+    "section": "Iterative enhancement",
+    "text": "Iterative enhancement\n\n\n\n\n\n\n\nFigure 8: Distribution of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#recommended-design-principles",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#recommended-design-principles",
+    "title": "More on ggplot",
+    "section": "Recommended design principles",
+    "text": "Recommended design principles\n\nWork iteratively (in small steps)\nKeep prior versions\n\nStore figure code in *.R or *.qmd files\n\nNo ‘secret sauce’\nThe process is the product"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#references",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#references",
+    "title": "More on ggplot",
+    "section": "References",
+    "text": "References\n\n\n\n\nDowney, A. (2024). A future of data science. Retrieved March 31, 2025, from https://www.youtube.com/watch?v=YKMZIzYBgTk&list=PL9HYL-VRX0oSFkdF4fJeY63eGDvgofcbn\n\n\nNational Survey of Family Growth. (2024, December 10). Retrieved March 31, 2025, from https://www.cdc.gov/nchs/nsfg/index.htm\n\n\nRosling, H. (n.d.). Hans rosling’s 200 countries, 200 years, 4 minutes - the joy of stats - BBC. Retrieved from https://www.youtube.com/watch?v=jbkSRLYSojo&t=80s"
   }
 ]

@@ -12,7 +12,7 @@ project:
 website:
   title: "PSYCH 490 • Spr 25"
   announcement: 
-    content: "Keep working on DataCamp; Try posit.cloud." 
+    content: "[Exercise 06](exercises/ex06-figs-w-r.qmd) due Thursday." 
     position: below-navbar
     icon: info-circle
     dismissable: true

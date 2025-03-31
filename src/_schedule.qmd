@@ -216,7 +216,7 @@
 
 ### Tuesday, April 01 {-}
 
-- [Slides](sliwk11-2025-03-31-more-ggplot.qmd.qmd)
+- [Slides](slides/wk11-2025-04-01-more-ggplot.qmd)
 - [Assigned]{.green_assigned}: Final project [preferences survey](https://forms.gle/oyotxgnnqchqnSgTA)
 
 ### Thursday, April 03 {-}
