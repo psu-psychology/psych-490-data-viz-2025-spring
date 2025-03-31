@@ -212,13 +212,16 @@
 
 ## March 31 - April 4 {- #week-11}
 
-*Introduction to Python*
+*More on ggplot*
 
 ### Tuesday, April 01 {-}
 
+- [Slides](sliwk11-2025-03-31-more-ggplot.qmd.qmd)
 - [Assigned]{.green_assigned}: Final project [preferences survey](https://forms.gle/oyotxgnnqchqnSgTA)
 
 ### Thursday, April 03 {-}
+
+*Intro to Python*
 
 - [Due]{.orange_due}: [Exercise-06](exercises/ex06-figs-w-r.qmd)
 

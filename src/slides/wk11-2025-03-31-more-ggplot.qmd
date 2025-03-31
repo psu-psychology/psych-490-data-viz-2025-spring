@@ -1,0 +1,329 @@
+---
+title: "More on `ggplot`"
+subtitle: "2025-03-31"
+code-fold: false
+---
+
+# Prelude
+
+## Announcements
+
+- [Exercise 06](../exercises/ex06-figs-w-r.qmd) [due]{.orange_due} Thursday, April 3.
+
+## Last time
+
+```{.r code-line-numbers="1|2|3-4|5-6|7-8"}
+data_frame |>
+  # Manipulations to the data
+  ggplot() +
+  aes(x = , y = , fill = ) + # label aesthetic mappings
+  # Add geom(s)
+  geom_* +
+  # Format legends, axes, add title, etc.
+  ggtitle("My awesome figure")
+```
+
+## Today's topics
+
+- A future of data science
+- Optimism and data visualization
+- More `ggplot2`
+- Work session
+
+# A future of data science
+
+---
+
+{{< video https://youtu.be/YKMZIzYBgTk?si=NYs1_4ljUOkPSLM9 width=100% height=70% >}}
+
+@Downey2024-ae
+
+## Your turn
+
+- Is Downey right?
+
+# Optimism and data visualization
+
+---
+
+{{< video https://www.youtube.com/watch?v=jbkSRLYSojo&t=80s width=100% height=70% >}}
+
+@RoslingUnknown-ys
+
+## Gilmore's view
+
+::: {.incremental}
+- Things are much better than they seem
+- Especially if we look at the data
+- We need *more* data, more widely & publicly available
+- Plus skilled interpreters
+- Knowledge and skepticism are antidotes pessimism
+:::
+
+---
+
+![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmJjZTRia3gyNGhxMTdvMHhsdnlwNnFibWl2bmRsMXhvbGl6cjk4YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VXxFEcDnNvxqU/giphy.gif)
+
+# More `ggplot2`
+
+---
+
+![@Unknown2024-ep](../include/img/nat-survey-fam-growth.png)
+
+## Gathering data
+
+- Visit <https://www.cdc.gov/nchs/nsfg/nsfg-2022-2023-puf.htm>
+- Download data (<https://ftp.cdc.gov/pub/Health_Statistics/NCHS/NSFG/NSFG-2022-2023-FemPregPUFData.zip>), unzip
+- Copy to computer
+  - Data: `src/include/csv`
+  - Codebook: `src/include/pdf`
+
+## Importing data
+
+```{.r code-line-numbers="|1-2|4|6-11"}
+library(readr)
+library(here)
+
+path2data <- file.path(here::here(), "src", "include", "csv")
+
+nsfg_22_23 <- read_csv(
+  file.path(path2data, "NSFG_2022_2023_FemPregPUFData.csv"),
+  show_col_types = FALSE,
+  guess_max = Inf
+)
+```
+
+```{r}
+library(readr)
+library(here)
+
+path2data <- file.path(here::here(), "src", "include", "csv")
+
+nsfg_22_23 <- read_csv(
+  file.path(path2data, "NSFG_2022_2023_FemPregPUFData.csv"),
+  show_col_types = FALSE,
+  guess_max = Inf
+)
+```
+
+## Examining data
+
+```{r}
+#| echo: true
+str(nsfg_22_23)
+```
+
+## Help from the codebook
+
+[include/pdf/2022-2023-NSFG-FemRespPUFCodebook.pdf](../include/pdf/2022-2023-NSFG-FemRespPUFCodebook.pdf)
+
+## Respondent age (`AGER`)
+
+```{.r code-line-numbers="|1|2|3|4|5"}
+library(ggplot2)
+nsfg_22_23 |>
+  ggplot() +
+  aes(x = AGER) +
+  geom_histogram()
+```
+
+## Respondent age (`AGER`)
+
+```{r}
+#| label: fig-nsfg-22-23-ager-hist
+#| fig-cap: "Histogram of NSFG 22-23 'AGER' variable"
+#| echo: true
+#| output-location: slide
+library(ggplot2)
+nsfg_22_23 |>
+  ggplot() +
+  aes(x = AGER) +
+  geom_histogram()
+```
+
+## Respondent age (`AGER`): v2
+
+```{.r code-line-numbers="3|4"}
+nsfg_22_23 |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_violin()
+```
+
+## Respondent age (`AGER`): v2
+
+```{r}
+#| label: fig-nsfg-22-23-ager-violin
+#| fig-cap: "Violin plot of NSFG 22-23 'AGER' variable"
+#| echo: true
+#| output-location: slide
+nsfg_22_23 |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_violin()
+```
+
+## Respondent age (`AGER`): v3
+
+```{.r code-line-numbers="|4|5"}
+nsfg_22_23 |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_boxplot()
+```
+
+## Respondent age (`AGER`): v3
+
+```{r}
+#| label: fig-nsfg-22-23-ager-boxplot
+#| fig-cap: "Boxplot of NSFG 22-23 'AGER' variable"
+#| echo: true
+#| output-location: slide
+nsfg_22_23 |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_boxplot()
+```
+
+## Need help?
+
+- Overall: <https://ggplot2.tidyverse.org>
+- On geoms? <https://ggplot2.tidyverse.org/reference/index.html#geoms>
+
+## Respondent age (`AGER`): Composite
+
+```{.r code-line-numbers="1|6"}
+p_violin <- nsfg_22_23 |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_violin()
+  
+p_violin
+```
+
+## Respondent age (`AGER`): Composite
+
+```{r}
+#| label: fig-nsfg-22-23-ager-box-violin-raw-1
+#| fig-cap: "Distribution of NSFG 22-23 'AGER' variable"
+#| echo: true
+#| output-location: slide
+p_violin <- nsfg_22_23 |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_violin()
+
+p_violin
+```
+
+## Respondent age (`AGER`): Composite
+
+```{.r code-line-numbers="1|2|4"}
+p_violin_box <- p_violin +
+  geom_boxplot()
+  
+p_violin_box
+```
+
+## Respondent age (`AGER`): Composite
+
+```{r}
+#| label: fig-nsfg-22-23-ager-box-violin-raw-2
+#| fig-cap: "Distribution of NSFG 22-23 'AGER' variable"
+#| echo: true
+#| output-location: slide
+p_violin_box <- p_violin +
+  geom_boxplot()
+  
+p_violin_box
+```
+
+## Respondent age (`AGER`): Composite
+
+```{.r code-line-numbers="1|2|4"}
+p_violin_box_points <- p_violin_box +
+  geom_jitter(width = .1, height = 0)
+  
+p_violin_box_points
+```
+
+## Respondent age (`AGER`): Composite
+
+```{r}
+#| label: fig-nsfg-22-23-ager-box-violin-raw-3
+#| fig-cap: "Distribution of NSFG 22-23 'AGER' variable"
+#| echo: true
+#| output-location: slide
+p_violin_box_points <- p_violin_box +
+  geom_jitter(width = .15, height = 0, alpha=.1)
+  
+p_violin_box_points
+```
+
+## Respondent age (`AGER`): Composite
+
+```{.r code-line-numbers="4-6"}
+nsfg_22_23 |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_violin() +
+  geom_boxplot() +
+  geom_jitter(width = .15, height = 0, alpha=.1)
+```
+
+## Respondent age (`AGER`): Composite
+
+```{r}
+#| label: fig-nsfg-22-23-ager-box-violin-raw-4
+#| fig-cap: "Distribution of NSFG 22-23 'AGER' variable"
+#| echo: true
+#| output-location: slide
+nsfg_22_23 |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_violin() +
+  geom_boxplot() +
+  geom_jitter(width = .15, height = 0, alpha=.1)
+```
+
+## Iterative enhancement
+
+```{.r code-line-numbers="7-8"}
+nsfg_22_23 |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_violin() +
+  geom_boxplot() +
+  geom_jitter(width = .15, height = 0, alpha=.1) +
+  ylab("Respondent age (years)") +
+  xlab("")
+```
+
+```{r}
+#| label: fig-nsfg-22-23-ager-box-violin-raw-5
+#| fig-cap: "Distribution of NSFG 22-23 'AGER' variable"
+#| echo: true
+#| output-location: slide
+nsfg_22_23 |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_violin() +
+  geom_boxplot() +
+  geom_jitter(width = .15, height = 0, alpha=.1) +
+  ylab("Respondent age (years)") +
+  xlab("")
+```
+
+## Recommended design principles
+
+- Work iteratively (in small steps)
+- Keep prior versions
+  - Store figure code in `*.R` or `*.qmd` files
+- No 'secret sauce'
+- The process *is* the product
+
+# Work session
+
+# Resources
+
+## References
