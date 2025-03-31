@@ -9,6 +9,7 @@ code-fold: false
 ## Announcements
 
 - [Exercise 06](../exercises/ex06-figs-w-r.qmd) [due]{.orange_due} Thursday, April 3.
+- Final project presentation [survey](https://forms.gle/oyotxgnnqchqnSgTA)
 
 ## Last time
 
