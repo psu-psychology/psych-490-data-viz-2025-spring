@@ -187,7 +187,7 @@
 
 **NO CLASS**
 
-- [Due]{.orange_due}: [Exercise-05](exercises/ex05-figure-prep-guidelines.qmd)
+- [Due]{.orange_due}: [Exercise-05](exercises/ex05-figure-prep-guidelines.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998418)
 
 ## March 24-28 {- #week-10}
 
@@ -223,7 +223,7 @@
 
 *Intro to Python*
 
-- [Due]{.orange_due}: [Exercise-06](exercises/ex06-figs-w-r.qmd)
+- [Due]{.orange_due}: [Exercise-06](exercises/ex06-figs-w-r.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998422)
 
 ## April 7-11 {- #week-12}
 
