@@ -4666,7 +4666,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#gilmores-view",
     "title": "More on ggplot",
     "section": "Gilmore’s view",
-    "text": "Gilmore’s view\n\n\nThings are much better than they seem\nEspecially if we look at the data\nWe need more data, more widely & publicly available\nPlus skilled interpreters\nKnowledge and skepticism are antidotes pessimism"
+    "text": "Gilmore’s view\n\n\nThings are much better than they seem\nEspecially if we look at the data\nWe need more data, more widely & publicly available\nPlus skilled interpreters (YOU!)\nKnowledge and skepticism (+ action) are antidotes to pessimism"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#gathering-data",
@@ -4855,7 +4855,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement",
     "title": "More on ggplot",
     "section": "Iterative enhancement",
-    "text": "Iterative enhancement\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\")\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\")"
+    "text": "Iterative enhancement\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\")"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement-output",
@@ -4877,5 +4877,89 @@
     "title": "More on ggplot",
     "section": "References",
     "text": "References\n\n\n\n\nDowney, A. (2024). A future of data science. Retrieved March 31, 2025, from https://www.youtube.com/watch?v=YKMZIzYBgTk&list=PL9HYL-VRX0oSFkdF4fJeY63eGDvgofcbn\n\n\nNational Survey of Family Growth. (2024, December 10). Retrieved March 31, 2025, from https://www.cdc.gov/nchs/nsfg/index.htm\n\n\nRosling, H. (n.d.). Hans rosling’s 200 countries, 200 years, 4 minutes - the joy of stats - BBC. Retrieved from https://www.youtube.com/watch?v=jbkSRLYSojo&t=80s"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement-1",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement-1",
+    "title": "More on ggplot",
+    "section": "Iterative enhancement",
+    "text": "Iterative enhancement\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\")"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement-1-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement-1-output",
+    "title": "More on ggplot",
+    "section": "Iterative enhancement",
+    "text": "Iterative enhancement\n\n\n\n\n\n\n\nFigure 8: Distribution of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#new-twist",
+    "title": "More on ggplot",
+    "section": "New twist!",
+    "text": "New twist!\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\") +\n  facet_wrap(~RELIGION)"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-1",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-1",
+    "title": "More on ggplot",
+    "section": "New twist!",
+    "text": "New twist!\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\") +\n  facet_wrap(~RELIGION)"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-1-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-1-output",
+    "title": "More on ggplot",
+    "section": "New twist!",
+    "text": "New twist!\n\n\n\n\n\n\n\nFigure 9: Distribution of NSFG 22-23 ‘AGER’ variable by religion"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-2",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-2",
+    "title": "More on ggplot",
+    "section": "New twist!",
+    "text": "New twist!\nlibrary(dplyr)\nnsfg_22_23 |&gt;\n  mutate(religion = case_match(RELIGION,\n                               1 ~ \"none\",\n                               2 ~ \"catholic\",\n                               3 ~ \"protestant\",\n                               4 ~ \"other\")) |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  #geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\") +\n  facet_wrap(~religion)"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-3",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-3",
+    "title": "More on ggplot",
+    "section": "New twist!",
+    "text": "New twist!\n\nlibrary(dplyr)\nnsfg_22_23 |&gt;\n  mutate(religion = case_match(RELIGION,\n                               1 ~ \"none\",\n                               2 ~ \"catholic\",\n                               3 ~ \"protestant\",\n                               4 ~ \"other\")) |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  #geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\") +\n  facet_wrap(~religion)"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-3-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-3-output",
+    "title": "More on ggplot",
+    "section": "New twist!",
+    "text": "New twist!\n\n\n\n\n\n\n\nFigure 11: Distribution of NSFG 22-23 ‘AGER’ variable by religion"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-2-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-2-output",
+    "title": "More on ggplot",
+    "section": "New twist!",
+    "text": "New twist!\n\n\n\n\n\n\n\nFigure 10: Distribution of NSFG 22-23 ‘AGER’ variable by religion"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-4",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-4",
+    "title": "More on ggplot",
+    "section": "New twist!",
+    "text": "New twist!\n\nlibrary(dplyr)\nnsfg_22_23 |&gt;\n  mutate(religion = case_match(RELIGION,\n                               1 ~ \"none\",\n                               2 ~ \"catholic\",\n                               3 ~ \"protestant\",\n                               4 ~ \"other\")) |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  #geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\") +\n  facet_wrap(~religion)"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-4-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-4-output",
+    "title": "More on ggplot",
+    "section": "New twist!",
+    "text": "New twist!\n\n\n\n\n\n\n\nFigure 11: Distribution of NSFG 22-23 ‘AGER’ variable by religion"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#back-to-the-codebook",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#back-to-the-codebook",
+    "title": "More on ggplot",
+    "section": "Back to the codebook",
+    "text": "Back to the codebook\n\n\nFigure 10: RELIGION code from NSFG codebook"
   }
 ]

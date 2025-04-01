@@ -57,8 +57,8 @@ data_frame |>
 - Things are much better than they seem
 - Especially if we look at the data
 - We need *more* data, more widely & publicly available
-- Plus skilled interpreters
-- Knowledge and skepticism are antidotes pessimism
+- Plus skilled interpreters (YOU!)
+- Knowledge and skepticism (+ action) are antidotes to pessimism
 :::
 
 ---
@@ -300,6 +300,8 @@ nsfg_22_23 |>
   xlab("")
 ```
 
+## Iterative enhancement
+
 ```{r}
 #| label: fig-nsfg-22-23-ager-box-violin-raw-5
 #| fig-cap: "Distribution of NSFG 22-23 'AGER' variable"
@@ -313,6 +315,86 @@ nsfg_22_23 |>
   geom_jitter(width = .15, height = 0, alpha=.1) +
   ylab("Respondent age (years)") +
   xlab("")
+```
+
+## New twist!
+
+```{.r code-line-numbers="9"}
+nsfg_22_23 |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_violin() +
+  geom_boxplot() +
+  geom_jitter(width = .15, height = 0, alpha=.1) +
+  ylab("Respondent age (years)") +
+  xlab("") +
+  facet_wrap(~RELIGION)
+```
+
+## New twist!
+
+```{r}
+#| label: fig-nsfg-22-23-ager-box-violin-raw-facet
+#| fig-cap: "Distribution of NSFG 22-23 'AGER' variable by religion"
+#| echo: true
+#| output-location: slide
+nsfg_22_23 |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_violin() +
+  geom_boxplot() +
+  geom_jitter(width = .15, height = 0, alpha=.1) +
+  ylab("Respondent age (years)") +
+  xlab("") +
+  facet_wrap(~RELIGION)
+```
+
+## Back to the codebook
+
+![RELIGION code from [NSFG codebook](../include/pdf/2022-2023-NSFG-FemRespPUFCodebook.pdf)](../include/img/nsfg-RELIGION-codebook.png){#fig-nsfg-RELIGION-codebook}
+
+## New twist!
+
+```{.r code-line-numbers="1|4-7|12|15"}
+library(dplyr)
+nsfg_22_23 |>
+  mutate(religion = case_match(RELIGION,
+                               1 ~ "none",
+                               2 ~ "catholic",
+                               3 ~ "protestant",
+                               4 ~ "other")) |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_violin() +
+  geom_boxplot() +
+  #geom_jitter(width = .15, height = 0, alpha=.1) +
+  ylab("Respondent age (years)") +
+  xlab("") +
+  facet_wrap(~religion)
+```
+ 
+## New twist!
+
+```{r}
+#| label: fig-nsfg-22-23-ager-box-violin-raw-facet-lbl
+#| fig-cap: "Distribution of NSFG 22-23 'AGER' variable by religion"
+#| echo: true
+#| output-location: slide
+library(dplyr)
+nsfg_22_23 |>
+  mutate(religion = case_match(RELIGION,
+                               1 ~ "none",
+                               2 ~ "catholic",
+                               3 ~ "protestant",
+                               4 ~ "other")) |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_violin() +
+  geom_boxplot() +
+  #geom_jitter(width = .15, height = 0, alpha=.1) +
+  ylab("Respondent age (years)") +
+  xlab("") +
+  facet_wrap(~religion)
 ```
 
 ## Recommended design principles

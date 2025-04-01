@@ -292,8 +292,8 @@ Rick Gilmore
 <li class="fragment">Things are much better than they seem</li>
 <li class="fragment">Especially if we look at the data</li>
 <li class="fragment">We need <em>more</em> data, more widely &amp; publicly available</li>
-<li class="fragment">Plus skilled interpreters</li>
-<li class="fragment">Knowledge and skepticism are antidotes pessimism</li>
+<li class="fragment">Plus skilled interpreters (YOU!)</li>
+<li class="fragment">Knowledge and skepticism (+ action) are antidotes to pessimism</li>
 </ul>
 </div>
 </section>
@@ -800,6 +800,9 @@ Figure&nbsp;7: Distribution of NSFG 22-23 ‘AGER’ variable
 <span id="cb19-6"><a></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> .<span class="dv">15</span>, <span class="at">height =</span> <span class="dv">0</span>, <span class="at">alpha=</span>.<span class="dv">1</span>) <span class="sc">+</span></span>
 <span id="cb19-7"><a></a>  <span class="fu">ylab</span>(<span class="st">"Respondent age (years)"</span>) <span class="sc">+</span></span>
 <span id="cb19-8"><a></a>  <span class="fu">xlab</span>(<span class="st">""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="iterative-enhancement-1" class="slide level2">
+<h2>Iterative enhancement</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>nsfg_22_23 <span class="sc">|&gt;</span></span>
 <span id="cb20-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
@@ -812,7 +815,7 @@ Figure&nbsp;7: Distribution of NSFG 22-23 ‘AGER’ variable
 </div>
 
 </section>
-<section id="iterative-enhancement-output" class="slide level2 output-location-slide"><h2>Iterative enhancement</h2><div class="cell output-location-slide">
+<section id="iterative-enhancement-1-output" class="slide level2 output-location-slide"><h2>Iterative enhancement</h2><div class="cell output-location-slide">
 <div class="cell-output-display">
 <div id="fig-nsfg-22-23-ager-box-violin-raw-5" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-fig">
@@ -821,6 +824,104 @@ Figure&nbsp;7: Distribution of NSFG 22-23 ‘AGER’ variable
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nsfg-22-23-ager-box-violin-raw-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;8: Distribution of NSFG 22-23 ‘AGER’ variable
+</figcaption>
+</figure>
+</div>
+</div>
+</div></section><section id="new-twist" class="slide level2">
+<h2>New twist!</h2>
+<div class="sourceCode" id="cb21" data-code-line-numbers="9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>nsfg_22_23 <span class="sc">|&gt;</span></span>
+<span id="cb21-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb21-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">y =</span> AGER) <span class="sc">+</span></span>
+<span id="cb21-4"><a></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
+<span id="cb21-5"><a></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb21-6"><a></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> .<span class="dv">15</span>, <span class="at">height =</span> <span class="dv">0</span>, <span class="at">alpha=</span>.<span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb21-7"><a></a>  <span class="fu">ylab</span>(<span class="st">"Respondent age (years)"</span>) <span class="sc">+</span></span>
+<span id="cb21-8"><a></a>  <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb21-9"><a></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>RELIGION)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="new-twist-1" class="slide level2">
+<h2>New twist!</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>nsfg_22_23 <span class="sc">|&gt;</span></span>
+<span id="cb22-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb22-3"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">y =</span> AGER) <span class="sc">+</span></span>
+<span id="cb22-4"><a></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
+<span id="cb22-5"><a></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb22-6"><a></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> .<span class="dv">15</span>, <span class="at">height =</span> <span class="dv">0</span>, <span class="at">alpha=</span>.<span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb22-7"><a></a>  <span class="fu">ylab</span>(<span class="st">"Respondent age (years)"</span>) <span class="sc">+</span></span>
+<span id="cb22-8"><a></a>  <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb22-9"><a></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>RELIGION)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+</section>
+<section id="new-twist-1-output" class="slide level2 output-location-slide"><h2>New twist!</h2><div class="cell output-location-slide">
+<div class="cell-output-display">
+<div id="fig-nsfg-22-23-ager-box-violin-raw-facet" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-nsfg-22-23-ager-box-violin-raw-facet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="../include/fig/fig-nsfg-22-23-ager-box-violin-raw-facet-1.png" width="960">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nsfg-22-23-ager-box-violin-raw-facet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Distribution of NSFG 22-23 ‘AGER’ variable by religion
+</figcaption>
+</figure>
+</div>
+</div>
+</div></section><section id="back-to-the-codebook" class="slide level2">
+<h2>Back to the codebook</h2>
+
+<img data-src="../include/img/nsfg-RELIGION-codebook.png" class="r-stretch quarto-figure-center" id="fig-nsfg-RELIGION-codebook"><p class="caption">
+Figure&nbsp;10: RELIGION code from <a href="../include/pdf/2022-2023-NSFG-FemRespPUFCodebook.pdf">NSFG codebook</a>
+</p></section>
+<section id="new-twist-2" class="slide level2">
+<h2>New twist!</h2>
+<div class="sourceCode" id="cb23" data-code-line-numbers="1|4-7|12|15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb23-2"><a></a>nsfg_22_23 <span class="sc">|&gt;</span></span>
+<span id="cb23-3"><a></a>  <span class="fu">mutate</span>(<span class="at">religion =</span> <span class="fu">case_match</span>(RELIGION,</span>
+<span id="cb23-4"><a></a>                               <span class="dv">1</span> <span class="sc">~</span> <span class="st">"none"</span>,</span>
+<span id="cb23-5"><a></a>                               <span class="dv">2</span> <span class="sc">~</span> <span class="st">"catholic"</span>,</span>
+<span id="cb23-6"><a></a>                               <span class="dv">3</span> <span class="sc">~</span> <span class="st">"protestant"</span>,</span>
+<span id="cb23-7"><a></a>                               <span class="dv">4</span> <span class="sc">~</span> <span class="st">"other"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb23-8"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb23-9"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">y =</span> AGER) <span class="sc">+</span></span>
+<span id="cb23-10"><a></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
+<span id="cb23-11"><a></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb23-12"><a></a>  <span class="co">#geom_jitter(width = .15, height = 0, alpha=.1) +</span></span>
+<span id="cb23-13"><a></a>  <span class="fu">ylab</span>(<span class="st">"Respondent age (years)"</span>) <span class="sc">+</span></span>
+<span id="cb23-14"><a></a>  <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb23-15"><a></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>religion)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="new-twist-3" class="slide level2">
+<h2>New twist!</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb24-2"><a></a>nsfg_22_23 <span class="sc">|&gt;</span></span>
+<span id="cb24-3"><a></a>  <span class="fu">mutate</span>(<span class="at">religion =</span> <span class="fu">case_match</span>(RELIGION,</span>
+<span id="cb24-4"><a></a>                               <span class="dv">1</span> <span class="sc">~</span> <span class="st">"none"</span>,</span>
+<span id="cb24-5"><a></a>                               <span class="dv">2</span> <span class="sc">~</span> <span class="st">"catholic"</span>,</span>
+<span id="cb24-6"><a></a>                               <span class="dv">3</span> <span class="sc">~</span> <span class="st">"protestant"</span>,</span>
+<span id="cb24-7"><a></a>                               <span class="dv">4</span> <span class="sc">~</span> <span class="st">"other"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb24-8"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb24-9"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">y =</span> AGER) <span class="sc">+</span></span>
+<span id="cb24-10"><a></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
+<span id="cb24-11"><a></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb24-12"><a></a>  <span class="co">#geom_jitter(width = .15, height = 0, alpha=.1) +</span></span>
+<span id="cb24-13"><a></a>  <span class="fu">ylab</span>(<span class="st">"Respondent age (years)"</span>) <span class="sc">+</span></span>
+<span id="cb24-14"><a></a>  <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb24-15"><a></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>religion)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+</section>
+<section id="new-twist-3-output" class="slide level2 output-location-slide"><h2>New twist!</h2><div class="cell output-location-slide">
+<div class="cell-output-display">
+<div id="fig-nsfg-22-23-ager-box-violin-raw-facet-lbl" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-nsfg-22-23-ager-box-violin-raw-facet-lbl-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="../include/fig/fig-nsfg-22-23-ager-box-violin-raw-facet-lbl-1.png" width="960">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nsfg-22-23-ager-box-violin-raw-facet-lbl-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11: Distribution of NSFG 22-23 ‘AGER’ variable by religion
 </figcaption>
 </figure>
 </div>

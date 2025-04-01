@@ -1,0 +1,18 @@
+---
+title: "Feedback on Exercise 03"
+format: html
+---
+
+## About
+
+This page provides some general comments about the write-ups submitted for [Exercise 03](../exercises/ex03-making-data.qmd).
+
+Please take these observations to heart and implement them in future assignments.
+
+## Observations
+
+1. The strongest papers included references to support specific points. It is *always* better to provide evidence if that evidence is available. If no external sources were used and you rely on your own opinions, please clarify this explicitly.
+
+2. The strongest papers provided complete background and context to support and support specific arguments.
+
+3. Unless the assignment specifies a different output format, adhere to the APA submission format closely, including a title page and references page.
