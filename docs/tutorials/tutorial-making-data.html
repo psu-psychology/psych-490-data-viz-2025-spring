@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-03-24">
+<meta name="dcterms.date" content="2025-04-01">
 
 <title>Making and visualizing data – PSYCH 490 • Spr 25</title>
 <style>
@@ -192,6 +192,10 @@ div.csl-indent {
  <span class="dropdown-text">Exercise 05</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../exercises/ex06-figs-w-r.html">
+ <span class="dropdown-text">Exercise 06</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../exercises/final-project.html">
  <span class="dropdown-text">Final Project</span></a>
   </li>  
@@ -246,6 +250,10 @@ div.csl-indent {
  <span class="dropdown-text">Deep dive on Exercise 03</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../supplemntal/ex03-feedback.qmd">
+ <span class="dropdown-text"></span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../supplemental/gestalt-in-the-wild.html">
  <span class="dropdown-text">Gestalt in the wild</span></a>
   </li>  
@@ -261,8 +269,8 @@ div.csl-indent {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="4b44cb453621268ae073df28df6860b7" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>Keep working on DataCamp; Try posit.cloud.</p>
+  <div id="quarto-announcement" data-announcement-id="c44d59c5749bed7af0f82a9598189541" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><a href="exercises/ex06-figs-w-r.qmd">Exercise 06</a> due Thursday.</p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
@@ -310,7 +318,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 24, 2025</p>
+      <p class="date">April 1, 2025</p>
     </div>
   </div>
   
@@ -380,31 +388,31 @@ Your turn
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>our_color_sample</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
-<pre><code>  [1] "orange" "violet" "black"  "violet" "cyan"   "gray"   "blue"   "yellow"
-  [9] "white"  "red"    "cyan"   "blue"   "orange" "white"  "red"    "cyan"  
- [17] "gray"   "black"  "violet" "white"  "gray"   "red"    "red"    "gray"  
- [25] "blue"   "red"    "red"    "orange" "orange" "orange" "blue"   "orange"
- [33] "yellow" "yellow" "green"  "green"  "cyan"   "black"  "violet" "gray"  
- [41] "white"  "white"  "yellow" "yellow" "white"  "gray"   "green"  "green" 
- [49] "blue"   "white"  "violet" "cyan"   "yellow" "red"    "violet" "yellow"
- [57] "black"  "violet" "orange" "black"  "black"  "red"    "cyan"   "gray"  
- [65] "gray"   "red"    "black"  "yellow" "white"  "green"  "green"  "violet"
- [73] "yellow" "blue"   "red"    "green"  "green"  "orange" "blue"   "orange"
- [81] "red"    "orange" "white"  "violet" "green"  "orange" "red"    "yellow"
- [89] "orange" "red"    "blue"   "green"  "yellow" "blue"   "yellow" "cyan"  
- [97] "red"    "red"    "yellow" "red"    "cyan"   "white"  "green"  "blue"  
-[105] "white"  "cyan"   "green"  "green"  "violet" "green"  "orange" "white" 
-[113] "violet" "black"  "orange" "white"  "black"  "orange" "red"    "green" 
-[121] "orange" "cyan"   "black"  "cyan"   "blue"   "red"    "black"  "green" 
-[129] "red"    "gray"   "yellow" "green"  "green"  "cyan"   "yellow" "yellow"
-[137] "cyan"   "yellow" "gray"   "orange" "white"  "black"  "white"  "green" 
-[145] "orange" "yellow" "yellow" "black"  "white"  "gray"   "violet" "gray"  
-[153] "black"  "violet" "green"  "blue"   "orange" "blue"   "red"    "cyan"  
-[161] "red"    "orange" "white"  "violet" "white"  "blue"   "red"    "violet"
-[169] "gray"   "gray"   "gray"   "yellow" "violet" "black"  "red"    "green" 
-[177] "cyan"   "white"  "white"  "yellow" "violet" "blue"   "gray"   "cyan"  
-[185] "cyan"   "green"  "white"  "black"  "white"  "black"  "green"  "gray"  
-[193] "orange" "green"  "gray"   "cyan"   "cyan"   "orange" "white"  "red"   </code></pre>
+<pre><code>  [1] "green"  "green"  "violet" "cyan"   "blue"   "gray"   "orange" "gray"  
+  [9] "white"  "red"    "orange" "orange" "yellow" "white"  "gray"   "blue"  
+ [17] "yellow" "yellow" "red"    "green"  "red"    "cyan"   "blue"   "white" 
+ [25] "green"  "cyan"   "blue"   "orange" "gray"   "yellow" "gray"   "yellow"
+ [33] "orange" "cyan"   "red"    "white"  "gray"   "orange" "violet" "black" 
+ [41] "green"  "violet" "orange" "yellow" "red"    "black"  "blue"   "cyan"  
+ [49] "black"  "green"  "yellow" "cyan"   "black"  "cyan"   "blue"   "cyan"  
+ [57] "orange" "orange" "green"  "cyan"   "orange" "blue"   "violet" "gray"  
+ [65] "black"  "violet" "violet" "black"  "black"  "black"  "cyan"   "gray"  
+ [73] "yellow" "yellow" "violet" "yellow" "red"    "gray"   "violet" "gray"  
+ [81] "orange" "black"  "green"  "green"  "green"  "violet" "cyan"   "orange"
+ [89] "yellow" "white"  "orange" "orange" "gray"   "green"  "blue"   "black" 
+ [97] "black"  "white"  "violet" "blue"   "cyan"   "yellow" "white"  "yellow"
+[105] "white"  "white"  "blue"   "cyan"   "red"    "green"  "white"  "blue"  
+[113] "gray"   "green"  "violet" "black"  "gray"   "white"  "blue"   "orange"
+[121] "black"  "cyan"   "green"  "yellow" "violet" "yellow" "white"  "yellow"
+[129] "cyan"   "violet" "violet" "blue"   "black"  "black"  "blue"   "orange"
+[137] "violet" "cyan"   "yellow" "red"    "gray"   "gray"   "violet" "cyan"  
+[145] "green"  "green"  "green"  "green"  "orange" "violet" "orange" "orange"
+[153] "black"  "green"  "orange" "black"  "black"  "orange" "gray"   "cyan"  
+[161] "yellow" "orange" "black"  "violet" "black"  "cyan"   "violet" "yellow"
+[169] "violet" "cyan"   "white"  "green"  "blue"   "black"  "yellow" "blue"  
+[177] "red"    "red"    "white"  "gray"   "orange" "cyan"   "white"  "violet"
+[185] "orange" "cyan"   "black"  "blue"   "orange" "cyan"   "green"  "cyan"  
+[193] "blue"   "violet" "white"  "blue"   "white"  "violet" "orange" "blue"  </code></pre>
 </div>
 </div>
 <p>On its own, that’s not especially easy to visualize. What if we sorted it?</p>
@@ -416,27 +424,27 @@ Your turn
 <div class="cell-output cell-output-stdout">
 <pre><code>  [1] "black"  "black"  "black"  "black"  "black"  "black"  "black"  "black" 
   [9] "black"  "black"  "black"  "black"  "black"  "black"  "black"  "black" 
- [17] "black"  "blue"   "blue"   "blue"   "blue"   "blue"   "blue"   "blue"  
+ [17] "black"  "black"  "black"  "black"  "black"  "black"  "blue"   "blue"  
  [25] "blue"   "blue"   "blue"   "blue"   "blue"   "blue"   "blue"   "blue"  
- [33] "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"  
- [41] "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"  
- [49] "cyan"   "cyan"   "cyan"   "gray"   "gray"   "gray"   "gray"   "gray"  
- [57] "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"  
- [65] "gray"   "gray"   "gray"   "gray"   "gray"   "green"  "green"  "green" 
- [73] "green"  "green"  "green"  "green"  "green"  "green"  "green"  "green" 
- [81] "green"  "green"  "green"  "green"  "green"  "green"  "green"  "green" 
- [89] "green"  "green"  "green"  "green"  "green"  "orange" "orange" "orange"
- [97] "orange" "orange" "orange" "orange" "orange" "orange" "orange" "orange"
+ [33] "blue"   "blue"   "blue"   "blue"   "blue"   "blue"   "blue"   "blue"  
+ [41] "blue"   "blue"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"  
+ [49] "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"  
+ [57] "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"   "cyan"  
+ [65] "cyan"   "cyan"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"  
+ [73] "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"   "gray"  
+ [81] "gray"   "gray"   "gray"   "green"  "green"  "green"  "green"  "green" 
+ [89] "green"  "green"  "green"  "green"  "green"  "green"  "green"  "green" 
+ [97] "green"  "green"  "green"  "green"  "green"  "green"  "green"  "green" 
 [105] "orange" "orange" "orange" "orange" "orange" "orange" "orange" "orange"
-[113] "orange" "orange" "orange" "red"    "red"    "red"    "red"    "red"   
-[121] "red"    "red"    "red"    "red"    "red"    "red"    "red"    "red"   
-[129] "red"    "red"    "red"    "red"    "red"    "red"    "red"    "red"   
-[137] "red"    "red"    "red"    "violet" "violet" "violet" "violet" "violet"
+[113] "orange" "orange" "orange" "orange" "orange" "orange" "orange" "orange"
+[121] "orange" "orange" "orange" "orange" "orange" "orange" "orange" "orange"
+[129] "orange" "orange" "red"    "red"    "red"    "red"    "red"    "red"   
+[137] "red"    "red"    "red"    "red"    "violet" "violet" "violet" "violet"
 [145] "violet" "violet" "violet" "violet" "violet" "violet" "violet" "violet"
-[153] "violet" "violet" "violet" "violet" "white"  "white"  "white"  "white" 
-[161] "white"  "white"  "white"  "white"  "white"  "white"  "white"  "white" 
+[153] "violet" "violet" "violet" "violet" "violet" "violet" "violet" "violet"
+[161] "violet" "violet" "violet" "white"  "white"  "white"  "white"  "white" 
 [169] "white"  "white"  "white"  "white"  "white"  "white"  "white"  "white" 
-[177] "white"  "white"  "white"  "yellow" "yellow" "yellow" "yellow" "yellow"
+[177] "white"  "white"  "white"  "white"  "yellow" "yellow" "yellow" "yellow"
 [185] "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow"
 [193] "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow" "yellow"</code></pre>
 </div>
@@ -477,7 +485,7 @@ Your turn
 <div class="cell-output cell-output-stdout">
 <pre><code>favorite_color
  black   blue   cyan   gray  green orange    red violet  white yellow 
-    17     15     19     18     24     22     24     17     23     21 </code></pre>
+    22     20     24     17     21     26     10     23     17     20 </code></pre>
 </div>
 </div>
 </section>

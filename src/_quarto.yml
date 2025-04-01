@@ -50,7 +50,7 @@ website:
         - href: supplemental/psych-sci-figs.qmd
         - href: supplemental/other-field-figs.qmd
         - href: supplemental/ex03-deep-dive.qmd
-        - href: supplemntal/ex03-feedback.qmd
+        - href: supplemental/ex03-feedback.qmd
         - href: supplemental/gestalt-in-the-wild.qmd
       - text: Meta
         href: meta.qmd
