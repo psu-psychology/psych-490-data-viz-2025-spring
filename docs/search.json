@@ -25,7 +25,7 @@
     "href": "supplemental/psych-sci-figs.html#preparation",
     "title": "Findings: Data viz in psych sci",
     "section": "Preparation",
-    "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using.\n\n\n\n\n\n\nImportant\n\n\n\nThe code uses the quietly() function from the purrr package to suppress most of the feedback.\n\n\n\n\nCode\nlibrary('ggplot2')\nlibrary('dplyr')\n\nr_functions &lt;- list.files(file.path(here::here(), \"src\", \"R\"), \"\\\\.R$\", full.names = TRUE)\n\npurrr::map(r_functions, source) |&gt;\n  purrr::quietly()\n\n\nfunction (...) \ncapture_output(.f(...))\n&lt;bytecode: 0x10faa9120&gt;\n&lt;environment: 0x10faa9430&gt;"
+    "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using.\n\n\n\n\n\n\nImportant\n\n\n\nThe code uses the quietly() function from the purrr package to suppress most of the feedback.\n\n\n\n\nCode\nlibrary('ggplot2')\nlibrary('dplyr')\n\nr_functions &lt;- list.files(file.path(here::here(), \"src\", \"R\"), \"\\\\.R$\", full.names = TRUE)\n\npurrr::map(r_functions, source) |&gt;\n  purrr::quietly()\n\n\nvirtualenv: myenv\nUsing virtual environment 'myenv' ...\n\n\nfunction (...) \ncapture_output(.f(...))\n&lt;bytecode: 0x111edc320&gt;\n&lt;environment: 0x111ed86e8&gt;"
   },
   {
     "objectID": "supplemental/psych-sci-figs.html#gathering",
@@ -207,7 +207,7 @@
     "href": "exercises/ex07-figs-w-python.html",
     "title": "Exercise 07",
     "section": "",
-    "text": "Work in progress\n\n\n\nThis page is under construction."
+    "text": "Work in progress\n\n\n\nThis page is under construction.\nIt may change before the assignment is released to class."
   },
   {
     "objectID": "exercises/ex07-figs-w-python.html#dates",
@@ -229,6 +229,20 @@
     "title": "Exercise 07",
     "section": "Assignment",
     "text": "Assignment"
+  },
+  {
+    "objectID": "exercises/ex07-figs-w-python.html#set-up",
+    "href": "exercises/ex07-figs-w-python.html#set-up",
+    "title": "Exercise 07",
+    "section": "Set-up",
+    "text": "Set-up\nFor reasons not especially worth explaning here, we have to use R to configure Python for making figures using posit.cloud.\n\n\nCode\nlibrary(reticulate)\npy_require(c(\"pandas\", \"matplotlib\", \"numpy\"))\n\n\nPython calls groups of functions libraries. These are analogous to packages in R.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n\n\n\n\n\n\n\nNote\n\n\n\nIn Python, we use the import command.\nWe create ‘nicknames’ for the packages so that we can refer to them using an easy-to-type shorthand. The nicknames are the short names: … import pandas as pd, means import the ‘pandas’ library and give it the shortname of ‘pd’."
+  },
+  {
+    "objectID": "exercises/ex07-figs-w-python.html#nfsg-data",
+    "href": "exercises/ex07-figs-w-python.html#nfsg-data",
+    "title": "Exercise 07",
+    "section": "NFSG data",
+    "text": "NFSG data\n\nGather\nWe’ll make plots of some of NSFG data we discussed in class on 2025-04-01.\n\n\n\n\n\n\nNote\n\n\n\nThe data file has been saved under csv/\n\n\nThe pandas library (shortname in our code pd) handles the creation and manipulation of data frames. That includes importing comma-separated value (CSV) files.\n\n\nCode\nnsfg = pd.read_csv('../include/csv/NSFG_2022_2023_FemPregPUFData.csv')\n\n\nWe confirm that this worked by checking the data types in nsfg:\n\n\nCode\nnsfg.dtypes\n\n\nCaseID           int64\nPREGORDR         int64\nFTFMODE          int64\nBORNALIV       float64\nRECNT5YRPRG    float64\n                ...   \nCMJAN3YR         int64\nCMJAN4YR         int64\nCMJAN5YR         int64\nYEAR             int64\nQUARTER          int64\nLength: 111, dtype: object\n\n\nThis is similar to running the str() function on an R data frame.\n\n\n\n\n\n\nPython methods\n\n\n\nObjects in Python have specialized functions that can be used with them using a simple ‘dot’ syntax. So nsfg.dtypes means ‘run the data types function on the nsfg data frame.’ These specialized functions are called ‘methods.’\n\n\n\n\nCode\nnsfg.shape\n\n\n(8247, 111)\n\n\nThe shape method is similar to the dim() function in R. What do the two numbers mean?\n\n\nPlot\nSince we used the pandas library to import our data frame, we can use one of the built-in methods that apply to data frames to plot a histogram. Here, we create a histogram by calling the hist() method on the nsfg data frame and by specifying the column AGER, the age of the responding participant.\n\n\nCode\nnsfg.hist(column = \"AGER\")\n\n\narray([[&lt;Axes: title={'center': 'AGER'}&gt;]], dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\nNow, let’s customize the plot by changing some parameters in the hist() method. Add change the number of bins to some larger number like 20, 25, or 30 (the default is 10), by changing LARGE_NUMBER to a number.\n\n\nCode\nLARGE_NUMBER = 35\nnsfg.hist(column = \"AGER\", bins = LARGE_NUMBER)\n\n\narray([[&lt;Axes: title={'center': 'AGER'}&gt;]], dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\nNow, try a smaller value, less than 10. Change the code below to try this.\n\n\nCode\nSMALLER_NUMBER = 5\nnsfg.hist(column = \"AGER\", bins = SMALLER_NUMBER)\n\n\narray([[&lt;Axes: title={'center': 'AGER'}&gt;]], dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\nWhat do you notice?\nLet’s look at the histograms by RELIGION, like we did in class on 2025-04-01.\n\n\nCode\nnsfg.hist(column = 'AGER', by = 'RELIGION')\n\n\narray([[&lt;Axes: title={'center': '1'}&gt;, &lt;Axes: title={'center': '2'}&gt;],\n       [&lt;Axes: title={'center': '3'}&gt;, &lt;Axes: title={'center': '4'}&gt;]],\n      dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\nModify the code below to create a set of histograms by some other variable that you choose (change VARIABLE_YOU_CHOOSE in the code below.) Make sure to look at the codebook to make sure that the variable you choose makes sense.\n\n\n\n\n\n\nWarning\n\n\n\nMake sure to put the variable you choose in quotations.\n\n\n\n\nCode\nVARIABLE_YOU_CHOOSE = 'BABYSEX'\nnsfg.hist(column = 'AGER', by = VARIABLE_YOU_CHOOSE)\n\n\narray([[&lt;Axes: title={'center': '1.0'}&gt;, &lt;Axes: title={'center': '2.0'}&gt;],\n       [&lt;Axes: title={'center': '8.0'}&gt;, &lt;Axes: title={'center': '9.0'}&gt;]],\n      dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\nFinally, experiment with changing some of the default parameters like grid (values can be True or False), xrot (rotation of x axis labels) or yrot (rotation of y axis labels).\n\n\nCode\nMY_XROT = 0\nnsfg.hist(column = 'AGER', by = 'RELIGION', xrot = MY_XROT)\n\n\narray([[&lt;Axes: title={'center': '1'}&gt;, &lt;Axes: title={'center': '2'}&gt;],\n       [&lt;Axes: title={'center': '3'}&gt;, &lt;Axes: title={'center': '4'}&gt;]],\n      dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nPlot other"
   },
   {
     "objectID": "exercises/ex07-figs-w-python.html#submit",
@@ -434,46 +448,18 @@
     "text": "Respondent age (AGER)\n\n\n\n\n\n\n\nFigure 1: Histogram of NSFG 22-23 ‘AGER’ variable"
   },
   {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v2",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v2",
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin",
     "title": "More on ggplot",
-    "section": "Respondent age (AGER): v2",
-    "text": "Respondent age (AGER): v2\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()"
+    "section": "Respondent age (AGER): Violin",
+    "text": "Respondent age (AGER): Violin\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = AGER) +\n  geom_violin()"
   },
   {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v2-1",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v2-1",
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-1",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-1",
     "title": "More on ggplot",
-    "section": "Respondent age (AGER): v2",
-    "text": "Respondent age (AGER): v2\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()"
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v2-1-output",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v2-1-output",
-    "title": "More on ggplot",
-    "section": "Respondent age (AGER): v2",
-    "text": "Respondent age (AGER): v2\n\n\n\n\n\n\n\nFigure 2: Violin plot of NSFG 22-23 ‘AGER’ variable"
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v3",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v3",
-    "title": "More on ggplot",
-    "section": "Respondent age (AGER): v3",
-    "text": "Respondent age (AGER): v3\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot()"
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v3-1",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v3-1",
-    "title": "More on ggplot",
-    "section": "Respondent age (AGER): v3",
-    "text": "Respondent age (AGER): v3\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot()"
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v3-1-output",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-v3-1-output",
-    "title": "More on ggplot",
-    "section": "Respondent age (AGER): v3",
-    "text": "Respondent age (AGER): v3\n\n\n\n\n\n\n\nFigure 3: Boxplot of NSFG 22-23 ‘AGER’ variable"
+    "section": "Respondent age (AGER): Violin",
+    "text": "Respondent age (AGER): Violin\n\n\nFigure 2: Error message when I tried to execute this code."
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#need-help",
@@ -481,6 +467,48 @@
     "title": "More on ggplot",
     "section": "Need help?",
     "text": "Need help?\n\nOverall: https://ggplot2.tidyverse.org\nOn geoms? https://ggplot2.tidyverse.org/reference/index.html#geoms"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-2",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-2",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Violin",
+    "text": "Respondent age (AGER): Violin\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-3",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-3",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Violin",
+    "text": "Respondent age (AGER): Violin\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-3-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-3-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Violin",
+    "text": "Respondent age (AGER): Violin\n\n\n\n\n\n\n\nFigure 3: Violin plot of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Boxplot",
+    "text": "Respondent age (AGER): Boxplot\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot-1",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot-1",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Boxplot",
+    "text": "Respondent age (AGER): Boxplot\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot-1-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot-1-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Boxplot",
+    "text": "Respondent age (AGER): Boxplot\n\n\n\n\n\n\n\nFigure 4: Boxplot of NSFG 22-23 ‘AGER’ variable"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite",
@@ -567,6 +595,27 @@
     "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 8: Distribution of NSFG 22-23 ‘AGER’ variable"
   },
   {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-8",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-8",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot() +\n  geom_violin() +\n  geom_jitter(width = .15, height = 0, alpha=.1)\n\nBoxplot first, then violin"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-9",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-9",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot() +\n  geom_violin() +\n  geom_jitter(width = .15, height = 0, alpha=.1)"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-9-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-9-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 9: Distribution of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement",
     "href": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement",
     "title": "More on ggplot",
@@ -609,11 +658,11 @@
     "text": "New twist!\n\n\n\n\n\n\n\nFigure 11: Distribution of NSFG 22-23 ‘AGER’ variable by ‘RELIGION’"
   },
   {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#back-to-the-codebook",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#back-to-the-codebook",
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#what-do-the-numbers-mean",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#what-do-the-numbers-mean",
     "title": "More on ggplot",
-    "section": "Back to the codebook",
-    "text": "Back to the codebook\n\n\nFigure 12: RELIGION code from NSFG codebook"
+    "section": "What do the numbers mean?",
+    "text": "What do the numbers mean?\n\nBack to the codebook\n\n\n\nFigure 12: RELIGION code from NSFG codebook"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-2",
@@ -2111,14 +2160,14 @@
     "href": "tutorials/tutorial-python-matplotlib.html",
     "title": "Plotting in Python",
     "section": "",
-    "text": "Note\n\n\n\nFigures don’t seem to be cross-referencing across documents. Let’s see if they work within documents.\nDoes the link to Figure 1 work?\nHow about Figure 2?\nApparently so.\nOkay, so do the ggplot2 figures work in this document? Specifically, does the reference to ?@fig-dual-boxplots-diff-ggplot2 work?\nNo. So, the issue is cross-document figure references."
+    "text": "This page provides a very basic introduction to Python and the matplotlib plotting library."
   },
   {
     "objectID": "tutorials/tutorial-python-matplotlib.html#about",
     "href": "tutorials/tutorial-python-matplotlib.html#about",
     "title": "Plotting in Python",
-    "section": "About",
-    "text": "About\nThis page provides a very basic introduction to Python and the matplotlib plotting library."
+    "section": "",
+    "text": "This page provides a very basic introduction to Python and the matplotlib plotting library."
   },
   {
     "objectID": "tutorials/tutorial-python-matplotlib.html#why-python",
@@ -2489,7 +2538,7 @@
     "href": "tutorials/tutorial-making-data.html#nominal-data",
     "title": "Making and visualizing data",
     "section": "Nominal data",
-    "text": "Nominal data\nLet’s focus on nominal or categorical data, specifically the favorite colors of some imaginary set of people.\n\n\nCode\n# Make an array of color names\ncolors &lt;- c(\"red\", \"orange\", \"yellow\", \"green\", \"cyan\", \"blue\", \"violet\", \"white\", \"black\", \"gray\")\n\n\nThere are n=10 colors in this set.\n\n\n\n\n\n\nYour turn\n\n\n\nWhy are these data nominal or nominally scaled? Or rather, why aren’t they ordinal, interval, or ratio?\n\n\n\nGenerating\nFor demonstration purposes, we want to take some number of random samples of these colors. Let’s pick n=200 and sample with replacement (replace=TRUE in the code below), meaning that we could have any number of colors in our sample of 200 imaginary people.\n\n\nCode\n# Use `sample()` to pick a random sample of these *with* replacement so that \n# the numbers/color differ.\nour_color_sample &lt;- sample(colors, size=200, replace=TRUE)\nour_color_sample\n\n\n  [1] \"green\"  \"green\"  \"violet\" \"cyan\"   \"blue\"   \"gray\"   \"orange\" \"gray\"  \n  [9] \"white\"  \"red\"    \"orange\" \"orange\" \"yellow\" \"white\"  \"gray\"   \"blue\"  \n [17] \"yellow\" \"yellow\" \"red\"    \"green\"  \"red\"    \"cyan\"   \"blue\"   \"white\" \n [25] \"green\"  \"cyan\"   \"blue\"   \"orange\" \"gray\"   \"yellow\" \"gray\"   \"yellow\"\n [33] \"orange\" \"cyan\"   \"red\"    \"white\"  \"gray\"   \"orange\" \"violet\" \"black\" \n [41] \"green\"  \"violet\" \"orange\" \"yellow\" \"red\"    \"black\"  \"blue\"   \"cyan\"  \n [49] \"black\"  \"green\"  \"yellow\" \"cyan\"   \"black\"  \"cyan\"   \"blue\"   \"cyan\"  \n [57] \"orange\" \"orange\" \"green\"  \"cyan\"   \"orange\" \"blue\"   \"violet\" \"gray\"  \n [65] \"black\"  \"violet\" \"violet\" \"black\"  \"black\"  \"black\"  \"cyan\"   \"gray\"  \n [73] \"yellow\" \"yellow\" \"violet\" \"yellow\" \"red\"    \"gray\"   \"violet\" \"gray\"  \n [81] \"orange\" \"black\"  \"green\"  \"green\"  \"green\"  \"violet\" \"cyan\"   \"orange\"\n [89] \"yellow\" \"white\"  \"orange\" \"orange\" \"gray\"   \"green\"  \"blue\"   \"black\" \n [97] \"black\"  \"white\"  \"violet\" \"blue\"   \"cyan\"   \"yellow\" \"white\"  \"yellow\"\n[105] \"white\"  \"white\"  \"blue\"   \"cyan\"   \"red\"    \"green\"  \"white\"  \"blue\"  \n[113] \"gray\"   \"green\"  \"violet\" \"black\"  \"gray\"   \"white\"  \"blue\"   \"orange\"\n[121] \"black\"  \"cyan\"   \"green\"  \"yellow\" \"violet\" \"yellow\" \"white\"  \"yellow\"\n[129] \"cyan\"   \"violet\" \"violet\" \"blue\"   \"black\"  \"black\"  \"blue\"   \"orange\"\n[137] \"violet\" \"cyan\"   \"yellow\" \"red\"    \"gray\"   \"gray\"   \"violet\" \"cyan\"  \n[145] \"green\"  \"green\"  \"green\"  \"green\"  \"orange\" \"violet\" \"orange\" \"orange\"\n[153] \"black\"  \"green\"  \"orange\" \"black\"  \"black\"  \"orange\" \"gray\"   \"cyan\"  \n[161] \"yellow\" \"orange\" \"black\"  \"violet\" \"black\"  \"cyan\"   \"violet\" \"yellow\"\n[169] \"violet\" \"cyan\"   \"white\"  \"green\"  \"blue\"   \"black\"  \"yellow\" \"blue\"  \n[177] \"red\"    \"red\"    \"white\"  \"gray\"   \"orange\" \"cyan\"   \"white\"  \"violet\"\n[185] \"orange\" \"cyan\"   \"black\"  \"blue\"   \"orange\" \"cyan\"   \"green\"  \"cyan\"  \n[193] \"blue\"   \"violet\" \"white\"  \"blue\"   \"white\"  \"violet\" \"orange\" \"blue\"  \n\n\nOn its own, that’s not especially easy to visualize. What if we sorted it?\n\n\nCode\nsort(our_color_sample)\n\n\n  [1] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n  [9] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n [17] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"blue\"   \"blue\"  \n [25] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [33] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [41] \"blue\"   \"blue\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [49] \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [57] \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [65] \"cyan\"   \"cyan\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [73] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [81] \"gray\"   \"gray\"   \"gray\"   \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [89] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [97] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n[105] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[113] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[121] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[129] \"orange\" \"orange\" \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[137] \"red\"    \"red\"    \"red\"    \"red\"    \"violet\" \"violet\" \"violet\" \"violet\"\n[145] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[153] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[161] \"violet\" \"violet\" \"violet\" \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[169] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[177] \"white\"  \"white\"  \"white\"  \"white\"  \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n[185] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n[193] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n\n\nStill not all that helpful.\n\n\nSummarizing\nWhat can we say to summarize categorical data?\nWe can report the number of total responses.\n\n\nCode\nlength(our_color_sample)\n\n\n[1] 200\n\n\nWe can report the number of unique categories.\n\n\nCode\nlength(unique(our_color_sample))\n\n\n[1] 10\n\n\nWe can report the number of responses per category.\n\n\nCode\ncolors_df &lt;- data.frame(favorite_color = our_color_sample)\n\nxtabs(formula = ~favorite_color, data = colors_df)\n\n\nfavorite_color\n black   blue   cyan   gray  green orange    red violet  white yellow \n    22     20     24     17     21     26     10     23     17     20 \n\n\n\n\nVisualizing\nSingle nominal variables don’t offer us many options for visualization. A bar plot showing the number of observations in each category seems to be it.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color) +\n  geom_bar(stat = \"count\")\n\n\n\n\n\n\n\n\nFigure 1: A black and white barplot of the random favorite color data\n\n\n\n\n\nWe can also add colors to the bars.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  geom_bar() +\n  scale_discrete_manual(aesthetics = c(\"color\", \"fill\"),\n                        values = sort(colors))\n\n\n\n\n\n\n\n\nFigure 2: A colorful barplot of the random favorite color data\n\n\n\n\n\nWe can think of this as mapping the name of the color category in our data to the way that category is represented in our figure.\nWe can flip the axis just for fun. Which is more readable?\n\nHorizontal barplot\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar() +\n  coord_flip()\n\n\n\n\n\n\n\n\nFigure 3: A colorful horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nBar/column with textures\nSometimes we don’t want to use color to distinguish nominal categories.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  geom_bar(aes(y = after_stat(count))) +\n  scale_fill_pattern() + # from package 'fillpattern' \n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\nFigure 4: A barplot of the random favorite color data using textures\n\n\n\n\n\nOr, we want to use some different textures and have control over them.\n\n\nCode\ncolors_xtab &lt;- data.frame(table(colors_df))\nnames(colors_xtab) &lt;- c(\"favorite_color\", \"count\")\n\ncolors_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y = count) +\n  # From package 'ggpattern'\n  # See https://r-graph-gallery.com/368-black-and-white-barchart.html\n  geom_col_pattern(\n    aes(\n      pattern = favorite_color,\n      pattern_angle = favorite_color,\n      pattern_spacing = favorite_color\n    ),\n    fill = 'white',\n    color = 'black',\n    pattern_density = 0.5,\n    pattern_fill = 'black',\n    pattern_color = 'darkgrey'\n  )\n\n\n\n\n\n\n\n\nFigure 5: A barplot of the random favorite color data using textures\n\n\n\n\n\n\n\nOrdered\nIt can be useful to sort the counts of nominal variables to faciliate comparisons among categories.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n  aes(x = favorite_color) +\n  geom_bar(aes(y = n), stat = \"identity\")\n\n\n\n\n\n\n\n\nFigure 6: A horizontal barplot of the random favorite color data, sorted\n\n\n\n\n\nLet’s order the other ones while we’re at it.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n  aes(x = favorite_color, y = n, fill = favorite_color) +\n  geom_bar(stat = \"identity\") +\n  scale_fill_pattern() + # from package 'fillpattern'\n  theme(legend.position = \"none\") \n\n\n\n\n\n\n\n\nFigure 7: A barplot of the random favorite color data using textures\n\n\n\n\n\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n  aes(x = favorite_color, y = n) +\n  # From package 'ggpattern'\n  # See https://r-graph-gallery.com/368-black-and-white-barchart.html\n  geom_col_pattern(\n    aes(\n      pattern = favorite_color,\n      pattern_angle = favorite_color,\n      pattern_spacing = favorite_color\n    ),\n    fill = 'white',\n    color = 'black',\n    pattern_density = 0.5,\n    pattern_fill = 'black',\n    pattern_color = 'darkgrey'\n  ) +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\nFigure 8: A barplot of the random favorite color data using textures\n\n\n\n\n\n\n\nLollipop chart\nThe lollipop chart uses less ink, so the ink/data ratio (Tufte, 2001) is higher than with barplots.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n    geom_point(aes(\n    x = favorite_color,\n    y = n,\n    color = favorite_color,\n    fill = favorite_color\n  )) +\n  geom_segment(aes(\n    x = favorite_color,\n    xend = favorite_color,\n    y = 0,\n    yend = n,\n    color = favorite_color\n  )) +\n  scale_color_identity() +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 9: A lollipop plot of the random favorite color data\n\n\n\n\n\n\n\nStacked barplot\nWe can also stack them.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  ggplot() +\n  aes(x = \"\", y = n, fill = favorite_color) +\n  geom_col(position = \"stack\") +\n  scale_fill_identity() +\n  xlab(\"\")\n\n\n\n\n\n\n\n\nFigure 10: A stacked barplot of the random favorite color data\n\n\n\n\n\nThis makes more sense with another nominal variable in the mix.\nLet’s add a ‘school’ variable.\n\n\nCode\nschool &lt;- sample(c(\"psu\", \"osu\", \"mich\", \"usc\"), size=200, replace=TRUE)\ncolors_school_df &lt;- colors_df\ncolors_school_df$school &lt;- school\n\n\nThen create the plot.\n\n\nCode\ncolors_school_xtab &lt;- data.frame(table(colors_school_df))\nnames(colors_school_xtab) &lt;- c(\"favorite_color\", \"school\", \"count\")\n\n# colors_school_xtab |&gt;\n#   ggplot() +\n#   aes(x = school, y=count, fill = favorite_color) +\n#   scale_fill_identity() +\n#   geom_bar(stat=\"identity\", position=\"stack\")\n\ncolors_school_df |&gt; \n  count(school, favorite_color) |&gt; \n  ggplot() + \n  aes(school, n, fill = favorite_color) + \n  scale_fill_identity() + \n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 11: A stacked barplot of the random favorite color data\n\n\n\n\n\n\n\nStacked barplot alternative\n\n\nCode\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y=count, fill = school) +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 12: Another stacked barplot of the random favorite color data.\n\n\n\n\n\n\n\nDodged barplot\nUsing the ‘dodge’ parameter is another way to show data with two categorical variables.\n\n\nCode\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = school, y=count, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"dodge\")\n\n\n\n\n\n\n\n\nFigure 13: A horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nPie chart\n\n\nCode\ncolors_xtab &lt;- data.frame(table(colors_df))\nnames(colors_xtab) &lt;- c(\"favorite_color\", \"count\")\n\ncolors_xtab |&gt;\n  ggplot(aes(x = \"\", y = count, fill = favorite_color)) +\n  geom_bar(stat = \"identity\", width = 1) +\n  coord_polar(\"y\", start = 0) +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 14: A piechart of the random favorite color data\n\n\n\n\n\n\n\nRing chart\n\n\nCode\n# https://r-graph-gallery.com/128-ring-or-donut-plot.html\n\n# Compute percentages\ncolors_xtab$fraction = colors_xtab$count / sum(colors_xtab$count)\n\n# Compute the cumulative percentages (top of each rectangle)\ncolors_xtab$ymax = cumsum(colors_xtab$fraction)\n\n# Compute the bottom of each rectangle\ncolors_xtab$ymin = c(0, head(colors_xtab$ymax, n = -1))\n\n# Make the plot\ncolors_xtab |&gt;\n  ggplot(aes(\n    ymax = ymax,\n    ymin = ymin,\n    xmax = 4,\n    xmin = 3,\n    fill = favorite_color\n  )) +\n  geom_rect() +\n  coord_polar(theta = \"y\") + # Try to remove that to understand how the chart is built initially\n  xlim(c(2, 4)) + # Try to remove that to see how to make a pie chart\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 15: A ring/donut chart of the random favorite color data\n\n\n\n\n\n\n\nMosaic plot\n\n\nCode\nggplot(data = colors_school_df) +\n  geom_mosaic(aes(x = product(favorite_color, school), fill = favorite_color)) +   \n  labs(y=\"Favorite\", x=\"School\", title = \"Favorite colors by school\") +\n  scale_fill_identity()\n\n\nWarning: The `scale_name` argument of `continuous_scale()` is deprecated as of ggplot2\n3.5.0.\n\n\nWarning: The `trans` argument of `continuous_scale()` is deprecated as of ggplot2 3.5.0.\nℹ Please use the `transform` argument instead.\n\n\nWarning: `unite_()` was deprecated in tidyr 1.2.0.\nℹ Please use `unite()` instead.\nℹ The deprecated feature was likely used in the ggmosaic package.\n  Please report the issue at &lt;https://github.com/haleyjeppson/ggmosaic&gt;.\n\n\n\n\n\n\n\n\nFigure 16: A mosaic chart of the random favorite color by school data"
+    "text": "Nominal data\nLet’s focus on nominal or categorical data, specifically the favorite colors of some imaginary set of people.\n\n\nCode\n# Make an array of color names\ncolors &lt;- c(\"red\", \"orange\", \"yellow\", \"green\", \"cyan\", \"blue\", \"violet\", \"white\", \"black\", \"gray\")\n\n\nThere are n=10 colors in this set.\n\n\n\n\n\n\nYour turn\n\n\n\nWhy are these data nominal or nominally scaled? Or rather, why aren’t they ordinal, interval, or ratio?\n\n\n\nGenerating\nFor demonstration purposes, we want to take some number of random samples of these colors. Let’s pick n=200 and sample with replacement (replace=TRUE in the code below), meaning that we could have any number of colors in our sample of 200 imaginary people.\n\n\nCode\n# Use `sample()` to pick a random sample of these *with* replacement so that \n# the numbers/color differ.\nour_color_sample &lt;- sample(colors, size=200, replace=TRUE)\nour_color_sample\n\n\n  [1] \"black\"  \"orange\" \"orange\" \"gray\"   \"orange\" \"violet\" \"violet\" \"black\" \n  [9] \"orange\" \"yellow\" \"gray\"   \"orange\" \"black\"  \"green\"  \"gray\"   \"green\" \n [17] \"orange\" \"orange\" \"cyan\"   \"blue\"   \"yellow\" \"blue\"   \"gray\"   \"green\" \n [25] \"white\"  \"yellow\" \"black\"  \"blue\"   \"black\"  \"cyan\"   \"green\"  \"cyan\"  \n [33] \"green\"  \"gray\"   \"violet\" \"white\"  \"gray\"   \"blue\"   \"blue\"   \"red\"   \n [41] \"yellow\" \"gray\"   \"gray\"   \"violet\" \"violet\" \"white\"  \"yellow\" \"cyan\"  \n [49] \"gray\"   \"white\"  \"orange\" \"white\"  \"blue\"   \"black\"  \"gray\"   \"yellow\"\n [57] \"cyan\"   \"cyan\"   \"violet\" \"orange\" \"green\"  \"green\"  \"violet\" \"orange\"\n [65] \"white\"  \"cyan\"   \"red\"    \"orange\" \"violet\" \"blue\"   \"orange\" \"white\" \n [73] \"green\"  \"gray\"   \"blue\"   \"yellow\" \"red\"    \"violet\" \"gray\"   \"yellow\"\n [81] \"orange\" \"violet\" \"green\"  \"blue\"   \"white\"  \"yellow\" \"gray\"   \"orange\"\n [89] \"yellow\" \"orange\" \"green\"  \"orange\" \"orange\" \"orange\" \"yellow\" \"blue\"  \n [97] \"white\"  \"green\"  \"red\"    \"white\"  \"red\"    \"green\"  \"black\"  \"black\" \n[105] \"orange\" \"cyan\"   \"red\"    \"orange\" \"cyan\"   \"violet\" \"violet\" \"orange\"\n[113] \"blue\"   \"cyan\"   \"white\"  \"gray\"   \"white\"  \"cyan\"   \"gray\"   \"green\" \n[121] \"gray\"   \"white\"  \"blue\"   \"orange\" \"yellow\" \"violet\" \"blue\"   \"violet\"\n[129] \"violet\" \"cyan\"   \"cyan\"   \"blue\"   \"red\"    \"cyan\"   \"violet\" \"red\"   \n[137] \"white\"  \"gray\"   \"black\"  \"orange\" \"blue\"   \"gray\"   \"white\"  \"orange\"\n[145] \"white\"  \"violet\" \"black\"  \"gray\"   \"orange\" \"white\"  \"green\"  \"orange\"\n[153] \"black\"  \"white\"  \"red\"    \"green\"  \"yellow\" \"green\"  \"orange\" \"orange\"\n[161] \"yellow\" \"cyan\"   \"gray\"   \"white\"  \"gray\"   \"cyan\"   \"gray\"   \"blue\"  \n[169] \"orange\" \"orange\" \"gray\"   \"yellow\" \"red\"    \"blue\"   \"red\"    \"green\" \n[177] \"violet\" \"blue\"   \"gray\"   \"black\"  \"orange\" \"black\"  \"yellow\" \"orange\"\n[185] \"green\"  \"orange\" \"green\"  \"cyan\"   \"green\"  \"orange\" \"black\"  \"gray\"  \n[193] \"white\"  \"orange\" \"black\"  \"orange\" \"yellow\" \"cyan\"   \"black\"  \"white\" \n\n\nOn its own, that’s not especially easy to visualize. What if we sorted it?\n\n\nCode\nsort(our_color_sample)\n\n\n  [1] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n  [9] \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\"  \"black\" \n [17] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [25] \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"   \"blue\"  \n [33] \"blue\"   \"blue\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [41] \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"  \n [49] \"cyan\"   \"cyan\"   \"cyan\"   \"cyan\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [57] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [65] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"  \n [73] \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"gray\"   \"green\"  \"green\"  \"green\" \n [81] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [89] \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\"  \"green\" \n [97] \"green\"  \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[105] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[113] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[121] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"orange\"\n[129] \"orange\" \"orange\" \"orange\" \"orange\" \"orange\" \"red\"    \"red\"    \"red\"   \n[137] \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"    \"red\"   \n[145] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[153] \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\" \"violet\"\n[161] \"violet\" \"violet\" \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[169] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\" \n[177] \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"white\"  \"yellow\"\n[185] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n[193] \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\" \"yellow\"\n\n\nStill not all that helpful.\n\n\nSummarizing\nWhat can we say to summarize categorical data?\nWe can report the number of total responses.\n\n\nCode\nlength(our_color_sample)\n\n\n[1] 200\n\n\nWe can report the number of unique categories.\n\n\nCode\nlength(unique(our_color_sample))\n\n\n[1] 10\n\n\nWe can report the number of responses per category.\n\n\nCode\ncolors_df &lt;- data.frame(favorite_color = our_color_sample)\n\nxtabs(formula = ~favorite_color, data = colors_df)\n\n\nfavorite_color\n black   blue   cyan   gray  green orange    red violet  white yellow \n    16     18     18     25     20     36     11     18     21     17 \n\n\n\n\nVisualizing\nSingle nominal variables don’t offer us many options for visualization. A bar plot showing the number of observations in each category seems to be it.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color) +\n  geom_bar(stat = \"count\")\n\n\n\n\n\n\n\n\nFigure 1: A black and white barplot of the random favorite color data\n\n\n\n\n\nWe can also add colors to the bars.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  geom_bar() +\n  scale_discrete_manual(aesthetics = c(\"color\", \"fill\"),\n                        values = sort(colors))\n\n\n\n\n\n\n\n\nFigure 2: A colorful barplot of the random favorite color data\n\n\n\n\n\nWe can think of this as mapping the name of the color category in our data to the way that category is represented in our figure.\nWe can flip the axis just for fun. Which is more readable?\n\nHorizontal barplot\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar() +\n  coord_flip()\n\n\n\n\n\n\n\n\nFigure 3: A colorful horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nBar/column with textures\nSometimes we don’t want to use color to distinguish nominal categories.\n\n\nCode\ncolors_df |&gt;\n  ggplot() +\n  aes(x = favorite_color, fill = favorite_color) +\n  geom_bar(aes(y = after_stat(count))) +\n  scale_fill_pattern() + # from package 'fillpattern' \n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\nFigure 4: A barplot of the random favorite color data using textures\n\n\n\n\n\nOr, we want to use some different textures and have control over them.\n\n\nCode\ncolors_xtab &lt;- data.frame(table(colors_df))\nnames(colors_xtab) &lt;- c(\"favorite_color\", \"count\")\n\ncolors_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y = count) +\n  # From package 'ggpattern'\n  # See https://r-graph-gallery.com/368-black-and-white-barchart.html\n  geom_col_pattern(\n    aes(\n      pattern = favorite_color,\n      pattern_angle = favorite_color,\n      pattern_spacing = favorite_color\n    ),\n    fill = 'white',\n    color = 'black',\n    pattern_density = 0.5,\n    pattern_fill = 'black',\n    pattern_color = 'darkgrey'\n  )\n\n\n\n\n\n\n\n\nFigure 5: A barplot of the random favorite color data using textures\n\n\n\n\n\n\n\nOrdered\nIt can be useful to sort the counts of nominal variables to faciliate comparisons among categories.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n  aes(x = favorite_color) +\n  geom_bar(aes(y = n), stat = \"identity\")\n\n\n\n\n\n\n\n\nFigure 6: A horizontal barplot of the random favorite color data, sorted\n\n\n\n\n\nLet’s order the other ones while we’re at it.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n  aes(x = favorite_color, y = n, fill = favorite_color) +\n  geom_bar(stat = \"identity\") +\n  scale_fill_pattern() + # from package 'fillpattern'\n  theme(legend.position = \"none\") \n\n\n\n\n\n\n\n\nFigure 7: A barplot of the random favorite color data using textures\n\n\n\n\n\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n  aes(x = favorite_color, y = n) +\n  # From package 'ggpattern'\n  # See https://r-graph-gallery.com/368-black-and-white-barchart.html\n  geom_col_pattern(\n    aes(\n      pattern = favorite_color,\n      pattern_angle = favorite_color,\n      pattern_spacing = favorite_color\n    ),\n    fill = 'white',\n    color = 'black',\n    pattern_density = 0.5,\n    pattern_fill = 'black',\n    pattern_color = 'darkgrey'\n  ) +\n  theme(legend.position = \"none\")\n\n\n\n\n\n\n\n\nFigure 8: A barplot of the random favorite color data using textures\n\n\n\n\n\n\n\nLollipop chart\nThe lollipop chart uses less ink, so the ink/data ratio (Tufte, 2001) is higher than with barplots.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  arrange(desc(n)) |&gt;\n  mutate(favorite_color = factor(favorite_color, levels = favorite_color)) |&gt;\n  ggplot() +\n    geom_point(aes(\n    x = favorite_color,\n    y = n,\n    color = favorite_color,\n    fill = favorite_color\n  )) +\n  geom_segment(aes(\n    x = favorite_color,\n    xend = favorite_color,\n    y = 0,\n    yend = n,\n    color = favorite_color\n  )) +\n  scale_color_identity() +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 9: A lollipop plot of the random favorite color data\n\n\n\n\n\n\n\nStacked barplot\nWe can also stack them.\n\n\nCode\ncolors_df |&gt;\n  count(favorite_color) |&gt;\n  ggplot() +\n  aes(x = \"\", y = n, fill = favorite_color) +\n  geom_col(position = \"stack\") +\n  scale_fill_identity() +\n  xlab(\"\")\n\n\n\n\n\n\n\n\nFigure 10: A stacked barplot of the random favorite color data\n\n\n\n\n\nThis makes more sense with another nominal variable in the mix.\nLet’s add a ‘school’ variable.\n\n\nCode\nschool &lt;- sample(c(\"psu\", \"osu\", \"mich\", \"usc\"), size=200, replace=TRUE)\ncolors_school_df &lt;- colors_df\ncolors_school_df$school &lt;- school\n\n\nThen create the plot.\n\n\nCode\ncolors_school_xtab &lt;- data.frame(table(colors_school_df))\nnames(colors_school_xtab) &lt;- c(\"favorite_color\", \"school\", \"count\")\n\n# colors_school_xtab |&gt;\n#   ggplot() +\n#   aes(x = school, y=count, fill = favorite_color) +\n#   scale_fill_identity() +\n#   geom_bar(stat=\"identity\", position=\"stack\")\n\ncolors_school_df |&gt; \n  count(school, favorite_color) |&gt; \n  ggplot() + \n  aes(school, n, fill = favorite_color) + \n  scale_fill_identity() + \n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 11: A stacked barplot of the random favorite color data\n\n\n\n\n\n\n\nStacked barplot alternative\n\n\nCode\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = favorite_color, y=count, fill = school) +\n  geom_bar(stat=\"identity\", position=\"stack\")\n\n\n\n\n\n\n\n\nFigure 12: Another stacked barplot of the random favorite color data.\n\n\n\n\n\n\n\nDodged barplot\nUsing the ‘dodge’ parameter is another way to show data with two categorical variables.\n\n\nCode\ncolors_school_xtab |&gt;\n  ggplot() +\n  aes(x = school, y=count, fill = favorite_color) +\n  scale_fill_identity() +\n  geom_bar(stat=\"identity\", position=\"dodge\")\n\n\n\n\n\n\n\n\nFigure 13: A horizontal barplot of the random favorite color data\n\n\n\n\n\n\n\nPie chart\n\n\nCode\ncolors_xtab &lt;- data.frame(table(colors_df))\nnames(colors_xtab) &lt;- c(\"favorite_color\", \"count\")\n\ncolors_xtab |&gt;\n  ggplot(aes(x = \"\", y = count, fill = favorite_color)) +\n  geom_bar(stat = \"identity\", width = 1) +\n  coord_polar(\"y\", start = 0) +\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 14: A piechart of the random favorite color data\n\n\n\n\n\n\n\nRing chart\n\n\nCode\n# https://r-graph-gallery.com/128-ring-or-donut-plot.html\n\n# Compute percentages\ncolors_xtab$fraction = colors_xtab$count / sum(colors_xtab$count)\n\n# Compute the cumulative percentages (top of each rectangle)\ncolors_xtab$ymax = cumsum(colors_xtab$fraction)\n\n# Compute the bottom of each rectangle\ncolors_xtab$ymin = c(0, head(colors_xtab$ymax, n = -1))\n\n# Make the plot\ncolors_xtab |&gt;\n  ggplot(aes(\n    ymax = ymax,\n    ymin = ymin,\n    xmax = 4,\n    xmin = 3,\n    fill = favorite_color\n  )) +\n  geom_rect() +\n  coord_polar(theta = \"y\") + # Try to remove that to understand how the chart is built initially\n  xlim(c(2, 4)) + # Try to remove that to see how to make a pie chart\n  scale_fill_identity()\n\n\n\n\n\n\n\n\nFigure 15: A ring/donut chart of the random favorite color data\n\n\n\n\n\n\n\nMosaic plot\n\n\nCode\nggplot(data = colors_school_df) +\n  geom_mosaic(aes(x = product(favorite_color, school), fill = favorite_color)) +   \n  labs(y=\"Favorite\", x=\"School\", title = \"Favorite colors by school\") +\n  scale_fill_identity()\n\n\nWarning: The `scale_name` argument of `continuous_scale()` is deprecated as of ggplot2\n3.5.0.\n\n\nWarning: The `trans` argument of `continuous_scale()` is deprecated as of ggplot2 3.5.0.\nℹ Please use the `transform` argument instead.\n\n\nWarning: `unite_()` was deprecated in tidyr 1.2.0.\nℹ Please use `unite()` instead.\nℹ The deprecated feature was likely used in the ggmosaic package.\n  Please report the issue at &lt;https://github.com/haleyjeppson/ggmosaic&gt;.\n\n\n\n\n\n\n\n\nFigure 16: A mosaic chart of the random favorite color by school data"
   },
   {
     "objectID": "tutorials/tutorial-making-data.html#ordinal-data",
@@ -3735,7 +3784,7 @@
     "href": "slides/wk08-2025-03-04-more-slow-r.html#are-the-means-different",
     "title": "More slow R",
     "section": "Are the means different?",
-    "text": "Are the means different?\n\n\nCode\ntwo_sets &lt;- readr::read_csv(\"../include/csv/two_sets_1_sd.csv\", show_col_types = FALSE)\n t.test(value ~ sample_name, data = two_sets, var.equal = TRUE)\n\n\n\n    Two Sample t-test\n\ndata:  value by sample_name\nt = -7.3756, df = 198, p-value = 4.382e-12\nalternative hypothesis: true difference in means between group x0 and group x1 is not equal to 0\n95 percent confidence interval:\n -1.4437216 -0.8345758\nsample estimates:\nmean in group x0 mean in group x1 \n     -0.03168878       1.10745992"
+    "text": "Are the means different?\n\n\nCode\ntwo_sets &lt;- readr::read_csv(\"../include/csv/two_sets_1_sd.csv\", show_col_types = FALSE)\n t.test(value ~ sample_name, data = two_sets, var.equal = TRUE)\n\n\n\n    Two Sample t-test\n\ndata:  value by sample_name\nt = -8.3795, df = 198, p-value = 9.726e-15\nalternative hypothesis: true difference in means between group x0 and group x1 is not equal to 0\n95 percent confidence interval:\n -1.3760882 -0.8517859\nsample estimates:\nmean in group x0 mean in group x1 \n      -0.1014284        1.0125087"
   },
   {
     "objectID": "slides/wk08-2025-03-04-more-slow-r.html#your-thoughts",
@@ -4526,7 +4575,7 @@
     "href": "supplemental/other-field-figs.html#preparation",
     "title": "Findings: Data viz outside psych sci",
     "section": "Preparation",
-    "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using.\n\n\n\n\n\n\nImportant\n\n\n\nThe code uses the quietly() function from the purrr package to suppress most of the feedback.\n\n\n\n\nCode\nlibrary('ggplot2')\nlibrary('dplyr')\n\nr_functions &lt;- list.files(file.path(here::here(), \"src\", \"R\"), \"\\\\.R$\", full.names = TRUE)\n\npurrr::map(r_functions, source) |&gt;\n  purrr::quietly()\n\n\nfunction (...) \ncapture_output(.f(...))\n&lt;bytecode: 0x1134936a8&gt;\n&lt;environment: 0x113493980&gt;"
+    "text": "Preparation\nFirst, we load the external packages (groups of R commands) that we will be using.\n\n\n\n\n\n\nImportant\n\n\n\nThe code uses the quietly() function from the purrr package to suppress most of the feedback.\n\n\n\n\nCode\nlibrary('ggplot2')\nlibrary('dplyr')\n\nr_functions &lt;- list.files(file.path(here::here(), \"src\", \"R\"), \"\\\\.R$\", full.names = TRUE)\n\npurrr::map(r_functions, source) |&gt;\n  purrr::quietly()\n\n\nvirtualenv: myenv\nUsing virtual environment 'myenv' ...\n\n\nfunction (...) \ncapture_output(.f(...))\n&lt;bytecode: 0x10d52c828&gt;\n&lt;environment: 0x10d52c0a8&gt;"
   },
   {
     "objectID": "supplemental/other-field-figs.html#gathering",
@@ -4555,89 +4604,5 @@
     "title": "Findings: Data viz outside psych sci",
     "section": "Figures found",
     "text": "Figures found\n\nCode\nthese_figs &lt;- ex02 |&gt;\n  filter(!is.na(url_to_figure))\n\nres &lt;- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))\ncat(unlist(res), sep = \"\\n\")\n\n\nFigure 1\nSource: https://wpdatatables.com/sports-data-visualization/#:~:text=What%20is%20Sports%20Data%20Visualization,drawn%20from%20sports%2Drelated%20data.\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\nReport\nBasketball Fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 2\nSource: https://kinesiology.csp.edu/sports-coaches-and-trainers/infographic-top-paid-athletes-by-gender/?nab=1\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\narticle\nThis image breaksdown a few different types of sport business issues in regard to male vs female salary in sport.\n\n\n\n\n\n\nComments\n\n\n\n\nGraphic\n\n\n\n\n\nFigure 3\nSource: \n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nPoster\nSeen in person\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of physicians by resident year in a hospital department\n\n\n\n\n\nFigure 4\nSource: https://hcup-us.ahrq.gov/reports/statbriefs/sb253-Influenza-Hospitalizations-ED-Visits-2006-2016.jsp\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nReport\nPublic health/medical example\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 5\nSource: https://www.bruinsportsanalytics.com/post/growth-of-nwsl\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nArticle\nNWSL fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 6\nSource: https://www.hockeyviz.com/team/CAR/2425\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nNHL, Canes fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 7\nSource: https://manual.audacityteam.org/\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nVisualization of sound data\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 8\nSource: https://www.nbcnews.com/data-graphics/2023-college-football-season-data-6-maps-charts-rcna102444\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI am very interested in college sports and I found this graphic very interesting and easy to comprehend\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nLocations of student-athlete recruits for the major athletic conferences in the past 10 years\n\n\n\n\n\nFigure 9\nSource: https://news.gallup.com/poll/650318/grocery-restaurant-industry-images-slide.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI thought this was an interesting trend to map, especially because sports appear to be a large part of American entertainment culture\n\n\n\n\n\n\nComments\n\n\n\n\nAmerican’s overall opinions of the sports industry from 2001-2024\n\n\n\n\n\nFigure 10\nSource: https://informationisbeautiful.net/beautifulnews/595-childrens-lives-saved/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nInfographic\nI thought this was very visually appealing yet provided a lot of useful information\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of children’s lives saved in varying regions over the last 25 years\n\n\n\n\n\nFigure 11\nSource: https://petapixel.com/2019/10/01/photos-of-endangered-species-where-every-pixel-represents-one-animal/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nDigital Art\nSea turtles are my favorite animal, but I thought this was a very interesting way to use digital art to bring awareness to endangerment\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nDigital image made of pixels correlating to how the number of animals left in the population\n\n\n\n\n\nFigure 12\nSource: https://news.gallup.com/poll/655220/satisfaction-democracy-edges-record-low.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nEspecially after the election and inauguration day, this trend is interesting to me\n\n\n\n\n\n\nComments\n\n\n\n\nPercentage of Americans satisfied with the way democracy is working\n\n\n\n\n\nFigure 13\nSource: https://osf.io/preprints/osf/3nyrq\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\napl1\n3D Art\nI like 3D Art and I liked how the data was visualized in this example, it shows how varied it can be\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 14\nSource: https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\npp\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 15\nSource: https://fivethirtyeight.com/features/how-mapping-shots-in-the-nba-changed-it-forever/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nThe figure lays out a clear image of field shots paired with percentages\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 16\nSource: https://journals.sagepub.com/doi/full/10.3233/THC-231875\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\njournal\nThe figure shows their methods through images of demonstrations\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 17\nSource: https://www.nature.com/articles/s43247-023-00856-9\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure 3 shows comparisons of negative and positive emotions tied to treatment groups in a simple way\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 18\nSource: https://pmc.ncbi.nlm.nih.gov/articles/PMC8639497/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure shows an easy to read graph showing data of publications per year\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 19\nSource: https://zapier.com/blog/pandemic-business-boom-report/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the importance of the pandemic when it comes to an explanation for the rise of businesses\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 20\nSource: https://www.businessinsider.com/17-charts-that-show-just-how-scary-amazons-275-billion-business-really-is-2016-3#its-also-the-top-seller-for-personal-care-and-beauty-products-in-the-us-5\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the stats on how amazon exceeds other sellers specifically for beauty products and personal care\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 21\nSource: https://impact.economist.com/perspectives/health/addressing-recurrent-cardiovascular-events-asia-pacific\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 22\nSource: https://impact.economist.com/perspectives/technology-innovation/putting-iot-work-business-operations\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 23\nSource: https://ygoprodeck.com/tournament/richmond-wcq-regional-2626\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nI play Yugioh, so that’s why I chose the graph\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nI find the choice to use a Pie chart to represent proportion of decks used to be interesing, as compared to a bar chart for frequency\n\n\n\n\n\nFigure 24\nSource: https://www.census.gov/construction/nrs/current/index.html\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nThe census beuaru collects a lot of data, so i felt they’d be a great source to look ino.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 25\nSource: https://www.iea.org/data-and-statistics/charts/installed-nuclear-power-capacity-by-country-and-age-in-advanced-economies-end-2023\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nI’m really interested in Nuclear power, and did a research project on it, so I wanted to include something on it. And this bar graph shows that the US still leads in Nuclear Power production\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 26\nSource: https://thecuriousprofessor.com/2019/12/14/visualizing-data-through-art-2/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\nwebsite\nThe visual shows a scarf knitted, with each row shows the temperature of the day\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 27\nSource: https://thecuriousprofessor.com/2019/12/14/visualizing-data-through-art-2/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\nwebsite\nThe visual shows the sleep pattern of baby, showsing the wake time and sleep time\n\n\n\n\n\n\nComments\n\n\n\n\nNA"
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin",
-    "title": "More on ggplot",
-    "section": "Respondent age (AGER): Violin",
-    "text": "Respondent age (AGER): Violin\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = AGER) +\n  geom_violin()"
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-1",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-1",
-    "title": "More on ggplot",
-    "section": "Respondent age (AGER): Violin",
-    "text": "Respondent age (AGER): Violin\n\n\nFigure 2: Error message when I tried to execute this code."
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-2",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-2",
-    "title": "More on ggplot",
-    "section": "Respondent age (AGER): Violin",
-    "text": "Respondent age (AGER): Violin\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()"
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-3",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-3",
-    "title": "More on ggplot",
-    "section": "Respondent age (AGER): Violin",
-    "text": "Respondent age (AGER): Violin\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()"
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-3-output",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-3-output",
-    "title": "More on ggplot",
-    "section": "Respondent age (AGER): Violin",
-    "text": "Respondent age (AGER): Violin\n\n\n\n\n\n\n\nFigure 3: Violin plot of NSFG 22-23 ‘AGER’ variable"
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot",
-    "title": "More on ggplot",
-    "section": "Respondent age (AGER): Boxplot",
-    "text": "Respondent age (AGER): Boxplot\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot()"
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot-1",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot-1",
-    "title": "More on ggplot",
-    "section": "Respondent age (AGER): Boxplot",
-    "text": "Respondent age (AGER): Boxplot\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot()"
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot-1-output",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot-1-output",
-    "title": "More on ggplot",
-    "section": "Respondent age (AGER): Boxplot",
-    "text": "Respondent age (AGER): Boxplot\n\n\n\n\n\n\n\nFigure 4: Boxplot of NSFG 22-23 ‘AGER’ variable"
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-8",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-8",
-    "title": "More on ggplot",
-    "section": "Respondent age (AGER): Composite",
-    "text": "Respondent age (AGER): Composite\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot() +\n  geom_violin() +\n  geom_jitter(width = .15, height = 0, alpha=.1)\n\nBoxplot first, then violin"
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-9",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-9",
-    "title": "More on ggplot",
-    "section": "Respondent age (AGER): Composite",
-    "text": "Respondent age (AGER): Composite\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot() +\n  geom_violin() +\n  geom_jitter(width = .15, height = 0, alpha=.1)"
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-9-output",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-9-output",
-    "title": "More on ggplot",
-    "section": "Respondent age (AGER): Composite",
-    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 9: Distribution of NSFG 22-23 ‘AGER’ variable"
-  },
-  {
-    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#what-do-the-numbers-mean",
-    "href": "slides/wk11-2025-04-01-more-ggplot.html#what-do-the-numbers-mean",
-    "title": "More on ggplot",
-    "section": "What do the numbers mean?",
-    "text": "What do the numbers mean?\n\nBack to the codebook\n\n\n\nFigure 12: RELIGION code from NSFG codebook"
   }
 ]

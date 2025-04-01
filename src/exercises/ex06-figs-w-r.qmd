@@ -24,7 +24,6 @@ You may complete this assignment in two ways:
 
 2. Use Quarto on Posit.cloud.
 
-
 ::: {.callout-note}
 ## Resources
 You may find some of the explanation and code contained in [this tutorial](../tutorials/tutorial-r-ggplot.qmd) helpful.
@@ -171,7 +170,7 @@ Here's a section of code that does this for the `fav_flavor` data.
 ```r
 survey |>
   count(fav_flavor) |>
-  mutate(fav_flavor_sorted = fct_reorder(fav_flavor, n)) |> # <1>
+  mutate(fav_flavor_sorted = fct_reorder(fav_flavor, n)) |>     # <1>
   ggplot() +
   aes(x = fav_flavor_sorted, y = n, fill = fav_flavor_sorted) + # <2>
   geom_col()  

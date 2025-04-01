@@ -36,6 +36,7 @@ website:
         - exercises/ex04-sci-of-data-viz.qmd
         - exercises/ex05-figure-prep-guidelines.qmd
         - exercises/ex06-figs-w-r.qmd
+        - exercises/ex07-figs-w-python.qmd
         - exercises/final-project.qmd
       - text: Tutorials
         menu:

@@ -1,6 +1,10 @@
 ---
 title: "Exercise 07"
 subtitle: "Making figures with Python"
+format:
+  html:
+    code-fold: true
+  docx: default
 ---
 
 ::: {.callout-warning}
@@ -8,6 +12,7 @@ subtitle: "Making figures with Python"
 
 This page is under construction.
 
+It may change before the assignment is released to class.
 :::
 
 ## Dates {-}
@@ -22,6 +27,151 @@ The write-up is [due]{.orange_due} on Thursday, April 17, 2025.
 2. Gain an appreciation of the costs and benefits of scripting the generation of figures.
 
 ## Assignment {-}
+
+## Set-up
+
+For reasons not especially worth explaning here, we have to use R to configure Python for making figures using posit.cloud.
+
+```{r}
+#| label: set-up-python-env
+library(reticulate)
+py_require(c("pandas", "matplotlib", "numpy"))
+```
+
+Python calls groups of functions *libraries*.
+These are analogous to *packages* in R.
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+```
+
+::: {.callout-note}
+In Python, we use the `import` command.
+
+We create 'nicknames' for the packages so that we can refer to them using an easy-to-type shorthand.
+The nicknames are the short names: ... `import pandas as pd`, means import the 'pandas' library and give it the shortname of 'pd'.
+:::
+
+## NFSG data
+
+### Gather
+
+We'll make plots of some of NSFG data we discussed in class on [2025-04-01](../slides/wk11-04-01-more-ggplot.qmd).
+
+::: {.callout-note}
+The data file has been saved under `csv/`
+:::
+
+The `pandas` library (shortname in our code `pd`) handles the creation and manipulation of data frames.
+That includes importing comma-separated value (CSV) files.
+
+```{python}
+#| label: import-survey-data-csv
+#| echo: true
+nsfg = pd.read_csv('../include/csv/NSFG_2022_2023_FemPregPUFData.csv')
+```
+
+We confirm that this worked by checking the data types in `nsfg`:
+
+```{python}
+#| label: check-data-types
+#| echo: true
+nsfg.dtypes
+```
+
+This is similar to running the `str()` function on an R data frame.
+
+::: {.callout-important}
+## Python methods
+
+Objects in Python have specialized functions that can be used with them using a simple 'dot' syntax.
+So `nsfg.dtypes` means 'run the data types function on the nsfg data frame.'
+These specialized functions are called 'methods.'
+:::
+
+```{python}
+#| label: nsfg-shape
+#| echo: true
+nsfg.shape
+```
+
+The `shape` method is similar to the `dim()` function in R.
+What do the two numbers mean?
+
+### Plot
+
+Since we used the `pandas` library to import our data frame, we can use one of the built-in methods that apply to data frames to plot a histogram.
+Here, we create a histogram by calling the `hist()` method on the `nsfg` data frame and by specifying the column `AGER`, the age of the responding participant.
+
+```{python}
+#| label: nsfg-hist
+#| echo: true
+nsfg.hist(column = "AGER")
+plt.show()
+```
+
+Now, let's customize the plot by changing some parameters in the `hist()` method.
+Add change the number of bins to some larger number like 20, 25, or 30 (the default is 10), by changing `LARGE_NUMBER` to a number.
+
+```{python}
+#| label: change-bins
+#| echo: true
+LARGE_NUMBER = 35
+nsfg.hist(column = "AGER", bins = LARGE_NUMBER)
+plt.show()
+```
+
+Now, try a smaller value, less than 10.
+Change the code below to try this.
+
+```{python}
+#| label: change-bins-smaller
+#| echo: true
+SMALLER_NUMBER = 5
+nsfg.hist(column = "AGER", bins = SMALLER_NUMBER)
+plt.show()
+```
+
+What do you notice?
+
+Let's look at the histograms by `RELIGION`, like we did in class on [2025-04-01](https://psu-psychology.github.io/psych-490-data-viz-2025-spring/slides/wk11-2025-04-01-more-ggplot.html).
+
+```{python}
+#| label: hist-ager-by-religion
+#| echo: true
+nsfg.hist(column = 'AGER', by = 'RELIGION')
+plt.show()
+```
+
+Modify the code below to create a set of histograms by some *other* variable that you choose (change `VARIABLE_YOU_CHOOSE` in the code below.)
+Make sure to look at the [codebook](https://psu-psychology.github.io/psych-490-data-viz-2025-spring/include/pdf/2022-2023-NSFG-FemRespPUFCodebook.pdf) to make sure that the variable you choose makes sense.
+
+::: {.callout-warning}
+Make sure to put the variable you choose in quotations.
+:::
+
+```{python}
+#| label: hist-students-choice
+#| echo: true
+
+VARIABLE_YOU_CHOOSE = 'BABYSEX'
+nsfg.hist(column = 'AGER', by = VARIABLE_YOU_CHOOSE)
+plt.show()
+```
+
+Finally, experiment with changing some of the default parameters like `grid` (values can be `True` or `False`), `xrot` (rotation of x axis labels) or `yrot` (rotation of y axis labels).
+
+```{python}
+#| label: hist-students-choice-2
+#| echo: true
+MY_XROT = 0
+nsfg.hist(column = 'AGER', by = 'RELIGION', xrot = MY_XROT)
+plt.show()
+```
+
+### Plot other
 
 ## Submit {-}
 
