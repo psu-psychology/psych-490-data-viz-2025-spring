@@ -154,7 +154,25 @@ nsfg_22_23 |>
   geom_histogram()
 ```
 
-## Respondent age (`AGER`): v2
+## Respondent age (`AGER`): Violin
+
+```{.r code-line-numbers="4"}
+nsfg_22_23 |>
+  ggplot() +
+  aes(x = AGER) +
+  geom_violin()
+```
+
+## Respondent age (`AGER`): Violin
+
+![Error message when I tried to execute this code.](../include/img/nsfg-violin-error-msg.png){#fig-nsfg-violin-error-msg}
+
+## Need help?
+
+- Overall: <https://ggplot2.tidyverse.org>
+- On geoms? <https://ggplot2.tidyverse.org/reference/index.html#geoms>
+
+## Respondent age (`AGER`): Violin
 
 ```{.r code-line-numbers="3|4"}
 nsfg_22_23 |>
@@ -163,7 +181,7 @@ nsfg_22_23 |>
   geom_violin()
 ```
 
-## Respondent age (`AGER`): v2
+## Respondent age (`AGER`): Violin
 
 ```{r}
 #| label: fig-nsfg-22-23-ager-violin
@@ -176,7 +194,7 @@ nsfg_22_23 |>
   geom_violin()
 ```
 
-## Respondent age (`AGER`): v3
+## Respondent age (`AGER`): Boxplot
 
 ```{.r code-line-numbers="|4|5"}
 nsfg_22_23 |>
@@ -185,7 +203,7 @@ nsfg_22_23 |>
   geom_boxplot()
 ```
 
-## Respondent age (`AGER`): v3
+## Respondent age (`AGER`): Boxplot
 
 ```{r}
 #| label: fig-nsfg-22-23-ager-boxplot
@@ -197,11 +215,6 @@ nsfg_22_23 |>
   aes(x = "", y = AGER) +
   geom_boxplot()
 ```
-
-## Need help?
-
-- Overall: <https://ggplot2.tidyverse.org>
-- On geoms? <https://ggplot2.tidyverse.org/reference/index.html#geoms>
 
 ## Respondent age (`AGER`): Composite
 
@@ -299,6 +312,45 @@ nsfg_22_23 |>
   geom_jitter(width = .15, height = 0, alpha=.1)
 ```
 
+## Respondent age (`AGER`): Composite
+
+```{.r code-line-numbers="4-6"}
+nsfg_22_23 |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_boxplot() +
+  geom_violin() +
+  geom_jitter(width = .15, height = 0, alpha=.1)
+```
+
+- Boxplot first, then violin
+
+## Respondent age (`AGER`): Composite
+
+```{r}
+#| label: fig-nsfg-22-23-ager-box-violin
+#| fig-cap: "Distribution of NSFG 22-23 'AGER' variable"
+#| echo: true
+#| output-location: slide
+nsfg_22_23 |>
+  ggplot() +
+  aes(x = "", y = AGER) +
+  geom_boxplot() +
+  geom_violin() +
+  geom_jitter(width = .15, height = 0, alpha=.1)
+```
+
+---
+
+::: {.callout-important}
+## Order matters!
+
+When adding multiple layers of geoms, think about what order makes the most sense.
+
+Here, the best order is violin, then boxplot, then points.
+
+:::
+
 ## Iterative enhancement
 
 ```{.r code-line-numbers="7-8"}
@@ -347,7 +399,7 @@ nsfg_22_23 |>
 
 ```{r}
 #| label: fig-nsfg-22-23-ager-box-violin-raw-facet
-#| fig-cap: "Distribution of NSFG 22-23 'AGER' variable by religion"
+#| fig-cap: "Distribution of NSFG 22-23 'AGER' variable by 'RELIGION'"
 #| echo: true
 #| output-location: slide
 nsfg_22_23 |>
@@ -361,7 +413,9 @@ nsfg_22_23 |>
   facet_wrap(~RELIGION)
 ```
 
-## Back to the codebook
+## What do the numbers mean?
+
+- Back to the codebook
 
 ![RELIGION code from [NSFG codebook](../include/pdf/2022-2023-NSFG-FemRespPUFCodebook.pdf)](../include/img/nsfg-RELIGION-codebook.png){#fig-nsfg-RELIGION-codebook}
 
@@ -384,7 +438,9 @@ nsfg_22_23 |>
   xlab("") +
   facet_wrap(~religion)
 ```
- 
+
+- Give numbers meaningful labels with `dplyr::mutate()` and `dplyr::case_match()`.
+
 ## New twist!
 
 ```{r}
@@ -419,7 +475,7 @@ nsfg_22_23 |>
 
 # Next time...
 
-![Python](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+![Python logo](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
 
 
 # Work session

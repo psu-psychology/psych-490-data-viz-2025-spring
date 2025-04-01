@@ -501,7 +501,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-1-output",
     "title": "More on ggplot",
     "section": "Respondent age (AGER): Composite",
-    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 4: Distribution of NSFG 22-23 ‘AGER’ variable"
+    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 5: Distribution of NSFG 22-23 ‘AGER’ variable"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-2",
@@ -522,7 +522,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-3-output",
     "title": "More on ggplot",
     "section": "Respondent age (AGER): Composite",
-    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 5: Distribution of NSFG 22-23 ‘AGER’ variable"
+    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 6: Distribution of NSFG 22-23 ‘AGER’ variable"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-4",
@@ -543,7 +543,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-5-output",
     "title": "More on ggplot",
     "section": "Respondent age (AGER): Composite",
-    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 6: Distribution of NSFG 22-23 ‘AGER’ variable"
+    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 7: Distribution of NSFG 22-23 ‘AGER’ variable"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-6",
@@ -564,7 +564,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-7-output",
     "title": "More on ggplot",
     "section": "Respondent age (AGER): Composite",
-    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 7: Distribution of NSFG 22-23 ‘AGER’ variable"
+    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 8: Distribution of NSFG 22-23 ‘AGER’ variable"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement",
@@ -585,7 +585,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement-1-output",
     "title": "More on ggplot",
     "section": "Iterative enhancement",
-    "text": "Iterative enhancement\n\n\n\n\n\n\n\nFigure 8: Distribution of NSFG 22-23 ‘AGER’ variable"
+    "text": "Iterative enhancement\n\n\n\n\n\n\n\nFigure 10: Distribution of NSFG 22-23 ‘AGER’ variable"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist",
@@ -606,21 +606,21 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-1-output",
     "title": "More on ggplot",
     "section": "New twist!",
-    "text": "New twist!\n\n\n\n\n\n\n\nFigure 9: Distribution of NSFG 22-23 ‘AGER’ variable by religion"
+    "text": "New twist!\n\n\n\n\n\n\n\nFigure 11: Distribution of NSFG 22-23 ‘AGER’ variable by ‘RELIGION’"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#back-to-the-codebook",
     "href": "slides/wk11-2025-04-01-more-ggplot.html#back-to-the-codebook",
     "title": "More on ggplot",
     "section": "Back to the codebook",
-    "text": "Back to the codebook\n\n\nFigure 10: RELIGION code from NSFG codebook"
+    "text": "Back to the codebook\n\n\nFigure 12: RELIGION code from NSFG codebook"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-2",
     "href": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-2",
     "title": "More on ggplot",
     "section": "New twist!",
-    "text": "New twist!\nlibrary(dplyr)\nnsfg_22_23 |&gt;\n  mutate(religion = case_match(RELIGION,\n                               1 ~ \"none\",\n                               2 ~ \"catholic\",\n                               3 ~ \"protestant\",\n                               4 ~ \"other\")) |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  #geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\") +\n  facet_wrap(~religion)"
+    "text": "New twist!\nlibrary(dplyr)\nnsfg_22_23 |&gt;\n  mutate(religion = case_match(RELIGION,\n                               1 ~ \"none\",\n                               2 ~ \"catholic\",\n                               3 ~ \"protestant\",\n                               4 ~ \"other\")) |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  #geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\") +\n  facet_wrap(~religion)\n\nGive numbers meaningful labels with dplyr::mutate() and dplyr::case_match()."
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-3",
@@ -634,7 +634,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-3-output",
     "title": "More on ggplot",
     "section": "New twist!",
-    "text": "New twist!\n\n\n\n\n\n\n\nFigure 11: Distribution of NSFG 22-23 ‘AGER’ variable by religion"
+    "text": "New twist!\n\n\n\n\n\n\n\nFigure 13: Distribution of NSFG 22-23 ‘AGER’ variable by religion"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#recommended-design-principles",
@@ -4555,5 +4555,89 @@
     "title": "Findings: Data viz outside psych sci",
     "section": "Figures found",
     "text": "Figures found\n\nCode\nthese_figs &lt;- ex02 |&gt;\n  filter(!is.na(url_to_figure))\n\nres &lt;- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))\ncat(unlist(res), sep = \"\\n\")\n\n\nFigure 1\nSource: https://wpdatatables.com/sports-data-visualization/#:~:text=What%20is%20Sports%20Data%20Visualization,drawn%20from%20sports%2Drelated%20data.\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\nReport\nBasketball Fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 2\nSource: https://kinesiology.csp.edu/sports-coaches-and-trainers/infographic-top-paid-athletes-by-gender/?nab=1\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\narticle\nThis image breaksdown a few different types of sport business issues in regard to male vs female salary in sport.\n\n\n\n\n\n\nComments\n\n\n\n\nGraphic\n\n\n\n\n\nFigure 3\nSource: \n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nPoster\nSeen in person\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of physicians by resident year in a hospital department\n\n\n\n\n\nFigure 4\nSource: https://hcup-us.ahrq.gov/reports/statbriefs/sb253-Influenza-Hospitalizations-ED-Visits-2006-2016.jsp\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nReport\nPublic health/medical example\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 5\nSource: https://www.bruinsportsanalytics.com/post/growth-of-nwsl\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nArticle\nNWSL fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 6\nSource: https://www.hockeyviz.com/team/CAR/2425\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nNHL, Canes fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 7\nSource: https://manual.audacityteam.org/\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nVisualization of sound data\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 8\nSource: https://www.nbcnews.com/data-graphics/2023-college-football-season-data-6-maps-charts-rcna102444\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI am very interested in college sports and I found this graphic very interesting and easy to comprehend\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nLocations of student-athlete recruits for the major athletic conferences in the past 10 years\n\n\n\n\n\nFigure 9\nSource: https://news.gallup.com/poll/650318/grocery-restaurant-industry-images-slide.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI thought this was an interesting trend to map, especially because sports appear to be a large part of American entertainment culture\n\n\n\n\n\n\nComments\n\n\n\n\nAmerican’s overall opinions of the sports industry from 2001-2024\n\n\n\n\n\nFigure 10\nSource: https://informationisbeautiful.net/beautifulnews/595-childrens-lives-saved/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nInfographic\nI thought this was very visually appealing yet provided a lot of useful information\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of children’s lives saved in varying regions over the last 25 years\n\n\n\n\n\nFigure 11\nSource: https://petapixel.com/2019/10/01/photos-of-endangered-species-where-every-pixel-represents-one-animal/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nDigital Art\nSea turtles are my favorite animal, but I thought this was a very interesting way to use digital art to bring awareness to endangerment\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nDigital image made of pixels correlating to how the number of animals left in the population\n\n\n\n\n\nFigure 12\nSource: https://news.gallup.com/poll/655220/satisfaction-democracy-edges-record-low.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nEspecially after the election and inauguration day, this trend is interesting to me\n\n\n\n\n\n\nComments\n\n\n\n\nPercentage of Americans satisfied with the way democracy is working\n\n\n\n\n\nFigure 13\nSource: https://osf.io/preprints/osf/3nyrq\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\napl1\n3D Art\nI like 3D Art and I liked how the data was visualized in this example, it shows how varied it can be\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 14\nSource: https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\npp\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 15\nSource: https://fivethirtyeight.com/features/how-mapping-shots-in-the-nba-changed-it-forever/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nThe figure lays out a clear image of field shots paired with percentages\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 16\nSource: https://journals.sagepub.com/doi/full/10.3233/THC-231875\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\njournal\nThe figure shows their methods through images of demonstrations\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 17\nSource: https://www.nature.com/articles/s43247-023-00856-9\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure 3 shows comparisons of negative and positive emotions tied to treatment groups in a simple way\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 18\nSource: https://pmc.ncbi.nlm.nih.gov/articles/PMC8639497/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure shows an easy to read graph showing data of publications per year\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 19\nSource: https://zapier.com/blog/pandemic-business-boom-report/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the importance of the pandemic when it comes to an explanation for the rise of businesses\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 20\nSource: https://www.businessinsider.com/17-charts-that-show-just-how-scary-amazons-275-billion-business-really-is-2016-3#its-also-the-top-seller-for-personal-care-and-beauty-products-in-the-us-5\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the stats on how amazon exceeds other sellers specifically for beauty products and personal care\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 21\nSource: https://impact.economist.com/perspectives/health/addressing-recurrent-cardiovascular-events-asia-pacific\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 22\nSource: https://impact.economist.com/perspectives/technology-innovation/putting-iot-work-business-operations\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 23\nSource: https://ygoprodeck.com/tournament/richmond-wcq-regional-2626\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nI play Yugioh, so that’s why I chose the graph\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nI find the choice to use a Pie chart to represent proportion of decks used to be interesing, as compared to a bar chart for frequency\n\n\n\n\n\nFigure 24\nSource: https://www.census.gov/construction/nrs/current/index.html\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nThe census beuaru collects a lot of data, so i felt they’d be a great source to look ino.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 25\nSource: https://www.iea.org/data-and-statistics/charts/installed-nuclear-power-capacity-by-country-and-age-in-advanced-economies-end-2023\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nI’m really interested in Nuclear power, and did a research project on it, so I wanted to include something on it. And this bar graph shows that the US still leads in Nuclear Power production\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 26\nSource: https://thecuriousprofessor.com/2019/12/14/visualizing-data-through-art-2/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\nwebsite\nThe visual shows a scarf knitted, with each row shows the temperature of the day\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 27\nSource: https://thecuriousprofessor.com/2019/12/14/visualizing-data-through-art-2/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\nwebsite\nThe visual shows the sleep pattern of baby, showsing the wake time and sleep time\n\n\n\n\n\n\nComments\n\n\n\n\nNA"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Violin",
+    "text": "Respondent age (AGER): Violin\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = AGER) +\n  geom_violin()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-1",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-1",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Violin",
+    "text": "Respondent age (AGER): Violin\n\n\nFigure 2: Error message when I tried to execute this code."
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-2",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-2",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Violin",
+    "text": "Respondent age (AGER): Violin\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-3",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-3",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Violin",
+    "text": "Respondent age (AGER): Violin\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-3-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-3-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Violin",
+    "text": "Respondent age (AGER): Violin\n\n\n\n\n\n\n\nFigure 3: Violin plot of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Boxplot",
+    "text": "Respondent age (AGER): Boxplot\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot-1",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot-1",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Boxplot",
+    "text": "Respondent age (AGER): Boxplot\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot-1-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot-1-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Boxplot",
+    "text": "Respondent age (AGER): Boxplot\n\n\n\n\n\n\n\nFigure 4: Boxplot of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-8",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-8",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot() +\n  geom_violin() +\n  geom_jitter(width = .15, height = 0, alpha=.1)\n\nBoxplot first, then violin"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-9",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-9",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot() +\n  geom_violin() +\n  geom_jitter(width = .15, height = 0, alpha=.1)"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-9-output",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-9-output",
+    "title": "More on ggplot",
+    "section": "Respondent age (AGER): Composite",
+    "text": "Respondent age (AGER): Composite\n\n\n\n\n\n\n\nFigure 9: Distribution of NSFG 22-23 ‘AGER’ variable"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#what-do-the-numbers-mean",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#what-do-the-numbers-mean",
+    "title": "More on ggplot",
+    "section": "What do the numbers mean?",
+    "text": "What do the numbers mean?\n\nBack to the codebook\n\n\n\nFigure 12: RELIGION code from NSFG codebook"
   }
 ]
