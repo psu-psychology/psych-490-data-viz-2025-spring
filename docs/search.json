@@ -4961,5 +4961,159 @@
     "title": "More on ggplot",
     "section": "Back to the codebook",
     "text": "Back to the codebook\n\n\nFigure 10: RELIGION code from NSFG codebook"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#datacamp",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#datacamp",
+    "title": "More on ggplot",
+    "section": "DataCamp",
+    "text": "DataCamp"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#announcements",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#announcements",
+    "title": "Introduction to Python",
+    "section": "Announcements",
+    "text": "Announcements"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#last-time",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#last-time",
+    "title": "Introduction to Python",
+    "section": "Last time…",
+    "text": "Last time…"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#today",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#today",
+    "title": "Introduction to Python",
+    "section": "Today",
+    "text": "Today\n\nIntroduction to Python\nWork session"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#why-learn-python",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#why-learn-python",
+    "title": "Introduction to Python",
+    "section": "Why learn Python?",
+    "text": "Why learn Python?\n\n\nIt’s fun\nIt’s free\nAmaze your friends; dazzle your rivals\nPowerful tool\nIt will make you a more productive researcher\nPractical job-related skill\nMore popular than R!"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#why-should-psychologists-learn-python",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#why-should-psychologists-learn-python",
+    "title": "Introduction to Python",
+    "section": "Why should psychologists learn Python?",
+    "text": "Why should psychologists learn Python?\n\n\nMake experiments using Psychopy\nGather, clean, visualize your data using matplotlib, Seaborn, etc.\nReproducible == robust, easy to share with others"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#rstudio",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#rstudio",
+    "title": "Introduction to Python",
+    "section": "RStudio",
+    "text": "RStudio\n\nAvailable in PSU computer labs\nFree download from https://posit.co/download/rstudio-desktop/\n\nDownload and install R first\nInstall RStudio second\n\nRun on Posit.cloud!"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#console",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#console",
+    "title": "Introduction to Python",
+    "section": "Console",
+    "text": "Console\n\nTalk to Python\nGet a reply"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#parts-of-console",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#parts-of-console",
+    "title": "Introduction to Python",
+    "section": "Parts of console",
+    "text": "Parts of console\n\nPrompt (&gt;&gt;&gt;); cursor (|)\nHistory of conversation via up/down arrows\nEnter a command, then hit enter or return to say it to Python"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#functions",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#functions",
+    "title": "Introduction to Python",
+    "section": "Functions",
+    "text": "Functions\n\nTell the computer to do something\nFUNCTION_NAME: what to do\nARGUMENTS: what to do it to/on and how\nsum: function name\n(1, 4, 7): arguments/inputs\n\nParentheses are like open hands giving the function something it wants"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#getting-help",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#getting-help",
+    "title": "Introduction to Python",
+    "section": "Getting help",
+    "text": "Getting help"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#sort-again",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#sort-again",
+    "title": "Introduction to Python",
+    "section": "sort() again",
+    "text": "sort() again\n\n\nCode\nsort(c(4, 1, 7))\n\n\n[1] 1 4 7"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#the-c-commandfunction",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#the-c-commandfunction",
+    "title": "Introduction to Python",
+    "section": "The c() command/function",
+    "text": "The c() command/function\n\nConcatenates or Combines items into a single thing\n\n\n\nCode\nc(4, 1, 7)\n\n\n[1] 4 1 7\n\n\nCode\nc(1:15)\n\n\n [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#assignments",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#assignments",
+    "title": "Introduction to Python",
+    "section": "Assignments",
+    "text": "Assignments\n\n\nCode\nmy_age &lt;- 61 # My age. Beats the alternative, I guess.\n\n# Text that is preceded by the # character is called a comment.\n# These are 'notes' you can keep about your code so you remember why you\n# did something. Here, R ignores the part after the #: ' Rick's age'"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#assignments-continued",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#assignments-continued",
+    "title": "Introduction to Python",
+    "section": "Assignments (continued)",
+    "text": "Assignments (continued)\n\nGive (assign) number (61) a useful/informative name (my_age)\nLeftward arrow (&lt;-) (option/alt + minus): assignment command"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#asking-questions",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#asking-questions",
+    "title": "Introduction to Python",
+    "section": "Asking questions",
+    "text": "Asking questions\n\ncomparison operators (==, !=, &gt;, &lt;, etc.).\n\n\n\nCode\n1 == 0\n\n\n[1] FALSE\n\n\nCode\nsqrt(9) &lt; 4\n\n\n[1] TRUE"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#what-can-we-talk-to-r-about",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#what-can-we-talk-to-r-about",
+    "title": "Introduction to Python",
+    "section": "What can we talk to R about?",
+    "text": "What can we talk to R about?\n\nStrings (sequences of letters, numbers, characters)\n\n\n\nCode\nc('w', 'x', 'y', 'z')\n\n\n[1] \"w\" \"x\" \"y\" \"z\"\n\n\nCode\nmiddle_letters &lt;- c('m', 'n', 'o')"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#what-can-we-talk-to-r-about-1",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#what-can-we-talk-to-r-about-1",
+    "title": "Introduction to Python",
+    "section": "What can we talk to R about?",
+    "text": "What can we talk to R about?\n\nnumbers\n\n3.14159\n4^2\n1e3"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#what-can-we-talk-to-r-about-2",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#what-can-we-talk-to-r-about-2",
+    "title": "Introduction to Python",
+    "section": "What can we talk to R about?",
+    "text": "What can we talk to R about?\n\ndata sets\nplots\nanalyses"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#rules-for-naming-things",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#rules-for-naming-things",
+    "title": "Introduction to Python",
+    "section": "Rules for naming things",
+    "text": "Rules for naming things\n\nReplace spaces (and hyphens/minus characters -) with underscores (_), and\nStart names with letters, not numbers.\n\n\nacceptable names for things: bigly, good_name, a_longer_good_name, Good_name1, and even thisIsCamelCaseNoUnderscores\nunacceptable names: !good, bad name (has a space) or 1_very_bad_name (starts with a number)."
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#sign-in",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#sign-in",
+    "title": "Introduction to Python",
+    "section": "Sign in",
+    "text": "Sign in\n\nhttps://www.datacamp.com/groups/shared_links/a4e4322254cc9e99082294b2f5eb9b0af748f1d42907df9f716475be78a0520c"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#references",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#references",
+    "title": "Introduction to Python",
+    "section": "References",
+    "text": "References"
   }
 ]

@@ -1,0 +1,283 @@
+---
+title: "Introduction to Python"
+subtitle: "2025-04-03"
+code_fold: false
+---
+
+# Overview
+
+## Announcements
+
+## Last time...
+
+## Today
+
+- Introduction to Python
+- Work session
+
+# Introduction to Python
+
+## Why learn Python?
+
+::: {.incremental}
+- It's fun
+- It's free
+- Amaze your friends; dazzle your rivals
+- Powerful tool
+- **It will make you a more productive researcher**
+- Practical job-related skill
+- More popular than R!
+:::
+
+## Why should psychologists learn Python?
+
+::: {.incremental}
+- Make experiments using [Psychopy](https://www.psychopy.org)
+- Gather, clean, visualize your data using [matplotlib](https://matplotlib.org), [Seaborn](https://seaborn.pydata.org/examples/index.html), etc.
+- Reproducible == robust, easy to share with others
+:::
+
+## RStudio
+
+- Available in PSU computer labs
+- Free download from <https://posit.co/download/rstudio-desktop/>
+  - Download and install R first
+  - Install RStudio second
+- Run on Posit.cloud!
+
+## Console
+
+- Talk to Python
+- Get a reply
+
+---
+
+```{.python}
+license
+```
+
+```{python}
+#| include: true
+#| echo: true
+license
+```
+
+---
+
+::: {.callout-warning}
+## Painful lesson #1
+
+Computers are super-literal. They are anally literal. More anally literal than any human being you've *ever* had to deal with. 
+
+You're not going to change them. Being this anal is their superpower.
+
+Just deal.
+:::
+
+## Parts of console
+
+- Prompt (`>>> `); cursor (`|`)
+- History of conversation via up/down arrows
+- Enter a command, then hit `enter` or `return` to say it to Python
+
+---
+
+```{r}
+#| include: true
+#| echo: true
+sum(1, 4, 7)
+```
+
+## Functions
+
+- Tell the computer to do something
+- FUNCTION_NAME: what to do
+- ARGUMENTS: what to do it to/on and how
+- `sum`: function name
+- `(1, 4, 7)`: arguments/inputs
+  - Parentheses are like open hands giving the function something it wants
+
+---
+
+```{r}
+#| include: true
+#| echo: true
+
+mean(1, 4, 7)
+```
+
+---
+
+```{r}
+#| include: true
+#| echo: true
+
+mean(c(1, 4, 7))
+
+sum(1, 4, 7)/3
+```
+
+## 
+
+---
+
+```{r}
+#| include: true
+#| echo: true
+#| eval: false
+sort(4, 1, 7)
+```
+
+## Getting help
+
+```{r}
+help("sort")
+```
+
+## `sort()` again
+
+```{r}
+#| include: true
+#| echo: true
+
+sort(c(4, 1, 7))
+```
+
+## The `c()` command/function
+
+- *C*oncatenates or *C*ombines items into a single thing
+
+```{r}
+#| include: true
+#| echo: true
+
+c(4, 1, 7)
+
+c(1:15)
+```
+
+
+## Assignments
+
+```{r}
+#| include: true
+#| echo: true
+
+my_age <- 61 # My age. Beats the alternative, I guess.
+
+# Text that is preceded by the # character is called a comment.
+# These are 'notes' you can keep about your code so you remember why you
+# did something. Here, R ignores the part after the #: ' Rick's age'
+```
+
+## Assignments (continued)
+
+- Give (assign) number (`61`) a useful/informative name (`my_age`)
+- Leftward arrow (`<-`) (option/alt + minus): assignment command
+
+---
+
+```{r}
+#| include: true
+#| echo: true
+
+your_age <- 21
+your_shoe_size <- 8.5
+
+your_age + your_shoe_size
+
+your_shoe_size/your_age
+```
+
+---
+
+::: {.callout-important}
+## Don't use `=`, use `<-`
+
+- You can substitute `=` but don't. Use `<-`.
+- It's stylistic, but style matters.
+- It's like saying 'like' all the time. Like people will like understand you, but they'll wonder why you like say like all the time when you really need not. 
+- It's also a topic that could get you in a 'flame war'. 
+- **Avoid flame wars** if you can. Life is too short.
+:::
+
+## Asking questions
+
+- comparison operators (`==`, `!=`, `>`, `<`, etc.).
+
+```{r}
+#| include: true
+#| echo: true
+
+1 == 0
+sqrt(9) < 4
+```
+
+---
+
+```{r}
+#| include: true
+#| echo: true
+
+'rick' == 'rick'
+'richard' > 'rick' # 'h' < 'k'
+'richard' != 'rick'
+```
+
+## What can we talk to R about?
+
+- Strings (sequences of letters, numbers, characters)
+
+```{r}
+#| include: true
+#| echo: true
+
+c('w', 'x', 'y', 'z')
+
+middle_letters <- c('m', 'n', 'o')
+```
+
+## What can we talk to R about?
+
+- numbers
+    - 3.14159
+  - 4^2
+  - 1e3
+  
+## What can we talk to R about?
+
+- data sets
+- plots
+- analyses
+
+---
+
+```{r}
+#| include: true
+#| echo: true
+
+rand_x <- rnorm(100)
+rand_y <- rnorm(100)
+my_plot <- plot(rand_x, rand_y) # Give the plot a name
+my_plot # Show the plot
+```
+
+## Rules for naming things
+
+1. Replace spaces (and hyphens/minus characters `-`) with underscores (`_`), and 
+2. Start names with letters, not numbers.
+
+- acceptable names for things: `bigly`, `good_name`, `a_longer_good_name`, `Good_name1`, and even `thisIsCamelCaseNoUnderscores` 
+- unacceptable names: `!good`, `bad name` (has a space) or `1_very_bad_name` (starts with a number).
+
+# Getting started with DataCamp
+
+## Sign in
+
+- <https://www.datacamp.com/groups/shared_links/a4e4322254cc9e99082294b2f5eb9b0af748f1d42907df9f716475be78a0520c>
+
+# Next time
+
+# Resources
+
+## References

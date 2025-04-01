@@ -4,12 +4,24 @@ subtitle: "2025-04-01"
 code-fold: false
 ---
 
-# Prelude
+# Overview
 
 ## Announcements
 
 - [Exercise 06](../exercises/ex06-figs-w-r.qmd) [due]{.orange_due} Thursday, April 3.
 - Final project presentation [survey](https://forms.gle/oyotxgnnqchqnSgTA)
+
+## DataCamp
+
+![](../include/img/datacamp-2025-04-01-top.png)
+
+---
+
+![](../include/img/datacamp-2025-04-01-bottom.png)
+
+---
+
+![](../include/img/datacamp-2025-04-01-ggplot-python.png)
 
 ## Last time
 
@@ -404,6 +416,11 @@ nsfg_22_23 |>
   - Store figure code in `*.R` or `*.qmd` files
 - No 'secret sauce'
 - The process *is* the product
+
+# Next time...
+
+![Python](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+
 
 # Work session
 

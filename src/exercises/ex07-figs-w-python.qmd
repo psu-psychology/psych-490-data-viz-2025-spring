@@ -9,3 +9,24 @@ subtitle: "Making figures with Python"
 This page is under construction.
 
 :::
+
+## Dates {-}
+
+We'll work on this exercise in-class on Thursday, April 10, 2025.
+
+The write-up is [due]{.orange_due} on Thursday, April 17, 2025.
+
+## Goals {-}
+
+1. Create some simple figures in Python using the Pandas library.
+2. Gain an appreciation of the costs and benefits of scripting the generation of figures.
+
+## Assignment {-}
+
+## Submit {-}
+
+1. The code you wrote in following the steps above.
+
+2. The results of running your code.
+
+3. Comments about what you observed.
