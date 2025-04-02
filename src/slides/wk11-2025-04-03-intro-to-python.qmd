@@ -23,7 +23,11 @@ use_virtualenv("myenv", required = TRUE)
 ## Announcements
 
 - [Exercise 06](../exercises/ex06-figs-w-r.qmd) [due]{.orange_due} today.
-- Final project presentation [survey](https://forms.gle/oyotxgnnqchqnSgTA)
+- Final project presentation [survey](https://forms.gle/oyotxgnnqchqnSgTA) [due]{.orange_due} Tuesday, April 8.
+
+## Tentative presentation schedule
+
+- [supplemental/presentation-schedule](supplemental/presentation-schedule.qmd)
 
 ## Last time...
 
@@ -41,6 +45,9 @@ use_virtualenv("myenv", required = TRUE)
 
 - Introduction to Python
 - Work session
+  - DataCamp
+  - Exercise 06
+  - Final projects
 
 # Introduction to Python
 
@@ -525,6 +532,8 @@ import pandas as pd
 # Work session
 
 # Next time
+
+*Exploring data with Python*
 
 # Resources
 

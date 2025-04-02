@@ -2489,21 +2489,21 @@
     "href": "schedule.html#week-13",
     "title": "Schedule",
     "section": "April 14-18",
-    "text": "April 14-18\nMaking plots with JavaScript\n\nTuesday, April 15\n\n\nThursday, April 17\n\nDue: Exercise-07"
+    "text": "April 14-18\nMaking plots with JavaScript\n\nTuesday, April 15\n\n\nThursday, April 17\n\nIn-class work on final projects or Exercise 07.\nDue: Exercise-07"
   },
   {
     "objectID": "schedule.html#week-14",
     "href": "schedule.html#week-14",
     "title": "Schedule",
     "section": "April 21-25",
-    "text": "April 21-25\nFinal Project Preparation\n\nTuesday, April 22\n\nIn-class work on projects.\n\n\n\nThursday, April 24\n\nIn-class work on projects."
+    "text": "April 21-25\nFinal Project Preparation\n\nTuesday, April 22\n\nIn-class work on projects.\n\n\n\nThursday, April 24\nFinal Project Presentations\n\nSchedule"
   },
   {
     "objectID": "schedule.html#week-15",
     "href": "schedule.html#week-15",
     "title": "Schedule",
     "section": "April 28 - May 2",
-    "text": "April 28 - May 2\nFinal Project Presentations\n\nTuesday, April 29\n\nSchedule: TBD1\n\n\n\nThursday, May 01\n\nSchedule: TBD"
+    "text": "April 28 - May 2\nFinal Project Presentations\n\nTuesday, April 29\n\nSchedule\n\n\n\nThursday, May 01\n\nSchedule"
   },
   {
     "objectID": "schedule.html#finals-week",
@@ -4716,5 +4716,61 @@
     "title": "Introduction to Python",
     "section": "Recommended design principles",
     "text": "Recommended design principles\n\nWork iteratively (in small steps)\nKeep prior versions\n\nStore figure code in *.R or *.qmd files\n\nNo ‘secret sauce’\nThe process is the product"
+  },
+  {
+    "objectID": "supplemental/presentation-schedule.html",
+    "href": "supplemental/presentation-schedule.html",
+    "title": "Presentation schedule",
+    "section": "",
+    "text": "Tentative schedule as of 2025-04-02 15:12:37.516596."
+  },
+  {
+    "objectID": "supplemental/presentation-schedule.html#background",
+    "href": "supplemental/presentation-schedule.html#background",
+    "title": "Presentation schedule",
+    "section": "Background",
+    "text": "Background\nThis page documents how the presentation schedule can be automatically generated from the student survey."
+  },
+  {
+    "objectID": "supplemental/presentation-schedule.html#download-data",
+    "href": "supplemental/presentation-schedule.html#download-data",
+    "title": "Presentation schedule",
+    "section": "Download data",
+    "text": "Download data\n\n\nCode\ngoogledrive::drive_auth(email = \"rick.o.gilmore@gmail.com\")\n\n\n\n\nCode\nif (!dir.exists('csv')) {\n  dir.create('csv')\n}\n\ncsv_fn &lt;- \"csv/psych-490-2025-spring-presentations.csv\"\n\ngoogledrive::drive_download(\n  file = 'PSYCH 490.001 Spring 2025 Project Info (Responses)',\n  path = csv_fn,\n  type = 'csv',\n  overwrite = TRUE\n  \n)\n\n\nFile downloaded:\n\n\n• 'PSYCH 490.001 Spring 2025 Project Info (Responses)'\n  &lt;id: 1Ze4xudTH0WbuPw1gXbf61f2tCLui3Fvr0-w-HBB8ny8&gt;\n\n\nSaved locally as:\n\n\n• 'csv/psych-490-2025-spring-presentations.csv'\n\n\n\n\nCode\nif (file.exists(csv_fn)) {\n  presentations_df &lt;- readr::read_csv(csv_fn, show_col_types = FALSE)\n} else {\n  message(\"File not found: \", csv_fn)\n  presentations_df &lt;- NULL\n}"
+  },
+  {
+    "objectID": "supplemental/presentation-schedule.html#clean-the-data",
+    "href": "supplemental/presentation-schedule.html#clean-the-data",
+    "title": "Presentation schedule",
+    "section": "Clean the data",
+    "text": "Clean the data\n\n\nCode\nnew_names &lt;-\n  c(\n    \"Timestamp\",\n    \"Authors\",\n    \"Title\",\n    \"Format\",\n    \"Give_talk\",\n    \"Preferred_date\"\n  )\n\n# Make new data frame with long and short names for reference\npresentation_qs &lt;- tibble::tibble(q_long = names(presentations_df), q_short = new_names)\n\n# Swap out old (long) names for new (short) names\nnames(presentations_df) &lt;- new_names"
+  },
+  {
+    "objectID": "supplemental/presentation-schedule.html#select-subsets-by-preferred-date",
+    "href": "supplemental/presentation-schedule.html#select-subsets-by-preferred-date",
+    "title": "Presentation schedule",
+    "section": "Select subsets by preferred date",
+    "text": "Select subsets by preferred date\n\n\nCode\npresentations_df &lt;- presentations_df |&gt;\n  dplyr::filter(!stringr::str_detect(Authors, \"Gilmore\"))\n\nthu_24_df &lt;- presentations_df |&gt;\n  dplyr::filter(stringr::str_detect(Preferred_date, \"24\"),\n                Give_talk == \"Yes\")\n\ntue_29_df &lt;- presentations_df |&gt;\n  dplyr::filter(stringr::str_detect(Preferred_date, \"29\"),\n                Give_talk == \"Yes\")\n\nthu_31_df &lt;- presentations_df |&gt;\n  dplyr::filter(stringr::str_detect(Preferred_date, \"01\"),\n                Give_talk == \"Yes\")\n\nno_pref &lt;- presentations_df |&gt;\n  dplyr::filter(stringr::str_detect(Preferred_date, \"No preference\"),\n                Give_talk == \"Yes\")\n\ntimes &lt;- c(\"09:10\", \"09:25\", \"09:40\", \"09:55\")"
+  },
+  {
+    "objectID": "supplemental/presentation-schedule.html#day-1-thursday-april-24",
+    "href": "supplemental/presentation-schedule.html#day-1-thursday-april-24",
+    "title": "Presentation schedule",
+    "section": "Day 1: Thursday, April 24",
+    "text": "Day 1: Thursday, April 24\n\n\nCode\nn_thu_24_df &lt;- dim(thu_24_df)[1]\nn_no_pref &lt;- dim(no_pref)[1]\n\nn_thu_24_slots_free &lt;- length(times) - n_thu_24_df\n\nnew_thu_24_df &lt;- rbind(thu_24_df, no_pref[1:n_thu_24_slots_free,])\nnew_thu_24_df$Time &lt;- times\n\nnew_thu_24_df |&gt;\n  dplyr::filter(!is.na(Authors)) |&gt;\n  dplyr::arrange(Time) |&gt;\n  dplyr::select(Time, Authors, Title, Format) |&gt;\n  kableExtra::kable(format = 'html') |&gt;\n  kableExtra::kable_classic()\n\n\n\n\n\nTime\nAuthors\nTitle\nFormat\n\n\n\n\n09:10\nJasmine Upchurch\nAn Exploration of EEG\nIn-class talk\n\n\n09:25\nKendall Morgan\nData Visualization in Colorblind Individuals\nIn-class talk\n\n\n09:40\nAnabella Finol\nUncovering Patterns in Music Streaming: A Data Visualization Approach\nIn-class talk\n\n\n09:55\nAnnalise Chang\nMaking Meaningful Visualizations with Moment-to-Moment Data in R\nTutorial"
+  },
+  {
+    "objectID": "supplemental/presentation-schedule.html#day-2-tuesday-april-29",
+    "href": "supplemental/presentation-schedule.html#day-2-tuesday-april-29",
+    "title": "Presentation schedule",
+    "section": "Day 2: Tuesday, April 29",
+    "text": "Day 2: Tuesday, April 29\n\n\nCode\ntue_29_df$Time &lt;- times[1:dim(tue_29_df)[1]]\n\ntue_29_df |&gt;\n  dplyr::filter(!is.na(Authors)) |&gt;\n  dplyr::arrange(Time) |&gt;\n  dplyr::select(Time, Authors, Title, Format) |&gt;\n  kableExtra::kable(format = 'html') |&gt;\n  kableExtra::kable_classic()\n\n\n\n\n\nTime\nAuthors\nTitle\nFormat\n\n\n\n\n09:10\nSaada Wing\nActs of kindess\nPoster (& in-class presentation)"
+  },
+  {
+    "objectID": "supplemental/presentation-schedule.html#day-3-thursday-may-1",
+    "href": "supplemental/presentation-schedule.html#day-3-thursday-may-1",
+    "title": "Presentation schedule",
+    "section": "Day 3: Thursday, May 1",
+    "text": "Day 3: Thursday, May 1\n\n\nCode\nthu_31_df$Time &lt;- times[1:dim(thu_31_df)[1]]\n\nthu_31_df |&gt;\n  dplyr::filter(!is.na(Authors)) |&gt;\n  dplyr::arrange(Time) |&gt;\n  dplyr::select(Time, Authors, Title, Format) |&gt;\n  kableExtra::kable(format = 'html') |&gt;\n  kableExtra::kable_classic()\n\n\n\n\n\nTime\nAuthors\nTitle\nFormat\n\n\n\n\n09:10\nHunterr Quintana and Ashley Tweedle\nSports Visualizations\nPoster (& in-class presentation)"
   }
 ]

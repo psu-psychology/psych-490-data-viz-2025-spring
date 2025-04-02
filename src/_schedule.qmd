@@ -250,6 +250,7 @@
 
 ### Thursday, April 17 {-}
 
+- In-class work on final projects or Exercise 07.
 - [Due]{.orange_due}: [Exercise-07](exercises/ex07-figs-w-python.qmd)
 
 ## April 21-25 {- #week-14}
@@ -262,7 +263,9 @@
 
 ### Thursday, April 24 {-}
 
-- In-class work on projects.
+*Final Project Presentations*
+
+- [Schedule](supplemental/presentation-schedule.qmd#day-1-thursday-april-24)
 
 ## April 28 - May 2 {- #week-15}
 
@@ -270,11 +273,11 @@
 
 ### Tuesday, April 29 {-}
 
-- Schedule: TBD^[To be determined]
+- [Schedule](supplemental/presentation-schedule.qmd#day-2-tuesday-april-29)
 
 ### Thursday, May 01 {-}
 
-- Schedule: TBD
+- [Schedule](supplemental/presentation-schedule.qmd#day-3-thursday-may-1)
 
 ## May 5-9 {- #finals-week}
 

@@ -53,6 +53,7 @@ website:
         - href: supplemental/ex03-deep-dive.qmd
         - href: supplemental/ex03-feedback.qmd
         - href: supplemental/gestalt-in-the-wild.qmd
+        - href: supplemental/presentation-schedule.qmd
       - text: Meta
         href: meta.qmd
   repo-url: https://github.com/psu-psychology/psych-490-data-viz-2025-spring
