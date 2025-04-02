@@ -223,6 +223,9 @@
 
 *Intro to Python*
 
+- [Slides](slides/wk11-2025-04-03-intro-to-python.qmd)
+- Complete:
+  - [DataCamp](https://datacamp.com), Introduction to Python
 - [Due]{.orange_due}: [Exercise-06](exercises/ex06-figs-w-r.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998422)
 
 ## April 7-11 {- #week-12}
@@ -234,6 +237,8 @@
 - [Due]{.orange_due}: Final project [preferences survey](https://forms.gle/oyotxgnnqchqnSgTA)
 
 ### Thursday, April 10 {-}
+
+*More data explorations with Python*
 
 - [Assigned]{.green_assigned}: [Exercise-07](exercises/ex07-figs-w-python.qmd)
 

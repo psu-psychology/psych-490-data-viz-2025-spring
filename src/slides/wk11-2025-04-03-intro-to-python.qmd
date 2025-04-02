@@ -4,11 +4,38 @@ subtitle: "2025-04-03"
 code_fold: false
 ---
 
+```{r}
+#| label: setup
+library(reticulate)
+use_virtualenv("myenv", required = TRUE)
+```
+
+# Prelude
+
+---
+
+{{< video https://www.youtube.com/watch?v=qfu_PD-7EtM width=100% height=70% >}}
+
+@EllaFitzgeraldVEVO2024-od
+
 # Overview
 
 ## Announcements
 
+- [Exercise 06](../exercises/ex06-figs-w-r.qmd) [due]{.orange_due} today.
+- Final project presentation [survey](https://forms.gle/oyotxgnnqchqnSgTA)
+
 ## Last time...
+
+![NSFG repondent age by religion [figure](wk11-2025-04-01-more-ggplot.qmd#/new-twist-3-output)](../include/fig/fig-nsfg-22-23-ager-box-violin-raw-facet-lbl-1.png)
+
+## Recommended design principles
+
+- Work iteratively (in small steps)
+- Keep prior versions
+  - Store figure code in `*.R` or `*.qmd` files
+- No 'secret sauce'
+- The process *is* the product
 
 ## Today
 
@@ -37,32 +64,32 @@ code_fold: false
 - Reproducible == robust, easy to share with others
 :::
 
-## RStudio
-
-- Available in PSU computer labs
-- Free download from <https://posit.co/download/rstudio-desktop/>
-  - Download and install R first
-  - Install RStudio second
-- Run on Posit.cloud!
-
 ## Console
 
-- Talk to Python
-- Get a reply
+:::: {.columns}
+::: {.column width=50%}
+### R
+```{.r}
+license()
+```
 
----
-
+```{r}
+license()
+```
+:::
+::: {.column width=50%}
+### Python
 ```{.python}
 license
 ```
 
 ```{python}
-#| include: true
-#| echo: true
 license
 ```
+:::
+::::
 
----
+## Reminder
 
 ::: {.callout-warning}
 ## Painful lesson #1
@@ -74,113 +101,143 @@ You're not going to change them. Being this anal is their superpower.
 Just deal.
 :::
 
-## Parts of console
+## Simple math
 
-- Prompt (`>>> `); cursor (`|`)
-- History of conversation via up/down arrows
-- Enter a command, then hit `enter` or `return` to say it to Python
+:::: {.columns}
+::: {.column width=50%}
+### R
 
----
-
-```{r}
-#| include: true
-#| echo: true
-sum(1, 4, 7)
+```{.r code-line-numbers="1|2"}
+x <- c(1, 4, 7)
+sum(x)
 ```
 
-## Functions
-
-- Tell the computer to do something
-- FUNCTION_NAME: what to do
-- ARGUMENTS: what to do it to/on and how
-- `sum`: function name
-- `(1, 4, 7)`: arguments/inputs
-  - Parentheses are like open hands giving the function something it wants
-
----
-
 ```{r}
-#| include: true
-#| echo: true
+x <- c(1, 4, 7)
+sum(x)
+```
+:::
+::: {.column width=50%}
 
-mean(1, 4, 7)
+### Python
+```{.python code-line-numbers="1|2"}
+x = [1, 4, 7]
+sum(x)
 ```
 
----
-
-```{r}
-#| include: true
-#| echo: true
-
-mean(c(1, 4, 7))
-
-sum(1, 4, 7)/3
+```{python}
+x = [1, 4, 7]
+sum(x)
 ```
-
-## 
-
----
-
-```{r}
-#| include: true
-#| echo: true
-#| eval: false
-sort(4, 1, 7)
-```
+:::
+::::
 
 ## Getting help
+
+:::: {.columns}
+::: {.column width=50%}
+
+### R
+```{.r}
+help("sort")
+```
 
 ```{r}
 help("sort")
 ```
+:::
+::: {.column width=50%}
+
+### Python
+```{.python}
+help("numpy.sort")
+```
+
+```{python}
+help("numpy.sort")
+```
+:::
+::::
+
+## Importing packages/libraries
+
+:::: {.columns}
+::: {.column width=50%}
+### R
+```{.r}
+if (!require(ggplot2)) {            # <1>
+  install.packages("ggplot2")       # <2>
+} else {
+  message("Already installed.")
+}
+library(ggplot2)                    # <3>
+```
+1. If the package isn't installed...
+2. Install it (from the internet).
+3. Load the package into memory
+
+```{r}
+if (!require(ggplot2)) {             # <1>
+  install.packages("ggplot2")       # <2>
+} else {
+  message("Already installed.")
+}
+library(ggplot2)                    # <3>
+```
+:::
+::: {.column width=50%}
+### Python
+```{.python}
+<Install library outside of Python> # <1>
+import numpy as np                  # <2>
+```
+1. Not shown here, sorry.
+2. Load the `numpy` library into memory. We (optionally) give it a short name.
+
+```{python}
+import numpy as np
+```
+:::
+::::
 
 ## `sort()` again
 
-```{r}
-#| include: true
-#| echo: true
-
-sort(c(4, 1, 7))
+:::: {.columns}
+::: {.column width=50%}
+### R
+```{.r}
+x <- c(7, 1, 4, 12)
+sort(x)
 ```
 
-## The `c()` command/function
-
-- *C*oncatenates or *C*ombines items into a single thing
-
 ```{r}
-#| include: true
-#| echo: true
-
-c(4, 1, 7)
-
-c(1:15)
+x <- c(7, 1, 4, 12)
+sort(x)
 ```
-
-
-## Assignments
-
-```{r}
-#| include: true
-#| echo: true
-
-my_age <- 61 # My age. Beats the alternative, I guess.
-
-# Text that is preceded by the # character is called a comment.
-# These are 'notes' you can keep about your code so you remember why you
-# did something. Here, R ignores the part after the #: ' Rick's age'
+:::
+::: {.column width=50%}
+### Python
+```{.python}
+x = np.array([7, 1, 4, 12])     # <1>
+np.sort(x)                      # <2>
 ```
+1. Create a `numpy` array.
+2. Call the `numpy` `sort` function/method on x.
 
-## Assignments (continued)
-
-- Give (assign) number (`61`) a useful/informative name (`my_age`)
-- Leftward arrow (`<-`) (option/alt + minus): assignment command
+```{python}
+x = np.array([7, 1, 4, 12])
+np.sort(x)  
+```
+:::
+::::
 
 ---
 
-```{r}
-#| include: true
-#| echo: true
+:::: {.columns}
+::: {.column width=50%}
+### R
 
+```{.r code-line-numbers="|4|6"}
 your_age <- 21
 your_shoe_size <- 8.5
 
@@ -189,8 +246,43 @@ your_age + your_shoe_size
 your_shoe_size/your_age
 ```
 
+```{r}
+your_age <- 21
+your_shoe_size <- 8.5
+
+your_age + your_shoe_size
+
+your_shoe_size/your_age
+```
+:::
+::: {.column width=50%}
+### Python
+
+```{.python code-line-numbers="|4|6"}
+your_age = 21
+your_shoe_size = 8.5
+
+your_age + your_shoe_size
+
+your_shoe_size/your_age
+```
+
+```{r}
+your_age = 21
+your_shoe_size = 8.5
+
+your_age + your_shoe_size
+
+your_shoe_size/your_age
+```
+:::
+::::
+
 ---
 
+:::: {.columns}
+::: {.column width=50%}
+### R
 ::: {.callout-important}
 ## Don't use `=`, use `<-`
 
@@ -200,67 +292,227 @@ your_shoe_size/your_age
 - It's also a topic that could get you in a 'flame war'. 
 - **Avoid flame wars** if you can. Life is too short.
 :::
+:::
+::: {.column width=50%}
+### Python
+::: {.callout-important}
+## Use `=`, not `<-`
+
+- It's **essential**.
+:::
+:::
+::::
+
 
 ## Asking questions
 
 - comparison operators (`==`, `!=`, `>`, `<`, etc.).
 
-```{r}
-#| include: true
-#| echo: true
+:::: {.columns}
+::: {.column width=50%}
+### R
 
+```{.r code-line-numbers="|1|2"}
 1 == 0
 sqrt(9) < 4
 ```
 
----
-
 ```{r}
-#| include: true
-#| echo: true
-
-'rick' == 'rick'
-'richard' > 'rick' # 'h' < 'k'
-'richard' != 'rick'
+1 == 0
+sqrt(9) < 4
 ```
+:::
+::: {.column width=50%}
+### Python
+```{.python code-line-numbers="|1|2"}
+1 == 0
+np.sqrt(9) < 4        # <1>
+```
+1. Have to use `numpy` to get the square root (`sqrt`) function.
 
-## What can we talk to R about?
+```{python}
+1 == 0
+np.sqrt(9) < 4
+```
+:::
+::::
 
-- Strings (sequences of letters, numbers, characters)
+## What can we talk about?
 
-```{r}
-#| include: true
-#| echo: true
+## Strings
 
+:::: {.columns}
+::: {.column width=50%}
+### R
+```{.r}
 c('w', 'x', 'y', 'z')
 
 middle_letters <- c('m', 'n', 'o')
+middle_letters
 ```
-
-## What can we talk to R about?
-
-- numbers
-    - 3.14159
-  - 4^2
-  - 1e3
-  
-## What can we talk to R about?
-
-- data sets
-- plots
-- analyses
-
----
 
 ```{r}
-#| include: true
-#| echo: true
+c('w', 'x', 'y', 'z')
 
+middle_letters <- c('m', 'n', 'o')
+middle_letters
+```
+:::
+::: {.column width=50%}
+### Python
+```{.python}
+['w', 'x', 'y', 'z']
+
+middle_letters = ['m', 'n', 'o']
+middle_letters
+```
+
+```{python}
+['w', 'x', 'y', 'z']
+
+middle_letters = ['m', 'n', 'o']
+middle_letters
+```
+:::
+::::
+
+## Strings $\neq$ numbers!
+
+:::: {.columns}
+::: {.column width=50%}
+### R
+```{.r}
+identical(c('1', '2'), c(1, 2)) # <1>
+```
+1. *Safe* way in R to compare things.
+
+```{r}
+identical(c('1', '2'), c(1, 2))
+```
+:::
+::: {.column width=50%}
+### Python
+```{.python}
+['1', '2'] == [1, 2]
+```
+
+```{python}
+['1', '2'] == [1, 2]
+```
+:::
+::::
+
+::: {.callout-note}
+R uses `FALSE` where Python uses `False`.
+:::
+
+## Data frames
+
+:::: {.columns}
+::: {.column width=50%}
+### R
+```{.r}
+df <- data.frame(name = c("Tom", "Jerry"), 
+  age = c(10, 19))
+str(df)
+```
+
+```{r}
+df <- data.frame(name = c("Tom", "Jerry"), age = c(10, 19))
+str(df)
+```
+:::
+::: {.column width=50%}
+### Python
+```{.python}
+import pandas as pd                                         # <1>
+data = {'name': ["Tom", "Jerry"], 
+  'age': [10, 19]}
+df = pd.DataFrame(data)
+print(df)
+```
+1. Load the `pandas` package to handle data frames.
+
+```{python}
+import pandas as pd                                         # <1>
+data = {'name': ["Tom", "Jerry"], 'age': [10, 19]}
+df = pd.DataFrame(data)
+print(df)
+```
+:::
+::::
+
+## Plots in R
+
+```{.r code-line-numbers="1-2|3|4-7"}
 rand_x <- rnorm(100)
 rand_y <- rnorm(100)
-my_plot <- plot(rand_x, rand_y) # Give the plot a name
-my_plot # Show the plot
+df <- data.frame(x = rand_x, y = rand_y)
+df |>
+  ggplot() +
+  aes(x = x, y = y) +
+  geom_point()
 ```
+
+```{r}
+#| label: plot-random-xy-r
+rand_x <- rnorm(n = 100)
+rand_y <- rnorm(n = 100)
+df <- data.frame(x = rand_x, y = rand_y)
+df |>
+  ggplot() +
+  aes(x = x, y = y) +
+  geom_point()
+```
+
+## Plots in Python
+
+```{.python code-line-numbers="1|2-3|4-5"}
+import matplotlib.pyplot as plt           # <1>
+rand_x = np.random.normal(0, 1, 100)
+rand_y = np.random.normal(0, 1, 100)
+data = {'x': rand_x, 'y': rand_y}
+df = pd.DataFrame(data)
+```
+1. Import `pyplot` module from `matplotlib` with short name `plt`.
+
+```{python}
+#| label: plot-random-xy-python
+import matplotlib.pyplot as plt
+rand_x = np.random.normal(0, 1, 100)
+rand_y = np.random.normal(0, 1, 100)
+data = {'x': rand_x, 'y': rand_y}
+df = pd.DataFrame(data)
+df.plot(x = 'x', y = 'y', kind = 'scatter')
+plt.show()
+```
+
+## Tip to the wise
+
+:::: {.columns}
+::: {.column width=50%}
+### R
+```{.r}
+# Load packages into memory
+library(ggplot2)
+library(dplyr)
+library(readr)
+```
+:::
+::: {.column width=50%}
+### Python
+```{.python}
+# Import libraries and modules
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+```
+:::
+::::
+
+- Load/import packages/libraries once
+- At the top of your script/document
+- Need a new one? Add it to the code at the top of your script/document.
 
 ## Rules for naming things
 
@@ -270,11 +522,7 @@ my_plot # Show the plot
 - acceptable names for things: `bigly`, `good_name`, `a_longer_good_name`, `Good_name1`, and even `thisIsCamelCaseNoUnderscores` 
 - unacceptable names: `!good`, `bad name` (has a space) or `1_very_bad_name` (starts with a number).
 
-# Getting started with DataCamp
-
-## Sign in
-
-- <https://www.datacamp.com/groups/shared_links/a4e4322254cc9e99082294b2f5eb9b0af748f1d42907df9f716475be78a0520c>
+# Work session
 
 # Next time
 

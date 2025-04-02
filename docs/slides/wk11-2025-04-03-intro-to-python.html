@@ -93,7 +93,27 @@
     code span.va { color: #111111; } /* Variable */
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
   <link rel="stylesheet" href="../include/css/gilmore-revealjs.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -208,15 +228,42 @@ Rick Gilmore
 
 </section>
 <section>
+<section id="prelude" class="title-slide slide level1 center">
+<h1>Prelude</h1>
+
+</section>
+<section class="slide level2">
+
+<iframe data-external="1" src="https://www.youtube.com/embed/qfu_PD-7EtM" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p><span class="citation" data-cites="EllaFitzgeraldVEVO2024-od">EllaFitzgeraldVEVO (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span></p>
+</section></section>
+<section>
 <section id="overview" class="title-slide slide level1 center">
 <h1>Overview</h1>
 
 </section>
 <section id="announcements" class="slide level2">
 <h2>Announcements</h2>
+<ul>
+<li><a href="../exercises/ex06-figs-w-r.html">Exercise 06</a> <span class="orange_due">due</span> today.</li>
+<li>Final project presentation <a href="https://forms.gle/oyotxgnnqchqnSgTA">survey</a></li>
+</ul>
 </section>
 <section id="last-time" class="slide level2">
 <h2>Last time…</h2>
+
+<img data-src="../include/fig/fig-nsfg-22-23-ager-box-violin-raw-facet-lbl-1.png" class="r-stretch quarto-figure-center"><p class="caption">NSFG repondent age by religion <a href="../slides/wk11-2025-04-01-more-ggplot.html#/new-twist-3-output">figure</a></p></section>
+<section id="recommended-design-principles" class="slide level2">
+<h2>Recommended design principles</h2>
+<ul>
+<li>Work iteratively (in small steps)</li>
+<li>Keep prior versions
+<ul>
+<li>Store figure code in <code>*.R</code> or <code>*.qmd</code> files</li>
+</ul></li>
+<li>No ‘secret sauce’</li>
+<li>The process <em>is</em> the product</li>
+</ul>
 </section>
 <section id="today" class="slide level2">
 <h2>Today</h2>
@@ -254,40 +301,47 @@ Rick Gilmore
 </ul>
 </div>
 </section>
-<section id="rstudio" class="slide level2">
-<h2>RStudio</h2>
-<ul>
-<li>Available in PSU computer labs</li>
-<li>Free download from <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a>
-<ul>
-<li>Download and install R first</li>
-<li>Install RStudio second</li>
-</ul></li>
-<li>Run on Posit.cloud!</li>
-</ul>
-</section>
 <section id="console" class="slide level2">
 <h2>Console</h2>
-<ul>
-<li>Talk to Python</li>
-<li>Get a reply</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>license</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="r">R</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">license</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a>license</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+This software is distributed under the terms of the GNU General
+Public License, either Version 2, June 1991 or Version 3, June 2007.
+The terms of version 2 of the license are in a file called COPYING
+which you should have received with
+this software and which can be displayed by RShowDoc("COPYING").
+Version 3 of the license can be displayed by RShowDoc("GPL-3").
+
+Copies of both versions 2 and 3 of the license can be found
+at https://www.R-project.org/Licenses/.
+
+A small number of files (the API header files listed in
+R_DOC_DIR/COPYRIGHTS) are distributed under the
+LESSER GNU GENERAL PUBLIC LICENSE, version 2.1 or later.
+This can be displayed by RShowDoc("LGPL-2.1"),
+or obtained at the URI given.
+Version 3 of the license can be displayed by RShowDoc("LGPL-3").
+
+'Share and Enjoy.'</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<h3 id="python">Python</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a>license</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>See https://www.python.org/psf/license/</code></pre>
 </div>
 </div>
+</div></div>
 </section>
-<section class="slide level2">
-
+<section id="reminder" class="slide level2">
+<h2>Reminder</h2>
 <div class="callout callout-warning callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -304,163 +358,305 @@ Rick Gilmore
 </div>
 </div>
 </section>
-<section id="parts-of-console" class="slide level2">
-<h2>Parts of console</h2>
-<ul>
-<li>Prompt (<code>&gt;&gt;&gt;</code>); cursor (<code>|</code>)</li>
-<li>History of conversation via up/down arrows</li>
-<li>Enter a command, then hit <code>enter</code> or <code>return</code> to say it to Python</li>
-</ul>
-</section>
-<section class="slide level2">
-
+<section id="simple-math" class="slide level2">
+<h2>Simple math</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="r-1">R</h3>
+<div class="sourceCode" id="cb5" data-code-line-numbers="1|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">7</span>)</span>
+<span id="cb5-2"><a></a><span class="fu">sum</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">sum</span>(<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">7</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 12</code></pre>
 </div>
 </div>
-</section>
-<section id="functions" class="slide level2">
-<h2>Functions</h2>
-<ul>
-<li>Tell the computer to do something</li>
-<li>FUNCTION_NAME: what to do</li>
-<li>ARGUMENTS: what to do it to/on and how</li>
-<li><code>sum</code>: function name</li>
-<li><code>(1, 4, 7)</code>: arguments/inputs
-<ul>
-<li>Parentheses are like open hands giving the function something it wants</li>
-</ul></li>
-</ul>
-</section>
-<section class="slide level2">
-
+</div><div class="column" style="width:50%;">
+<h3 id="python-1">Python</h3>
+<div class="sourceCode" id="cb7" data-code-line-numbers="1|2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a></a>x <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">7</span>]</span>
+<span id="cb7-2"><a></a><span class="bu">sum</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">mean</span>(<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">7</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 1</code></pre>
+<pre><code>12</code></pre>
 </div>
 </div>
-</section>
-<section class="slide level2">
-
-<div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">7</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
-</div>
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">sum</span>(<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">7</span>)<span class="sc">/</span><span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
-</div>
-</div>
-</section>
-<section id="section" class="slide level2">
-<h2></h2>
-</section>
-<section class="slide level2">
-
-<div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">sort</span>(<span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">7</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
+</div></div>
 </section>
 <section id="getting-help" class="slide level2">
 <h2>Getting help</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="r-2">R</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">help</span>(<span class="st">"sort"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<h3 id="python-2">Python</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a><span class="bu">help</span>(<span class="st">"numpy.sort"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Help on _ArrayFunctionDispatcher in numpy:
+
+numpy.sort = sort(a, axis=-1, kind=None, order=None, *, stable=None)
+    Return a sorted copy of an array.
+
+    Parameters
+    ----------
+    a : array_like
+        Array to be sorted.
+    axis : int or None, optional
+        Axis along which to sort. If None, the array is flattened before
+        sorting. The default is -1, which sorts along the last axis.
+    kind : {'quicksort', 'mergesort', 'heapsort', 'stable'}, optional
+        Sorting algorithm. The default is 'quicksort'. Note that both 'stable'
+        and 'mergesort' use timsort or radix sort under the covers and,
+        in general, the actual implementation will vary with data type.
+        The 'mergesort' option is retained for backwards compatibility.
+    order : str or list of str, optional
+        When `a` is an array with fields defined, this argument specifies
+        which fields to compare first, second, etc.  A single field can
+        be specified as a string, and not all fields need be specified,
+        but unspecified fields will still be used, in the order in which
+        they come up in the dtype, to break ties.
+    stable : bool, optional
+        Sort stability. If ``True``, the returned array will maintain
+        the relative order of ``a`` values which compare as equal.
+        If ``False`` or ``None``, this is not guaranteed. Internally,
+        this option selects ``kind='stable'``. Default: ``None``.
+
+        .. versionadded:: 2.0.0
+
+    Returns
+    -------
+    sorted_array : ndarray
+        Array of the same type and shape as `a`.
+
+    See Also
+    --------
+    ndarray.sort : Method to sort an array in-place.
+    argsort : Indirect sort.
+    lexsort : Indirect stable sort on multiple keys.
+    searchsorted : Find elements in a sorted array.
+    partition : Partial sort.
+
+    Notes
+    -----
+    The various sorting algorithms are characterized by their average speed,
+    worst case performance, work space size, and whether they are stable. A
+    stable sort keeps items with the same key in the same relative
+    order. The four algorithms implemented in NumPy have the following
+    properties:
+
+    =========== ======= ============= ============ ========
+       kind      speed   worst case    work space   stable
+    =========== ======= ============= ============ ========
+    'quicksort'    1     O(n^2)            0          no
+    'heapsort'     3     O(n*log(n))       0          no
+    'mergesort'    2     O(n*log(n))      ~n/2        yes
+    'timsort'      2     O(n*log(n))      ~n/2        yes
+    =========== ======= ============= ============ ========
+
+    .. note:: The datatype determines which of 'mergesort' or 'timsort'
+       is actually used, even if 'mergesort' is specified. User selection
+       at a finer scale is not currently available.
+
+    For performance, ``sort`` makes a temporary copy if needed to make the data
+    `contiguous &lt;https://numpy.org/doc/stable/glossary.html#term-contiguous&gt;`_
+    in memory along the sort axis. For even better performance and reduced
+    memory consumption, ensure that the array is already contiguous along the
+    sort axis.
+
+    The sort order for complex numbers is lexicographic. If both the real
+    and imaginary parts are non-nan then the order is determined by the
+    real parts except when they are equal, in which case the order is
+    determined by the imaginary parts.
+
+    Previous to numpy 1.4.0 sorting real and complex arrays containing nan
+    values led to undefined behaviour. In numpy versions &gt;= 1.4.0 nan
+    values are sorted to the end. The extended sort order is:
+
+      * Real: [R, nan]
+      * Complex: [R + Rj, R + nanj, nan + Rj, nan + nanj]
+
+    where R is a non-nan real value. Complex values with the same nan
+    placements are sorted according to the non-nan part if it exists.
+    Non-nan values are sorted as before.
+
+    quicksort has been changed to:
+    `introsort &lt;https://en.wikipedia.org/wiki/Introsort&gt;`_.
+    When sorting does not make enough progress it switches to
+    `heapsort &lt;https://en.wikipedia.org/wiki/Heapsort&gt;`_.
+    This implementation makes quicksort O(n*log(n)) in the worst case.
+
+    'stable' automatically chooses the best stable sorting algorithm
+    for the data type being sorted.
+    It, along with 'mergesort' is currently mapped to
+    `timsort &lt;https://en.wikipedia.org/wiki/Timsort&gt;`_
+    or `radix sort &lt;https://en.wikipedia.org/wiki/Radix_sort&gt;`_
+    depending on the data type.
+    API forward compatibility currently limits the
+    ability to select the implementation and it is hardwired for the different
+    data types.
+
+    Timsort is added for better performance on already or nearly
+    sorted data. On random data timsort is almost identical to
+    mergesort. It is now used for stable sort while quicksort is still the
+    default sort if none is chosen. For timsort details, refer to
+    `CPython listsort.txt
+    &lt;https://github.com/python/cpython/blob/3.7/Objects/listsort.txt&gt;`_
+    'mergesort' and 'stable' are mapped to radix sort for integer data types.
+    Radix sort is an O(n) sort instead of O(n log n).
+
+    NaT now sorts to the end of arrays for consistency with NaN.
+
+    Examples
+    --------
+    &gt;&gt;&gt; import numpy as np
+    &gt;&gt;&gt; a = np.array([[1,4],[3,1]])
+    &gt;&gt;&gt; np.sort(a)                # sort along the last axis
+    array([[1, 4],
+           [1, 3]])
+    &gt;&gt;&gt; np.sort(a, axis=None)     # sort the flattened array
+    array([1, 1, 3, 4])
+    &gt;&gt;&gt; np.sort(a, axis=0)        # sort along the first axis
+    array([[1, 1],
+           [3, 4]])
+
+    Use the `order` keyword to specify a field to use when sorting a
+    structured array:
+
+    &gt;&gt;&gt; dtype = [('name', 'S10'), ('height', float), ('age', int)]
+    &gt;&gt;&gt; values = [('Arthur', 1.8, 41), ('Lancelot', 1.9, 38),
+    ...           ('Galahad', 1.7, 38)]
+    &gt;&gt;&gt; a = np.array(values, dtype=dtype)       # create a structured array
+    &gt;&gt;&gt; np.sort(a, order='height')                        # doctest: +SKIP
+    array([('Galahad', 1.7, 38), ('Arthur', 1.8, 41),
+           ('Lancelot', 1.8999999999999999, 38)],
+          dtype=[('name', '|S10'), ('height', '&lt;f8'), ('age', '&lt;i4')])
+
+    Sort by age, then height if ages are equal:
+
+    &gt;&gt;&gt; np.sort(a, order=['age', 'height'])               # doctest: +SKIP
+    array([('Galahad', 1.7, 38), ('Lancelot', 1.8999999999999999, 38),
+           ('Arthur', 1.8, 41)],
+          dtype=[('name', '|S10'), ('height', '&lt;f8'), ('age', '&lt;i4')])</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="importing-packageslibraries" class="slide level2">
+<h2>Importing packages/libraries</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="r-3">R</h3>
+<div class="sourceCode" id="annotated-cell-14"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-14" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-14-1" class="code-annotation-target"><a href="#annotated-cell-14-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(ggplot2)) {</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-14" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-14-2" class="code-annotation-target"><a href="#annotated-cell-14-2"></a>  <span class="fu">install.packages</span>(<span class="st">"ggplot2"</span>)</span>
+<span id="annotated-cell-14-3"><a href="#annotated-cell-14-3"></a>} <span class="cf">else</span> {</span>
+<span id="annotated-cell-14-4"><a href="#annotated-cell-14-4"></a>  <span class="fu">message</span>(<span class="st">"Already installed."</span>)</span>
+<span id="annotated-cell-14-5"><a href="#annotated-cell-14-5"></a>}</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-14" data-target-annotation="3" onclick="event.preventDefault();">3</a><span id="annotated-cell-14-6" class="code-annotation-target"><a href="#annotated-cell-14-6"></a><span class="fu">library</span>(ggplot2)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-14" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-14" data-code-lines="1" data-code-annotation="1">If the package isn’t installed…</span>
+</dd>
+<dt data-target-cell="annotated-cell-14" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-14" data-code-lines="2" data-code-annotation="2">Install it (from the internet).</span>
+</dd>
+<dt data-target-cell="annotated-cell-14" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-14" data-code-lines="6" data-code-annotation="3">Load the package into memory</span>
+</dd>
+</dl>
+</div><div class="column" style="width:50%;">
+<h3 id="python-3">Python</h3>
+<div class="sourceCode" id="annotated-cell-15"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><a class="code-annotation-anchor" data-target-cell="annotated-cell-15" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-15-1" class="code-annotation-target"><a href="#annotated-cell-15-1"></a><span class="op">&lt;</span>Install library outside of Python<span class="op">&gt;</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-15" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-15-2" class="code-annotation-target"><a href="#annotated-cell-15-2"></a><span class="im">import</span> numpy <span class="im">as</span> np</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-15" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-15" data-code-lines="1" data-code-annotation="1">Not shown here, sorry.</span>
+</dd>
+<dt data-target-cell="annotated-cell-15" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-15" data-code-lines="2" data-code-annotation="2">Load the <code>numpy</code> library into memory. We (optionally) give it a short name.</span>
+</dd>
+</dl>
+</div></div>
 </section>
 <section id="sort-again" class="slide level2">
 <h2><code>sort()</code> again</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="r-4">R</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">7</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">12</span>)</span>
+<span id="cb12-2"><a></a><span class="fu">sort</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">sort</span>(<span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">7</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 1 4 7</code></pre>
+<pre><code>[1]  1  4  7 12</code></pre>
 </div>
 </div>
-</section>
-<section id="the-c-commandfunction" class="slide level2">
-<h2>The <code>c()</code> command/function</h2>
-<ul>
-<li><em>C</em>oncatenates or <em>C</em>ombines items into a single thing</li>
-</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="python-4">Python</h3>
+<div class="sourceCode" id="annotated-cell-18"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><a class="code-annotation-anchor" data-target-cell="annotated-cell-18" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-18-1" class="code-annotation-target"><a href="#annotated-cell-18-1"></a>x <span class="op">=</span> np.array([<span class="dv">7</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">12</span>])</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-18" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-18-2" class="code-annotation-target"><a href="#annotated-cell-18-2"></a>np.sort(x)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-18" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-18" data-code-lines="1" data-code-annotation="1">Create a <code>numpy</code> array.</span>
+</dd>
+<dt data-target-cell="annotated-cell-18" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-18" data-code-lines="2" data-code-annotation="2">Call the <code>numpy</code> <code>sort</code> function/method on x.</span>
+</dd>
+</dl>
 <div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">7</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 4 1 7</code></pre>
-</div>
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">15</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code> [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15</code></pre>
+<pre><code>array([ 1,  4,  7, 12])</code></pre>
 </div>
 </div>
-</section>
-<section id="assignments" class="slide level2">
-<h2>Assignments</h2>
-<div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>my_age <span class="ot">&lt;-</span> <span class="dv">61</span> <span class="co"># My age. Beats the alternative, I guess.</span></span>
-<span id="cb19-2"><a></a></span>
-<span id="cb19-3"><a></a><span class="co"># Text that is preceded by the # character is called a comment.</span></span>
-<span id="cb19-4"><a></a><span class="co"># These are 'notes' you can keep about your code so you remember why you</span></span>
-<span id="cb19-5"><a></a><span class="co"># did something. Here, R ignores the part after the #: ' Rick's age'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-</section>
-<section id="assignments-continued" class="slide level2">
-<h2>Assignments (continued)</h2>
-<ul>
-<li>Give (assign) number (<code>61</code>) a useful/informative name (<code>my_age</code>)</li>
-<li>Leftward arrow (<code>&lt;-</code>) (option/alt + minus): assignment command</li>
-</ul>
+</div></div>
 </section>
 <section class="slide level2">
 
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="r-5">R</h3>
+<div class="sourceCode" id="cb15" data-code-line-numbers="|4|6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>your_age <span class="ot">&lt;-</span> <span class="dv">21</span></span>
+<span id="cb15-2"><a></a>your_shoe_size <span class="ot">&lt;-</span> <span class="fl">8.5</span></span>
+<span id="cb15-3"><a></a></span>
+<span id="cb15-4"><a></a>your_age <span class="sc">+</span> your_shoe_size</span>
+<span id="cb15-5"><a></a></span>
+<span id="cb15-6"><a></a>your_shoe_size<span class="sc">/</span>your_age</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>your_age <span class="ot">&lt;-</span> <span class="dv">21</span></span>
-<span id="cb20-2"><a></a>your_shoe_size <span class="ot">&lt;-</span> <span class="fl">8.5</span></span>
-<span id="cb20-3"><a></a></span>
-<span id="cb20-4"><a></a>your_age <span class="sc">+</span> your_shoe_size</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 29.5</code></pre>
 </div>
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>your_shoe_size<span class="sc">/</span>your_age</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.4047619</code></pre>
 </div>
 </div>
+</div><div class="column" style="width:50%;">
+<h3 id="python-5">Python</h3>
+<div class="sourceCode" id="cb18" data-code-line-numbers="|4|6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a></a>your_age <span class="op">=</span> <span class="dv">21</span></span>
+<span id="cb18-2"><a></a>your_shoe_size <span class="op">=</span> <span class="fl">8.5</span></span>
+<span id="cb18-3"><a></a></span>
+<span id="cb18-4"><a></a>your_age <span class="op">+</span> your_shoe_size</span>
+<span id="cb18-5"><a></a></span>
+<span id="cb18-6"><a></a>your_shoe_size<span class="op">/</span>your_age</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 29.5</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.4047619</code></pre>
+</div>
+</div>
+</div></div>
 </section>
 <section class="slide level2">
 
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="r-6">R</h3>
 <div class="callout callout-important callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -480,112 +676,224 @@ Rick Gilmore
 </div>
 </div>
 </div>
+</div><div class="column" style="width:50%;">
+<h3 id="python-6">Python</h3>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Use <code>=</code>, not <code>&lt;-</code></strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>It’s <strong>essential</strong>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div>
 </section>
 <section id="asking-questions" class="slide level2">
 <h2>Asking questions</h2>
 <ul>
 <li>comparison operators (<code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>, etc.).</li>
 </ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="r-7">R</h3>
+<div class="sourceCode" id="cb21" data-code-line-numbers="|1|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">0</span></span>
+<span id="cb21-2"><a></a><span class="fu">sqrt</span>(<span class="dv">9</span>) <span class="sc">&lt;</span> <span class="dv">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE</code></pre>
 </div>
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a><span class="fu">sqrt</span>(<span class="dv">9</span>) <span class="sc">&lt;</span> <span class="dv">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] TRUE</code></pre>
 </div>
 </div>
-</section>
-<section class="slide level2">
-
+</div><div class="column" style="width:50%;">
+<h3 id="python-7">Python</h3>
+<div class="sourceCode" id="annotated-cell-29" data-code-line-numbers="|1|2"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><span id="annotated-cell-29-1"><a href="#annotated-cell-29-1"></a><span class="dv">1</span> <span class="op">==</span> <span class="dv">0</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-29" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-29-2" class="code-annotation-target"><a href="#annotated-cell-29-2"></a>np.sqrt(<span class="dv">9</span>) <span class="op">&lt;</span> <span class="dv">4</span></span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-29" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-29" data-code-lines="2" data-code-annotation="1">Have to use <code>numpy</code> to get the square root (<code>sqrt</code>) function.</span>
+</dd>
+</dl>
 <div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a><span class="st">'rick'</span> <span class="sc">==</span> <span class="st">'rick'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
+<pre><code>False</code></pre>
 </div>
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="st">'richard'</span> <span class="sc">&gt;</span> <span class="st">'rick'</span> <span class="co"># 'h' &lt; 'k'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] FALSE</code></pre>
-</div>
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a><span class="st">'richard'</span> <span class="sc">!=</span> <span class="st">'rick'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
+<pre><code>np.True_</code></pre>
 </div>
 </div>
+</div></div>
 </section>
-<section id="what-can-we-talk-to-r-about" class="slide level2">
-<h2>What can we talk to R about?</h2>
-<ul>
-<li>Strings (sequences of letters, numbers, characters)</li>
-</ul>
+<section id="what-can-we-talk-about" class="slide level2">
+<h2>What can we talk about?</h2>
+</section>
+<section id="strings" class="slide level2">
+<h2>Strings</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="r-8">R</h3>
+<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a><span class="fu">c</span>(<span class="st">'w'</span>, <span class="st">'x'</span>, <span class="st">'y'</span>, <span class="st">'z'</span>)</span>
+<span id="cb26-2"><a></a></span>
+<span id="cb26-3"><a></a>middle_letters <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'m'</span>, <span class="st">'n'</span>, <span class="st">'o'</span>)</span>
+<span id="cb26-4"><a></a>middle_letters</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a><span class="fu">c</span>(<span class="st">'w'</span>, <span class="st">'x'</span>, <span class="st">'y'</span>, <span class="st">'z'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "w" "x" "y" "z"</code></pre>
 </div>
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a></a>middle_letters <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'m'</span>, <span class="st">'n'</span>, <span class="st">'o'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-</section>
-<section id="what-can-we-talk-to-r-about-1" class="slide level2">
-<h2>What can we talk to R about?</h2>
-<ul>
-<li>numbers
-<ul>
-<li>3.14159</li>
-<li>4^2</li>
-<li>1e3</li>
-</ul></li>
-</ul>
-</section>
-<section id="what-can-we-talk-to-r-about-2" class="slide level2">
-<h2>What can we talk to R about?</h2>
-<ul>
-<li>data sets</li>
-<li>plots</li>
-<li>analyses</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a>rand_x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
-<span id="cb37-2"><a></a>rand_y <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
-<span id="cb37-3"><a></a>my_plot <span class="ot">&lt;-</span> <span class="fu">plot</span>(rand_x, rand_y) <span class="co"># Give the plot a name</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a></a>my_plot <span class="co"># Show the plot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
-<pre><code>NULL</code></pre>
+<pre><code>[1] "m" "n" "o"</code></pre>
 </div>
 </div>
-<img data-src="../include/fig/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section>
+</div><div class="column" style="width:50%;">
+<h3 id="python-8">Python</h3>
+<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a></a>[<span class="st">'w'</span>, <span class="st">'x'</span>, <span class="st">'y'</span>, <span class="st">'z'</span>]</span>
+<span id="cb29-2"><a></a></span>
+<span id="cb29-3"><a></a>middle_letters <span class="op">=</span> [<span class="st">'m'</span>, <span class="st">'n'</span>, <span class="st">'o'</span>]</span>
+<span id="cb29-4"><a></a>middle_letters</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>['w', 'x', 'y', 'z']</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>['m', 'n', 'o']</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="strings-neq-numbers" class="slide level2">
+<h2>Strings <span class="math inline">\(\neq\)</span> numbers!</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="r-9">R</h3>
+<div class="sourceCode" id="annotated-cell-38"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-38" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-38-1" class="code-annotation-target"><a href="#annotated-cell-38-1"></a><span class="fu">identical</span>(<span class="fu">c</span>(<span class="st">'1'</span>, <span class="st">'2'</span>), <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-38" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-38" data-code-lines="1" data-code-annotation="1"><em>Safe</em> way in R to compare things.</span>
+</dd>
+</dl>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<h3 id="python-9">Python</h3>
+<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a></a>[<span class="st">'1'</span>, <span class="st">'2'</span>] <span class="op">==</span> [<span class="dv">1</span>, <span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>False</code></pre>
+</div>
+</div>
+</div></div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>R uses <code>FALSE</code> where Python uses <code>False</code>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="data-frames" class="slide level2">
+<h2>Data frames</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="r-10">R</h3>
+<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">name =</span> <span class="fu">c</span>(<span class="st">"Tom"</span>, <span class="st">"Jerry"</span>), </span>
+<span id="cb35-2"><a></a>  <span class="at">age =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">19</span>))</span>
+<span id="cb35-3"><a></a><span class="fu">str</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   2 obs. of  2 variables:
+ $ name: chr  "Tom" "Jerry"
+ $ age : num  10 19</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<h3 id="python-10">Python</h3>
+<div class="sourceCode" id="annotated-cell-44"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><a class="code-annotation-anchor" data-target-cell="annotated-cell-44" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-44-1" class="code-annotation-target"><a href="#annotated-cell-44-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="annotated-cell-44-2"><a href="#annotated-cell-44-2"></a>data <span class="op">=</span> {<span class="st">'name'</span>: [<span class="st">"Tom"</span>, <span class="st">"Jerry"</span>], </span>
+<span id="annotated-cell-44-3"><a href="#annotated-cell-44-3"></a>  <span class="st">'age'</span>: [<span class="dv">10</span>, <span class="dv">19</span>]}</span>
+<span id="annotated-cell-44-4"><a href="#annotated-cell-44-4"></a>df <span class="op">=</span> pd.DataFrame(data)</span>
+<span id="annotated-cell-44-5"><a href="#annotated-cell-44-5"></a><span class="bu">print</span>(df)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-44" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-44" data-code-lines="1" data-code-annotation="1">Load the <code>pandas</code> package to handle data frames.</span>
+</dd>
+</dl>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>    name  age
+0    Tom   10
+1  Jerry   19</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="plots-in-r" class="slide level2">
+<h2>Plots in R</h2>
+<div class="sourceCode" id="cb38" data-code-line-numbers="1-2|3|4-7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a></a>rand_x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb38-2"><a></a>rand_y <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb38-3"><a></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">x =</span> rand_x, <span class="at">y =</span> rand_y)</span>
+<span id="cb38-4"><a></a>df <span class="sc">|&gt;</span></span>
+<span id="cb38-5"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb38-6"><a></a>  <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y) <span class="sc">+</span></span>
+<span id="cb38-7"><a></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<img data-src="../include/fig/plot-random-xy-r-1.png" width="960" class="r-stretch"></section>
+<section id="plots-in-python" class="slide level2">
+<h2>Plots in Python</h2>
+<div class="sourceCode" id="annotated-cell-2" data-code-line-numbers="1|2-3|4-5"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-2-1" class="code-annotation-target"><a href="#annotated-cell-2-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="annotated-cell-2-2"><a href="#annotated-cell-2-2"></a>rand_x <span class="op">=</span> np.random.normal(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">100</span>)</span>
+<span id="annotated-cell-2-3"><a href="#annotated-cell-2-3"></a>rand_y <span class="op">=</span> np.random.normal(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">100</span>)</span>
+<span id="annotated-cell-2-4"><a href="#annotated-cell-2-4"></a>data <span class="op">=</span> {<span class="st">'x'</span>: rand_x, <span class="st">'y'</span>: rand_y}</span>
+<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5"></a>df <span class="op">=</span> pd.DataFrame(data)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-2" data-code-lines="1" data-code-annotation="1">Import <code>pyplot</code> module from <code>matplotlib</code> with short name <code>plt</code>.</span>
+</dd>
+</dl>
+
+<img data-src="../include/fig/plot-random-xy-python-1.png" width="960" class="r-stretch"></section>
+<section id="tip-to-the-wise" class="slide level2">
+<h2>Tip to the wise</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="r-11">R</h3>
+<div class="sourceCode" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a><span class="co"># Load packages into memory</span></span>
+<span id="cb39-2"><a></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb39-3"><a></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb39-4"><a></a><span class="fu">library</span>(readr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<h3 id="python-11">Python</h3>
+<div class="sourceCode" id="cb40"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a></a><span class="co"># Import libraries and modules</span></span>
+<span id="cb40-2"><a></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb40-3"><a></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb40-4"><a></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<ul>
+<li>Load/import packages/libraries once</li>
+<li>At the top of your script/document</li>
+<li>Need a new one? Add it to the code at the top of your script/document.</li>
+</ul>
+</section>
 <section id="rules-for-naming-things" class="slide level2">
 <h2>Rules for naming things</h2>
 <ol type="1">
@@ -597,17 +905,11 @@ Rick Gilmore
 <li>unacceptable names: <code>!good</code>, <code>bad name</code> (has a space) or <code>1_very_bad_name</code> (starts with a number).</li>
 </ul>
 </section></section>
-<section>
-<section id="getting-started-with-datacamp" class="title-slide slide level1 center">
-<h1>Getting started with DataCamp</h1>
+<section id="work-session" class="title-slide slide level1 center">
+<h1>Work session</h1>
 
 </section>
-<section id="sign-in" class="slide level2">
-<h2>Sign in</h2>
-<ul>
-<li><a href="https://www.datacamp.com/groups/shared_links/a4e4322254cc9e99082294b2f5eb9b0af748f1d42907df9f716475be78a0520c" class="uri">https://www.datacamp.com/groups/shared_links/a4e4322254cc9e99082294b2f5eb9b0af748f1d42907df9f716475be78a0520c</a></li>
-</ul>
-</section></section>
+
 <section id="next-time" class="title-slide slide level1 center">
 <h1>Next time</h1>
 
@@ -618,10 +920,15 @@ Rick Gilmore
 <h1>Resources</h1>
 
 </section>
-<section id="references" class="slide level2">
+<section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-EllaFitzgeraldVEVO2024-od" class="csl-entry" role="listitem">
+EllaFitzgeraldVEVO. (2024). <em>Ella fitzgerald, louis armstrong - let’s call the whole thing off (audio)</em>. Youtube. Retrieved from <a href="https://www.youtube.com/watch?v=qfu_PD-7EtM">https://www.youtube.com/watch?v=qfu_PD-7EtM</a>
+</div>
+</div>
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

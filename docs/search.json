@@ -2475,14 +2475,14 @@
     "href": "schedule.html#week-11",
     "title": "Schedule",
     "section": "March 31 - April 4",
-    "text": "March 31 - April 4\nMore on ggplot\n\nTuesday, April 01\n\nSlides\nAssigned: Final project preferences survey\n\n\n\nThursday, April 03\nIntro to Python\n\nDue: Exercise-06 | Canvas dropbox"
+    "text": "March 31 - April 4\nMore on ggplot\n\nTuesday, April 01\n\nSlides\nAssigned: Final project preferences survey\n\n\n\nThursday, April 03\nIntro to Python\n\nSlides\nComplete:\n\nDataCamp, Introduction to Python\n\nDue: Exercise-06 | Canvas dropbox"
   },
   {
     "objectID": "schedule.html#week-12",
     "href": "schedule.html#week-12",
     "title": "Schedule",
     "section": "April 7-11",
-    "text": "April 7-11\nExploring data with Python\n\nTuesday, April 08\n\nDue: Final project preferences survey\n\n\n\nThursday, April 10\n\nAssigned: Exercise-07"
+    "text": "April 7-11\nExploring data with Python\n\nTuesday, April 08\n\nDue: Final project preferences survey\n\n\n\nThursday, April 10\nMore data explorations with Python\n\nAssigned: Exercise-07"
   },
   {
     "objectID": "schedule.html#week-13",
@@ -4218,14 +4218,14 @@
     "href": "slides/wk11-2025-04-03-intro-to-python.html#announcements",
     "title": "Introduction to Python",
     "section": "Announcements",
-    "text": "Announcements"
+    "text": "Announcements\n\nExercise 06 due today.\nFinal project presentation survey"
   },
   {
     "objectID": "slides/wk11-2025-04-03-intro-to-python.html#last-time",
     "href": "slides/wk11-2025-04-03-intro-to-python.html#last-time",
     "title": "Introduction to Python",
     "section": "Last time…",
-    "text": "Last time…"
+    "text": "Last time…\n\nNSFG repondent age by religion figure"
   },
   {
     "objectID": "slides/wk11-2025-04-03-intro-to-python.html#today",
@@ -4260,7 +4260,7 @@
     "href": "slides/wk11-2025-04-03-intro-to-python.html#console",
     "title": "Introduction to Python",
     "section": "Console",
-    "text": "Console\n\nTalk to Python\nGet a reply"
+    "text": "Console\n\n\nR\nlicense()\n\n\n\nThis software is distributed under the terms of the GNU General\nPublic License, either Version 2, June 1991 or Version 3, June 2007.\nThe terms of version 2 of the license are in a file called COPYING\nwhich you should have received with\nthis software and which can be displayed by RShowDoc(\"COPYING\").\nVersion 3 of the license can be displayed by RShowDoc(\"GPL-3\").\n\nCopies of both versions 2 and 3 of the license can be found\nat https://www.R-project.org/Licenses/.\n\nA small number of files (the API header files listed in\nR_DOC_DIR/COPYRIGHTS) are distributed under the\nLESSER GNU GENERAL PUBLIC LICENSE, version 2.1 or later.\nThis can be displayed by RShowDoc(\"LGPL-2.1\"),\nor obtained at the URI given.\nVersion 3 of the license can be displayed by RShowDoc(\"LGPL-3\").\n\n'Share and Enjoy.'\n\n\n\nPython\nlicense\n\n\nSee https://www.python.org/psf/license/"
   },
   {
     "objectID": "slides/wk11-2025-04-03-intro-to-python.html#parts-of-console",
@@ -4281,14 +4281,14 @@
     "href": "slides/wk11-2025-04-03-intro-to-python.html#getting-help",
     "title": "Introduction to Python",
     "section": "Getting help",
-    "text": "Getting help"
+    "text": "Getting help\n\n\nR\nhelp(\"sort\")\n\nPython\nhelp(\"numpy.sort\")\n\n\nHelp on _ArrayFunctionDispatcher in numpy:\n\nnumpy.sort = sort(a, axis=-1, kind=None, order=None, *, stable=None)\n    Return a sorted copy of an array.\n\n    Parameters\n    ----------\n    a : array_like\n        Array to be sorted.\n    axis : int or None, optional\n        Axis along which to sort. If None, the array is flattened before\n        sorting. The default is -1, which sorts along the last axis.\n    kind : {'quicksort', 'mergesort', 'heapsort', 'stable'}, optional\n        Sorting algorithm. The default is 'quicksort'. Note that both 'stable'\n        and 'mergesort' use timsort or radix sort under the covers and,\n        in general, the actual implementation will vary with data type.\n        The 'mergesort' option is retained for backwards compatibility.\n    order : str or list of str, optional\n        When `a` is an array with fields defined, this argument specifies\n        which fields to compare first, second, etc.  A single field can\n        be specified as a string, and not all fields need be specified,\n        but unspecified fields will still be used, in the order in which\n        they come up in the dtype, to break ties.\n    stable : bool, optional\n        Sort stability. If ``True``, the returned array will maintain\n        the relative order of ``a`` values which compare as equal.\n        If ``False`` or ``None``, this is not guaranteed. Internally,\n        this option selects ``kind='stable'``. Default: ``None``.\n\n        .. versionadded:: 2.0.0\n\n    Returns\n    -------\n    sorted_array : ndarray\n        Array of the same type and shape as `a`.\n\n    See Also\n    --------\n    ndarray.sort : Method to sort an array in-place.\n    argsort : Indirect sort.\n    lexsort : Indirect stable sort on multiple keys.\n    searchsorted : Find elements in a sorted array.\n    partition : Partial sort.\n\n    Notes\n    -----\n    The various sorting algorithms are characterized by their average speed,\n    worst case performance, work space size, and whether they are stable. A\n    stable sort keeps items with the same key in the same relative\n    order. The four algorithms implemented in NumPy have the following\n    properties:\n\n    =========== ======= ============= ============ ========\n       kind      speed   worst case    work space   stable\n    =========== ======= ============= ============ ========\n    'quicksort'    1     O(n^2)            0          no\n    'heapsort'     3     O(n*log(n))       0          no\n    'mergesort'    2     O(n*log(n))      ~n/2        yes\n    'timsort'      2     O(n*log(n))      ~n/2        yes\n    =========== ======= ============= ============ ========\n\n    .. note:: The datatype determines which of 'mergesort' or 'timsort'\n       is actually used, even if 'mergesort' is specified. User selection\n       at a finer scale is not currently available.\n\n    For performance, ``sort`` makes a temporary copy if needed to make the data\n    `contiguous &lt;https://numpy.org/doc/stable/glossary.html#term-contiguous&gt;`_\n    in memory along the sort axis. For even better performance and reduced\n    memory consumption, ensure that the array is already contiguous along the\n    sort axis.\n\n    The sort order for complex numbers is lexicographic. If both the real\n    and imaginary parts are non-nan then the order is determined by the\n    real parts except when they are equal, in which case the order is\n    determined by the imaginary parts.\n\n    Previous to numpy 1.4.0 sorting real and complex arrays containing nan\n    values led to undefined behaviour. In numpy versions &gt;= 1.4.0 nan\n    values are sorted to the end. The extended sort order is:\n\n      * Real: [R, nan]\n      * Complex: [R + Rj, R + nanj, nan + Rj, nan + nanj]\n\n    where R is a non-nan real value. Complex values with the same nan\n    placements are sorted according to the non-nan part if it exists.\n    Non-nan values are sorted as before.\n\n    quicksort has been changed to:\n    `introsort &lt;https://en.wikipedia.org/wiki/Introsort&gt;`_.\n    When sorting does not make enough progress it switches to\n    `heapsort &lt;https://en.wikipedia.org/wiki/Heapsort&gt;`_.\n    This implementation makes quicksort O(n*log(n)) in the worst case.\n\n    'stable' automatically chooses the best stable sorting algorithm\n    for the data type being sorted.\n    It, along with 'mergesort' is currently mapped to\n    `timsort &lt;https://en.wikipedia.org/wiki/Timsort&gt;`_\n    or `radix sort &lt;https://en.wikipedia.org/wiki/Radix_sort&gt;`_\n    depending on the data type.\n    API forward compatibility currently limits the\n    ability to select the implementation and it is hardwired for the different\n    data types.\n\n    Timsort is added for better performance on already or nearly\n    sorted data. On random data timsort is almost identical to\n    mergesort. It is now used for stable sort while quicksort is still the\n    default sort if none is chosen. For timsort details, refer to\n    `CPython listsort.txt\n    &lt;https://github.com/python/cpython/blob/3.7/Objects/listsort.txt&gt;`_\n    'mergesort' and 'stable' are mapped to radix sort for integer data types.\n    Radix sort is an O(n) sort instead of O(n log n).\n\n    NaT now sorts to the end of arrays for consistency with NaN.\n\n    Examples\n    --------\n    &gt;&gt;&gt; import numpy as np\n    &gt;&gt;&gt; a = np.array([[1,4],[3,1]])\n    &gt;&gt;&gt; np.sort(a)                # sort along the last axis\n    array([[1, 4],\n           [1, 3]])\n    &gt;&gt;&gt; np.sort(a, axis=None)     # sort the flattened array\n    array([1, 1, 3, 4])\n    &gt;&gt;&gt; np.sort(a, axis=0)        # sort along the first axis\n    array([[1, 1],\n           [3, 4]])\n\n    Use the `order` keyword to specify a field to use when sorting a\n    structured array:\n\n    &gt;&gt;&gt; dtype = [('name', 'S10'), ('height', float), ('age', int)]\n    &gt;&gt;&gt; values = [('Arthur', 1.8, 41), ('Lancelot', 1.9, 38),\n    ...           ('Galahad', 1.7, 38)]\n    &gt;&gt;&gt; a = np.array(values, dtype=dtype)       # create a structured array\n    &gt;&gt;&gt; np.sort(a, order='height')                        # doctest: +SKIP\n    array([('Galahad', 1.7, 38), ('Arthur', 1.8, 41),\n           ('Lancelot', 1.8999999999999999, 38)],\n          dtype=[('name', '|S10'), ('height', '&lt;f8'), ('age', '&lt;i4')])\n\n    Sort by age, then height if ages are equal:\n\n    &gt;&gt;&gt; np.sort(a, order=['age', 'height'])               # doctest: +SKIP\n    array([('Galahad', 1.7, 38), ('Lancelot', 1.8999999999999999, 38),\n           ('Arthur', 1.8, 41)],\n          dtype=[('name', '|S10'), ('height', '&lt;f8'), ('age', '&lt;i4')])"
   },
   {
     "objectID": "slides/wk11-2025-04-03-intro-to-python.html#sort-again",
     "href": "slides/wk11-2025-04-03-intro-to-python.html#sort-again",
     "title": "Introduction to Python",
     "section": "sort() again",
-    "text": "sort() again\n\n\nCode\nsort(c(4, 1, 7))\n\n\n[1] 1 4 7"
+    "text": "sort() again\n\n\nR\nx &lt;- c(7, 1, 4, 12)\nsort(x)\n\n\n[1]  1  4  7 12\n\n\n\nPython\n1x = np.array([7, 1, 4, 12])\n2np.sort(x)\n\n1\n\nCreate a numpy array.\n\n2\n\nCall the numpy sort function/method on x.\n\n\n\n\narray([ 1,  4,  7, 12])"
   },
   {
     "objectID": "slides/wk11-2025-04-03-intro-to-python.html#the-c-commandfunction",
@@ -4309,28 +4309,28 @@
     "href": "slides/wk11-2025-04-03-intro-to-python.html#assignments-continued",
     "title": "Introduction to Python",
     "section": "Assignments (continued)",
-    "text": "Assignments (continued)\n\nGive (assign) number (61) a useful/informative name (my_age)\nLeftward arrow (&lt;-) (option/alt + minus): assignment command"
+    "text": "Assignments (continued)\n\nGive (assign) number (61) a useful/informative name (my_age)"
   },
   {
     "objectID": "slides/wk11-2025-04-03-intro-to-python.html#asking-questions",
     "href": "slides/wk11-2025-04-03-intro-to-python.html#asking-questions",
     "title": "Introduction to Python",
     "section": "Asking questions",
-    "text": "Asking questions\n\ncomparison operators (==, !=, &gt;, &lt;, etc.).\n\n\n\nCode\n1 == 0\n\n\n[1] FALSE\n\n\nCode\nsqrt(9) &lt; 4\n\n\n[1] TRUE"
+    "text": "Asking questions\n\ncomparison operators (==, !=, &gt;, &lt;, etc.).\n\n\n\nR\n1 == 0\nsqrt(9) &lt; 4\n\n\n[1] FALSE\n\n\n[1] TRUE\n\n\n\nPython\n1 == 0\n1np.sqrt(9) &lt; 4\n\n1\n\nHave to use numpy to get the square root (sqrt) function.\n\n\n\n\nFalse\n\n\nnp.True_"
   },
   {
     "objectID": "slides/wk11-2025-04-03-intro-to-python.html#what-can-we-talk-to-r-about",
     "href": "slides/wk11-2025-04-03-intro-to-python.html#what-can-we-talk-to-r-about",
     "title": "Introduction to Python",
     "section": "What can we talk to R about?",
-    "text": "What can we talk to R about?\n\nStrings (sequences of letters, numbers, characters)\n\n\n\nCode\nc('w', 'x', 'y', 'z')\n\n\n[1] \"w\" \"x\" \"y\" \"z\"\n\n\nCode\nmiddle_letters &lt;- c('m', 'n', 'o')"
+    "text": "What can we talk to R about?\n\nnumbers\n\n3.14159\n4^2\n1e3"
   },
   {
     "objectID": "slides/wk11-2025-04-03-intro-to-python.html#what-can-we-talk-to-r-about-1",
     "href": "slides/wk11-2025-04-03-intro-to-python.html#what-can-we-talk-to-r-about-1",
     "title": "Introduction to Python",
     "section": "What can we talk to R about?",
-    "text": "What can we talk to R about?\n\nnumbers\n\n3.14159\n4^2\n1e3"
+    "text": "What can we talk to R about?\n\ndata sets\nplots\nanalyses"
   },
   {
     "objectID": "slides/wk11-2025-04-03-intro-to-python.html#what-can-we-talk-to-r-about-2",
@@ -4358,7 +4358,7 @@
     "href": "slides/wk11-2025-04-03-intro-to-python.html#references",
     "title": "Introduction to Python",
     "section": "References",
-    "text": "References"
+    "text": "References\n\n\n\n\nEllaFitzgeraldVEVO. (2024). Ella fitzgerald, louis armstrong - let’s call the whole thing off (audio). Youtube. Retrieved from https://www.youtube.com/watch?v=qfu_PD-7EtM"
   },
   {
     "objectID": "exercises/ex02-data-viz-outside-psych.html",
@@ -4604,5 +4604,117 @@
     "title": "Findings: Data viz outside psych sci",
     "section": "Figures found",
     "text": "Figures found\n\nCode\nthese_figs &lt;- ex02 |&gt;\n  filter(!is.na(url_to_figure))\n\nres &lt;- invisible(lapply(1:dim(these_figs)[1], return_img_chunk, df = these_figs))\ncat(unlist(res), sep = \"\\n\")\n\n\nFigure 1\nSource: https://wpdatatables.com/sports-data-visualization/#:~:text=What%20is%20Sports%20Data%20Visualization,drawn%20from%20sports%2Drelated%20data.\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\nReport\nBasketball Fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 2\nSource: https://kinesiology.csp.edu/sports-coaches-and-trainers/infographic-top-paid-athletes-by-gender/?nab=1\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nKmm\narticle\nThis image breaksdown a few different types of sport business issues in regard to male vs female salary in sport.\n\n\n\n\n\n\nComments\n\n\n\n\nGraphic\n\n\n\n\n\nFigure 3\nSource: \n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nPoster\nSeen in person\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of physicians by resident year in a hospital department\n\n\n\n\n\nFigure 4\nSource: https://hcup-us.ahrq.gov/reports/statbriefs/sb253-Influenza-Hospitalizations-ED-Visits-2006-2016.jsp\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nReport\nPublic health/medical example\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 5\nSource: https://www.bruinsportsanalytics.com/post/growth-of-nwsl\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nArticle\nNWSL fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 6\nSource: https://www.hockeyviz.com/team/CAR/2425\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nNHL, Canes fan\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 7\nSource: https://manual.audacityteam.org/\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nayc1\nWebsite\nVisualization of sound data\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 8\nSource: https://www.nbcnews.com/data-graphics/2023-college-football-season-data-6-maps-charts-rcna102444\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI am very interested in college sports and I found this graphic very interesting and easy to comprehend\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nLocations of student-athlete recruits for the major athletic conferences in the past 10 years\n\n\n\n\n\nFigure 9\nSource: https://news.gallup.com/poll/650318/grocery-restaurant-industry-images-slide.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nI thought this was an interesting trend to map, especially because sports appear to be a large part of American entertainment culture\n\n\n\n\n\n\nComments\n\n\n\n\nAmerican’s overall opinions of the sports industry from 2001-2024\n\n\n\n\n\nFigure 10\nSource: https://informationisbeautiful.net/beautifulnews/595-childrens-lives-saved/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nInfographic\nI thought this was very visually appealing yet provided a lot of useful information\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nNumber of children’s lives saved in varying regions over the last 25 years\n\n\n\n\n\nFigure 11\nSource: https://petapixel.com/2019/10/01/photos-of-endangered-species-where-every-pixel-represents-one-animal/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nDigital Art\nSea turtles are my favorite animal, but I thought this was a very interesting way to use digital art to bring awareness to endangerment\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nDigital image made of pixels correlating to how the number of animals left in the population\n\n\n\n\n\nFigure 12\nSource: https://news.gallup.com/poll/655220/satisfaction-democracy-edges-record-low.aspx\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nses1\nArticle\nEspecially after the election and inauguration day, this trend is interesting to me\n\n\n\n\n\n\nComments\n\n\n\n\nPercentage of Americans satisfied with the way democracy is working\n\n\n\n\n\nFigure 13\nSource: https://osf.io/preprints/osf/3nyrq\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\napl1\n3D Art\nI like 3D Art and I liked how the data was visualized in this example, it shows how varied it can be\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 14\nSource: https://www.epa.gov/outdoor-air-quality-data/air-data-daily-air-quality-tracker\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\npp\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 15\nSource: https://fivethirtyeight.com/features/how-mapping-shots-in-the-nba-changed-it-forever/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nThe figure lays out a clear image of field shots paired with percentages\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 16\nSource: https://journals.sagepub.com/doi/full/10.3233/THC-231875\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\njournal\nThe figure shows their methods through images of demonstrations\n\n\n\n\n\n\nComments\n\n\n\n\nsports\n\n\n\n\n\nFigure 17\nSource: https://www.nature.com/articles/s43247-023-00856-9\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure 3 shows comparisons of negative and positive emotions tied to treatment groups in a simple way\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 18\nSource: https://pmc.ncbi.nlm.nih.gov/articles/PMC8639497/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nFigure shows an easy to read graph showing data of publications per year\n\n\n\n\n\n\nComments\n\n\n\n\nart\n\n\n\n\n\nFigure 19\nSource: https://zapier.com/blog/pandemic-business-boom-report/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the importance of the pandemic when it comes to an explanation for the rise of businesses\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 20\nSource: https://www.businessinsider.com/17-charts-that-show-just-how-scary-amazons-275-billion-business-really-is-2016-3#its-also-the-top-seller-for-personal-care-and-beauty-products-in-the-us-5\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nmec\narticle\nChart shows the stats on how amazon exceeds other sellers specifically for beauty products and personal care\n\n\n\n\n\n\nComments\n\n\n\n\nbusiness\n\n\n\n\n\nFigure 21\nSource: https://impact.economist.com/perspectives/health/addressing-recurrent-cardiovascular-events-asia-pacific\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 22\nSource: https://impact.economist.com/perspectives/technology-innovation/putting-iot-work-business-operations\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nzw\nwebsite\nNA\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 23\nSource: https://ygoprodeck.com/tournament/richmond-wcq-regional-2626\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nI play Yugioh, so that’s why I chose the graph\n\n\n\n\n\n\n\n\n\nComments\n\n\n\n\nI find the choice to use a Pie chart to represent proportion of decks used to be interesing, as compared to a bar chart for frequency\n\n\n\n\n\nFigure 24\nSource: https://www.census.gov/construction/nrs/current/index.html\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nThe census beuaru collects a lot of data, so i felt they’d be a great source to look ino.\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 25\nSource: https://www.iea.org/data-and-statistics/charts/installed-nuclear-power-capacity-by-country-and-age-in-advanced-economies-end-2023\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nss\nWebsite\nI’m really interested in Nuclear power, and did a research project on it, so I wanted to include something on it. And this bar graph shows that the US still leads in Nuclear Power production\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 26\nSource: https://thecuriousprofessor.com/2019/12/14/visualizing-data-through-art-2/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\nwebsite\nThe visual shows a scarf knitted, with each row shows the temperature of the day\n\n\n\n\n\n\nComments\n\n\n\n\nNA\n\n\n\n\n\nFigure 27\nSource: https://thecuriousprofessor.com/2019/12/14/visualizing-data-through-art-2/\n\n\n\n\n\n\n\n\n\nAnalyst\nSource Type\nWhy Selected\n\n\n\n\nabc\nwebsite\nThe visual shows the sleep pattern of baby, showsing the wake time and sleep time\n\n\n\n\n\n\nComments\n\n\n\n\nNA"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#simple-math",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#simple-math",
+    "title": "Introduction to Python",
+    "section": "Simple math",
+    "text": "Simple math\n\n\nR\nx &lt;- c(1, 4, 7)\nsum(x)\n\n\n[1] 12\n\n\n\nPython\nx = [1, 4, 7]\nsum(x)\n\n\n12"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#importing-packageslibrariesmodules",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#importing-packageslibrariesmodules",
+    "title": "Introduction to Python",
+    "section": "Importing packages/libraries/modules",
+    "text": "Importing packages/libraries/modules\n\n\nR\n1if (!require(ggplot2)) {\n2  install.packages(\"ggplot2\")\n} else {\n  message(\"Already installed.\")\n}\n3library(ggplot2)\n\n1\n\nIf the package isn’t installed…\n\n2\n\nInstall it (from the internet).\n\n3\n\nLoad the package into memory\n\n\n\nPython\n1&lt;Install library outside of Python&gt;\n2import numpy as np\n\n1\n\nNot shown here, sorry.\n\n2\n\nLoad the numpy library into memory. We (optionally) give it a short name."
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#importing",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#importing",
+    "title": "Introduction to Python",
+    "section": "Importing",
+    "text": "Importing\n\n\nR\n1if (!require(ggplot2)) {\n2  install.packages(\"ggplot2\")\n} else {\n  message(\"Already installed.\")\n}\n3library(ggplot2)\n\n1\n\nIf the package isn’t installed…\n\n2\n\nInstall it (from the internet).\n\n3\n\nLoad the package into memory\n\n\n\nPython\n1&lt;Install library outside of Python&gt;\n2import numpy as np\n\n1\n\nNot shown here, sorry.\n\n2\n\nLoad the numpy library into memory. We (optionally) give it a short name."
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#what-can-we-talk-about",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#what-can-we-talk-about",
+    "title": "Introduction to Python",
+    "section": "What can we talk about?",
+    "text": "What can we talk about?"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#talk-about-strings",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#talk-about-strings",
+    "title": "Introduction to Python",
+    "section": "Talk about strings",
+    "text": "Talk about strings\n\nsequences of letters, numbers, characters\n\n\n\nR\nc('w', 'x', 'y', 'z')\n\nmiddle_letters &lt;- c('m', 'n', 'o')\nmiddle_letters\n\n\n[1] \"w\" \"x\" \"y\" \"z\"\n\n\n[1] \"m\" \"n\" \"o\"\n\n\n\nPython\n['w', 'x', 'y', 'z']\n\nmiddle_letters = ['m', 'n', 'o']\nmiddle_letters\n\n\n['w', 'x', 'y', 'z']\n\n\n['m', 'n', 'o']"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#strings-neq-numbers",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#strings-neq-numbers",
+    "title": "Introduction to Python",
+    "section": "Strings \\(\\neq\\) numbers!",
+    "text": "Strings \\(\\neq\\) numbers!\n\n\nR\n1identical(c('1', '2'), c(1, 2))\n\n1\n\nSafe way in R to compare things.\n\n\n\n\n[1] FALSE\n\n\n\nPython\n['1', '2'] == [1, 2]\n\n\nFalse\n\n\n\n\n\n\n\n\n\nNote\n\n\nR uses FALSE where Python uses False."
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#talk-about-data-frames",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#talk-about-data-frames",
+    "title": "Introduction to Python",
+    "section": "Talk about data frames",
+    "text": "Talk about data frames"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#data-frames",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#data-frames",
+    "title": "Introduction to Python",
+    "section": "Data frames",
+    "text": "Data frames\n\n\nR\ndf &lt;- data.frame(name = c(\"Tom\", \"Jerry\"), \n  age = c(10, 19))\nstr(df)\n\n\n'data.frame':   2 obs. of  2 variables:\n $ name: chr  \"Tom\" \"Jerry\"\n $ age : num  10 19\n\n\n\nPython\n1import pandas as pd\ndata = {'name': [\"Tom\", \"Jerry\"], \n  'age': [10, 19]}\ndf = pd.DataFrame(data)\nprint(df)\n\n1\n\nLoad the pandas package to handle data frames.\n\n\n\n\n    name  age\n0    Tom   10\n1  Jerry   19"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#strings",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#strings",
+    "title": "Introduction to Python",
+    "section": "Strings",
+    "text": "Strings\n\n\nR\nc('w', 'x', 'y', 'z')\n\nmiddle_letters &lt;- c('m', 'n', 'o')\nmiddle_letters\n\n\n[1] \"w\" \"x\" \"y\" \"z\"\n\n\n[1] \"m\" \"n\" \"o\"\n\n\n\nPython\n['w', 'x', 'y', 'z']\n\nmiddle_letters = ['m', 'n', 'o']\nmiddle_letters\n\n\n['w', 'x', 'y', 'z']\n\n\n['m', 'n', 'o']"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#plots",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#plots",
+    "title": "Introduction to Python",
+    "section": "Plots",
+    "text": "Plots\nrand_x &lt;- rnorm(100)\nrand_y &lt;- rnorm(100)\ndf &lt;- data.frame(x = rand_x, y = rand_y)\ndf |&gt;\n  ggplot() +\n  aes(x = x, y = y) +\n  geom_point()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#plots-in-r",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#plots-in-r",
+    "title": "Introduction to Python",
+    "section": "Plots in R",
+    "text": "Plots in R\nrand_x &lt;- rnorm(100)\nrand_y &lt;- rnorm(100)\ndf &lt;- data.frame(x = rand_x, y = rand_y)\ndf |&gt;\n  ggplot() +\n  aes(x = x, y = y) +\n  geom_point()"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#plots-in-python",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#plots-in-python",
+    "title": "Introduction to Python",
+    "section": "Plots in Python",
+    "text": "Plots in Python\n1import matplotlib.pyplot as plt\nrand_x = np.random.normal(0, 1, 100)\nrand_y = np.random.normal(0, 1, 100)\ndata = {'x': rand_x, 'y': rand_y}\ndf = pd.DataFrame(data)\n\n1\n\nImport pyplot module from matplotlib with short name plt."
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#tip-to-the-wise",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#tip-to-the-wise",
+    "title": "Introduction to Python",
+    "section": "Tip to the wise",
+    "text": "Tip to the wise\n\n\nR\n# Load packages into memory\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(readr)\n\nPython\n# Import libraries and modules\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n\nLoad/import packages/libraries once\nAt the top of your script/document\nNeed a new one? Add it to the code at the top of your script/document."
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#reminder",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#reminder",
+    "title": "Introduction to Python",
+    "section": "Reminder",
+    "text": "Reminder\n\n\n\n\n\n\nPainful lesson #1\n\n\nComputers are super-literal. They are anally literal. More anally literal than any human being you’ve ever had to deal with.\nYou’re not going to change them. Being this anal is their superpower.\nJust deal."
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#importing-packageslibraries",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#importing-packageslibraries",
+    "title": "Introduction to Python",
+    "section": "Importing packages/libraries",
+    "text": "Importing packages/libraries\n\n\nR\n1if (!require(ggplot2)) {\n2  install.packages(\"ggplot2\")\n} else {\n  message(\"Already installed.\")\n}\n3library(ggplot2)\n\n1\n\nIf the package isn’t installed…\n\n2\n\nInstall it (from the internet).\n\n3\n\nLoad the package into memory\n\n\n\nPython\n1&lt;Install library outside of Python&gt;\n2import numpy as np\n\n1\n\nNot shown here, sorry.\n\n2\n\nLoad the numpy library into memory. We (optionally) give it a short name."
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#recommended-design-principles",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#recommended-design-principles",
+    "title": "Introduction to Python",
+    "section": "Recommended design principles",
+    "text": "Recommended design principles\n\nWork iteratively (in small steps)\nKeep prior versions\n\nStore figure code in *.R or *.qmd files\n\nNo ‘secret sauce’\nThe process is the product"
   }
 ]
