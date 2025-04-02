@@ -25,9 +25,11 @@ Here are two examples:
 ### Tasks
 
 1. Find and read critically the guidelines for publishing figures in a journal of your choosing.
-2. Compare the guidelines to the best practices that we have discussed this semester in class [@@Franconeri2021-uv; @Knaflic2015-wq; @Tufte2001-cb].
+2. Compare the guidelines to the best practices that we have discussed this semester in class [@Franconeri2021-uv; @Knaflic2015-wq; @Tufte2001-cb].
 3. Do the guidelines reflect current knowledge about data visualization practices. If not how could the guidelines be amended to provide better guidance to authors in these journals?
 
 ## Submit {-}
 
 A 3-5 pp (750-1,300 word) write-up of your findings.
+
+Make sure to write a complete essay, with an introduction, body, and conclusion. See the [feedback for Exercise 01](../supplemental/ex01-feedback.qmd) and [feedback for Exercise 03](../supplemental/ex03-feedback.qmd) for other hints about how to improve your submission.

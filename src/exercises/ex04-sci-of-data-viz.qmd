@@ -33,7 +33,7 @@ OR
 
 - A 2-4 page write-up in APA format.
 
-Make sure to write a complete essay, with an introduction, body, and conclusion. See the [feedback for Exercise 01](../supplemental/ex01-feedback.qmd) for other hints about how to improve your submission.
+Make sure to write a complete essay, with an introduction, body, and conclusion. See the [feedback for Exercise 01](../supplemental/ex01-feedback.qmd) and [feedback for Exercise 03](../supplemental/ex03-feedback.qmd) for other hints about how to improve your submission.
 
 ::: {.callout-important}
 ## APA template
