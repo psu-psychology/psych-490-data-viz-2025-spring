@@ -61,7 +61,7 @@ use_virtualenv("myenv", required = TRUE)
 |Malignant neoplasms |	4627  | 3.5 |
 |Diseases of heart	| 3520  |2.7 |
 |COVID-19 |	1779  | 1.4 |
-|Diabetes mellitus |	1259 |	1.0 |
+|Diabetes mellitus |	1259 |x`	1.0 |
 
 ---
 
