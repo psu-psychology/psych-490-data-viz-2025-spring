@@ -46,13 +46,15 @@ use_virtualenv("myenv", required = TRUE)
 
 ---
 
-### Multiple Cause of Death, 2018-2023, 20-24 years
+### Causes of Death, 2018-2023, 20-24 year-olds
 
 | Cause | Deaths | Crude Rate |
 |-------------------|-----|------|
 |Accidents (unintentional injuries) | 56981  | 43.4 |
 |Intentional self-harm (suicide) | 23238		| 17.7 |
-|Assault (homicide) |	20098 |	131142222 | 15.3 |
+|Assault (homicide) |	20098 |	20098 | 15.3 |
+
+Source: CDC [Wonder](https://wonder.cdc.gov/)
 
 ---
 
@@ -61,7 +63,9 @@ use_virtualenv("myenv", required = TRUE)
 |Malignant neoplasms |	4627  | 3.5 |
 |Diseases of heart	| 3520  |2.7 |
 |COVID-19 |	1779  | 1.4 |
-|Diabetes mellitus |	1259 |x`	1.0 |
+|Diabetes mellitus |	1259 | 1.0 |
+
+Source: CDC [Wonder](https://wonder.cdc.gov/)
 
 ---
 
@@ -72,6 +76,8 @@ use_virtualenv("myenv", required = TRUE)
 |Chronic lower respiratory diseases | 699		| 0.5 |
 |Influenza and pneumonia |	634		| 0.5 |
 
+Source: CDC [Wonder](https://wonder.cdc.gov/)
+
 ---
 
 | Cause | Deaths | Crude Rate |
@@ -80,6 +86,8 @@ use_virtualenv("myenv", required = TRUE)
 |Legal intervention |	451		| 0.3 |
 |Septicemia |	432		| 0.3 |
 |Nephritis, nephrotic syndrome and nephrosis |	289		| 0.2 |
+
+Source: CDC [Wonder](https://wonder.cdc.gov/)
 
 ## Announcements
 
