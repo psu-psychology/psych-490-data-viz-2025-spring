@@ -1,0 +1,237 @@
+---
+title: "Exploring data with Python"
+subtitle: "2025-04-08"
+code_fold: false
+---
+
+```{r}
+#| label: setup
+library(reticulate)
+use_virtualenv("myenv", required = TRUE)
+virtualenv_install("myenv", "gapminder")
+```
+
+# Prelude
+
+# Overview
+
+## Announcements
+
+- Final project presentation [survey](https://forms.gle/oyotxgnnqchqnSgTA) [due]{.orange_due} today.
+
+## Tentative presentation schedule
+
+- [supplemental/presentation-schedule](../supplemental/presentation-schedule.qmd)
+
+## Last time...
+
+## Today
+
+- Exploring data with Python
+- Work session
+  - DataCamp
+  - Final projects
+
+# Exploring data with Python
+
+## {background-iframe="https://www.gapminder.org"}
+
+## Gapminder data
+
+- Full [dataset](https://www.gapminder.org/data/)
+- Excerpt as R data package [@Bryan2017-zb] on [CRAN](https://cran.r-project.org/web/packages/gapminder/readme/README.html)
+- Excerpt as Python package on [PyPi](https://pypi.org/project/gapminder/)
+
+## Loading
+
+```{.python}
+from gapminder import gapminder
+import matplotlib.pyplot as plt
+```
+
+```{python}
+#| label: loading-gapminder
+from gapminder import gapminder
+import matplotlib.pyplot as plt
+```
+
+## Peeking
+
+```{.python}
+gapminder.head()    # <1>
+```
+1. Examine the first few rows of this `pandas` data frame.
+
+```{python}
+#| label: head-gapminder
+gapminder.head()
+```
+
+---
+
+::: {.callout-important}
+Python has special functions that work with specific types of data elements like a `pandas` data frame.
+These functions are called 'methods.'
+So, `gapminder.head()` tells Python to apply the `head` method to the data frame.
+
+I use R more than Python, so this syntax sometimes confuses me.
+In fact, this won't work:
+
+```{.python}
+head(gapminder)
+```
+
+![](../include/img/head-gapminder-error-msg.png)
+:::
+
+## Data types
+
+```{.python}
+gapminder.dtypes
+```
+
+```{python}
+#| label: dtypes-gapminder
+gapminder.dtypes
+```
+
+## Describe
+
+```{.python}
+gapminder.describe
+```
+
+```{python}
+#| label: gapminder-describe
+gapminder.describe
+```
+
+## Exploring `country`
+
+```{.python}
+gapminder["country"]
+```
+
+```{python}
+#| label: gapminder-country
+gapminder["country"]
+```
+
+## Exploring `continent`
+
+```{.python}
+gapminder["continent"]
+```
+
+```{python}
+#| label: gapminder-continent
+gapminder["continent"]
+```
+
+## Exploring `year`
+
+```{.python}
+gapminder["year"]
+```
+
+```{python}
+#| label: gapminder-year
+gapminder["year"]
+```
+
+## Exploring `lifeExp`
+
+```{.python}
+gapminder["lifeExp"]
+```
+
+```{python}
+#| label: gapminder-lifeExp
+gapminder["lifeExp"]
+```
+
+## Exploring `pop`
+
+```{.python}
+gapminder["pop"]
+```
+
+```{python}
+#| label: gapminder-pop
+gapminder["pop"]
+```
+
+## Exploring `gdpPercap`
+
+```{.python}
+gapminder["gdpPercap"]
+```
+
+```{python}
+#| label: gapminder-gdpPercap
+gapminder["gdpPercap"]
+```
+
+## *Unique* values
+
+```{.python}
+gapminder["continent"].unique()
+```
+
+```{python}
+#| label: gapminder-continent-unique
+gapminder["continent"].unique()
+```
+
+- "chaining" methods one after the other like this is analogous to using the pipe (`|>') command in R.
+
+## Selecting rows
+
+```{.python}
+gapminder[gapminder["continent"].isin(["Asia"]) # <1>
+```
+1. The square brackets "[]" mean 'look inside' `gapminder`. Select the "continent" column, but only the rows that include `isin()` "Asia".
+
+```{python}
+#| label: gapminder-continent-isin-asia
+gapminder[gapminder["continent"].isin(["Asia"])]
+```
+
+## Life expectancy by continent
+
+::: {.incremental}
+1. Choose year(s)
+2. Select data
+3. Plot
+:::
+
+## Life expectancy by continent - 1 & 2
+
+```{.python}
+gap2007 = gapminder[gapminder["year"]==2007]
+```
+
+```{python}
+#| label: gapminder-year-2007
+gap2007 = gapminder[gapminder["year"]==2007]
+```
+
+## Life expectancy by continent - 3
+
+```{.python}
+gap2007.boxplot("lifeExp", by="continent")
+```
+
+```{python}
+#| label: gap2007-boxplot-lifexp-by-continent
+gap2007.boxplot("lifeExp", by="continent")
+plt.show()
+```
+
+# Work session
+
+# Next time
+
+# Resources
+
+## References

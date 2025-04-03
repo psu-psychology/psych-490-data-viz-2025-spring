@@ -20,67 +20,6 @@ use_virtualenv("myenv", required = TRUE)
 
 # Overview
 
-## In the news
-
-![Figure from @Witze2025-tl](https://media.nature.com/lw767/magazine-assets/d41586-025-00938-y/d41586-025-00938-y_50792452.png?as=webp)
-
----
-
-![@Kozlov2025-aq](../include/img/nature-2025-04-01-nih-layoffs.png)
-
----
-
-![@Mandavilli2025-kv](../include/img/nyt-2025-04-02-cdc-cuts.png)
-
----
-
-![@Nunn2025-eh](../include/img/nyt-inside-cdc-1.png)
-
----
-
-![@Nunn2025-eh](../include/img/nyt-inside-cdc-2.png)
-
----
-
-![@Unknown2024-lt](../include/img/cdc-nchs-leading-causes-of-death.png)
-
----
-
-### Multiple Cause of Death, 2018-2023, 20-24 years
-
-| Cause | Deaths | Crude Rate |
-|-------------------|-----|------|
-|Accidents (unintentional injuries) | 56981  | 43.4 |
-|Intentional self-harm (suicide) | 23238		| 17.7 |
-|Assault (homicide) |	20098 |	131142222 | 15.3 |
-
----
-
-| Cause | Deaths |  Crude Rate |
-|-------------------|-----|------|
-|Malignant neoplasms |	4627  | 3.5 |
-|Diseases of heart	| 3520  |2.7 |
-|COVID-19 |	1779  | 1.4 |
-|Diabetes mellitus |	1259 |	1.0 |
-
----
-
-| Cause | Deaths | Crude Rate |
-|-------------------|-----|------|
-|Congenital malformations, deformations and chromosomal abnormalities | 	1217  | 0.9 |
-|Pregnancy, childbirth and the puerperium | 826		| 0.6 |
-|Chronic lower respiratory diseases | 699		| 0.5 |
-|Influenza and pneumonia |	634		| 0.5 |
-
----
-
-| Cause | Deaths | Crude Rate |
-|-------------------|-----|------|
-|Cerebrovascular diseases | 619 | 0.5 |
-|Legal intervention |	451		| 0.3 |
-|Septicemia |	432		| 0.3 |
-|Nephritis, nephrotic syndrome and nephrosis |	289		| 0.2 |
-
 ## Announcements
 
 - [Exercise 06](../exercises/ex06-figs-w-r.qmd) [due]{.orange_due} today.
@@ -88,7 +27,7 @@ use_virtualenv("myenv", required = TRUE)
 
 ## Tentative presentation schedule
 
-- [supplemental/presentation-schedule](../supplemental/presentation-schedule.qmd)
+- [supplemental/presentation-schedule](supplemental/presentation-schedule.qmd)
 
 ## Last time...
 

@@ -235,6 +235,7 @@
 ### Tuesday, April 08 {-}
 
 - [Due]{.orange_due}: Final project [preferences survey](https://forms.gle/oyotxgnnqchqnSgTA)
+- [Slides](sliwk12-2025-04-08-explore-data-python.qmd)
 
 ### Thursday, April 10 {-}
 

@@ -2482,7 +2482,7 @@
     "href": "schedule.html#week-12",
     "title": "Schedule",
     "section": "April 7-11",
-    "text": "April 7-11\nExploring data with Python\n\nTuesday, April 08\n\nDue: Final project preferences survey\n\n\n\nThursday, April 10\nMore data explorations with Python\n\nAssigned: Exercise-07"
+    "text": "April 7-11\nExploring data with Python\n\nTuesday, April 08\n\nDue: Final project preferences survey\nSlides\n\n\n\nThursday, April 10\nMore data explorations with Python\n\nAssigned: Exercise-07"
   },
   {
     "objectID": "schedule.html#week-13",
@@ -4218,7 +4218,7 @@
     "href": "slides/wk11-2025-04-03-intro-to-python.html#announcements",
     "title": "Introduction to Python",
     "section": "Announcements",
-    "text": "Announcements\n\nExercise 06 due today.\nFinal project presentation survey"
+    "text": "Announcements\n\nExercise 06 due today.\nFinal project presentation survey due Tuesday, April 8."
   },
   {
     "objectID": "slides/wk11-2025-04-03-intro-to-python.html#last-time",
@@ -4232,7 +4232,7 @@
     "href": "slides/wk11-2025-04-03-intro-to-python.html#today",
     "title": "Introduction to Python",
     "section": "Today",
-    "text": "Today\n\nIntroduction to Python\nWork session"
+    "text": "Today\n\nIntroduction to Python\nWork session\n\nDataCamp\nExercise 06\nFinal projects"
   },
   {
     "objectID": "slides/wk11-2025-04-03-intro-to-python.html#why-learn-python",
@@ -4358,7 +4358,7 @@
     "href": "slides/wk11-2025-04-03-intro-to-python.html#references",
     "title": "Introduction to Python",
     "section": "References",
-    "text": "References\n\n\n\n\nEllaFitzgeraldVEVO. (2024). Ella fitzgerald, louis armstrong - let’s call the whole thing off (audio). Youtube. Retrieved from https://www.youtube.com/watch?v=qfu_PD-7EtM"
+    "text": "References\n\n\n\n\nEllaFitzgeraldVEVO. (2024). Ella fitzgerald, louis armstrong - let’s call the whole thing off (audio). Youtube. Retrieved from https://www.youtube.com/watch?v=qfu_PD-7EtM\n\n\nKozlov, M. (2025). ’One of the darkest days’: NIH purges agency leadership amid mass layoffs. Nature. https://doi.org/10.1038/d41586-025-01016-z\n\n\nLeading Causes of Death. (2024, October 26). Retrieved April 3, 2025, from https://www.cdc.gov/nchs/fastats/leading-causes-of-death.htm\n\n\nMandavilli, A., & Rabin, R. C. (2025, April 2). C.D.C. Cuts threaten to set back the nation’s health, critics say. The New York Times. The New York Times. Retrieved from https://www.nytimes.com/2025/04/02/health/cdc-layoffs-kennedy.html\n\n\nNunn, E. B. (2025, April 2). Inside the C.D.C., a final “love letter” before mass layoffs. The New York Times. The New York Times. Retrieved from https://www.nytimes.com/2025/04/02/health/cdc-layoffs-response.html\n\n\nWitze, A. (2025). 75% of US scientists who answered nature poll consider leaving. Nature. https://doi.org/10.1038/d41586-025-00938-y"
   },
   {
     "objectID": "exercises/ex02-data-viz-outside-psych.html",
@@ -4772,5 +4772,166 @@
     "title": "Presentation schedule",
     "section": "Day 3: Thursday, May 1",
     "text": "Day 3: Thursday, May 1\n\n\nCode\nthu_31_df$Time &lt;- times[1:dim(thu_31_df)[1]]\n\nthu_31_df |&gt;\n  dplyr::filter(!is.na(Authors)) |&gt;\n  dplyr::arrange(Time) |&gt;\n  dplyr::select(Time, Authors, Title, Format) |&gt;\n  kableExtra::kable(format = 'html') |&gt;\n  kableExtra::kable_classic()\n\n\n\n\n\nTime\nAuthors\nTitle\nFormat\n\n\n\n\n09:10\nHunterr Quintana and Ashley Tweedle\nSports Visualizations\nPoster (& in-class presentation)"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#announcements",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#announcements",
+    "title": "Exploring data with Python",
+    "section": "Announcements",
+    "text": "Announcements\n\nFinal project presentation survey due today."
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#tentative-presentation-schedule",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#tentative-presentation-schedule",
+    "title": "Exploring data with Python",
+    "section": "Tentative presentation schedule",
+    "text": "Tentative presentation schedule\n\nsupplemental/presentation-schedule"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#last-time",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#last-time",
+    "title": "Exploring data with Python",
+    "section": "Last time…",
+    "text": "Last time…"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#today",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#today",
+    "title": "Exploring data with Python",
+    "section": "Today",
+    "text": "Today\n\nExploring data with Python\nWork session\n\nDataCamp\nFinal projects"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#gapminder-data",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#gapminder-data",
+    "title": "Exploring data with Python",
+    "section": "Gapminder data",
+    "text": "Gapminder data\n\nFull dataset\nExcerpt as R data package (Bryan, Kim, & MacDonald, 2017) on CRAN\nExcerpt as Python package on PyPi"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#loading",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#loading",
+    "title": "Exploring data with Python",
+    "section": "Loading",
+    "text": "Loading\nfrom gapminder import gapminder\nimport matplotlib.pyplot as plt"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#references",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#references",
+    "title": "Exploring data with Python",
+    "section": "References",
+    "text": "References\n\n\n\n\nBryan, J. (jenny)., Kim, A. Y., & MacDonald, A. (2017). Jennybc/gapminder: v0.3.0. computer software, Zenodo. https://doi.org/10.5281/ZENODO.1039839"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#peeking",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#peeking",
+    "title": "Exploring data with Python",
+    "section": "Peeking",
+    "text": "Peeking\n1gapminder.head()\n\n1\n\nExamine the first few rows of this pandas data frame.\n\n\n\n\n       country continent  year  lifeExp       pop   gdpPercap\n0  Afghanistan      Asia  1952   28.801   8425333  779.445314\n1  Afghanistan      Asia  1957   30.332   9240934  820.853030\n2  Afghanistan      Asia  1962   31.997  10267083  853.100710\n3  Afghanistan      Asia  1967   34.020  11537966  836.197138\n4  Afghanistan      Asia  1972   36.088  13079460  739.981106"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#data-types",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#data-types",
+    "title": "Exploring data with Python",
+    "section": "Data types",
+    "text": "Data types\ngapminder.dtypes\n\n\ncountry       object\ncontinent     object\nyear           int64\nlifeExp      float64\npop            int64\ngdpPercap    float64\ndtype: object"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#exploring-country",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#exploring-country",
+    "title": "Exploring data with Python",
+    "section": "Exploring country",
+    "text": "Exploring country\ngapminder[\"country\"]\n\n\n0       Afghanistan\n1       Afghanistan\n2       Afghanistan\n3       Afghanistan\n4       Afghanistan\n           ...     \n1699       Zimbabwe\n1700       Zimbabwe\n1701       Zimbabwe\n1702       Zimbabwe\n1703       Zimbabwe\nName: country, Length: 1704, dtype: object"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#exploring-continent",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#exploring-continent",
+    "title": "Exploring data with Python",
+    "section": "Exploring continent",
+    "text": "Exploring continent\ngapminder[\"continent\"]\n\n\n0         Asia\n1         Asia\n2         Asia\n3         Asia\n4         Asia\n         ...  \n1699    Africa\n1700    Africa\n1701    Africa\n1702    Africa\n1703    Africa\nName: continent, Length: 1704, dtype: object"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#exploring-year",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#exploring-year",
+    "title": "Exploring data with Python",
+    "section": "Exploring year",
+    "text": "Exploring year\ngapminder[\"year\"]\n\n\n0       1952\n1       1957\n2       1962\n3       1967\n4       1972\n        ... \n1699    1987\n1700    1992\n1701    1997\n1702    2002\n1703    2007\nName: year, Length: 1704, dtype: int64"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#exploring-lifeexp",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#exploring-lifeexp",
+    "title": "Exploring data with Python",
+    "section": "Exploring lifeExp",
+    "text": "Exploring lifeExp\ngapminder[\"lifeExp\"]\n\n\n0       28.801\n1       30.332\n2       31.997\n3       34.020\n4       36.088\n         ...  \n1699    62.351\n1700    60.377\n1701    46.809\n1702    39.989\n1703    43.487\nName: lifeExp, Length: 1704, dtype: float64"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#exploring-pop",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#exploring-pop",
+    "title": "Exploring data with Python",
+    "section": "Exploring pop",
+    "text": "Exploring pop\ngapminder[\"pop\"]\n\n\n0        8425333\n1        9240934\n2       10267083\n3       11537966\n4       13079460\n          ...   \n1699     9216418\n1700    10704340\n1701    11404948\n1702    11926563\n1703    12311143\nName: pop, Length: 1704, dtype: int64"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#exploring-gdppercap",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#exploring-gdppercap",
+    "title": "Exploring data with Python",
+    "section": "Exploring gdpPercap",
+    "text": "Exploring gdpPercap\ngapminder[\"gdpPercap\"]\n\n\n0       779.445314\n1       820.853030\n2       853.100710\n3       836.197138\n4       739.981106\n           ...    \n1699    706.157306\n1700    693.420786\n1701    792.449960\n1702    672.038623\n1703    469.709298\nName: gdpPercap, Length: 1704, dtype: float64"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#describe",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#describe",
+    "title": "Exploring data with Python",
+    "section": "Describe",
+    "text": "Describe\ngapminder.describe\n\n\n&lt;bound method NDFrame.describe of           country continent  year  lifeExp       pop   gdpPercap\n0     Afghanistan      Asia  1952   28.801   8425333  779.445314\n1     Afghanistan      Asia  1957   30.332   9240934  820.853030\n2     Afghanistan      Asia  1962   31.997  10267083  853.100710\n3     Afghanistan      Asia  1967   34.020  11537966  836.197138\n4     Afghanistan      Asia  1972   36.088  13079460  739.981106\n...           ...       ...   ...      ...       ...         ...\n1699     Zimbabwe    Africa  1987   62.351   9216418  706.157306\n1700     Zimbabwe    Africa  1992   60.377  10704340  693.420786\n1701     Zimbabwe    Africa  1997   46.809  11404948  792.449960\n1702     Zimbabwe    Africa  2002   39.989  11926563  672.038623\n1703     Zimbabwe    Africa  2007   43.487  12311143  469.709298\n\n[1704 rows x 6 columns]&gt;"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#unique-values",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#unique-values",
+    "title": "Exploring data with Python",
+    "section": "Unique values",
+    "text": "Unique values\ngapminder[\"continent\"].unique()\n\n\narray(['Asia', 'Europe', 'Africa', 'Americas', 'Oceania'], dtype=object)\n\n\n\n“chaining” methods one after the other like this is analogous to using the pipe (`|&gt;’) command in R."
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#selecting-rows",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#selecting-rows",
+    "title": "Exploring data with Python",
+    "section": "Selecting rows",
+    "text": "Selecting rows\n1gapminder[gapminder[\"continent\"].isin([\"Asia\"])\n\n1\n\nThe square brackets “[]” mean ‘look inside’ gapminder. Select the “continent” column, but only the rows that include isin() “Asia”.\n\n\n\n\n          country continent  year  lifeExp       pop    gdpPercap\n0     Afghanistan      Asia  1952   28.801   8425333   779.445314\n1     Afghanistan      Asia  1957   30.332   9240934   820.853030\n2     Afghanistan      Asia  1962   31.997  10267083   853.100710\n3     Afghanistan      Asia  1967   34.020  11537966   836.197138\n4     Afghanistan      Asia  1972   36.088  13079460   739.981106\n...           ...       ...   ...      ...       ...          ...\n1675  Yemen, Rep.      Asia  1987   52.922  11219340  1971.741538\n1676  Yemen, Rep.      Asia  1992   55.599  13367997  1879.496673\n1677  Yemen, Rep.      Asia  1997   58.020  15826497  2117.484526\n1678  Yemen, Rep.      Asia  2002   60.308  18701257  2234.820827\n1679  Yemen, Rep.      Asia  2007   62.698  22211743  2280.769906\n\n[396 rows x 6 columns]"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-continent",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-continent",
+    "title": "Exploring data with Python",
+    "section": "Life expectancy by continent",
+    "text": "Life expectancy by continent\n\n\nChoose year(s)\nSelect data\nPlot"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-continent---1",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-continent---1",
+    "title": "Exploring data with Python",
+    "section": "Life expectancy by continent - 1",
+    "text": "Life expectancy by continent - 1\ngap2007 = gapminder[gapminder[\"year\"]==2007]\n\nThe square brackets “[]” mean ‘look inside’ gapminder. Select the “continent” column, but only the rows that include isin() “Asia”."
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-continent---2",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-continent---2",
+    "title": "Exploring data with Python",
+    "section": "Life expectancy by continent - 2",
+    "text": "Life expectancy by continent - 2\ngap2007.boxplot(\"lifeExp\", by=\"continent\")\n\nThe square brackets “[]” mean ‘look inside’ gapminder. Select the “continent” column, but only the rows that include isin() “Asia”."
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#in-the-news",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#in-the-news",
+    "title": "Introduction to Python",
+    "section": "In the news",
+    "text": "In the news\n\nFigure from Witze (2025)"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-03-intro-to-python.html#tentative-presentation-schedule",
+    "href": "slides/wk11-2025-04-03-intro-to-python.html#tentative-presentation-schedule",
+    "title": "Introduction to Python",
+    "section": "Tentative presentation schedule",
+    "text": "Tentative presentation schedule\n\nsupplemental/presentation-schedule"
   }
 ]
