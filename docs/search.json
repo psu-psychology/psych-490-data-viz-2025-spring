@@ -4687,7 +4687,7 @@
     "href": "slides/wk11-2025-04-03-intro-to-python.html#plots-in-python",
     "title": "Introduction to Python",
     "section": "Plots in Python",
-    "text": "Plots in Python\n1import matplotlib.pyplot as plt\nrand_x = np.random.normal(0, 1, 100)\nrand_y = np.random.normal(0, 1, 100)\ndata = {'x': rand_x, 'y': rand_y}\ndf = pd.DataFrame(data)\n\n1\n\nImport pyplot module from matplotlib with short name plt."
+    "text": "Plots in Python\n1import matplotlib.pyplot as plt\nrand_x = np.random.normal(0, 1, 100)\nrand_y = np.random.normal(0, 1, 100)\ndata = {'x': rand_x, 'y': rand_y}\ndf = pd.DataFrame(data)\ndf.plot(x = 'x', y = 'y', kind = 'scatter')\nplt.show()\n\n1\n\nImport pyplot module from matplotlib with short name plt."
   },
   {
     "objectID": "slides/wk11-2025-04-03-intro-to-python.html#tip-to-the-wise",

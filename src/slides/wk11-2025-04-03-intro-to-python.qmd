@@ -549,6 +549,8 @@ rand_x = np.random.normal(0, 1, 100)
 rand_y = np.random.normal(0, 1, 100)
 data = {'x': rand_x, 'y': rand_y}
 df = pd.DataFrame(data)
+df.plot(x = 'x', y = 'y', kind = 'scatter')
+plt.show()
 ```
 1. Import `pyplot` module from `matplotlib` with short name `plt`.
 
