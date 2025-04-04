@@ -52,7 +52,7 @@ use_virtualenv("myenv", required = TRUE)
 |-------------------|-----|------|
 |Accidents (unintentional injuries) | 56981  | 43.4 |
 |Intentional self-harm (suicide) | 23238		| 17.7 |
-|Assault (homicide) |	20098 |	20098 | 15.3 |
+|Assault (homicide) |	20098 |	15.3 |
 
 Source: CDC [Wonder](https://wonder.cdc.gov/)
 

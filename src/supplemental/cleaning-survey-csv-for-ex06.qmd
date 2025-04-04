@@ -15,7 +15,6 @@ Similar steps were described in the slides used on [March 25, 2025](../schedule.
 library(dplyr)
 ```
 
-
 ## Gathering
 
 ```{r}
