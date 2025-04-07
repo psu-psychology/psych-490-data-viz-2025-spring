@@ -4610,7 +4610,7 @@
     "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-continent---1-2",
     "title": "Exploring data with Python",
     "section": "Life expectancy by continent - 1 & 2",
-    "text": "Life expectancy by continent - 1 & 2\ngap2007 = gapminder[gapminder[\"year\"]==2007]"
+    "text": "Life expectancy by continent - 1 & 2\ngap2007 = gapminder[gapminder[\"year\"]==2007]\n\nPick rows from gapminder where “year” == 2007\nAssign it to a new variable called gap2007"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-continent---3",
@@ -4982,5 +4982,54 @@
     "title": "Presentation schedule",
     "section": "Day 3: Thursday, May 1",
     "text": "Day 3: Thursday, May 1\n\n\nCode\nthu_31_df$Time &lt;- times[1:dim(thu_31_df)[1]]\n\nthu_31_df |&gt;\n  dplyr::filter(!is.na(Authors)) |&gt;\n  dplyr::arrange(Time) |&gt;\n  dplyr::select(Time, Authors, Title, Format) |&gt;\n  kableExtra::kable(format = 'html') |&gt;\n  kableExtra::kable_classic()\n\n\n\n\n\nTime\nAuthors\nTitle\nFormat\n\n\n\n\n09:10\nHunterr Quintana and Ashley Tweedle\nSports Visualizations\nPoster (& in-class presentation)"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-over-time",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-over-time",
+    "title": "Exploring data with Python",
+    "section": "Life expectancy over time",
+    "text": "Life expectancy over time\n\n\nPick a country or continent\nSelect data\nCreate a plot"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-over-time-1-2",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-over-time-1-2",
+    "title": "Exploring data with Python",
+    "section": "Life expectancy over time – 1 & 2",
+    "text": "Life expectancy over time – 1 & 2\ngapAfrica = gapminder[gapminder[\"continent\"]==\"Africa\"]\ngapAfrica.head\n\n\n&lt;bound method NDFrame.head of        country continent  year  lifeExp       pop    gdpPercap\n24     Algeria    Africa  1952   43.077   9279525  2449.008185\n25     Algeria    Africa  1957   45.685  10270856  3013.976023\n26     Algeria    Africa  1962   48.303  11000948  2550.816880\n27     Algeria    Africa  1967   51.407  12760499  3246.991771\n28     Algeria    Africa  1972   54.518  14760787  4182.663766\n...        ...       ...   ...      ...       ...          ...\n1699  Zimbabwe    Africa  1987   62.351   9216418   706.157306\n1700  Zimbabwe    Africa  1992   60.377  10704340   693.420786\n1701  Zimbabwe    Africa  1997   46.809  11404948   792.449960\n1702  Zimbabwe    Africa  2002   39.989  11926563   672.038623\n1703  Zimbabwe    Africa  2007   43.487  12311143   469.709298\n\n[624 rows x 6 columns]&gt;"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-over-time-3",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-over-time-3",
+    "title": "Exploring data with Python",
+    "section": "Life expectancy over time – 3",
+    "text": "Life expectancy over time – 3\ngapAfrica.plot(x = 'year', y = 'lifeExp', kind='scatter')"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-over-time-3b",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-over-time-3b",
+    "title": "Exploring data with Python",
+    "section": "Life expectancy over time – 3b",
+    "text": "Life expectancy over time – 3b\ngapAfrica.boxplot(\"lifeExp\", by=\"year\")"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-wealth",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-wealth",
+    "title": "Exploring data with Python",
+    "section": "Life expectancy by wealth",
+    "text": "Life expectancy by wealth\ngapAfrica.plot(x = \"gdpPercap\", y = \"lifeExp\", kind = 'scatter')"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#wealth-over-time",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#wealth-over-time",
+    "title": "Exploring data with Python",
+    "section": "Wealth over time",
+    "text": "Wealth over time\ngapAfrica.plot(x = 'year', y = 'gdpPercap', kind='scatter')"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#exploring-data",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#exploring-data",
+    "title": "Exploring data with Python",
+    "section": "Exploring data",
+    "text": "Exploring data\n\nFigure sparks one or more questions\nNew figure or table answers the question(s) and sparks others"
   }
 ]

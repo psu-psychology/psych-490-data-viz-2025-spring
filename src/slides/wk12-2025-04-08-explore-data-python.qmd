@@ -211,6 +211,9 @@ gapminder[gapminder["continent"].isin(["Asia"])]
 gap2007 = gapminder[gapminder["year"]==2007]
 ```
 
+- Pick rows from `gapminder` where "year" == 2007
+- Assign it to a new variable called `gap2007`
+
 ```{python}
 #| label: gapminder-year-2007
 gap2007 = gapminder[gapminder["year"]==2007]
@@ -228,9 +231,73 @@ gap2007.boxplot("lifeExp", by="continent")
 plt.show()
 ```
 
-# Work session
 
-# Next time
+## Life expectancy over time
+
+::: {.incremental}
+1. Pick a country or continent
+2. Select data
+3. Create a plot
+:::
+
+## Life expectancy over time -- 1 & 2
+
+```{.python}
+gapAfrica = gapminder[gapminder["continent"]=="Africa"]
+gapAfrica.head
+```
+
+```{python}
+gapAfrica = gapminder[gapminder["continent"]=="Africa"]
+gapAfrica.head
+```
+
+## Life expectancy over time -- 3
+
+```{.python}
+gapAfrica.plot(x = 'year', y = 'lifeExp', kind='scatter')
+```
+
+```{python}
+gapAfrica.plot(x = 'year', y = 'lifeExp', kind='scatter')
+```
+
+## Life expectancy over time -- 3b
+
+```{.python}
+gapAfrica.boxplot("lifeExp", by="year")
+```
+
+```{python}
+gapAfrica.boxplot("lifeExp", by="year")
+```
+
+## Life expectancy by wealth
+
+```{.python}
+gapAfrica.plot(x = "gdpPercap", y = "lifeExp", kind = 'scatter')
+```
+
+```{python}
+gapAfrica.plot(x = "gdpPercap", y = "lifeExp", kind = 'scatter')
+```
+
+## Wealth over time
+
+```{.python}
+gapAfrica.plot(x = 'year', y = 'gdpPercap', kind='scatter')
+```
+
+```{python}
+gapAfrica.plot(x = 'year', y = 'gdpPercap', kind='scatter')
+```
+
+## Exploring data
+
+1. Figure sparks one or more questions
+2. New figure or table answers the question(s) and sparks others
+
+# Work session
 
 # Resources
 

@@ -541,19 +541,78 @@ Name: gdpPercap, Length: 1704, dtype: float64</code></pre>
 <section id="life-expectancy-by-continent---1-2" class="slide level2">
 <h2>Life expectancy by continent - 1 &amp; 2</h2>
 <div class="sourceCode" id="cb24"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a></a>gap2007 <span class="op">=</span> gapminder[gapminder[<span class="st">"year"</span>]<span class="op">==</span><span class="dv">2007</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Pick rows from <code>gapminder</code> where “year” == 2007</li>
+<li>Assign it to a new variable called <code>gap2007</code></li>
+</ul>
 </section>
 <section id="life-expectancy-by-continent---3" class="slide level2">
 <h2>Life expectancy by continent - 3</h2>
 <div class="sourceCode" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a></a>gap2007.boxplot(<span class="st">"lifeExp"</span>, by<span class="op">=</span><span class="st">"continent"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-<img data-src="../include/fig/gap2007-boxplot-lifexp-by-continent-1.png" width="960" class="r-stretch"></section></section>
+<img data-src="../include/fig/gap2007-boxplot-lifexp-by-continent-1.png" width="960" class="r-stretch"></section>
+<section id="life-expectancy-over-time" class="slide level2">
+<h2>Life expectancy over time</h2>
+<div>
+<ol type="1">
+<li class="fragment">Pick a country or continent</li>
+<li class="fragment">Select data</li>
+<li class="fragment">Create a plot</li>
+</ol>
+</div>
+</section>
+<section id="life-expectancy-over-time-1-2" class="slide level2">
+<h2>Life expectancy over time – 1 &amp; 2</h2>
+<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a></a>gapAfrica <span class="op">=</span> gapminder[gapminder[<span class="st">"continent"</span>]<span class="op">==</span><span class="st">"Africa"</span>]</span>
+<span id="cb26-2"><a></a>gapAfrica.head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;bound method NDFrame.head of        country continent  year  lifeExp       pop    gdpPercap
+24     Algeria    Africa  1952   43.077   9279525  2449.008185
+25     Algeria    Africa  1957   45.685  10270856  3013.976023
+26     Algeria    Africa  1962   48.303  11000948  2550.816880
+27     Algeria    Africa  1967   51.407  12760499  3246.991771
+28     Algeria    Africa  1972   54.518  14760787  4182.663766
+...        ...       ...   ...      ...       ...          ...
+1699  Zimbabwe    Africa  1987   62.351   9216418   706.157306
+1700  Zimbabwe    Africa  1992   60.377  10704340   693.420786
+1701  Zimbabwe    Africa  1997   46.809  11404948   792.449960
+1702  Zimbabwe    Africa  2002   39.989  11926563   672.038623
+1703  Zimbabwe    Africa  2007   43.487  12311143   469.709298
+
+[624 rows x 6 columns]&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="life-expectancy-over-time-3" class="slide level2">
+<h2>Life expectancy over time – 3</h2>
+<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a></a>gapAfrica.plot(x <span class="op">=</span> <span class="st">'year'</span>, y <span class="op">=</span> <span class="st">'lifeExp'</span>, kind<span class="op">=</span><span class="st">'scatter'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<img data-src="../include/fig/unnamed-chunk-17-3.png" width="960" class="r-stretch"></section>
+<section id="life-expectancy-over-time-3b" class="slide level2">
+<h2>Life expectancy over time – 3b</h2>
+<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a></a>gapAfrica.boxplot(<span class="st">"lifeExp"</span>, by<span class="op">=</span><span class="st">"year"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<img data-src="../include/fig/unnamed-chunk-18-5.png" width="960" class="r-stretch"></section>
+<section id="life-expectancy-by-wealth" class="slide level2">
+<h2>Life expectancy by wealth</h2>
+<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a></a>gapAfrica.plot(x <span class="op">=</span> <span class="st">"gdpPercap"</span>, y <span class="op">=</span> <span class="st">"lifeExp"</span>, kind <span class="op">=</span> <span class="st">'scatter'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<img data-src="../include/fig/unnamed-chunk-19-7.png" width="960" class="r-stretch"></section>
+<section id="wealth-over-time" class="slide level2">
+<h2>Wealth over time</h2>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a></a>gapAfrica.plot(x <span class="op">=</span> <span class="st">'year'</span>, y <span class="op">=</span> <span class="st">'gdpPercap'</span>, kind<span class="op">=</span><span class="st">'scatter'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<img data-src="../include/fig/unnamed-chunk-20-9.png" width="960" class="r-stretch"></section>
+<section id="exploring-data" class="slide level2">
+<h2>Exploring data</h2>
+<ol type="1">
+<li>Figure sparks one or more questions</li>
+<li>New figure or table answers the question(s) and sparks others</li>
+</ol>
+</section></section>
 <section id="work-session" class="title-slide slide level1 center">
 <h1>Work session</h1>
-
-</section>
-
-<section id="next-time" class="title-slide slide level1 center">
-<h1>Next time</h1>
 
 </section>
 
