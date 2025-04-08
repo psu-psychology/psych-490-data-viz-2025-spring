@@ -61,9 +61,13 @@ names(presentations_df) <- new_names
 
 ## Select subsets by preferred date
 
+I assigned students by preferred date and the date they completed the survey.
+Students who indicated no preference were added to open spots in the schedule in the order that they completed the survey.
+
 ```{r}
 presentations_df <- presentations_df |>
-  dplyr::filter(!stringr::str_detect(Authors, "Gilmore"))
+  dplyr::filter(!stringr::str_detect(Authors, "Gilmore")) |>
+  dplyr::mutate(assigned = FALSE)
 
 thu_24_df <- presentations_df |>
   dplyr::filter(stringr::str_detect(Preferred_date, "24"),
@@ -95,6 +99,8 @@ n_thu_24_slots_free <- length(times) - n_thu_24_df
 new_thu_24_df <- rbind(thu_24_df, no_pref[1:n_thu_24_slots_free,])
 new_thu_24_df$Time <- times
 
+no_pref$assigned[1:n_thu_24_slots_free] <- TRUE
+
 new_thu_24_df |>
   dplyr::filter(!is.na(Authors)) |>
   dplyr::arrange(Time) |>
@@ -106,9 +112,20 @@ new_thu_24_df |>
 ## Day 2: Tuesday, April 29
 
 ```{r}
-tue_29_df$Time <- times[1:dim(tue_29_df)[1]]
+n_tue_29_df <- dim(tue_29_df)[1]
 
-tue_29_df |>
+no_pref_remaining <- no_pref[no_pref$assigned == FALSE,]
+n_tue_29_remaining <- length(times) - n_tue_29_df
+
+index_to_assign <- c(1:length(no_pref_remaining))[1:n_tue_29_remaining]
+
+new_tue_29_df <- rbind(tue_29_df, 
+                       no_pref_remaining[index_to_assign,])
+new_tue_29_df$Time <- times
+
+no_pref_remaining$assigned[index_to_assign] <- TRUE
+
+new_tue_29_df |>
   dplyr::filter(!is.na(Authors)) |>
   dplyr::arrange(Time) |>
   dplyr::select(Time, Authors, Title, Format) |>
@@ -119,9 +136,18 @@ tue_29_df |>
 ## Day 3: Thursday, May 1
 
 ```{r}
-thu_31_df$Time <- times[1:dim(thu_31_df)[1]]
+no_pref_remaining <- no_pref_remaining[no_pref_remaining$assigned == FALSE,]
+n_thu_31_remaining <- length(times) - n_tue_29_df
 
-thu_31_df |>
+index_to_assign <- c(1:length(no_pref_remaining))[1:n_thu_31_remaining]
+
+new_thu_31_df <- rbind(thu_31_df, 
+                       no_pref_remaining[index_to_assign,])
+new_thu_31_df$Time <- times[1:dim(new_thu_31_df)[1]]
+
+# no_pref$assigned[index_to_assign] <- TRUE
+
+new_thu_31_df |>
   dplyr::filter(!is.na(Authors)) |>
   dplyr::arrange(Time) |>
   dplyr::select(Time, Authors, Title, Format) |>

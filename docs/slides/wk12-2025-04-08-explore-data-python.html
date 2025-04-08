@@ -235,11 +235,6 @@ Rick Gilmore
 </div>
 </div>
 </section>
-<section id="prelude" class="title-slide slide level1 center">
-<h1>Prelude</h1>
-
-</section>
-
 <section>
 <section id="overview" class="title-slide slide level1 center">
 <h1>Overview</h1>
@@ -251,6 +246,11 @@ Rick Gilmore
 <li>Final project presentation <a href="https://forms.gle/oyotxgnnqchqnSgTA">survey</a> <span class="orange_due">due</span> today.</li>
 </ul>
 </section>
+<section id="in-the-news" class="slide level2">
+<h2>In the news</h2>
+<iframe data-external="1" src="https://www.youtube.com/embed/oP3c1h8v2ZQ" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p><span class="citation" data-cites="Comberg2010-mo">Comberg (<a href="#/references" role="doc-biblioref" onclick="">2010</a>)</span></p>
+</section>
 <section id="tentative-presentation-schedule" class="slide level2">
 <h2>Tentative presentation schedule</h2>
 <ul>
@@ -259,7 +259,21 @@ Rick Gilmore
 </section>
 <section id="last-time" class="slide level2">
 <h2>Last time…</h2>
-</section>
+<div class="sourceCode" id="annotated-cell-1" data-code-line-numbers="1|2-3|4-5|6-7|"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-1-1" class="code-annotation-target"><a href="#annotated-cell-1-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="annotated-cell-1-2"><a href="#annotated-cell-1-2"></a>rand_x <span class="op">=</span> np.random.normal(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">100</span>)</span>
+<span id="annotated-cell-1-3"><a href="#annotated-cell-1-3"></a>rand_y <span class="op">=</span> np.random.normal(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">100</span>)</span>
+<span id="annotated-cell-1-4"><a href="#annotated-cell-1-4"></a>data <span class="op">=</span> {<span class="st">'x'</span>: rand_x, <span class="st">'y'</span>: rand_y}</span>
+<span id="annotated-cell-1-5"><a href="#annotated-cell-1-5"></a>df <span class="op">=</span> pd.DataFrame(data)</span>
+<span id="annotated-cell-1-6"><a href="#annotated-cell-1-6"></a>df.plot(x <span class="op">=</span> <span class="st">'x'</span>, y <span class="op">=</span> <span class="st">'y'</span>, kind <span class="op">=</span> <span class="st">'scatter'</span>)</span>
+<span id="annotated-cell-1-7"><a href="#annotated-cell-1-7"></a>plt.show()</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="1" data-code-annotation="1">Import <code>pyplot</code> module from <code>matplotlib</code> with short name <code>plt</code>.</span>
+</dd>
+</dl>
+
+<img data-src="../include/fig/plot-random-xy-python-1.png" width="960" class="r-stretch"></section>
 <section id="today" class="slide level2">
 <h2>Today</h2>
 <ul>
@@ -276,9 +290,19 @@ Rick Gilmore
 <h1>Exploring data with Python</h1>
 
 </section>
-<section id="section" class="slide level2" data-background-iframe="https://www.gapminder.org">
-<h2></h2>
+<section id="remember-hans-rosling" class="slide level2">
+<h2>Remember Hans Rosling?</h2>
+<iframe data-external="1" src="https://www.youtube.com/embed/jbkSRLYSojo" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p><span class="citation" data-cites="RoslingUnknown-ys">Rosling (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span></p>
 </section>
+<section class="slide level2">
+
+
+<img data-src="../include/img/gapminder-dot-org.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://gapminder.org" class="uri">https://gapminder.org</a></p></section>
+<section id="dollar-street" class="slide level2">
+<h2>Dollar Street</h2>
+
+<img data-src="../include/img/dollar-street.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://www.gapminder.org/dollar-street" class="uri">https://www.gapminder.org/dollar-street</a></p></section>
 <section id="gapminder-data" class="slide level2">
 <h2>Gapminder data</h2>
 <ul>
@@ -294,11 +318,11 @@ Rick Gilmore
 </section>
 <section id="peeking" class="slide level2">
 <h2>Peeking</h2>
-<div class="sourceCode" id="annotated-cell-2"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-2-1" class="code-annotation-target"><a href="#annotated-cell-2-1"></a>gapminder.head()</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="annotated-cell-3"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><a class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-3-1" class="code-annotation-target"><a href="#annotated-cell-3-1"></a>gapminder.head()</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-3" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="1" data-code-annotation="1">Examine the first few rows of this <code>pandas</code> data frame.</span>
+<span data-code-cell="annotated-cell-3" data-code-lines="1" data-code-annotation="1">Examine the first few rows of this <code>pandas</code> data frame.</span>
 </dd>
 </dl>
 <div class="cell">
@@ -497,16 +521,16 @@ Name: gdpPercap, Length: 1704, dtype: float64</code></pre>
 </div>
 </div>
 <ul>
-<li>“chaining” methods one after the other like this is analogous to using the pipe (`|&gt;’) command in R.</li>
+<li>“chaining” methods one after the other like this using the dot (<code>.</code>) notation is analogous to using the pipe (`|&gt;’) command in R.</li>
 </ul>
 </section>
 <section id="selecting-rows" class="slide level2">
 <h2>Selecting rows</h2>
-<div class="sourceCode" id="annotated-cell-12"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><a class="code-annotation-anchor" data-target-cell="annotated-cell-12" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-12-1" class="code-annotation-target"><a href="#annotated-cell-12-1"></a>gapminder[gapminder[<span class="st">"continent"</span>].isin([<span class="st">"Asia"</span>])</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="annotated-cell-13"><pre class="sourceCode numberSource python code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode python"><a class="code-annotation-anchor" data-target-cell="annotated-cell-13" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-13-1" class="code-annotation-target"><a href="#annotated-cell-13-1"></a>gapminder[gapminder[<span class="st">"continent"</span>].isin([<span class="st">"Asia"</span>])</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-12" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-13" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-12" data-code-lines="1" data-code-annotation="1">The square brackets “[]” mean ‘look inside’ <code>gapminder</code>. Select the “continent” column, but only the rows that include <code>isin()</code> “Asia”.</span>
+<span data-code-cell="annotated-cell-13" data-code-lines="1" data-code-annotation="1">The square brackets “[]” mean ‘look inside’ <code>gapminder</code>. Select the “continent” column, but only the rows that include “Asia”.</span>
 </dd>
 </dl>
 <div class="cell">
@@ -526,6 +550,17 @@ Name: gdpPercap, Length: 1704, dtype: float64</code></pre>
 
 [396 rows x 6 columns]</code></pre>
 </div>
+</div>
+</section>
+<section id="what-do-we-want-to-know-about" class="slide level2">
+<h2>What do we want to know about?</h2>
+<div>
+<ul>
+<li class="fragment">life expectancy by country or continent</li>
+<li class="fragment">life expectancy over time</li>
+<li class="fragment">wealth by country or continent, over time</li>
+<li class="fragment">life expectancy by wealth</li>
+</ul>
 </div>
 </section>
 <section id="life-expectancy-by-continent" class="slide level2">
@@ -550,7 +585,21 @@ Name: gdpPercap, Length: 1704, dtype: float64</code></pre>
 <h2>Life expectancy by continent - 3</h2>
 <div class="sourceCode" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a></a>gap2007.boxplot(<span class="st">"lifeExp"</span>, by<span class="op">=</span><span class="st">"continent"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-<img data-src="../include/fig/gap2007-boxplot-lifexp-by-continent-1.png" width="960" class="r-stretch"></section>
+<img data-src="../include/fig/gap2007-boxplot-lifexp-by-continent-3.png" width="960" class="r-stretch"></section>
+<section id="life-expectancy-by-continent---3b" class="slide level2">
+<h2>Life expectancy by continent - 3b</h2>
+<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a></a>gap2007.hist(<span class="st">"lifeExp"</span>, by<span class="op">=</span><span class="st">"continent"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>array([[&lt;Axes: title={'center': 'Africa'}&gt;,
+        &lt;Axes: title={'center': 'Americas'}&gt;],
+       [&lt;Axes: title={'center': 'Asia'}&gt;,
+        &lt;Axes: title={'center': 'Europe'}&gt;],
+       [&lt;Axes: title={'center': 'Oceania'}&gt;, &lt;Axes: &gt;]], dtype=object)</code></pre>
+</div>
+
+</div>
+<img data-src="../include/fig/gap2007-histogram-lifexp-by-continent-5.png" width="960" class="r-stretch"></section>
 <section id="life-expectancy-over-time" class="slide level2">
 <h2>Life expectancy over time</h2>
 <div>
@@ -563,8 +612,8 @@ Name: gdpPercap, Length: 1704, dtype: float64</code></pre>
 </section>
 <section id="life-expectancy-over-time-1-2" class="slide level2">
 <h2>Life expectancy over time – 1 &amp; 2</h2>
-<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a></a>gapAfrica <span class="op">=</span> gapminder[gapminder[<span class="st">"continent"</span>]<span class="op">==</span><span class="st">"Africa"</span>]</span>
-<span id="cb26-2"><a></a>gapAfrica.head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a></a>gapAfrica <span class="op">=</span> gapminder[gapminder[<span class="st">"continent"</span>]<span class="op">==</span><span class="st">"Africa"</span>]</span>
+<span id="cb28-2"><a></a>gapAfrica.head</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;bound method NDFrame.head of        country continent  year  lifeExp       pop    gdpPercap
@@ -586,30 +635,39 @@ Name: gdpPercap, Length: 1704, dtype: float64</code></pre>
 </section>
 <section id="life-expectancy-over-time-3" class="slide level2">
 <h2>Life expectancy over time – 3</h2>
-<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a></a>gapAfrica.plot(x <span class="op">=</span> <span class="st">'year'</span>, y <span class="op">=</span> <span class="st">'lifeExp'</span>, kind<span class="op">=</span><span class="st">'scatter'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a></a>gapAfrica.plot(x <span class="op">=</span> <span class="st">'year'</span>, y <span class="op">=</span> <span class="st">'lifeExp'</span>, kind<span class="op">=</span><span class="st">'scatter'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-<img data-src="../include/fig/unnamed-chunk-17-3.png" width="960" class="r-stretch"></section>
+<img data-src="../include/fig/unnamed-chunk-20-7.png" width="960" class="r-stretch"></section>
 <section id="life-expectancy-over-time-3b" class="slide level2">
 <h2>Life expectancy over time – 3b</h2>
-<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a></a>gapAfrica.boxplot(<span class="st">"lifeExp"</span>, by<span class="op">=</span><span class="st">"year"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a></a>gapAfrica.boxplot(<span class="st">"lifeExp"</span>, by<span class="op">=</span><span class="st">"year"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-<img data-src="../include/fig/unnamed-chunk-18-5.png" width="960" class="r-stretch"></section>
-<section id="life-expectancy-by-wealth" class="slide level2">
-<h2>Life expectancy by wealth</h2>
-<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a></a>gapAfrica.plot(x <span class="op">=</span> <span class="st">"gdpPercap"</span>, y <span class="op">=</span> <span class="st">"lifeExp"</span>, kind <span class="op">=</span> <span class="st">'scatter'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<img data-src="../include/fig/unnamed-chunk-21-9.png" width="960" class="r-stretch"></section>
+<section id="wealth-by-continent" class="slide level2">
+<h2>Wealth by continent</h2>
+<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a></a>gap2007.boxplot(<span class="st">"gdpPercap"</span>, by<span class="op">=</span><span class="st">"continent"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-<img data-src="../include/fig/unnamed-chunk-19-7.png" width="960" class="r-stretch"></section>
-<section id="wealth-over-time" class="slide level2">
-<h2>Wealth over time</h2>
-<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a></a>gapAfrica.plot(x <span class="op">=</span> <span class="st">'year'</span>, y <span class="op">=</span> <span class="st">'gdpPercap'</span>, kind<span class="op">=</span><span class="st">'scatter'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<img data-src="../include/fig/gap2007-boxplot-gdpPercap-by-continent-11.png" width="960" class="r-stretch"></section>
+<section id="wealth-over-time-africa" class="slide level2">
+<h2>Wealth over time (Africa)</h2>
+<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a></a>gapAfrica.plot(x <span class="op">=</span> <span class="st">'year'</span>, y <span class="op">=</span> <span class="st">'gdpPercap'</span>, kind<span class="op">=</span><span class="st">'scatter'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-<img data-src="../include/fig/unnamed-chunk-20-9.png" width="960" class="r-stretch"></section>
+<img data-src="../include/fig/unnamed-chunk-23-13.png" width="960" class="r-stretch"></section>
+<section id="life-expectancy-by-wealth-africa" class="slide level2">
+<h2>Life expectancy by wealth (Africa)</h2>
+<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a></a>gapAfrica.plot(x <span class="op">=</span> <span class="st">"gdpPercap"</span>, y <span class="op">=</span> <span class="st">"lifeExp"</span>, kind <span class="op">=</span> <span class="st">'scatter'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+<img data-src="../include/fig/unnamed-chunk-24-15.png" width="960" class="r-stretch"></section>
 <section id="exploring-data" class="slide level2">
 <h2>Exploring data</h2>
-<ol type="1">
-<li>Figure sparks one or more questions</li>
-<li>New figure or table answers the question(s) and sparks others</li>
+<div>
+<ol start="0" type="1">
+<li class="fragment">Plot a simple figure</li>
+<li class="fragment">Figure sparks one or more questions</li>
+<li class="fragment">New figure or table answers the question(s) and sparks others</li>
+<li class="fragment">Rinse and repeat</li>
 </ol>
+</div>
 </section></section>
 <section id="work-session" class="title-slide slide level1 center">
 <h1>Work session</h1>
@@ -628,6 +686,12 @@ Name: gdpPercap, Length: 1704, dtype: float64</code></pre>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-Bryan2017-zb" class="csl-entry" role="listitem">
 Bryan, J. (jenny)., Kim, A. Y., &amp; MacDonald, A. (2017). Jennybc/gapminder: <span class="nocase">v0</span>.3.0. computer software, Zenodo. <a href="https://doi.org/10.5281/ZENODO.1039839">https://doi.org/10.5281/ZENODO.1039839</a>
+</div>
+<div id="ref-Comberg2010-mo" class="csl-entry" role="listitem">
+Comberg, D. (2010). <em>Kurt <span>V</span>onnegut on the shapes of stories</em>. Youtube. Retrieved from <a href="https://www.youtube.com/watch?v=oP3c1h8v2ZQ&amp;t=83s">https://www.youtube.com/watch?v=oP3c1h8v2ZQ&amp;t=83s</a>
+</div>
+<div id="ref-RoslingUnknown-ys" class="csl-entry" role="listitem">
+Rosling, H. (n.d.). Hans rosling’s 200 countries, 200 years, 4 minutes - the joy of stats - <span>BBC</span>. Retrieved from <a href="https://www.youtube.com/watch?v=jbkSRLYSojo&amp;t=80s">https://www.youtube.com/watch?v=jbkSRLYSojo&amp;t=80s</a>
 </div>
 </div>
 </section></section>

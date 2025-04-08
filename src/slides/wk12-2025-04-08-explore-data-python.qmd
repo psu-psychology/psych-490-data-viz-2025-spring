@@ -11,7 +11,11 @@ use_virtualenv("myenv", required = TRUE)
 virtualenv_install("myenv", "gapminder")
 ```
 
-# Prelude
+```{python}
+#| label: setup-python
+import pandas as pd
+import numpy as np
+```
 
 # Overview
 
@@ -19,11 +23,39 @@ virtualenv_install("myenv", "gapminder")
 
 - Final project presentation [survey](https://forms.gle/oyotxgnnqchqnSgTA) [due]{.orange_due} today.
 
+## In the news
+
+{{< video https://www.youtube.com/watch?v=oP3c1h8v2ZQ&t=83s width=100% height=70% >}}
+
+@Comberg2010-mo
+
 ## Tentative presentation schedule
 
 - [supplemental/presentation-schedule](../supplemental/presentation-schedule.qmd)
 
 ## Last time...
+
+```{.python code-line-numbers="1|2-3|4-5|6-7|"}
+import matplotlib.pyplot as plt           # <1>
+rand_x = np.random.normal(0, 1, 100)
+rand_y = np.random.normal(0, 1, 100)
+data = {'x': rand_x, 'y': rand_y}
+df = pd.DataFrame(data)
+df.plot(x = 'x', y = 'y', kind = 'scatter')
+plt.show()
+```
+1. Import `pyplot` module from `matplotlib` with short name `plt`.
+
+```{python}
+#| label: plot-random-xy-python
+import matplotlib.pyplot as plt
+rand_x = np.random.normal(0, 1, 100)
+rand_y = np.random.normal(0, 1, 100)
+data = {'x': rand_x, 'y': rand_y}
+df = pd.DataFrame(data)
+df.plot(x = 'x', y = 'y', kind = 'scatter')
+plt.show()
+```
 
 ## Today
 
@@ -34,7 +66,19 @@ virtualenv_install("myenv", "gapminder")
 
 # Exploring data with Python
 
-## {background-iframe="https://www.gapminder.org"}
+## Remember Hans Rosling?
+
+{{< video https://www.youtube.com/watch?v=jbkSRLYSojo&t=80s width=100% height=70% >}}
+
+@RoslingUnknown-ys
+
+---
+
+![<https://gapminder.org>](../include/img/gapminder-dot-org.png)
+
+## Dollar Street
+
+![<https://www.gapminder.org/dollar-street>](../include/img/dollar-street.png)
 
 ## Gapminder data
 
@@ -183,19 +227,28 @@ gapminder["continent"].unique()
 gapminder["continent"].unique()
 ```
 
-- "chaining" methods one after the other like this is analogous to using the pipe (`|>') command in R.
+- "chaining" methods one after the other like this using the dot (`.`) notation is analogous to using the pipe (`|>') command in R.
 
 ## Selecting rows
 
 ```{.python}
 gapminder[gapminder["continent"].isin(["Asia"]) # <1>
 ```
-1. The square brackets "[]" mean 'look inside' `gapminder`. Select the "continent" column, but only the rows that include `isin()` "Asia".
+1. The square brackets "[]" mean 'look inside' `gapminder`. Select the "continent" column, but only the rows that include "Asia".
 
 ```{python}
 #| label: gapminder-continent-isin-asia
 gapminder[gapminder["continent"].isin(["Asia"])]
 ```
+
+## What do we want to know about?
+
+::: {.incremental}
+- life expectancy by country or continent
+- life expectancy over time
+- wealth by country or continent, over time
+- life expectancy by wealth
+:::
 
 ## Life expectancy by continent
 
@@ -231,6 +284,17 @@ gap2007.boxplot("lifeExp", by="continent")
 plt.show()
 ```
 
+## Life expectancy by continent - 3b
+
+```{.python}
+gap2007.hist("lifeExp", by="continent")
+```
+
+```{python}
+#| label: gap2007-histogram-lifexp-by-continent
+gap2007.hist("lifeExp", by="continent")
+plt.show()
+```
 
 ## Life expectancy over time
 
@@ -272,17 +336,19 @@ gapAfrica.boxplot("lifeExp", by="year")
 gapAfrica.boxplot("lifeExp", by="year")
 ```
 
-## Life expectancy by wealth
+## Wealth by continent
 
 ```{.python}
-gapAfrica.plot(x = "gdpPercap", y = "lifeExp", kind = 'scatter')
+gap2007.boxplot("gdpPercap", by="continent")
 ```
 
 ```{python}
-gapAfrica.plot(x = "gdpPercap", y = "lifeExp", kind = 'scatter')
+#| label: gap2007-boxplot-gdpPercap-by-continent
+gap2007.boxplot("gdpPercap", by="continent")
+plt.show()
 ```
 
-## Wealth over time
+## Wealth over time (Africa)
 
 ```{.python}
 gapAfrica.plot(x = 'year', y = 'gdpPercap', kind='scatter')
@@ -290,12 +356,26 @@ gapAfrica.plot(x = 'year', y = 'gdpPercap', kind='scatter')
 
 ```{python}
 gapAfrica.plot(x = 'year', y = 'gdpPercap', kind='scatter')
+```
+
+## Life expectancy by wealth (Africa)
+
+```{.python}
+gapAfrica.plot(x = "gdpPercap", y = "lifeExp", kind = 'scatter')
+```
+
+```{python}
+gapAfrica.plot(x = "gdpPercap", y = "lifeExp", kind = 'scatter')
 ```
 
 ## Exploring data
 
+::: {.incremental}
+0. Plot a simple figure
 1. Figure sparks one or more questions
 2. New figure or table answers the question(s) and sparks others
+3. Rinse and repeat
+:::
 
 # Work session
 
