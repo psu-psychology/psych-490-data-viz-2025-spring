@@ -2334,57 +2334,57 @@
     "objectID": "schedule.html#week-01",
     "href": "schedule.html#week-01",
     "title": "Schedule",
-    "section": "January 13-17",
-    "text": "January 13-17\nSurveying the landscape\nTuesday, January 14\nCourse introduction\n\nSlides\nExercise 01 assigned\n\nThursday, January 16\nThe semiotics of data visualization\n\nRead: @Cairo2013-hm, Chapter 1-2, PDF on Canvas\nSlides"
+    "section": "",
+    "text": "Surveying the landscape\n\n\nCourse introduction\n\nSlides\nExercise 01 assigned\n\n\n\n\nThe semiotics of data visualization\n\nRead: Cairo (2013), Chapter 1-2, PDF on Canvas\nSlides"
   },
   {
     "objectID": "schedule.html#week-02",
     "href": "schedule.html#week-02",
     "title": "Schedule",
     "section": "January 20-24",
-    "text": "January 20-24\nWho visualizes data and why\nTuesday, January 21\nVisualization in government & business\n\nSlides\nResults from Exercise 01\n\nThursday, January 23\nVisualization in art, sports, and journalism\n\nRead (recommended): @Gelman2013-he\nSlides\nAssigned: Exercise 02\nDue: Exercise 01 | Canvas dropbox"
+    "text": "January 20-24\nWho visualizes data and why\n\nTuesday, January 21\nVisualization in government & business\n\nSlides\nResults from Exercise 01\n\n\n\nThursday, January 23\nVisualization in art, sports, and journalism\n\nRead (recommended): Gelman & Unwin (2013)\nSlides\nAssigned: Exercise 02\nDue: Exercise 01 | Canvas dropbox"
   },
   {
     "objectID": "schedule.html#week-03",
     "href": "schedule.html#week-03",
     "title": "Schedule",
     "section": "January 27-31",
-    "text": "January 27-31\nUnderstanding figures\nTuesday, January 28\nMaking (sense of) data\n\nRead: @Stevens1946-sh\nOptional:\n\n@Wikipedia-contributors2024-xu\n@Tourangeau2012-fr | PDF on Canvas.\n\nSlides\nAssigned: Exercise-03\n\nThursday, January 30\nFigure types\n\nExplore (pick at least two):\n\n@RibeccaUnknown-tz\n@Hammond2024-ow\n@Discovery2024-la\n@AtlassianUnknown-ob\n\nWatch: @Channel2024-so\nSlides\nDue: Exercise 02 | Canvas dropbox |"
+    "text": "January 27-31\nUnderstanding figures\n\nTuesday, January 28\nMaking (sense of) data\n\nRead: Stevens (1946)\nOptional:\n\nWikipedia contributors (2024)\nTourangeau, Rips, & Rasinski (2012) | PDF on Canvas.\n\nSlides\nAssigned: Exercise-03\n\n\n\nThursday, January 30\nFigure types\n\nExplore (pick at least two):\n\nRibecca (n.d.)\nHammond (2024)\nDiscovery (2024)\nAtlassian (n.d.)\n\nWatch: Channel (2024)\nSlides\nDue: Exercise 02 | Canvas dropbox |"
   },
   {
     "objectID": "schedule.html#week-04",
     "href": "schedule.html#week-04",
     "title": "Schedule",
     "section": "February 3-7",
-    "text": "February 3-7\nTuesday, February 04\nFigure components\n\nSlides\nReview: Making and visualizing data\n\nThursday, February 06\nCancelled due to weather"
+    "text": "February 3-7\n\nTuesday, February 04\nFigure components\n\nSlides\nReview: Making and visualizing data\n\n\n\nThursday, February 06\nCancelled due to weather"
   },
   {
     "objectID": "schedule.html#week-05",
     "href": "schedule.html#week-05",
     "title": "Schedule",
     "section": "February 10-14",
-    "text": "February 10-14\nTuesday, February 11\nFrom stimulus to sensation\n\nRead: @Cairo2013-hm, Chapter 5, PDF on Canvas\nSlides\nDue: Exercise-03 | Canvas dropbox |\n\nThursday, February 13\nFrom sensation to perception\n\nRead:\n\n@Cairo2013-hm, Chapter 6, PDF on Canvas\n@Stephen-Few2004-jv, Chapter 5, PDF on Canvas\n\nOptional:\n\n@Cleveland1984-py\n\nSlides"
+    "text": "February 10-14\n\nTuesday, February 11\nFrom stimulus to sensation\n\nRead: Cairo (2013), Chapter 5, PDF on Canvas\nSlides\nDue: Exercise-03 | Canvas dropbox |\n\n\n\nThursday, February 13\nFrom sensation to perception\n\nRead:\n\nCairo (2013), Chapter 6, PDF on Canvas\nFew (2004), Chapter 5, PDF on Canvas\n\nOptional:\n\nCleveland & McGill (1984)\n\nSlides"
   },
   {
     "objectID": "schedule.html#week-06",
     "href": "schedule.html#week-06",
     "title": "Schedule",
     "section": "February 17-21",
-    "text": "February 17-21\nTuesday, February 18\nFrom cognition to understanding\n\nRead:\n\n@Franconeri2021-uv, pp. 109-122, PDF on Canvas\n@Cairo2013-hm, Chapter 7, PDF on Canvas\n\nSlides\nAssigned: Final Project proposal\n\nThursday, February 20\nDesigning efficient & understandable visualizations\n\nRead: @Franconeri2021-uv, pp. 123-139, PDF on Canvas\nSlides\nAssigned: Exercise-04"
+    "text": "February 17-21\n\nTuesday, February 18\nFrom cognition to understanding\n\nRead:\n\nFranconeri, Padilla, Shah, Zacks, & Hullman (2021), pp. 109-122, PDF on Canvas\nCairo (2013), Chapter 7, PDF on Canvas\n\nSlides\nAssigned: Final Project proposal\n\n\n\nThursday, February 20\nDesigning efficient & understandable visualizations\n\nRead: Franconeri et al. (2021), pp. 123-139, PDF on Canvas\nSlides\nAssigned: Exercise-04"
   },
   {
     "objectID": "schedule.html#week-07",
     "href": "schedule.html#week-07",
     "title": "Schedule",
     "section": "February 24-28",
-    "text": "February 24-28\nTuesday, February 25\nIntroduction to R\n\nSlides\nSign up for DataCamp.\nBegin work on Introduction to R.\n\nThursday, February 27\nCommunicating uncertainty and risk\n\nRead: @Franconeri2021-uv, pp. 139-150, PDF on Canvas\nSlides\nIn-class work on Exercise 04, Final Project proposal, or DataCamp"
+    "text": "February 24-28\n\nTuesday, February 25\nIntroduction to R\n\nSlides\nSign up for DataCamp.\nBegin work on Introduction to R.\n\n\n\nThursday, February 27\nCommunicating uncertainty and risk\n\nRead: Franconeri et al. (2021), pp. 139-150, PDF on Canvas\nSlides\nIn-class work on Exercise 04, Final Project proposal, or DataCamp"
   },
   {
     "objectID": "schedule.html#week-08",
     "href": "schedule.html#week-08",
     "title": "Schedule",
     "section": "March 3-7",
-    "text": "March 3-7\nTuesday, March 04\nMore Slow-R\n\nRead:\n\nGilmore 2019 “Slow R”\n\nSlides\nWork on: Datacamp Introduction to R.\nIn-class work on Exercise 04, Final Project proposal, or DataCamp\n\nThursday, March 06\n\n\n\nCritiquing figures\n\nRead:\n\n@Tufte2001-cb, Chapter 1, PDF on Canvas\n@Tufte2001-cb, Chapter 2, PDF on Canvas\n\nSlides\nDue: Exercise-04 | Canvas Dropbox\nAssigned: Exercise-05\nDue: Final Project proposal | Canvas Dropbox"
+    "text": "March 3-7\n\nTuesday, March 04\nMore Slow-R\n\nRead:\n\nGilmore 2019 “Slow R”\n\nSlides\nWork on: Datacamp Introduction to R.\nIn-class work on Exercise 04, Final Project proposal, or DataCamp\n\n\n\nThursday, March 06\n\n\n\nCritiquing figures\n\nRead:\n\nTufte (2001), Chapter 1, PDF on Canvas\nTufte (2001), Chapter 2, PDF on Canvas\n\nSlides\nDue: Exercise-04 | Canvas Dropbox\nAssigned: Exercise-05\nDue: Final Project proposal | Canvas Dropbox"
   },
   {
     "objectID": "schedule.html#spring-break",
@@ -2398,56 +2398,56 @@
     "href": "schedule.html#week-09",
     "title": "Schedule",
     "section": "March 17-21",
-    "text": "March 17-21\nTuesday, March 18\nWhy R we doing this?\n\nComplete:\n\nDataCamp, Introduction to R\n\nSlides\n\nThursday, March 20\nNO CLASS\n\nDue: Exercise-05 | Canvas dropbox"
+    "text": "March 17-21\n\nTuesday, March 18\nWhy R we doing this?\n\nComplete:\n\nDataCamp, Introduction to R\n\nSlides\n\n\n\nThursday, March 20\nNO CLASS\n\nDue: Exercise-05 | Canvas dropbox"
   },
   {
     "objectID": "schedule.html#week-10",
     "href": "schedule.html#week-10",
     "title": "Schedule",
     "section": "March 24-28",
-    "text": "March 24-28\nExploring data with R\nTuesday, March 25\nGathering & cleaning data\n\nSlides\n\nThursday, March 27\nMaking plots with ggplot2\n\nRead:\n\nPlotting with ggplot2, especially the “Plotting one variable” section.\n\nRecommended:\n\nIntroduction to Data Visualization with ggplot2 on DataCamp\n\nSlides\nAssigned: Exercise-06"
+    "text": "March 24-28\nExploring data with R\n\nTuesday, March 25\nGathering & cleaning data\n\nSlides\n\n\n\nThursday, March 27\nMaking plots with ggplot2\n\nRead:\n\nPlotting with ggplot2, especially the “Plotting one variable” section.\n\nRecommended:\n\nIntroduction to Data Visualization with ggplot2 on DataCamp\n\nSlides\nAssigned: Exercise-06"
   },
   {
     "objectID": "schedule.html#week-11",
     "href": "schedule.html#week-11",
     "title": "Schedule",
     "section": "March 31 - April 4",
-    "text": "March 31 - April 4\nMore on ggplot\nTuesday, April 01\n\nSlides\nAssigned: Final project preferences survey\n\nThursday, April 03\nIntro to Python\n\nSlides\nComplete:\n\nDataCamp, Introduction to Python\n\nDue: Exercise-06 | Canvas dropbox"
+    "text": "March 31 - April 4\nMore on ggplot\n\nTuesday, April 01\n\nSlides\nAssigned: Final project preferences survey\n\n\n\nThursday, April 03\nIntro to Python\n\nSlides\nComplete:\n\nDataCamp, Introduction to Python\n\nDue: Exercise-06 | Canvas dropbox"
   },
   {
     "objectID": "schedule.html#week-12",
     "href": "schedule.html#week-12",
     "title": "Schedule",
     "section": "April 7-11",
-    "text": "April 7-11\nExploring data with Python\nTuesday, April 08\n\nDue: Final project preferences survey\nSlides\n\nThursday, April 10\nMore data explorations with Python\n\nAssigned: Exercise-07"
+    "text": "April 7-11\nExploring data with Python\n\nTuesday, April 08\n\nDue: Final project preferences survey\nSlides\n\n\n\nThursday, April 10\nMore data explorations with Python\n\nAssigned: Exercise-07"
   },
   {
     "objectID": "schedule.html#week-13",
     "href": "schedule.html#week-13",
     "title": "Schedule",
     "section": "April 14-18",
-    "text": "April 14-18\nMaking plots with JavaScript\nTuesday, April 15\nThursday, April 17\n\nIn-class work on final projects or Exercise 07.\nDue: Exercise-07"
+    "text": "April 14-18\nMaking plots with JavaScript\n\nTuesday, April 15\n\n\nThursday, April 17\n\nIn-class work on final projects or Exercise 07.\nDue: Exercise-07"
   },
   {
     "objectID": "schedule.html#week-14",
     "href": "schedule.html#week-14",
     "title": "Schedule",
     "section": "April 21-25",
-    "text": "April 21-25\nFinal Project Preparation\nTuesday, April 22\n\nIn-class work on projects.\n\nThursday, April 24\nFinal Project Presentations\n\nSchedule"
+    "text": "April 21-25\nFinal Project Preparation\n\nTuesday, April 22\n\nIn-class work on projects.\n\n\n\nThursday, April 24\nFinal Project Presentations\n\nSchedule"
   },
   {
     "objectID": "schedule.html#week-15",
     "href": "schedule.html#week-15",
     "title": "Schedule",
     "section": "April 28 - May 2",
-    "text": "April 28 - May 2\nFinal Project Presentations\nTuesday, April 29\n\nSchedule\n\nThursday, May 01\n\nSchedule"
+    "text": "April 28 - May 2\nFinal Project Presentations\n\nTuesday, April 29\n\nSchedule\n\n\n\nThursday, May 01\n\nSchedule"
   },
   {
     "objectID": "schedule.html#finals-week",
     "href": "schedule.html#finals-week",
     "title": "Schedule",
     "section": "May 5-9",
-    "text": "May 5-9\nFinals Week\nTuesday, May 05\n\nDue: Final project write-up"
+    "text": "May 5-9\nFinals Week\n\nTuesday, May 05\n\nDue: Final project write-up"
   },
   {
     "objectID": "policies.html",
