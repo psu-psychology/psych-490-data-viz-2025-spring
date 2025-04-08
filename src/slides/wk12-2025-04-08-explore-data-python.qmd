@@ -240,7 +240,7 @@ gapminder["continent"].unique()
 ## Selecting rows
 
 ```{.python}
-gapminder[gapminder["continent"].isin(["Asia"]) # <1>
+gapminder[gapminder["continent"].isin(["Asia"])] # <1>
 ```
 1. The square brackets "[]" mean 'look inside' `gapminder`. Select the "continent" column, but only the rows that include "Asia".
 

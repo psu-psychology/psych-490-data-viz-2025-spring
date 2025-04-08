@@ -22,11 +22,22 @@ use_virtualenv("myenv", required = TRUE)
 
 ## Announcements
 
-- There are *four* exercises!
+- There are *four* exercises! 
+
+---
+
+![](../include/img/Retractions_FB_1200x630_25-072.jpg)
 
 ## Last time...
 
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/slides/wk12-2025-04-08-explore-data-python.html#/life-expectancy-by-wealth-africa>](../include/img/gapminder-lifeExp-wealth.png)
 
+## Exploring data
+
+0. Plot a simple figure.
+1. Examine the figure. Let it spark questions.
+2. Make a wew figure or table that answers the question(s) and sparks others.
+3. Repeat.
 
 ## Today
 
@@ -52,6 +63,8 @@ use_virtualenv("myenv", required = TRUE)
 ---
 
 3. Explore the notebook!
+
+## Penn State computer labs, too
 
 ## Context
 
