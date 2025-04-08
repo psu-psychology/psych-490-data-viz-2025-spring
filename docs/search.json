@@ -303,9 +303,9 @@
   {
     "objectID": "slides/wkXX-2025-XX-XX-YYYY.html#announcements",
     "href": "slides/wkXX-2025-XX-XX-YYYY.html#announcements",
-    "title": "Introduction to Python",
+    "title": "TITLE",
     "section": "Announcements",
-    "text": "Announcements\n\nExercise 06 due today.\nFinal project presentation survey due Tuesday, April 8."
+    "text": "Announcements"
   },
   {
     "objectID": "slides/wkXX-2025-XX-XX-YYYY.html#tentative-presentation-schedule",
@@ -317,9 +317,9 @@
   {
     "objectID": "slides/wkXX-2025-XX-XX-YYYY.html#last-time",
     "href": "slides/wkXX-2025-XX-XX-YYYY.html#last-time",
-    "title": "Introduction to Python",
+    "title": "TITLE",
     "section": "Last time…",
-    "text": "Last time…\n\nNSFG repondent age by religion figure"
+    "text": "Last time…"
   },
   {
     "objectID": "slides/wkXX-2025-XX-XX-YYYY.html#recommended-design-principles",
@@ -331,9 +331,9 @@
   {
     "objectID": "slides/wkXX-2025-XX-XX-YYYY.html#today",
     "href": "slides/wkXX-2025-XX-XX-YYYY.html#today",
-    "title": "Introduction to Python",
+    "title": "TITLE",
     "section": "Today",
-    "text": "Today\n\nIntroduction to Python\nWork session\n\nDataCamp\nExercise 06\nFinal projects"
+    "text": "Today"
   },
   {
     "objectID": "slides/wkXX-2025-XX-XX-YYYY.html#why-learn-python",
@@ -457,9 +457,9 @@
   {
     "objectID": "slides/wkXX-2025-XX-XX-YYYY.html#references",
     "href": "slides/wkXX-2025-XX-XX-YYYY.html#references",
-    "title": "Introduction to Python",
+    "title": "TITLE",
     "section": "References",
-    "text": "References\n\n\n\n\nEllaFitzgeraldVEVO. (2024). Ella fitzgerald, louis armstrong - let’s call the whole thing off (audio). Youtube. Retrieved from https://www.youtube.com/watch?v=qfu_PD-7EtM"
+    "text": "References"
   },
   {
     "objectID": "slides/wk11-2025-04-03-intro-to-python.html#in-the-news",
@@ -4140,8 +4140,8 @@
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#announcements",
     "href": "slides/wk11-2025-04-01-more-ggplot.html#announcements",
     "title": "More on ggplot",
-    "section": "Announcements",
-    "text": "Announcements\n\nExercise 06 due Thursday, April 3.\nFinal project presentation survey"
+    "section": "",
+    "text": "Exercise 06 due Thursday, April 3.\nFinal project presentation survey"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#datacamp",
@@ -4154,15 +4154,15 @@
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#last-time",
     "href": "slides/wk11-2025-04-01-more-ggplot.html#last-time",
     "title": "More on ggplot",
-    "section": "Last time",
-    "text": "Last time\ndata_frame |&gt;\n  # Manipulations to the data\n  ggplot() +\n  aes(x = , y = , fill = ) + # label aesthetic mappings\n  # Add geom(s)\n  geom_* +\n  # Format legends, axes, add title, etc.\n  ggtitle(\"My awesome figure\")"
+    "section": "",
+    "text": "data_frame |&gt;\n  # Manipulations to the data\n  ggplot() +\n  aes(x = , y = , fill = ) + # label aesthetic mappings\n  # Add geom(s)\n  geom_* +\n  # Format legends, axes, add title, etc.\n  ggtitle(\"My awesome figure\")"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#todays-topics",
     "href": "slides/wk11-2025-04-01-more-ggplot.html#todays-topics",
     "title": "More on ggplot",
-    "section": "Today’s topics",
-    "text": "Today’s topics\n\nA future of data science\nOptimism and data visualization\nMore ggplot2\nWork session"
+    "section": "",
+    "text": "A future of data science\nOptimism and data visualization\nMore ggplot2\nWork session"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#your-turn",
@@ -4190,7 +4190,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#importing-data",
     "title": "More on ggplot",
     "section": "Importing data",
-    "text": "Importing data\nlibrary(readr)\nlibrary(here)\n\npath2data &lt;- file.path(here::here(), \"src\", \"include\", \"csv\")\n\nnsfg_22_23 &lt;- read_csv(\n  file.path(path2data, \"NSFG_2022_2023_FemPregPUFData.csv\"),\n  show_col_types = FALSE,\n  guess_max = Inf\n)"
+    "text": "Importing data\nlibrary(readr)\nlibrary(here)\n\npath2data &lt;- file.path(here::here(), \"src\", \"include\", \"csv\")\n\nnsfg_22_23 &lt;- read_csv(\n  file.path(path2data, \"NSFG_2022_2023_FemPregPUFData.csv\"),\n  show_col_types = FALSE,\n  guess_max = Inf\n)\n\nlibrary(readr)\nlibrary(here)\n\nhere() starts at /Users/rog1/rrr/psych-490-data-viz-2025-spring\n\npath2data &lt;- file.path(here::here(), \"src\", \"include\", \"csv\")\n\nnsfg_22_23 &lt;- read_csv(\n  file.path(path2data, \"NSFG_2022_2023_FemPregPUFData.csv\"),\n  show_col_types = FALSE,\n  guess_max = Inf\n)"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#examining-data",
@@ -4218,7 +4218,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-1",
     "title": "More on ggplot",
     "section": "Respondent age (AGER)",
-    "text": "Respondent age (AGER)\n\nlibrary(ggplot2)\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = AGER) +\n  geom_histogram()"
+    "text": "Respondent age (AGER)\n\nlibrary(ggplot2)\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = AGER) +\n  geom_histogram()\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\n\n\n\n\n\n\nFigure 1: Histogram of NSFG 22-23 ‘AGER’ variable"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-1-output",
@@ -4239,7 +4239,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-1",
     "title": "More on ggplot",
     "section": "Respondent age (AGER): Violin",
-    "text": "Respondent age (AGER): Violin\n\n\nFigure 2: Error message when I tried to execute this code."
+    "text": "Respondent age (AGER): Violin\n\n\n\n\n\n\nFigure 2: Error message when I tried to execute this code."
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#need-help",
@@ -4260,7 +4260,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-3",
     "title": "More on ggplot",
     "section": "Respondent age (AGER): Violin",
-    "text": "Respondent age (AGER): Violin\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()"
+    "text": "Respondent age (AGER): Violin\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()\n\n\n\n\n\n\n\nFigure 3: Violin plot of NSFG 22-23 ‘AGER’ variable"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-violin-3-output",
@@ -4281,7 +4281,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot-1",
     "title": "More on ggplot",
     "section": "Respondent age (AGER): Boxplot",
-    "text": "Respondent age (AGER): Boxplot\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot()"
+    "text": "Respondent age (AGER): Boxplot\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot()\n\n\n\n\n\n\n\nFigure 4: Boxplot of NSFG 22-23 ‘AGER’ variable"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-boxplot-1-output",
@@ -4302,7 +4302,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-1",
     "title": "More on ggplot",
     "section": "Respondent age (AGER): Composite",
-    "text": "Respondent age (AGER): Composite\n\np_violin &lt;- nsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()\n\np_violin"
+    "text": "Respondent age (AGER): Composite\n\np_violin &lt;- nsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin()\n\np_violin\n\n\n\n\n\n\n\nFigure 5: Distribution of NSFG 22-23 ‘AGER’ variable"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-1-output",
@@ -4323,7 +4323,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-3",
     "title": "More on ggplot",
     "section": "Respondent age (AGER): Composite",
-    "text": "Respondent age (AGER): Composite\n\np_violin_box &lt;- p_violin +\n  geom_boxplot()\n  \np_violin_box"
+    "text": "Respondent age (AGER): Composite\n\np_violin_box &lt;- p_violin +\n  geom_boxplot()\n  \np_violin_box\n\n\n\n\n\n\n\nFigure 6: Distribution of NSFG 22-23 ‘AGER’ variable"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-3-output",
@@ -4344,7 +4344,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-5",
     "title": "More on ggplot",
     "section": "Respondent age (AGER): Composite",
-    "text": "Respondent age (AGER): Composite\n\np_violin_box_points &lt;- p_violin_box +\n  geom_jitter(width = .15, height = 0, alpha=.1)\n  \np_violin_box_points"
+    "text": "Respondent age (AGER): Composite\n\np_violin_box_points &lt;- p_violin_box +\n  geom_jitter(width = .15, height = 0, alpha=.1)\n  \np_violin_box_points\n\n\n\n\n\n\n\nFigure 7: Distribution of NSFG 22-23 ‘AGER’ variable"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-5-output",
@@ -4365,7 +4365,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-7",
     "title": "More on ggplot",
     "section": "Respondent age (AGER): Composite",
-    "text": "Respondent age (AGER): Composite\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1)"
+    "text": "Respondent age (AGER): Composite\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1)\n\n\n\n\n\n\n\nFigure 8: Distribution of NSFG 22-23 ‘AGER’ variable"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-7-output",
@@ -4386,7 +4386,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-9",
     "title": "More on ggplot",
     "section": "Respondent age (AGER): Composite",
-    "text": "Respondent age (AGER): Composite\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot() +\n  geom_violin() +\n  geom_jitter(width = .15, height = 0, alpha=.1)"
+    "text": "Respondent age (AGER): Composite\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_boxplot() +\n  geom_violin() +\n  geom_jitter(width = .15, height = 0, alpha=.1)\n\n\n\n\n\n\n\nFigure 9: Distribution of NSFG 22-23 ‘AGER’ variable\n\n\n\n\n\n\n\n\n\n\n\n\nOrder matters!\n\n\n\nWhen adding multiple layers of geoms, think about what order makes the most sense.\nHere, the best order is violin, then boxplot, then points."
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#respondent-age-ager-composite-9-output",
@@ -4407,7 +4407,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement-1",
     "title": "More on ggplot",
     "section": "Iterative enhancement",
-    "text": "Iterative enhancement\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\")"
+    "text": "Iterative enhancement\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\")\n\n\n\n\n\n\n\nFigure 10: Distribution of NSFG 22-23 ‘AGER’ variable"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#iterative-enhancement-1-output",
@@ -4428,7 +4428,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-1",
     "title": "More on ggplot",
     "section": "New twist!",
-    "text": "New twist!\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\") +\n  facet_wrap(~RELIGION)"
+    "text": "New twist!\n\nnsfg_22_23 |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\") +\n  facet_wrap(~RELIGION)\n\n\n\n\n\n\n\nFigure 11: Distribution of NSFG 22-23 ‘AGER’ variable by ‘RELIGION’"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-1-output",
@@ -4442,7 +4442,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#what-do-the-numbers-mean",
     "title": "More on ggplot",
     "section": "What do the numbers mean?",
-    "text": "What do the numbers mean?\n\nBack to the codebook\n\n\n\nFigure 12: RELIGION code from NSFG codebook"
+    "text": "What do the numbers mean?\n\nBack to the codebook\n\n\n\n\n\n\n\nFigure 12: RELIGION code from NSFG codebook"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-2",
@@ -4456,7 +4456,7 @@
     "href": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-3",
     "title": "More on ggplot",
     "section": "New twist!",
-    "text": "New twist!\n\nlibrary(dplyr)\nnsfg_22_23 |&gt;\n  mutate(religion = case_match(RELIGION,\n                               1 ~ \"none\",\n                               2 ~ \"catholic\",\n                               3 ~ \"protestant\",\n                               4 ~ \"other\")) |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  #geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\") +\n  facet_wrap(~religion)"
+    "text": "New twist!\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nnsfg_22_23 |&gt;\n  mutate(religion = case_match(RELIGION,\n                               1 ~ \"none\",\n                               2 ~ \"catholic\",\n                               3 ~ \"protestant\",\n                               4 ~ \"other\")) |&gt;\n  ggplot() +\n  aes(x = \"\", y = AGER) +\n  geom_violin() +\n  geom_boxplot() +\n  #geom_jitter(width = .15, height = 0, alpha=.1) +\n  ylab(\"Respondent age (years)\") +\n  xlab(\"\") +\n  facet_wrap(~religion)\n\n\n\n\n\n\n\nFigure 13: Distribution of NSFG 22-23 ‘AGER’ variable by religion"
   },
   {
     "objectID": "slides/wk11-2025-04-01-more-ggplot.html#new-twist-3-output",
@@ -4498,7 +4498,7 @@
     "href": "slides/wk12-2025-04-08-explore-data-python.html#last-time",
     "title": "Exploring data with Python",
     "section": "Last time…",
-    "text": "Last time…\n1import matplotlib.pyplot as plt\nrand_x = np.random.normal(0, 1, 100)\nrand_y = np.random.normal(0, 1, 100)\ndata = {'x': rand_x, 'y': rand_y}\ndf = pd.DataFrame(data)\ndf.plot(x = 'x', y = 'y', kind = 'scatter')\nplt.show()\n\n1\n\nImport pyplot module from matplotlib with short name plt."
+    "text": "Last time…\nimport matplotlib.pyplot as plt           \nrand_x = np.random.normal(0, 1, 100)\nrand_y = np.random.normal(0, 1, 100)\ndata = {'x': rand_x, 'y': rand_y}\ndf = pd.DataFrame(data)\ndf.plot(x = 'x', y = 'y', kind = 'scatter')\nplt.show()"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#today",
@@ -4624,7 +4624,7 @@
     "href": "slides/wk12-2025-04-08-explore-data-python.html#references",
     "title": "Exploring data with Python",
     "section": "References",
-    "text": "References\n\n\n\n\nBryan, J. (jenny)., Kim, A. Y., & MacDonald, A. (2017). Jennybc/gapminder: v0.3.0. computer software, Zenodo. https://doi.org/10.5281/ZENODO.1039839\n\n\nComberg, D. (2010). Kurt Vonnegut on the shapes of stories. Youtube. Retrieved from https://www.youtube.com/watch?v=oP3c1h8v2ZQ&t=83s\n\n\nRosling, H. (n.d.). Hans rosling’s 200 countries, 200 years, 4 minutes - the joy of stats - BBC. Retrieved from https://www.youtube.com/watch?v=jbkSRLYSojo&t=80s"
+    "text": "References\n\n\n\n\nBryan, J. (jenny)., Kim, A. Y., & MacDonald, A. (2017). Jennybc/gapminder: v0.3.0. computer software, Zenodo. https://doi.org/10.5281/ZENODO.1039839\n\n\nComberg, D. (2010). Kurt Vonnegut on the shapes of stories. Youtube. Retrieved from https://www.youtube.com/watch?v=oP3c1h8v2ZQ&t=83s\n\n\nRosling, H. (n.d.). Hans rosling’s 200 countries, 200 years, 4 minutes - the joy of stats - BBC. Retrieved from https://www.youtube.com/watch?v=jbkSRLYSojo&t=80s\n\n\nWard, T. (2019). Africa (piano acoustic cover) - Toto, Tyler Ward & Lisa Cimorelli. Youtube. Retrieved from https://www.youtube.com/watch?v=8IYSGJ77OVY"
   },
   {
     "objectID": "exercises/ex01-figs-in-psych-sci.html",
@@ -4764,21 +4764,21 @@
     "href": "exercises/ex07-figs-w-python.html#set-up",
     "title": "Exercise 07",
     "section": "Set-up",
-    "text": "Set-up\nFor reasons not especially worth explaning here, we have to use R to configure Python for making figures using posit.cloud.\n\n\nCode\nlibrary(reticulate)\npy_require(c(\"pandas\", \"matplotlib\", \"numpy\"))\n\n\nPython calls groups of functions libraries. These are analogous to packages in R.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n\n\n\n\n\n\n\nNote\n\n\n\nIn Python, we use the import command.\nWe create ‘nicknames’ for the packages so that we can refer to them using an easy-to-type shorthand. The nicknames are the short names: … import pandas as pd, means import the ‘pandas’ library and give it the shortname of ‘pd’."
+    "text": "Set-up\nFor reasons not especially worth explaning here, we have to use R to configure Python for making figures using posit.cloud.\n\n\nCode\nlibrary(reticulate)\nuse_virtualenv(\"myenv\", required = TRUE)\n\n\nPython calls groups of functions libraries. These are analogous to packages in R.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n\n\n\n\n\n\n\nNote\n\n\n\nIn Python, we use the import command.\nWe create ‘nicknames’ for the packages so that we can refer to them using an easy-to-type shorthand. The nicknames are the short names: … import pandas as pd, means import the ‘pandas’ library and give it the shortname of ‘pd’."
   },
   {
     "objectID": "exercises/ex07-figs-w-python.html#nfsg-data",
     "href": "exercises/ex07-figs-w-python.html#nfsg-data",
     "title": "Exercise 07",
     "section": "NFSG data",
-    "text": "NFSG data\n\nGather\nWe’ll make plots of some of NSFG data we discussed in class on 2025-04-01.\n\n\n\n\n\n\nNote\n\n\n\nThe data file has been saved under csv/\n\n\nThe pandas library (shortname in our code pd) handles the creation and manipulation of data frames. That includes importing comma-separated value (CSV) files.\n\n\nCode\nnsfg = pd.read_csv('../include/csv/NSFG_2022_2023_FemPregPUFData.csv')\n\n\nWe confirm that this worked by checking the data types in nsfg:\n\n\nCode\nnsfg.dtypes\n\n\nCaseID           int64\nPREGORDR         int64\nFTFMODE          int64\nBORNALIV       float64\nRECNT5YRPRG    float64\n                ...   \nCMJAN3YR         int64\nCMJAN4YR         int64\nCMJAN5YR         int64\nYEAR             int64\nQUARTER          int64\nLength: 111, dtype: object\n\n\nThis is similar to running the str() function on an R data frame.\n\n\n\n\n\n\nPython methods\n\n\n\nObjects in Python have specialized functions that can be used with them using a simple ‘dot’ syntax. So nsfg.dtypes means ‘run the data types function on the nsfg data frame.’ These specialized functions are called ‘methods.’\n\n\n\n\nCode\nnsfg.shape\n\n\n(8247, 111)\n\n\nThe shape method is similar to the dim() function in R. What do the two numbers mean?\n\n\nPlot\nSince we used the pandas library to import our data frame, we can use one of the built-in methods that apply to data frames to plot a histogram. Here, we create a histogram by calling the hist() method on the nsfg data frame and by specifying the column AGER, the age of the responding participant.\n\n\nCode\nnsfg.hist(column = \"AGER\")\n\n\narray([[&lt;Axes: title={'center': 'AGER'}&gt;]], dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\nNow, let’s customize the plot by changing some parameters in the hist() method. Add change the number of bins to some larger number like 20, 25, or 30 (the default is 10), by changing LARGE_NUMBER to a number.\n\n\nCode\nLARGE_NUMBER = 35\nnsfg.hist(column = \"AGER\", bins = LARGE_NUMBER)\n\n\narray([[&lt;Axes: title={'center': 'AGER'}&gt;]], dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\nNow, try a smaller value, less than 10. Change the code below to try this.\n\n\nCode\nSMALLER_NUMBER = 5\nnsfg.hist(column = \"AGER\", bins = SMALLER_NUMBER)\n\n\narray([[&lt;Axes: title={'center': 'AGER'}&gt;]], dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\nWhat do you notice?\nLet’s look at the histograms by RELIGION, like we did in class on 2025-04-01.\n\n\nCode\nnsfg.hist(column = 'AGER', by = 'RELIGION')\n\n\narray([[&lt;Axes: title={'center': '1'}&gt;, &lt;Axes: title={'center': '2'}&gt;],\n       [&lt;Axes: title={'center': '3'}&gt;, &lt;Axes: title={'center': '4'}&gt;]],\n      dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\nModify the code below to create a set of histograms by some other variable that you choose (change VARIABLE_YOU_CHOOSE in the code below.) Make sure to look at the codebook to make sure that the variable you choose makes sense.\n\n\n\n\n\n\nWarning\n\n\n\nMake sure to put the variable you choose in quotations.\n\n\n\n\nCode\nVARIABLE_YOU_CHOOSE = 'BABYSEX'\nnsfg.hist(column = 'AGER', by = VARIABLE_YOU_CHOOSE)\n\n\narray([[&lt;Axes: title={'center': '1.0'}&gt;, &lt;Axes: title={'center': '2.0'}&gt;],\n       [&lt;Axes: title={'center': '8.0'}&gt;, &lt;Axes: title={'center': '9.0'}&gt;]],\n      dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\nFinally, experiment with changing some of the default parameters like grid (values can be True or False), xrot (rotation of x axis labels) or yrot (rotation of y axis labels).\n\n\nCode\nMY_XROT = 0\nnsfg.hist(column = 'AGER', by = 'RELIGION', xrot = MY_XROT)\n\n\narray([[&lt;Axes: title={'center': '1'}&gt;, &lt;Axes: title={'center': '2'}&gt;],\n       [&lt;Axes: title={'center': '3'}&gt;, &lt;Axes: title={'center': '4'}&gt;]],\n      dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nPlot other"
+    "text": "NFSG data\n\nGather\nWe’ll make plots of some of NSFG data we discussed in class on 2025-04-01.\n\n\n\n\n\n\nNote\n\n\n\nThe data file has been saved under ../include/csv/\n\n\nThe pandas library (shortname in our code pd) handles the creation and manipulation of data frames. That includes importing comma-separated value (CSV) files.\n\n\nCode\nnsfg = pd.read_csv('../include/csv/NSFG_2022_2023_FemPregPUFData.csv')\n\n\nWe confirm that this worked by checking the data types in nsfg:\n\n\nCode\nnsfg.dtypes\n\n\nCaseID           int64\nPREGORDR         int64\nFTFMODE          int64\nBORNALIV       float64\nRECNT5YRPRG    float64\n                ...   \nCMJAN3YR         int64\nCMJAN4YR         int64\nCMJAN5YR         int64\nYEAR             int64\nQUARTER          int64\nLength: 111, dtype: object\n\n\nThis is similar to running the str() function on an R data frame.\n\n\n\n\n\n\nPython methods\n\n\n\nObjects in Python have specialized functions that can be used with them using a simple ‘dot’ syntax. So nsfg.dtypes means ‘run the data types function on the nsfg data frame.’ These specialized functions are called ‘methods.’\n\n\n\n\nCode\nnsfg.shape\n\n\n(8247, 111)\n\n\nThe shape method is similar to the dim() function in R. What do the two numbers mean?\n\n\nPlot\nSince we used the pandas library to import our data frame, we can use one of the built-in methods that apply to data frames to plot a histogram. Here, we create a histogram by calling the hist() method on the nsfg data frame and by specifying the column AGER, the age of the responding participant.\n\n\nCode\nnsfg.hist(column = \"AGER\")\n\n\narray([[&lt;Axes: title={'center': 'AGER'}&gt;]], dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nYour turn 1\nNow, let’s customize the plot by changing some parameters in the hist() method. Add change the number of bins to some larger number like 20, 25, or 30 (the default is 10), by changing LARGE_NUMBER to a different number.\n\n\nCode\nLARGE_NUMBER = 35\nnsfg.hist(column = \"AGER\", bins = LARGE_NUMBER)\n\n\narray([[&lt;Axes: title={'center': 'AGER'}&gt;]], dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nYour turn 2\nNow, try a smaller value, less than 10. Change the code below to try this.\n\n\nCode\nSMALLER_NUMBER = 5\nnsfg.hist(column = \"AGER\", bins = SMALLER_NUMBER)\n\n\narray([[&lt;Axes: title={'center': 'AGER'}&gt;]], dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\nWhat do you notice?\n\n\nYour turn 3\nLet’s look at the histograms by RELIGION, like we did in class on 2025-04-01.\n\n\nCode\nnsfg.hist(column = 'AGER', by = 'RELIGION')\n\n\narray([[&lt;Axes: title={'center': '1'}&gt;, &lt;Axes: title={'center': '2'}&gt;],\n       [&lt;Axes: title={'center': '3'}&gt;, &lt;Axes: title={'center': '4'}&gt;]],\n      dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\nModify the code below to create a set of histograms by some other variable that you choose (change VARIABLE_YOU_CHOOSE in the code below.) Make sure to look at the codebook to make sure that the variable you choose makes sense.\n\n\n\n\n\n\nWarning\n\n\n\nMake sure to put the variable you choose in quotations.\n\n\n\n\nCode\nVARIABLE_YOU_CHOOSE = 'BABYSEX'\nnsfg.hist(column = 'AGER', by = VARIABLE_YOU_CHOOSE)\n\n\narray([[&lt;Axes: title={'center': '1.0'}&gt;, &lt;Axes: title={'center': '2.0'}&gt;],\n       [&lt;Axes: title={'center': '8.0'}&gt;, &lt;Axes: title={'center': '9.0'}&gt;]],\n      dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nYour turn 4\nFinally, experiment with changing some of the default parameters like grid (values can be True or False), xrot (rotation of x axis labels) or yrot (rotation of y axis labels).\n\n\nCode\nMY_XROT = 0\nnsfg.hist(column = 'AGER', by = 'RELIGION', xrot = MY_XROT)\n\n\narray([[&lt;Axes: title={'center': '1'}&gt;, &lt;Axes: title={'center': '2'}&gt;],\n       [&lt;Axes: title={'center': '3'}&gt;, &lt;Axes: title={'center': '4'}&gt;]],\n      dtype=object)\n\n\nCode\nplt.show()\n\n\n\n\n\n\n\n\n\nWhat do the numbers for age represent? Consult the codebook for clues.\n\n\nYour turn 5\nFinally, try to modify the code below to make a plot focusing on variables of your own choosing.\n\n\n\n\n\n\nImportant\n\n\n\nYou’ll need to edit plottype, MAIN_VARIABLE, and possibly by = RELIGION.\nYou will also need to change eval: false to eval: true to evaluate the code and generate the figure.\n\n\n\n\nCode\nnsfg.plottype(MAIN_VARIABLE, by = 'RELIGION')\nplt.show()"
   },
   {
     "objectID": "exercises/ex07-figs-w-python.html#submit",
     "href": "exercises/ex07-figs-w-python.html#submit",
     "title": "Exercise 07",
     "section": "Submit",
-    "text": "Submit\n\nThe code you wrote in following the steps above.\nThe results of running your code.\nComments about what you observed."
+    "text": "Submit\n\nThe code you wrote in following the steps above.\nThe results of running your code.\nAnswers to the questions about the figures and comments about what you observed."
   },
   {
     "objectID": "supplemental/cleaning-survey-csv-for-ex06.html",
@@ -5087,5 +5087,96 @@
     "title": "Exploring data with Python",
     "section": "Life expectancy by wealth (Africa)",
     "text": "Life expectancy by wealth (Africa)\ngapAfrica.plot(x = \"gdpPercap\", y = \"lifeExp\", kind = 'scatter')"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html#vonnegut-on-the-shapes-of-stories",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html#vonnegut-on-the-shapes-of-stories",
+    "title": "Exploring data with Python",
+    "section": "Vonnegut on the shapes of stories",
+    "text": "Vonnegut on the shapes of stories\n\nComberg (2010)"
+  },
+  {
+    "objectID": "slides/wkXX-2025-XX-XX-YYYY.html",
+    "href": "slides/wkXX-2025-XX-XX-YYYY.html",
+    "title": "TITLE",
+    "section": "",
+    "text": "Code\nlibrary(reticulate)\nuse_virtualenv(\"myenv\", required = TRUE)"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html",
+    "title": "More on ggplot",
+    "section": "",
+    "text": "Exercise 06 due Thursday, April 3.\nFinal project presentation survey\n\n\n\n\n\n\n\n\n\n\n\n\ndata_frame |&gt;\n  # Manipulations to the data\n  ggplot() +\n  aes(x = , y = , fill = ) + # label aesthetic mappings\n  # Add geom(s)\n  geom_* +\n  # Format legends, axes, add title, etc.\n  ggtitle(\"My awesome figure\")\n\n\n\n\nA future of data science\nOptimism and data visualization\nMore ggplot2\nWork session"
+  },
+  {
+    "objectID": "slides/wk11-2025-04-01-more-ggplot.html#hans-rosling",
+    "href": "slides/wk11-2025-04-01-more-ggplot.html#hans-rosling",
+    "title": "More on ggplot",
+    "section": "Hans Rosling",
+    "text": "Hans Rosling\n\nRosling (n.d.)"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html",
+    "href": "slides/wk12-2025-04-10-advanced-plotting-python.html",
+    "title": "More data explorations with Python",
+    "section": "",
+    "text": "Code\nlibrary(reticulate)\nuse_virtualenv(\"myenv\", required = TRUE)"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html#announcements",
+    "href": "slides/wk12-2025-04-10-advanced-plotting-python.html#announcements",
+    "title": "More data explorations with Python",
+    "section": "Announcements",
+    "text": "Announcements\n\nThere are four exercises!\nNext week"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html#last-time",
+    "href": "slides/wk12-2025-04-10-advanced-plotting-python.html#last-time",
+    "title": "More data explorations with Python",
+    "section": "Last time…",
+    "text": "Last time…"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html#today",
+    "href": "slides/wk12-2025-04-10-advanced-plotting-python.html#today",
+    "title": "More data explorations with Python",
+    "section": "Today",
+    "text": "Today\n\nMore data exploration with Python\nIntroducing Exercise 07\nWork session"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html#jupyter-notebooks",
+    "href": "slides/wk12-2025-04-10-advanced-plotting-python.html#jupyter-notebooks",
+    "title": "More data explorations with Python",
+    "section": "Jupyter notebooks",
+    "text": "Jupyter notebooks\n\nUsing Google Colaboratory (colab.research.google)"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html#making-plots-with-javascript",
+    "href": "slides/wk12-2025-04-10-advanced-plotting-python.html#making-plots-with-javascript",
+    "title": "More data explorations with Python",
+    "section": "Making plots with JavaScript",
+    "text": "Making plots with JavaScript"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html#sign-in",
+    "href": "slides/wk12-2025-04-10-advanced-plotting-python.html#sign-in",
+    "title": "More data explorations with Python",
+    "section": "Sign in",
+    "text": "Sign in\n\nSign in to google.com using your PSU access ID\nVisit colab.research.google.com"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html#context",
+    "href": "slides/wk12-2025-04-10-advanced-plotting-python.html#context",
+    "title": "More data explorations with Python",
+    "section": "Context",
+    "text": "Context\n\nJupyter notebooks ~ Quarto documents"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html#references",
+    "href": "slides/wk12-2025-04-10-advanced-plotting-python.html#references",
+    "title": "More data explorations with Python",
+    "section": "References",
+    "text": "References\n\n\n\n\nlampbrain. (2017). Camelot: Knights of the Round Table (Monty Python and the Holy Grail) with lyrics. Youtube. Retrieved from https://www.youtube.com/watch?v=dviEWs_VIG4"
   }
 ]

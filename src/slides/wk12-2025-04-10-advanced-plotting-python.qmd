@@ -1,0 +1,77 @@
+---
+title: "More data explorations with Python"
+subtitle: "2025-04-10"
+code_fold: false
+---
+
+```{r}
+#| label: setup
+library(reticulate)
+use_virtualenv("myenv", required = TRUE)
+```
+
+# Prelude
+
+---
+
+{{< video https://www.youtube.com/watch?v=dviEWs_VIG4 width=100% height=70% >}}
+
+@lampbrain2017-zb
+
+# Overview
+
+## Announcements
+
+- There are *four* exercises!
+
+## Last time...
+
+
+
+## Today
+
+- More data exploration with Python
+- Introducing [Exercise 07](../exercises/ex07-figs-w-python.qmd)
+- Work session
+
+# More data exploration with Python
+
+## Jupyter notebooks
+
+- Using Google Colaboratory (colab.research.google)
+
+## Sign in
+
+1. Sign in to google.com using your PSU access ID
+2. Visit colab.research.google.com
+
+---
+
+![colab.research.google.com](../include/img/colab.research.google.com.png)
+
+---
+
+3. Explore the notebook!
+
+## Context
+
+- Jupyter notebooks ~ Quarto documents
+
+# Work session
+
+# Next time
+
+## Making plots with JavaScript
+
+:::: {.columns}
+::: {.column width=50%}
+![](../include/img/d3.png)
+:::
+::: {.column width=50%}
+![](../include/img/observable.png)
+:::
+::::
+
+# Resources
+
+## References

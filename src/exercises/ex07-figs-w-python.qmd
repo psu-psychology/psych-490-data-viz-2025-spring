@@ -1,10 +1,12 @@
 ---
 title: "Exercise 07"
 subtitle: "Making figures with Python"
+author: "Santa Claus"
 format:
   html:
     code-fold: true
   docx: default
+  pdf: default
 ---
 
 ::: {.callout-warning}
@@ -35,7 +37,7 @@ For reasons not especially worth explaning here, we have to use R to configure P
 ```{r}
 #| label: set-up-python-env
 library(reticulate)
-py_require(c("pandas", "matplotlib", "numpy"))
+use_virtualenv("myenv", required = TRUE)
 ```
 
 Python calls groups of functions *libraries*.
@@ -61,7 +63,7 @@ The nicknames are the short names: ... `import pandas as pd`, means import the '
 We'll make plots of some of NSFG data we discussed in class on [2025-04-01](../slides/wk11-04-01-more-ggplot.qmd).
 
 ::: {.callout-note}
-The data file has been saved under `csv/`
+The data file has been saved under `../include/csv/`
 :::
 
 The `pandas` library (shortname in our code `pd`) handles the creation and manipulation of data frames.
@@ -112,8 +114,10 @@ nsfg.hist(column = "AGER")
 plt.show()
 ```
 
+### Your turn 1
+
 Now, let's customize the plot by changing some parameters in the `hist()` method.
-Add change the number of bins to some larger number like 20, 25, or 30 (the default is 10), by changing `LARGE_NUMBER` to a number.
+Add change the number of bins to some larger number like 20, 25, or 30 (the default is 10), by changing `LARGE_NUMBER` to a different number.
 
 ```{python}
 #| label: change-bins
@@ -122,6 +126,8 @@ LARGE_NUMBER = 35
 nsfg.hist(column = "AGER", bins = LARGE_NUMBER)
 plt.show()
 ```
+
+### Your turn 2
 
 Now, try a smaller value, less than 10.
 Change the code below to try this.
@@ -135,6 +141,8 @@ plt.show()
 ```
 
 What do you notice?
+
+### Your turn 3
 
 Let's look at the histograms by `RELIGION`, like we did in class on [2025-04-01](https://psu-psychology.github.io/psych-490-data-viz-2025-spring/slides/wk11-2025-04-01-more-ggplot.html).
 
@@ -161,6 +169,8 @@ nsfg.hist(column = 'AGER', by = VARIABLE_YOU_CHOOSE)
 plt.show()
 ```
 
+### Your turn 4
+
 Finally, experiment with changing some of the default parameters like `grid` (values can be `True` or `False`), `xrot` (rotation of x axis labels) or `yrot` (rotation of y axis labels).
 
 ```{python}
@@ -171,7 +181,25 @@ nsfg.hist(column = 'AGER', by = 'RELIGION', xrot = MY_XROT)
 plt.show()
 ```
 
-### Plot other
+What do the numbers for age represent? Consult the [codebook](../include/pdf/2022-2023-NSFG-FemRespPUFCodebook.pdf) for clues.
+
+### Your turn 5
+
+Finally, try to modify the code below to make a plot focusing on variables of your own choosing.
+
+::: {.callout-important}
+You'll need to edit `plottype`, `MAIN_VARIABLE`, and possibly `by = RELIGION`.
+
+You will also need to change `eval: false` to `eval: true` to *evaluate* the code and generate the figure.
+:::
+
+```{python}
+#| label: figure-student-choice
+#| eval: false
+#| 
+nsfg.plottype(MAIN_VARIABLE, by = 'RELIGION')
+plt.show()
+```
 
 ## Submit {-}
 
@@ -179,4 +207,4 @@ plt.show()
 
 2. The results of running your code.
 
-3. Comments about what you observed.
+3. Answers to the questions about the figures and comments about what you observed.

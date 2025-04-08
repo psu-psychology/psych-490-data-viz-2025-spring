@@ -6,6 +6,7 @@ code_fold: false
 
 ```{r}
 #| label: setup
+#| echo: false
 library(reticulate)
 use_virtualenv("myenv", required = TRUE)
 virtualenv_install("myenv", "gapminder")
@@ -17,13 +18,21 @@ import pandas as pd
 import numpy as np
 ```
 
+# Prelude
+
+---
+
+{{< video https://www.youtube.com/watch?v=8IYSGJ77OVY height=70% width=100% >}}
+
+@Ward2019-ez
+
 # Overview
 
 ## Announcements
 
 - Final project presentation [survey](https://forms.gle/oyotxgnnqchqnSgTA) [due]{.orange_due} today.
 
-## In the news
+## Vonnegut on the shapes of stories
 
 {{< video https://www.youtube.com/watch?v=oP3c1h8v2ZQ&t=83s width=100% height=70% >}}
 
@@ -36,7 +45,7 @@ import numpy as np
 ## Last time...
 
 ```{.python code-line-numbers="1|2-3|4-5|6-7|"}
-import matplotlib.pyplot as plt           # <1>
+import matplotlib.pyplot as plt           
 rand_x = np.random.normal(0, 1, 100)
 rand_y = np.random.normal(0, 1, 100)
 data = {'x': rand_x, 'y': rand_y}
@@ -44,7 +53,6 @@ df = pd.DataFrame(data)
 df.plot(x = 'x', y = 'y', kind = 'scatter')
 plt.show()
 ```
-1. Import `pyplot` module from `matplotlib` with short name `plt`.
 
 ```{python}
 #| label: plot-random-xy-python
