@@ -24,6 +24,8 @@ use_virtualenv("myenv", required = TRUE)
 
 - There are *four* exercises! 
 
+![[Four lights meme](https://www.reddit.com/r/startrek/comments/9hzrqp/there_are_four_lights_what_is_the_meaning/)](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F82e33030-2950-47c2-beb2-ac7acae5ef06_245x193.gif)
+
 ---
 
 ![](../include/img/Retractions_FB_1200x630_25-072.jpg)
@@ -64,11 +66,17 @@ use_virtualenv("myenv", required = TRUE)
 
 3. Explore the notebook!
 
+## A gapminder notebook
+
+- [Notebook](https://colab.research.google.com/drive/13WO5Va62sjnsKjVaqazMMTUe3z-H5oMu?usp=sharing)
+
 ## Penn State computer labs, too
 
 ## Context
 
 - Jupyter notebooks ~ Quarto documents
+- Computational notebooks document what, why, and how
+- Can share with collaborators or others
 
 # Work session
 

@@ -5128,7 +5128,7 @@
     "href": "slides/wk12-2025-04-10-advanced-plotting-python.html#announcements",
     "title": "More data explorations with Python",
     "section": "Announcements",
-    "text": "Announcements\n\nThere are four exercises!"
+    "text": "Announcements\n\nThere are four exercises!\n\n\nFour lights meme"
   },
   {
     "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html#last-time",
@@ -5170,7 +5170,7 @@
     "href": "slides/wk12-2025-04-10-advanced-plotting-python.html#context",
     "title": "More data explorations with Python",
     "section": "Context",
-    "text": "Context\n\nJupyter notebooks ~ Quarto documents"
+    "text": "Context\n\nJupyter notebooks ~ Quarto documents\nComputational notebooks document what, why, and how\nCan share with collaborators or others"
   },
   {
     "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html#references",
@@ -5192,5 +5192,12 @@
     "title": "More data explorations with Python",
     "section": "Penn State computer labs, too",
     "text": "Penn State computer labs, too"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html#a-gapminder-notebook",
+    "href": "slides/wk12-2025-04-10-advanced-plotting-python.html#a-gapminder-notebook",
+    "title": "More data explorations with Python",
+    "section": "A gapminder notebook",
+    "text": "A gapminder notebook\n\nNotebook"
   }
 ]
