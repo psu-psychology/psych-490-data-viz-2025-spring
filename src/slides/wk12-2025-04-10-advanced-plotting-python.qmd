@@ -58,7 +58,7 @@ use_virtualenv("myenv", required = TRUE)
 
 0. Plot a simple figure.
 1. Examine the figure. Let it spark questions.
-2. Make a wew figure or table that answers the question(s) and sparks others.
+2. Make a new figure or table that answers the question(s) and sparks others.
 3. Repeat.
 
 ## Today
