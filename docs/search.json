@@ -5177,7 +5177,7 @@
     "href": "slides/wk12-2025-04-10-advanced-plotting-python.html#references",
     "title": "More data explorations with Python",
     "section": "References",
-    "text": "References\n\n\n\n\nlampbrain. (2017). Camelot: Knights of the Round Table (Monty Python and the Holy Grail) with lyrics. Youtube. Retrieved from https://www.youtube.com/watch?v=dviEWs_VIG4"
+    "text": "References\n\n\n\n\nGlobal listening project. (n.d.). Retrieved April 10, 2025, from https://global-listening.org/\n\n\nlampbrain. (2017). Camelot: Knights of the Round Table (Monty Python and the Holy Grail) with lyrics. Youtube. Retrieved from https://www.youtube.com/watch?v=dviEWs_VIG4\n\n\nLarson, H. J., & Bersoff, D. M. (2025). Science’s big problem is a loss of influence, not a loss of trust. Nature, 640, 314–317. https://doi.org/10.1038/d41586-025-01068-1\n\n\nSocietal preparedness insights. (n.d.). Retrieved April 10, 2025, from https://global-listening.org/societal-preparedness-insights/"
   },
   {
     "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html#exploring-data",
@@ -5199,5 +5199,19 @@
     "title": "More data explorations with Python",
     "section": "A gapminder notebook",
     "text": "A gapminder notebook\n\nNotebook"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html#in-the-news",
+    "href": "slides/wk12-2025-04-10-advanced-plotting-python.html#in-the-news",
+    "title": "More data explorations with Python",
+    "section": "In the news…",
+    "text": "In the news…\n\nLarson & Bersoff (2025)"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html#others",
+    "href": "slides/wk12-2025-04-10-advanced-plotting-python.html#others",
+    "title": "More data explorations with Python",
+    "section": "Others",
+    "text": "Others\n\nTableau\nMicrsoft Business Intelligence (BI)"
   }
 ]

@@ -30,6 +30,22 @@ use_virtualenv("myenv", required = TRUE)
 
 ![](../include/img/Retractions_FB_1200x630_25-072.jpg)
 
+## In the news...
+
+![@Larson2025-vp](../include/img/larson-bersoff-nature.png)
+
+---
+
+![@Larson2025-vp](https://media.nature.com/lw767/magazine-assets/d41586-025-01068-1/d41586-025-01068-1_50831614.png?as=webp)
+
+---
+
+![@UnknownUnknown-bo](../include/img/global-listening-project.png)
+
+---
+
+![@UnknownUnknown-qv](../include/img/global-listening-project-bi-dashboard.png)
+
 ## Last time...
 
 ![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/slides/wk12-2025-04-08-explore-data-python.html#/life-expectancy-by-wealth-africa>](../include/img/gapminder-lifeExp-wealth.png)
@@ -92,6 +108,11 @@ use_virtualenv("myenv", required = TRUE)
 ![](../include/img/observable.png)
 :::
 ::::
+
+## Others
+
+- Tableau
+- Micrsoft Business Intelligence (BI)
 
 # Resources
 
