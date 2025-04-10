@@ -4498,7 +4498,7 @@
     "href": "slides/wk12-2025-04-08-explore-data-python.html#last-time",
     "title": "Exploring data with Python",
     "section": "Last time…",
-    "text": "Last time…\nimport matplotlib.pyplot as plt           \nrand_x = np.random.normal(0, 1, 100)\nrand_y = np.random.normal(0, 1, 100)\ndata = {'x': rand_x, 'y': rand_y}\ndf = pd.DataFrame(data)\ndf.plot(x = 'x', y = 'y', kind = 'scatter')\nplt.show()"
+    "text": "Last time…\nimport matplotlib.pyplot as plt           \nrand_x = np.random.normal(0, 1, 100)\nrand_y = np.random.normal(0, 1, 100)\ndata = {'x': rand_x, 'y': rand_y}\ndf = pd.DataFrame(data)\ndf.plot(x = 'x', y = 'y', kind = 'scatter')\nplt.show()\n\n\nCode\nimport matplotlib.pyplot as plt\nrand_x = np.random.normal(0, 1, 100)\nrand_y = np.random.normal(0, 1, 100)\ndata = {'x': rand_x, 'y': rand_y}\ndf = pd.DataFrame(data)\ndf.plot(x = 'x', y = 'y', kind = 'scatter')\nplt.show()"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#today",
@@ -4519,84 +4519,84 @@
     "href": "slides/wk12-2025-04-08-explore-data-python.html#loading",
     "title": "Exploring data with Python",
     "section": "Loading",
-    "text": "Loading\nfrom gapminder import gapminder\nimport matplotlib.pyplot as plt"
+    "text": "Loading\nfrom gapminder import gapminder\nimport matplotlib.pyplot as plt\n\n\nCode\nfrom gapminder import gapminder\nimport matplotlib.pyplot as plt"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#peeking",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#peeking",
     "title": "Exploring data with Python",
     "section": "Peeking",
-    "text": "Peeking\n1gapminder.head()\n\n1\n\nExamine the first few rows of this pandas data frame.\n\n\n\n\n       country continent  year  lifeExp       pop   gdpPercap\n0  Afghanistan      Asia  1952   28.801   8425333  779.445314\n1  Afghanistan      Asia  1957   30.332   9240934  820.853030\n2  Afghanistan      Asia  1962   31.997  10267083  853.100710\n3  Afghanistan      Asia  1967   34.020  11537966  836.197138\n4  Afghanistan      Asia  1972   36.088  13079460  739.981106"
+    "text": "Peeking\n1gapminder.head()\n\n1\n\nExamine the first few rows of this pandas data frame.\n\n\n\n\nCode\ngapminder.head()\n\n\n       country continent  year  lifeExp       pop   gdpPercap\n0  Afghanistan      Asia  1952   28.801   8425333  779.445314\n1  Afghanistan      Asia  1957   30.332   9240934  820.853030\n2  Afghanistan      Asia  1962   31.997  10267083  853.100710\n3  Afghanistan      Asia  1967   34.020  11537966  836.197138\n4  Afghanistan      Asia  1972   36.088  13079460  739.981106\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nPython has special functions that work with specific types of data elements like a pandas data frame. These functions are called ‘methods.’ So, gapminder.head() tells Python to apply the head method to the data frame.\nI use R more than Python, so this syntax sometimes confuses me. In fact, this won’t work:\nhead(gapminder)"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#data-types",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#data-types",
     "title": "Exploring data with Python",
     "section": "Data types",
-    "text": "Data types\ngapminder.dtypes\n\n\ncountry       object\ncontinent     object\nyear           int64\nlifeExp      float64\npop            int64\ngdpPercap    float64\ndtype: object"
+    "text": "Data types\ngapminder.dtypes\n\n\nCode\ngapminder.dtypes\n\n\ncountry       object\ncontinent     object\nyear           int64\nlifeExp      float64\npop            int64\ngdpPercap    float64\ndtype: object"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#describe",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#describe",
     "title": "Exploring data with Python",
     "section": "Describe",
-    "text": "Describe\ngapminder.describe\n\n\n&lt;bound method NDFrame.describe of           country continent  year  lifeExp       pop   gdpPercap\n0     Afghanistan      Asia  1952   28.801   8425333  779.445314\n1     Afghanistan      Asia  1957   30.332   9240934  820.853030\n2     Afghanistan      Asia  1962   31.997  10267083  853.100710\n3     Afghanistan      Asia  1967   34.020  11537966  836.197138\n4     Afghanistan      Asia  1972   36.088  13079460  739.981106\n...           ...       ...   ...      ...       ...         ...\n1699     Zimbabwe    Africa  1987   62.351   9216418  706.157306\n1700     Zimbabwe    Africa  1992   60.377  10704340  693.420786\n1701     Zimbabwe    Africa  1997   46.809  11404948  792.449960\n1702     Zimbabwe    Africa  2002   39.989  11926563  672.038623\n1703     Zimbabwe    Africa  2007   43.487  12311143  469.709298\n\n[1704 rows x 6 columns]&gt;"
+    "text": "Describe\ngapminder.describe\n\n\nCode\ngapminder.describe\n\n\n&lt;bound method NDFrame.describe of           country continent  year  lifeExp       pop   gdpPercap\n0     Afghanistan      Asia  1952   28.801   8425333  779.445314\n1     Afghanistan      Asia  1957   30.332   9240934  820.853030\n2     Afghanistan      Asia  1962   31.997  10267083  853.100710\n3     Afghanistan      Asia  1967   34.020  11537966  836.197138\n4     Afghanistan      Asia  1972   36.088  13079460  739.981106\n...           ...       ...   ...      ...       ...         ...\n1699     Zimbabwe    Africa  1987   62.351   9216418  706.157306\n1700     Zimbabwe    Africa  1992   60.377  10704340  693.420786\n1701     Zimbabwe    Africa  1997   46.809  11404948  792.449960\n1702     Zimbabwe    Africa  2002   39.989  11926563  672.038623\n1703     Zimbabwe    Africa  2007   43.487  12311143  469.709298\n\n[1704 rows x 6 columns]&gt;"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#exploring-country",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#exploring-country",
     "title": "Exploring data with Python",
     "section": "Exploring country",
-    "text": "Exploring country\ngapminder[\"country\"]\n\n\n0       Afghanistan\n1       Afghanistan\n2       Afghanistan\n3       Afghanistan\n4       Afghanistan\n           ...     \n1699       Zimbabwe\n1700       Zimbabwe\n1701       Zimbabwe\n1702       Zimbabwe\n1703       Zimbabwe\nName: country, Length: 1704, dtype: object"
+    "text": "Exploring country\ngapminder[\"country\"]\n\n\nCode\ngapminder[\"country\"]\n\n\n0       Afghanistan\n1       Afghanistan\n2       Afghanistan\n3       Afghanistan\n4       Afghanistan\n           ...     \n1699       Zimbabwe\n1700       Zimbabwe\n1701       Zimbabwe\n1702       Zimbabwe\n1703       Zimbabwe\nName: country, Length: 1704, dtype: object"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#exploring-continent",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#exploring-continent",
     "title": "Exploring data with Python",
     "section": "Exploring continent",
-    "text": "Exploring continent\ngapminder[\"continent\"]\n\n\n0         Asia\n1         Asia\n2         Asia\n3         Asia\n4         Asia\n         ...  \n1699    Africa\n1700    Africa\n1701    Africa\n1702    Africa\n1703    Africa\nName: continent, Length: 1704, dtype: object"
+    "text": "Exploring continent\ngapminder[\"continent\"]\n\n\nCode\ngapminder[\"continent\"]\n\n\n0         Asia\n1         Asia\n2         Asia\n3         Asia\n4         Asia\n         ...  \n1699    Africa\n1700    Africa\n1701    Africa\n1702    Africa\n1703    Africa\nName: continent, Length: 1704, dtype: object"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#exploring-year",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#exploring-year",
     "title": "Exploring data with Python",
     "section": "Exploring year",
-    "text": "Exploring year\ngapminder[\"year\"]\n\n\n0       1952\n1       1957\n2       1962\n3       1967\n4       1972\n        ... \n1699    1987\n1700    1992\n1701    1997\n1702    2002\n1703    2007\nName: year, Length: 1704, dtype: int64"
+    "text": "Exploring year\ngapminder[\"year\"]\n\n\nCode\ngapminder[\"year\"]\n\n\n0       1952\n1       1957\n2       1962\n3       1967\n4       1972\n        ... \n1699    1987\n1700    1992\n1701    1997\n1702    2002\n1703    2007\nName: year, Length: 1704, dtype: int64"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#exploring-lifeexp",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#exploring-lifeexp",
     "title": "Exploring data with Python",
     "section": "Exploring lifeExp",
-    "text": "Exploring lifeExp\ngapminder[\"lifeExp\"]\n\n\n0       28.801\n1       30.332\n2       31.997\n3       34.020\n4       36.088\n         ...  \n1699    62.351\n1700    60.377\n1701    46.809\n1702    39.989\n1703    43.487\nName: lifeExp, Length: 1704, dtype: float64"
+    "text": "Exploring lifeExp\ngapminder[\"lifeExp\"]\n\n\nCode\ngapminder[\"lifeExp\"]\n\n\n0       28.801\n1       30.332\n2       31.997\n3       34.020\n4       36.088\n         ...  \n1699    62.351\n1700    60.377\n1701    46.809\n1702    39.989\n1703    43.487\nName: lifeExp, Length: 1704, dtype: float64"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#exploring-pop",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#exploring-pop",
     "title": "Exploring data with Python",
     "section": "Exploring pop",
-    "text": "Exploring pop\ngapminder[\"pop\"]\n\n\n0        8425333\n1        9240934\n2       10267083\n3       11537966\n4       13079460\n          ...   \n1699     9216418\n1700    10704340\n1701    11404948\n1702    11926563\n1703    12311143\nName: pop, Length: 1704, dtype: int64"
+    "text": "Exploring pop\ngapminder[\"pop\"]\n\n\nCode\ngapminder[\"pop\"]\n\n\n0        8425333\n1        9240934\n2       10267083\n3       11537966\n4       13079460\n          ...   \n1699     9216418\n1700    10704340\n1701    11404948\n1702    11926563\n1703    12311143\nName: pop, Length: 1704, dtype: int64"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#exploring-gdppercap",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#exploring-gdppercap",
     "title": "Exploring data with Python",
     "section": "Exploring gdpPercap",
-    "text": "Exploring gdpPercap\ngapminder[\"gdpPercap\"]\n\n\n0       779.445314\n1       820.853030\n2       853.100710\n3       836.197138\n4       739.981106\n           ...    \n1699    706.157306\n1700    693.420786\n1701    792.449960\n1702    672.038623\n1703    469.709298\nName: gdpPercap, Length: 1704, dtype: float64"
+    "text": "Exploring gdpPercap\ngapminder[\"gdpPercap\"]\n\n\nCode\ngapminder[\"gdpPercap\"]\n\n\n0       779.445314\n1       820.853030\n2       853.100710\n3       836.197138\n4       739.981106\n           ...    \n1699    706.157306\n1700    693.420786\n1701    792.449960\n1702    672.038623\n1703    469.709298\nName: gdpPercap, Length: 1704, dtype: float64"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#unique-values",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#unique-values",
     "title": "Exploring data with Python",
     "section": "Unique values",
-    "text": "Unique values\ngapminder[\"continent\"].unique()\n\n\narray(['Asia', 'Europe', 'Africa', 'Americas', 'Oceania'], dtype=object)\n\n\n\n“chaining” methods one after the other like this using the dot (.) notation is analogous to using the pipe (`|&gt;’) command in R."
+    "text": "Unique values\ngapminder[\"continent\"].unique()\n\n\nCode\ngapminder[\"continent\"].unique()\n\n\narray(['Asia', 'Europe', 'Africa', 'Americas', 'Oceania'], dtype=object)\n\n\n\n“chaining” methods one after the other like this using the dot (.) notation is analogous to using the pipe (`|&gt;’) command in R."
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#selecting-rows",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#selecting-rows",
     "title": "Exploring data with Python",
     "section": "Selecting rows",
-    "text": "Selecting rows\n1gapminder[gapminder[\"continent\"].isin([\"Asia\"])\n\n1\n\nThe square brackets “[]” mean ‘look inside’ gapminder. Select the “continent” column, but only the rows that include “Asia”.\n\n\n\n\n          country continent  year  lifeExp       pop    gdpPercap\n0     Afghanistan      Asia  1952   28.801   8425333   779.445314\n1     Afghanistan      Asia  1957   30.332   9240934   820.853030\n2     Afghanistan      Asia  1962   31.997  10267083   853.100710\n3     Afghanistan      Asia  1967   34.020  11537966   836.197138\n4     Afghanistan      Asia  1972   36.088  13079460   739.981106\n...           ...       ...   ...      ...       ...          ...\n1675  Yemen, Rep.      Asia  1987   52.922  11219340  1971.741538\n1676  Yemen, Rep.      Asia  1992   55.599  13367997  1879.496673\n1677  Yemen, Rep.      Asia  1997   58.020  15826497  2117.484526\n1678  Yemen, Rep.      Asia  2002   60.308  18701257  2234.820827\n1679  Yemen, Rep.      Asia  2007   62.698  22211743  2280.769906\n\n[396 rows x 6 columns]"
+    "text": "Selecting rows\n1gapminder[gapminder[\"continent\"].isin([\"Asia\"])]\n\n1\n\nThe square brackets “[]” mean ‘look inside’ gapminder. Select the “continent” column, but only the rows that include “Asia”.\n\n\n\n\nCode\ngapminder[gapminder[\"continent\"].isin([\"Asia\"])]\n\n\n          country continent  year  lifeExp       pop    gdpPercap\n0     Afghanistan      Asia  1952   28.801   8425333   779.445314\n1     Afghanistan      Asia  1957   30.332   9240934   820.853030\n2     Afghanistan      Asia  1962   31.997  10267083   853.100710\n3     Afghanistan      Asia  1967   34.020  11537966   836.197138\n4     Afghanistan      Asia  1972   36.088  13079460   739.981106\n...           ...       ...   ...      ...       ...          ...\n1675  Yemen, Rep.      Asia  1987   52.922  11219340  1971.741538\n1676  Yemen, Rep.      Asia  1992   55.599  13367997  1879.496673\n1677  Yemen, Rep.      Asia  1997   58.020  15826497  2117.484526\n1678  Yemen, Rep.      Asia  2002   60.308  18701257  2234.820827\n1679  Yemen, Rep.      Asia  2007   62.698  22211743  2280.769906\n\n[396 rows x 6 columns]"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-continent",
@@ -4610,14 +4610,14 @@
     "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-continent---1-2",
     "title": "Exploring data with Python",
     "section": "Life expectancy by continent - 1 & 2",
-    "text": "Life expectancy by continent - 1 & 2\ngap2007 = gapminder[gapminder[\"year\"]==2007]\n\nPick rows from gapminder where “year” == 2007\nAssign it to a new variable called gap2007"
+    "text": "Life expectancy by continent - 1 & 2\ngap2007 = gapminder[gapminder[\"year\"]==2007]\n\nPick rows from gapminder where “year” == 2007\nAssign it to a new variable called gap2007\n\n\n\nCode\ngap2007 = gapminder[gapminder[\"year\"]==2007]"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-continent---3",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-continent---3",
     "title": "Exploring data with Python",
     "section": "Life expectancy by continent - 3",
-    "text": "Life expectancy by continent - 3\ngap2007.boxplot(\"lifeExp\", by=\"continent\")"
+    "text": "Life expectancy by continent - 3\ngap2007.boxplot(\"lifeExp\", by=\"continent\")\n\n\nCode\ngap2007.boxplot(\"lifeExp\", by=\"continent\")\nplt.show()"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#references",
@@ -4995,21 +4995,21 @@
     "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-over-time-1-2",
     "title": "Exploring data with Python",
     "section": "Life expectancy over time – 1 & 2",
-    "text": "Life expectancy over time – 1 & 2\ngapAfrica = gapminder[gapminder[\"continent\"]==\"Africa\"]\ngapAfrica.head\n\n\n&lt;bound method NDFrame.head of        country continent  year  lifeExp       pop    gdpPercap\n24     Algeria    Africa  1952   43.077   9279525  2449.008185\n25     Algeria    Africa  1957   45.685  10270856  3013.976023\n26     Algeria    Africa  1962   48.303  11000948  2550.816880\n27     Algeria    Africa  1967   51.407  12760499  3246.991771\n28     Algeria    Africa  1972   54.518  14760787  4182.663766\n...        ...       ...   ...      ...       ...          ...\n1699  Zimbabwe    Africa  1987   62.351   9216418   706.157306\n1700  Zimbabwe    Africa  1992   60.377  10704340   693.420786\n1701  Zimbabwe    Africa  1997   46.809  11404948   792.449960\n1702  Zimbabwe    Africa  2002   39.989  11926563   672.038623\n1703  Zimbabwe    Africa  2007   43.487  12311143   469.709298\n\n[624 rows x 6 columns]&gt;"
+    "text": "Life expectancy over time – 1 & 2\ngapAfrica = gapminder[gapminder[\"continent\"]==\"Africa\"]\ngapAfrica.head\n\n\nCode\ngapAfrica = gapminder[gapminder[\"continent\"]==\"Africa\"]\ngapAfrica.head\n\n\n&lt;bound method NDFrame.head of        country continent  year  lifeExp       pop    gdpPercap\n24     Algeria    Africa  1952   43.077   9279525  2449.008185\n25     Algeria    Africa  1957   45.685  10270856  3013.976023\n26     Algeria    Africa  1962   48.303  11000948  2550.816880\n27     Algeria    Africa  1967   51.407  12760499  3246.991771\n28     Algeria    Africa  1972   54.518  14760787  4182.663766\n...        ...       ...   ...      ...       ...          ...\n1699  Zimbabwe    Africa  1987   62.351   9216418   706.157306\n1700  Zimbabwe    Africa  1992   60.377  10704340   693.420786\n1701  Zimbabwe    Africa  1997   46.809  11404948   792.449960\n1702  Zimbabwe    Africa  2002   39.989  11926563   672.038623\n1703  Zimbabwe    Africa  2007   43.487  12311143   469.709298\n\n[624 rows x 6 columns]&gt;"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-over-time-3",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-over-time-3",
     "title": "Exploring data with Python",
     "section": "Life expectancy over time – 3",
-    "text": "Life expectancy over time – 3\ngapAfrica.plot(x = 'year', y = 'lifeExp', kind='scatter')"
+    "text": "Life expectancy over time – 3\ngapAfrica.plot(x = 'year', y = 'lifeExp', kind='scatter')\n\n\nCode\ngapAfrica.plot(x = 'year', y = 'lifeExp', kind='scatter')"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-over-time-3b",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-over-time-3b",
     "title": "Exploring data with Python",
     "section": "Life expectancy over time – 3b",
-    "text": "Life expectancy over time – 3b\ngapAfrica.boxplot(\"lifeExp\", by=\"year\")"
+    "text": "Life expectancy over time – 3b\ngapAfrica.boxplot(\"lifeExp\", by=\"year\")\n\n\nCode\ngapAfrica.boxplot(\"lifeExp\", by=\"year\")"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-wealth",
@@ -5044,21 +5044,21 @@
     "href": "slides/wk12-2025-04-08-explore-data-python.html#remember-hans-rosling",
     "title": "Exploring data with Python",
     "section": "Remember Hans Rosling?",
-    "text": "Remember Hans Rosling?\n\nRosling (n.d.)"
+    "text": "Remember Hans Rosling?\n\nRosling (n.d.)\n\n\n\n\nhttps://gapminder.org"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#dollar-street",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#dollar-street",
     "title": "Exploring data with Python",
     "section": "Dollar Street",
-    "text": "Dollar Street\n\nhttps://www.gapminder.org/dollar-street"
+    "text": "Dollar Street\n\n\n\nhttps://www.gapminder.org/dollar-street"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-continent---3b",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-continent---3b",
     "title": "Exploring data with Python",
     "section": "Life expectancy by continent - 3b",
-    "text": "Life expectancy by continent - 3b\ngap2007.hist(\"lifeExp\", by=\"continent\")\n\n\narray([[&lt;Axes: title={'center': 'Africa'}&gt;,\n        &lt;Axes: title={'center': 'Americas'}&gt;],\n       [&lt;Axes: title={'center': 'Asia'}&gt;,\n        &lt;Axes: title={'center': 'Europe'}&gt;],\n       [&lt;Axes: title={'center': 'Oceania'}&gt;, &lt;Axes: &gt;]], dtype=object)"
+    "text": "Life expectancy by continent - 3b\ngap2007.hist(\"lifeExp\", by=\"continent\")\n\n\nCode\ngap2007.hist(\"lifeExp\", by=\"continent\")\n\n\narray([[&lt;Axes: title={'center': 'Africa'}&gt;,\n        &lt;Axes: title={'center': 'Americas'}&gt;],\n       [&lt;Axes: title={'center': 'Asia'}&gt;,\n        &lt;Axes: title={'center': 'Europe'}&gt;],\n       [&lt;Axes: title={'center': 'Oceania'}&gt;, &lt;Axes: &gt;]], dtype=object)\n\n\nCode\nplt.show()"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#what-do-we-want-to-know-about",
@@ -5072,21 +5072,21 @@
     "href": "slides/wk12-2025-04-08-explore-data-python.html#wealth-by-continent",
     "title": "Exploring data with Python",
     "section": "Wealth by continent",
-    "text": "Wealth by continent\ngap2007.boxplot(\"gdpPercap\", by=\"continent\")"
+    "text": "Wealth by continent\ngap2007.boxplot(\"gdpPercap\", by=\"continent\")\n\n\nCode\ngap2007.boxplot(\"gdpPercap\", by=\"continent\")\nplt.show()"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#wealth-over-time-africa",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#wealth-over-time-africa",
     "title": "Exploring data with Python",
     "section": "Wealth over time (Africa)",
-    "text": "Wealth over time (Africa)\ngapAfrica.plot(x = 'year', y = 'gdpPercap', kind='scatter')"
+    "text": "Wealth over time (Africa)\ngapAfrica.plot(x = 'year', y = 'gdpPercap', kind='scatter')\n\n\nCode\ngapAfrica.plot(x = 'year', y = 'gdpPercap', kind='scatter')"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-wealth-africa",
     "href": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-by-wealth-africa",
     "title": "Exploring data with Python",
     "section": "Life expectancy by wealth (Africa)",
-    "text": "Life expectancy by wealth (Africa)\ngapAfrica.plot(x = \"gdpPercap\", y = \"lifeExp\", kind = 'scatter')"
+    "text": "Life expectancy by wealth (Africa)\ngapAfrica.plot(x = \"gdpPercap\", y = \"lifeExp\", kind = 'scatter')\n\n\nCode\ngapAfrica.plot(x = \"gdpPercap\", y = \"lifeExp\", kind = 'scatter')"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#vonnegut-on-the-shapes-of-stories",
@@ -5213,5 +5213,82 @@
     "title": "More data explorations with Python",
     "section": "Others",
     "text": "Others\n\nTableau\nMicrsoft Business Intelligence (BI)"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-15-d3-observable.html#announcements",
+    "href": "slides/wk13-2025-04-15-d3-observable.html#announcements",
+    "title": "D3 & Observable",
+    "section": "Announcements",
+    "text": "Announcements\n\nExercise-07 due Thursday"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-15-d3-observable.html#in-the-news",
+    "href": "slides/wk13-2025-04-15-d3-observable.html#in-the-news",
+    "title": "D3 & Observable",
+    "section": "In the news…",
+    "text": "In the news…"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-15-d3-observable.html#last-time",
+    "href": "slides/wk13-2025-04-15-d3-observable.html#last-time",
+    "title": "D3 & Observable",
+    "section": "Last time…",
+    "text": "Last time…"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-15-d3-observable.html#today",
+    "href": "slides/wk13-2025-04-15-d3-observable.html#today",
+    "title": "D3 & Observable",
+    "section": "Today",
+    "text": "Today\n\nOn JavaScript\nD3 and Observable"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-15-d3-observable.html#what-is-javascript",
+    "href": "slides/wk13-2025-04-15-d3-observable.html#what-is-javascript",
+    "title": "D3 & Observable",
+    "section": "What is JavaScript?",
+    "text": "What is JavaScript?"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-15-d3-observable.html#why-should-you-care",
+    "href": "slides/wk13-2025-04-15-d3-observable.html#why-should-you-care",
+    "title": "D3 & Observable",
+    "section": "Why should you care?",
+    "text": "Why should you care?"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-15-d3-observable.html#examples",
+    "href": "slides/wk13-2025-04-15-d3-observable.html#examples",
+    "title": "D3 & Observable",
+    "section": "Examples",
+    "text": "Examples\n\nThe Wealth & Health of Nations, Bostock (n.d.)\nScatterplot tour\nWalmart’s growth"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-15-d3-observable.html#lets-try-it",
+    "href": "slides/wk13-2025-04-15-d3-observable.html#lets-try-it",
+    "title": "D3 & Observable",
+    "section": "Let’s try it",
+    "text": "Let’s try it\nThe Quarto site has a tutorial (“Observable JS,” n.d.) we’ll try to follow after we acquire the data (@ Horst, Hill, & Gorman, 2020).\ninstall.packages(\"palmerpenguins\")"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-15-d3-observable.html#references",
+    "href": "slides/wk13-2025-04-15-d3-observable.html#references",
+    "title": "D3 & Observable",
+    "section": "References",
+    "text": "References\n\n\n\n\nBostock, M. (n.d.). The Wealth & Health of Nations / Mike Bostock. Retrieved April 10, 2025, from https://observablehq.com/@mbostock/the-wealth-health-of-nations\n\n\nHorst, A. M., Hill, A. P., & Gorman, K. B. (2020). Palmerpenguins: Palmer archipelago (antarctica) penguin data. https://doi.org/10.5281/zenodo.3960218\n\n\nObservable JS. (n.d.). Retrieved April 10, 2025, from https://quarto.org/docs/interactive/ojs/"
+  },
+  {
+    "objectID": "supplemental/penguins.html",
+    "href": "supplemental/penguins.html",
+    "title": "Penguins",
+    "section": "",
+    "text": "Code\ndata = {\n  const co2data = await FileAttachment(\"../include/csv/co2_mm_mlo.csv\")\n    .csv({ typed: true } );\n  return co2data.map(d =&gt; { \n    d[\"decimal date\"] = Number(d[\"decimal date\"]);\n    d.average = Number(d.average); \n    return d; \n  });\n}\nPlot.plot({\n  marks: [\n    Plot.line(data, \n      { x: \"decimal date\", y: \"average\"}, \n      { stroke: \"black\" }\n    )\n  ]\n})"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-08-explore-data-python.html",
+    "href": "slides/wk12-2025-04-08-explore-data-python.html",
+    "title": "Exploring data with Python",
+    "section": "",
+    "text": "Using virtual environment 'myenv' ...\n\n\n+ /Users/rog1/.virtualenvs/myenv/bin/python -m pip install --upgrade --no-user gapminder\nCode\nimport pandas as pd\nimport numpy as np"
   }
 ]

@@ -1,0 +1,171 @@
+---
+title: "D3 & Observable"
+subtitle: "2025-04-15"
+code_fold: false
+---
+
+# Prelude
+
+# Overview
+
+## Announcements
+
+- [Exercise-07](../exercises/ex07-figs-w-python.qmd) [due]{.orange_due} Thursday
+
+## In the news...
+
+## Last time...
+
+## Today
+
+- On JavaScript
+- D3 and Observable
+
+# On JavaScript
+
+## What is JavaScript?
+
+## Why should you care?
+
+# D3 and Observable
+
+---
+
+![<d3js.org>](../include/img/d3.png)
+
+## Examples
+
+- [The Wealth & Health of Nations](https://observablehq.com/@mbostock/the-wealth-health-of-nations), @UnknownUnknown-zi
+- [Scatterplot tour](https://observablehq.com/@d3/scatterplot-tour)
+- [Walmart's growth](https://observablehq.com/@d3/walmarts-growth)
+
+## Let's try it
+
+The Quarto site has a tutorial [@UnknownUnknown-ha] we'll try to follow _after_ we acquire the data [@
+@palmerPenguins2020].
+
+```{.r}
+install.packages("palmerpenguins")
+```
+
+---
+
+```{.r}
+library(palmerpenguins)
+data(package = 'palmerpenguins')
+```
+
+```{r}
+library(palmerpenguins)
+data(package = 'palmerpenguins')
+```
+
+---
+
+```{.r}
+readr::write_csv(penguins_raw, "../include/csv/palmer-penguins.csv")
+```
+
+```{r}
+readr::write_csv(penguins_raw, "../include/csv/palmer-penguins.csv")
+```
+
+---
+
+```{ojs}
+data = FileAttachment("../include/csv/palmer-penguins.csv").csv({ typed: true })
+
+filtered = transpose(data).filter(function(penguin) {
+  return bill_length_min < penguin.bill_length_mm &&
+         islands.includes(penguin.island);
+})
+
+viewof bill_length_min = Inputs.range(
+  [32, 50], 
+  {value: 35, step: 1, label: "Bill length (min):"}
+)
+viewof islands = Inputs.checkbox(
+  ["Torgersen", "Biscoe", "Dream"], 
+  { value: ["Torgersen", "Biscoe"], 
+    label: "Islands:"
+  }
+)
+
+Plot.rectY(filtered, 
+  Plot.binX(
+    {y: "count"}, 
+    {x: "body_mass_g", fill: "species", thresholds: 20}
+  ))
+  .plot({
+    facet: {
+      data: filtered,
+      x: "sex",
+      y: "species",
+      marginRight: 80
+    },
+    marks: [
+      Plot.frame(),
+    ]
+  }
+)
+```
+
+---
+
+```{.ojs}
+data = FileAttachment("../include/csv/palmer-penguins.csv").csv({ typed: true })
+```
+
+---
+
+```{.ojs}
+viewof bill_length_min = Inputs.range(
+  [32, 50], 
+  {value: 35, step: 1, label: "Bill length (min):"}
+)
+viewof islands = Inputs.checkbox(
+  ["Torgersen", "Biscoe", "Dream"], 
+  { value: ["Torgersen", "Biscoe"], 
+    label: "Islands:"
+  }
+)
+```
+
+---
+
+```{.ojs}
+filtered = data.filter(function(penguin) {
+  return bill_length_min < penguin.bill_length_mm &&
+         islands.includes(penguin.island);
+})
+```
+
+---
+
+```{.ojs}
+Plot.rectY(filtered, 
+  Plot.binX(
+    {y: "count"}, 
+    {x: "body_mass_g", fill: "species", thresholds: 20}
+  ))
+  .plot({
+    facet: {
+      data: filtered,
+      x: "sex",
+      y: "species",
+      marginRight: 80
+    },
+    marks: [
+      Plot.frame(),
+    ]
+  }
+)
+```
+
+# Work session
+
+# Next time
+
+# Resources
+
+## References

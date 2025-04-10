@@ -1,0 +1,25 @@
+---
+title: "Penguins"
+execute:
+  echo: false
+---
+
+```{ojs}
+data = {
+  const co2data = await FileAttachment("../include/csv/co2_mm_mlo.csv")
+    .csv({ typed: true } );
+  return co2data.map(d => { 
+    d["decimal date"] = Number(d["decimal date"]);
+    d.average = Number(d.average); 
+    return d; 
+  });
+}
+Plot.plot({
+  marks: [
+    Plot.line(data, 
+      { x: "decimal date", y: "average"}, 
+      { stroke: "black" }
+    )
+  ]
+})
+```

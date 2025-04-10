@@ -247,9 +247,11 @@
 
 ### Tuesday, April 15 {-}
 
-*Making plots with JavaScript*
+*Making plots with JavaScript libraries*
 
 ### Thursday, April 17 {-}
+
+*Tableu and Microsoft BI*
 
 - In-class work on final projects or Exercise 07.
 - [Due]{.orange_due}: [Exercise-07](exercises/ex07-figs-w-python.qmd)
