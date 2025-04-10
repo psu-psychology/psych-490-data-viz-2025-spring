@@ -242,6 +242,7 @@
 *More data explorations with Python*
 
 - [Assigned]{.green_assigned}: [Exercise-07](exercises/ex07-figs-w-python.qmd)
+- [Slides](slides/wk12-2025-04-10-advanced-plotting-python.qmd)
 
 ## April 14-18 {- #week-13}
 
