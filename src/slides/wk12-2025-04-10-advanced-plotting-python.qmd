@@ -18,6 +18,10 @@ use_virtualenv("myenv", required = TRUE)
 
 @lampbrain2017-zb
 
+## What the...? {.scrollable}
+
+![](../include/img/python-origins.png)
+
 # Overview
 
 ## Announcements

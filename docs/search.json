@@ -5290,5 +5290,12 @@
     "title": "Exploring data with Python",
     "section": "",
     "text": "Using virtual environment 'myenv' ...\n\n\n+ /Users/rog1/.virtualenvs/myenv/bin/python -m pip install --upgrade --no-user gapminder\nCode\nimport pandas as pd\nimport numpy as np"
+  },
+  {
+    "objectID": "slides/wk12-2025-04-10-advanced-plotting-python.html#what-the",
+    "href": "slides/wk12-2025-04-10-advanced-plotting-python.html#what-the",
+    "title": "More data explorations with Python",
+    "section": "What the…?",
+    "text": "What the…?"
   }
 ]
