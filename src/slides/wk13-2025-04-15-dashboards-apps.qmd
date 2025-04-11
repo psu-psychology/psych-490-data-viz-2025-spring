@@ -1,0 +1,148 @@
+---
+title: "Widgets, dashboards, & apps"
+subtitle: "2025-04-15"
+---
+
+```{r}
+#| label: setup
+library(reticulate)
+use_virtualenv("myenv", required = TRUE)
+```
+
+<!-- # Prelude -->
+
+# Overview
+
+## Announcements
+
+- [Exercise-07](../exercises/ex07-figs-w-python.qmd) [due]{.orange_due} Thursday
+
+## In the news...
+
+![@USAFacts2023-lv](../include/img/do-women-live-longer-than-men-usafacts.png)
+
+---
+
+![@USAFacts2023-lv](https://datawrapper.dwcdn.net/cr3AX/full.svg)
+
+## Last time...
+
+- Jupyter notebooks on Google colab service
+
+![<https://colab.research.google.com/drive/13WO5Va62sjnsKjVaqazMMTUe3z-H5oMu?usp=chrome_ntp>](../include/img/gapminder-colab.png)
+
+## Today
+
+- Widgets, dashboards, & apps
+- Work session
+
+# Widgets, dashboards, & apps
+
+## Widgets
+
+See: <https://quarto.org/docs/interactive/widgets/jupyter.html>
+
+<!-- ```{python} -->
+<!-- #| label: leaflet-demo -->
+<!-- #| code-fold: true -->
+<!-- #| echo: fenced -->
+
+<!-- from ipyleaflet import Map, Marker, basemaps, basemap_to_tiles -->
+<!-- from IPython.display import display -->
+
+<!-- sparks = (40.796834, -77.865786) -->
+<!-- map = Map( -->
+<!--   # basemap=basemap_to_tiles( -->
+<!--   #   basemaps.NASAGIBS.ModisTerraTrueColorCR, "2017-04-08" -->
+<!--   # ), -->
+<!--   center=sparks, -->
+<!--   zoom=4 -->
+<!-- ) -->
+<!-- marker = Marker(location=sparks, draggable=True) -->
+
+<!-- map.add_control(marker) -->
+
+<!-- display(map) -->
+<!-- ``` -->
+
+<!-- --- -->
+
+```{python}
+#| label: plotly-demo
+#| #| code-fold: true
+#| echo: fenced
+
+import plotly.express as px
+import plotly.io as pio
+df = px.data.iris()
+fig = px.scatter(df, x="sepal_width", y="sepal_length", 
+                 color="species", 
+                 marginal_y="violin", marginal_x="box", 
+                 trendline="ols", template="simple_white")
+fig.show()
+```
+
+## Maps with `Leaflet`
+
+```{r}
+#| label: leaflet-r
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=-77.868785, lat=40.798608, popup="Middle of nowhere")
+```
+
+## [Leafletjs](https://leafletjs.com)
+
+:::: {.columns}
+::: {.column width=50%}
+![https://leafletjs.com](../include/img/leaflet-about.png)
+:::
+::: {.column width=50%}
+![https://leafletjs.com](../include/img/leaflet.png)
+:::
+::::
+
+## Dashboards
+
+- <https://quarto.org/docs/gallery/#dashboards>
+- Gapminder: <https://jjallaire.github.io/gapminder-dashboard/>
+- NFL injuries: <https://jjallaire.github.io/nfl-injuries-dashboard/>
+- Weather forecast: <https://cscheid.github.io/quarto-dashboard-ojs-examples/weather.html>
+
+## {background-iframe="https://jjallaire.github.io/gapminder-dashboard/"}
+
+## More dashboards
+
+- [The Wealth & Health of Nations](https://observablehq.com/@mbostock/the-wealth-health-of-nations), @UnknownUnknown-zi
+- [Scatterplot tour](https://observablehq.com/@d3/scatterplot-tour)
+- [Walmart's growth](https://observablehq.com/@d3/walmarts-growth)
+
+## Posit.co's [Shiny](https://shiny.posit.co)
+
+- <https://shiny.posit.co/r/gallery/>
+- Movie explorer: <https://shiny.posit.co/r/gallery/interactive-visualizations/movie-explorer/>
+- Health expenditures vs. life expectancy: <https://shiny.posit.co/r/gallery/interactive-visualizations/google-charts/>
+
+## Gilmore's Shiny app
+
+- <https://posit.cloud/spaces/447376/content/7061645>
+
+## To app or not to app
+
+::: {.incremental}
+- Harder to make than sequential data visualizations
+- User interface (UI), user experience (UX), @Kohler2024-ig
+- How best to tell your data 'story'
+- Maybe with [these](https://play-project.org/KoBoToolbox/) data?
+:::
+
+# Work session
+
+# Next time
+
+- Commercial tools for data visualization
+
+# Resources
+
+## References

@@ -4,4 +4,5 @@
 library(reticulate)
 virtualenv_create("myenv")
 use_virtualenv("myenv", required = TRUE)
-virtualenv_install("myenv", c("pandas", "matplotlib", "numpy"))
+virtualenv_install("myenv", c("pandas", "matplotlib", "numpy", "ipyleaflet",
+                              "plotly", "statsmodels"))

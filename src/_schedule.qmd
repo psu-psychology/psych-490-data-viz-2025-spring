@@ -248,7 +248,10 @@
 
 ### Tuesday, April 15 {-}
 
-*Making plots with JavaScript libraries*
+*Making data dashboards and apps*
+
+- Explore: @Kohler2024-ig
+- [Slides](slides/wk13-2025-04-15-dashboards-apps.qmd)
 
 ### Thursday, April 17 {-}
 
