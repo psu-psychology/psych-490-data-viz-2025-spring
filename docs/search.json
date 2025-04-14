@@ -5394,14 +5394,14 @@
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#to-app-or-not-to-app",
     "title": "Widgets, dashboards, & apps",
     "section": "To app or not to app",
-    "text": "To app or not to app\n\n\nHarder to make than sequential data visualizations\nHow best to tell your data ‘story’\nMaybe with these data?"
+    "text": "To app or not to app\n\n\nHarder to make than sequential data visualizations\nUser interface (UI), user experience (UX), Kohler (2024)\nHow best to tell your data ‘story’\nMaybe with these data?"
   },
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#references",
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#references",
     "title": "Widgets, dashboards, & apps",
     "section": "References",
-    "text": "References\n\n\n\n\nBostock, M. (n.d.). The Wealth & Health of Nations / Mike Bostock. Retrieved April 10, 2025, from https://observablehq.com/@mbostock/the-wealth-health-of-nations\n\n\nUSAFacts. (2023, September 6). Do women live longer than men in the US? Retrieved April 11, 2025, from https://usafacts.org/articles/do-women-live-longer-than-men-in-the-us/"
+    "text": "References\n\n\n\n\nBostock, M. (n.d.). The Wealth & Health of Nations / Mike Bostock. Retrieved April 10, 2025, from https://observablehq.com/@mbostock/the-wealth-health-of-nations\n\n\nKohler, T. (2024, January 10). Psychology for UX: Study guide. Retrieved April 11, 2025, from https://www.nngroup.com/articles/psychology-study-guide/\n\n\nUSAFacts. (2023, September 6). Do women live longer than men in the US? Retrieved April 11, 2025, from https://usafacts.org/articles/do-women-live-longer-than-men-in-the-us/"
   },
   {
     "objectID": "slides/wk13-2025-04-17-industry-tools.html#announcements",
@@ -5451,5 +5451,12 @@
     "title": "Industry tools",
     "section": "References",
     "text": "References"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#maps-with-leaflet",
+    "href": "slides/wk13-2025-04-15-dashboards-apps.html#maps-with-leaflet",
+    "title": "Widgets, dashboards, & apps",
+    "section": "Maps with Leaflet",
+    "text": "Maps with Leaflet"
   }
 ]

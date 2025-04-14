@@ -25,6 +25,10 @@ use_virtualenv("myenv", required = TRUE)
 
 ![@USAFacts2023-lv](https://datawrapper.dwcdn.net/cr3AX/full.svg)
 
+---
+
+![<https://xkcd.com/2048/>](https://imgs.xkcd.com/comics/curve_fitting.png)
+
 ## Last time...
 
 - Jupyter notebooks on Google colab service
