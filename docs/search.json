@@ -2426,7 +2426,7 @@
     "href": "schedule.html#week-13",
     "title": "Schedule",
     "section": "April 14-18",
-    "text": "April 14-18\n\nTuesday, April 15\nMaking data dashboards and apps\n\nExplore: Kohler (2024)\nSlides\n\n\n\nThursday, April 17\nTableu and Microsoft BI\n\nIn-class work on final projects or Exercise 07.\nDue: Exercise-07"
+    "text": "April 14-18\n\nTuesday, April 15\nMaking data dashboards and apps\n\nExplore: Kohler (2024)\nSlides\n\n\n\nThursday, April 17\nVisualization tools in industry\n\nslides\nIn-class work on final projects or Exercise 07.\nDue: Exercise-07"
   },
   {
     "objectID": "schedule.html#week-14",
@@ -5402,5 +5402,54 @@
     "title": "Widgets, dashboards, & apps",
     "section": "References",
     "text": "References\n\n\n\n\nBostock, M. (n.d.). The Wealth & Health of Nations / Mike Bostock. Retrieved April 10, 2025, from https://observablehq.com/@mbostock/the-wealth-health-of-nations\n\n\nUSAFacts. (2023, September 6). Do women live longer than men in the US? Retrieved April 11, 2025, from https://usafacts.org/articles/do-women-live-longer-than-men-in-the-us/"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-17-industry-tools.html#announcements",
+    "href": "slides/wk13-2025-04-17-industry-tools.html#announcements",
+    "title": "Industry tools",
+    "section": "Announcements",
+    "text": "Announcements"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-17-industry-tools.html#last-time",
+    "href": "slides/wk13-2025-04-17-industry-tools.html#last-time",
+    "title": "Industry tools",
+    "section": "Last time…",
+    "text": "Last time…"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-17-industry-tools.html#today",
+    "href": "slides/wk13-2025-04-17-industry-tools.html#today",
+    "title": "Industry tools",
+    "section": "Today",
+    "text": "Today\n\nData visualization in industry\nWork session"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-17-industry-tools.html#tableau",
+    "href": "slides/wk13-2025-04-17-industry-tools.html#tableau",
+    "title": "Industry tools",
+    "section": "Tableau",
+    "text": "Tableau\n\nTableau: https://tableau.com\nSalesforce: https://salesforce.com\n\nCRM"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-17-industry-tools.html#microsoft-power-bi",
+    "href": "slides/wk13-2025-04-17-industry-tools.html#microsoft-power-bi",
+    "title": "Industry tools",
+    "section": "Microsoft Power BI",
+    "text": "Microsoft Power BI"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-17-industry-tools.html#datawrapper",
+    "href": "slides/wk13-2025-04-17-industry-tools.html#datawrapper",
+    "title": "Industry tools",
+    "section": "Datawrapper",
+    "text": "Datawrapper\n\nhttps://www.datawrapper.de"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-17-industry-tools.html#references",
+    "href": "slides/wk13-2025-04-17-industry-tools.html#references",
+    "title": "Industry tools",
+    "section": "References",
+    "text": "References"
   }
 ]

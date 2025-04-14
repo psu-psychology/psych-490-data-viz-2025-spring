@@ -12,7 +12,7 @@ project:
 website:
   title: "PSYCH 490 • Spr 25"
   announcement: 
-    content: "[Exercise 07](exercises/ex07-) assigned this Thursday." 
+    content: "[Exercise 07](exercises/ex07-) due this Thursday, April 17, 2025." 
     position: below-navbar
     icon: info-circle
     dismissable: true

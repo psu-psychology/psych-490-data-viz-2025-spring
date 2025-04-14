@@ -1,0 +1,88 @@
+---
+title: "Industry tools"
+subtitle: "2025-04-17"
+code_fold: false
+---
+
+# Prelude
+
+# Overview
+
+## Announcements
+
+## Last time...
+
+## Today
+
+- Data visualization in industry
+- Work session
+
+# Data visualization in industry
+
+## Tableau
+
+- Tableau: <https://tableau.com>
+- Salesforce: <https://salesforce.com>
+  - CRM
+  
+---
+
+![<https://tableau.com>](../include/img/tableau.png)
+
+---
+
+![](../include/img/tableau-public.png)
+
+---
+
+![<https://public.tableau.com/app/discover>](../include/img/tableau-public.png)
+
+---
+
+<https://public.tableau.com/views/ComparingTwoMeasures/Charts?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link>
+
+<https://public.tableau.com/shared/T948YK8CC?:display_count=n&:origin=viz_share_link>
+
+## Microsoft Power BI
+
+![](../include/img/microsoft-power-bi.png)
+
+## Part of PSU Office 365
+
+![](../include/img/microsoft-power-bi-psu.png)
+
+---
+
+![](../include/img/power-bi-psu-launch-page.png)
+
+---
+
+![](../include/img/power-bi-psu-ug-admissions.png)
+
+## Fabric Community
+
+![<https://community.fabric.microsoft.com/t5/Data-Stories-Gallery/bd-p/DataStoriesGallery?featured=yes>](../include/img/microsoft-bi-fabric-community.png)
+
+## Datawrapper
+
+![<https://www.datawrapper.de>](../include/img/datawrapper.png)
+
+## Datawrapper Case Studies
+
+<https://www.datawrapper.de/case-studies>
+
+---
+
+![<https://www.healthsystemtracker.org/dashboard/>](../include/img/healthsystemtracker.png)
+
+---
+
+![<https://www.datawrapper.de/blog/data-vis-dispatch-march-25-2025>](../include/img/datawrapper-viz-dispatch.png)
+
+# Work session
+
+# Next time
+
+# Resources
+
+## References
