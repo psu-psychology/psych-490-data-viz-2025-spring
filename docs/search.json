@@ -5352,7 +5352,7 @@
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#widgets",
     "title": "Widgets, & dashboards, & apps…oh my!",
     "section": "Widgets",
-    "text": "Widgets\nSee: https://quarto.org/docs/interactive/widgets/jupyter.html\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n```{python}\n#| label: plotly-demo\n#| #| code-fold: true\n\nimport plotly.express as px\nimport plotly.io as pio\ndf = px.data.iris()\nfig = px.scatter(df, x=\"sepal_width\", y=\"sepal_length\", \n                 color=\"species\", \n                 marginal_y=\"violin\", marginal_x=\"box\", \n                 trendline=\"ols\", template=\"simple_white\")\nfig.show()\n```"
+    "text": "Widgets\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n```{python}\n#| label: plotly-demo\n\n# https://quarto.org/docs/interactive/widgets/jupyter.html\n\nimport plotly.express as px\nimport plotly.io as pio\ndf = px.data.iris()\nfig = px.scatter(df, x=\"sepal_width\", y=\"sepal_length\", \n                 color=\"species\", \n                 marginal_y=\"violin\", marginal_x=\"box\", \n                 trendline=\"ols\", template=\"simple_white\")\nfig.show()\n```\n\n\n\n\n\n\n                        \n                                            \n\n\n\n\nFigure 1"
   },
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#leafletjs",

@@ -59,8 +59,6 @@ use_virtualenv("myenv", required = TRUE)
 
 ## Widgets
 
-See: <https://quarto.org/docs/interactive/widgets/jupyter.html>
-
 <!-- ```{python} -->
 <!-- #| label: leaflet-demo -->
 <!-- #| code-fold: true -->
@@ -86,10 +84,13 @@ See: <https://quarto.org/docs/interactive/widgets/jupyter.html>
 
 <!-- --- -->
 
+::: {#fig-plotly}
+
 ```{python}
 #| label: plotly-demo
-#| #| code-fold: true
 #| echo: fenced
+
+# https://quarto.org/docs/interactive/widgets/jupyter.html
 
 import plotly.express as px
 import plotly.io as pio
@@ -100,6 +101,8 @@ fig = px.scatter(df, x="sepal_width", y="sepal_length",
                  trendline="ols", template="simple_white")
 fig.show()
 ```
+
+:::
 
 ## Maps with `Leafletjs`
 
