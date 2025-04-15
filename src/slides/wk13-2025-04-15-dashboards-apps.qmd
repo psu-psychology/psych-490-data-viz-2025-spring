@@ -1,5 +1,5 @@
 ---
-title: "Widgets, dashboards, & apps"
+title: "Widgets, & dashboards, & apps...oh my!"
 subtitle: "2025-04-15"
 ---
 
@@ -9,13 +9,20 @@ library(reticulate)
 use_virtualenv("myenv", required = TRUE)
 ```
 
-<!-- # Prelude -->
+# Prelude
+
+---
+
+{{< video https://www.youtube.com/watch?v=BzlhEsWI2Pw width=100% height=70% >}}
+
+@Entertainment2013-uv
 
 # Overview
 
 ## Announcements
 
 - [Exercise-07](../exercises/ex07-figs-w-python.qmd) [due]{.orange_due} Thursday
+- The road ahead
 
 ## In the news...
 
@@ -25,15 +32,23 @@ use_virtualenv("myenv", required = TRUE)
 
 ![@USAFacts2023-lv](https://datawrapper.dwcdn.net/cr3AX/full.svg)
 
----
+## {.scrollable}
 
-![<https://xkcd.com/2048/>](https://imgs.xkcd.com/comics/curve_fitting.png)
+![<https://xkcd.com/2048/>](https://imgs.xkcd.com/comics/curve_fitting.png){.lightbox}
 
 ## Last time...
 
 - Jupyter notebooks on Google colab service
 
 ![<https://colab.research.google.com/drive/13WO5Va62sjnsKjVaqazMMTUe3z-H5oMu?usp=chrome_ntp>](../include/img/gapminder-colab.png)
+
+## On data notebooks
+
+- Great for exploration, documentation
+- Reproducible
+- Encourage incremental exploration, figure-building
+- Be kind to your future (forgetful) self
+- Some are *free*: Jupyter notebooks, Quarto
 
 ## Today
 
@@ -86,10 +101,12 @@ fig = px.scatter(df, x="sepal_width", y="sepal_length",
 fig.show()
 ```
 
-## Maps with `Leaflet`
+## Maps with `Leafletjs`
 
 ```{r}
+#| echo: fenced
 #| label: leaflet-r
+
 library(leaflet)
 leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
@@ -106,6 +123,12 @@ leaflet() %>%
 ![https://leafletjs.com](../include/img/leaflet.png)
 :::
 ::::
+
+## Aside on JS
+
+- JS == JavasSript, JS != Java
+
+![<https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript>](../include/img/what-is-javascript.png)
 
 ## Dashboards
 
@@ -137,7 +160,7 @@ leaflet() %>%
 ::: {.incremental}
 - Harder to make than sequential data visualizations
 - User interface (UI), user experience (UX), @Kohler2024-ig
-- How best to tell your data 'story'
+- How best to tell your (polished, nearly complete) data 'story'
 - Maybe with [these](https://play-project.org/KoBoToolbox/) data?
 :::
 

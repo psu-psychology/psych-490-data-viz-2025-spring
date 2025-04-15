@@ -5322,86 +5322,86 @@
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#announcements",
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#announcements",
-    "title": "Widgets, dashboards, & apps",
+    "title": "Widgets, & dashboards, & apps…oh my!",
     "section": "Announcements",
-    "text": "Announcements\n\nExercise-07 due Thursday"
+    "text": "Announcements\n\nExercise-07 due Thursday\nThe road ahead"
   },
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#in-the-news",
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#in-the-news",
-    "title": "Widgets, dashboards, & apps",
+    "title": "Widgets, & dashboards, & apps…oh my!",
     "section": "In the news…",
     "text": "In the news…\n\nUSAFacts (2023)"
   },
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#last-time",
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#last-time",
-    "title": "Widgets, dashboards, & apps",
+    "title": "Widgets, & dashboards, & apps…oh my!",
     "section": "Last time…",
     "text": "Last time…\n\nJupyter notebooks on Google colab service\n\n\nhttps://colab.research.google.com/drive/13WO5Va62sjnsKjVaqazMMTUe3z-H5oMu?usp=chrome_ntp"
   },
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#today",
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#today",
-    "title": "Widgets, dashboards, & apps",
+    "title": "Widgets, & dashboards, & apps…oh my!",
     "section": "Today",
     "text": "Today\n\nWidgets, dashboards, & apps\nWork session"
   },
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#widgets",
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#widgets",
-    "title": "Widgets, dashboards, & apps",
+    "title": "Widgets, & dashboards, & apps…oh my!",
     "section": "Widgets",
     "text": "Widgets\nSee: https://quarto.org/docs/interactive/widgets/jupyter.html\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n```{python}\n#| label: plotly-demo\n#| #| code-fold: true\n\nimport plotly.express as px\nimport plotly.io as pio\ndf = px.data.iris()\nfig = px.scatter(df, x=\"sepal_width\", y=\"sepal_length\", \n                 color=\"species\", \n                 marginal_y=\"violin\", marginal_x=\"box\", \n                 trendline=\"ols\", template=\"simple_white\")\nfig.show()\n```"
   },
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#leafletjs",
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#leafletjs",
-    "title": "Widgets, dashboards, & apps",
+    "title": "Widgets, & dashboards, & apps…oh my!",
     "section": "Leafletjs",
     "text": "Leafletjs\n\n\n\n\n\nhttps://leafletjs.com\n\n\n\n\n\n\nhttps://leafletjs.com"
   },
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#dashboards",
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#dashboards",
-    "title": "Widgets, dashboards, & apps",
+    "title": "Widgets, & dashboards, & apps…oh my!",
     "section": "Dashboards",
     "text": "Dashboards\n\nhttps://quarto.org/docs/gallery/#dashboards\nGapminder: https://jjallaire.github.io/gapminder-dashboard/\nNFL injuries: https://jjallaire.github.io/nfl-injuries-dashboard/\nWeather forecast: https://cscheid.github.io/quarto-dashboard-ojs-examples/weather.html"
   },
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#more-dashboards",
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#more-dashboards",
-    "title": "Widgets, dashboards, & apps",
+    "title": "Widgets, & dashboards, & apps…oh my!",
     "section": "More dashboards",
     "text": "More dashboards\n\nThe Wealth & Health of Nations, Bostock (n.d.)\nScatterplot tour\nWalmart’s growth"
   },
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#posit.cos-shiny",
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#posit.cos-shiny",
-    "title": "Widgets, dashboards, & apps",
+    "title": "Widgets, & dashboards, & apps…oh my!",
     "section": "Posit.co’s Shiny",
     "text": "Posit.co’s Shiny\n\nhttps://shiny.posit.co/r/gallery/\nMovie explorer: https://shiny.posit.co/r/gallery/interactive-visualizations/movie-explorer/\nHealth expenditures vs. life expectancy: https://shiny.posit.co/r/gallery/interactive-visualizations/google-charts/"
   },
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#gilmores-shiny-app",
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#gilmores-shiny-app",
-    "title": "Widgets, dashboards, & apps",
+    "title": "Widgets, & dashboards, & apps…oh my!",
     "section": "Gilmore’s Shiny app",
     "text": "Gilmore’s Shiny app\n\nhttps://posit.cloud/spaces/447376/content/7061645"
   },
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#to-app-or-not-to-app",
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#to-app-or-not-to-app",
-    "title": "Widgets, dashboards, & apps",
+    "title": "Widgets, & dashboards, & apps…oh my!",
     "section": "To app or not to app",
-    "text": "To app or not to app\n\n\nHarder to make than sequential data visualizations\nUser interface (UI), user experience (UX), Kohler (2024)\nHow best to tell your data ‘story’\nMaybe with these data?"
+    "text": "To app or not to app\n\n\nHarder to make than sequential data visualizations\nUser interface (UI), user experience (UX), Kohler (2024)\nHow best to tell your (polished, nearly complete) data ‘story’\nMaybe with these data?"
   },
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#references",
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#references",
-    "title": "Widgets, dashboards, & apps",
+    "title": "Widgets, & dashboards, & apps…oh my!",
     "section": "References",
-    "text": "References\n\n\n\n\nBostock, M. (n.d.). The Wealth & Health of Nations / Mike Bostock. Retrieved April 10, 2025, from https://observablehq.com/@mbostock/the-wealth-health-of-nations\n\n\nKohler, T. (2024, January 10). Psychology for UX: Study guide. Retrieved April 11, 2025, from https://www.nngroup.com/articles/psychology-study-guide/\n\n\nUSAFacts. (2023, September 6). Do women live longer than men in the US? Retrieved April 11, 2025, from https://usafacts.org/articles/do-women-live-longer-than-men-in-the-us/"
+    "text": "References\n\n\n\n\nBostock, M. (n.d.). The Wealth & Health of Nations / Mike Bostock. Retrieved April 10, 2025, from https://observablehq.com/@mbostock/the-wealth-health-of-nations\n\n\nEntertainment, W. B. (2013). The wizard of oz | 75th anniversary \"dorothy meets the cowardly lion\" | warner bros. entertainment. Youtube. Retrieved from https://www.youtube.com/watch?v=BzlhEsWI2Pw\n\n\nKohler, T. (2024, January 10). Psychology for UX: Study guide. Retrieved April 11, 2025, from https://www.nngroup.com/articles/psychology-study-guide/\n\n\nUSAFacts. (2023, September 6). Do women live longer than men in the US? Retrieved April 11, 2025, from https://usafacts.org/articles/do-women-live-longer-than-men-in-the-us/"
   },
   {
     "objectID": "slides/wk13-2025-04-17-industry-tools.html#announcements",
@@ -5455,8 +5455,36 @@
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#maps-with-leaflet",
     "href": "slides/wk13-2025-04-15-dashboards-apps.html#maps-with-leaflet",
-    "title": "Widgets, dashboards, & apps",
+    "title": "Widgets, & dashboards, & apps…oh my!",
     "section": "Maps with Leaflet",
-    "text": "Maps with Leaflet"
+    "text": "Maps with Leaflet\n\n\nCode\n```{r}\n#| label: leaflet-r\n\nlibrary(leaflet)\nleaflet() %&gt;%\n  addTiles() %&gt;%  # Add default OpenStreetMap map tiles\n  addMarkers(lng=-77.868785, lat=40.798608, popup=\"Middle of nowhere\")\n```"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#section",
+    "href": "slides/wk13-2025-04-15-dashboards-apps.html#section",
+    "title": "Widgets, & dashboards, & apps…oh my!",
+    "section": "",
+    "text": "https://xkcd.com/2048/"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#on-data-notebooks",
+    "href": "slides/wk13-2025-04-15-dashboards-apps.html#on-data-notebooks",
+    "title": "Widgets, & dashboards, & apps…oh my!",
+    "section": "On data notebooks",
+    "text": "On data notebooks\n\nGreat for exploration, documentation\nReproducible\nEncourage incremental exploration, figure-building\nBe kind to your future (forgetful) self\nSome are free: Jupyter notebooks, Quarto"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#maps-with-leafletjs",
+    "href": "slides/wk13-2025-04-15-dashboards-apps.html#maps-with-leafletjs",
+    "title": "Widgets, & dashboards, & apps…oh my!",
+    "section": "Maps with Leafletjs",
+    "text": "Maps with Leafletjs\n\n\nCode\n```{r}\n#| label: leaflet-r\n\nlibrary(leaflet)\nleaflet() %&gt;%\n  addTiles() %&gt;%  # Add default OpenStreetMap map tiles\n  addMarkers(lng=-77.868785, lat=40.798608, popup=\"Middle of nowhere\")\n```"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#aside-on-js",
+    "href": "slides/wk13-2025-04-15-dashboards-apps.html#aside-on-js",
+    "title": "Widgets, & dashboards, & apps…oh my!",
+    "section": "Aside on JS",
+    "text": "Aside on JS\n\nJS == JavasSript, JS != Java\n\n\nhttps://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript"
   }
 ]
