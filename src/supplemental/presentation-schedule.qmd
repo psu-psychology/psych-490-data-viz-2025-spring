@@ -59,6 +59,17 @@ presentation_qs <- tibble::tibble(q_long = names(presentations_df), q_short = ne
 names(presentations_df) <- new_names
 ```
 
+## Show all presenters
+
+```{r}
+presentations_df |>
+  dplyr::filter(!stringr::str_detect(Preferred_date, "Not presenting")) |>
+  dplyr::arrange(Timestamp) |>
+  dplyr::select(Timestamp, Authors, Preferred_date) |>
+  kableExtra::kable(format = 'html')
+```
+
+
 ## Select subsets by preferred date
 
 I assigned students by preferred date and the date they completed the survey.
@@ -77,7 +88,7 @@ tue_29_df <- presentations_df |>
   dplyr::filter(stringr::str_detect(Preferred_date, "29"),
                 Give_talk == "Yes")
 
-thu_31_df <- presentations_df |>
+thu_01_df <- presentations_df |>
   dplyr::filter(stringr::str_detect(Preferred_date, "01"),
                 Give_talk == "Yes")
 
@@ -96,7 +107,12 @@ n_no_pref <- dim(no_pref)[1]
 
 n_thu_24_slots_free <- length(times) - n_thu_24_df
 
-new_thu_24_df <- rbind(thu_24_df, no_pref[1:n_thu_24_slots_free,])
+if (n_thu_24_slots_free > 0) {
+  new_thu_24_df <- rbind(thu_24_df, no_pref[1:n_thu_24_slots_free,])
+} else {
+  new_thu_24_df <- thu_24_df
+}
+#new_thu_24_df <- rbind(thu_24_df, no_pref[1:n_thu_24_slots_free,])
 new_thu_24_df$Time <- times
 
 no_pref$assigned[1:n_thu_24_slots_free] <- TRUE
@@ -137,17 +153,17 @@ new_tue_29_df |>
 
 ```{r}
 no_pref_remaining <- no_pref_remaining[no_pref_remaining$assigned == FALSE,]
-n_thu_31_remaining <- length(times) - n_tue_29_df
+n_thu_01_remaining <- length(times) - n_tue_29_df
 
-index_to_assign <- c(1:length(no_pref_remaining))[1:n_thu_31_remaining]
+index_to_assign <- c(1:length(no_pref_remaining))[1:n_thu_01_remaining]
 
-new_thu_31_df <- rbind(thu_31_df, 
+new_thu_01_df <- rbind(thu_01_df, 
                        no_pref_remaining[index_to_assign,])
-new_thu_31_df$Time <- times[1:dim(new_thu_31_df)[1]]
+new_thu_01_df$Time <- times[1:dim(new_thu_01_df)[1]]
 
 # no_pref$assigned[index_to_assign] <- TRUE
 
-new_thu_31_df |>
+new_thu_01_df |>
   dplyr::filter(!is.na(Authors)) |>
   dplyr::arrange(Time) |>
   dplyr::select(Time, Authors, Title, Format) |>

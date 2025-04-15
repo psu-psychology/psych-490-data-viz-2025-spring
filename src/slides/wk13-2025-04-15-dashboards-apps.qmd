@@ -129,7 +129,7 @@ leaflet() %>%
 
 ## Aside on JS
 
-- JS == JavasSript, JS != Java
+- JS == JavasScript, JS != Java
 
 ![<https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript>](../include/img/what-is-javascript.png)
 
