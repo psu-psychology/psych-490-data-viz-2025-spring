@@ -257,7 +257,7 @@
 
 *Visualization tools in industry*
 
-- [slides](slides/wk13-2025-04-17-industry-tools.qmd)
+- [Slides](slides/wk13-2025-04-17-industry-tools.qmd)
 - In-class work on final projects or Exercise 07.
 - [Due]{.orange_due}: [Exercise-07](exercises/ex07-figs-w-python.qmd) | [Canvas dropbox](https://psu.instructure.com/courses/2381584/assignments/16998426)
 

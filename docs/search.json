@@ -2426,7 +2426,7 @@
     "href": "schedule.html#week-13",
     "title": "Schedule",
     "section": "April 14-18",
-    "text": "April 14-18\n\nTuesday, April 15\nMaking data dashboards and apps\n\nExplore: Kohler (2024)\nSlides\n\n\n\nThursday, April 17\nVisualization tools in industry\n\nslides\nIn-class work on final projects or Exercise 07.\nDue: Exercise-07 | Canvas dropbox"
+    "text": "April 14-18\n\nTuesday, April 15\nMaking data dashboards and apps\n\nExplore: Kohler (2024)\nSlides\n\n\n\nThursday, April 17\nVisualization tools in industry\n\nSlides\nIn-class work on final projects or Exercise 07.\nDue: Exercise-07 | Canvas dropbox"
   },
   {
     "objectID": "schedule.html#week-14",
@@ -2447,7 +2447,7 @@
     "href": "schedule.html#finals-week",
     "title": "Schedule",
     "section": "May 5-9",
-    "text": "May 5-9\nFinals Week\n\nTuesday, May 05\n\nDue: Final project write-up"
+    "text": "May 5-9\nFinals Week\n\nTuesday, May 05\n\nDue: Final project write-up | Canvas dropbox"
   },
   {
     "objectID": "policies.html",
@@ -5408,14 +5408,14 @@
     "href": "slides/wk13-2025-04-17-industry-tools.html#announcements",
     "title": "Industry tools",
     "section": "Announcements",
-    "text": "Announcements"
+    "text": "Announcements\n\nExercise-07 due today\nComing up"
   },
   {
     "objectID": "slides/wk13-2025-04-17-industry-tools.html#last-time",
     "href": "slides/wk13-2025-04-17-industry-tools.html#last-time",
     "title": "Industry tools",
     "section": "Last time…",
-    "text": "Last time…"
+    "text": "Last time…\n\nhttps://rogilmore.shinyapps.io/PSYCH490-2023-APES/"
   },
   {
     "objectID": "slides/wk13-2025-04-17-industry-tools.html#today",
@@ -5450,7 +5450,7 @@
     "href": "slides/wk13-2025-04-17-industry-tools.html#references",
     "title": "Industry tools",
     "section": "References",
-    "text": "References"
+    "text": "References\n\n\n\n\nThe MICrONS project. (2025, April 8). Retrieved April 17, 2025, from https://www.nature.com/immersive/d42859-025-00001-w/index.html"
   },
   {
     "objectID": "slides/wk13-2025-04-15-dashboards-apps.html#maps-with-leaflet",
@@ -5493,5 +5493,33 @@
     "title": "Presentation schedule",
     "section": "Show all presenters",
     "text": "Show all presenters\n\n\nCode\npresentations_df |&gt;\n  dplyr::filter(!stringr::str_detect(Preferred_date, \"Not presenting\")) |&gt;\n  dplyr::arrange(Timestamp) |&gt;\n  dplyr::select(Timestamp, Authors, Preferred_date) |&gt;\n  kableExtra::kable(format = 'html')\n\n\n\n\n\nTimestamp\nAuthors\nPreferred_date\n\n\n\n\n2/25/2025 8:54:04\nSaada Wing\nTue April 29\n\n\n3/4/2025 10:09:09\nKendall Morgan\nNo preference\n\n\n3/6/2025 23:19:37\nAnabella Finol\nNo preference\n\n\n4/1/2025 9:09:09\nAnnalise Chang\nNo preference\n\n\n4/1/2025 9:10:19\nJasmine Upchurch\nThu April 24\n\n\n4/1/2025 9:10:20\nHunterr Quintana and Ashley Tweedle\nTue May 01\n\n\n4/10/2025 9:16:09\nOlivia Verdino, Sean Wang, Alina Antonucci, Jasmine Merritt\nThu April 24\n\n\n4/15/2025 10:08:33\nZhen Wang\nThu May 01\n\n\n4/3/2025 10:28:06\nTJ DeFrancesco\nNo preference\n\n\n4/3/2025 9:22:09\nEdmond Yu & Zihan Huang\nThu April 24\n\n\n4/6/2025 22:54:16\nAngel Chen\nTue April 29\n\n\n4/7/2025 21:56:12\nSamantha Sellmann\nThu May 01\n\n\n4/7/2025 22:56:12\nRand Alkhunaizi\nTue April 29\n\n\n4/8/2025 9:12:50\nOlivia Verdino, Sean Wang, Alina Antonucci, Jasmine Merritt\nThu April 24"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-17-industry-tools.html#in-the-news",
+    "href": "slides/wk13-2025-04-17-industry-tools.html#in-the-news",
+    "title": "Industry tools",
+    "section": "In the news",
+    "text": "In the news\n\nReddit"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-17-industry-tools.html#part-of-psu-office-365",
+    "href": "slides/wk13-2025-04-17-industry-tools.html#part-of-psu-office-365",
+    "title": "Industry tools",
+    "section": "Part of PSU Office 365",
+    "text": "Part of PSU Office 365"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-17-industry-tools.html#fabric-community",
+    "href": "slides/wk13-2025-04-17-industry-tools.html#fabric-community",
+    "title": "Industry tools",
+    "section": "Fabric Community",
+    "text": "Fabric Community\n\nhttps://community.fabric.microsoft.com/t5/Data-Stories-Gallery/bd-p/DataStoriesGallery?featured=yes"
+  },
+  {
+    "objectID": "slides/wk13-2025-04-17-industry-tools.html#datawrapper-case-studies",
+    "href": "slides/wk13-2025-04-17-industry-tools.html#datawrapper-case-studies",
+    "title": "Industry tools",
+    "section": "Datawrapper Case Studies",
+    "text": "Datawrapper Case Studies\nhttps://www.datawrapper.de/case-studies"
   }
 ]

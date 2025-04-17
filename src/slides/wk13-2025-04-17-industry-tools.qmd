@@ -1,16 +1,29 @@
 ---
-title: "Industry tools"
+title: "Visualization tools in industry"
 subtitle: "2025-04-17"
 code_fold: false
 ---
 
-# Prelude
-
 # Overview
+
+## In the news
+
+![Reddit](https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fthis-is-how-long-it-takes-to-fly-to-different-objects-in-v0-l5zh2r49c1ve1.jpeg%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3D7abebf7ba3a9d471f0771e27155f253dd6fc1193)
+
+---
+
+<https://www.nature.com/immersive/d42859-025-00001-w/index.html>
+
+@Unknown2025-jf
 
 ## Announcements
 
+- [Exercise-07](../exercises/ex07-figs-w-python.qmd) [due]{.orange_due} today
+- Coming up
+
 ## Last time...
+
+- <https://rogilmore.shinyapps.io/PSYCH490-2023-APES/>
 
 ## Today
 
@@ -80,8 +93,6 @@ code_fold: false
 ![<https://www.datawrapper.de/blog/data-vis-dispatch-march-25-2025>](../include/img/datawrapper-viz-dispatch.png)
 
 # Work session
-
-# Next time
 
 # Resources
 
