@@ -1,0 +1,69 @@
+---
+title: "Seeing is believing"
+subtitle: "2025-04-22"
+code_fold: false
+---
+
+```{r}
+#| label: setup
+library(reticulate)
+use_virtualenv("myenv", required = TRUE)
+```
+
+# Prelude
+
+---
+
+{{< video https://www.youtube.com/watch?v=VcjzHMhBtf0&list=RDVcjzHMhBtf0&start_radio=1 height="70%" width="100%">}}
+
+@journeyVEVO2010-cq
+
+# Overview
+
+## Announcements
+
+- Project presentations start this Thursday
+
+## In the news
+
+[@mapWikipedia-hc](https://halilb84.github.io/Map-of-Wiki/)
+
+---
+
+![@Kingsbury2025-nv](../include/img/global-migration-nytimes.png)
+
+[@GlobalMigration2025-dh](https://www.nytimes.com/interactive/2025/04/17/opinion/global-migration-facebook-data-interactive-tool.html)
+
+---
+
+![@Sulik2025-gy Figure 1](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41562-025-02153-1/MediaObjects/41562_2025_2153_Fig1_HTML.png?as=webp)
+
+---
+
+![@AcademicPriors-rk](../include/img/academic-priors-interactive.png)
+
+---
+
+![@Liu2025-dj](../include/img/nature-hum-beh-binary-climate.png)
+
+---
+
+![@Cornwall2025-ow](../include/img/science-2025-04-15-climate-sites-go-dark.png)
+
+---
+
+{{< video https://www.youtube.com/watch?v=u2-ozVllqt4 height="70%" width="100%">}}
+
+@USAFacts2020-mn
+
+---
+
+![@USAFactsDotOrg-di](../include/img/usafacts-dot-org.png)
+
+## Today
+
+- Work session
+
+# Resources
+
+## References

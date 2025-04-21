@@ -267,6 +267,7 @@
 
 ### Tuesday, April 22 {-}
 
+- [Slides](slides/wk14-2025-04-22.qmd)
 - In-class work on projects.
 
 ### Thursday, April 24 {-}
