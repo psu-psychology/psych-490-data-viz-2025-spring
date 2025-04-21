@@ -26,21 +26,31 @@ use_virtualenv("myenv", required = TRUE)
 
 ## In the news
 
-[@mapWikipedia-hc](https://halilb84.github.io/Map-of-Wiki/)
+![@mapWikipedia-hc](../include/img/map-of-wikipedia.png)
 
 ---
 
 ![@Kingsbury2025-nv](../include/img/global-migration-nytimes.png)
 
+## {background-iframe=https://www.nytimes.com/interactive/2025/04/17/opinion/global-migration-facebook-data-interactive-tool.html}
+
 [@GlobalMigration2025-dh](https://www.nytimes.com/interactive/2025/04/17/opinion/global-migration-facebook-data-interactive-tool.html)
 
 ---
 
-![@Sulik2025-gy Figure 1](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41562-025-02153-1/MediaObjects/41562_2025_2153_Fig1_HTML.png?as=webp)
+![Figure 1 from @Sulik2025-gy](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41562-025-02153-1/MediaObjects/41562_2025_2153_Fig1_HTML.png?as=webp)
 
 ---
 
 ![@AcademicPriors-rk](../include/img/academic-priors-interactive.png)
+
+---
+
+![@ClimateTRACE-gt](../include/img/global-trace-map.png)
+
+## Local spotlight
+
+[Pennsylvania](https://climatetrace.org/explore/#admin=Pennsylvania--%20USA:3720:USA.39_1:state&gas=co2e&year=2024&timeframe=100&sector=&asset=)
 
 ---
 
