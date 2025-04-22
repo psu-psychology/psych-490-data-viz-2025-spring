@@ -4932,7 +4932,7 @@
     "href": "supplemental/presentation-schedule.html",
     "title": "Presentation schedule",
     "section": "",
-    "text": "Tentative schedule as of 2025-04-15 10:43:12.343068."
+    "text": "Tentative schedule as of 2025-04-22 08:19:25.086825."
   },
   {
     "objectID": "supplemental/presentation-schedule.html#background",
@@ -4967,21 +4967,21 @@
     "href": "supplemental/presentation-schedule.html#day-1-thursday-april-24",
     "title": "Presentation schedule",
     "section": "Day 1: Thursday, April 24",
-    "text": "Day 1: Thursday, April 24\n\n\nCode\nn_thu_24_df &lt;- dim(thu_24_df)[1]\nn_no_pref &lt;- dim(no_pref)[1]\n\nn_thu_24_slots_free &lt;- length(times) - n_thu_24_df\n\nif (n_thu_24_slots_free &gt; 0) {\n  new_thu_24_df &lt;- rbind(thu_24_df, no_pref[1:n_thu_24_slots_free,])\n} else {\n  new_thu_24_df &lt;- thu_24_df\n}\n#new_thu_24_df &lt;- rbind(thu_24_df, no_pref[1:n_thu_24_slots_free,])\nnew_thu_24_df$Time &lt;- times\n\nno_pref$assigned[1:n_thu_24_slots_free] &lt;- TRUE\n\nnew_thu_24_df |&gt;\n  dplyr::filter(!is.na(Authors)) |&gt;\n  dplyr::arrange(Time) |&gt;\n  dplyr::select(Time, Authors, Title, Format) |&gt;\n  kableExtra::kable(format = 'html') |&gt;\n  kableExtra::kable_classic()\n\n\n\n\n\nTime\nAuthors\nTitle\nFormat\n\n\n\n\n09:10\nJasmine Upchurch\nAn Exploration of EEG\nIn-class talk\n\n\n09:25\nEdmond Yu & Zihan Huang\nVisualizing Apex Legends Player Trends Across Seasons\nIn-class talk\n\n\n09:40\nOlivia Verdino, Sean Wang, Alina Antonucci, Jasmine Merritt\nChoosing The Right Data Visualization\nPoster (& in-class presentation)\n\n\n09:55\nOlivia Verdino, Sean Wang, Alina Antonucci, Jasmine Merritt\nChoosing The Right Data Visualization\nPoster (& in-class presentation)"
+    "text": "Day 1: Thursday, April 24\n\n\nCode\nn_thu_24_df &lt;- dim(thu_24_df)[1]\nn_no_pref &lt;- dim(no_pref)[1]\n\nn_thu_24_slots_free &lt;- length(times) - n_thu_24_df\n\nif (n_thu_24_slots_free &gt; 0) {\n  new_thu_24_df &lt;- rbind(thu_24_df, no_pref[1:n_thu_24_slots_free,])\n} else {\n  new_thu_24_df &lt;- thu_24_df\n}\n#new_thu_24_df &lt;- rbind(thu_24_df, no_pref[1:n_thu_24_slots_free,])\nnew_thu_24_df$Time &lt;- times\n\nno_pref$assigned[1:n_thu_24_slots_free] &lt;- TRUE\n\nnew_thu_24_df |&gt;\n  dplyr::filter(!is.na(Authors)) |&gt;\n  dplyr::arrange(Time) |&gt;\n  dplyr::select(Time, Authors, Title, Format) |&gt;\n  kableExtra::kable(format = 'html') |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nTable 1: Presenters for April 24, 2025\n\n\n\n\n\n\nTime\nAuthors\nTitle\nFormat\n\n\n\n\n09:10\nJasmine Upchurch\nAn Exploration of EEG\nIn-class talk\n\n\n09:25\nEdmond Yu & Zihan Huang\nVisualizing Apex Legends Player Trends Across Seasons\nIn-class talk\n\n\n09:40\nOlivia Verdino, Sean Wang, Alina Antonucci, Jasmine Merritt\nChoosing The Right Data Visualization\nPoster (& in-class presentation)\n\n\n09:55\nKendall Morgan\nData Visualization in Colorblind Individuals\nIn-class talk"
   },
   {
     "objectID": "supplemental/presentation-schedule.html#day-2-tuesday-april-29",
     "href": "supplemental/presentation-schedule.html#day-2-tuesday-april-29",
     "title": "Presentation schedule",
     "section": "Day 2: Tuesday, April 29",
-    "text": "Day 2: Tuesday, April 29\n\n\nCode\nn_tue_29_df &lt;- dim(tue_29_df)[1]\n\nno_pref_remaining &lt;- no_pref[no_pref$assigned == FALSE,]\nn_tue_29_remaining &lt;- length(times) - n_tue_29_df\n\nindex_to_assign &lt;- c(1:length(no_pref_remaining))[1:n_tue_29_remaining]\n\nnew_tue_29_df &lt;- rbind(tue_29_df, \n                       no_pref_remaining[index_to_assign,])\nnew_tue_29_df$Time &lt;- times\n\nno_pref_remaining$assigned[index_to_assign] &lt;- TRUE\n\nnew_tue_29_df |&gt;\n  dplyr::filter(!is.na(Authors)) |&gt;\n  dplyr::arrange(Time) |&gt;\n  dplyr::select(Time, Authors, Title, Format) |&gt;\n  kableExtra::kable(format = 'html') |&gt;\n  kableExtra::kable_classic()\n\n\n\n\n\nTime\nAuthors\nTitle\nFormat\n\n\n\n\n09:10\nSaada Wing\nActs of kindess\nPoster (& in-class presentation)\n\n\n09:25\nAngel Chen\nData Visualization of Dance\nPoster (& in-class presentation)\n\n\n09:40\nRand Alkhunaizi\nUse of Mind Maps in Research and Learning: A Cognitive and Functional Perspective\nResearch project (& write-up)\n\n\n09:55\nAnabella Finol\nUncovering Patterns in Music Streaming: A Data Visualization Approach\nIn-class talk"
+    "text": "Day 2: Tuesday, April 29\n\n\nCode\nn_tue_29_df &lt;- dim(tue_29_df)[1]\n\nno_pref_remaining &lt;- no_pref[no_pref$assigned == FALSE,]\nn_tue_29_remaining &lt;- length(times) - n_tue_29_df\n\nindex_to_assign &lt;- c(1:length(no_pref_remaining))[1:n_tue_29_remaining]\n\nnew_tue_29_df &lt;- rbind(tue_29_df, \n                       no_pref_remaining[index_to_assign,])\nnew_tue_29_df$Time &lt;- times\n\nno_pref_remaining$assigned[index_to_assign] &lt;- TRUE\n\nnew_tue_29_df |&gt;\n  dplyr::filter(!is.na(Authors)) |&gt;\n  dplyr::arrange(Time) |&gt;\n  dplyr::select(Time, Authors, Title, Format) |&gt;\n  kableExtra::kable(format = 'html') |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nTable 2: Presenters for April 29, 2025\n\n\n\n\n\n\nTime\nAuthors\nTitle\nFormat\n\n\n\n\n09:10\nSaada Wing\nActs of kindess\nPoster (& in-class presentation)\n\n\n09:25\nAngel Chen\nData Visualization of Dance\nPoster (& in-class presentation)\n\n\n09:40\nRand Alkhunaizi\nUse of Mind Maps in Research and Learning: A Cognitive and Functional Perspective\nResearch project (& write-up)\n\n\n09:55\nAnabella Finol\nUncovering Patterns in Music Streaming: A Data Visualization Approach\nIn-class talk"
   },
   {
     "objectID": "supplemental/presentation-schedule.html#day-3-thursday-may-1",
     "href": "supplemental/presentation-schedule.html#day-3-thursday-may-1",
     "title": "Presentation schedule",
     "section": "Day 3: Thursday, May 1",
-    "text": "Day 3: Thursday, May 1\n\n\nCode\nno_pref_remaining &lt;- no_pref_remaining[no_pref_remaining$assigned == FALSE,]\nn_thu_01_remaining &lt;- length(times) - n_tue_29_df\n\nindex_to_assign &lt;- c(1:length(no_pref_remaining))[1:n_thu_01_remaining]\n\nnew_thu_01_df &lt;- rbind(thu_01_df, \n                       no_pref_remaining[index_to_assign,])\nnew_thu_01_df$Time &lt;- times[1:dim(new_thu_01_df)[1]]\n\n# no_pref$assigned[index_to_assign] &lt;- TRUE\n\nnew_thu_01_df |&gt;\n  dplyr::filter(!is.na(Authors)) |&gt;\n  dplyr::arrange(Time) |&gt;\n  dplyr::select(Time, Authors, Title, Format) |&gt;\n  kableExtra::kable(format = 'html') |&gt;\n  kableExtra::kable_classic()\n\n\n\n\n\nTime\nAuthors\nTitle\nFormat\n\n\n\n\n09:10\nHunterr Quintana and Ashley Tweedle\nSports Visualizations\nPoster (& in-class presentation)\n\n\n09:25\nSamantha Sellmann\nData Visualizations and Industrial-Organizational Psychology\nResearch project (& write-up)\n\n\n09:40\nZhen Wang\nVisualizing Gamer Classification and Motivational Patterns in Video Gaming Behavior\nIn-class talk\n\n\n09:55\nAnnalise Chang\nMaking Meaningful Visualizations with Moment-to-Moment Data in R\nTutorial"
+    "text": "Day 3: Thursday, May 1\n\n\nCode\nno_pref_remaining &lt;- no_pref_remaining[no_pref_remaining$assigned == FALSE,]\nn_thu_01_remaining &lt;- length(times) - n_tue_29_df\n\nindex_to_assign &lt;- c(1:length(no_pref_remaining))[1:n_thu_01_remaining]\n\nnew_thu_01_df &lt;- rbind(thu_01_df, \n                       no_pref_remaining[index_to_assign,])\nnew_thu_01_df$Time &lt;- times[1:dim(new_thu_01_df)[1]]\n\n# no_pref$assigned[index_to_assign] &lt;- TRUE\n\nnew_thu_01_df |&gt;\n  dplyr::filter(!is.na(Authors)) |&gt;\n  dplyr::arrange(Time) |&gt;\n  dplyr::select(Time, Authors, Title, Format) |&gt;\n  kableExtra::kable(format = 'html') |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nTable 3: Presenters for Thursday, May 1, 2025\n\n\n\n\n\n\nTime\nAuthors\nTitle\nFormat\n\n\n\n\n09:10\nHunterr Quintana and Ashley Tweedle\nSports Visualizations\nPoster (& in-class presentation)\n\n\n09:25\nSamantha Sellmann\nData Visualizations and Industrial-Organizational Psychology\nResearch project (& write-up)\n\n\n09:40\nZhen Wang\nVisualizing Gamer Classification and Motivational Patterns in Video Gaming Behavior\nIn-class talk\n\n\n09:55\nAnnalise Chang\nMaking Meaningful Visualizations with Moment-to-Moment Data in R\nTutorial"
   },
   {
     "objectID": "slides/wk12-2025-04-08-explore-data-python.html#life-expectancy-over-time",
@@ -5492,7 +5492,7 @@
     "href": "supplemental/presentation-schedule.html#show-all-presenters",
     "title": "Presentation schedule",
     "section": "Show all presenters",
-    "text": "Show all presenters\n\n\nCode\npresentations_df |&gt;\n  dplyr::filter(!stringr::str_detect(Preferred_date, \"Not presenting\")) |&gt;\n  dplyr::arrange(Timestamp) |&gt;\n  dplyr::select(Timestamp, Authors, Preferred_date) |&gt;\n  kableExtra::kable(format = 'html')\n\n\n\n\n\nTimestamp\nAuthors\nPreferred_date\n\n\n\n\n2/25/2025 8:54:04\nSaada Wing\nTue April 29\n\n\n3/4/2025 10:09:09\nKendall Morgan\nNo preference\n\n\n3/6/2025 23:19:37\nAnabella Finol\nNo preference\n\n\n4/1/2025 9:09:09\nAnnalise Chang\nNo preference\n\n\n4/1/2025 9:10:19\nJasmine Upchurch\nThu April 24\n\n\n4/1/2025 9:10:20\nHunterr Quintana and Ashley Tweedle\nTue May 01\n\n\n4/10/2025 9:16:09\nOlivia Verdino, Sean Wang, Alina Antonucci, Jasmine Merritt\nThu April 24\n\n\n4/15/2025 10:08:33\nZhen Wang\nThu May 01\n\n\n4/3/2025 10:28:06\nTJ DeFrancesco\nNo preference\n\n\n4/3/2025 9:22:09\nEdmond Yu & Zihan Huang\nThu April 24\n\n\n4/6/2025 22:54:16\nAngel Chen\nTue April 29\n\n\n4/7/2025 21:56:12\nSamantha Sellmann\nThu May 01\n\n\n4/7/2025 22:56:12\nRand Alkhunaizi\nTue April 29\n\n\n4/8/2025 9:12:50\nOlivia Verdino, Sean Wang, Alina Antonucci, Jasmine Merritt\nThu April 24"
+    "text": "Show all presenters\n\n\nCode\npresentations_df |&gt;\n  dplyr::filter(!stringr::str_detect(Preferred_date, \"Not presenting\")) |&gt;\n  dplyr::arrange(Timestamp) |&gt;\n  dplyr::select(Timestamp, Authors, Preferred_date) |&gt;\n  kableExtra::kable(format = 'html')\n\n\n\n\n\nTimestamp\nAuthors\nPreferred_date\n\n\n\n\n2/25/2025 8:54:04\nSaada Wing\nTue April 29\n\n\n3/4/2025 10:09:09\nKendall Morgan\nNo preference\n\n\n3/6/2025 23:19:37\nAnabella Finol\nNo preference\n\n\n4/1/2025 9:09:09\nAnnalise Chang\nNo preference\n\n\n4/1/2025 9:10:19\nJasmine Upchurch\nThu April 24\n\n\n4/1/2025 9:10:20\nHunterr Quintana and Ashley Tweedle\nTue May 01\n\n\n4/10/2025 9:16:09\nOlivia Verdino, Sean Wang, Alina Antonucci, Jasmine Merritt\nThu April 24\n\n\n4/15/2025 10:08:33\nZhen Wang\nThu May 01\n\n\n4/3/2025 10:28:06\nTJ DeFrancesco\nNo preference\n\n\n4/3/2025 9:22:09\nEdmond Yu & Zihan Huang\nThu April 24\n\n\n4/6/2025 22:54:16\nAngel Chen\nTue April 29\n\n\n4/7/2025 21:56:12\nSamantha Sellmann\nThu May 01\n\n\n4/7/2025 22:56:12\nRand Alkhunaizi\nTue April 29\n\n\n4/8/2025 9:12:50\nOlivia Verdino, Sean Wang, Alina Antonucci, Jasmine Merritt\nThu April 24\n\n\n\n\n\n\n\nThe Verdino et al. team is duplicated, so let’s remove the duplicate.\n\n\nCode\npresentations_df &lt;- presentations_df |&gt;\n  dplyr::filter(!stringr::str_detect(Timestamp, \"4/10/2025 9:16:09\"))"
   },
   {
     "objectID": "slides/wk13-2025-04-17-industry-tools.html#in-the-news",
@@ -5569,7 +5569,7 @@
     "href": "slides/wk14-2025-04-22.html#today",
     "title": "Seeing is believing",
     "section": "Today",
-    "text": "Today\n\nWork session"
+    "text": "Today\n\nPlease complete the SEEQ\n\n\n\nWork session"
   },
   {
     "objectID": "slides/wk14-2025-04-22.html#references",
@@ -5591,5 +5591,12 @@
     "title": "Seeing is believing",
     "section": "",
     "text": "The New York Times (2025)"
+  },
+  {
+    "objectID": "slides/wk14-2025-04-22.html#opinion-vs.-fact",
+    "href": "slides/wk14-2025-04-22.html#opinion-vs.-fact",
+    "title": "Seeing is believing",
+    "section": "Opinion vs. fact",
+    "text": "Opinion vs. fact\n\n\n\n\n\nDaniel Patrick Moynihan from Wikipedia\n\n\n\n\nYou are entitled to your own opinion, but you are not entitled to your own facts."
   }
 ]

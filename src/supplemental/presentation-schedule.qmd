@@ -69,6 +69,12 @@ presentations_df |>
   kableExtra::kable(format = 'html')
 ```
 
+The Verdino et al. team is duplicated, so let's remove the duplicate.
+
+```{r}
+presentations_df <- presentations_df |>
+  dplyr::filter(!stringr::str_detect(Timestamp, "4/10/2025 9:16:09"))
+```
 
 ## Select subsets by preferred date
 
@@ -102,6 +108,8 @@ times <- c("09:10", "09:25", "09:40", "09:55")
 ## Day 1: Thursday, April 24
 
 ```{r}
+#| label: tbl-thu-apr-24
+#| tbl-cap: "Presenters for April 24, 2025"
 n_thu_24_df <- dim(thu_24_df)[1]
 n_no_pref <- dim(no_pref)[1]
 
@@ -128,6 +136,8 @@ new_thu_24_df |>
 ## Day 2: Tuesday, April 29
 
 ```{r}
+#| label: tbl-tue-apr-29
+#| tbl-cap: "Presenters for April 29, 2025"
 n_tue_29_df <- dim(tue_29_df)[1]
 
 no_pref_remaining <- no_pref[no_pref$assigned == FALSE,]
@@ -152,6 +162,8 @@ new_tue_29_df |>
 ## Day 3: Thursday, May 1
 
 ```{r}
+#| label: tbl-thu-may-01
+#| tbl-cap: "Presenters for Thursday, May 1, 2025"
 no_pref_remaining <- no_pref_remaining[no_pref_remaining$assigned == FALSE,]
 n_thu_01_remaining <- length(times) - n_tue_29_df
 

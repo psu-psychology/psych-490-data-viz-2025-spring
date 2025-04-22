@@ -22,7 +22,7 @@ use_virtualenv("myenv", required = TRUE)
 
 ## Announcements
 
-- Project presentations start this Thursday
+- Project presentations start this [Thursday](../supplemental/presentation-schedule.html#tbl-thu-apr-24)
 
 ## In the news
 
@@ -70,7 +70,22 @@ use_virtualenv("myenv", required = TRUE)
 
 ![@USAFactsDotOrg-di](../include/img/usafacts-dot-org.png)
 
+## Opinion vs. fact
+
+:::: {.columns}
+::: {.column width="40%"}
+![Daniel Patrick Moynihan from Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Patrick_Moynihan_1998.jpg/220px-Patrick_Moynihan_1998.jpg)
+:::
+::: {.column width="60%"}
+>You are entitled to your own opinion, but you are not entitled to your own facts.
+:::
+::::
+
 ## Today
+
+- Please complete the [SEEQ](https://seeq-student-client.k8s.psu.edu/)
+
+![](../include/img/mid-seeq.png)
 
 - Work session
 
