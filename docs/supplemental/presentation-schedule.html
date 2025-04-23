@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-04-22">
+<meta name="dcterms.date" content="2025-04-23">
 
 <title>Presentation schedule – PSYCH 490 • Spr 25</title>
 <style>
@@ -256,8 +256,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="05bdcb9f1eea573fc0ec6a2b31f1fa2d" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>Final project presentations start this Thursday.</p>
+  <div id="quarto-announcement" data-announcement-id="77676c101246f39f296fc9b85ad90e56" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>Final project presentations start this Thursday. Please complete <a href="https://rateteaching.psu.edu/">SEEQs</a>.</p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
@@ -296,14 +296,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 22, 2025</p>
+      <p class="date">April 23, 2025</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">April 22, 2025</p>
+      <p class="date-modified">April 23, 2025</p>
     </div>
   </div>
     
@@ -314,7 +314,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Tentative schedule as of 2025-04-22 08:19:25.086825.</p>
+<p>Tentative schedule as of 2025-04-23 09:23:05.990896.</p>
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
 <p>This page documents how the presentation schedule can be automatically generated from the student survey.</p>
@@ -689,22 +689,25 @@ Table&nbsp;2: Presenters for April 29, 2025
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>no_pref_remaining <span class="ot">&lt;-</span> no_pref_remaining[no_pref_remaining<span class="sc">$</span>assigned <span class="sc">==</span> <span class="cn">FALSE</span>,]</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>n_thu_01_remaining <span class="ot">&lt;-</span> <span class="fu">length</span>(times) <span class="sc">-</span> n_tue_29_df</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>index_to_assign <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(no_pref_remaining))[<span class="dv">1</span><span class="sc">:</span>n_thu_01_remaining]</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>new_thu_01_df <span class="ot">&lt;-</span> <span class="fu">rbind</span>(thu_01_df, </span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>                       no_pref_remaining[index_to_assign,])</span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>new_thu_01_df<span class="sc">$</span>Time <span class="ot">&lt;-</span> times[<span class="dv">1</span><span class="sc">:</span><span class="fu">dim</span>(new_thu_01_df)[<span class="dv">1</span>]]</span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co"># no_pref$assigned[index_to_assign] &lt;- TRUE</span></span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>new_thu_01_df <span class="sc">|&gt;</span></span>
-<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(Authors)) <span class="sc">|&gt;</span></span>
-<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(Time) <span class="sc">|&gt;</span></span>
-<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(Time, Authors, Title, Format) <span class="sc">|&gt;</span></span>
-<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">'html'</span>) <span class="sc">|&gt;</span></span>
-<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>thu_01_times <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"09:05"</span>, <span class="st">"09:20"</span>, <span class="st">"09:35"</span>, <span class="st">"09:50"</span>, <span class="st">"10:05"</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>n_thu_01_remaining <span class="ot">&lt;-</span> <span class="fu">length</span>(thu_01_times) <span class="sc">-</span> n_tue_29_df</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>index_to_assign <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(no_pref_remaining))[<span class="dv">1</span><span class="sc">:</span>n_thu_01_remaining]</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>new_thu_01_df <span class="ot">&lt;-</span> <span class="fu">rbind</span>(thu_01_df, </span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>                       no_pref_remaining[index_to_assign,])</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>new_thu_01_df<span class="sc">$</span>Time <span class="ot">&lt;-</span> thu_01_times[<span class="dv">1</span><span class="sc">:</span><span class="fu">dim</span>(new_thu_01_df)[<span class="dv">1</span>]]</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co"># no_pref$assigned[index_to_assign] &lt;- TRUE</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>new_thu_01_df <span class="sc">|&gt;</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(Authors)) <span class="sc">|&gt;</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(Time) <span class="sc">|&gt;</span></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(Time, Authors, Title, Format) <span class="sc">|&gt;</span></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">'html'</span>) <span class="sc">|&gt;</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div id="tbl-thu-may-01" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -724,28 +727,34 @@ Table&nbsp;3: Presenters for Thursday, May 1, 2025
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">09:10</td>
+<td style="text-align: left;">09:05</td>
 <td style="text-align: left;">Hunterr Quintana and Ashley Tweedle</td>
 <td style="text-align: left;">Sports Visualizations</td>
 <td style="text-align: left;">Poster (&amp; in-class presentation)</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">09:25</td>
+<td style="text-align: left;">09:20</td>
 <td style="text-align: left;">Samantha Sellmann</td>
 <td style="text-align: left;">Data Visualizations and Industrial-Organizational Psychology</td>
 <td style="text-align: left;">Research project (&amp; write-up)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">09:40</td>
+<td style="text-align: left;">09:35</td>
 <td style="text-align: left;">Zhen Wang</td>
 <td style="text-align: left;">Visualizing Gamer Classification and Motivational Patterns in Video Gaming Behavior</td>
 <td style="text-align: left;">In-class talk</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">09:55</td>
+<td style="text-align: left;">09:50</td>
 <td style="text-align: left;">Annalise Chang</td>
 <td style="text-align: left;">Making Meaningful Visualizations with Moment-to-Moment Data in R</td>
 <td style="text-align: left;">Tutorial</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">10:05</td>
+<td style="text-align: left;">TJ DeFrancesco</td>
+<td style="text-align: left;">A History of Colorblind Settings in Video Games</td>
+<td style="text-align: left;">Poster (&amp; in-class presentation)</td>
 </tr>
 </tbody>
 </table>
@@ -1398,23 +1407,26 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb15-185"><a href="#cb15-185" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-thu-may-01</span></span>
 <span id="cb15-186"><a href="#cb15-186" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: "Presenters for Thursday, May 1, 2025"</span></span>
 <span id="cb15-187"><a href="#cb15-187" aria-hidden="true" tabindex="-1"></a>no_pref_remaining <span class="ot">&lt;-</span> no_pref_remaining[no_pref_remaining<span class="sc">$</span>assigned <span class="sc">==</span> <span class="cn">FALSE</span>,]</span>
-<span id="cb15-188"><a href="#cb15-188" aria-hidden="true" tabindex="-1"></a>n_thu_01_remaining <span class="ot">&lt;-</span> <span class="fu">length</span>(times) <span class="sc">-</span> n_tue_29_df</span>
-<span id="cb15-189"><a href="#cb15-189" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-190"><a href="#cb15-190" aria-hidden="true" tabindex="-1"></a>index_to_assign <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(no_pref_remaining))[<span class="dv">1</span><span class="sc">:</span>n_thu_01_remaining]</span>
-<span id="cb15-191"><a href="#cb15-191" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-192"><a href="#cb15-192" aria-hidden="true" tabindex="-1"></a>new_thu_01_df <span class="ot">&lt;-</span> <span class="fu">rbind</span>(thu_01_df, </span>
-<span id="cb15-193"><a href="#cb15-193" aria-hidden="true" tabindex="-1"></a>                       no_pref_remaining[index_to_assign,])</span>
-<span id="cb15-194"><a href="#cb15-194" aria-hidden="true" tabindex="-1"></a>new_thu_01_df<span class="sc">$</span>Time <span class="ot">&lt;-</span> times[<span class="dv">1</span><span class="sc">:</span><span class="fu">dim</span>(new_thu_01_df)[<span class="dv">1</span>]]</span>
-<span id="cb15-195"><a href="#cb15-195" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-196"><a href="#cb15-196" aria-hidden="true" tabindex="-1"></a><span class="co"># no_pref$assigned[index_to_assign] &lt;- TRUE</span></span>
-<span id="cb15-197"><a href="#cb15-197" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-198"><a href="#cb15-198" aria-hidden="true" tabindex="-1"></a>new_thu_01_df <span class="sc">|&gt;</span></span>
-<span id="cb15-199"><a href="#cb15-199" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(Authors)) <span class="sc">|&gt;</span></span>
-<span id="cb15-200"><a href="#cb15-200" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(Time) <span class="sc">|&gt;</span></span>
-<span id="cb15-201"><a href="#cb15-201" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(Time, Authors, Title, Format) <span class="sc">|&gt;</span></span>
-<span id="cb15-202"><a href="#cb15-202" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">'html'</span>) <span class="sc">|&gt;</span></span>
-<span id="cb15-203"><a href="#cb15-203" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span>
-<span id="cb15-204"><a href="#cb15-204" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb15-188"><a href="#cb15-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-189"><a href="#cb15-189" aria-hidden="true" tabindex="-1"></a>thu_01_times <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"09:05"</span>, <span class="st">"09:20"</span>, <span class="st">"09:35"</span>, <span class="st">"09:50"</span>, <span class="st">"10:05"</span>)</span>
+<span id="cb15-190"><a href="#cb15-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-191"><a href="#cb15-191" aria-hidden="true" tabindex="-1"></a>n_thu_01_remaining <span class="ot">&lt;-</span> <span class="fu">length</span>(thu_01_times) <span class="sc">-</span> n_tue_29_df</span>
+<span id="cb15-192"><a href="#cb15-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-193"><a href="#cb15-193" aria-hidden="true" tabindex="-1"></a>index_to_assign <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(no_pref_remaining))[<span class="dv">1</span><span class="sc">:</span>n_thu_01_remaining]</span>
+<span id="cb15-194"><a href="#cb15-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-195"><a href="#cb15-195" aria-hidden="true" tabindex="-1"></a>new_thu_01_df <span class="ot">&lt;-</span> <span class="fu">rbind</span>(thu_01_df, </span>
+<span id="cb15-196"><a href="#cb15-196" aria-hidden="true" tabindex="-1"></a>                       no_pref_remaining[index_to_assign,])</span>
+<span id="cb15-197"><a href="#cb15-197" aria-hidden="true" tabindex="-1"></a>new_thu_01_df<span class="sc">$</span>Time <span class="ot">&lt;-</span> thu_01_times[<span class="dv">1</span><span class="sc">:</span><span class="fu">dim</span>(new_thu_01_df)[<span class="dv">1</span>]]</span>
+<span id="cb15-198"><a href="#cb15-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-199"><a href="#cb15-199" aria-hidden="true" tabindex="-1"></a><span class="co"># no_pref$assigned[index_to_assign] &lt;- TRUE</span></span>
+<span id="cb15-200"><a href="#cb15-200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-201"><a href="#cb15-201" aria-hidden="true" tabindex="-1"></a>new_thu_01_df <span class="sc">|&gt;</span></span>
+<span id="cb15-202"><a href="#cb15-202" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(Authors)) <span class="sc">|&gt;</span></span>
+<span id="cb15-203"><a href="#cb15-203" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(Time) <span class="sc">|&gt;</span></span>
+<span id="cb15-204"><a href="#cb15-204" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(Time, Authors, Title, Format) <span class="sc">|&gt;</span></span>
+<span id="cb15-205"><a href="#cb15-205" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable</span>(<span class="at">format =</span> <span class="st">'html'</span>) <span class="sc">|&gt;</span></span>
+<span id="cb15-206"><a href="#cb15-206" aria-hidden="true" tabindex="-1"></a>  kableExtra<span class="sc">::</span><span class="fu">kable_classic</span>()</span>
+<span id="cb15-207"><a href="#cb15-207" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

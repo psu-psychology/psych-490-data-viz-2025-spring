@@ -274,6 +274,7 @@
 
 *Final Project Presentations*
 
+- [Slides](slides/wk14-2025-04-24-student-presentations.qmd)
 - [Schedule](supplemental/presentation-schedule.qmd#day-1-thursday-april-24)
 
 ## April 28 - May 2 {- #week-15}
@@ -282,10 +283,12 @@
 
 ### Tuesday, April 29 {-}
 
+- [Slides]()
 - [Schedule](supplemental/presentation-schedule.qmd#day-2-tuesday-april-29)
 
 ### Thursday, May 01 {-}
 
+- [Slides]()
 - [Schedule](supplemental/presentation-schedule.qmd#day-3-thursday-may-1)
 
 ## May 5-9 {- #finals-week}

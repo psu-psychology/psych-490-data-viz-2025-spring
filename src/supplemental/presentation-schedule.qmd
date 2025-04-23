@@ -165,13 +165,16 @@ new_tue_29_df |>
 #| label: tbl-thu-may-01
 #| tbl-cap: "Presenters for Thursday, May 1, 2025"
 no_pref_remaining <- no_pref_remaining[no_pref_remaining$assigned == FALSE,]
-n_thu_01_remaining <- length(times) - n_tue_29_df
+
+thu_01_times <- c("09:05", "09:20", "09:35", "09:50", "10:05")
+
+n_thu_01_remaining <- length(thu_01_times) - n_tue_29_df
 
 index_to_assign <- c(1:length(no_pref_remaining))[1:n_thu_01_remaining]
 
 new_thu_01_df <- rbind(thu_01_df, 
                        no_pref_remaining[index_to_assign,])
-new_thu_01_df$Time <- times[1:dim(new_thu_01_df)[1]]
+new_thu_01_df$Time <- thu_01_times[1:dim(new_thu_01_df)[1]]
 
 # no_pref$assigned[index_to_assign] <- TRUE
 

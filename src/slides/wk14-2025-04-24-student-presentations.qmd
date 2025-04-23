@@ -1,0 +1,21 @@
+---
+title: "Student Presentations: Day 1"
+subtitle: "2025-04-24"
+code_fold: false
+---
+
+# Prelude
+
+---
+
+{{< video https://www.youtube.com/watch?v=e17Shnz7nzA height="70%" width="100%">}}
+
+@Finley2013-wl
+
+# Overview
+
+## Today
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/presentation-schedule.html#day-1-thursday-april-24>](../include/img/day-1-presenters.png)
+
+## References
