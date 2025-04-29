@@ -1,0 +1,18 @@
+---
+title: "Student Presentations: Day 2"
+subtitle: "2025-04-29"
+code_fold: false
+---
+
+# Prelude
+
+---
+
+
+# Overview
+
+## Today
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/presentation-schedule.html#day-2-tuesday-april-29>](../include/img/day-2-presenters.png)
+
+## References
