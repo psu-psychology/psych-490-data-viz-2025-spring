@@ -283,7 +283,7 @@
 
 ### Tuesday, April 29 {-}
 
-- [Slides](slides/wk14-2025-04-29-student-presentations.qmd)
+- [Slides](slides/wk15-2025-04-29-student-presentations.qmd)
 - [Schedule](supplemental/presentation-schedule.qmd#day-2-tuesday-april-29)
 
 ### Thursday, May 01 {-}

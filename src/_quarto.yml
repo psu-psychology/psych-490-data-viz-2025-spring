@@ -12,7 +12,7 @@ project:
 website:
   title: "PSYCH 490 • Spr 25"
   announcement: 
-    content: "Final project presentations start this Thursday. Please complete [SEEQs](https://rateteaching.psu.edu/)." 
+    content: "Final project presentations continue this week. Please complete [SEEQs](https://rateteaching.psu.edu/)." 
     position: below-navbar
     icon: info-circle
     dismissable: true
