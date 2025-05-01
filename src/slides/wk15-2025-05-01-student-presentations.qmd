@@ -1,0 +1,25 @@
+---
+title: "Student Presentations: Day 3"
+subtitle: "2025-05-01"
+code_fold: false
+---
+
+# Prelude
+
+---
+
+{{< video https://www.youtube.com/watch?v=vixnSMircuA height="70%" width="100%">}}
+
+@Recordings2018-gf
+
+# Overview
+
+## Announcements
+
+- Final Project write-ups due next Tuesday
+
+## Today
+
+![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/presentation-schedule.html#day-3-thursday-may-01>](../include/img/day-3-presenters.png)
+
+## References

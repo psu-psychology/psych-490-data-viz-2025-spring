@@ -288,7 +288,7 @@
 
 ### Thursday, May 01 {-}
 
-- [Slides]()
+- [Slides](slides/wk15-2025-05-01-student-presentations.qmd)
 - [Schedule](supplemental/presentation-schedule.qmd#day-3-thursday-may-1)
 
 ## May 5-9 {- #finals-week}
