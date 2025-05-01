@@ -22,4 +22,11 @@ code_fold: false
 
 ![<https://psu-psychology.github.io/psych-490-data-viz-2025-spring/supplemental/presentation-schedule.html#day-3-thursday-may-01>](../include/img/day-3-presenters.png)
 
+## Presentations
+
+
+- [Samantha Sellmann](https://pennstateoffice365-my.sharepoint.com/:p:/r/personal/ses6443_psu_edu/Documents/PSYCH%20490%20Final%20Project.pptx?d=w12fcb28cbe234fb6a378389d10d936b2&e=4%3ab9a6cad17c984b12a98fa94761bf856a&sharingv2=true&fromShare=true&at=9)
+- [Annalise Chang]()
+- [TJ Francesco](https://docs.google.com/presentation/d/1uhHlGqfK6mJrXESqYl2hLAlAtPBGco_JuG2b3c6_7vE/edit#slide=id.p)
+
 ## References

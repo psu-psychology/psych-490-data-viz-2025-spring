@@ -5339,5 +5339,12 @@
     "title": "Presentation schedule",
     "section": "Day 3: Thursday, May 1",
     "text": "Day 3: Thursday, May 1\n\n\nCode\nno_pref_remaining &lt;- no_pref_remaining[no_pref_remaining$assigned == FALSE,]\n\nthu_01_times &lt;- c(\"09:05\", \"09:20\", \"09:35\", \"09:50\", \"10:05\")\n\nn_thu_01_remaining &lt;- length(thu_01_times) - n_tue_29_df\n\nindex_to_assign &lt;- c(1:length(no_pref_remaining))[1:n_thu_01_remaining]\n\nnew_thu_01_df &lt;- rbind(thu_01_df, \n                       no_pref_remaining[index_to_assign,])\nnew_thu_01_df$Time &lt;- thu_01_times[1:dim(new_thu_01_df)[1]]\n\n# no_pref$assigned[index_to_assign] &lt;- TRUE\n\nnew_thu_01_df |&gt;\n  dplyr::filter(!is.na(Authors)) |&gt;\n  dplyr::arrange(Time) |&gt;\n  dplyr::select(Time, Authors, Title, Format) |&gt;\n  kableExtra::kable(format = 'html') |&gt;\n  kableExtra::kable_classic()\n\n\n\n\nTable 3: Presenters for Thursday, May 1, 2025\n\n\n\n\n\n\nTime\nAuthors\nTitle\nFormat\n\n\n\n\n09:05\nHunterr Quintana and Ashley Tweedle\nSports Visualizations\nPoster (& in-class presentation)\n\n\n09:20\nSamantha Sellmann\nData Visualizations and Industrial-Organizational Psychology\nResearch project (& write-up)\n\n\n09:35\nZhen Wang\nVisualizing Gamer Classification and Motivational Patterns in Video Gaming Behavior\nIn-class talk\n\n\n09:50\nAnnalise Chang\nMaking Meaningful Visualizations with Moment-to-Moment Data in R\nTutorial\n\n\n10:05\nTJ DeFrancesco\nA History of Colorblind Settings in Video Games\nPoster (& in-class presentation)"
+  },
+  {
+    "objectID": "slides/wk15-2025-05-01-student-presentations.html#presentations",
+    "href": "slides/wk15-2025-05-01-student-presentations.html#presentations",
+    "title": "Student Presentations: Day 3",
+    "section": "Presentations",
+    "text": "Presentations\n\nSamantha Sellmann\nAnnalise Chang\nTJ Francesco"
   }
 ]
