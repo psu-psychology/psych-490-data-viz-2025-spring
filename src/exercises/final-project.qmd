@@ -48,7 +48,7 @@ The proposal is due on [Thursday, March 6]{.orange_due}.
 
 - Every student or team may make an *optional* presentation to the class about their project. Please indicate whether you are willing to make a presentation when you complete the [survey](final-project.qmd#survey).
 - **Note**: Giving a presentation is worth 5 extra credit points.
-- The presentations will occur during class on December 6, 9, and 11.
+- The presentations will occur during class on April 24, 29, and May 1.
 - If you wish to have your presentation made available publicly on the course website, please let me know. This is also completely optional.
 
 ### Project write-up
